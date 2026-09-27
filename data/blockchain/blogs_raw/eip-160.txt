@@ -1,0 +1,208 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-160: EXP cost increase
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-160: EXP cost increase
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Vitalik Buterin (@vbuterin)
+	Created	2016-10-20
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Hard fork
+	Parameters
+	Specification
+	Rationale
+	References
+
+
+
+  
+
+
+  
+      
+      
+         Hard fork
+      
+      
+    
+
+Spurious Dragon
+
+  
+    
+      
+      
+         Parameters
+      
+      
+    
+
+	FORK_BLKNUM: 2,675,000
+	CHAIN_ID: 1
+
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+If block.number >= FORK_BLKNUM, increase the gas cost of EXP from 10 + 10 per byte in the exponent to 10 + 50 per byte in the exponent.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+Benchmarks suggest that EXP is currently underpriced by a factor of about 4–8.
+
+  
+    
+      
+      
+         References
+      
+      
+    
+
+
+	EIP-160 issue and discussion: https://github.com/ethereum/EIPs/issues/160
+
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Vitalik Buterin (@vbuterin), "EIP-160: EXP cost increase," Ethereum Improvement Proposals, no. 160, October 2016. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-160.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

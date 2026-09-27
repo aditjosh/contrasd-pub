@@ -1,0 +1,866 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Peter Somogyvari, Accenture – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Developer Showcase
+                            
+                        
+                    
+
+                
+                Developer Showcase Series: Peter Somogyvari, Accenture
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Feb 1, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is Peter Somogyvari, Software Product Architect Manager, Accenture.
+ 
+Give a bit of background on what you’re working on and how you got into blockchain.
+ 
+As one of the maintainers of Hyperledger Cactus, I mostly work on making blockchain interoperability a reality to ensure that the current momentum behind DLTs can translate into wider adoption. I’ve always been a jack of all trades with responsibilities ranging from configuring and running data center hardware to tweaking cascading style sheets on end-user interfaces. This personal trait is what has always led me to try out new things, including blockchain.
+ 
+What Hyperledger frameworks or tools are you using in your projects? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+Hyperledger Besu and Hyperledger Fabric: Part of my duties while working on Cactus is to design and build ledger connectors for them and figure out a way to make it easy for our prospective contributors to get going while developing against these ledgers, through Cactus.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+Blockchain interoperability, integration. Being a maintainer of Cactus, perhaps my answer is slightly biased. 😉
+
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+1) Don’t roll your own cryptographic algorithms. Stick with the peer-reviewed, battle-tested ones. Unless of course you are a scientist whose job is to invent the new algorithms. 🙂 
+ 
+2) Always remember that a ledger is just another data store with a few additional bells and whistles (more being added every day).
+ 
+As Hyperledger’s projects continue to mature, what do you see as the most interesting technologies, apps, or use cases coming out as a result?
+ 
+CBDC (Central Bank Digital Currency) is definitely number one. If widely and successfully adopted by a majority of the countries on Earth, some of the macroeconomic books will have to be rewritten as a consequence. It’s uncharted territory, and I’m excited to be involved!
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+High transaction costs. We have a long way to go, but I’m hopeful, especially because it would likely also enable the currently unbanked to have an alternative to keeping cash under the mattress or, in other words, be *included*.
+ 
+Where do you hope to see Hyperledger and/or blockchain in five years?
+ 
+I hope to see some large-scale production deployments where governments as well as traditional financial institutions are involved and not just for finances but also self sovereign identity, real estate and trade in general.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+If you can’t phrase your question in two short sentences or less, you don’t really understand/know what you are trying to achieve and need to take a step back, research/study until you do. Once you are able to phrase your question in the way outlined above, then is the right time to engage your more experienced peers. Most of the time you’ll just know the answer by the time you can phrase your question adequately, which is very fulfilling (for some).
+ 
+What technology could you not live without?
+ 
+Password managers, the Linux kernel and the Internet.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

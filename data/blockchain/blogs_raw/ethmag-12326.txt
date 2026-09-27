@@ -1,0 +1,776 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ethereum Improvement Proposal all info - EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      Ethereum Improvement Proposal all info
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+        
+            eip, 
+            all-info, 
+            tutorial, 
+            eip-process
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                anett
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 29, 2022,  4:51pm
+                  
+                  
+
+1
+              
+            
+            
+              General information regarding EIPs
+
+
+How to submit an EIP
+
+Tutorial
+
+	Write your EIP using EIP template
+
+	Create PR to ethereum/EIPs repo
+	Share link to your EIP alongside with EIP description to Eth Magicians forum to gather community feedback
+	EIP Editors will assign EIP number to your EIP
+
+
+Notes:
+
+	Points 3 and 4 can be swapped, it may take some time for EIP Editors to assign number to your EIP
+	Do not copy paste the EIP itself to FEM forum, post just overview and link to the EIP itself
+
+
+
+EIP Guidelines
+
+	Formal guidelines EIP-1
+	Complex thread on best practices when writing an EIP
+	What is EIP and how can I create one ? Ethereum Standards EIP ERC FAQs
+	Do’s & Don’ts when writing an EIP
+	EIP-5069: EIP Editor Handbook
+
+
+
+EIP Editing hours
+
+A communication channel for EIP authors & EIP editors. These meetings are open for everyone to join and share their EIP. This meeting is happening bi weekly to help EIP Authors push their EIPs
+
+More info about the Office Hours: Introducing “EIP Editing Office Hour”
+
+EIP Editing Office Hour calls & joining details are shared in the following GitHub Issues
+
+
+EIP Specific Groups
+
+Group chats for discussing further details regarding specific topic EIP with likeminded devs
+
+
+General NFT Standards
+
+Telegram: Join Group Chat - group chat made as WG to NFT Standards Wiki
+
+
+EIP-4973 Account-bound tokens
+
+Telegram: Contact @eip4973 - group chat run by @TimDaub for SBT relevant discussion
+
+
+Music NFT Metadata Standards Working group
+
+Telegram: Join Group Chat - This fork of initial NFT Standards WG, working on Music NFT Metadata 
+
+
+Wallet JSON-RPC
+
+Ethereum Wallets 1 - and anything related to URLs
+
+Please comment bellow if you are aware of any other EIP related Group chats.
+
+This post is subjected to be updated with more accurate information over time
+
+            
+
+
+            
+              
+19 Likes
+            
+
+            
+                
+
+            
+              
+                anett
+                
+                  Pinned globally 
+              
+
+              
+
+
+
+              
+                  
+                    December 29, 2022,  4:52pm
+                  
+                  
+
+2
+              
+            
+            
+              
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                abcoathup
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 29, 2022,  9:29pm
+                  
+                  
+
+3
+              
+            
+            
+              
+
+
+
+ anett:
+
+
+Do not copy paste the EIP itself to FEM forum, post just overview and link to the EIP itself
+
+
+
+
+Discourse allows templates to be setup per category, it would be good to have a template stating don’t copypaste your entire EIP here.
+
+            
+
+
+            
+              
+9 Likes
+            
+
+            
+                
+
+            
+              
+                RenanSouza2
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 20, 2023,  7:25pm
+                  
+                  
+
+6
+              
+            
+            
+              Hey, I have not being able to push a new branch to the repository, is there something I am missing? How can I get access to write?
+
+Thank you all
+
+Edit: I got it working
+
+I forgot to fork the repository, push to my own copy, then make a PR from My repository to the origin repository
+
+            
+
+
+            
+              
+6 Likes
+            
+
+            
+                
+
+            
+              
+                deepak-chainxt
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 6, 2023,  7:26pm
+                  
+                  
+
+7
+              
+            
+            
+              Hi,
+
+Where do I copy my EIP and how to name a EIP.
+
+Regards
+
+Deepak
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                abcoathup
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    July 7, 2023,  1:12am
+                  
+                  
+
+8
+              
+            
+            
+              You can create your EIP/ERC in the GitHub repo and a discussion post on Eth Magicians.
+
+Suggest reading:
+
+
+  
+      
+
+      Medium – 14 Sep 22
+  
+
+  
+    
+
+
+Guidelines on How to write EIP
+
+
+  Do's and Don'ts including examples
+
+
+  
+    Reading time: 4 min read
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                TateGunning
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 25, 2023,  2:27pm
+                  
+                  
+
+9
+              
+            
+            
+              Smart. I learned from your comment but hadnt considered doing that in bulk yet. I appreciate you explaining how you figured your dilemna out. Do I understand this correctly: fork any desirable into your repository then merge, is this right?
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                RenanSouza2
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 25, 2023,  2:46pm
+                  
+                  
+
+10
+              
+            
+            
+              When you fork the repository it creates a repository in your account that is a copy of the one in ethereum foundation`s account
+
+This one you will have permission to push commits to
+
+Then you make a pull request (PR) from your fork to the original one
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                TateGunning
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 25, 2023,  3:50pm
+                  
+                  
+
+11
+              
+            
+            
+              Genius. Makes sense. The internet is great at knocking people off course, speaking generally, so it’s nice to have your interaction @RenanSouza2 appreciate it. Going to make breakfast then take a crack at it on my desktop afterwards 
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                Vantu24
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 19, 2023,  1:31pm
+                  
+                  
+
+13
+              
+            
+            
+              
+  
+    
+
+    
+    Ethereum Improvement Proposal all info EIPs
+  
+
+  
+    General information regarding EIPs 
+
+How to submit an EIP
+Tutorial 
+
+Write your EIP using EIP template
+
+Create PR to ethereum/EIPs repo
+Share link to your EIP alongside with EIP description to Eth Magicians forum to gather community feedback
+EIP Editors will assign EIP number to your EIP
+
+Notes: 
+
+Points 3 and 4 can be swapped, it may take some time for EIP Editors to assign number to your EIP
+Do not copy paste the EIP itself to FEM forum, post just overview and link to the EIP itself
+
+
+EIP Guid…
+  
+
+
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                wkyleg
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 30, 2023,  3:30am
+                  
+                  
+
+17
+              
+            
+            
+              I saw in the github readme that “Before you write an EIP, ideas MUST be thoroughly discussed on Ethereum Magicians or Ethereum Research. Once consensus is reached, thoroughly read and review EIP-1, which describes the EIP process.”
+
+If I have ideas for EIPs can I just push the PRs and then discussion takes place here?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                abcoathup
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023, 12:49am
+                  
+                  
+
+18
+              
+            
+            
+              
+
+
+
+ wkyleg:
+
+
+If I have ideas for EIPs can I just push the PRs and then discussion takes place here?
+
+
+
+
+Best to discuss first if there is a need.
+
+For EIPs you will need to convince core devs of the need and the priority, for ERCs you will need multiple projects to implement (otherwise there isn’t a point in standardizing).
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                wkyleg
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023,  2:06am
+                  
+                  
+
+19
+              
+            
+            
+              Ahh thanks.
+
+To be clear I have ERCs (interfaces for ERC-20) I’m working on for a project that Ideally would be standardized as well
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Mikej
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    December 10, 2023,  4:42pm
+                  
+                  
+
+21
+              
+            
+            
+              This post was flagged by the community and is temporarily hidden.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

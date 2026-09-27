@@ -1,0 +1,96 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger-Powered Education Solutions in Action – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger-Powered Education Solutions in Action – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Aug 26, 2020 9:00:00 AM 
+        
+
+        
+          Just before the age of COVID began in earnest, The New York Times ran a feature on “How Technology Is Changing the Future of Higher Education.” The rise of remote learning and other pandemic-related changes and challenges have added to the need and opportunity for technology-driven advances. 
+ 
+The Hyperledger community is doing its part to help the higher education market adapt to an increasingly digital world. Below we look at five Hyperledger-powered solutions that are at work now in the education market. They are helping colleges and universities modernize how they tackle a number of core tasks, including issuing and verifying academic credits, automating on-campus payments and managing students’ identity and privacy. 
+ 
+Read on for more about these #HyperledgerEdu solutions, built using a mix of Hyperledger technologies:
+ 
+Byacco, an on-campus payment system
+ 
+Soramitsu has officially released Byacco, a payment system based on Hyperledger Iroha, for the University of Aizu, Japan. Byacco is a system that allows students and staff of the University of Aizu to use an application on their phones to pay for goods in the cafeteria and university store and to transfer funds within the campus. To make a transaction, all they need is to scan or to provide a QR code, depending on the operation. Byacco’s technology also has high standards for transfers: it follows the EMV® QR Code specification and has bank application level financial security protocols. The keys that are used to authorise transactions on the blockchain are stored only on the device, in a secure storage, so that no one except the owner can access the funds. Students of the university can join the development of the system, thus acquiring skills in creating financial systems based on Hyperledger technologies.
+ 
+DoDream, a “Study Abroad Platform”
+ 
+Dain Leaders is an education solution provider for universities in Korea. It serves more than 45 Korean universities by providing services for students’ career path development. As part of that effort, Dain Leader is introducing its “Study Abroad Platform,” called DoDream, to support the extended education ecosystem of the universities, accreditation and related agencies, and prospective employers. Based on Oracle Blockchain Platform Cloud Service (which is powered by Hyperledger Fabric), the platform is an O2O service that provides foreign students with information on studying in Korea and a matching service with Korean universities.
+ 
+Oracle Digital Certificates Solution
+ 
+In the face of fast-changing demographic and economic drivers and student expectations, the current processes for issuing and verifying student certificates are too inefficient and time consuming. They can also lead to fraudulent or counterfeit certifications.  
+ 
+The Oracle Digital Certificates Solution, built on the Oracle Blockchain Platform (based on Hyperledger Fabric), provides a complete, end-to-end solution for educational institutions to issue verifiable tamper-proof and secure credential certification that improves the student experience after graduation and improves operational efficiency. The solution enables institutions to issue digital certificates along with transcripts and provide self-sovereign capability to the students who can share them securely with third parties through an access token.
+ 
+This solution has been successfully deployed in production by customers like China Distance Education Holdings Limited (CDEL) and Taibah Valley University. CDEL uses Oracle Blockchain to share educational records and professional certifications across many educational institutions to help employers and recruiters verify the educational credentials claimed by individuals. 
+ 
+Many other institutions like national universities, employment agencies, government organizations, professional skills academies and universities that provide student grants/scholarships are using this solution as part of ongoing or planned pilots.     
+ 
+PwC Smart Credentials
+ 
+Data is the new gravity in the world today and organisations are gravitating to and concentrating around trust as the ultimate currency in this data driven world. This trust is crucial for people to exchange information, especially in this digital age when trust is often violated. 
+ 
+With that premise, PwC developed Smart Credentials, a credential issuance, sharing, reviewing and revocation platform levegering the inherent core benefits of blockchain technology such as immutability, tamper-proof nature, transparency, authenticity and security.
+ 
+Built using Hyperleder Indy and Hyperledger Aries to support the verification process, Smart Credentials has two key pillars: Authentication (you are who you say you are) and Authorization (genuine claim). Both are crucial ingredients of building trust in any ecosystem. 
+ 
+Smart Credentials recently won a “Bronze” medal for the Best Global Blockchain Innovation 2019 at the Reimagine Innovation awards (Backed by Wharton and QS) and is a finalist in the DataIQ 2020 awards “Best data product/ service” of the year category.
+ 
+Verified.Me
+ 
+As higher education moves deeper into online and remote learning for traditional and non-traditional students, colleges and universities are now offering a broader array of services that extend the campus experience to the digital realm. Beyond the advent of digital programming, educational institutions are also privy to sensitive personal student, faculty and alumni data from income and payment information to disciplinary records, healthcare and insurance information. 
+ 
+SecureKey Technologies’ Verified.Me service is one approach that supports education’s new digital and data privacy demands. This new digital identity verification service can help verify students, alumni and faculty in a timely and secure manner, strengthening educational institutions’ ability to expand their digital offerings with confidence – while also providing much-needed cost savings. Verified.Me is built using the IBM Blockchain Platform, which is based on Linux Foundation’s open source Hyperledger Fabric.
+ 
+Join the conversation about solutions and applications supporting the higher education marketing with #HyperledgerEdu this month on social channels. Also, Hyperledger has an Education Architecture Special Interest Group that is open to all.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

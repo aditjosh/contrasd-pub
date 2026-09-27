@@ -1,0 +1,238 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SWAP and the need for waivers - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      SWAP and the need for waivers
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            eknir
+            
+          
+
+          
+
+
+
+          
+              
+                July 22, 2019,  3:38pm
+              
+              #1
+          
+        
+        
+          Tron and Fischer (Generalised swap swear and swindle games, 2019) write in section 2.3 (waivers) that being able to make a waiver is a desirable feature for a chequebook. This feature feature introduces a significantly more complex smart-contract and it might not provide the expected benefits. I include quantifiable data to support this argument and propose to use a non-waiver like variant for the chequebook for usage in the SWAP minimum viable product until we have more data on usage.
+
+According to the paper, waivers are needed to save on gas costs. This would work as follows: imagine node B(eneficiary) and and node I(ssuer). If node B has a positive cumulative balance, and B wants to make a payment to I, B can sign of on a cheque which would decrease his balance. This feature would save node I from having a balance in the chequebook contract of B, saving I from ever doing an on-chain transaction to cash out this balance.
+
+As the paper correctly argues, this feature introduces the need for a security delay in the chequebook contract (timeout). To understand why, imagine that at a certain point B has a balance of 500 in the chequebook contract of I and B produces a waiver of 100. If B could always directly cash out his cheques, there would be nothing to stop B from cashing out the cheque where worth 500. This is clearly not desirable, as I expects to pay at most 400, the cumulative amount of the most recent cheque. The security delay is in place to allow I some time to present to the chequebook contract a more recent cheque if there is an attempt of B to cash out a cheque which is not most recent.
+
+There are multiple problems with this. First, there is a need to do two on-chain transactions for cashing out: submitting a cheque and cashing out a cheque. This causes an increase in gas-cost for cashing out and introduces a bad UX for the user. Besides, gas costs are also higher as we have to keep track of three extra state variables (timeout, serial, and amount of last-submitted cheque) in the case of waivers. All this together causes the chequebook contract with waivers to be more expensive than the chequebook without waivers, assuming an equal need to cash out and two cash-outs in the non-waiver variant (as every node must have an entry in the chequebook contract of the counterparty). Obviously, it is reasonable to assume that there is a higher need for cash-out transactions in the non-waiver variant, especially if most transactions are caused due to a high variability in consumption on the swarm network. On the contrary, if most cheques are written due to an unequal consumption, we don’t expect the amount of cash-out transactions to be very different in the waiver and non-waiver variant of the chequebook.
+
+To quantify, test were written with smart-contracts including waiver and excluding waiver (see: https://github.com/ethersphere/swap-swear-and-swindle/tree/compare_simplestSwap). These tests show that the total costs of cashing out are 3029400 gwei in the case of the chequebook with waivers and 1313920 gwei in the chequebook without waivers. If we multiply the non-waiver costs two, the non-waiver chequebook is still about 13% cheaper than the chequebook contract with waivers. A linear plot was made to explore the relationship between the gas-costs of both smart-contracts and the expected need for more cash-out transactions in the non-waiver chequebook. If we need 15% more cash-out transactions on the non-waiver chequebook, the gas costs between waiver and non-waiver are equal. (see:  Waiver non-waiver comparison - Google Tabellen)
+
+Gas costs, however, are not the only costs in this story.:
+
+	the waiver chequebook will most likely slow down the development process as both the smart-contracts, as well as the implementation of these smart-contracts is more difficult,
+	a code audit on waiver chequebooks and their implementations will be more costly,
+	there is a higher risk for a security breach due to more complex code,
+	we introduce the need for nodes to be always online when waivers are present in the history of their chequebooks or contract with a watchtower like service (see: https://medium.com/crypto-punks/lightning-vs-raiden-watchtowers-monitoring-services-differences-c8eb0f724e68),
+	the UX of smart-contracts with waivers is much worse as they have to wait and it will be difficult to explain why a cash-out transaction needs two transactions.
+
+
+My proposal would be to strip-down the current implementation of the chequebook to a version which does not include waivers. We can use this variant to build the SWAP minimum viable product, get data on usage from real users and then make a decision to include a chequebook with waiver options.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                July 25, 2019, 12:50pm
+              
+              #2
+          
+        
+        
+          
+
+
+
+ eknir:
+
+
+My proposal would be to strip-down the current implementation of the chequebook to a version which does not include waivers.
+
+
+
+
+This is the correct approach.
+
+Waivers are an optimisation we may not need. We wrote about them to answer the question “If we wanted to, how could we avoid balances accumulating on both sides of a chequebook mediated payment channel?” It is not meant to be read as a suggestion of the best way forward.
+
+        
+
+
+        
+           
+1 Like
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            nagydani
+            
+          
+
+          
+
+
+
+          
+              
+                July 26, 2019, 11:10am
+              
+              #3
+          
+        
+        
+          I would also suggest stripping waivers from SWAP for now and only implement them later when everything works. Waivers are an optimization that cause quite a bit of complexity and the gains are not all that dramatic. Getting to a reliable MVP fast is much more important than those gains.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

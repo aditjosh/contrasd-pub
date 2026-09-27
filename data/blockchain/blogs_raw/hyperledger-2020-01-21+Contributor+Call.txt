@@ -1,0 +1,713 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-01-21 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+
+	2020 Notes
+
+
+
+
+	2020-01-07 Contributor Call
+
+
+
+
+
+	2020-01-21 Contributor Call
+
+
+
+
+
+	2020-02-04 Besu Contributor Call Notes
+
+
+
+
+
+	2020-02-18 Besu Contributor Call Notes
+
+
+
+
+
+	2020-03-17 Contributor Call Notes
+
+
+
+
+
+	2020-04-14 Contributor Call
+
+
+
+
+
+	2020-04-28 Contributor Call Notes
+
+
+
+
+
+	2020-05-12 Contributor Call Notes
+
+
+
+
+
+	2020-05-26 Contributor Call Notes
+
+
+
+
+
+	2020-06-09 Contributor Call Notes
+
+
+
+
+
+	2020-06-23 Contributor Call Notes
+
+
+
+
+
+	2020-07-07 Contributor Call Notes
+
+
+
+
+
+	2020-07-21 Contributor Call Notes
+
+
+
+
+
+	2020-08-04 Contributor Call Nodes
+
+
+
+
+
+	2020-08-18 Besu Contrubutor Call Notes
+
+
+
+
+
+	2020-09-01 Besu Contributor Call Notes
+
+
+
+
+
+	2020-09-15 Contributor Call Notes
+
+
+
+
+
+	2020-09-29 Besu Contributor Call Notes
+
+
+
+
+
+	2020-10-27 Office Hours Notes
+
+
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2020-01-21 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2020-01-21 Contributor Call
+
+	Brett Henderson
+
+
+
+	Edward Evans
+
+
+
+
+
+Owned by Brett Henderson
+
+
+Last updated: Jan 20, 2020 by Edward EvansVersion comment
+
+
+
+
+
+
+
+
+
+
+Meeting Video: <TBD>
+Housekeeping
+General Announcements
+	Eth DenverÂ is 15-17 Feb 2020 in Denver Colorado
+	EthCCÂ (Ethereum Community Conference) is 3-5 March 2020 in Paris France
+	Hyperledger Global ForumÂ is 3-6 March 2020 in Phoenix AZ
+
+Release updates
+	1.4 - beta	Bug found on deployment with Difficulty overflowing a long
+
+
+	1.4 - beta 2 (https://github.com/hyperledger/besu/pull/312)	Released just before the call with bugfix
+
+
+	No changes to the rest of the 1.4 release schedule as a result of the out-of-cycle release
+
+Work Updates
+	Providing aÂ LATESTÂ  tarball for automation of a test host running the master release against mainnet	Generally seen as a good idea
+	the PR process is where we will see any other objections to this from maintainers not on this call
+
+
+
+Other Business
+	ETC Update	Work to start on the next hard fork, planned for early March
+	It is predominantly an Istanbul remix
+
+
+	EEA Testnet	It has been running for about a week
+	We are in the planning stages of ensuring and configuring Besu for compatibility
+
+
+	Zoom links	It is preferred to use the link in the calendar as the source of truth
+
+
+
+Open Forum
+	Open Contributor Questions?
+
+Future Topics
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2019-10-01 Contributor call
+2019-10-01 Contributor call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-06-07 Contributor Call
+2022-06-07 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-04-12 Contributor Call
+2022-04-12 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-12-20 Contributor Call
+2022-12-20 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-05-12 Contributor Call Notes
+2020-05-12 Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-06-09 Contributor Call Notes
+2020-06-09 Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 35, "requestCorrelationId": "ba2a0d80569c4dc6a7e9569bcdb0bebd"}

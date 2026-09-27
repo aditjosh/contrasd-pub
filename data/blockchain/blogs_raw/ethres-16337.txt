@@ -1,0 +1,196 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Twamm with zk to hide iceberg order details - zk-s[nt]arks - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Twamm with zk to hide iceberg order details
+    
+
+
+      
+          
+            
+              
+              
+                zk-s[nt]arks
+              
+            
+            
+
+
+
+        
+            zk-roll-up
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                rabia1272
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 11, 2023, 11:21am
+                  
+                  
+
+1
+              
+            
+            
+              I have been researching on iceberg orders in Twamm for a month. I had an idea about what if we hide the icerberg order details using zero-knowledge so that no user would be able to use that data for market manipulation just like how binance does it but without going for off-chain solutions.
+
+I just wanna know if this is a feasible model for hiding large trade transaction data.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Mirror
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 24, 2023,  4:46am
+                  
+                  
+
+2
+              
+            
+            
+              This is feasible, and you can check that my post has already opened up the circom circuit for this feature.The Application of ZK-SNARKs in Solidity - Privacy Transformation, Computational Optimization, and MEV Resistance
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

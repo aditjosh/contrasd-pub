@@ -1,0 +1,649 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fixing DCO on main/release - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+	Fixing DCO on main/release
+
+
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Fixing DCO on main/release
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Fixing DCO on main/release
+
+	Felipe Faraggi
+
+
+
+	Frank Li (Deactivated)
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Mar 15, 2022 by Frank Li (Deactivated)
+
+
+
+
+
+
+
+
+
+
+A maintainer with Admin access to the repository is required to fix the main repo:
+	Clone an up-to-date version of the broken branch
+	git commit --amendÂ --signoffÂ  and ensure the appropriate Sign-off is included in the commit message
+	Visit https://github.com/hyperledger/besu/settings/branches and change the glob to no-longer match the branch that is about to be force-pushed to
+	git push --force-with-lease origin mainÂ 
+	Return the branch protection glob to the old value
+	Announce the change in theÂ contributors channel a message like "The head of `main` branch for repository `hyperledger/besu` has been rebased to deal with a DCO issue, please follow the instructions on Fixing DCO on main/release to fix your local repositories"
+
+For everyone else (only required if you were unlucky enough to check out the commit with the broken DCO) to fix your local repo:
+	git fetch origin
+	git branch -f main origin/main if your local main is based off the upstream main
+
+	(Optionally) git push --force FORK main if you are keeping your fork's main up-to-date
+	For all branches based on the bad checkout:	git checkout $BRANCHÂ 
+	git rebase --interactive mainÂ 
+	Remove the old main commit from the list
+
+
+
+Sometimes you might get DCO issues on a release branch when you're merging new commits in, fix it following a similar process:
+	git checkout release-22.1.x to checkout the release branch at the last release
+	git merge main to merge in desired commits (use git reset --hard xxxx to set main at a desired commit)
+	git rebase -i HEAD~10 to initiate a interactive rebase, replace 10 with the number of commits back that has DCO issues
+	In the rebase file find the commit hashes with DCO issues, replace the 'pick' with 'edit'
+	You might also need to fix some merge conflicts as the rebase happens, should be straight forward
+	When the rebase stops at your desired commits, run git commit --amend --no-edit --signoff to signoff the commit
+	Run git rebase --continue to continue, repeat steps 5-6 until done
+	Push the changes with git push --force-with-lease origin release-22.1.2
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+DCO
+DCO
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Process
+Release Process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation release process
+Documentation release process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-01-06 Mainnet Halting Event
+2024-01-06 Mainnet Halting Event
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Changelog Improvement Proposal
+Changelog Improvement Proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-08-04 Value transfer public transactions being rejected by Besu
+2021-08-04 Value transfer public transactions being rejected by Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "159bc603e44943c4a7d38df21d19b537"}

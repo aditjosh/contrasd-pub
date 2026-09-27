@@ -1,0 +1,291 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-6988: Elected block proposer has not been slashed
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-6988: Elected block proposer has not been slashed
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Prevents a slashed validator from being elected as a block proposer
+
+  	Authors	Mikhail Kalinin (@mkalinin)
+	Created	2023-05-04
+	Discussion Link	https://ethereum-magicians.org/t/eip-6988-elected-block-proposer-has-not-been-slashed/14349
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+	Rationale
+    	Modifying get_beacon_proposer_index
+
+
+  
+	Backwards Compatibility
+	Test Cases
+	Reference Implementation
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+Introduces a modification to the consensus layer specification which ensures that slashed validator cannot be elected as block proposer.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+A block proposed by a slashed validator is rejected by the corresponding validity check in the phase0/process_block_header function as defined in the consensus layer specification.
+
+
+At the same time the definition of the phase0/compute_proposer_index allows for a slashed validator to be elected as a proposer. This contradiction effectively leads to a missed proposal if it is supposed to be made by a slashed validator.
+
+
+The impact of the proposed fix in the case of a single slashing on Ethereum Mainnet is negligible but it becomes significant in the case of correlated slashings. For instance, a correlated slashing of 1/10th of a validator set can lead to 1/10th of missed proposals in a number of epochs after the slashing.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+Specification of the proposed change can be found in /_features/eip6988/beacon-chain.md.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+  
+    
+      
+      
+         Modifying get_beacon_proposer_index
+      
+      
+    
+
+
+This function is modified to read a proposer index from a beacon state if a slot of a latest block header is the same as the state.slot.
+
+
+This modification is done to make the function return correct proposer index in the case when the proposer of a given block is being slashed during processing of the block.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+This fix changes proposer election mechanism in a backwards incompatible way and requires a hard fork to be deployed.
+
+  
+    
+      
+      
+         Test Cases
+      
+      
+    
+
+
+The following test cases were added to cover this change:
+
+
+	test_slashed_proposer_rewarded_for_sync_aggregate_inclusion
+	test_slashed_proposer_rewarded_for_attestation_inclusion
+	test_slashed_validator_not_elected_for_proposal
+	test_slashed_validator_elected_for_proposal
+
+
+  
+    
+      
+      
+         Reference Implementation
+      
+      
+    
+
+
+Reference implementation is in the same place as Specification.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+There are no observed security issues introduced by the proposed change.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Mikhail Kalinin (@mkalinin), "EIP-6988: Elected block proposer has not been slashed [DRAFT]," Ethereum Improvement Proposals, no. 6988, May 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-6988.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

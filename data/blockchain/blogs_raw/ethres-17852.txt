@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Quantum secure transactions on Ethereum - zk-s[nt]arks - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Quantum secure transactions on Ethereum
+    
+
+
+      
+          
+            
+              
+              
+                zk-s[nt]arks
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                Bisht13
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 15, 2023,  9:43pm
+                  
+                  
+
+1
+              
+            
+            
+              I was able to make post quantum secure transactions on Ethereum without changing the main layer. The core concept revolves around creating a ZK STARK proof for knowing the preimage of the address corresponding to your wallet, i.e., your public key, and then verifying it on chain.
+
+I have written an extensive blog on the same which one can find on here.
+
+The code and proof of concept is present in this repo.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

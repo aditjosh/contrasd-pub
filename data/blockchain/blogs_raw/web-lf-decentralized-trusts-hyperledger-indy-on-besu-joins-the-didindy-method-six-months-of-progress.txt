@@ -1,0 +1,916 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust’s Hyperledger Indy on Besu Joins the Did:indy Method: Six Months of Progress
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Decentralized Identity
+                            |
+                        
+                            Besu
+                            |
+                        
+                            Hyperledger Indy
+                            
+                        
+                    
+
+                
+                LF Decentralized Trust’s Hyperledger Indy on Besu Joins the Did:indy Method: Six Months of Progress
+ 
+                
+                    Renata Toktar, Hyperledger Indy maintainer and contributor, and lead software engineer at DSR Corporation
+                    |
+                    
+                        Apr 15, 2025
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Six months ago, Hyperledger Indy on Besu officially joined the did:indy method with the introduction of the did:indy:besu identifier. This milestone brought Hyperledger Indy, an LF Decentralized Trust project, closer to becoming a key player in Self-Sovereign Identity (SSI) frameworks, with the potential to be a Trusted List Provider in the European Digital Identity Wallet (EUDI Wallet) under eIDAS 2.0. By aligning with W3C Verifiable Credentials (VC) and Decentralized Identifiers (DID) standards, Indy on Besu enhances interoperability, scalability, and usability for digital identity solutions.
+
+
+Hyperledger Indy on Besu combines the unique business logic of Indy Node with the Ethereum-based Besu framework, another LF Decentralized Trust project, for blockchain consensus. This integration delivers a modular, open-source platform that adheres to Indy standards while offering improved flexibility for blockchain applications and streamlined development for decentralized identity systems.
+
+Six Months of Progress: Update 
+
+In the six months since Indy DID method updating, Indy on Besu has made significant progress. The did:indy:besu method has been widely recognized within the SSI ecosystem, expanding its deployment possibilities. The platform has achieved full alignment with W3C DID and VC standards, ensuring seamless interoperability with other SSI frameworks. Performance benchmarks demonstrated up to 10x the throughput of the original Indy Ledger, making it highly effective for high-frequency operations like credential issuance and revocation. Tools were developed to facilitate the migration of legacy DIDs and Verifiable Credentials while preserving backward compatibility.
+
+Why Hyperledger Indy on Besu?
+
+Since it was introduced in 2017, Hyperledger Indy has been foundational in the development of decentralized identity. As the SSI ecosystem has evolved, however, so have the market needs. Indy on Besu was developed to address technical demands such as the handling of high frequency operations like credential revocations and adding capacity for validation nodes to increase decentralization and network resilience.
+
+By leveraging Besu, it simplifies the architecture, improves scalability and performance, and ensures compatibility with modern SSI standards like W3C DID and VC.
+
+Key advancements include:
+
+	Consensus Mechanism: Utilizes the QBFT (Quorum Byzantine Fault Tolerance) protocol for improved network efficiency, replacing the original RBFT protocol.
+	Identity Transactions: Implements transactions as Solidity-based smart contracts, supporting a DID Registry and AnonCreds Registry for decentralized identity operations.
+	Modular Architecture: Built on Hyperledger Besu, enabling reduced codebase complexity and streamlined development for new features.
+	Permissioned and Permissionless Networks: Offers compatibility with both Indy-style permissioned ledgers and permissionless Ethereum environments.
+	Smart Contract Storage for DID Documents: Stores full DID Documents in smart contract storage, allowing for faster resolution with a single API call.
+	Governance Features: Includes governance mechanisms with roles similar to those in traditional Indy for permissioned ledgers.
+
+
+Key Concepts of Self-Sovereign Identity (SSI) 
+
+Self-Sovereign Identity (SSI) shifts control of digital identities back to individuals, organizations, and devices. At the core of SSI are three primary roles: the Issuer that creates and provides VCs, the Holder is the recipient of the credentials, and the Verifier requests and validates the credentials.
+
+These interactions are supported by Decentralized Identifiers (DIDs) and VCs, which allow users to manage their own identity data without reliance on centralized entities or authorities.
+
+The Indy DID Method enables users to create and manage DIDs on a decentralized ledger, ensuring interoperability across platforms. With the addition of Indy on Besu, the method now includes Besu-specific identifiers with the prefix did:indy:besu. These identifiers leverage Besu’s architecture to provide enhanced capabilities for managing decentralized identities. 
+
+The did:indy:besu identifier emphasizes Indy on Besu’s unique ability to manage decentralized identities effectively:
+
+	Supports traditional API methods such as create, update, and deactivate for managing DID Documents.
+	Requires explicit registration via adding a specific role for a user.
+	Provides state proofs for verifiable DID records, essential for enterprise and government applications.
+
+
+Structure:
+did:indy:besu:<namespace>:<namespace identifier>
+
+Example:
+did:indy:besu:sovrin:staging:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+
+This structure links the DID to an Ethereum account, with an EcDSA key required for creating and managing the associated DID Document.
+
+
+
+Use Cases for Hyperledger Indy on Besu
+
+	Government Digital Identity Programs: Its permissioned ledger design supports compliance with regulatory requirements like eIDAS 2.0 and as a Trusted List Provider for the EUDI Wallet.
+	Enterprise Identity Systems: Enables secure identity verification for supply chain management, customer authentication, and employee systems with improved scalability and reduced operational costs.
+	IoT and Device Identity: Facilitates trusted interactions and secure authentication for IoT devices, supporting autonomous operations with decentralized identifiers.
+	Dynamic Credential Management: High throughput capabilities allow frequent updates for credentials in sectors like education, healthcare, and finance.
+	Decentralized Reputation Systems: Links decentralized identity to reputation management through innovative platforms like Trust over Identity (ToID).
+
+
+Real-World Applications of Hyperledger Indy on Besu
+
+	Brazilian Central Bank Digital Currency (Drex):
+
+
+Drex leverages decentralized identity to enable secure, tokenized retail transactions. It demonstrates how Indy on Besu supports trust between end users and institutions in the financial ecosystem. Source: CPQD
+
+	Brazilian Blockchain Network (BBN):
+
+
+BBN serves as a public experimental blockchain network running on Besu. It is used as a testbed for developing and deploying decentralized identity applications, showcasing Besu’s flexibility and scalability. Source: CPQD
+
+	DSR SSI Toolkit:
+
+
+The DSR SSI Toolkit stands out for its modular design, making it highly adaptable to various SSI use cases. Accredited by the European Blockchain Services Infrastructure (EBSI) for creating, using, managing and verifying VCs, compliant with EU-specific requirements. This ensures the toolkit’s compatibility with global decentralized identity standards and positions it as a trusted resource for building enterprise-grade SSI solutions. Source: DSR Corporation
+
+Getting Started
+
+Visit the GitHub repository here and follow the instructions provided to set up your environment and begin working with Hyperledger Indy on Besu. Whether you're deploying a node, experimenting with the did:indy:besu method, or exploring its use cases, the GitHub page is the first step to the platform. 
+
+Additional useful links:
+
+	Watch the LF Decentralized Trust webinar for insights into its evolution as an eIDAS2/EUDI Compliant solution.   
+	Check out demos for different flows and a running a local network guide.
+
+
+About the author
+
+Renata Toktar is a Lead Software Engineer at DSR Corporation and a maintainer and contributor of Hyperledger Indy. She specializes in SSI and decentralized systems, contributing to scalable SSI and blockchain solutions like Hyperledger Indy on Besu. Renata is also a speaker at events like Blockchain Week, presented to the Faculty of Engineering at the University of Porto (FEUP) and is a facilitator of webinars on SSI and Web3 for the open-source community. Connect with Renata on LinkedIn. 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

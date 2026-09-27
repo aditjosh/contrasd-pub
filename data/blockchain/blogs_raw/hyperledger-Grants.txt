@@ -1,0 +1,555 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Grants - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+	Besu Execution Client Incentive Program
+
+
+
+
+
+	Grants
+
+
+
+
+	Optimism RetroPGF
+
+
+
+
+
+	Optimism RPGF 5
+
+
+
+
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Grants
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Grants
+
+	Matt Nelson (Deactivated)
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: May 31, 2023
+
+
+
+
+
+
+
+
+
+
+ContextÂ 
+Besu is a unique client in that it qualifies for many Mainnet related grants but has an open-source contributor base. This can make splitting grant rewards difficult and inequitable. This document provides a process for applying for grants and determining / splitting rewards from any received grants. This includes compensation for engineers or their parent organizations (if any).Â 
+Related Docs
+CIP Splitter Contract
+Besu Contributor Call where grants were discussed with participants
+Process
+Based on the notes from the Jan 31 2023 contributor call  (participants Danno, Web3Labs, CSI Besu team), the following process was suggested around grants:Â 
+	Work-share decided amongst contributors that are interested in pursuing a grant:
+
+	I.e. CSI pursues this grant and is the only group working on it, taking full split.Â 
+	I.e. CSI, Swirld Labs, ETC Co-Op decide to pursue a grant as the Besu project, then split the grant based on agreed-upon work share.Â 
+	Make use of transparent splitter contracts to divide the funds, using 0xSplits.
+	Agreements in writing shared amongst contributors in advance.Â 
+
+	Arbitration by grantor as needed, since it is their funding. This is a fail-over mode.Â 
+	Transparency is key - discussions to be done on Discord or on calls recorded/with shared notes
+
+
+
+This would allow individual groups to pursue grant opportunities as they see fit. They can retain funds unless sharing the work or making use of code developed by another firm. Retroactive grants should be decided on a case-by-base basis among long-standing contributors.Â 
+The agreement in writing should have the work/revenue splits defined. These will live on the HLF wiki. A new splitter contract should be deployed by the grantor for each grant to be received. Gas can be paid for by recipients as needed for contract deploy. If the grantor cannot interface with a splitter, the primary grantee may deploy one on their behalf and use the splits defined in the contributor grant agreement.Â 
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Programs & Grants
+Programs & Grants
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Second Incentive Proposal
+Second Incentive Proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Near-Term Besu Incentive Program proposal
+Near-Term Besu Incentive Program proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu Execution Client Incentive Program
+Besu Execution Client Incentive Program
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal #3
+Proposal #3
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal #3.5
+Proposal #3.5
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "c84eb9c46e56480a998155a43f483138"}

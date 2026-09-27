@@ -1,0 +1,875 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Blockchain Integration for Climate Emissions Data with Fabric and Cactus – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Cacti
+                            
+                        
+                    
+
+                
+                Hyperledger Mentorship Spotlight: Blockchain Integration for Climate Emissions Data with Fabric and Cactus
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Dec 14, 2021
+                    
+                
+
+            
+
+            
+            
+                
+ 
+ 
+The Hyperledger Mentorship Program is a structured hands-on learning opportunity for new developers who may otherwise lack the opportunity to gain exposure to Hyperledger open source development and entry to the technical community. These Mentorship Spotlights highlight the work done by the Mentors and the Mentees as part of their program participation. Learn more here.
+ 
+ 
+ 
+ 
+ 	Mentorship Project Title	 Blockchain Integration for Climate Emissions Data with Fabric and Cactus
+ 
+	Description	To implement an integration from Hyperledger Fabric utility emissions data channel to issue tokens on an Ethereum network using Hyperledger Cactus.
+	Status	 COMPLETED 
+	Difficulty	 HIGH 
+	Additional Details	Learning Objectives, Expected Outcomes and Project Results available here.
+
+ 
+ 
+Final Project Video
+ 
+Mentee
+ [image_with_animation image_url=”116160″ image_size=”full” animation_type=”entrance” animation=”Fade In” hover_animation=”none” alignment=”” border_radius=”none” box_shadow=”none” image_loading=”default” max_width=”100%” max_width_mobile=”default”] 
+Pritam Singh
+ 
+Indian Insitute of Technology
+ 
+“I contributed to making the carbon accounting application (a Hyperledger Lab from the Hyperledger Carbon Action SIG) more secure, stable and maintainable. To improve the security of the application, I designed and implemented offline signing of Hyperledger Fabric’s transactions with private keys stored in HashiCorp’s vault server. In order to make the application production ready, I used the Hyperledger Cactus connectors for integrating multiple blockchain. By employing test-driven development, I made the codebase more maintainable. Thanks to the guidance of all my mentors, I was able to achieve all my goals for the mentorship. 
+ 
+Through this mentorship, I got the opportunity to see how community driven projects are developed with contributions coming from across the globe.”
+ 
+Mentors
+ [image_with_animation image_url=”116167″ image_size=”full” animation_type=”entrance” animation=”Fade In” hover_animation=”none” alignment=”” border_radius=”none” box_shadow=”none” image_loading=”default” max_width=”100%” max_width_mobile=”default”] 
+Si Chen
+ 
+Open Source Strategies, Inc
+ [image_with_animation image_url=”111627″ image_size=”full” animation_type=”entrance” animation=”Fade In” hover_animation=”none” alignment=”” border_radius=”none” box_shadow=”none” image_loading=”default” max_width=”100%” max_width_mobile=”default”] 
+Peter Somogyvari
+ 
+Accenture
+ [image_with_animation image_url=”115911″ image_size=”full” animation_type=”entrance” animation=”Fade In” hover_animation=”none” alignment=”” border_radius=”none” box_shadow=”none” image_loading=”default” max_width=”100%” max_width_mobile=”default”] 
+Kamlesh Nagware
+ 
+Snapper Future Tech
+ 
+Si Chen
+ 
+“This mentorship addressed the important issue of how to integrate emissions data stored on Hyperledger Fabric with tokens created in Ethereum. Our mentee had strong technical skills and was able to solve many complex technical challenges in making this integration work. Working on open source projects is a great way for mentees to prepare for the real world as it will give them a chance to work with other developers across different areas, figure out existing code and learn the importance of communicating well. For mentors, it’s a great way to introduce new talent into our projects and keep them moving forward.”
+ 
+Peter Somogyvari
+ 
+“Being a mentor on this project gave me unique insight into the fight against climate change and put me in touch a lot of great people who are leading the charge on the latter. Pritam, our mentee, demonstrated excellent analytical and technical skills and a true understanding of the open-source software development principles, which puts him on track to do great things in the future both within and outside of the Linux Foundation/Hyperledger.”
+ 
+Kamlesh Nagware
+ 
+“Blockchain interoperability is a key topic this year with many enterprises focusing research on it. Hyperledger Cactus provides decentralized, secure and adaptable integration between blockchain networks. In this mentorship project, the main focus was on using Hyperledger Cactus for carbon accounting and carbon credit tokenization to support the blockchain-carbon-accounting project, a Hyperlegder Lab from the Climate Action SIG. Completion of this project shows that interoperability is not just a theory but can be achieved with the right design architecture and approach. Thanks to our mentee, Pritam Singh,  for a wonderful job completing this project. And, in the last, thanks to my co-mentors Peter Somogyvari, Cactus Maintainer, for his support and to Si Chen for the proposing this mentorship project.”
+ 
+A special thanks to the Hyperledger member companies for funding this important program. To learn more about our Hyperledger Mentorship Program and how you can participate in our next cohort, head over to our program overview page on the Hyperledger wiki.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

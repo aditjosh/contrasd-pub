@@ -1,0 +1,203 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security Alert 1 [windows+alethzero] | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Security Alert 1 [windows+alethzero]
+Posted by Jutta Steiner on August 7, 2015
+Security
+
+
+
+
+This affects users of Alethzero GUI client on Windows. Users of eth CLI client or not on the Windows platform are unlikely to be affected but should take action detailed below. Users of Frontier command line interface geth are unaffected.
+
+Issue description: While setting privacy permissions on the keys directory, insufficient error handling can cause the key files to not be written; this may be widespread on the Windows platform. As such, current versions of AlethZero and eth may include identities for which there exists no underlying key. Ether Presale Claim functionality of AlethZero may result in funds automatically being transferred to these lost identities.
+
+Workaround: Users of AlethZero version 0.9.39 and earlier should NOT use the “Claim Presale Wallet” function; users of AlethZero and eth versions 0.9.39 and earlier should not attempt to mine or receive funds into their addresses.
+
+Users of eth and AlethZero on all platforms should consider themselves safe once they have confirmed that they do indeed have the underlying key. To check (with your existing setup) run:
+
+ethkey.exe --list
+
+You may assume that all listed addresses do indeed have a key behind them and are not suffering from this issue.
+
+Remedial action taken by Ethereum: New hotfix released with changes:
+
+
+	
+Identities for which there are no underlying keys are no longer displayed.
+
+
+	
+Key files are written regardless of whether setting directory permissions succeeded.
+
+
+
+
+Fix: Versions 0.9.40 and onwards, available from circa 2015.08.07 18:30 CEST.
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

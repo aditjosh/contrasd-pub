@@ -1,0 +1,260 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Identity Mixer MSP configuration generator (idemixgen) — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts
+	Getting Started - Install
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides	Membership Service Providers (MSP)
+	Certificates Management Guide
+	Taking ledger snapshots and using them to join channels
+	Using a Hardware Security Module (HSM)
+	Channel Configuration (configtx)
+	Endorsement policies
+	Pluggable transaction endorsement and validation
+	Access Control Lists (ACL)
+	MSP Implementation with Identity Mixer
+	Identity Mixer MSP configuration generator (idemixgen)	Directory Structure
+	CA Key Generation
+	Adding a Default Signer
+
+
+
+	The Operations Service
+	Metrics Reference
+	External Builders and Launchers
+	Running Chaincode as an External Service
+	Error handling
+	Logging Control
+	Securing Communication With Transport Layer Security (TLS)
+	Configuring and operating a Raft ordering service
+	Migrating from Kafka to Raft
+	Bringing up a Kafka-based Ordering Service
+
+
+
+	Upgrading to the latest release
+	Commands Reference
+	Architecture Reference
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Operations Guides
+	Identity Mixer MSP configuration generator (idemixgen)
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+Identity Mixer MSP configuration generator (idemixgen)¶
+
+This document describes the usage for the idemixgen utility, which can be
+used to create configuration files for the identity mixer based MSP.
+Two commands are available, one for creating a fresh CA key pair, and one
+for creating an MSP config using a previously generated CA key.
+
+
+Directory Structure¶
+
+The idemixgen tool will create directories with the following structure:
+
+- /ca/
+    IssuerSecretKey
+    IssuerPublicKey
+    RevocationKey
+- /msp/
+    IssuerPublicKey
+    RevocationPublicKey
+- /user/
+    SignerConfig
+
+
+
+
+
+The ca directory contains the issuer secret key (including the revocation key) and should only be present
+for a CA. The msp directory contains the information required to set up an
+MSP verifying idemix signatures. The user directory specifies a default
+signer.
+
+
+
+CA Key Generation¶
+
+CA (issuer) keys suitable for identity mixer can be created using command
+idemixgen ca-keygen. This will create directories ca and msp in the
+working directory.
+
+
+
+Adding a Default Signer¶
+
+After generating the ca and msp directories with
+idemixgen ca-keygen, a default signer specified in the user directory
+can be added to the config with idemixgen signerconfig.
+
+$ idemixgen signerconfig -h
+usage: idemixgen signerconfig [<flags>]
+
+Generate a default signer for this Idemix MSP
+
+Flags:
+    -h, --help               Show context-sensitive help (also try --help-long and --help-man).
+    -u, --org-unit=ORG-UNIT  The Organizational Unit of the default signer
+    -a, --admin              Make the default signer admin
+    -e, --enrollment-id=ENROLLMENT-ID
+                             The enrollment id of the default signer
+    -r, --revocation-handle=REVOCATION-HANDLE
+                             The handle used to revoke this signer
+
+
+
+
+
+For example, we can create a default signer that is a member of organizational
+unit “OrgUnit1”, with enrollment identity “johndoe”, revocation handle “1234”,
+and that is an admin, with the following command:
+
+idemixgen signerconfig -u OrgUnit1 --admin -e "johndoe" -r 1234
+
+
+
+
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

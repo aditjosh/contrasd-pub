@@ -1,0 +1,843 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Weekend Update: This Week’s Round-up of Remote Blockchain Learning Resources – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Weekend Update: This Week’s Round-up of Remote Blockchain Learning Resources
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Feb 26, 2021
+                    
+                
+
+            
+
+            
+            
+                Welcome to the Weekend Update. Our goal with this weekly post is to share quick updates about online education, networking and collaboration opportunities and resources for the open source enterprise blockchain community. 
+ 
+If you have suggestions for resources or events that we should spotlight in a future Weekend  Update, let us know here using #HLWeekendUpdate. 
+ 
+Hyperledger In-Depth: An hour with Digital Asset
+ 
+Anthony Lusardi of Digital Asset will take you on a journey to learn about “UTXO and Account models: The good, the bad, and the costly.” The discussion will cover UTXO and Account models, what they are, how they work, and how Digital Asset is leveraging UTXOs with the smart contract language Daml to provide reliable, resilient, and cost-effective distributed applications. The first half of the talk will be a high level walkthrough of the UTXO and account-based models where anyone with an interest in blockchain-based applications can follow along. After that, Anthony will dive into some more of the technical considerations and how crucial of a design choice these two options are. You’ll walk away with a deeper understanding of design considerations, why you might want to use UTXOs, and how to choose between the two.
+ 
+Tune on Wednesday, March 3, at 2PM EST. For more information and to register, go here.
+ 
+Solution Brief: Decentralized ID and Access Management (DIAM) for IoT Networks
+ 
+Hyperledger’s Telecom Special Interest Group in collaboration with the Linux Foundation’s LF Edge initiative has published a solution brief addressing the issues concerning the centralized ID and Access Management (IAM) in IoT Networks and introducing a distributed alternative using Hyperledger Fabric. 
+ 
+Read the brief here.
+ 
+Review of Five Popular Hyperledger DLTs- Fabric, Besu, Sawtooth, Iroha and Indy
+ 
+Linux Foundation Training recently published an overview of Hyperledger’s distributed ledger platforms with details on key features, added resources and more. See the post here.
+ 
+Virtual Meetups
+ 
+	Saturday, February 27, at 10:00 UTC / 13:00 AST: Hyperledger Riyadh hosts “Digital Government Transformation and Private Blockchain Networks”
+	Thursday, March 4, at 17:00 UTC / 18:00 CET: Hyperledger Madrid hosts “La nueva Red H+ de Alastria basada en Hyperledger Fabric” (Spanish)
+
+ 
+See the full Virtual Meetup schedule here. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

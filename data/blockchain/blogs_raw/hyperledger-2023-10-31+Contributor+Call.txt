@@ -1,0 +1,784 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2023-10-31 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+	2023-06-20 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-06-06 Contributor Call
+
+
+
+
+
+	2023-05-23 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-05-09 Contributor Call
+
+
+
+
+
+	2023-04-25 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2023-04-11 Contributor Call
+
+
+
+
+
+	2023-03-28 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-03-14 Contributor Call
+
+
+
+
+
+	2023-02-28 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-02-14 Contributor Call
+
+
+
+
+
+	2023-01-31 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-01-31 Contributor Call - AMEA Reschedule
+
+
+
+
+
+	2023-01-17 Contributor Call
+
+
+
+
+
+	2023-01-03 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-07-11 Contributor Call
+
+
+
+
+
+	2023-07-18 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2023-08-01 Contributor Call
+
+
+
+
+
+	2023-08-15 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-09-05 Contributor Call - EMEA Friendly Time
+
+
+
+
+
+	2023-09-12 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-10-02 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2023-10-10 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-10-31 Contributor Call
+
+
+
+
+
+	2023-11-07 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-11-28 Contributor Call
+
+
+
+
+
+	2023-12-05 Contributor Call - APAC Friendly Time
+
+
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2023-10-31 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2023-10-31 Contributor Call
+
+	Matt Nelson (Deactivated)
+
+
+
+	Simon Dudley
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Nov 02, 2023 by Simon Dudley
+
+
+
+
+
+
+
+
+
+
+Agenda
+	Â Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Hyperledger Finserv Workshop
+	New maintainers!!Â 
+
+
+	Release updates	NOTE docs releaseÂ process changeÂ for docusaurus - requires a PR (not just a github release)
+	Â 23.10.1 is out - optional updateÂ 
+
+
+	Work Updates	Bonsai everywhere planning	Archive-friendly Bonsai mode
+	BFT Testing
+
+
+	Modular consensus working group prodding
+
+
+	Other Business	Proposal: Discord Server Pub/Priv Channel SplitÂ -Â unanimous at this stage for the "besu enterprise" channel name	"besu-enterprise" as a great name for private/enterprise use-cases
+	Landed on two recommendations in Matt N's comment on the proposal aboveÂ 
+
+
+	DEBUG Log Improvement ProposalÂ - reminder about this one, looking for feedback. If no major objections will make it a policy and continue submitting PRs to make our current logging conform.
+
+
+	Open Forum	Renata Toktar - Presentation on Indy	Feedback on Besu	Verification keys â†’ using Ethereum 1 keys with a huge amount of signatures (performance issue on EthSigner?)Â 
+	Limits for amount of data in smart contracts
+	Docs were really good for setting up the networkÂ 	Spent some time developing specific scripts for local setup, making certain things configurableÂ 
+
+
+	Performance usage on big Objects in BesuÂ 	Load tests â†’ will share results later onÂ 
+
+
+
+
+
+
+
+
+	Future Topics	/add item/
+
+
+
+Recordings
+
+
+    
+
+Playlist: https://www.youtube.com/playlist?list=PL0MZ85B_96CHpqsKmljUK8HB98wK67RjC
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2022-10-25 Contributor Call
+2022-10-25 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2019-10-01 Contributor call
+2019-10-01 Contributor call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-09-29 Besu Contributor Call
+2020-09-29 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-09-13 Contributor Call - APAC
+2022-09-13 Contributor Call - APAC
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "0f7bd40a3dc64ae4890e60d3fd706964"}

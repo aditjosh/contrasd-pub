@@ -1,0 +1,863 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Privacy By Design in Hyperledger Indy
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Indy
+                            
+                        
+                    
+
+                
+                Privacy By Design in Hyperledger Indy
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Sep 12, 2018
+                    
+                
+
+            
+
+            
+            
+                The Scope and Limits of Indy’s Privacy Tech
+ 
+Guest post: Daniel Hardman, Evernym
+ 
+Privacy is a hot topic in blockchain circles–and across the entire digital landscape. GDPR, ePrivacy, and similar regulatory regimes have the world thinking hard and smart. Modern systems must bake privacy into their DNA; it can’t be bolted on after-the-fact. I’ve written elsewhere about why this is true, and how it must be done–and I’ve spent the last couple years helping Hyperledger Indy embody all the privacy goodness I know. I’m encouraged to hear a swelling chorus of blockchain practitioners opine that certain things must NOT go on a blockchain.
+ 
+Perhaps you have heard a claim that Indy “solves” privacy. Or perhaps you’ve seen skeptics roll their eyes, muttering about how we’re all going to be correlated by the surveillance state, no matter what we do.
+ 
+The truth is that both of these perspectives distort reality. Indy does offer some wonderful features to aid privacy, and these features matter! But institutions are certainly going to know some things about us, no matter what Indy does. Indy can minimize this in exciting ways. Nonetheless, what privacy we have, now or in the future, will emerge from a combination of technology, social and legal constructs, market forces, and human behavior; it can’t be trivialized as a tech problem.
+ 
+What “Privacy Tech” Are We Talking About?
+ 
+Today, Hyperledger Indy’s approach to privacy includes elliptic curve cryptography, pairwise DIDs, semi-trusted agents, agent-to-agent communication using techniques such as libsodium’s sealed box and authenticated encryption, zero-knowledge proofs, a separation between credentials and proofs, privacy-preserving credential revocation features, an affinity for data and key storage at the edge, and a carefully constructed wallet interface that manages personal secrets with industry best practices. In addition, privacy-preserving agent (device) revocation has been demonstrated as a proof of concept.
+ 
+Indy’s roadmap includes additional privacy-enhancing features such as a user-friendly SSI tool (mobile app) with smart and safe defaults, microledgers, sophisticated policy and/or AI for agents, mix networks for transaction submitting and agent routing, and so forth.
+ 
+Some of these technologies exist in other identity technologies, but Indy combines more of them, in far more powerful ways, than any similar technology I know.
+ 
+What All This Tech Does NOT Deliver
+ 
+Except for people who live in remote, technology-scarce  places, all of us are constantly observed and recorded. Google maps may have a picture of our front door; cell phone towers track the location of our mobile devices; credit card companies see what we spend; closed-circuit cameras watch us on the road or subway.
+ 
+In such an environment, much will be known about us, even if we use Indy to prove things in zero knowledge. And, if we choose to use Indy to disclose something identifying–our email or phone number or name+birthdate, for example–then the disclosing interaction is correlatable to a much bigger digital footprint, no matter what fancy math did the proving. Even less perfect correlators like first name + fuzzy place + fuzzy time may correlate us, given sufficient context.
+ 
+It might be tempting to say, then, that there’s no point to Indy’s elaborate privacy posture. But there is more to the story.
+ 
+What Hyperledger Indy Privacy DOES Deliver
+ 
+Hyperledger Indy allows you to construct interactions where the degree of disclosure is explicit and minimal–much smaller than what was previously possible. Nothing about the mechanics of connecting, talking, or proving in Indy is leaky with respect to privacy; vulnerabilities that emerge must come from the broader context. No other technology takes this minimization as far as Indy does, and no other technology separates interactions from one another as carefully. If privacy problems are like a biohazard, Indy is the world’s most vocal champion of wearing gloves and using a sharps container for needles–and it provides the world’s best latex and disinfectants.
+ 
+Of course, this does not give perfect protection. Like a needle stick, mistakes can ruin Indy’s carefully sanitized interactions, and contamination is always a possibility. In 2017, the layouts of US army bases in some of the most dangerous locations in the world were compromised because soldiers had been using the Strava running app to track where they exercised (https://wapo.st/2J6DQqU). If this can happen when stakes are so high, and when the organization is as careful as a sophisticated army, then similar fiascos will undoubtedly occur, both with and without Indy technology, for the foreseeable future. These are serious problems that are not to be underestimated.
+ 
+Despite the imperfect guarantees, doctors consider it worthwhile–even vital–to wear gloves. And despite risk, Indy’s privacy tech can deliver real value, if we are careful about constraining behavior and understanding use cases. Any interaction that does not leak is a tiny bit of personal, private space–and chaining such interactions together can accrue significant benefits. Indy makes it possible to prequalify for a loan at a thousand banks, in a way that proves credit worthiness, income, and citizenship, without forfeiting privacy. Used correctly, it can insulate cautious whistleblowers; it can enable secure, private voting; it can make online dating safer. Many other use cases exist. In each situation, we must carefully assess privacy beyond the narrow context of Indy’s proving mechanics. Gloves are less helpful when a disease vector is airborne; the government still needs to know who you are when you pay your taxes.
+ 
+Intentions And Incentives
+ 
+Besides discussing what protections Hyperledger Indy offers on the technical level, and what ways there might be to defeat such protections, we can also make an argument that architectures, algorithms, data models, and cryptography always carry a certain “intention” towards the parties we interact with. In our case, this intention is to maintain the individual’s privacy, sovereignty, etc. Whether or not the technology can strictly enforce this intention, or to what extent, is an important question, but not the only argument for building it in a certain way.
+ 
+If we use pairwise DIDs and zero-knowledge proofs, the message is clearly “don’t try to correlate me,” even if you could find a way to do it if you try hard enough. An HTTP Do-Not-Track header says “do not track me,” but it doesn’t offer any actual protection from tracking. The VRM community has been talking about user-defined terms for a long time. In a relationship, you can express “don’t use my data for advertising,” or “delete my data after 14 days,” or “use my data for research, but not commercially.”
+ 
+Simply expressing these intentions in code and architecture has value by itself. It bears a message that privacy and sovereignty “should be honored,” even if it cannot always be guaranteed technically that it will be. Over time, we expect that through regulation, trust frameworks, reputation, and similar mechanisms, not honoring such intentions will be discouraged. Of course we must always communicate clearly the limits of intentions and guarantees, lest we create a false sense of security that can lead to severe consequences.
+ 
+One of the main reasons for the growth of Internet’s re-decentralization movement (Diaspora, Bitcoin, etc.) was not only to achieve more privacy and independence, but also to build architectures that better mirror the way we want society to work in the real world (not client/service aka. master/slave). At the same time, the point of view that “technology is neutral” is getting less prevalent, being more and more replaced by an assumption that “technology has built-in values.” From this perspective, privacy tech is valuable not only as a technical defensive mechanism, but also to make a point, to convey an intention.
+ 
+Importantly, Indy’s technology also enables the transformation of privacy incentives. Companies that once stored PII can now store an opaque identifier for a customer, and contact the customer’s agent to learn more–then throw away the data after they use it. This has the potential to eliminate many centralized data troves as hacking targets, and it empowers people instead of impersonal and conflicted corporate guardians. Indy also provides meaningful advances in the world’s answers to privacy regimes like GDPR. We believe that in the future, social, software, and legal constructs will evolve to take advantage of the privacy features offered by Hyperledger Indy, and that this will lead to ever more creative types of business models and digital interactions not possible before.
+ 
+ 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

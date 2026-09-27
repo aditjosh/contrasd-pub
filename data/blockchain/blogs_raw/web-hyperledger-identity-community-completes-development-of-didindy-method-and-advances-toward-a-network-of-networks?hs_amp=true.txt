@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger identity community completes development of DID:Indy Method and advances toward a network of networks – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger identity community completes development of DID:Indy Method and advances toward a network of networks – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | May 2, 2022 9:00:00 AM 
+        
+
+        
+          New Hyperledger Indy updates pave the way for verifiable credentials to be issued and read on different networks, affirming Hyperledger as the most advanced framework for interoperable, decentralized identity
+ 
+Earlier this year, the Government of British Columbia announced the “Indy DID Method Code With Us” challenge. The goals were to align the content that can be written in the DIDDocs published on Hyperledger Indy networks with the current World Wide Web Consortium (W3C) Decentralized Identifier (DID) Specification and to add a namespace element to DIDs (and other object identifiers) published on Hyperledger Indy networks, so users know on which of the many Hyperledger Indy networks the DID was created.
+ 
+Hyperledger Indy is an open source project housed at the Hyperledger Foundation providing the codebase to create distributed networks, purpose-built for SSI and verifiable credentials. Networks built on Indy are some of the most mature and tested networks with self-sovereign identity (SSI) capabilities; but since they were developed before the publication of the World Wide Web (W3C) DID Specification, they needed to be brought into alignment. 
+ 
+While the Indy DID Method began as a community development effort within Hyperledger Indy, it needed a push to completion; hence the Code With Us challenge from the government of British Columbia. Indicio was awarded the challenge and went on to develop and complete several of the remaining components.
+
+The result is that a credential issued using any Hyperledger Indy network (such as Indicio, Sovrin, Findy, Bedrock, IdUnion, etc.) can be processed by any verifier. This is because the objects in the verifiable presentation reference the Hyperledger Indy network used by the issuer. The Indy:DID Method lays the groundwork to make this possible.
+ 
+This advancement in interoperability is significant. While issuers still need to be anchored in the specific Indy ledger of their choice, holders can seamlessly receive verifiable credentials from issuers rooted in different Hyperledger Indy networks, and be able to create verifiable presentations from any combination of those credentials. Likewise, verifiers will be able to verify presentations that include claims derived from credentials rooted in multiple Indy networks. The Indy:DID Method paves the way for Hyperledger Indy credentials to scale by allowing Indy networks to seamlessly interoperate, creating a global “network of networks” effect.
+ 
+With the groundwork complete, networks and agent frameworks now need to incorporate the Indy:DID Method. This community adoption will increase the viability of the Indy and Aries project stack and position it to be the globally dominant way to issue and share verifiable credentials in a multi-ledger world.
+ 
+To learn more about did:indy and the next steps for implementation, you are welcome to join the leading contributors from Indicio and BCGov at the Hyperledger Identity Implementers Call taking place, Thursday, May 5, 8:00 AM US Pacific (3pm UTC)
+ 
+Note: 
+ 
+The Indicio team would like to thank BC Gov for funding this work and Dominic Wörner, another contributor to the Code With Us challenge, for his work on Indy VDR.
+ 
+	Where to find the work:
+  	PR to Indy Node: https://github.com/hyperledger/indy-node/pull/1740
+	PR to Indy VDR: https://github.com/hyperledger/indy-vdr/pull/84
+	Indy HIPE about did:indy: https://github.com/hyperledger/indy-hipe/tree/main/text/0164-did-indy-method
+	Demo: https://github.com/Indicio-tech/did-indy-demo
+
+
+	Where to ask questions:
+  	Daniel Bluhm (Indy Node questions)
+    	Discord: dbluhm#9676
+	GitHub: https://github.com/dbluhm
+
+
+	Dominic Wörner (Indy VDR questions)
+    	Discord: domwoe#9301
+	https://github.com/domwoe
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

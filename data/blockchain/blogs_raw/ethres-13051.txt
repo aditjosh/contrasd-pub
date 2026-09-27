@@ -1,0 +1,394 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rollup as a Service: Opportunities and Challenges - Layer 2 - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Rollup as a Service: Opportunities and Challenges
+    
+
+
+      
+          
+            
+              
+              
+                Layer 2
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                nanfengpo
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    July 13, 2022, 10:05am
+                  
+                  
+
+1
+              
+            
+            
+              TLDR: This article discusses the opportunities and challenges in building “Rollup as a Service” for Web3 applications.
+
+
+RaaS Opportunities, From Multi-chain to Multi-rollup
+
+Cosmos and Polkadot adopt the multi-chain structure for their scaling solutions. Their blockchain SDK, Tendermint and Substrate, are applied by many projects to customize blockchains. These blockchains use cross-chain protocols like Cosmos IBC, Polkadot XCM, and bridges to interact with each other. However, such protocols are difficult to guarantee high security, which leads to frequent exploit events. As a result, cross-chain protocols did not work as expected, resulting in relative independence between blockchains.
+
+
+
+cosmospolkadot1381×520 143 KB
+
+
+
+From Cosmos Network - Internet of Blockchains and Getting Started · Polkadot Wiki
+
+Later, a more secure scaling technology called rollup emerged. Rollup compresses Layer 2 transactions into a “batch”, uploads it to Layer 1, and proves the validity of state transition on Layer 1 through Fraud Proof (Optimistic-rollup) or Validity Proof (ZK-rollup). Since data availability and state validity are verified on Layer 1, rollup obtains the same level of security as Layer 1, ensuring that assets can be safely transferred between Layer 1 and Layer 2.
+
+So far, many rollup projects such as Arbitrum, Optimism, ZkSync, and StarkNet have already been in use. In addition to these universal rollups, there also came up some application-specific rollups, including StarkEx rollup SDK-based dYdX (order book DEX) and DeversiFi (AMM DEX), etc. Although the rollup technology is not yet fully developed, and few teams have mastered it, there is still strong demand for this technology on the market.
+
+
+
+1001×854 158 KB
+
+
+
+Universal and application-specific rollups listed at https://l2beat.com/
+
+Rollup provides a standalone execution environment with high TPS, low gas, and access to all assets from Layer 1, which helps applications on the blockchain scale from DeFi to more general fields like games and social networks. We expect rollup will gradually become a sort of service provided to Web3 applications, i.e., Rollup as a Service (Raas). Some projects are now heading in this direction. Ethereum’s rollup-centric roadmap and StarkNet’s Layer 3 architecture both demonstrate an application-specific multi-rollup future.
+
+
+
+700×421 128 KB
+
+
+
+StarkNet’s architecture described in Fractal Scaling: From L2 to L3. It’s layers all the way down | by StarkWare | StarkWare | Medium , where Layer3 are multiple application-specific rollups.
+
+
+Challenges in Building RaaS
+
+Rollup still faces the following challenges in providing RaaS.
+
+
+Engineering
+
+First of all, let’s talk about the rollup SDK. One can deploy some configuration and launch rollups quickly based on an SDK. The open-source rollups are better choices for SDK development to avoid reinventing the wheel. For Optimistic-rollups, both Arbitrum and Optimism are open-source. From L2beat, we can see that both Metis and Boba are developed on Optimism’s code base. In contrast, ZK-rollups are not very open-source. ZkSync releases complete code for v1 but merely the contract code for v2 (zkEVM enabled). StarkEx releases only the contract code and provides other modules to third parties through a closed source. StartNet provides code solely in Cairo.
+
+Though Optimistic-rollups have more mature codebases and better support for EVM, the inherent characteristics of fraud-proof leave them far behind ZK-rollups in terms of finality and security. A ZK-rollup Layer 2 transaction is finalized immediately after being proved on Layer 1, while an Optimistic-rollup Layer 2 transaction requires several days before the finalization due to the challenge period. On the other hand, Optimistic-rollups need more assumptions for security: at least 1-out-of-N honest operators for fraud-proof submission and a censorship-resistant Layer 1 for fraud-proof acceptance.
+
+In sum, we can quickly build an Optimistic-rollup SDK right now based on the existing open-source code, but a ZK-rollup SDK seems more attractive in the long run. Of course, in addition to the codebase issue, a design of ZKVM, i.e., ZKP-provable smart contracts, is also in urgent need. Currently, a variety of ZKVM solutions are under development. The methods of each solution are still not unified.
+
+
+
+1321×668 112 KB
+
+
+
+A comparison of ZKVMs by Ye Zhang’s talk " An overview of zkEVM "
+
+
+Performance
+
+As mentioned, batched transactions are required to send to Layer 1 in a rollup, so the TPS of the rollup is limited by Layer 1’s storage space, aka the Data Availability (DA) problem. Ethereum has proposed a series of Layer 1 storage scaling solutions, including EIP-4488, Proto-Danksharding, and the full Danksharding (currently seeking proposals). Besides the scaling for Layer 1, many projects like Celestia and Polygon Avail are also attempting to expand the storage capacity for Layer 2. However, these solutions’ security and ease of use still need further examination.
+
+
+
+761×245 19.2 KB
+
+
+
+How the block size will be increased by EIP-4488 and Proto-danksharding in Vitalik’s " Proto-Danksharding FAQ "
+
+In terms of ZK-rollup, the TPS is additionally limited by ZKP calculation speed. Paradigm and 6block have different hardware choices on GPU, FPGA, and ASIC to accelerate the calculation. In addition, 6block compares several software architectures for ZKP distributed computing, including mining pool, proof aggregation, and DIZK. ZPrize, an upcoming competition, also incentivizes developers to find valuable solutions to accelerating ZKP calculation.
+
+Ensuring the high availability of the rollup service is another critical issue. Current rollups on the market are almost centralized, i.e., only specific operators can submit batches and proofs to Layer 1. This is a vulnerable design since the SPOF (single point of failure) will easily lead to service unavailability. Arbitrum has suffered hours of downtime on several occasions due to software bugs and hardware failures. Many projects are working on decentralizing rollups to avoid SPOF, including zkSync, StarkNet, Polygon Hermes, PoVP, and taikocha.in.
+
+
+Economics
+
+A good economic model is under consideration for RaaS. For now, the profits of service providers mainly come from the transaction fee gap between Layer 1 and Layer 2, i.e., charging fees from Layer 2 as the revenue and paying fees to Layer 1 as the costs. Optimism has issued its governance token, but it’s still not a good way to maintain a sustainable income.
+
+
+
+Rollups and their fees listed on https://l2fees.info/
+
+Most of the existing rollups are third-party services built on the blockchain, so their primary income is merely from the transaction fee. However, we can get out of this mindset and regard rollups as native services the blockchain provides. Like Cosmos’ and Polkadot’s design, the whole system contains one blockchain and multiple rollups attached to the blockchain, forming a decentralized network with infinite scalability. In this way, the network can reward both Layer 1 blockchain validators and Layer 2 rollup operators with the same native token. This idea is similar to “enshrined rollups” proposed by Polynya and is worth further research.
+
+
+Functionality
+
+Like the cross-chain protocols in Cosmos and Polkadot, a cross-rollup protocol is necessary when multiple rollups are deployed on one blockchain. Users can also withdraw their assets from Layer 1 and deposit them to another rollup, but the process requires additional fees on Layer 1 and more operation steps. Some third-party cross-rollup bridges leverage liquidity pools to help users transfer between rollups instantly, but these bridges are as vulnerable to exploits as cross-chain bridges.
+
+
+
+A future blockchain architecture described by Vitalik in " Endgame ", with multiple rollups and cross-rollup bridges among them
+
+Ideally, the blockchain should provide a native cross-rollup bridge maintained by its validators for security. Moreover, such a bridge should preferably support synchronous message calls from one rollup to another, i.e., a user on one rollup can directly call the contract on another. This will maximize user experience in a multi-rollup architecture. The underlying technology is complicated, but we look forward to its emergence.
+
+
+Conclusion
+
+This article describes RaaS, i.e., providing rollup services to DApps. Apparently, blockchain will usher in a multi-rollup future for Web3. Anyone can quickly launch their rollup with an SDK and run applications on the rollup with high performance and low costs. After discussing all the possible challenges faced by RaaS, we finally came up with the idea of native rollups, which will help the blockchain reward rollup validators with its native token and provide a cross-rollup bridge maintained by its validators. We plan to study it further carefully and elaborate on it in future articles.
+
+            
+
+
+            
+              
+15 Likes
+            
+
+            
+                
+
+                      
+                        Implementing native rollups with precompiled contracts
+                        
+
+
+                        The ZK/OP Debate in RaaS: Why ZK-RaaS Takes the Lead
+                        
+
+            
+              
+                shakeib98
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 13, 2022,  5:40pm
+                  
+                  
+
+2
+              
+            
+            
+              After reading the post I have one thought that Rollmint (Celestia’s SDK for rollup) is similar to this? Would you agree on it?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                nanfengpo
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 16, 2022,  3:51am
+                  
+                  
+
+4
+              
+            
+            
+              Yes, there are some similarities, for example we both provide an SDK to help users build rollup quickly, but the platform where Native Rollup is mentioned in this article is more focused on a fully functional chain rather than just a DA layer, which would include things that celestia does not, such as unified consensus, a unified economic model, and native cross-rollup communication
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                madhavg
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 17, 2023,  7:59am
+                  
+                  
+
+5
+              
+            
+            
+              yo was curious where does fuel vm fit into the landscape?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                neelsomani
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 30, 2023,  5:44am
+                  
+                  
+
+6
+              
+            
+            
+              Heads up that this is what we’re building at Eclipse: https://twitter.com/EclipseFND
+
+We don’t offer a rollup SDK at this point but might add one in the future as the customizations we support become more sophisticated.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

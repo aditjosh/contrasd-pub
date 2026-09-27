@@ -1,0 +1,415 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KU23: High-Performance Threshold ECDSA
+
+
+
+
+
+
+Dfns Secures $16M Series A Funding – See the Full Announcement
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+
+
+
+
+Resources
+	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+
+
+
+PricingGet started
+
+Talk to sales
+
+Get started
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+
+	Blog
+
+	Research
+
+	KU23: High-Performance Threshold ECDSA
+
+ResearchKU23: High-Performance Threshold ECDSA
+Jonathan Katz
+
+
+
+
+November 5, 2024
+
+Read time: 
+
+
+
+
+Introducing KU23, the new high-performance threshold signature protocol from Dfns Labs. Built for secure, high-throughput digital asset transactions on ECDSA blockchains, KU23 makes it possible to bring MPC security to use cases in need for speed.
+Threshold signature schemes play a pivotal role in safeguarding digital assets by distributing the private keys controlling those digital assets across multiple environments. Dfns Labs is proud to announce a new, high-performance threshold signature scheme for ECDSA (the Elliptic Curve Digital Signature Algorithm) signatures, designed by Jonathan Katz (former Chief Scientist of Dfns) and Antoine Urban, in 2023. This protocol—here called KU23—is tailored to allow for both high-throughput and low-latency signature generation in key management networks, as operated by Dfns, under the assumption that a majority of the servers in the network remain uncompromised. 
+This blog, based on my talk at the DeCompute 2024 conference, explains key management networks in general as well as the high-level design of this new MPC protocol. Further details, including a proof of security, will be available in a forthcoming whitepaper. 
+
+MPC inside key management networks
+At the heart of digital asset security lies the challenge of key management. Historically, key management systems had a single point of failure, making them vulnerable to breaches, theft, or operational errors. To mitigate this, cryptographers turned to threshold cryptography, a mechanism that distributes control of a key across multiple parties. In a t-out-of-n threshold signature scheme, a secret key is distributed across n independent servers, such that some quorum of at least t of the servers can interact to collaboratively generate a signature using that key, while an adversary compromising up to t-1 of those servers remains unable to generate signatures (and, in particular, learns nothing about the key itself). Many such systems also incorporate distributed key generation (DKG) so the key is never located in any one location at any point in time.
+In traditional deployments of threshold signature schemes involving multiple private keys, each key is stored in a logically separate and independent way, and cryptographic operations done using each key are completely independent too. In contrast, a key management network involves a dedicated set of n servers that collectively share and perform cryptographic operations using multiple private keys. Dfns operates a key management network that allows it to securely host millions of keys on behalf of multiple applications. I invite you to listen to my talk at DeCompute 2023 to learn more about the security differences between the user-hosted key (UHK) and network-hosted key (NHK) models.
+The core innovations of the KU23 protocol
+The KU23 protocol is optimized for key management networks, and takes advantage of the fact that such networks involve a fixed set of servers collectively holding multiple keys. This architectural insight allows KU23 to amortize cryptographic operations across different keys, resulting in much better efficiency in large-scale, multi-user environments. 
+Specifically, the KU23 protocol is designed to utilize batch generation of key-independent pre-signatures, something that is especially beneficial—and, in fact, critical—for threshold cryptography in key management networks.The overall system operates in two phases:
+	During the offline phase (which can be run during non-peak hours when the load on the network is low), servers collaboratively run a protocol to compute a batch of N presignatures for some large number N. This phase is relatively expensive, but (i) it is done well before a signature is requested (so it does not affect the latency of signature generation) and (ii) its cost will be amortized over N signatures that will be generated using these presignatures (so the amortized throughput of signature generation is still high).
+	During the online phase, the system responds to requests to sign a particular message using a particular key by generating the corresponding signature using the next available presignature. Nota bene: a pre-signature is securely deleted once it is used. It is crucial here that pre-signatures are key-independent, meaning that each presignature can be used to generate a signature using any key. In prior work, pre-signatures were tied to a specific key, making them useless in general unless one was willing to pay the cost of generating a pre-signature for every possible key. The online phase is extremely fast, meaning that signature requests can be handled nearly instantaneously once pre-signatures have been computed. When the supply of available presignatures is exhausted (i.e. when N signature requests have been handled), the servers return to the offline phase.
+
+To achieve high-throughput generation of key-independent presignatures, the KU23 protocol is tailored for the honest-majority setting where it is assumed that strictly fewer than half of the servers in the key management network are compromised. To use, this seems to be a reasonable security assumption for key management networks where the servers are hardened (to make compromise difficult) and constantly monitored (so they can be rebooted if adversarial compromise is detected).
+A big step for the performance of MPC
+The KU23 protocol sets new standards for performance of threshold ECDSA.
+	Online Signing: The latency for handling a signature request remains similar or slightly better to other state-of-the-art protocols like DKLS23, with computation times measured in fractions of a millisecond. We stress, however, that the KU23 protocol is able to support such signing times for all keys hosted by the network, not only specially-designated “high-frequency” keys.
+	Offline Presignature Generation: The most striking performance improvement lies in presignature generation, where the KU23 protocol can generate a batch of N=10,000 key-independent presignatures in an amortized time of just 1.3 ms per presignature.
+
+KU23 is optimized for high-frequency transaction applications where speed is essential, like trading, payments, and ticketing. Built in Rust, this patented protocol powers the Dfns key management network, which manages over 10 million keys and signs $1 billion in transactions monthly. Unlike CGGMP21, KU23 is still in development at Dfns and hasn’t yet been integrated into Lockness, our project with the Linux Foundation. However, we plan to open-source KU23 in the coming years, lifting the patent and moving governance to LF Decentralized Trust as part of our commitment to transparency in cryptography.
+
+
+Authors
+
+Jonathan Katz
+Scientific Advisor
+
+Dr. Jonathan Katz is a globally recognized professor and researcher in cryptography, affiliated with the University of Maryland. He is a Fellow of both IACR and ACM, as well as a recipient of the prestigious Humboldt Research Award. Dr. Katz has authored numerous seminal books in computer science and cryptography, which have been cited over 30,000 times. Dr. Katz earned a BSc degree in Mathematics from MIT and a PhD in Computer Science from Columbia University. Currently, he works as a scientific advisor for Dfns. 
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+Related articles
+ResearchDfns Steps Into MPCA Presidency
+Christopher Grilhault des Fontaines
+
+
+
+
+February 19, 2025
+
+
+
+
+ResearchA FROST Library Called "Givre"
+Denis Varlakov
+
+
+
+
+October 10, 2024
+
+
+
+
+ResearchLockness Is Alive
+Christopher Grilhault des Fontaines
+
+Clarisse Hagège
+
+Denis Varlakov
+
+Nikita Sorokovikov
+
+Jonathan Katz
+
+
+
+
+September 16, 2024
+
+
+
+
+
+
+
+
+Audited and pentested
+
+
+
+
+
+
+
+
+
+Certified and licensed
+
+
+
+
+
+
+
+Follow us
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+SLA
+
+
+Resources
+Pricing	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+Dfns vs Fireblocks
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+Brand
+
+
+
+
+
+© Dfns.co 2024
+Protected by reCaptcha
+
+and
+
+
+
+	Terms and Conditions
+
+	Privacy Policy
+
+
+
+
+
+
+
+Request a demo
+One of our security experts will get in touch as soon as possible.
+
+
+
+  
+  
+  
+  
+    First name*
+    
+  
+
+  
+  
+    Last name*
+    
+  
+
+  
+  
+    Work email*
+    
+  
+
+  
+  
+    Company*
+    
+  
+
+  
+  
+    Comments
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+
+
+
+Thanks for your interest.
+Please, check your inbox.
+Close
+
+
+
+
+
+
+

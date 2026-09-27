@@ -1,0 +1,681 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-09-04 Onboarding call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+	2019-09-04 Onboarding call
+
+
+
+
+
+	2019-09-17 Contributor call
+
+
+
+
+
+	2019-10-01 Contributor call
+
+
+
+
+
+	2019-10-15 Contributor Call
+
+
+
+
+
+	2019-10-29 Contributor Call
+
+
+
+
+
+	2019-11-12 Contributor Call
+
+
+
+
+
+	2019-11-26 Contributor Call
+
+
+
+
+
+	2019-12-10 Contributor Call
+
+
+
+
+
+
+
+	2020 Notes
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2019-09-04 Onboarding call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2019-09-04 Onboarding call
+
+	Ry Jones
+
+
+
+	Grace Hartley (Deactivated)
+
+
+
+	David Huseby
+
+
+
+
+
+Owned by Ry Jones
+
+
+Last updated: Sept 11, 2019 by Grace Hartley (Deactivated)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Date
+04 Sep 2019
+Attendees
+	Ry Jones
+
+	David Huseby
+
+	Grace Hartley (Deactivated)
+	Silona Bonewald
+	Joshua Fernandes
+	Rob Dawson
+	Edward Evans
+	Brett Henderson
+	Madeline Murray (Deactivated)
+
+Goals
+	Description: answer any questions for on boarding Besu
+	4. What other tools/actions am I missing to make sure we're onboarded on appropriately and can quickly move to Active status
+
+Discussion items
+	Time	Item	Who	Notes
+	
+	CI Tools	Grace Hartley (Deactivated)
+
+		I know our team has been involved in the discussions in the RocketChat channel. I think they have further questions.
+
+
+	
+	Repo Switch	Grace Hartley (Deactivated)
+
+	We are targeting having our final Pantheon release on our September 10th repo, and we then need the new Besu repo set up prior to the 1.3 Release Candidate scheduled for September 25th.
+
+	
+	RocketChat / Mailing list best practices	Grace Hartley (Deactivated)
+
+	Mailing list; Distribute Release updates/notes, send schedule/invite for maintainer meeting and notes
+Community Calendar - Post our Maintainer meeting invite there
+One maintainer meeting and one application developer meeting 
+Send welcome email to community once repo is  up
+
+	
+	What other tools/actions am I missing to make sure we're onboarded on appropriately and can quickly move to Active status	Grace Hartley (Deactivated)	Members for Security list David Huseby
+Security Audit?
+Documentation - > Overview page on wiki
+
+
+	
+	GitHub team management	Ry Jones	
+
+
+
+Action items
+	Grace Hartley (Deactivated)I need two volunteer email addresses to add to the security@hyperledger.org team. It's a very light traffic list but each team is expected to contribute a primary and secondary volunteer who can handle helping triage incoming security issues with all projects and can also help resolve any incoming security issues on Besu.
+	Grace Hartley (Deactivated) If Besu is looking at going to active status ASAP, then we need to kick off a security audit of the code base. I am in the process of refreshing our vendors for security audits and would like somebody on the Besu team to help me write a proposal to send out to a few vendors for bids.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Onboarding Task Force 2023
+Onboarding Task Force 2023
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Hyperledger Besu onboarding Checklist
+Hyperledger Besu onboarding Checklist
+
+Community Architects
+
+
+
+More like this
+
+
+
+
+
+
+2022-04-12 Contributor Call
+2022-04-12 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-02-15 Contributor Call
+2022-02-15 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-12-07 Besu Contributor Call
+2021-12-07 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-02-04 Besu Contributor Call Notes
+2020-02-04 Besu Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "3f644e8f61b54e05bf156a846bb20313"}

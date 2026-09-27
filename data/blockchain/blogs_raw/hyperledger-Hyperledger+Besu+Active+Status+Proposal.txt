@@ -1,0 +1,743 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Besu Active Status Proposal - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+	Hyperledger Besu Active Status Proposal
+
+
+
+
+
+	Project Badge Status
+
+
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Hyperledger Besu Active Status Proposal
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Hyperledger Besu Active Status Proposal
+
+	Grace Hartley (Deactivated)
+
+
+
+	Troy Ronda
+
+
+
+	David Huseby
+
+
+
+	+12
+
+
+Owned by Grace Hartley (Deactivated)
+
+
+Last updated: Mar 26, 2020
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Hyperledger Besu community would like to request graduation for the project to be moved from incubation to active status. Below outlines an assessment of the requirements of graduating from incubation status to active status and how Hyperledger Besu meets each requirement. From a high-level, we believe we believe the project is ready for active status because:
+	Diversity of Community and Contributors: Besu has built an extensive and active community around its project. Some data points around the community include:
+
+	Since Besu was approved and joined Hyperledger, there have been 29 contributors from the PegaSys team and 20 contributors from outside of the PegaSys team. Since Besu was initially launched in November 2018 (as Pantheon), there have been 42 external contributors to PegaSys while there have been 37 PegaSys contributors.
+	There have been over 120 community-raised issues on the project since November 2018, when the project was launched. This demonstrates the engagement and excitement around the project.
+	The project has a diverse maintainer group with 4 organizations being represented. They include, PegaSys (ConsenSys), Chainsafe, Web3Labs, and Machine Consultancy. These teams are major contributors using Besu and providing feedback on the codebase. Additionally, 50+ companies (that we know of) are building blockchain applications have tested out Besu, provided feedback, and demonstrated its usability for their application. Additionally, there are four organizations as maintainers of the project currently. 
+
+	Besu has demonstrated success using Hyperledger tools and processes:
+
+	Public / Community Driven Releases: Each release planning is done during bi-weekly contributor call. Additionally, all releases are announced in our contributors’ RocketChat channel.
+	Bi-Weekly Contributor Calls: We have had bi-weekly contributor calls to discuss different bodies of work. We are focused on teh 
+	Public Issue Board: We have all issues published on Jira board (Hyperledger’s), but we have recently switched to GItHub issues (under Hyperledger’s account)
+	RocketChat: While we have struggled with adoption of Ethereum community members on RocketChat, we have been operating successfully on RocketChat with public q&a, feedback, release annoucements, and general community engagement.
+
+	Besu is Meant for Production: Several enterprises are building permissioned networks to use Besu in production. It is also a fully compatible client that runs in production in mainnet Ethereum with its 1.0 Release occurring in April 2020.
+	The Besu Team Is Heavily Involved in the Hyperledger Community: Since being accepted as a project in August 2019, the Besu team has been participating in the following activities:	Announcing Hyperledger Besu 1.4 (Feb.27)
+	How Hyperledger Besu will Help Solve the Pharmaceutical Waste Problem in the U.S. (Jan. 28)
+
+
+
+	Added support for Besu in Caliper (Oct. 20)
+	Participated in the CI/CD working group conversations and sharing our project’s research and best practices (Sep .- Oct.)
+	Attended the Maintainer summit in Minneapolis (Oct. 8-9)
+	Presented a talk at the Hyperledger booth at Sibos (Sep.23-25) 
+	Submitted several talks for consideration for the Hyperledger Global Forum and participated in planning of agenda (Sep. - Oct.)
+	Attended the Hyperledger meet-up at Devcon in Japan (Oct. 9)
+	Presented privacy solution at Architecture WG - Privacy Confidentiality track (Sep. 20)
+	Continuing to work on Besu’s support of Caliper (ongoing Oct. - March)
+	Presented on supply chain SIG (Jan. 23)
+	Attended the Hyperledger Global Forum and presented several talks (March 9-12)
+	Attended Hyperledger meet-up in Phoenix (March 9)
+	Presented at Hyperledger Korea meet-up (Jan. 16)
+	Provided proposal on DCO process for Hyperledger 
+	Approved to be Co-mentor with Mark Wagner on Hyperledger mentorship project to implement OpenShift on Besu (Mar. 19th)
+	Published a couple of blogs on Hyperledger’s site:
+
+
+
+The assessment against the requirements can be found here:
+
+
+	Category
+	Requirement
+	Besu Community Response
+
+	Legal
+	All code has been made available under the Apache License and is free of incompatible dependencies
+	Complete.
+
+	Project name has been checked for trademark issues
+	Complete.
+
+	DCO check	Besu Repo:
+(lftools) user@dev > ~/Projects/besu > (master) $ git id
+7fbdcbcaa9632351b65323331385864e45e714a7
+(lftools) user@dev > ~/Projects/besu > (master) $ lftools dco check
+Checking commits in branch origin/master for commits missing DCO...
+(lftools) âœ˜ user@dev > ~/Projects/besu > (master) $
+
+Besu Docs Repo:
+(lftools) user@dev > ~/Projects/besu-docs > (master) $ git id
+34c4aa7931f0632b5bcd62c73b75c84841000b60
+(lftools) user@dev > ~/Projects/besu-docs > (master) $ lftools dco check
+Checking commits in branch origin/master for commits missing DCO...
+(lftools) âœ˜ user@dev > ~/Projects/besu-docs > (master) $
+
+
+Run by David Huseby
+
+
+	License check	Notes for besu scan 2019-10-24:
+	The Gradle check-licenses file at /gradle/check-licenses.gradle in lines 139-152 appears to list license choices for a few third party dependencies (to be separately provided and not checked into the source code repo). Two of those listed are for licenses other than Apache-2.0: * javax.ws.rs - CDDL-1.1 * org.checkerframework - MIT Is besu using these dependencies? If so, then under the Hyperledger IP Policy these should likely be included in a license exception request to the Governing Board. I expect it is likely that the GB would grant exceptions to use these as build-time dependencies.
+	Hyperledger's documentation license is Creative Commons Attribution 4.0, CC-BY-4.0. None of the files in besu contained CC-BY-4.0 notices. Consider adding notices to any Hyperledger documentation files, such as: SPDX-License-Identifier: CC-BY-4.0 Most of these documentation files should be listed in the "No license found" tab of the license scan report spreadsheet.
+	Although virtually all besu source code files contain Apache-2.0 license notices, there are a small number of files with no license information. In the "No license found" tab of the spreadsheet, the files with "No license found" do not contain license notices that were detected from our scanning. Where possible, for those that contain Hyperledger code, Apache-2.0 comments should likely be added. This can be done by adding a comment with an SPDX short-form identifier, such as: SPDX-License-Identifier: Apache-2.0 Note that any files in this tab labelled as "third party directory", "excluded file extension" or "empty file" likely do not need to have these notices added. More information for #2 and #3 can be found on the Hyperledger wiki, at https://lf-hyperledger.atlassian.net/wiki/display/HYP/Copyright+and+License+Policy
+
+Scan report:
+besu-2019-10-24.xlsx
+
+
+	Community Support
+	The project must have an active and diverse set of contributing members representing various constituencies
+	Hyperledger Besu has active community. We have 217 users on RocketChat. There have been 38 non-PegaSys contributors since the projects’ acceptance into Hyperledger in September 2019 with 191 non-PegaSys contributions total.
+
+Prior to entering Hyperledger the project had 55 contributors (31 from PegaSys, 24 external) with over 100 external commits and over 200 members of our public Gitter channel.
+
+	The project is not highly dependent on any single contributor (there are at least 3 legally independent committers and there is no single company or entity that is vital to the success of the project)
+	While PegaSys is the main organization that is contributing to Besu, there are several organizations and contributors contributing to Besu, including web3labs, Chainsafe Labs, and Machine Consultancy. We have maintainers from 4 organizations: PegaSys, Web3Labs, Chainsafe labs, and Machine Consultancy.  The ETC Cooperative has also been funding major feature additions, namely Ethereum Classic Support and Keccak256 PoW support.
+
+	Release plans are developed and executed in public by the community.
+	The releases of Pantheon and now Besu have been in a public forum available on the GitHub and the Gitter channel, and RocketChat. We also have set up a bi-weekly contributor call in which release activities are discussed. Meeting minutes and agendas are posted publicly on the Besu Wiki.
+
+Finer grained details are managed via Jira. Epics, and stories are maintained in Jira, and tracked against versions.
+
+	Test
+	Sufficient test coverage
+	See below.
+
+	The project must include a comprehensive unit and integration test suite and document its coverage. Additional performance and scale test capability is desirable.
+	Currently there are comprehensive unit, integration and acceptance tests with Besu. Merges to master are prevented if there are failing tests.
+Performance and scale testing is under development through a partnership with WhiteBlock.
+
+	Documentation
+	Sufficient user documentation
+	Hyperledger Besu team maintains a robust documentation site here. 
+
+	The project must include enough documentation for anyone to test or deploy any of the modules.
+	Done. See above.
+
+	Alignment
+	Requirements fulfillment
+	Hyperledger Besu team maintains a robust Documentation site that provides details on requirements, use cases, and other expectations for the project.
+
+	The project must document what requirements and use cases it addresses.
+	Hyperledger Besu team maintains a robust Documentation site that provides details on requirements, use cases, and other expectations for the project.
+
+	The project must document how it fits within the Hyperledger Architecture
+	Besu’s architecture can be seen in this blog post. Because it's a mainnet Ethereum client, Besu represents some new considerations and opportunities for the Architecture Working group which require further discussion.
+
+	Compatibility with other Hyperledger projects
+	This is a work in progress that we are excited to continue to engage with the community on. Our team attended the maintainer summit Oct. 8-9 to begin exploring these options.
+
+	Where applicable, the project should be compatible with other active projects.
+	This is a work in progress that we are excited to continue to engage with the community on.
+
+	Alignment
+	Release numbering: the project should use the Hyperledger standard release taxonomy, once that is agreed upon.
+	Besu uses the appropriate naming taxonomy.
+
+	Project must make a release, even a “developer preview”, before graduation.
+	The past releases and the respective documentation for Hyperledger Besu can be found here.
+
+	Infrastructure
+	Gerrit or Github repo has been created
+	Done and code has been moved. https://github.com/hyperledger/besu
+https://github.com/hyperledger/besu-docs
+
+	Mailing lists have been created and are archived
+	Done: https://lists.hyperledger.org/g/besu
+
+	Other communication means used, such as slack channels, are set up
+	Done:
+https://chat.hyperledger.org/channel/besu
+https://chat.hyperledger.org/channel/besu-contributors
+
+	Project is set up with Continuous Integration
+	Done
+
+	All information necessary for someone to join the community and be able to start contributing is duly documented (location of repo, list of maintainers, mailing lists addresses, slack channels if used, etc) following the Hyperledger Project standard practice (CONTRIBUTING.md, MAINTAINERS.txt, SECURITY.md, etc)
+	We currently have documentation in the current Docs and Wiki site referenced above.
+
+	CII Badge
+	A team seeking to graduate from incubation shall have started the CII Badge application and be nearly complete with incomplete badge requirements referenced in their graduation proposal. 100% of the applicable criteria for the CII Badge is a requirement for releasing a 1.0 of the project. That does not mean the project must have 100% of all criteria, just 100% of the applicable criteria. This is to allow for projects such as test harnesses, that have “N/A” answers for questions that don't offer that as an option.
+	CII Badge was completed. Seen here.
+
+	Other Considerations
+	Sufficient real world use
+The project should be used in real applications and not just in demos. Because not all real applications may be discussed publicly, in such cases statements providing as much detail as possible should be made.
+Sufficient scalability
+The project must demonstrate sufficient scalability and document its scalability over various dimensions such as:
+	Maximum number of transactions per second
+	Maximum number of transactions per chain
+	Maximum size of a block
+
+Minimum test code coverage expected, such as, for example:
+	Minimum coverage for Security & cryptography
+	Minimum coverage for other functionality
+	Minimum coverage for Business logic/smart contract
+
+	Besu has several real world use cases. There are several that are not public. Here are links to a couple of public real world applications being developed using Hyperledger Besu:
+	LiquidShare
+	IoBuilders
+	ZarX
+
+There is also notable downstream use of Besu code:
+	41North has created a plugin to export to data to enterprise systems.
+	Web3J uses the EVM to provide CLI Debugging.
+	Rootstock is porting their Unitrie to Besu code.
+
+Scalability - PegaSys has performed several monitoring and benchmarking assessments of Besu.
+PegaSys also has a research & development team fully dedicated to the long-term scalability of Ethereum and Hyperledger Besu.
+
+
+
+Reviewed by
+	Angelo de Caro
+	Arnaud J LE HORS
+	Christopher Ferris
+	Dan Middleton
+	Gari Singh
+	Hart Montgomery
+	Mark Wagner (Deactivated)
+	Nathan George
+	Swetha Repakula
+	Tracy Kuhrt (Deactivated)
+	Troy Ronda
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2020 Q1 Hyperledger Besu
+2020 Q1 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2020 Q2 Hyperledger Besu
+2020 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Operate and Extend Hyperledger Besu Workshop
+Operate and Extend Hyperledger Besu Workshop
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q2 Hyperledger Besu
+2022 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q3 Hyperledger Besu
+2022 Q3 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+10/16
+10/16
+
+Developer Relations
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 10, "requestCorrelationId": "66c7e20f49f242f6a0878e4cb9bbf467"}

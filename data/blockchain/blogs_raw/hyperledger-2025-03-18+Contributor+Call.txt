@@ -1,0 +1,655 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2025-03-18 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+	2025-03-18 Contributor Call
+
+
+
+
+
+	2025-04-15 Contributor Call
+
+
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2025-03-18 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2025-03-18 Contributor Call
+
+	Justin Florentine
+
+
+
+	Matthew Whitehead
+
+
+
+	David Boswell
+
+
+
+
+
+Owned by Justin Florentine
+
+
+Last updated: Mar 18, 2025
+1 min read
+
+
+
+
+
+
+
+
+
+
+
+
+	Â Housekeeping
+	Antitrust notice -Â Antitrust Policy | Linux Foundation 
+
+	This meeting is being recorded, transcribed, and machine summarized
+
+	Please Mute unless speaking
+
+	If you have a question use the raise hand feature
+
+
+
+
+Agenda.
+	Modularity work (Matt W)
+	Present possible approach to removing BFT consensus for core codebase
+
+	Get enough agreement to continue work on pulling it out into a separate repo
+
+
+
+	Bonsai archive state proofs (Matt W)
+	Update on progress with short overview of the design
+
+	Maybe demo?
+
+
+
+	Deprecation work (Matt W/Bhanu)
+	Update on items & progress (privacy, PoW, fastsync)
+
+
+
+	Misc enterprise updates (Matt W/Bhanu)
+	Quorum IBFT â†’ Besu QBFT migration
+
+	History expiry for BFT chains
+
+
+
+	Project infrastructure
+	Documentation tooling: Making use of Docusaurus and Vercel instead of GH pages
+
+	Reducing noise on Discord: Thoughts on replacing the general Besu channel with â€œbesu-questions-mainnetâ€� and â€œbesu-questions-permissionedâ€� so that maintainers focused on mainnet donâ€™t get questions about permissioned Besu and vice versa
+
+	Community calls and getting the recordings on YouTube: Confirming about recent calendar changes with the LFDT migration and discussing how recordings get posted to YouTube
+
+	Future plans for developer docs in this wiki.
+	Weâ€™re not adamant about any particular solution but we do want to preserve our existing content in the same place that new content goes.
+
+
+
+
+
+
+Â 
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2022-07-05 Contributor Call
+2022-07-05 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-06-07 Contributor Call
+2022-06-07 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-10-31 Contributor Call
+2023-10-31 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-09-28 Besu Contributor Call
+2021-09-28 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-11-23 Besu Contributor Call
+2021-11-23 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+Atlassian Intelligence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "a61076ee56a249b5a439e7124b782c8c"}

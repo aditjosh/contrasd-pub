@@ -1,0 +1,961 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prague/Electra Network Upgrade Meta Thread - Process Improvement - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      Prague/Electra Network Upgrade Meta Thread
+    
+
+
+      
+          
+            
+              
+              
+                Process Improvement
+              
+            
+            
+
+
+
+        
+            prague-candidate
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                timbeiko
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 28, 2023, 11:08pm
+                  
+                  
+
+1
+              
+            
+            
+              With Dencun wrapping up, the time has come to start thinking about the Prague/Electra upgrade. Similarly to Cancun, I propose using this thread to discuss the overall process and scope of the upgrade.
+
+EIP champions can use the prague-candidate tag to signal their desire for inclusion in the upgrade. Note that the consensus layer teams already have a Github issue to track proposals.
+
+
+
+As for larger process tweaks, my #1 suggestion is to  bring back Meta EIPs.
+
+There currently is no good place to track the full scope of a network upgrade prior to it being deployed and announced in a blog post.
+
+For Dencun, we have EL EIPs in a hard to find markdown file and CL EIPs as part of the Beacon Chain spec.
+
+This isn’t great, as both of these are somewhat hard to find, each of them uses a separate “format” and it results in duplication. With ERC and EIPs now separate, I suggest (going back to) using Meta EIPs to track EIPs included in network upgrades.
+
+For coupled upgrades, the EL + CL could share a single Meta EIP, and for de-coupled upgrades, they could each have their own. If an upgrade goes from coupled to de-coupled or vice-versa, we can simply create a new Meta EIP which superceeds the previous one.
+
+
+
+Lastly, as a “stretch goal”, we should agree on what to do with “Considered for Inclusion”. This “proto-status” was created to provide more legibility to EIP champions about which EIPs may be included in an upgrade. That said, it can be argued the lack of commitment associated with CFI causes more confusion than it removes. Additionally, CFI is only used on the execution layer.
+
+If it isn’t useful, we should consider modifying or removing it, or potentially harmonizing its definition and usage across both the EL & CL processes.
+
+            
+
+
+            
+              
+7 Likes
+            
+
+            
+                
+
+            
+              
+                ralexstokes
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 28, 2023, 11:46pm
+                  
+                  
+
+2
+              
+            
+            
+              I’ll go ahead and kick things off with EIP-2537
+
+There may be some minor change to the precompiles and gas schedule but this will all be together in time for serious inclusion discussions for Prague/Electra.
+
+AFAIK previous concerns around this EIP have been resolved (e.g. hardened BLS12-381 implementations in production, esp. given that this code is used in EIP-4844 in Cancun/Deneb) and there is plenty of demand from both rollups and cryptography use cases.
+
+One of my top priorities for this hard fork will be championing for inclusion of BLS12-381 precompiles and it seems like prime time 
+
+            
+
+
+            
+              
+6 Likes
+            
+
+            
+                
+
+            
+              
+                gballet
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 29, 2023,  5:34am
+                  
+                  
+
+3
+              
+            
+            
+              are we talking about the next major HF or the “small” one between Dencun and the former? Because if it’s the next major HF, the complexity of verkle trees won’t leave much room for anything else.
+
+And if it’s a smaller one, I don’t think we should call it Prague, in the hope that we can pull smaller hardforks faster than we can have devcons. Note that we can no longer add devconnect names, as Instanbul already exists as a fork.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Tudmotu
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 29, 2023, 12:49pm
+                  
+                  
+
+4
+              
+            
+            
+              Not sure if it’s the right place to ask, but is there an update on EOF inclusion? Is it planned for Prague?
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                shemnon
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 29, 2023,  4:11pm
+                  
+                  
+
+5
+              
+            
+            
+              
+
+
+
+ gballet:
+
+
+Note that we can no longer add devconnect names, as Instanbul already exists as a fork.
+
+
+
+
+We’ve already used three names for Istanbul: Byzantium, Constantinople, and Istanbul.  There’s a list on wikipedia with more options.
+
+If we run ahead of devcon/devconnect names we could just use more names for istanbul 
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                timbeiko
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 29, 2023,  4:30pm
+                  
+                  
+
+6
+              
+            
+            
+              
+
+
+
+ gballet:
+
+
+are we talking about the next major HF or the “small” one between Dencun and the former?
+
+
+
+
+I’m personally not really a believer in “small” forks. Historically, the only times we’ve had truly small or quick forks were either emergencies, or simple difficulty bomb pushback. For example, Shanghai was a “small” fork relative to The Merge, and it still shipped 6-7 months after it.
+
+If we are considering any non-trivial EIPs, I’d call this Prague for simplicity. Whether it’s a 6-9 month fork like Shanghai or a 9+ month one like Cancun can only be very roughly predicted based on what EIPs we decide to include.
+
+That said, I agree that we should make a call about whether we include Verkle or not ASAP, as it will dictate how much extra capacity there is for other EIPs.
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                gballet
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 29, 2023,  6:54pm
+                  
+                  
+
+7
+              
+            
+            
+              also not a believer in “small forks”, but I’ve heard a mention of a fork with only minimal EIPs.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                timbeiko
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 29, 2023,  6:56pm
+                  
+                  
+
+8
+              
+            
+            
+              Right, assuming we didn’t do Verkle, we could choose to only do a set of smaller EIPs, but I just want to make sure we don’t do that thinking “it will be done in 3 months” when it’s likely to take 2x+ longer 
+
+            
+
+
+            
+              
+4 Likes
+            
+
+            
+                
+
+            
+              
+                gcolvin
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 29, 2023, 10:36pm
+                  
+                  
+
+9
+              
+            
+            
+              
+
+
+
+ gballet:
+
+
+if it’s the next major HF, the complexity of verkle trees won’t leave much room for anything else
+
+
+
+
+At this point the EOF proposals represent some seven years of research and development.  They are solid.  They are needed.  They are really not that difficult to implement.  And the researchers and developers are burning out.  It’s time to get them into an upgrade.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                Wander
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 30, 2023,  5:19am
+                  
+                  
+
+10
+              
+            
+            
+              I think EIP 7002 (EL-induced exits) deserves a mention. The staking community badly needs a way to trigger exits via smart contracts to finally and fully close the loop on trustless staking protocols.
+
+Some interesting ideas for potentially improving it were tossed around at DevConnect this year, but even if it’s included as-is, Ethereum would be significantly safer.
+
+            
+
+
+            
+              
+7 Likes
+            
+
+            
+                
+
+            
+              
+                Giulio2002
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023, 12:43pm
+                  
+                  
+
+12
+              
+            
+            
+              I think Verkle trees alongside with very few small EIPs (Verkle tree is a big update) such as EIP-2537 is desirable, in alternative we can focus on EOF and many small EIPs
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                prebuffo
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023,  1:14pm
+                  
+                  
+
+13
+              
+            
+            
+              I would divide the discussion into two parts, namely which large EIP (or series of EIPs) to include between Verkle Tree and EOF, and which other ‘small’ EIP to include.
+
+Between Verkle Tree and EOF, a check should be made on the maturity of the project and the opinion of the Core Teams on it.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                dgusakov
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023,  1:14pm
+                  
+                  
+
+14
+              
+            
+            
+              I believe EIP-7002 is one of the best candidates for inclusion in the next hardfork.
+
+My team and I are working on designing and developing Lido Community Staking Module (CSM). This module is aimed to offer permissionless entry to the Lido on Ethereum validator set. EIP-7002 greatly influences the risk profile of CSM and any other permissionless staking solution. With EIP-7002 in place, CSM will become more attractive for Lido DAO to increase its staking share. Hence, more independent operators will be able to join Ethereum validation.
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                TheDZhon
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023,  3:01pm
+                  
+                  
+
+15
+              
+            
+            
+              I also feel that including EIP-7002: Execution Layer Triggerable Exits would be a good choice for the network, being crucial not only for liquid staking protocols, and pretty sure not only for Lido.
+
+What I am afraid of is after enabling EIP-7044: Perpetually valid signed voluntary exits in Dencun, there will be a long-term tail risk of storing and distributing the exit messages in staking protocols involving increased trust assumptions.
+
+If EIP-7002 wasn’t included, it’s predictable that protocols trying to build a permissionless validator set (e.g., requiring bonds) would try to rely on joining the set with a pre-signed exit message intent. The message then should be stored and split in a distributed way. However, as the messages will have an infinite expiration time, it would pose a risk of falsely ‘losing’ the pieces or, in contrast, firing up exits spuriously, potentially leading to turbulence or fund losses.
+
+In contrast, if EIP-7002 is implemented, the trust level built into the staking protocols would be reduced, not expanded.
+
+Finally, EL triggerable exits are akin to Account Abstraction direction: getting rid of UX and trust issues with a smart contract that’s where Ethereum is great.
+
+Thank you for raising this on the topic.
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                abcoathup
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023,  8:31pm
+                  
+                  
+
+16
+              
+            
+            
+              [EDIT]: Not a commentary on the merits of EIP7002.
+
+
+
+
+
+ dgusakov:
+
+
+Lido DAO to increase its staking share
+
+
+
+
+Lido is currently at 32.28%.
+
+We shouldn’t want any entity to have a share of stake above 33.3% threshold.
+
+
+  
+      
+
+      HackMD
+  
+
+  
+    
+
+The Risks of LSD - HackMD
+
+
+  # The Risks of LSD  ### Liquid Staking Derivatives cannot safely exceed consensus thresholds  Liquid
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Wander
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2023,  8:36pm
+                  
+                  
+
+18
+              
+            
+            
+              Strongly agree with this, but I think the adoption of 7002 is independent of this issue and simply provides a safety benefit for all LSTs. If the recent discussion on adjusting the mechanics pans out, it could even benefit smaller LSTs more heavily.
+
+            
+
+
+            
+              
+4 Likes
+            
+
+            
+                
+
+            
+              
+                dgusakov
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 2, 2023,  3:35am
+                  
+                  
+
+19
+              
+            
+            
+              I was meaning share of CSM within Lido and overall Lido share.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                dapplion
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2023, 12:27pm
+                  
+                  
+
+20
+              
+            
+            
+              I want to propose EIP-7549: Move committee index outside Attestation
+
+It’s a very simple consensus-only change that reduces the cost of verifying casper FFG by a factor of 64x. As such, it accelerates the viability of ZK trustless bridges on Ethereum.
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                smartprogrammer
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2023,  5:25pm
+                  
+                  
+
+21
+              
+            
+            
+              I would like to re-propose EIP-3074: AUTH and AUTHCALL opcodes
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                poojaranjan
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 6, 2023,  2:58pm
+                  
+                  
+
+22
+              
+            
+            
+              
+
+
+
+ timbeiko:
+
+
+Lastly, as a “stretch goal”, we should agree on what to do with “Considered for Inclusion” . This “proto-status” was created to provide more legibility to EIP champions about which EIPs may be included in an upgrade. That said, it can be argued the lack of commitment associated with CFI causes more confusion than it removes. Additionally, CFI is only used on the execution layer.
+
+If it isn’t useful, we should consider modifying or removing it, or potentially harmonizing its definition and usage across both the EL & CL processes.
+
+
+
+
+Earlier, Meta EIP used to list proposals considered for an upgrade. “CFI” was created to fill the gap and provide visibility on the list of proposals under consideration for an upgrade where devs are preparing for multiple upgrades in parallel.
+
+With “Upgrade Meta Thread” and the “Meta EIP” for an upgrade getting back in, I do have places to look for EIPs list rather than depending on “CFIs”.
+
+To keep the EIP status harmonized across layers, type & categories. I’d support removing “CFI”.
+
+For Core EIPs we can have standard statuses as explained in EIP-1 with a high-level understanding of when to change the status as below:
+
+Draft = 1st PR
+
+Review = Whenever ready for clients’ review/implementation/devnet
+
+Last Call = When moved to 1st Public Testnet
+
+Final = When deployed on the Mainnet
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+        next page →
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

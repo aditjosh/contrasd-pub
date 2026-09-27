@@ -1,0 +1,394 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ethereum Builders: Tapping Into The Collaborative Potential | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Ethereum Builders: Tapping Into The Collaborative Potential
+Posted by Mihai Alisie on April 6, 2015
+Research & Development
+
+
+
+
+Hello, fellow Ethereans. I am Mihai Alisie, one of the Ethereum founders, and for the past year I’ve served as the vice president of the Ethereum Foundation and as director of Ethereum Switzerland.
+
+During the last few months I’ve been researching and testing a number of collaborative tools, constantly assessing the usefulness and applicability of each tool in the context of our community.
+
+Why?
+
+Because I think there is a lot of untapped potential in this community, and I think part of the reason that potential is untapped is the lack of a streamlined collaboration system.
+
+This article is a continuation of the proposed experiment post, expanding on a few of the core ideas while exploring the ethereum.builders collaboration system used as a project. Towards the end of the article you'll also find a few project updates and a couple of suggestions on how we can re-energize things and collaborate better, as a community.
+
+Hopefully some of you will find this useful or maybe even take it further, as I think that improving collaboration at the community level is an important goal worthy of time and commitment.
+
+As always, feedback, help and comments are more than welcome.
+
+The Initial Experiment: A Collaboration Catalyst
+
+"Alone we can do so little, together we can do so much." —Helen Keller
+
+We all want to do awesome things, and we need to make it as easy to collaborate as possible so that people can focus on their ideas, rather than having to worry about being invited into a Skype room just to be able to coordinate with others working on similar ideas.
+
+Bellow is a reddit post that sums it up nicely:
+
+
+
+From the design stage, Ethereum Builders was envisioned as a tool that would lower the entry barriers, increase the community member interaction and bring the fun of working together closer to everyone.
+
+Besides, with an actively engaged community, the ongoing feedback given by the group can also help the developer team test and improve features while including new people in various aspects of Ethereum as a project.
+
+Now, with Ethereum Builders you have people talking about their work, sharing knowledge, and providing peer-to-peer support, all of which also allows new developers to come on board and be up and running quickly and successfully.
+
+Regarding the future Ethereum sessions, I’d like to remind everyone that anyone can schedule a session. That means anyone really with a project or an interesting topic can propose a time, and if people consider the project and/or topic attractive, the rest will take care of itself.
+
+Since soft-launched on March 20th, Ethereum Builders has now over 100 members that share knowledge and collaborate openly.
+
+Awesome!
+
+
+
+
+The first session was a much-needed Ethereum client install fest, followed by an introduction in the Ethereum 101 project, a lounge session with Decentral Vancouver and spiking up with the awesome Project Groundhog presentation and brainstorming session.
+
+We also have a few cool sessions coming up, such as the “ultimate stablecoin built on Ethereum” (eDollar) scheduled for April 12th to blockchain based prediction markets built on Ethereum (Augur, date not set yet). The sessions are open for anyone, so if you find any of these topics interesting, join in or create one yourself if you’d like to propose a topic!
+
+Now, in order to manage this project, we use a cocktail of collaboration tools and since it has been received well by quite a few people already, I’d like to share it with you too. If you find this useful and need some help in getting it up and running or want to say thank-you, get in touch with us.
+
+Kicking It Up a Notch: GitHub Powered Collaboration Framework
+
+"Talent wins games, but teamwork and intelligence win championships." —Michael Jordan
+
+
+After exploring a vast number of options, I was convinced that co-opting the existent infrastructure (i.e. GitHub) and repurposing it (i.e. ZenHub) is the best combo for our needs, taking also considerable less time to deploy as an initial experiment.
+
+In the current form, this is how things were thought:
+
+Step one: Supercharge GitHub workflows
+
+Here’s how we transform your usual GitHub account into a powerful project management tool:
+
+
+	Go to https://www.zenhub.io/ or directly install the Chrome extension from the webstore
+	Connect your GitHub account with ZenHub.
+
+
+You can check if everything went okay by checking your GitHub application settings. You should see ZenHub as one of the authorized applications.
+
+
+
+If ZenHub has been correctly installed, then a new tab called "board(s)" should appear on your GitHub repo pages. The board(s) are populated by the issues created, each new issue becoming a card on the new ZenHub board tab.
+
+This is how a populated board should look:
+
+
+
+Step two: Enhance GitHub interactivity with Gitter
+
+Besides GitHub, we also use an application called Gitter. Very straightforward setup process; an incredibly well suited app for distributed communities and projects like this one. With this tool you're able to transform your favorite repos into your favorite chatrooms ^_^
+
+
+Get started by:
+
+	Signing in with your GitHub account
+	Join the available chatrooms or create new ones.
+
+
+
+You can find listed a few Ethereum chatrooms below if you want to join the fun :)
+
+Step three: Accelerate open source with Bountysource
+
+One of the biggest problems surrounding open-source, community-based projects is resource starvation. In our case we'll Bountysource to get around the resource-starvation issue and allow the community to guide itself and become self-sustainable in the process.
+
+
+And here’s how Bountysource fits into the picture:
+
+	Sign in with your GitHub account
+	Create, contribute or solve the current issues listed in the Ethereum repos (and not only).
+
+
+
+The cool part about it is that once integrated, it automatically updates the GitHub issues (Title, Body, Label), which is great since we're using ZenHub and the Gitter activity panel. Below you can see an automatically updated issue that had a bounty created via Bountysource.
+
+
+And this is how it looks integrated with Gitter via the activity panel on the right:
+
+
+
+You're fully set up now to chat openly with other people about Ethereum (in multiple languages), contribute to all the existent issues and also create new bounties. Things will get more interesting once we have the possibility of creating a DAPP and/or DAO, but in the meantime, I think this is a pretty cool solution as well.
+
+For those who are curious, you can see the components in action for the ΞB platform as follows:
+
+	ZenHub board
+	Bountysource integration
+	Gitter chatroom
+
+
+By setting things up this way, now the GitHub organization ethereum.builders is morphing into an aggregator of projects, offering people a way to learn, discover and join ongoing Ethereum efforts.
+Tapping into the collaborative potential
+
+“None of us is as smart as all of us.” —Ken Blanchard
+
+With each person getting to know other people inside this community and finding out about new projects that resonate with them, we create the favorable conditions for a vibrant open-source community and technology.
+For now, you can use the below as an incomplete map of the open Ethereum Gitter rooms:
+
+Live projects/experiments
+
+	Ethereum Builders Hello (General chatroom)
+	Ethereum Go/Mist Implementation [GH integration with the Go repo]
+	Ethereum C++ Implementation [No integrations]
+	Builder’s Handbook [GH, ZH and BS integration]
+	Ethereum 101 Project [GH, ZH and BS integration]
+	ΞB Platform [GH, ZH and BS integration]
+
+
+*Legend: GH = GitHub, ZH = ZenHub, BS = BountySource, ΞB = Ethereum Builders
+Currently the focus is on creating an organized source of information for people in the form of the Handbook and growing the collaboration and knowledge-sharing network. The community response and analytics look encouraging and I think this shows that there are people “out there” finding this useful. Interestingly enough, China seems to be our #1 readership.
+
+This comes with a big “Thank you” to Aurel Iancu from Ethereum Romania, Shaoping from ethchina.org and Jan Xie from Yunbi.com for making it happen. Without your help this would have not been possible.
+
+High Five Everyone!
+
+
+
+It's worth mentioning that the guide has also been recommended as the #2 read selection from the universe of books published through GitBook via their weekly newsletter. Yay!
+
+
+We’re also in the process of converting ethereum.builders in a multilingual knowledge-sharing network. We started with Chinese, Spanish, Russian, German and Italian. Depending on the results, we are planning to add more languages and see where it goes from there.
+
+We’re doing this in order to activate localized learning and tap into the potential existent in the meetups currently based in more than 33 countries. Since the sessions are held by people from the community for the community, the focus shifts to enabling the local Ethereans to make an impact in their geographical region by sharing knowledge and helping others in their mother tongue.
+
+We started by creating language categories on ethereum.builders. When creating a session, simply select the language used and then your session will be displayed under the language category.
+
+You can find below an example for sessions that are in English:
+
+
+It's also easy to find and navigate through the various Ethereum Builders multilingual Gitter chatrooms. From Gitter just type in "ethereum" + "language":
+
+
+
+The chatrooms are directly accessible also via the links below:
+
+	EB Chinese
+	EB Spanish
+	EB Russian
+	EB German
+	EB Italian
+	Suggest one here
+
+
+Besides this, we have also created ethereum.builders/plexus:
+
+
+The intention was to create a place where you can go and have the basic resources at hand to get started ASAP, while also having a way to interact with and ask for help from fellow Ethereans in case you get stuck somewhere.
+
+Next, we’ll work on making the GitBook also multi-lingual and polish it as it still feels kind of hacky at the moment. On this note, any help is welcome and if you would like to get involved in this please get in touch. We could use some assistance :)
+
+As for the future, depending on how things go, in the coming weeks we’ll shift our focus to the DAPP, proto-reputation and proto-DAO aspects of the experiment.
+
+If you any of these things are interesting, feel free to drop by to say hello or share any ideas/feedback/suggestions.
+
+So…what next?
+
+“The biggest room in the world is room for improvement.” —Anonymous
+
+
+I hope to see many interesting projects making their appearance in the emergent Ethereum Builders mesh collaboration network. Even if not perfect in the current form, this is a tool that can energize the community and serve as catalyst – but again, it’s nothing without people using it.
+
+By sharing your insights and ideas with others, besides getting exposure for your project, you’re also more likely to inspire someone to work on a project as well. And every individual is important, as anyone could possess the right piece of the puzzle and/or insight to push everything forward.
+
+Here are a few proposed ways to increase activity and interaction inside the Ethereum community:
+
+Create an Ethereum Builders session for
+
+	Helping people install Ethereum on their machines
+	Presenting the Ethereum project(s) you’re working on
+	Brainstorming on ideas and projects
+	Screensharing with others while coding on Ethereum
+	Syncing with other Ethereum meetups
+	Running a workshop or hackathon
+	Simply talking about things in a relaxed atmosphere
+
+
+It's worth mentioning that even if no monetary rewards are involved in this, reputation is. We have started to keep track of the contributions and involvement in a very crude form on ethereum.builders/co-creators:
+
+
+We’re all excited about the upcoming launch, but in all this excitement I think it is important also to keep in mind that regardless of how great the technology is, without an energized community co-creating a multi-verse of smart contracts with it, Ethereum's success is not guaranteed by any means.
+
+That being said, the game is one of the biggest (the Internet) and this comes with deep ramifications in many areas of our civilization. The decentralized revolution ignited by the BitTorrent protocols is reaching well outside sharing mp3s. We all saw the impact Bitcoin had on the Internet, in just six years, as a single blockchain-based decentralized financial application.
+
+Now here comes the question:
+
+How will the Internet look with thousands of running decentralized applications?
+
+I’m not sure either, but making it as easy as possible for people to actually build these decentralized applications is probably a good first step towards finding out the answer.
+
+And, we all know, third time's a charm!
+
+#web3 here we come!
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

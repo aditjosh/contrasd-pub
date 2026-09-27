@@ -1,0 +1,886 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger for Healthcare: How Fabric drives the next-generation pharma supply chain – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Health and Public Sector
+                            
+                        
+                    
+
+                
+                Hyperledger for Healthcare: How Fabric drives the next-generation pharma supply chain
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Dec 2, 2019
+                    
+                
+
+            
+
+            
+            
+                 Before new medicines can reach the patients that need them, the pharmaceutical and biotech companies that develop them must seek FDA approval. As part of this process, pharmaceutical companies sponsor highly controlled clinical studies in medical centers, called “sites.” The number of active studies has doubled over the last 10 years, and study sites are bursting at the seams. With the rise of personalized medicine and increasingly specialized shipping and storage requirements, this trend can only accelerate.
+ 
+At LedgerDomain we’ve partnered to tackle this challenge with a broad spectrum of industry leaders, including pharmas, contract manufacturers, research organizations, academic sites, and couriers. At the heart of this effort is the world’s first iOS blockchain app for pharmaceutical supply chain, which we presented last month to the Hyperledger Healthcare Special Interest Group (HC SIG).
+ 
+Today we’d like to dig beneath the surface of our efforts in this space. We’ll cover some lessons we’ve learned along the way, and how blockchain can speed innovative medicines to the patients who need them. We’ll also give you a sneak peek at a live pilot happening right now, where a blockchain-based solution is being used to deliver lifesaving medicines to real patients.
+ 
+Why Hyperledger for healthcare?
+ 
+We chose to join the Linux Foundation and Hyperledger in 2016 after a simple realization – most of our clients and prospects were apprehensive about coin-based models. Hyperledger Fabric represented a different approach to blockchain that aligned with their values at a deeper level. It’s no wonder that the community has come a long way since, emerging as the blockchain platform of choice for global enterprises. 
+
+ 
+
+ 
+ 
+Coin-based models can serve as a fantastic incentive for participation, but not everyone in every jurisdiction is ready for cryptocurrency. A second factor that sets Hyperledger Fabric apart is its focus on privacy. While everyone is looking for the magic bullet that will enhance track-and-trace capabilities across the drug supply chain, nobody wants to risk leaking patient health records from a public blockchain across the dark web.
+ 
+The DocuSeal framework
+ 
+Highly regulated enterprise communities have unique requirements. Much of our work on Hyperledger Fabric has centered on specialized multi-threaded experiences designed for compliance with HIPAA, GDPR, Cal Privacy, and data privacy laws just over the horizon, performing at scale.
+ 
+With that in mind, we built DocuSeal, a framework designed for blockchain-powered document authentication through an iOS application. With DocuSeal, uploaded documents are sealed in private storage, tied to a unique hash that’s immutably stored on a private blockchain. Documents can be shared with other users or deleted.
+ 
+DocuSeal makes it possible to verify the authenticity of any document each time it’s accessed. At the same time, the “right to be forgotten” is preserved, as the private storage can be wiped if necessary while the hashes on the blockchain are preserved. To assure real-time performance metrics, we use Selvedge, our enterprise-grade blockchain app server developed in Golang on Hyperledger Fabric. 
+ 
+
+ 
+ 
+We designed the DocuSeal framework so users could be up and running in minutes with simple document storage and sharing – similar to Dropbox – plus serious security and timestamping. But underneath this simple interface, our stakeholders can leverage the power of smart contracts to drive inter-enterprise workflows.
+ 
+How blockchain can speed innovative medicines to the patients who need them
+ 
+Testing new medications is an extraordinarily complex process. Right now, over 800 biotechs and pharmas are working with their vendors to supply medicines for over 10,000 clinical studies to tens of thousands of clinical sites. And the number of studies is constantly growing.
+ 
+
+ 
+ 
+While some clinical sites are just a doctor and an assistant, large academic centers aren’t like your neighborhood Walgreens or Boots. They’re massive warehouses with pallets loaded with experimental medications. One of our partners, UCLA, has 700 clinical studies sponsored by 100 different companies. This is a massive undertaking where no single pharma’s proprietary system can predominate, so everyone has fallen back on paper.
+ 
+With that in mind, in 2017, we joined forces with other industry leaders as part of the Clinical Supply Blockchain Working Group (CSBWG), which includes Pfizer, IQVIA, UPS, Merck, UCLA Health, GSK, Thermo Fisher, and Biogen. Over the course of two years, we built out a pilot on Hyperledger Fabric to address this challenge directly. We named it KitChain
+ 
+
+ 
+ 
+
+ 
+(Want a deeper dive on technical specifications? Check out our white paper!)
+ 
+Big picture: supply chains and blockchain
+ 
+KitChain was a major milestone for the supply chain for clinical studies, but meanwhile the stakeholders on the commercial pharmaceutical supply chain were struggling to meet their own challenges. Everyone is looking ahead to 2023, when the Drug Supply Chain Security Act (DSCSA) will come into full effect with sweeping requirements for traceability across the entire pharmaceutical supply chain.
+ 
+With that in mind, the US Food & Drug Administration (FDA) came out earlier this year in search of enterprising stakeholders to help them tackle the problem of counterfeit and suspect medicines. 
+ 
+
+ 
+ 
+In response to the FDA’s call for pilots to address this challenge, we partnered with UCLA Health to launch the only pilot of its kind. We’re building and testing a last-mile blockchain-driven solution designed to help deliver lifesaving medications to real patients. This solution features an intuitive iOS client running on our Selvedge app server and smart contracts, all powered by Hyperledger Fabric.
+ 
+This is a “rubber hits the road” moment for supply blockchain: out of the workshop and into the real world. Our living supply chain solution captures all the transactions – from the loading dock to the patient. It will capture the data needed to develop trends and analytics, and be able to surface risk management issues. But most of all, it’s designed to handle the human element – because in the real world, sometimes things happen you don’t expect. A blockchain system that doesn’t allow for human factors will no longer reflect the ground truth. These are all things we’re working on right now, and we look forward to sharing our findings and connecting with you in Phoenix at Hyperledger Global Forum 2020.
+ 
+The Hyperledger community has grown and matured over the last three years, and we’re honored to be a part of building the future of blockchain. Delivering our full-stack enterprise-grade solution by ourselves would have been impossible, but by joining Hyperledger and the Linux Foundation, we’ve been able to contribute while standing on the shoulders of giants.
+ 
+About the Author
+ 
+Ben Taylor is the CEO of LedgerDomain, founded in 2016 to bring Hyperledger blockchain solutions to enterprise ecosystems, unlocking a world of communal computing and real-time performance. After doing undergraduate and graduate work at MIT, Ben spent a quarter of a century incubating and investing in early-stage technology companies. 
+ 
+Coverage image credit
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

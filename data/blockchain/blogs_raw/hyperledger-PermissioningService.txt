@@ -1,0 +1,661 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PermissioningService - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+	BesuContext
+
+
+
+
+
+	PermissioningService
+
+
+
+
+
+	PrivacyPluginService
+
+
+
+
+
+	RpcEndpointService
+
+
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+PermissioningService
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+PermissioningService
+
+	Antony Denyer
+
+
+
+
+
+Owned by Antony Denyer
+
+
+Last updated: Oct 11, 2021
+
+
+
+
+
+
+
+
+
+
+public interface PermissioningService
+extends BesuService
+This service allows plugins to decide who you should connect to and what you should send them.
+Currently, there are two hooks available; connection permissioning and message permissioning.
+	Connection permissioning - checks if inbound and outbound connections to peers are permitted. NodeConnectionPermissioningProvider
+	Message permissioning - checks if a devp2p message can be sent to a peer. NodeMessagePermissioningProvider
+
+
+
+Method Summary
+	Modifier and Type	Method	Description
+	void	registerNodeMessagePermissioningProviderâ€‹(NodeMessagePermissioningProviderÂ provider)	Registers a callback to allow the interception of a devp2p message sending request
+
+	void	registerNodePermissioningProviderâ€‹(NodeConnectionPermissioningProviderÂ provider)	Registers a callback to allow the interception of a peer connection request
+
+
+
+
+
+Method Details
+	registerNodePermissioningProvider
+
+voidÂ registerNodePermissioningProviderâ€‹(NodeConnectionPermissioningProviderÂ provider) 
+Registers a callback to allow the interception of a peer connection requestParameters: provider - The provider to register
+
+	registerNodeMessagePermissioningProvider
+
+voidÂ registerNodeMessagePermissioningProviderâ€‹(NodeMessagePermissioningProviderÂ provider) 
+Registers a callback to allow the interception of a devp2p message sending requestParameters: provider - The provider to register
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Permissions
+Permissions
+
+Hyperledger Iroha
+
+
+
+More like this
+
+
+
+
+
+
+PrivacyPluginService
+PrivacyPluginService
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Plugin Services
+Plugin Services
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-08-21 Iroha RFC discussion: Permissions, part II - Meeting notes
+2020-08-21 Iroha RFC discussion: Permissions, part II - Meeting notes
+
+Hyperledger Iroha
+
+
+
+More like this
+
+
+
+
+
+
+RPC Endpoint Service
+RPC Endpoint Service
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+DRAFT - Pico CLI Plugin Integration
+DRAFT - Pico CLI Plugin Integration
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "83a1d66eb668429d9f616fbd8c04c518"}

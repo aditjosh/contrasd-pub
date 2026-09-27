@@ -1,0 +1,211 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borrow Tokens | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Borrowing GuidesBorrow Tokens
+beginner
+
+
+
+
+
+
+Introduction
+
+Borrowing tokens from the Aave Protocol enables participants to access liquidity against supplied collateral tokens. This process requires maintaining sufficient collateral and understanding the associated risks, such as liquidation. Borrowers must maintain that their collateral remains adequate to cover the borrowed amount, as falling below the required collateralization level could lead to liquidation. The interest rates for borrowed tokens are dynamically determined by the protocol based on factors like the borrow utilization rate and governance parameters, which can change through community decisions.
+
+Borrowing can be performed through protocol smart contracts or through a frontend such as the Aave Labs interface by performing the following steps:
+
+Step 1: Connect Wallet
+
+To begin, press ‘Connect Wallet’ and select the Ethereum wallet provider corresponding to the wallet holding the collateralized tokens.
+
+Step 2: Select Token to Borrow
+
+Once connected, navigate to the ‘Dashboard’ and locate the ‘Assets to Borrow’ table. This table lists the available tokens for borrowing, along with key parameters such as available amount, interest rates, and your health factor. The interest rates displayed here are influenced by the borrow utilization rate, which measures the proportion of assets currently borrowed against the total supplied in the pool. As liquidity is borrowed or repaid, these rates are dynamically adjusted to reflect current market conditions.
+
+Select the token you wish to borrow.
+
+Step 3: Review Borrow Parameters
+
+Before proceeding, review the borrow parameters including the Loan-to-Value (LTV) ratio, Liquidation Threshold (LT) ratio, and your current health factor. These parameters are crucial for maintaining sufficient collateral and avoiding liquidation.
+
+If you are borrowing a network base asset (e.g., ETH), you will first need to approve the WrappedTokenGateway contract. This approval enables the contract to perform a credit delegation, which performs a borrow and unwraps to the base asset in a single transaction.
+
+Step 4: Confirm Borrow Transaction
+
+Enter the amount you wish to borrow and confirm the transaction in your wallet. Upon confirmation, the borrowed tokens will be transferred to your wallet. It's important to note that interest on the borrowed tokens begins to accrue immediately and is dynamically adjusted based on the borrow utilization rate.
+
+Step 5: Monitor Health Factor
+
+Regularly monitor your health factor from the ‘Dashboard’ to verify that your collateral remains sufficient. If your health factor drops, consider supplying more collateral or repaying part of your borrow position to avoid liquidation. The health factor is a critical indicator of the safety of your borrow position, and maintaining it above the liquidation threshold is essential to prevent your collateral from being liquidated.
+
+
+
+Related
+Repay Tokens
+beginner
+
+Repay active borrow positions.
+3 min read
+Efficiency Mode (E-mode)
+intermediate
+
+Borrowing in Efficiency Mode (E-mode).
+3 min read
+Health Factor & Liquidations
+advanced
+
+Mechanics of Aave Protocol liquidations.
+4 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,876 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HyperledgerAsia: A Sampling of the Many Hyperledger-Powered Solutions in Action Across Asia – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                #HyperledgerAsia: A Sampling of the Many Hyperledger-Powered Solutions in Action Across Asia
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Dec 20, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Hyperledger technologies are serving as the open source foundation for a rapidly growing range of production solutions and applications. Companies across Asia are putting Hyperledger technologies to work to boost trade, fight fraud, streamline financial transactions, authenticate data, verify identities and more. 
+ 
+As part of our spotlight on #HyperledgerAsia, we’ve collected a sampling of the many Hyperledger-powered solutions reshaping how business is done in markets across Asia. Read on for details:
+ 
+Global Shipping Business Network (GSBN)
+ 
+GSBN was founded by eight global shipping lines and terminal operators as a not-for-profit consortium to provide one standardized source of immutable data to all users in real-time. Built using the Oracle Blockchain Platform implementation of Hyperledger Fabric in multi-cloud deployment, GSBN supports modern and efficient global trade through data exchange. GSBN rolled out its first use case, Cargo Release, over several months, beginning in China and Southeast Asia in August 2021. After the initial deployment, GSBN gained support from terminals across the globe. Cargo Release expanded its footprint into Rotterdam, the Netherlands, in March 2022. Four months later, Cargo Release launched in Latin America, starting with ports across Mexico and Panama.
+ 
+GSBN is using a permissioned blockchain with strong data governance where only authorized parties are granted the right to contribute and consume shipping related data. By leveraging immutability of the blockchain and data field level privacy through cryptography, participants in the supply chain such as Terminals, Carriers, Shippers, Freight Forwarders, Truckers, Customs and Financial Institution now also access Trade Finance and Electronic Bill of Lading applications, as well as Cargo Release, all enabled by trusted shipping data. Read the details in this case study.
+ 
+marketsN
+ 
+marketsN is a secure B2B platform from KoineArth built on the Oracle Blockchain Platform, which is powered by Hyperledger Fabric. It has been deployed by Hindalco Industries Ltd. (a subsidiary of the Aditya Birla Group) for monitoring the supply chain for outsourcing operations, including contract manufacturing with 25+ vendors (tollers) in a 4-tier supply chain network. marketsN enables them to see the inventory available at each vendor at any given point in time, replacing a three day manual process using Excel spreadsheets, many phone calls, and on-site visits, while avoiding the need for subsequent reconciliation since the data comes directly from the vendors. The solution also helps vendors to plan their own production based on shipment info to Hindalco clients, balance quantity, lower-tier supplier information, and other data on blockchain which allows them to better optimize their resources. They plan to also enable online invoice generation to automate the billing and payments cycle.
+ 
+MDL (Medium Distributed Ledger)
+ 
+Medium has developed an enterprise-type, high-performance blockchain solution, “MDL,”’ with an advanced core blockchain based on Hyperledger Fabric that can achieve speeds of up to 15,000 TPS. Its usability is maximized through the “MDL Manager,” which allows users to easily install, manage and monitor the blockchain.
+ 
+MDL is currently being supplied to the Korea Expressway Corporation as a mutual settlement system for the tolls collected on the public and private highways in the country. Before the adoption of the blockchain-based mutual settlement system, there were more than 20,000 complaints a year about payment mismatches. Now, as a result of the new system, not only are data errors and omissions prevented but the processing performance of the system has increased. Settlement data, even in areas with high traffic volume, is now stably handled, reducing the amount of overpayment, manpower, and complaints.
+ 
+Open Trade Blockchain (OTB)
+ 
+Open Trade Blockchain is a cross-border trade documentation blockchain from Global eTrade Services (GeTS) that connects China & ASEAN economies It’s built on the Hyperledger Fabric-based Oracle Blockchain Platform and is used to provide security and visibility across all trade documents – helping to contain investment risk and facilitate growing trade with simplified verification procedures and data harmonization. Single-Windows or Single-Window Front-end Services can integrate with OTB to provide more value-added services for the local trade community.
+ 
+This cross border blockchain-based trade platform has been extended to support collaboration across Taiwan, Singapore and New Zealand with the aim of improving the efficiency of cargoes under their Free Trade Agreement. For example, 3M Taiwan Ltd. reports that the cross border blockchain solution not only helps to reduce time for preparing and transmitting customs clearance documents from half a day to five minutes but has also solved documentation preparation challenges for Singapore exporters working remotely.
+ 
+RAG Fraud Blockchain
+ 
+The RAG Wangiri Blockchain was launched in March 2020 as a partnership of telcos and vendors created by Risk & Assurance Group (RAG) and Orillion Solutions with a common aim of reducing the number of wangiri fraud calls received by phone users. SORAMITSU recently joined the partnership and created a new Hyperledger Iroha-based infrastructure that can work with an expanded range of frauds. Renamed RAG Fraud Blockchain, this next-generation blockchain ledger serves as a fraud intelligence exchange where members that contribute data earn the right to access others’ data. The telcos that actively contribute their data will earn the right for continued free access, while other firms and organizations, including software vendors and law enforcement agencies, may pay for access or else be granted visibility of strictly limited subsets of the common ledger.
+ 
+Secure Logistics Document Exchange (SLDE) 
+ 
+The Secure Logistics Document Exchange was facilitated by the Government of India and the Ministry of Commerce & Industry with an aim to replace the physical exchange of trade documents with a secure digital platform for generation, storage and exchange of documents. Built using Aadhaar-based authentication mechanism and the Hyperledger Fabric-based Oracle Blockchain Platform as a secure ledger, it offers an audit trail for the title of ownership/authenticity of documents and provides end-to-end visibility on transfer of documents. 
+ 
+The SLDE platform, developed by CargoExchange, supports an end-to-end digital trade ecosystem that includes banks, shippers, customs, freight forwarders, and export and import companies and aims to address the issues related to physical movement of logistics related documents such as slow speed, limited transparency and lack of audit trails. Using SLDE, Axis Bank has successfully executed industry-first blockchain-enabled domestic trade transactions with ArcelorMittal Nippon Steel India and Lalit Pipes & Pipes Ltd. YES BANK used the system to support a deal involving Mukka Proteins, a Mangaluru-based marine product manufacturer and exporter, and Golden Beach Line (importer), an Oman-based trading company, with the forwarding agent Shipwaves Ltd. 
+ 
+SnapCert
+ 
+SnapCert is a blockchain-based Credential Authentication platform for universities, colleges and institutes. Offered as a SaaS platform by Snapper Future Tech, SnapCert equips education customers to issue and verify credentials on a blockchain, ensuring no fraudulent credentials can be issued in their name.
+ 
+SnapCert is built on Hyperledger Fabric and interoperable with non-Oracle Hyperledger instances that may be deployed on third-party clouds. It uses cloud infrastructure and REST APIs to build powerful products. The platform issues SSI (self-sovereign identity) credentials that follow W3C’s DID (decentralized identity) and verifiable credentials standard. It is also compliant with privacy and security compliance mandates (e.g., GDPR).
+ 
+SnapCert offers secure digitization, generation, authentication, sharing, and verification of any kind of academic certificate as well as digital credentials for enterprises. 
+ 
+Trust Your Supplier
+ 
+Trust Your Supplier (TYS) is a next-generation cloud-based supplier management platform built on Hyperledger Fabric that accelerates supplier onboarding, lowers procurement operating costs, ensures global regulatory compliance, and provides real-time visibility of supply chain risk across an encrypted blockchain environment.   
+ 
+TYS continues to expand the solution, allowing network participants to manage and monitor their suppliers across the globe. TYS was recently deployed into China and Japan, which brings the count of countries where TYS is available in Asia to 36. Additionally, suppliers in China can work in the TYS app using Simplified Chinese. 
+ 
+View the full country list here: Globalization – Trust Your Supplier 
+ 
+Join the conversation about the adoption and development of Hyperledger technologies across Asia on social channels with #HyperledgerAsia. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

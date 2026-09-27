@@ -1,0 +1,851 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Welcome Hyperledger Iroha 1.0: Flattening the DLT learning curve – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Iroha
+                            
+                        
+                    
+
+                
+                Welcome Hyperledger Iroha 1.0: Flattening the DLT learning curve
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        May 6, 2019
+                    
+                
+
+            
+
+            
+            
+                My first experience running a blockchain was when I first launched a Bitcoin node about six years ago. I got into Bitcoin out of curiosity and because the idea of sending value as digital data across the Internet was a very compelling idea.
+
+ 
+Since those early days of experimentation, blockchain and DLT have emerged and found its place in enterprise — companies, individuals, consortiums want to get rid of non-transparent resource allocation, corruption, and fraud. Today, diamonds are registered on a blockchain, insurance companies know if you registered your MacBook at several places, and cross-border payments can operate more efficiently.
+
+ 
+While blockchain technology has passed its longevity test, the software in general is still far from being integrator-friendly, developer-oriented, and straightforward; specifically when it comes to using distributed ledger technology instead of a database. This is where Hyperledger Iroha is different. With Hyperledger Iroha, it took me about 10 minutes to start building a blockchain. And now the Hyperledger Iroha team is releasing its first production-ready version, offering a faster, less complex path to DLT deployment. Welcome Hyperledger Iroha v1.0! 
+
+ 
+When it comes to solutions for business, it is critical that the technology is fit for the task and easy to integrate. Moreover, it must be reliable and safe so a business can trust it. Hyperledger Iroha provides safety with its decentralized consensus algorithm and reliability with a tested set of commands and queries. With them you can be sure that the code will do exactly what it is supposed to do — whether you want to add information to, or get information from, the ledger. 
+
+ 
+For this release the team prepared a special set of improvements: 
+ 
+	New native client libraries deliver cross-application support for desktop/server (on Java, Python, C++) or mobile (iOS, Android (Java)) applications. You only need to get an idea of the client application and you are ready to go! Take a look at desktop and mobile application examples: on Java or JS: https://github.com/soramitsu/iroha-wallet-js
+	Novel, asynchronous consensus algorithm supporting one step agreement on votes with vote collection optimizations included (Yet Another Consensus; YAC). This means that even if a node is faulty, your decentralised ledger will still be up and running correctly. You can now focus on implementing your business application, leaving the question of whether you can trust partners’ nodes to Hyperledger Iroha.
+	Multi-signature transactions, or as we call them, MST, are now ready for production use. What does it mean for your business? It means that you can set a quorum, such that transactions from your company’s wallet will need several signatories instead of just one — just like in traditional banking, but quicker and more secure. This can also be used to model complex business processes in a secure and automatic way.
+	New backwards-compatibility allows you to integrate Hyperledger Iroha into your business and be sure that no breaking changes will affect it. 
+
+ 
+Hyperledger Iroha is already gaining strong traction with the community and enterprises: 
+
+ 
+Alexander Yakovlev from Moscow Exchange Group’s National Settlement Depository is using Hyperledger Iroha in D3 Ledger, and he said: “Global business is always terrific, and we looked for a solution that fits our requirements and is 100% open-sourced and oriented for the specific needs of our task. Features such as Iroha’s account management and supportive community, in addition to Soramitsu’s KYC application, were key factors in our decision to use Iroha for D3 Ledger. Iroha’s existing adoption in several countries and the practical use case with the Cambodian central bank were additional benefits.”
+
+ 
+Hyperledger Iroha is already used in asset management, identity management, and payment systems. From simple asset transfers to secure information exchange about customers, Hyperledger Iroha can be used to empower a multitude of use cases, all without the need to program custom smart contracts. 
+
+ 
+Last year, I wrote a paper about Sora Identity, an implementation of a self-sovereign identity protocol using Hyperledger Iroha. Since then, we have worked on expanding this app and now we have a working product for KYC, targeted towards financial institutions. We are now expanding this to be at the core of the Sora decentralized autonomous economy, an exciting new type of economic system, geared towards empowering the creation of new goods and services.
+
+ 
+Try it – simplicity and friendly support from the community will surely help you find your own way of improving your project with Hyperledger Iroha blockchain. You can find the Hyperledger Iroha 1.0 documentation here: https://iroha.readthedocs.io/en/latest/. Follow the “Getting Started” guide to create your first Iroha network in 10 minutes.
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

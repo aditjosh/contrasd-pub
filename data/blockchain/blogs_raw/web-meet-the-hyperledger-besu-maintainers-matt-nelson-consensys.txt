@@ -1,0 +1,870 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger Besu Maintainers - Matt Nelson, Consensys
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Meet the Maintainers
+                            |
+                        
+                            Besu
+                            
+                        
+                    
+
+                
+                Meet the Hyperledger Besu Maintainers – Matt Nelson, Consensys
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jul 20, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                As interest in enterprise Ethereum has grown, so too has the community driving development of Hyperledger Besu. Purpose-built to serve as either a public or private execution client for Ethereum, Besu offers flexibility for organizations that want to mix, match or keep their options open when it comes to private and public chains. 
+ 
+The growing Hyperledger Besu project and community is led by a committed group of maintainers. This group, too, has grown recently, bringing new diversity and bandwidth to Hyperledger Besu. We have invited these community leaders to share their thoughts on why they are committing their time and effort to this project. 
+ 
+Below, we hear from Matt Nelson from Consensys about his work as a maintainer and what excites him about Hyperledger Besu now and in the future.
+ 
+Q) Why does Hyperledger Besu matter? What’s its role in the evolving DLT landscape?
+ 
+Hyperledger Besu is quickly becoming a key piece of infrastructure for enterprise, stakers, and businesses looking to innovate with Ethereum networks and standards. Besu comprises over 10% of Mainnet nodes on Ethereum. It is the infrastructure for numerous pilot and production private networks and side-chains that create, trade, and settle digital assets across a variety of networks, public and private. It is built around the EVM and its accompanying standards that comprise the broader web3 ecosystem and has helped to onboard major banks and enterprises to the blockchain ecosystem. Besu matters in part because of all of these things, but also because of its focus on flexibility and compatibility. 
+ 
+Hyperledger Besu is quickly becoming indispensable to these new networks that value privacy and composability of smart contracts (and the ease in finding, hiring, and training developers to build in Solidity). We see it on networks like Palm, which mints gasless NFTs on a Besu side-chain that can move to Mainnet for liquidity, sale, or trade. We see Besu being incorporated into Ethereum layer 2s to power the scalability of web3. Besu has cemented its position as an Ethereum client in a landscape where Ethereum-like networks are powering the evolution of DLT. 
+ 
+Q) What are some of the use cases it is particularly well suited to support?
+ 
+Hyperledger Besu’s flexibility makes it well suited to many use cases, though it is built around the EVM, which has well understood constraints and pros/cons. Besu is valuable as a piece of infrastructure in hosting Ethereum smart contracts for private networks of nodes. This can be to create a digital asset trading platform between organizations that have to minimize trust assumptions or where fast and trusted settlement is key. It is being used in several CBDC projects, where operating the network allows banks to issue and regulate digital currencies for consumers and enterprises. Private networks give developers control over more fundamental parameters than on public networks like having gas-free networks. 
+ 
+Besu is the one remaining Ethereum client that can claim all of the above and also compatibility with Ethereum Mainnet and public networks. This is hugely important for experimentation with public infrastructure by businesses, as well as providing much-needed client diversity to the Ethereum network. Diversity of clients gives greater security to the network as a whole and more choice to solo and institutional stakers who are validating in Proof of Stake. 
+ 
+Besu is increasingly becoming relevant for L2s and adjacent Ethereum networks via its plug-in system. This allows for deep modification of the client with minimal overhead in maintenance of the Besu code-base and new components. This system, originally designed around adding storage paradigms to Besu, has been adapted for the deep customization required for rollups and new infrastructure paradigms like light clients. We are eager to see how the plug-in system evolves with developers. 
+ 
+Q) What is the role of the community in developing Hyperledger Besu? Why is open development important?
+ 
+Hyperledger Besu is an open-source project with several contributing organizations. Open development is key to the continued flexibility of the client mentioned above. We need a diverse contributor base to support diverse use-cases. We have some contributors with deep knowledge of the EVM, the database, on consensus algorithms, and on the database. Together, we support Besu for every use  case, not just what one organization or another is prioritizing. This community is important in ensuring we have quality code, robust reviews, supporting each other and new users, and in attracting new contributors to help the client grow. Our community members and especially the enthusiastic staking community help triage bugs, diagnose issues, and even convert to contributors adding PRs to the code base. 
+ 
+Q) What about the Hyperledger Besu roadmap that really excites you?
+ 
+I am very excited about a number of upcoming features, but the modularity work tops my list. This is an effort by a variety of contributors to make Hyperledger Besu even more flexible when it comes to consensus algorithms between public and private networks. What excites me is the collaboration between contributors focused on Mainnet and Private networks working together to create a more streamlined client with more predictability and less tech debt.
+ 
+The work being done with rollups and plug-ins also opens the door to new use cases for Besu. This work is exciting, and I hope the plug-in system becomes attractive when developing new networks, or when bringing client diversity to existing public networks like Layer 2s with minimal (really only a few hundred) lines of code. I also am eager to share more about these plug-ins with developers to see how they run with the API and create new tech.
+ 
+As always, the Ethereum roadmap itself is driving Besu development. I am very excited about the potential of Verkle Tries and EOF for Besu and how they might evolve the client. Verkle Tries are particularly interesting as it may power light clients and new client use cases we have yet to design. 
+ 
+Q) How did you get involved in Hyperledger Besu?
+ 
+I have been involved with Hyperledger via Fabric since my time at IBM, building DLT networks. At Consensys Protocol Engineering, I had a chance to work with the base-layer of Ethereum. This led me to Hyperledger Besu and the Consensys team developing it. I was given a great opportunity to help steer the product direction at Consensys and take what many in web3 view as a “boring” infrastructure product into something that remains relevant to stakers and enterprises. I hope to help make the product great across all of web3 and to support everyone’s web3 infrastructure and to provide a great development platform for Ethereum-like networks.
+ 
+Q) Why is it important to ConsenSys to contribute to the development of Hyperledger Besu?
+ 
+Developing Hyperledger Besu is very important to Consensys because it gives us a deep knowledge of how Ethereum works via our Protocol Engineers. Having a team that deeply understands the specs of Ethereum helps in engineering and design across a ton of our products and initiatives. It also gives us a seat at the table among Core Developers of Ethereum, where we can gain a deep understanding of the direction of the network, its research and development, and upcoming changes that may impact our products. 
+ 
+Besu is quickly becoming important to other product areas across Consensys as well. The flexibility of the product allows us to adopt it for several infrastructure use cases and to support other products up the stack. We are seeing this pay dividends in our staking business, in the Linea network, for our RPC business, and more. 
+ 
+__
+Want to be part of this growing Hyperledger Besu community? Join the Hyperledger Besu channel on Discord or the regular contributor calls. Or check out this guide to contributing and dive right in.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

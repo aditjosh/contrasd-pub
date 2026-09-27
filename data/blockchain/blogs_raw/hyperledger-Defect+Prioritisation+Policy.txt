@@ -1,0 +1,800 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Defect Prioritisation Policy - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+	Defect Prioritisation Policy
+
+
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Defect Prioritisation Policy
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Defect Prioritisation Policy
+
+	Christopher Hare
+
+
+
+	Matt Nelson (Deactivated)
+
+
+
+	Sally MacFarlane
+
+
+
+	+2
+
+
+Owned by Christopher Hare
+
+
+Last updated: Jun 16, 2023 by Matt Nelson (Deactivated)
+
+
+
+
+
+
+
+
+
+
+ For information on the process of triaging a bug, check out this page
+
+
+Definition
+The process outlined in this document is only concerned with a mismatch between the behavior of a system and expectations of that system occurring, after the feature development has been completed by the responsible scrum team.
+There are many definitions for bugs and defects, both in their causes and the time of their detection, unfortunately, many definitions are contradictory.
+As GitHub has the â€˜bugâ€™ label, for simplicity that term will be used when referring to any problem identified after the GI (Github issue) for the feature has been updated to â€˜Doneâ€™, irrespective of who discovered the issue and at what point in the software lifecycle.
+Public Networks
+Deciding Priority
+When deciding how to respond to a bug, consider the two variables of probability and severity and apply them to a risk matrix to determine the priority and corresponding action. These are based on a Mainnet use-case and Proof of Stake consensus with Besu.
+Probability
+How likely are actual users to encounter the issue during their use of the product?
+A feature rarely used, with a high likelihood of failure may have a lower probability than a popular feature with a low likelihood of failure (due to a high number of customers affected).
+	Frequent
+	Will occur several times during common network conditions on Mainnet, across restarts, and be easily reproducible.
+
+	Probable
+	Likely to occur when engaging in a specific behavior or during common network conditions.Â 
+
+	Occasional
+	Likely to occur during specific network conditions or with specific CLs/environments.Â 
+
+	Remote
+	Unlikely but possible to occur in the lifetime of a validator.
+
+	Improbable
+	So unlikely, it can be assumed occurrence may not be experienced.
+
+
+
+Severity
+How bad is the problem when it does get encountered?
+	Catastrophic
+	Data loss/corruption or slashing occurs or is very likely to occur for the user. Detrimental risk for a validator stack. Persists over a restart.Â 
+
+	Critical
+	Requires a restart or user interaction for a node to continue operation and for a validator to perform its duties.Â 
+
+	Moderate
+	Some components are not working as intended, but the validator continues its duties, i.e. RPC accuracy.Â 
+
+	Marginal
+	Non-critical components are functioning within limits, but with unintended behaviors or side-effects.Â 
+
+	Insignificant
+	No significant threat posed and can be left unmediated.Â 
+
+
+
+
+
+When judging the severity of the bug as insignificant, as the bug does not need addressing it automatically gets set as P5 (very low) priority.
+Private Networks
+Deciding Priority
+When deciding how to respond to a bug, consider the two variables of probability and severity, and apply them to a risk matrix to determine the priority and corresponding action.
+Probability
+How often actual customers are likely to encounter the issue during their use of the product?
+A feature rarely used, with a high likelihood of failure, may have a lower overall probability than a popular feature with a low likelihood of failure (due to a high number of customers affected).
+	Frequent
+	Will occur several times in the lifetime of the product.
+
+	Probable
+	Likely to occur often in the lifetime of the product.
+
+	Occasional
+	Likely to occur some time in the lifetime of the product.
+
+	Remote
+	Unlikely but possible to occur in the lifetime of the product.
+
+	Improbable
+	So unlikely, it can be assumed occurrence may not be experienced.
+
+
+
+Severity
+How bad is the problem when it is encountered?
+An issue that causes data loss/corruption is automatically classed as Catastrophic.
+	Catastrophic
+	Detrimental risk for the product as a whole.
+
+	Critical
+	Jeopardises feature(s) of the product, not ruining the product entirely.
+
+	Moderate
+	Jeopardises aspects of a feature, not ruining the feature entirely.
+
+	Marginal
+	Causes an inconvenience when using a feature of the product.
+
+	Insignificant
+	No significant threat posed and can be left unmediated.Â 
+
+
+
+Risk Matrix
+	
+	Catastrophic
+	Critical
+	Moderate
+	Marginal
+	Insignificant
+	Frequent
+	Very High
+	High
+	High
+	Medium
+	Very Low
+	Probable
+	High
+	High
+	Medium
+	Medium
+	Very Low
+	Occasional
+	High
+	Medium
+	Medium
+	Low
+	Very Low
+	Remote
+	Medium
+	Medium
+	Low
+	Low
+	Very Low
+	Improbable
+	Medium
+	Low
+	Low
+	Very Low
+	Very Low
+
+
+Priority Levels
+	Priority
+	PolicyÂ 
+(recommended actions)
+
+	P1
+	Very High
+	Added immediately to the current sprint taking priority over that work. It may very well require the effort of more than one team member, possibly including the whole team.
+Alternatively refer to Security page ifÂ it is a security issue.Â 
+
+	P2
+	High
+	Added immediately to the current sprint and resolution starts as soon as logically possible. Ideally, should be resolved by the end of the sprint. Team decides who can best address the issue.
+
+	P3
+	Medium
+	Added as a priority for the next sprint, at the discretion of the product owner.
+
+	P4
+	Low
+	Documented. Discussed in the next sprint planning meeting at the discretion of the product owner.
+Candidate for a Good First Issue for the community.
+
+	P5
+	Very Low
+	Documented in list of known issues. Revisited only if severity or probability increases or at the discretion of the product owner.
+Candidate for a Good First Issue for the community.
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,defect
+
+
+bug
+
+
+policy
+
+
+prioritisation
+
+
+prioritization
+
+
+
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Issues
+Issues
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan
+Project Plan
+
+LFDT Labs
+
+
+
+More like this
+
+
+
+
+
+
+Security
+Security
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Pull Requests
+Pull Requests
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Rotations 2024
+Release Rotations 2024
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Process
+Release Process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "1bc0baad71dd4944bcb7736bb9e414b3"}

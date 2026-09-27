@@ -1,0 +1,216 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security alert [consensus issue] | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Security alert [consensus issue]
+Posted by Jutta Steiner on August 20, 2015
+Security
+
+
+
+
+This alert is related to a consensus issue that occurred on the Frontier network at block 116,522, mined on 2015-08-20 at 14:59:16+02:00 – Issue has been fixed, see "Fix" below.
+
+Impact: High
+
+Issue description: State database consensus issue in geth with deletion of account data, which could happen during SUICIDE instructions.
+
+Affected implementations: All geth implementations up to and including versions 1.0.1, 1.1.0 and develop (“unstable 1.1.0”) were affected. Eth (C++) and pyethereum (Python) are unaffected.
+
+Effects on expected chain reorganisation depth: Increase waiting time for eventual block confirmation to 12 hours
+
+Proposed temporary workaround: Miners switch to eth or pyethereum asap
+
+Remedial action taken by Ethereum: Provision of fixes as below. 
+
+Fix: Note that the consensus  issue occured just before the announcement of the new release 1.1.0. When upgrading, please make sure you upgrade to the version you intended as you might not want to fix and upgrade from 1.0.1 to 1.1.0 (which has not yet been officially released) at the same time. Fixes below are for version 1.0.2 – builds are generated for v 1.0.2. 
+
+
+	Release 1.0.2 including source and binaries can be found here
+	If you are building from source: git pull followed by make geth – please use the master branch commit a0303ff4bdc17fba10baea4ce9ff250e5923efa2
+	If using the PPA: sudo apt-get update then sudo apt-get upgrade
+	We are still working on the brew fix
+
+
+The correct version for this update on Ubuntu AND OSX is Geth/v1.0.2-a0303f
+Note that it is likely that you receive the following message alert which will resolve itself after a while once your peers have updated their clients:
+
+I0820 19:00:53.368852    4539 chain_manager.go:776] Bad block #116522 (05bef30ef572270f654746da22639a7a0c97dd97a7050b9e252391996aaeb689)
+
+I0820 19:00:53.368891    4539 chain_manager.go:777] Found known bad hash in chain 05bef30ef572270f654746da22639a7a0c97dd97a7050b9e
+
+
+Updates:
+
+
+	20/08/15 17:47+02:00 Issue has been identified and fix for geth is underway. Geth(Go)-Miners should upgrade asap once the fixes become available and meanwhile switch to Eth (C++) or Python. Eth (C++) and Python miners are unaffected.
+	20/08/15 19:38+02:00 Official release of fixes, see above.
+	20/08/15 21:19+02:00 Note that the consenus  issue occured just before the announcement of the new release 1.0.2. Therefore, please make sure that you get the fix you want, i.e. remain on 1.0.1 or upgrade to 1.0.2. See "Fix" for more details.
+	21/08/15 11:30+2:00 Since the occurrence of the consensus issue, we've been closely monitoring the chain and network. According to network statistics, most miners have upgraded to the patched 1.0.2 or switched to eth. Our expectations concerning maximum likely chain-reorganization depth is 750 blocks.
+
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

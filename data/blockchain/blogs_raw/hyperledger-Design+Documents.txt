@@ -1,0 +1,620 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Design Documents - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Design Documents
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Design Documents
+
+	Danno Ferrin
+
+
+
+	Lucas Saldanha
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Aug 19, 2021 by Lucas Saldanha
+
+
+
+
+
+
+
+
+
+
+
+	Ethereum Classic Support
+	Switchable Consensus Parameters
+	RPC Endpoint Service
+	Feature Proposal Template
+	Feature Flags
+	Bonsai Tries Design Overview
+	Refactor EVM into a stand alone library
+	SECP256R1 Support
+	DRAFT - Pico CLI Plugin Integration
+	Besu 2022 Vision
+	Modular Besu
+	CI/CD Migration
+	Change to Besu Defaults - Q1 2024
+	CI/CD Tooling and Process
+	Bonsai archive feature
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Project Plan - Bevel Documentation redesign
+Project Plan - Bevel Documentation redesign
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Task Force: Documentation Standards for Hyperledger Community
+Task Force: Documentation Standards for Hyperledger Community
+
+Learning Materials Development Working Group
+
+
+
+More like this
+
+
+
+
+
+
+Resource Library
+Resource Library
+
+Learning Materials Development Working Group
+
+
+
+More like this
+
+
+
+
+
+
+Reccomendations Research
+Reccomendations Research
+
+Learning Materials Development Working Group
+
+
+
+More like this
+
+
+
+
+
+
+Use Case Repository Project
+Use Case Repository Project
+
+Supply Chain SIG
+
+
+
+More like this
+
+
+
+
+
+
+Best Practices
+Best Practices
+
+Task Forces
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "2bd813b63bcd470cb200f9889fbe4afa"}

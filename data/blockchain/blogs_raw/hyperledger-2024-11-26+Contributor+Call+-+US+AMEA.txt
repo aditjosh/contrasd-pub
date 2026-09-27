@@ -1,0 +1,759 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2024-11-26 Contributor Call - US/AMEA - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+	2024-01-02 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2024-01-23 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2024-01-30 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-02-20 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-02-27 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-03-19 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-03-26 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-04-16 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-06-11 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-07-09 Contributor Call
+
+
+
+
+
+	2024-09-03 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-11-26 Contributor Call - US/AMEA
+
+
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2024-11-26 Contributor Call - US/AMEA
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2024-11-26 Contributor Call - US/AMEA
+
+	Justin Florentine
+
+
+
+	Matthew Whitehead
+
+
+
+
+
+Owned by Justin Florentine
+
+
+Last updated: Nov 26, 2024 by Matthew Whitehead
+1 min read
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨Join our Cloud HD Video Meeting )
+EMEA Friendly TimeÂ (Time Zone Converter â€“ Time Difference Calculator )
+	8 am Tuesday Los Angeles time
+
+	11 amÂ Tuesday New York time
+
+	17hÂ Tuesday Paris time
+
+
+Agenda
+	Â Housekeeping
+	Antitrust notice -Â Antitrust Policy | Linux Foundation 
+
+	This meeting is being recorded
+
+	Please Mute unless speaking
+
+	If you have a question use the raise hand feature
+
+
+
+	General Announcements
+	Request from LF to migrate the wiki off of confluence, due to costs.
+	Use issues for agendas?
+
+	Use markdown and github pages for developer documentation content?
+	example export from Confluence: BESU (Besu) 
+
+
+
+
+
+	Migration of repo from hyperledger/besu to Besu 
+	updating of java package names to drop hyperledger
+	propose replacing org.hyperledger.besu with just besu
+
+
+
+
+
+
+
+	Roadmap ReviewÂ 
+	Besu Roadmap
+	proposed areas of focus
+	performance improvements
+	tx parallelization
+
+	state root calculation deferral
+
+
+
+	4444s preparation and storage reduction
+
+	plugins evolution to support L2s
+	pluggable EVM opcodes
+
+	invest in test automation and validation of community plugins
+
+
+
+	Verkle
+
+	EOF
+
+	Bonsai Archive
+
+	Enterprise updates (from Kaleido)
+
+
+
+
+
+
+
+	Release updates
+	Updates to the plugin APIs. New deprecations.
+
+
+
+	Work Updates
+	/add item/
+
+
+
+	Other Business
+	Time consuming, inconsequential PRs. Feels like LLM submissions.
+
+
+
+	Open Forum
+	/add item/
+
+
+
+	Future Topics
+	/add item/
+
+
+
+
+Recordings
+Find the recording in the playlist - Besu Contributor Calls 
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-11-22 Contributor Call
+2022-11-22 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-03-14 Contributor Call
+2023-03-14 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-01-20 Besu Contributor Call
+2022-01-20 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-03-31 Besu Contributor Call
+2020-03-31 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-10-11 Contributor Call - APAC Friendly Time
+2022-10-11 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+Atlassian Intelligence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "802bbac7d0ce4352bc5dcb72e153cd0c"}

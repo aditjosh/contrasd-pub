@@ -1,0 +1,228 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Add EIP: Versioning Scheme for EIPs - EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      Add EIP: Versioning Scheme for EIPs
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                danceratopz
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 13, 2023,  9:37am
+                  
+                  
+
+1
+              
+            
+            
+              
+  
+
+      github.com/ethereum/EIPs
+  
+
+  
+    
+
+
+
+    
+      
+    
+
+
+  
+
+
+
+      
+        Add EIP: Versioning Scheme for EIPs
+      
+
+
+    
+      ethereum:master ← danceratopz:versioning-scheme-for-eips
+    
+
+
+      
+        
+          opened 09:19AM - 13 Dec 23 UTC
+        
+
+
+        
+          
+            
+            danceratopz
+          
+        
+
+
+        
+          
+            +121
+            -0
+          
+        
+
+      
+
+  
+
+
+
+
+  
+    This PR proposes a versioning scheme for Standards Track EIPs based on their Spe…cifications section.
+
+An extended rationale can be found at https://notes.ethereum.org/@danceratopz/eip-versioning.
+
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+This EIP suggests a semantic versioning scheme for Standard Track EIPs based on their Specifications section to help remove ambiguity when discussing changes and tracking implementations.
+
+An extended rationale that demonstrates how this can be used within the EVM Testing Toolchain can be found here.
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

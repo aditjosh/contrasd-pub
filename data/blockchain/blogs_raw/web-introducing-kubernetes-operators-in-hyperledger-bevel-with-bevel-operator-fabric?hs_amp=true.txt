@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kubernetes operators in Hyperledger Bevel with Bevel-Operator-Fabric
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Kubernetes operators in Hyperledger Bevel with Bevel-Operator-Fabric
+
+        
+
+        
+           Written by Hyperledger | Apr 27, 2023 8:49:24 AM 
+        
+
+        
+          We are excited to announce that hlf-operator, a Hyperledger lab, has been integrated into Hyperledger Bevel and has been renamed Bevel-Operator-Fabric.
+ 
+With this addition, Hyperledger Bevel has taken a stride towards unifying Hyperledger technologies that are intended for deployment of blockchain networks. This integration will bring together the expertise from these different tools and create synergy in the community to allow more interest and growth opportunities.
+ 
+Adding Bevel-Operator-Fabric is an important milestone for Hyperledger Bevel and a step towards the redesign of Bevel with support for Kubernetes operators to achieve DLT (distributed ledger technology) network deployments and automation.
+ 
+What is Hyperledger Bevel
+ 
+Hyperledger Bevel is an automation tool for deploying consistent, production worthy DLT platforms on cloud. It provides three key aspects – security, scalability and acceleration for DLT deployments.
+ 
+	It provides a secure environment for your deployments by utilizing the best practices of key management, which is available by default in the solution.
+	It is a truly scalable solution allowing the platform to be used for early POCs and pilots and then  scaled-up to run in a true production environment.
+	It is an accelerator that provides a proven architecture pattern to the whole DLT community; with Bevel you can create a dev or test environment in under an hour and cut development time from weeks to hours.
+
+ 
+Hyperledger Bevel currently supports deployment of R3 Corda open source and enterprise, Hyperledger Fabric, Hyperledger Indy, GoQuorum and Hyperledger Besu. It uses ansible scripts and helm charts responsible to achieve the desired DLT network state on Kubernetes and uses Flux GitOps for automation.
+ 
+What is a Kubernetes operator
+ 
+As Kubernetes application complexity increases and requirements become non-generic, managing the deployments becomes difficult. Kubernetes Operators solve this problem by creating custom resources having domain-specific schema, and controllers baked with domain intelligence responsible for maintaining the desired state. Operators combine custom resource definitions (CRDs), and custom controllers. They intend to eliminate the requirement for manual intervention while performing tasks such as upgrades and handling failure, which makes them more resilient and self-sufficient.
+ 
+What is Bevel-Operator-Fabric
+ 
+Bevel-Operator-Fabric is the first of the different sets of Kubernetes operators that Hyperledger Bevel will ultimately support. As the name suggests, it is a Kubernetes operator for managing Hyperledger Fabric networks. Bevel-operator-fabric enables developers to define Hyperledger Fabric components in the form of custom resources and associated controllers to manage the lifecycle of those components. 
+ 
+Bevel-operator-fabric has two components to it.
+ 
+	Operator
+	Kubectl-hlf plugin
+
+ 
+Operator runs on Kubernetes and tries to bring the current state to the desired state, a process called reconciliation. The kubectl-hlf plugin is used to create the custom resource and send the commands to the operator. It also provides an abstraction to create CRDs.
+ 
+When to use what?
+ 
+Both Hyperledger Bevel and Bevel-operator-fabric allow deployment of Hyperledger Fabric on Kubernetes cluster, and support network operations such as adding peers and orderers, creating channels, installing chaincode, etc. Bevel provides users with secure, scalable, and declarative environment state for Hyperledger Fabric and other supported DLT deployments, whereas bevel-operator-fabric provides Fabric deployment using operator pattern in discrete and procedural steps.
+ 
+Users having the need to rapidly and consistently setup production ready DLT networks should consider Hyperledger Bevel, whereas users needing to deploy Hyperledger Fabric components quickly and have operator pattern in place should consider Bevel-Operator-Fabric.
+ 
+What is next?
+ 
+In addition to ongoing enhancements and operational features for its currently supported DLT platforms, the Hyperledger Bevel  development roadmap includes  refactoring its helm charts and adding them to the helm repository. This will allow users to work with Bevel helm charts independent of its configuration management suite. As a result, bevel-operator-fabric and other future bevel operators will be able  use Bevel-provided self-dependent helm charts.
+ 
+We welcome all suggestions and contributions to take Hyperledger Bevel to the next level. To learn more, check out the Hyperledger Bevel channel on Hyperledger Discord.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

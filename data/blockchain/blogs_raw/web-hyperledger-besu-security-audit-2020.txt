@@ -1,0 +1,864 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Besu Security Audit 2020 – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Besu
+                            
+                        
+                    
+
+                
+                Hyperledger Besu Security Audit 2020
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Apr 15, 2020
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Introduction
+ 
+The Hyperledger Besu project underwent a security audit in Q1 of this year. This is the second security audit for the codebase. The codebase had a security audit performed in 2018 prior to the initial launch of the codebase (and when it was named Pantheon). The Besu team conducted another security audit because there have been many new features and functionality added to the codebase since its original security audit. Ensuring security best practices are used in the codebase is a priority for the Besu team.
+ 
+The Hyperledger Besu team was pleased to partner with Tevora on this security audit and work with them closely on their findings. Tevora’s approach to auditing the codebase included: 
+ 
+	Reconnaissance
+	Threat Mapping
+	Known Vulnerability Identification
+	Exploitation
+	Post-Exploitation
+	Reporting
+
+ 
+Key Findings and How the Hyperledger Besu Team Addressed Them
+ 
+When conducting a code audit, it is important to address each finding to help improve the codebase and ensure it meets security expectations. While there were no critical or high issues found in the codebase, there were a couple of medium risk issues that were identified. 
+ 
+Below is an outline of the issues and the team’s steps to address them:
+ 
+1) GraphQL Configuration: 
+ 
+	Summary of Finding: The Hyperledger Besu client includes a configurable GraphQL endpoint for data queries. Tevora discovered the GraphQL implementation did not adequately protect against malicious queries. If the GraphQL endpoint is served on a routable network interface (a non-default configuration), an attacker could craft a query that exhausts the node’s system resources. This attack would cause over utilization of system resources and the affected node would be disconnected from its peers. A network configured to expose GraphQL endpoints on Besu clients would be at risk of DoS based blockchain attacks.
+	How Team Addressed it: The Besu team immediately began query complexity metering, preventing query loops from forming. Also, as members of the Ethereum community, the team noticed this was a flaw in other Ethereum clients with a GraphQL endpoint so it informed the community so other clients could also implement the appropriate fix. You can find this item resolved in Hyperledger Besu’s 1.4.3 Release.
+
+ 
+2) Key Storage 
+ 
+	Summary of Finding: Besu nodes store the node private key on the host filesystem. Compromise of this key would not lead to a direct loss of funds; however, it would cause a loss of trust in the affected node’s communications. 
+	How Team Addressed It: By design, the Hyperledger Besu team does not store account keys like other Ethereum nodes can be configured to do. This mitigates account takeover attacks. The team is continuing to evaluate how to encourage adoption of best practices for storing node private keys in Besu, including the use of HSMs to store node keys. 
+
+ 
+Hyperledger’s Commitment to Security of its Projects
+ 
+Part of Hyperledger’s role with all of its projects is to ensure security best practices are followed. Activities Hyperledger enforces with its projects to ensure secure codebases include performing security audits, running license checks regularly, and facilitating a security task force with representatives from all project teams. Hyperledger is committed to the security of its projects, and it continues to be diligent about implementing security best practices in all of its projects. 
+ 
+The Hyperledger Besu team is equally diligent about ensuring security in its codebase, and we believe this security audit was an important step in ensuring its a safe and secure codebase for the community to build on.
+ 
+“The Hyperledger staff and Besu team were outstanding to work with! Hyperledger takes the security of its projects very seriously and it shows. The response to our primary finding was impressive, with a fix implemented by the Besu team within hours. They are definitely leading by example in the security maturity of open-source software projects.” – Brian Sullivan Information Security Consultant at Tevora.
+ 
+If you would like to access the full report, you can go here. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

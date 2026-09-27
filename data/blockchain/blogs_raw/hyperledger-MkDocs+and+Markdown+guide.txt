@@ -1,0 +1,590 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MkDocs and Markdown guide - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+	Documentation contribution workflow
+
+
+
+
+
+	Documentation contribution guidelines
+
+
+
+
+
+	Versioned documentation
+
+
+
+
+
+	Documentation archive
+
+
+
+
+	Documentation release process
+
+
+
+
+
+	Documentation style guide
+
+
+
+
+
+	Future Release Dates
+
+
+
+
+
+	MkDocs and Markdown guide
+
+
+
+
+	Configure and format Markdown
+
+
+
+
+
+	Preview the documentation
+
+
+
+
+
+	Extensions
+
+
+
+
+
+
+
+	Proposal - Besu maintainers become docs maintainers
+
+
+
+
+
+	Raise issues
+
+
+
+
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+MkDocs and Markdown guide
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+MkDocs and Markdown guide
+
+	alexandra.tran
+
+
+
+
+
+Owned by alexandra.tran
+
+
+Apr 07, 2022
+
+
+
+
+
+
+
+
+
+
+Besu documentation is written usingÂ MarkdownÂ syntax. The pages in this section explain the Markdown tools, configuration, standards, and custom extensions used.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Configure and format Markdown
+Configure and format Markdown
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation style guide
+Documentation style guide
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Suggest documentation enhancements
+Suggest documentation enhancements
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation
+Documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation contribution guidelines
+Documentation contribution guidelines
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Versioned documentation
+Versioned documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 36, "requestCorrelationId": "fb3d1a3652c04ca9a316162c18755e34"}

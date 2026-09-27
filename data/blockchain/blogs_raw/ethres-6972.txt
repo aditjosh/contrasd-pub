@@ -1,0 +1,188 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Consensus 101 (BFT consensus from background to PaLa) - Consensus - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Consensus 101 (BFT consensus from background to PaLa)
+    
+
+
+      
+          
+            
+              
+              
+                Consensus
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                _kitchen
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 17, 2020,  7:01pm
+                  
+                  
+
+1
+              
+            
+            
+              Posting here to share a long article I wrote on consensus protocol https://docs.thundercore.com/consensus-protocols-101.pdf
+
+It covers background terminology first an briefly touches on history of blockchain consensus. Then in does a deep dive into BFT classical consensus. In particular, it covers PBFT and PaLa. PaLa is, in my opinion, the simplest and most efficient BFT classical consensus protocol. That’s not to say it’s hugely innovative, it really just removes the unnecessary (and inefficient) stuff in prior protocols.
+
+Since blockchain brought new terminology and interest into classical consensus, it’s difficult to collect the relevant pieces of info to paint a coherent picture. I hope this article does a convincing job of clarifying and organizing all this information.
+
+Note this article was sponsored by my former employer. The information is, for the most part, written towards the purpose of explaining relevant information rather than promoting a platform.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Sh4d0wBlade
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 24, 2022,  5:34am
+                  
+                  
+
+2
+              
+            
+            
+              Recently I’ve been studying BFT consensus with immersion. And I will read your article carefully. Can we go an in-depth discussion on PBFT like consensus with you later?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

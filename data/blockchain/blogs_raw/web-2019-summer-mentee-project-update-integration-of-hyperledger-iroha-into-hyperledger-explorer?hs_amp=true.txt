@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019 Summer Mentee Project Update: Integration of Hyperledger Iroha into Hyperledger Explorer – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          2019 Summer Mentee Project Update: Integration of Hyperledger Iroha into Hyperledger Explorer – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Sep 19, 2019 8:08:41 AM 
+        
+
+        
+          Hyperledger Iroha is a next-generation permissioned DLT initally contributed by Soramitsu. It provides asset and identity management, multi-signature and batch transactions. During the internship, I visited the Soramitsu office and communicated with Iroha development team.
+
+Hyperledger Explorer is a tool that shows information from DLT networks. Initially, it was built to support for Hyperledger Fabric, with the expecting support for more DLTs would be added. Our goal was to add support for collecting and viewing Iroha transactions and Iroha-specific information to Hyperledger Explorer.
+
+Accomplishments:
+
+	We implemented an integration of Hyperledger Iroha into Hyperledger Explorer. Now, Hyperledger Explorer shows information about Hyperledger Iroha peers, blocks, transactions, roles, domains, accounts.
+	We found and fixed some ambiguous statements in Hyperledger Iroha documentation.
+	We simplified code of our project by using open-source GraphQL framework developed by Facebook.
+
+
+For a deeper dive into the work, read my full project report here.
+
+I am very grateful for the support of my mentor, Ales Zivkovic, as well as Hyperledger for the opportunity to learn and contribute to open source Hyperledger projects.
+
+ 
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

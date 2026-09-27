@@ -1,0 +1,851 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Fabric at the heart of a telecommunication carrier ecosystem – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Hyperledger Fabric at the heart of a telecommunication carrier ecosystem
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Dec 21, 2020
+                    
+                
+
+            
+
+            
+            
+                Telecommunications are a central aspect of our daily life: we are always connected through our phones as are the majority of people on the planet. To support our connectivity, communication service providers have been building a network of infrastructure and business relationships for the past few decades. The new trends of the industry (global mobile, Internet of Thing and 5G) are bringing new challenges and a new business approach. Recent projects within the industry show that blockchain is a technology that can support the industry transformation.
+ 
+A common scenario
+ 
+In 2018, 93 million* Americans traveled abroad, according to the U.S. Commerce Department’s National Travel and Tourism Office. Of course, all of them had a cellphone. When they landed on foreign soil, their phones connected to a foreign network. Their American carriers charged them for every phone call, text or data consumed abroad through the foreign network. In the back end, the foreign network providers charged the American ones for letting the subscribers using the local infrastructure. 
+ 
+Now imagine this scenario repeating itself for the millions of people traveling every day across any country in the world or for the millions that make international calls from their home or offices to other countries. You can get an idea of how much data carriers need to manage to successfully charge each other for these services.
+ 
+Every month billions of transactions need to be tracked, validated, reconciled, cleared and settled based complex international agreements between competing parties. That makes for an ideal scenario where blockchain can streamline operations and lift carriers from the burden of manual processes, legal disputes and unforeseen costs.
+ 
+A growing interest in blockchain
+ 
+Several telecom industry organizations, such as the GSMA and ITW GLF-backed Communication Blockchain Network, are showing interest in blockchain as the solution of choice for the management of high-volume transactions.
+ 
+The main reason for this choice is that, to solve an industry-wide problem, they are looking for an industry-wide solution. A blockchain network, through its distributed ledger technology, can provide the reach and the governance required to push shared standards among competitors in the same sector in a collaborative way.
+ 
+In addition, blockchain enables an open and interoperable ecosystem based on shared standards, where each player is able to bring their own data, safely share it and contribute to the achievement of their business goals.
+ 
+Looking closer to the specific process of clearing and settling large amounts of transactions, blockchain has capabilities that match perfectly with the issues faced by carriers.
+ 
+Distributed ledger technology allows parties to see the same data (values, volumes, etc.) for each transaction. Smart contracts translate complex agreement into digital code, so that they do not need to be manually executed any longer. Consensus mechanisms reduce the disputes at the end of the settlement process. 
+ 
+These capabilities allow telecommunication companies to save time and labor dedicated to manual processes and to reduce the cash tied up in disputes.
+ 
+Hyperledger Fabric  is a central enabler of such use cases. In fact, Fabric is designed to support enterprise implementation, providing scalability, security and operational tools that make enterprise transactions safe and scalable.
+ 
+But there is more
+ 
+The telecommunication industry is facing one of the greatest shifts in its history due the arrival of Internet of Things (IoT)and 5G. Both technologies are supporting the voice to data substitution. Historically, voice was the driver of large volumes of transactions, but now data have a larger and growing share thanks to the role of machines in generating large amounts of IoT input.
+ 
+The abundance and growth of data poses carriers with the challenge of storing, managing, and exchanging that information in order to drive business value. Hyperledger Fabric can be the enabling platform of high value and innovative use cases such as data access control (empowering final users to decide how and who should have access to the data they generate), device identity (integrating blockchain, IoT and security to record device on the network and prevent harmful usage) or data exchange (create marketplaces of accessible data where data supplier are rewarded by data consumer).
+ 
+To conclude, the industry is strengthening its global ecosystem and is looking for a technology that fosters collaboration and creativity. Hyperledger Fabric is an ideal fit and can allow greater efficiencies and new capabilities that have not been explored yet.
+ 
+* https://travel.trade.gov/tinews/archive/tinews2019/20190402.asp
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

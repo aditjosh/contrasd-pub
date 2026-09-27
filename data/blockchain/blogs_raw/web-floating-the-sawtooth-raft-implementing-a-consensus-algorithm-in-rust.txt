@@ -1,0 +1,1140 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Floating the Sawtooth Raft: Implementing a Consensus Algorithm in Rust – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Floating the Sawtooth Raft: Implementing a Consensus Algorithm in Rust
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jan 11, 2019
+                    
+                
+
+            
+
+            
+            
+                The 1.1 release of Hyperledger Sawtooth includes official support for a new consensus API and SDKs. These tools, covered in an earlier blog post, open up new possibilities for Sawtooth developers, giving them the power to choose a consensus algorithm that best suits their needs. With support for Proof of Elapsed Time (PoET) and Dev mode consensus engines already available, we decided to expand the platform’s repertoire to include a wider variety of engines and support a broader array of features and use cases. The first of these new engines implements the Raft consensus algorithm. This blog post gives a brief overview of the Raft algorithm, explains our decision to implement it, and takes a quick look at the development of the Raft consensus engine.
+ 
+What Is Raft?
+ 
+Originally developed by Diego Ongaro and John Ousterhout at Stanford University in 2013, Raft is designed to be an easy-to-understand, crash fault tolerant consensus algorithm for managing a replicated log. Its primary goal is understandability, since most deterministic consensus algorithms previously developed were convoluted and difficult to grasp. Raft provides crash fault tolerance, allowing a network to continue to make progress as long as at least half of the nodes are available.
+ 
+Raft has the following key characteristics that set it apart from many other consensus algorithms:
+ 
+	Strong leadership: Networks elect a leader that is responsible for making progress
+	Non-forking: Unlike lottery-based algorithms, Raft does not produce forks
+	Closed membership: Raft does not support open-enrollment, but nodes can be added and removed by an administrator
+	Fully peered: All nodes must be peered with all other nodes
+	Crash fault tolerant: Raft does not provide Byzantine fault tolerance, only crash fault tolerance
+
+ 
+Raft’s leader-follower model is a direct result of the emphasis placed on simplicity and understandability. With a single node controlling the progress of the log, no forks arise so no extra logic is needed to choose between forks. The leadership model has important implications for other aspects of the algorithm. Because a majority of nodes must agree on the elected leader and on all network progress, membership must be semi-fixed to prevent disjoint majorities. This means that Raft networks do not support open enrollment; membership in the network is restricted and can only be modified by a privileged user.
+ 
+Raft consensus networks must also be fully peered—with each node connected to all other nodes—because messages need to be passed between all nodes. Furthermore, because a large volume of messages is required for the algorithm to work, larger Raft networks perform slower than smaller networks. If high performance is important, Raft would be best used for smaller networks—usually 10 nodes or fewer.
+ 
+Lastly, Raft is limited to just guaranteeing crash fault tolerance, not Byzantine fault tolerance. This makes the Raft algorithm ill-suited for networks that are subject to Byzantine faults such as groups of malicious nodes. For more information about the Raft algorithm, please see the original Raft paper and the Raft website.
+ 
+Why Raft?
+ 
+Raft was our choice for the first algorithm with the new consensus API for several reasons. First, it is very different from PoET. Where PoET is a forking, lottery-style algorithm, Raft is leader-based and non-forking. This allowed us to not only demonstrate the flexibility of the Sawtooth consensus API, but also to make an algorithm available that is well-suited for situations that an algorithm like PoET is not a good fit for.
+ 
+Also, Raft is an inherently simple and easy-to-understand algorithm. This made it trivial to adapt to Sawtooth and also made it an excellent example for developing other engines.  Furthermore, we took advantage of an existing high quality implementation of Raft in the Rust programming language called raft-rs.
+ 
+However, Raft lacks Byzantine fault tolerance. Therefore, we are also working on a PBFT consensus engine that is suitable for consortium-style networks with adversarial trust characteristics.
+ 
+The Implementation
+ 
+The raft-rs library, developed by PingCAP, provides almost everything we needed to implement a consensus engine based on the Raft algorithm; it provided a class representing a Raft “node” with a handful of straightforward functions for “driving” the algorithm. The folks at PingCAP wrote an excellent blog post explaining how they implemented this library, so we will not duplicate their efforts here.
+ 
+Our only major extension to the raft-rs library is a stable storage mechanism, since the library only provided in-memory storage. This extension is required to ensure that Sawtooth nodes can restart in the event of a crash or arbitrary shutdown. If you would like to see the end results, all of the code that follows can be found in the Sawtooth Raft GitHub repository and the Rust SDK.
+ 
+Defining the Engine
+ 
+The first step in creating a consensus engine with the Rust SDK is to implement the Engine trait:
+ 
+pub trait Engine {
+
+    /// Called after the engine is initialized, when a connection
+
+    /// to the validator has been established. Notifications from
+
+    /// the validator are sent along `updates`. `service` is used
+
+    /// to send requests to the validator.
+
+    fn start(
+
+        &mut self,
+
+        updates: Receiver<Update>,
+
+        service: Box<Service>,
+
+        startup_state: StartupState,
+
+    ) -> Result<(), Error>;
+
+ 
+
+    /// Get the version of this engine
+
+    fn version(&self) -> String;
+
+ 
+
+    /// Get the name of the engine, typically the algorithm being
+
+    /// implemented
+
+    fn name(&self) -> String;
+
+}
+ 
+Raft’s Engine implementation is in engine.rs. The start method is the main entry point. In Raft—as well as most consensus engines—three main tasks need to be performed here: loading configuration, creating the struct(s) that contain the core logic, and entering a main loop.
+ 
+Loading Configuration
+ 
+For Raft, loading configuration consists primarily of reading a few settings that are stored on-chain. We do this by making a call to the load_raft_config function in config.rs:
+ 
+// Create the configuration for the Raft node.
+
+let cfg = config::load_raft_config(
+
+    &local_peer_info.peer_id,
+
+    chain_head.block_id,
+
+    &mut service
+
+);
+
+info!("Raft Engine Config Loaded: {:?}", cfg);
+
+let RaftEngineConfig {
+
+    peers,
+
+    period,
+
+    raft: raft_config,
+
+    storage: raft_storage
+
+} = cfg;
+ 
+The settings are loaded by calling the get_settings method in the consensus service, with the chain head provided in the startup_state:
+ 
+let settings_keys = vec![
+
+    "sawtooth.consensus.raft.peers",
+
+    "sawtooth.consensus.raft.heartbeat_tick",
+
+    "sawtooth.consensus.raft.election_tick",
+
+    "sawtooth.consensus.raft.period",
+
+];
+
+ 
+
+let settings: HashMap<String, String> = service
+
+    .get_settings(block_id, 
+
+        settings_keys.into_iter().map(String::from).collect())
+
+    .expect("Failed to get settings keys");
+ 
+ 
+ 
+Some of these settings are optional, so defaults are used if they’re unset.
+ 
+Creating the Raft Node
+ 
+Once the configuration is loaded, we create the Raft node that contains the main logic of the algorithm:
+ 
+// Create the Raft node.
+
+let raft_peers: Vec<RaftPeer> = raft_config.peers
+
+    .iter()
+
+    .map(|id| RaftPeer { id: *id, context: None })
+
+    .collect();
+
+let raw_node = RawNode::new(
+
+    &raft_config,
+
+    raft_storage,
+
+    Raft_peers
+
+).expect("Failed to create new RawNode");
+
+ 
+
+let mut node = SawtoothRaftNode::new(
+
+    local_peer_info.peer_id,
+
+    raw_node,
+
+    service,
+
+    peers,
+
+    Period
+
+);
+ 
+The RawNode struct is provided by the raft-rs library; it contains the logic for the Raft algorithm itself and provides methods for SawtoothRaftNode to direct it. The SawtoothRaftNode, found in node.rs, defines six methods that are called by the consensus engine:
+ 
+	on_block_new is called when the validator notifies the engine that it has received a new block
+	on_block_valid is called when the validator notifies the engine that it has validated a block
+	on_block_commit is called when the validator notifies the engine that it has committed a block
+	on_peer_message is called when one node’s consensus engine sends a message to another
+	tick is used to move the Raft algorithm forward by one “tick”
+	process_ready contains much of the logic that changes the state of Raft
+
+ 
+The first four methods (on_block_new, on_block_valid, on_block_commit, and on_peer_message) will be defined for the majority of consensus engines since they handle important messages that are delivered by the validator. The last two methods (tick and process_ready) are specific to Raft; other consensus engines will likely have different methods to handle the logic of the engine.
+ 
+Entering the Main Loop
+ 
+With a Raft node created and ready to handle updates, we enter the main loop of our consensus engine:
+ 
+let mut raft_ticker = ticker::Ticker::new(RAFT_TIMEOUT);
+
+let mut timeout = RAFT_TIMEOUT;
+
+ 
+
+// Loop forever to drive the Raft.
+
+loop {
+
+    match updates.recv_timeout(timeout) {
+
+        Err(RecvTimeoutError::Timeout) => (),
+
+        Err(RecvTimeoutError::Disconnected) => break,
+
+        Ok(update) => {
+
+            debug!("Update: {:?}", update);
+
+            if !handle_update(&mut node, update) {
+
+                break;
+
+            }
+
+        }
+
+    }
+
+ 
+
+    timeout = raft_ticker.tick(|| {
+
+        node.tick();
+
+    });
+
+ 
+
+    if let ReadyStatus::Shutdown = node.process_ready() {
+
+        break;
+
+    }
+
+}
+ 
+Raft’s main loop performs three main tasks. First, check if there are any updates that have been sent to the engine by the validator. If there is an update, handle it by calling the appropriate method of the SawtoothRaftNode:
+ 
+fn handle_update<S: StorageExt>(node: &mut SawtoothRaftNode<S>, 
+
+  update: Update) -> bool
+
+{
+
+    match update {
+
+        Update::BlockNew(block) => node.on_block_new(block),
+
+        Update::BlockValid(block_id) =>
+
+            node.on_block_valid(block_id),
+
+        Update::BlockCommit(block_id) => 
+
+ node.on_block_commit(&block_id),
+
+        Update::PeerMessage(message, _id) => 
+
+ node.on_peer_message(&message),
+
+        Update::Shutdown => {
+
+            warn!("Shutting down");
+
+            return false
+
+        },
+
+ 
+
+        update => warn!("Unhandled update: {:?}", update),
+
+    }
+
+    true
+
+}
+ 
+Second, move the Raft algorithm forward by one “tick” at a regular interval, using the Ticker object defined in ticker.rs and a call to the node’s tick method. This “tick” roughly corresponds to progress in the Raft algorithm itself.
+ 
+Finally, call the node’s process_ready method, which checks the state of the Raft algorithm to determine if it needs to take any actions as a result of the last “tick”.
+ 
+Starting the Engine
+ 
+Once the consensus engine itself has been defined, starting it up and connecting it to the validator is easy. In the main function of main.rs, all we need to do is simply determine the validator’s endpoint (using a command-line argument in Raft), instantiate the engine, and start it using the SDK’s ZmqDriver:
+ 
+let raft_engine = engine::RaftEngine::new();
+
+ 
+
+let (driver, _stop) = ZmqDriver::new();
+
+ 
+
+info!("Raft Node connecting to '{}'", &args.endpoint);
+
+driver.start(&args.endpoint, raft_engine).unwrap_or_else(|err| {
+
+    error!("{}", err);
+
+    process::exit(1);
+
+});
+ 
+See for Yourself!
+ 
+Want to try running a Sawtooth network with Raft consensus? Check out the Raft source code on GitHub as well as the Sawtooth Raft documentation for all you need to get started.
+ 
+For more on the consensus API and developing your own consensus engine for Hyperledger Sawtooth, take a look at our previous blog post.
+ 
+ 
+ 
+About the Author
+ 
+
+ 
+ 
+ 
+Logan Seeley is a Software Engineer at Bitwise IO. He has been involved in a variety of Hyperledger Sawtooth projects, including the development of the consensus API, Sawtooth Raft, and Sawtooth PBFT.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

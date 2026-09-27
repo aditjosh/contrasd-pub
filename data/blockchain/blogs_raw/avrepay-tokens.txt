@@ -1,0 +1,207 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Repay Tokens | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Borrowing GuidesRepay Tokens
+beginner
+
+
+
+
+
+
+Introduction
+
+Repaying tokens on the Aave Protocol is essential for closing your borrow position and freeing up collateral.
+
+Repayments can be made fully or partially through protocol smart contracts or through a frontend such as Aave Labs interface by performing the following steps:
+
+Step 1: Connect Wallet
+
+To begin, press ‘Connect Wallet’ and select the Ethereum wallet provider corresponding to the wallet holding the tokens intended for repayment.
+
+Step 2: Select Borrowed Token to Repay
+
+Once connected, navigate to the ‘Dashboard’ and locate the ‘Your Borrowings’ section. This table lists the tokens you have borrowed. Choose the token you wish to repay.
+
+Step 3: Approve Token Transfer (if necessary)
+
+If repaying with a non-base token, you may need to approve the Aave Pool smart contract to transfer tokens from your wallet. This approval is necessary for any repayment action that involves ERC-20 tokens. Approvals can be performed through a transaction (incurs a network fee) or a signature (does not incur a network fee).
+
+Step 4: Confirm Repayment Transaction
+
+Enter the repayment amount and confirm the transaction in your wallet. If repaying a base asset, the repayment process involves the WrappedTokenGateway contract, which unwraps the token and repays the borrowed amount in a single transaction.
+
+Step 5: Monitor Collateral Health Factor
+
+After the repayment is confirmed, your debt will decrease, and your health factor will improve. Fully repaying your borrow position will release your collateral, making it available for withdrawal or other uses. Regularly monitor your health factor and manage your borrow positions to reduce the risk of liquidation.
+
+
+
+Related
+Borrow Tokens
+beginner
+
+Maintain overcollateralised borrow positions.
+3 min read
+Efficiency Mode (E-mode)
+intermediate
+
+Borrowing in Efficiency Mode (E-mode).
+3 min read
+Health Factor & Liquidations
+advanced
+
+Mechanics of Aave Protocol liquidations.
+4 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

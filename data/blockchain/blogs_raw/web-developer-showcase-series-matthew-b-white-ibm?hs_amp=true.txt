@@ -1,0 +1,102 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer showcase series: Matthew B. White, IBM – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer showcase series: Matthew B. White, IBM – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger Foundation | May 9, 2022 8:15:59 AM 
+        
+
+        
+          Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is Matthew B. White, Lead Software Engineer at IBM.
+ 
+Give a bit of background on what you’re working on and how you got into blockchain
+ 
+Can’t really recall when I first heard of blockchain or indeed cryptocurrency; but it was the new thing that obviously was creating interest. My natural curiosity wanted to know more about this. 
+ 
+There were a couple of internal staff briefings I listened into to get some background; plus the people who were involved were ones I’d worked with previously and respected. This wasn’t some random idea that had no real benefit. As luck would have it, I saw an opening to move into a newly created team at IBM focusing on blockchain and went for it. 
+ 
+Since that point I’ve not looked back and have worked on a number of aspects of Hyperledger Fabric and IBM’s offerings.
+ 
+What Hyperledger frameworks or tools are you using in your projects? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+Currently it’s as a contributor and maintainer of Hyperledger Fabric. It’s been a really enjoyable time working with open source.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+There are two big challenges I believe. Collaboration and applicability
+
+Blockchain requires a collaboration between ‘entities,’ companies, people, etc. A collaboration that many previously wouldn’t have thought of. For example, the many companies that form a supply chain. It’s this collaboration that is key to blockchain and needs to remain a focus as Hyperledger technologies are adopted more widely. For example, how do multiple companies adopt Hyperledger Fabric for supply chain solutions?
+ 
+There are many use cases, from the token space (tracking both assets & currency) to supply chain tracking and auditing to distributed identity, where the concepts and features offered by a blockchain can help. Likewise, there are many Hyperledger projects and labs. That leads to the applicability challenge. For the outside user looking in, it can be hard to know how to apply these technologies to real solutions. For example, how does Hyperledger Grid work with Hyperledger Fabric for supply chain solutions? How do I use Hyperledger Indy to get distributed identity linked with my existing systems?
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+Like any new technology, there is the initial “it’s the best invention since the wheel” hype. The key thing to blockchain is that to make it worthwhile requires the collaboration mentioned before. That’s the hard part and the part we need to focus on.
+ 
+As Hyperledger’s projects continue to mature, what do you see as the most interesting technologies, apps, or use cases coming out as a result?
+ 
+The one we haven’t thought of yet! 
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+The lack of trust between parties.
+ 
+Where do you hope to see Hyperledger and/or blockchain in five years?
+ 
+As mainstream as, say, a database or a rest server.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+You’re not writing the code for yourself; you’re writing for either your future self or more likely somebody else. Don’t add a comment saying “this next line calls an array sort function,” but add a comment “why does this array need to be sorted? What is the scale of the data and how did that affect your choice of sort algorithm? Are there controls in the system that would change the assumption about the scale of the data.”
+ 
+When a problem or change needs to be made in the future, the developer then can see what your thought processes were for writing the code you did. 
+ 
+What technology could you not live without?
+ 
+Lego
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

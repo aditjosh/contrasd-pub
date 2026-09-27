@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Aries Framework JavaScript Identity Wallets Standards Push
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Aries Framework JavaScript Identity Wallets Standards Push
+
+        
+
+        
+           Written by Karim Stekelenburg, Hyperledger Aries Maintainer - Animo Solutions Co-Founder | Sep 7, 2023 8:01:26 PM 
+        
+
+        
+          Three years ago, when my co-founders and I started Animo, we had to choose which self-sovereign identity technology to focus on. Given our prior experience with the Hyperledger Aries/Indy ecosystem and the fact that it seemed amongst one of the more mature ecosystems out there, we opted for Hyperledger Aries Framework JavaScript (AFJ). We've since become the largest contributor to the framework and have been actively working with the community ever since.
+
+
+AFJ is a Hyperledger Aries-based framework that supports Hyperledger AnonCreds and DIDComm-based protocols, such as issue-credential-v2 and out-of-band/did-exchange, based on Aries RFCs.
+
+Since then, the self-sovereign identity space has evolved significantly. New standards have emerged, SSI adoption is increasing, and government bodies are constructing their own SSI ecosystems. However, different organizations adopt different standards, creating a challenge for global interoperability.
+
+At Animo, we strive to promote the global adoption and accessibility of SSI. As a company that develops solutions on top of the AFJ framework, we prioritize its relevance across various ecosystems. While AFJ originates from the Hyperledger Aries ecosystem, we believe that incorporating other non-Aries standards will significantly enhance the framework's value.
+
+Recently, the European Commission released the Architecture Reference Framework (ARF), which outlines the standards and protocols for European identity wallets, including OpenID for Verifiable Credentials, SD-JWT, and Mobile Drivers License credential formats. However, AFJ currently does not fully support any of these standards.
+
+To ensure interoperability with the European ecosystem, we have launched the following four open initiatives to make AFJ compliant with the ARF.
+
+Initiative 1: Mobile Driver's License (ISO/IEC 18013-5) Module
+
+ISO/IEC 18013-5 is a standard that defines how to share driving license information on mobile devices. Although the specification focuses on driving licenses, the ISO/IEC 18013 group also defines the generic mDoc format. The ARF has adopted this standard to facilitate proximity verification flows.
+
+Initiative 2: OpenID for Verifiable Credential Support
+
+OpenID for Verifiable Credentials (OpenID4VC) is a set of credential issuance and verification specifications on top of OAuth. This “bundle” currently consists of three specifications:
+
+	OpenID for Verifiable Credential Issuance (OID4VCI)
+	OpenID for Verifiable Presentations (OID4VP)
+	Self-Issued OpenID Provider v2 (SIOPv2)
+
+
+In the context of the ARF, the OpenID4VC specification family is used for the issuance and verification of credentials in remote contexts.
+
+Initiative 3: Hardware Security Module Support for Aries Askar
+
+A Hardware Security Module (HSM) is a dedicated physical computing device that safeguards and manages digital keys and aids in protecting cryptographic keys. It is engineered to be tamper-resistant to both physical and digital attacks. HSMs are used in scenarios where it's necessary to provide a high level of security and avoid any potential for loss, theft, or compromise of sensitive cryptographic information.
+
+Initiative 4: SD-JWT Module
+
+Selective Disclosure for JSON Web Tokens (SD-JWT) is a specification for issuing and verifying JSON Web Tokens (JWTs) that allow for selective disclosure of claims. This means that the holder of an SD-JWT can choose to disclose only certain claims to a relying party while keeping other claims hidden.
+
+More information on the project can be found in this public document. Please feel free to leave a comment if you have any questions or remarks. Interested in contributing? Check out the article on our website.
+
+___
+
+For more details on this project, check out the Untold Stories Behind the Hyperledger Community podcast episode with Karim Stekelenburg and Berend Sliedrecht from Animo:
+
+
+
+
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

@@ -1,0 +1,328 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-6315: ERC-2771 Namespaced Account Abstraction
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+      ⚠️ Review
+    
+    
+    
+      Standards Track: ERC
+    
+  
+  
+    
+      ERC-6315: ERC-2771 Namespaced Account Abstraction
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Introducing per-forwarder namespaced addresses to facilitate meta-transactions under a namespacing framework
+
+  	Authors	Gavin John (@Pandapip1)
+	Created	2023-01-11
+	Requires	
+
+  EIP-165, 
+
+  EIP-2771
+
+
+
+
+  
+
+
+  
+    
+      
+      
+        This EIP is in the process of being peer-reviewed. If you are interested in this EIP, please participate using this discussion link.
+      
+
+    
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+    	Namespaced Forwarder Interface
+	Determining the Sender and Forwarder
+	Recipient Extensions
+
+
+  
+	Rationale
+	Backwards Compatibility
+    	Using this EIP in standards
+
+
+  
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+ERC-2771 is a prevalent standard for handling meta-transactions via trusted forwarders. This EIP proposes an extension to ERC-2771 to introduce a namespacing mechanism, facilitating trustless account abstraction through per-forwarder namespaced addresses.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119 and RFC 8174.
+
+
+The key words “Forwarder” and “Recipient” in this document are to be interpreted as described in ERC-2771.
+
+  
+    
+      
+      
+         Namespaced Forwarder Interface
+      
+      
+    
+
+
+pragma solidity ^0.8.0;
+
+interface INamespacedForwarder {
+    function isNamespacedTransaction() external view returns (bool);
+}
+
+
+
+
+  
+    
+      
+      
+         Determining the Sender and Forwarder
+      
+      
+    
+
+
+Upon function invocation on a Recipient, the Recipient MUST execute a STATICCALL to the isNamespacedTransaction() method of the caller. If this operation reverts or returns the boolean value false, the transaction MUST proceed normally, identifying the caller as the sender, and the Forwarder as the zero address. However, if the boolean value true is returned, the transaction is acknowledged as a namespaced transaction, with the sender identified using the procedure outlined in ERC-2771, and the Forwarder identified as the caller.
+
+  
+    
+      
+      
+         Recipient Extensions
+      
+      
+    
+
+
+Whenever a Recipient contract has a function with one or more function parameters of type address, it MUST also provide a new function, mirroring the name of the original function but appending Namespaced at the end, which accepts two addresses instead. The initial address denotes the Forwarder, while the latter represents the address managed by that Forwarder. If a function accepts multiple address parameters (e.g., ERC-20’s transferFrom), a version of the function accepting two addresses per original address parameter MUST be provided. The original function MUST exhibit identical behavior to the new function when Forwarder addresses are the zero address.
+
+
+For instance, ERC-20 would be extended with these functions:
+
+
+function transferNamespaced(address toForwarder, address toAddress, uint256 amount);
+function approveNamespaced(address spenderForwarder, address spenderAddress, uint256 amount);
+function transferFromNamespaced(address fromForwarder, address fromAddress, address toForwarder, address toAddress, uint256 amount);
+
+
+
+
+  
+    
+      
+      
+         ERC-165
+      
+      
+    
+
+
+Recipient contracts MUST implement ERC-165. When an ERC-165 interface ID is registered, a second interface ID corresponding to the XOR of the Namespaced function selectors of the original interface must also be registered.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+The approach of simply augmenting existing EIP functions with new address parameters, rather than crafting new interfaces for the most commonly used EIPs, is employed to ensure broader applicability of this namespacing proposal.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+Contracts already deployed cannot not benefit from this namespacing proposal. This limitation also extends to ERC-2771.
+
+  
+    
+      
+      
+         Using this EIP in standards
+      
+      
+    
+
+
+When using this EIP in another standard, both the original and the Namespaced interface IDs SHOULD be provided. Interfaces MUST NOT include namespaced versions of functions in their interfaces.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+This proposal alters trust dynamics: Forwarders no longer require Recipient trust, but instead require the trust of their users.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Gavin John (@Pandapip1), "ERC-6315: ERC-2771 Namespaced Account Abstraction [DRAFT]," Ethereum Improvement Proposals, no. 6315, January 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-6315.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

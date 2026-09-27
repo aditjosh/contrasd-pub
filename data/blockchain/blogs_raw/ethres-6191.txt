@@ -1,0 +1,546 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A proposal to alleviate the empty block problem - EVM - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      A proposal to alleviate the empty block problem
+    
+
+
+      
+          
+            
+              
+              
+                EVM
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2019,  5:33pm
+                  
+                  
+
+1
+              
+            
+            
+              If you look at ETH block explorer you see that some pools like Spark Pool are producing empty blocks.
+
+The reason for this is they start mining  the block once hash is available, without having to wait for or distribute the actual transactions. Since they do not have the previous block transactions, they can not include transactions in a block without the risk of a double spend.
+
+A simple proposal to alleviate this would be to allow transactions that specify exactly the target block id. A transaction like that would have to be included in the specific block that has the requested block ID.
+
+Arguably, miners could include these transactions without risking a double spend, therefore filling up blocks which are currently empty. Transactions like this would arguably be less convenient, but much cheaper in terms of gas price.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                adlerjohn
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    September 24, 2019,  6:00pm
+                  
+                  
+
+2
+              
+            
+            
+              
+
+
+
+ kladkogex:
+
+
+allow transactions that specify exactly the target block id.
+
+
+
+
+This does not guarantee the transaction is valid if it were to be included in a new block at that height, only that it would be invalid were it to be included in a block at a different height.
+
+This proposal also fails to understand the fundamental reason why mining empty blocks on Ethereum is different than on Bitcoin: Ethereum blocks include a state root, so rewards and collected fees must be committed to in the block header, which requires having validated the previous block.
+
+
+  
+      twitter.com
+  
+  
+    
+
+John Adler (jadler0)
+
+
+ @hasufl @pyskell In Ethereum blocks commit to a state root. Miners can't collect a block reward unless they can compute a new state root...which requires an up-to-date state...which requires that they validate blocks.
+
+
+
+  8:31 AM - 15 Sep 2019
+    
+      
+        
+       3
+    
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2019,  8:05pm
+                  
+                  
+
+3
+              
+            
+            
+              Interesting … Why are they mining the empty blocks then ?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2019,  8:08pm
+                  
+                  
+
+4
+              
+            
+            
+              
+
+
+
+ adlerjohn:
+
+
+This does not guarantee the transaction is valid if it were to be included in a new block at that height, only that it would be invalid were it to be included in a block at a different height.
+
+
+
+
+But still it does guarantee that the transaction was not included before …
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                adlerjohn
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2019,  8:27pm
+                  
+                  
+
+5
+              
+            
+            
+              
+
+
+
+ kladkogex:
+
+
+Why are they mining the empty blocks then
+
+
+
+
+¯\_(ツ)_/¯
+
+There could be a number of reasons.
+
+	After validating the previous block, mining pool operators can create an “empty” block template that only includes payment to themselves (i.e., no transactions, but a new state root), and quickly send this to workers (hashers) before starting to add transactions to their block (which, once done, will be sent to hashers). If a hasher gets lucky and finds a nonce satisfying the difficulty for this empty template, then the pool might as well propagate the block.
+	A hasher might have a networking issue and doesn’t receive an update block template, and continues mining on the empty block template.
+
+
+
+	Software bug(s).
+	The mining pool operator is evil and irrational and refuses to add transactions to some of their blocks, but only some.
+
+
+The list goes on.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                adlerjohn
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2019,  8:28pm
+                  
+                  
+
+6
+              
+            
+            
+              Transaction invalidity is not only the result of duplication. That’s the most boring and uninteresting case. Others include, but are not limited to
+
+	Different transaction, same sender, same nonce.
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                hkalodner
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2019, 10:55pm
+                  
+                  
+
+7
+              
+            
+            
+              Another possible reason is that smaller blocks will propagate faster through the network faster. I’d bet that in a race with two blocks mined simultaneously, the smaller block wins more often (no clue if this is correct based on uncle statistics). If that’s the case, then there’s a legitimate tradeoff between the extra fees you get making a bigger block and slight increase in the chance your block will be orphaned.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                tkstanczak
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    September 26, 2019,  4:50pm
+                  
+                  
+
+8
+              
+            
+            
+              
+  
+      twitter.com
+  
+  
+    
+
+Blockchain Analytics (Bloxy_info)
+
+
+ Despite of overall gas price growing nowadays, the count of empty blocks, containing zero transactions, has tendency to even grow slowly,  up to 300 and more per day!
+More details on https://t.co/IafcENdL30
+
+
+
+  6:54 AM - 26 Sep 2019
+    
+      
+        
+       2
+    
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 30, 2019, 11:03am
+                  
+                  
+
+9
+              
+            
+            
+              I think 2 and 3 are definitely not probable causes.  There may be something in 1 but it is to o vague.
+
+These people lose like $60 per block, there must be a reason …
+
+Looks like  we have no clue WTF is going on  
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

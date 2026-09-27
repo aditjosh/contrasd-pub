@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ledger Leopard Uses Hyperledger Besu to Power a Scale-Up’s New Digital Approach to RTI Tracking – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Ledger Leopard Uses Hyperledger Besu to Power a Scale-Up’s New Digital Approach to RTI Tracking – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Oct 1, 2021 12:27:47 PM 
+        
+
+        
+          Most of the products we use and consume every day are transported on Returnable Transport Items (RTI). Durable and reusable, RTIs like crates, pallets and containers allow producers to move goods efficiently and sustainably. However, tracking RTIs is often a logistical nightmare. There are billions of palettes circling around the world, and trillions of total RTIs on the move. 
+ 
+When Milou Klooster joined her family’s Netherlands-based smoked fish company, Vishandel Klooster, she soon discovered how much time, money, and energy her team was wasting on tracking RTIs. When she searched for a solution to this problem, she found there wasn’t any.
+ 
+She resigned from the company and partnered with consultant Yves du Bois to develop a digital approach to the problem. Together, they founded RTI Blockchain. Their aim: a reliable app that connects all members of the supply chain together in one dashboard and provides a real time overview of the status of their RTIs.
+ 
+Working with blockchain-as-a-service company Ledger Leopard, they developed the RTI Dashboard—a simple and reliable way to manage load carrier administration. Using blockchain technology, the RTI Dashboard gives poolers, suppliers, shippers, and receivers real time insights on their RTI data and enables them to share information privately and transparently. Every link in the supply chain is connected, and the interface is as intuitive as mobile banking.
+ 
+When it came time to consider a platform, the Ledger Leopard team first considered Ethereum Liberty because it allows for private transactions. Then they considered Hyperledger Fabric. They also considered a combination of Ethereum and Hyperledger.
+ 
+Ultimately, they chose Hyperledger Besu, an open source Ethereum client for developing enterprise applications that need secure, high-performance transaction processing in a private network.
+ 
+One key goal was making sure the RTI Dashboard was as easy and intuitive as online banking. Users don’t need to know anything about blockchain to use it. Registration for all users is free. There is no subscription fee, no maintenance and support fees, no cost whatsoever for users. Senders pay per item they ship over the platform at a rate of 0.0005 euros per item.
+ 
+Once a company registers in RTI Dashboard, they can invite their partners to join with a link. Once the partner clicks on the link, they’re invited to explore the platform and how it works, all at no charge.
+ 
+RTI Blockchain suggests users start small. “Take one supplier and use RTI Dashboard for all transactions. Once they see what the system can do for them, they’re more willing to move their entire RTI administration process to the system,” says co-founder Yves du Bois.
+ 
+Hyperledger worked with RTI Blockchain and Ledger Leopard on a case study that details the goals and approach for building this solution, the growing feature set that users are helping to shape and the next opportunities the start-up is eyeing for this dashboard. 
+ 
+Read the full case study here. For more details, tune into the Wednesday, October 20, discussion with Olivier Rikken of Ledger Leopard on supply chain traceability.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

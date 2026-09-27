@@ -1,0 +1,262 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rating your peers: Connection Metrics - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Rating your peers: Connection Metrics
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 18, 2019,  5:16pm
+              
+              #1
+          
+        
+        
+          
+Rating your peers: Connection Metrics
+
+I started this post because of a discussion with the trinity team (context: Tracking issue for peer blacklisting · Issue #520 · ethereum/trinity · GitHub )
+
+
+What is this post about
+
+When dealing with the same peers in the Swarm network, there are any number of data points we want to remember about them: have we connected with them in the past? did we sync to/from them and if so, where did we stop? What is the Swap channel balance? Do they owe us money? Was the connections fast? Was it stable? Did we experience many timeouts with this peer? Did they connect to us initially or did we connect to them? What version of the protocol/client are they running?
+
+This post is about what kinds of data we might want / should want to collect and analyse, and how we might go about rating our peers.
+
+
+Why do we want to collect peer data at all.
+
+These data-points might inform our connection strategy:
+
+	While we cannot choose who our most-proximate peers are, we can certainly prioritise faster peer connections on the lower numbered Kademlia bins.
+
+
+They might inform our forwarding strategy:
+
+	Pass retrieval requests to nodes based not only on their address alone, but also prioritise nodes that have shown fewer timeouts and higher bandwidth in the past.
+
+
+They might inform the services we offer:
+
+	If a proximate peer is too indebted to us in SWAP, we no longer serve their retrieval requests.
+
+
+It might be indicative of an attack:
+
+	If we can only connect to peers that initially connected to us and cannot connect to any peers that we discovered, we might be under eclipse attack.
+
+
+
+What data should be collect?
+
+That what I’d like to discuss with all of you.
+
+
+How should we rate peers based on the collected data?
+
+We want to know about our peers, are they:
+
+Quoting from my discussions with the Trinity team:
+
+
+	Malicious:  They provably lie about things
+	Useless: They don’t have anything useful that you want
+	Poorly Connected: Unable to sustain healthy connectivity
+	Bad/Lazy: They have things you need but they don’t give them to you reliably
+
+
+
+
+Some of those might not apply for a Swarm node as they do for an Eth node. For example we don’t have the Bad/Lazy node, but we might add instead
+
+	Liabilities: They don’t pay their bills or pay them too late
+
+
+Once we establish these criteria, we have to decide how to score our peers.
+
+Quoting again from the Trinity team:
+
+
+For metrics/ranking we haven’t made a ton of progress but the general ideas are:
+
+Lots of rolling EMA and Percentile for things like:
+
+	request/response time
+	percentage of requests that time out
+	throughput (things per second for each type of thing)
+
+
+Exactly how we use them effectively is still up for grabs.  Though usage seems to fall into two categories.
+
+	per session (how do I compare the current peers I’m connected to)
+	historical (how do I decide based on historic peers who is a good connection candidate)
+
+
+
+
+The idea is that we do not want to permanently blacklist anyone, but that repeated bad behaviour makes it less and less likely that we will connect to a particular peer anytime soon.
+
+We were suggested to look at something like a token bucket (Token bucket - Wikipedia)
+
+
+…for the session tracking to condense peers down to a single metric.
+
+	Everytime they do something you like, tokens go into the bucket
+	Everytime they do something bad you take tokens out of the bucket
+
+
+
+
+Then if the bucket is empty, they get services denied to them or they get disconnected for some amount of time.
+
+
+
+Swarm has different usage patterns and different forms of bad behaviour than an eth client, so we should look carefully if the above suggestions work for us as well.
+
+As a first test case of remembering and rating Swarm peers, I suggest we try two metrics as test cases. One for performance and one economic.
+
+	
+Bandwidth
+
+Since Swarm peers are expected to connect to most-proximate peers based on Swarm address and not most-proximate based on geography, we often get asked if this does not seriously degrade performance. Indeed other storage networks take geographic proximity into account explicitly.
+
+In Swarm we require connections to all most-prximate nodes by address, but in the lower numbered Kademlia bins we have a lot more freedom to choose our peers.
+
+I suggest we explore how we might measure connection speed (bandwidth and latency) for peers and prioritise fast connections in lower bins.
+
+
+	
+Swap balance
+
+The Swarm incentive system envisages that every peer connection maintain the SWarm Accounting Protocol (SWAP). When a connection becomes too unbalanced (one peer consumes more than the other) a payment should be made to ‘rebalance the swap channel’. If this does not happen, and the connection becomes more unbalanced still, the peer should be penalised in some form.
+
+[Note, the original Orange paper called for an immediate disconnect, but I suggest it might be enough to deny serving retrieval requests to that peer. … or rather we could say: if the peer is in a low Kademlia bin disconnect the peer but remember the debt ; if the peer is in the most proximate bin stay connected but, refuse to serve retrievals until payment is made ].
+
+
+
+
+I suggest these two as test cases because 1 is necessary at some point anyway if we are to have a performant network, and 2 is in some sense the prototype of a swarm connection metric. They contain elements that we might see in future (measuring performance on the underlying network, changing connection status based on blockchain/payment events, persisting financial state for a peer when not connected … )
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+                  
+                    
+                      
+
+Questions on Incentive Development
+                    
+                    	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

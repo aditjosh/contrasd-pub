@@ -1,0 +1,844 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Santiago Casaliglla, DNAsmartbits – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Developer Showcase
+                            
+                        
+                    
+
+                
+                Developer Showcase Series: Santiago Casaliglla, DNAsmartbits
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Mar 16, 2018
+                    
+                
+
+            
+
+            
+            
+                Our Developer Showcase blog series serves to highlight the work and motivations of developers, users and researchers collaborating on Hyperledger’s incubated projects. Next up is Santiago Casaliglla, CEO of DNAsmartbits. Let’s see what he has to say!
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+They have to get information about how the technology works, from different sources and providers, to get a clear understanding of the benefits and implications of managing a distributed ledger. This is key in order to check if the approach of a blockchain application gives advantage to their projects compared to other possible solutions. I suggest this because of my first experience with the technology, which happened during my research at a German University. Our task was to develop a blockchain system for a distributed control. The traditional architecture of distributed control is based on a central controller to whom other slave controllers report and receive orders because the participants (controllers) agree that having a common regulator benefits all members. Then, the distributed control has sense between factories, in a permissioned closed group. The main target of the research was to replace this central controller with a distributed application. While developing the solution we found some issues due to a misunderstanding from the different parties involved on how a distributed ledger works. This was manifested in goals outside of the scope of what a blockchain can do. Mainly they kept the idea of a traditional central governor with high capacity of computational power to perform complex mathematical algorithms. At the end, and after some corrections and redefinitions the solution was feasible if the power of computation required was low. In this context, I started looking at Hyperledger since it clearly offers a customizable solution that can be applied to several industries.
+ 
+
+ 
+ Santiago Casaliglla, CEO of DNAsmartbits
+
+
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+I am the CEO and founder of the Ecuadorian IoT Company, DNAsmartbits. Our first product is a platform for mobile commerce that works with a prepaid balance to make purchases inside the system. This approach was meant to give access to the benefits of the platform without providing sensitive financial information like credit card numbers or bank accounts. Not even a bank account is needed. Six months ago I was researching how blockchain technologies can provide transparency to their participants while making efficient transactions and being scalable. I finally decided to power our product with a blockchain backend and a crypto token. I found an ideal structure within the Hyperledger Fabric project because of its permissioned blockchain architecture. At this point, I have to say that all fintech blockchain applications must become permissioned in order to avoid potential misuses while keeping the benefits and advantages the technology has. 
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+I consider two things: 1. To divulge and promote educational tools to learn how Hyperledger works with a focus on the advantages it brings compared to the current solutions present in the market. 2. To promote the research of how Hyperledger can be implemented to improve existing systems. These two thins are keys to promoting a massive adoption of the technology. The more people adopt the system the better it becomes if it is open source, as Hyperledger is. Regarding the educational tools, they have to be specific for different levels of knowledge or backgrounds or interests. Regarding research, Hyperledger staff should try to get in contact with Universities and other educational centres to launch programs that may lead to interesting results and even more improvement of the platform.
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+I am hoping we’ll see blockchain technology bring transparency to property ownership, government and individual identification in the next five years. Landing and property ownership registration presents issues in developing countries where the records of ownership are not keep in a proper manner and where the info generated in each transaction is not crossed or shared to other governmental institutions. This leads to difficulties and eventually ends in fraud when someone tries to buy land or property. Taxation and public services are also affected since it becomes difficult to identify the owner. To digitalize all the property titles and store them in a blockchain will give transparency, trust and an immutable history of the ownership of the land while controlling that only the current registered/recognized owner can promote and execute selling transactions over that land. The new owner before participating in the buying process should have been accepted to the network, which in turns brings more security and transparency to the transactions. As for government, the transactions executed for each governmental institution should be digitally signed and sealed by the representatives of the participant parties and permanently stored in a public immutable database in order to bring transparency to the administration, especially when it comes to managing public funds, and to provide a secure way to audit them in real time and by citizens or other institutions. Thus, blockchain has the power to eradicate corruption. As for individual identification, the previous solutions work with a basis of individual identification. In an era where business and transactions are going global, knowing for sure with whom you are dealing with is important to establish a trustful connection. 
+ 
+ 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,182 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Getting Started - Install — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts
+	Getting Started - Install	Prerequisites
+	Install Fabric and Fabric Samples
+	Fabric Contract APIs and Application APIs
+
+
+
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides
+	Upgrading to the latest release
+	Commands Reference
+	Architecture Reference
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Getting Started - Install
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+Getting Started - Install¶
+
+
+
+
+The Fabric application stack has five layers:
+
+
+
+	Prerequisite software: the base layer needed to run the software, for example, Docker.
+
+	Fabric and Fabric samples: the Fabric executables to run a Fabric network along with sample code.
+
+	Contract APIs: to develop smart contracts executed on a Fabric Network.
+
+	Application APIs: to develop your blockchain application.
+
+	The Application: your blockchain application will utilize the Application SDKs to call smart contracts running on a Fabric network.
+
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

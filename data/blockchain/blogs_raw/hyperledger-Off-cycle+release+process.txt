@@ -1,0 +1,688 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Off-cycle release process - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+	Release Rotations 2024
+
+
+
+
+
+	Using CalVer for Besu Releases
+
+
+
+
+
+	How to do a Besu Release
+
+
+
+
+
+	Off-cycle release process
+
+
+
+
+
+	Release Process
+
+
+
+
+
+	Obsolete Proposals and Policies
+
+
+
+
+
+	Archive
+
+
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Off-cycle release process
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Off-cycle release process
+
+	Sally MacFarlane
+
+
+
+	Justin Florentine
+
+
+
+	Danno Ferrin
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Jun 10, 2024 by Justin Florentine
+
+
+
+
+
+
+
+
+
+
+Context
+Inevitably, there will be a need to release immediately, regardless of plans. Should an emergency, critical bug, or security issue (or any matter of that sort) arise, the following process will govern the release.
+
+
+An off-cycle release is defined as:Â 
+	A release outside of the scheduled times here
+	A release not on the typical Wednesday or Thursday slots
+	A cherry-picked release (not off main branch)
+
+Process:Â 
+	Any besu contributor may bring forth the need for an off-cycle release 	including justification of why the release is warranted
+	via the besu-contributors channel in Discord
+
+
+	Scope for the release also needs to be agreed.	via theÂ besu-release channel in Discord
+
+
+	Ideally, consensus is reached. Allow aÂ 48 hour voting period to allow for objections.Â 	Justification must be given if objecting to the release
+	If there are no objections, the release can continue at an agreed upon time.
+	Any objection and the justification given must be seriously considered and weighed against the reasons for the release.
+	This discussion must happen in theÂ besu-release channel in Discord.
+
+
+
+Justification for release (examples)
+	critical bug affecting a number of users which requires a patch
+	regular release process will not address the issue in time
+	urgent security issue discovered
+
+Justification for objection (examples)
+	technology X introduced is bad for Y reasons
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Release Process
+Release Process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Process Improvement
+Release Process Improvement
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Rotations 2024
+Release Rotations 2024
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Rotations 2022
+Release Rotations 2022
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal: Avoid Cherry Picked Releases
+Proposal: Avoid Cherry Picked Releases
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal: Quarterly releases from main by default
+Proposal: Quarterly releases from main by default
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "b35ac68e33424945a92ee2abf6111e57"}

@@ -1,0 +1,846 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+All Are Welcome Here – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Burrow
+                            
+                        
+                    
+
+                
+                All Are Welcome Here
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Dec 3, 2018
+                    
+                
+
+            
+
+            
+            
+                A Minneapolis coffee shop that has fueled or at least caffeinated a lot of Hyperledger commits.
+ 
+One of the first things people learn when coming to Hyperledger is that Hyperledger isn’t, like it’s name may imply, a ledger. It is a collection of blockchain technology projects. When we started out it was clear almost immediately that a single project could not satisfy the broad range of uses nor explore enough creative and useful approaches to fit those needs. Having a portfolio of projects, though, enables us to have the variety of ideas and contributors to become a strong open source community. Back in January of 2016 Sawtooth and Fabric were both on the horizon followed shortly by Iroha, but we wouldn’t have predicted that we would have Hyperledger Burrow and Hyperledger Indy – two projects that bear no resemblance to each other. Burrow is a permissioned Ethereum-based platform and Indy is a distributed identity ledger. Burrow is written in Go, and Indy was created in Python and is porting to Rust. 
+ 
+Both of these platforms are interesting in their own rights, but Hyperledger is even more interesting for the combination of these projects with the others. Both Sawtooth and Fabric have already integrated with Burrow’s EVM. Now Hyperledger has a set of offerings that can simultaneously satisfy diverse requirements for smart contract language, permissioning, and consensus. Likewise Sawtooth and Indy have been working together at our last several hackfests. The results of that may unlock new use cases and deployment architectures for distributed identity. So it’s not that our multiplicity of projects has given us strength through numbers, but rather strength through diversity.
+ 
+
+ 
+Hyperledger Hackfest – December 2017 at The Underground Lisboa
+ 
+The hackfests that we mentioned are one of the rare times that we get together face to face. Most of our collaboration is over mail list, chat, and pull-requests. When we do get together though it’s always in a new city with new faces. One of our most recent projects was hatched inside one of those buses. It wasn’t the most ergonomic meeting I’ve ever had but there was room for everyone on that bus.
+ 
+
+ 
+Hyperledger Hackfest in Chicago 
+ 
+Our hackfest in Chicago was in a lot more conventional surroundings (still a very cool shared creative space .. lots of lab equipment and benches out of view on the other side of the wall to the right). Looking back at this photo is fun for me. I can see a lot of separate conversations happening at each table… people sharing different ideas, helping ramp new contributors, working on advancing new concepts with existing contributors. I can see a lot of similarity but also a little variety. It’s a busy room but there’s still open chairs and room for more variety.
+ 
+Our next hackfest won’t be until March 2019 (Hyperledger is hosting Hyperledger Global Forum in December in Basel though). The March hackfest will be somewhere in Asia – location to be settled soon. The dates and locations of the other 2019 hackfests aren’t set yet. I don’t know where they will be specifically, but I do know that there will be a seat available and you will be welcome there.
+ 
+These face to face meetings really are more the exception than the rule at Hyperledger. There are now more than 780 contributors spread all across the globe. 165 of those were just in the last few months. That means that every day we have a new person contributing to Hyperledger. Most of our engagement is through the development process. People contribute bug fixes, write new documentation, develop new features, file bugs, etc. If you’ve never contributed open source code before getting started might be intimidating. We don’t want it to be, though. There are a number of resources to help you get started. You can watch this quick video from Community Architect, Tracy Kuhrt. There’s documentation for each project, mail lists, a chat server, working groups, and some of the projects even host weekly phone calls to help new developers get engaged. Everyone in Hyperledger abides by a Code of Conduct so you can feel comfortable knowing that when you join any of those forums you will be treated respectfully. Anyone who wants to get involved can regardless of “physical appearance, race, ethnic origin, genetic differences, national or social origin, name, religion, gender, sexual orientation, family or health situation, pregnancy, disability, age, education, wealth, domicile, political view, morals, employment, or union activity.” We know that to get the best ideas, best code, best user experience we need your involvement. Please come join our community.
+ 
+
+ 
+Image created by https://allarewelcomehere.us/ for Hyperledger
+ 
+As always, you can keep up with what’s new with Hyperledger on Twitter or email us with any questions: info@hyperledger.org.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

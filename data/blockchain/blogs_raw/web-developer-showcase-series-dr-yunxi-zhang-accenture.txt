@@ -1,0 +1,905 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer showcase series: Dr. Yunxi Zhang, Accenture – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Developer Showcase
+                            
+                        
+                    
+
+                
+                Developer showcase series: Dr. Yunxi Zhang, Accenture
+ 
+                
+                    Hyperledger Foundation
+                    |
+                    
+                        Jun 16, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is Dr. Yunxi Zhang, Tech Architecture Delivery Associate Manager at Accenture.
+
+
+回到我们的开发者展示系列，让我们了解现实世界中的开发者如何使用超级账本技术。 这次为我们分享的是 来自埃森哲的技术架构师助理经理：张赟熹博士 (Dr. Yunxi Zhang)。
+
+Give a bit of background on what you’re working on and how you got into blockchain
+
+I’ve been working on a number of blockchain projects across various blockchain platforms for diverse business cases since I joined Accenture. I am fascinated by the core blockchain technology, which was invented as a main technical product of bitcoin. I look forward to helping our clients better understand how blockchain could potentially shift their businesses to be more productive. My main motivation for working with blockchain is to help clients leverage this technology to achieve their  goals.
+
+问：您好，张博士！您可以介绍一下您的工作背景以及您是如何加入区块链领域的：
+
+自加入埃森哲后，我已经参与了很多个和区块链相关的项目。基于每个项目有其独特的业务，我们会选用不同的区块链平台。 区块链作为比特币的一个主要的技术产品，我深深被其吸引。同时，我也期待使用区块链来帮助我们的客户更好地理解如何可以使用这项技术帮助转型他们现有的业务，使其更富有成效。达成这些愿景成为了我在区块链这个领域工作的主要动力。
+
+What Hyperledger frameworks or tools are you using in your projects? Any new developments to share? Can you sum up your experience with Hyperledger?
+
+Hyperledger Aries is currently the main framework I’m working on in my project. I’ve used Hyperledger Fabric in earlier projects as well. 
+
+We’ve successfully built up a demo by using Hyperledger Aries to demonstrate how Self-Sovereign Identity credentials could help simplify an entire process from credentials issuance, presentation and verification to make a business process more efficient and productive. 
+
+Overall, I’ve found the documentation of Hyperledger Aries to be always evolving to include the up-to-date key design principles as well as both technical and business benefits. For Aries, there are even online courses available that introduce the big picture first. If people would like to know more low-level details, there is abundant documentation available in the repo. It’s common for the documentation to be a bit behind the technology. To deal with this challenge, the open community is very responsive to new joiners, listening to us patiently and reacting to any questions and issues raised. This helped me delve into Aries in a short period of time. Once  I have a very good understanding of how the technology works, I’m glad I can contribute back to Aries in different aspects. 
+
+问：您在项目中使用了哪些超级账本的框架或工具？ 有什么新进展可以跟大家分享吗？ 您能总结一下您使用超级账本技术的经验吗？
+
+Hyperledger Aries是我目前项目中主要使用的框架。除此之外， 我之前的项目中也曾使用过Fabric。 通过使用Aries，我们成功地搭建了一个演示用以验证如何通过使用用户自主身份凭证来简化凭证生成，凭证提交以及凭证验证，使得整个业务流程更富有成效。 总体来说，我发现Aries的文档始终保持持续更新的状态，及时发布最新的技术信息，关键设计原则以及业务效益。Aries甚至提供了网上课程，介绍了Aries的整体情况。同时，Aries的代码库中提供海量的细节信息。文档的滞后性是常态，为了解决这个问题，Aries的开放社区对于新加入成员提出的问题给予及时的回复，耐心聆听我们的意见。这使得我在很短的时间内理解Aries。当我对Aries有足够的理解后，我很高兴可以以各种方式回馈于Aries。
+
+What do you think is most important for Hyperledger to focus on in the next year?
+
+Hyperledger Foundation should focus on providing updates on how the more mature Hyperledger technologies are being leveraged in different production environments. Any technical architecture design examples could be shared in each repo to help boost the technical architects and developers to try them, so we can reuse these designs, help improve them and contribute back to them. This could facilitate the pace of the adoption for each Hyperledger technology even more.
+
+问：您认为超级账本基金会今年重点应该聚焦在哪方面？
+
+Hyperledger Foundation应该更关注于更新每个Hyperledger技术的成熟程度，它们如何应用于生产环境中。任何的的架构设计的案例可以共享于代码库中，这样，技术架构师和开发人员可以直接尝试并进行改进，并回馈于每个技术。这样也许可以更有效地加速Hyperledger技术的应用。
+
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+
+Hyperledger technologies are built upon the basic concept of how blockchain works, but they each implement it in its own ways to provision enough flexibility for different use cases. The nature of blockchain is very complex as it is comprised of different areas of technologies such as cryptography and distributed systems. It would always be beneficial to developers to grasp this foundational knowledge prior to starting to use Hyperledger technologies.
+
+问：您会给其他有兴趣开始使用区块链的技术人员或开发人员提供什么建议？
+
+Hyperledger的技术是构建在区块链的基础概念之上，但是它们各自有自己的实现方式，这样使得他们能更灵活地应用于不同的用户场景中。区块链是复杂的，因为它包含了很多不同的技术，比如加密学，分布式系统等等。对于程序员来说，理解和掌握这些底层的知识对于使用Hyperledger的技术是非常有益的。
+
+As Hyperledger’s projects continue to mature, what do you see as the most interesting technologies, apps, or use cases coming out as a result?
+
+I see use cases related to decentralized Identity and self-sovereign identity being some of the most interesting and popular business areas in the future. Hyperledger Aries and Hyperledger Indy are already contributing to making this happen more easily.
+
+问：随着超级账本项目的不断成熟，您认为由此产生的最有趣的技术、应用程序或用例是什么？
+
+我发现目前一些比较流行的商业领域，他们的用例已经关注了去中心化身份以及用户自主身份，并且会在今后变得越来越流行。Hyperledger Aries和Indy在这些领域里起到了关键的作用，使得应用变得越来越简便。
+
+What’s the one issue or problem you hope blockchain can solve?
+
+Due to blockchain’s innate intricacy, the application of it is not always straight forward. Even developers or architects with many years of experience find it a challenge to design and use blockchain within the underlying infrastructure and system architecture around them. So, to have a PaaS service of blockchain (not only including the underlying blockchain network, but common architecture on top of it) to quickly enable technicians to use them quickly could further boost its application in all aspects. 
+
+问：您希望区块链能解决的一个问题或者一件事情是什么？
+
+由于区块链其先天的复杂性，对于即使有多年经验的程序员和工程师来说，搭建底层的基础设施和系统架构也不是那么容易的。所以，建设一个以平台为服务的区块链服务（不仅限于底层的区块链网络，包括上层的通用架构）使得技术人员迅速使用它们，也许会加速区块链在各个方面的应用。
+
+Where do you hope to see Hyperledger and/or blockchain in five years?
+
+Having achieved a much lower learning curve for technicians.
+
+问：您希望看到超级账本和/或者区块链在五年后将呈现出什么发展情况？  
+
+进一步降低技术人员的学习和使用门槛。
+
+What is the best piece of developer advice you’ve ever received?
+
+Get your hands dirty with the technology. The more you play with it, the better you will be at using it.
+
+问：您收到的最好的开发人员建议是什么？
+
+动手使用技术，你玩得越多，你就会越擅长使用它。
+
+What technology could you not live without?
+
+Internet
+
+问：您觉得生活中哪些技术是必不可少的？
+
+因特网
+
+ 
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

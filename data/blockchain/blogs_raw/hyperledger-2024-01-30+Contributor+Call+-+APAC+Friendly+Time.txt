@@ -1,0 +1,872 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2024-01-30 Contributor Call - APAC Friendly Time - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+	2024-01-02 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2024-01-23 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2024-01-30 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-02-20 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-02-27 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-03-19 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-03-26 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-04-16 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-06-11 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-07-09 Contributor Call
+
+
+
+
+
+	2024-09-03 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-11-26 Contributor Call - US/AMEA
+
+
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2024-01-30 Contributor Call - APAC Friendly Time
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2024-01-30 Contributor Call - APAC Friendly Time
+
+	Jason Frame
+
+
+
+	Simon Dudley
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Jason Frame
+
+
+Last updated: Mar 25, 2024 by Simon Dudley
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨https://zoom.us/j/91405289771?pwd=QzA3a0ozTjVSZ0hsYzgwTm9lVDRPQT09)
+APAC Friendly TimeÂ (https://www.timeanddate.com/worldclock/converter.html?iso=20220621T010000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	5 pm Monday Los Angeles
+	8 pm Monday New York
+	1 amÂ  Tuesday UTC
+	3 am Tuesday Paris/Berlin
+	11 am Tuesday Brisbane
+
+Agenda
+	Â Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless you are speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Dencun on Sepolia on the 30th 2024-01-30 22:51:12 UTC. Need to update Besu to at least 24.1.0 and your CL to latest version	Add a reminder on our discord to check your EL and CL are updated
+
+
+	Dencun on Holesky 7th February 2024-02-07 11:34:24 UTC
+	See EF announcement here https://blog.ethereum.org/2024/01/24/sepolia-holesky-dencun
+
+
+	Roadmap ReviewÂ 
+	Release updates	24.1.1 release	Release artifacts are safe, and SHAs have been updated. It was a CI issue.
+
+
+
+
+	Work Updates	GitHub actions CI	PR is https://github.com/hyperledger/besu/pull/6427	Looking like we will move to GHA tomorrow
+	Some followup work	Making builds repeatable builds
+
+
+
+
+	Still targeting 24.1.2
+
+
+	Besu opinions on Prague The Prague Upgrade from Besu Maintainers - The Hot, Cold, & Open-Ended
+	Experimental storage improvements with Trielog limitingÂ 	stands to save > 3GB per week. (~160GB per year)
+	Limit Trie LogsÂ 
+	https://github.com/hyperledger/besu/issues/5390
+
+
+	Snap sync to finally become officially production-ready (has been our recommended default for some time) https://github.com/hyperledger/besu/pull/6405	The first change is to rename X_SNAP â†’ SNAP and X_CHECKPOINT â†’ CHECKPOINT
+	Follow on work to create profiles for changing default Change to Besu Defaults - Q1 2024
+
+
+
+
+	Other Business	/add item/
+
+
+	Open Forum	/add item/
+
+
+	Future Topics	/add item/
+
+
+
+
+
+Recordings
+Find the recording in the playlist - https://www.youtube.com/playlist?list=PL0MZ85B_96CHpqsKmljUK8HB98wK67RjC
+
+
+    
+    
+
+
+
+    
+        
+            
+            
+            
+                                                    
+        
+
+                
+
+
+
+
+
+
+    
+
+
+	Â 	
+            File
+        	
+            Modified
+        
+
+
+
+
+    
+
+    
+                    
+                No files shared here yet.
+            
+
+            
+
+
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2023-01-31 Contributor Call - APAC Friendly Time
+2023-01-31 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-02-28 Contributor Call - APAC Friendly Time
+2023-02-28 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-03-28 Contributor Call - APAC Friendly Time
+2023-03-28 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-06-20 Contributor Call - APAC Friendly Time
+2023-06-20 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-05-23 Contributor Call - APAC Friendly Time
+2023-05-23 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-12-05 Contributor Call - APAC Friendly Time
+2023-12-05 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 20, "requestCorrelationId": "7155e342cd45423286d12e4d1679b7df"}

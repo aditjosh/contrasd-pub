@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using Hyperledger Bevel to add a privacy layer to permissioned Besu networks
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Using Hyperledger Bevel to add a privacy layer to permissioned Besu networks
+
+        
+
+        
+           Written by Alvaro Picazo, Hyperledger Bevel Maintainer | Nov 14, 2024 6:46:08 PM 
+        
+
+        
+          In the business world, data consistency is essential, but so is data privacy and control over who has access to it. Within a permissioned private network, where multiple entities are involved, there may be situations where access to transaction details between specific participants needs to be restricted for various reasons. This highlights the importance of privacy, even among entities within the same private environment. It’s not difficult to envision a scenario where this occurs—for instance, in a setting where transfers of tokens representing financial assets take place between entities.
+
+Hyperledger Bevel, an LF Decentralized Trust project, is a framework designed to deploy production-ready DLT networks in cloud environments. Thanks to its powerful Helm Charts, Bevel includes all the necessary steps to initialize a DLT network, thereby simplifying the user’s task of manually executing all commands and cryptographic materials required for the correct operation of the network.
+
+Besu, another LF Decentralized Trust project, is one of the various DLTs supported by Bevel. Besu, as an Ethereum client, provides the ability to set up a permissioned private network within our cloud environment and will offer full support for popular ERC token standards such as ERC20, ERC721, ERC1155, and ERC1400.
+
+Returning to the initial example of a setting where token transfers representing financial assets take place, we will encounter entities whose roles differ within the network. Each entity will be hosting one or more nodes that will either execute transactions or mine blocks and validate transactions (validator nodes).
+
+Given these scenarios, a privacy layer is necessary to allow entities to maintain a level of confidentiality in their transactions, enabling both transaction participants and observing entities to view the details of the transactions occurring on the network. To this end, Hyperledger Bevel currently supports Tessera, an open-source transaction manager developed under the Apache 2.0 license, which allows us to implement the privacy layer required for this use case.
+
+The strength of Hyperledger Bevel relies in the Helm Charts developed for each DLT we support. In the case of Besu, we have different Charts that deploy various components, such as the Besu node, the creation of the Genesis file, and the Tessera node, among others. Each of these Charts consists of a collection of files that describe a related set of Kubernetes resources. If a new privacy mechanism is developed, we simply create a new Chart in Bevel for that mechanism and configure its file collection to function properly within the network.
+
+
+
+Smart Contracts will be needed to accommodate the necessary logic to complete transactions, such as specific validations defined for the particular use case.
+
+Since Besu does not support wallet management, an external component that implements open-source libraries like Web3 will be required for this management.
+
+Imagine the following scenario, where three different banks and a central bank are entities present in the network, and “bank 1” wishes to send a series of tokens to “bank 2.” In this case, transaction details should not be available to “bank 3” but should be accessible to the central bank, as it is a regulatory and thus an observing entity.
+
+	Through the communication layer, Bank 1 connects to the Besu Node in order to send a private transaction to Bank 2 and CB. 
+	Tessera sends the private transaction to other Tessera nodes to which the receivers of the transaction are connected. The transaction was previously encrypted by the private key of the sender.
+
+
+
+
+	The PMT (or privacy marker transaction) is a pointer to that specific private transaction that will be validated by the validator nodes and distributed to every single node in the network.
+	The PMT is distributed to the participants.
+	The Besu node queries the PMT pointing to the Tessera node, and the ones which have the private transaction stored will only be able to retrieve it and therefore execute the transaction available.
+
+
+
+
+After the completion of the described flow, “bank 3” will only be able to see the existence of a transaction hash but will not have access to its details. However, the entities involved in the transaction (sender, receiver, and observer) will be able to view the full details of the private transaction.
+
+In this way, we ensure privacy among entities that share business logic implemented in the smart contracts, with a privacy layer provided, allowing us to withhold transactional details that are not relevant to external entities.
+
+Join the Hyperledger Bevel Community!
+
+To learn more about Hyperledger Bevel, check out the repo’s wiki and the recordings of past meetups and workshops about Bevel. If you have questions, comments or suggestions, feel free to reach us out on our Discord channel. 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

@@ -1,0 +1,973 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Aries-vcx based message mediator
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Mentorship Program
+                            
+                        
+                    
+
+                
+                Hyperledger Mentorship Spotlight: Aries-vcx based message mediator
+ 
+                
+                    Naian G
+                    |
+                    
+                        Mar 13, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                The world of technology has seen significant developments over the past few decades, largely driven by advancements in cryptography. These advancements have led to innovations including secure internet traffic through HTTPS and WireGuard; protected data storage via BitLocker, LUKS, and fscrypt; decentralized consensus records using Bitcoin and Ethereum; and privacy-focused messaging protocols like Signal and MLS (Messaging Layer Security).
+
+However, despite these advances, our online identities remain controlled by third parties, whether we sign in to apps using Google or Facebook OpenID or manage "verified" accounts on platforms such as Twitter or Instagram. An emerging movement seeks to change this status quo by harnessing the transformative power of cryptography. Governments are also starting to recognize the value of self-sovereign identity (SSI)—a system in which individuals retain full control of their own digital identities.
+
+
+With SSI, people use digital wallets to store and present verifiable credentials when needed, eliminating the need for central authorities controlling access to personal data. Among the numerous projects striving to realize this vision, the Hyperledger Aries project aims to define and secure the communication layer connecting the various components within the SSI ecosystem, including individuals' digital wallets, credential issuers, and verifiers.
+
+WHAT I WORKED ON:
+
+Project Name: Aries-vcx based message mediator
+
+Objectives:
+
+	Implement message mediator service written in Rust
+	Robust integration on top of aries-vcx crates
+	Support newer pick-up v2 protocol
+	Automatize the CI/CD process
+
+
+Mentors:
+
+	
+Mentor
+
+	
+Discord
+
+
+	
+Patrik Stas
+
+	
+Patrik Stas#7722
+
+
+	
+Bogdan Mircea
+
+	
+bobozaur#5997
+
+
+	
+Miroslav Kovar
+
+	
+mirgee#3763
+
+
+	
+George Mulhearn
+
+	
+gmulhearn#0356
+
+
+
+
+ 
+
+Details:
+
+Digital agents within the SSI ecosystem may not always be able to communicate directly with one another, such as in cases of intermittent connectivity (as with mobile wallets) or for other practical reasons.
+
+I was tasked with creating a mediator service to enable these agents to exchange encrypted messages via the mediator, using the latest mediation standard: pickup v2 protocol. This service needed to be robust, efficient, and meet stringent security standards. To achieve these objectives, the project aimed to use the Rust language, renowned for its memory safety, speed, and steep learning curve.
+
+Chosen from a global pool of candidates, I had the privilege to undertake this challenge, mentored by the team of passionate Rust and open-source advocates who also maintained the aries-vcx library—the platform on which I was to develop the mediator.
+
+WHAT I LEARNED AND ACCOMPLISHED:
+
+I had applied for this internship armed with knowledge from reading The Rust Book and completing half of the Rustlings exercises. This made me eager to apply my newly acquired skills in a real-world setting. So how does one transition from minimal hands-on Rust expertise to delivering a functional product that interfaces with numerous technologies?
+
+1) Break things into smaller chunks!
+
+Start with something simple. Gradually add complexity, working carefully and deliberately at each step, until you have integrated everything into a functional whole. For instance, when it comes to the Rust domain, I:
+
+	Learned how to set up projects and run tests with cargo
+	Learned how to bootstrap a web server in Rust using axum
+	Learned about databases and interfacing with them in Rust using sqlx
+	Learned about Aries protocols and how to integrate their capabilities using aries-vcx
+	And familiarized with many other important concepts and tricks along the way
+
+
+At every step, I focused on learning one key component that did one thing, and figured out how it could be combined with the previous skills I had acquired. This strategy enabled me to tackle important aspects of each component separately, preventing it from becoming an overwhelming, and daunting mass.
+
+2) Collaboration is key
+
+Early on, I found myself struggling with a seemingly trivial task. One day, however, my co-mentee mentioned a valuable insight provided by one of our mentors—information that I had initially overlooked but eventually helped me find a viable solution. Later, when my co-mentee encountered a stubborn bug toward the end of the mentorship, I managed to locate it thanks to my increasing familiarity with the codebase and meticulous attention to detail.
+
+None of us possesses infinite wisdom or universal awareness. By building upon each other's contributions, ideas, and expertise, we multiply our abilities and expand our collective understanding.
+
+Thus, making use of all assistance available, coupled with my personal grit, tenacity, and an affinity for working with novel concepts, we delivered a functional mediator as part of the mentorship program (among other contributions) — while learning a great deal along the way.
+
+Deliverables:
+
+	Code deliverables:
+	Mediator service agent using aries-vcx
+	Support for Pickup v2 protocol messages in aries-vcx
+	Contributions to aries-vcx
+
+
+
+	Developer resources:
+	Blog posts on Aries concepts, Rust dev, aries-vcx environment setup
+	Analysis of Mediator Coordination protocol implementation choices
+	Miscellaneous notes and scribbles
+
+
+
+	Media deliverable:
+	Presentation at Aries Working Group call
+
+
+
+
+
+Please refer to the objective deliverables page for details about the artifacts produced. 
+
+WHAT I GAINED FROM WORKING WITH MENTORS:
+
+1) Benefitting from your mentors' expertise
+
+In the early stages of diving into intricate tasks, knowing where to begin and what to concentrate on isn't always apparent. Also, it is not always clear what details require immediate focus versus those that should wait for future iterations. That's why consulting experienced mentors with extensive backgrounds proves incredibly beneficial. Seasoned pros easily spot ideal routes for expanding your skill set because they've explored countless twists and turns themselves. Basically, just like shoulders of giants grant better views, counting on your wise mentors’ expertise speeds up your own journey towards mastery!
+
+Thank you to Patrik, Bogdan, Miroslav, and George for the many engaging discussions and useful nuggets of wisdom.
+
+2) Seeking learning opportunities and feedback 
+
+As someone with a research background, I am familiar with working with complex systems and deciphering information-dense materials. However, code quality wasn't always my top priority. Through this mentorship, while honing my Rust skills, I learned about modern software development best practices such as CI and testing. These experiences have equipped me with the confidence to apply these principles to build production-grade software. I owe my gratitude to my mentors who made this possible.
+
+During the mentorship, I engaged in several candid conversations with them, which allowed me to seek and receive constructive criticism. As a result, I could better understand my strengths and weaknesses and focus on developing areas that needed improvement. Among the areas where I consciously developed on were:
+
+	Striking a balance between chasing novelty and focusing on pressing tasks;
+	Embracing practicality by seeking help when necessary instead of trying to solve every problem independently;
+
+
+I would like to express my deepest gratitude to my mentors and especially to Patrik for their unwavering belief in me and support throughout the mentorship. Their flexibility and willingness to adapt to my learning style has been instrumental in my growth. Thank you, Patrik, for believing in me and offering the guidance and support I needed to succeed.
+
+Also, the success of this entire learning journey would not have been possible without the support of the Hyperledger Foundation, the mentoring program organizers, and the dedicated mentors involved. Thank you all for facilitating this enriching experience!
+
+WHAT COMES NEXT:
+
+My journey in the Hyperledger Aries community started as a fresh contributor during my mentorship, and I am delighted to announce my recent promotion as co-maintainer for the Aries-VCX repository. My initial contributions shall be focused on assisting in aspects related to the mediator.
+
+Transitioning to a maintainer role for a public repository is an entirely new experience for me, and I am eager to expand my knowledge and skills in this area. I am truly grateful for being considered and look forward to making meaningful contributions in this expanded capacity.
+
+Aside from volunteering as a maintainer, I am eagerly seeking out professional opportunities where I can put my skills and expertise to use. If you are looking for a sensitive, curious, and skilled team member, I encourage you to reach out to me.
+
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

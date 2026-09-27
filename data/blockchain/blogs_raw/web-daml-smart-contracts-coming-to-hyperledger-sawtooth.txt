@@ -1,0 +1,891 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DAML smart contracts coming to Hyperledger Sawtooth – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                DAML smart contracts coming to Hyperledger Sawtooth
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Apr 16, 2019
+                    
+                
+
+            
+
+            
+            
+                It has been a busy two weeks at Digital Asset… first, we announced that we have open-sourced DAML under the Apache 2.0 license and that the DAML SDK is available to all. Five days later, ISDA (the standards body for the derivatives market) announced DAML as an available smart contract language for their Common Domain Model, and we open-sourced a reference library and application. Next up, we announced that we’ve been working with the team at VMware to integrate DAML with their enterprise blockchain platform, VMware Blockchain.
+ 
+Today, we’re delighted to share that we have been working with fellow Hyperledger members, Blockchain Technology Partners (BTP), to integrate the DAML runtime with Hyperledger Sawtooth! In this blog post, I’ll describe why we believe it’s important to architect a DLT application independently of the platform, why a new language is needed for smart contracts, and why we are working with BTP to integrate it with Hyperledger Sawtooth.
+
+ 
+“Following the recent announcement that DAML has been open-sourced, we are delighted that work is already underway to integrate the DAML runtime with Hyperledger Sawtooth. This demonstrates the power of the open source community to enable collaboration and give developers the freedom required to truly move the industry forward.”
+ 
+Brian Behlendorf, Executive Director of Hyperledger
+
+ 
+One language for multiple platforms
+ 
+As you all know, the enterprise blockchain space is fairly nascent and highly competitive. There are multiple platforms and protocols battling it out to be the “one true blockchain,” each with their own version of maximalists. Hyperledger alone has six distinct frameworks, each tailored to different needs, making necessary trade-offs to solve different problems. The field is rapidly evolving and we are all learning from the contributions of others to better the industry as a whole. One thing all these platforms have in common: Their purpose is to execute multi-party business processes. The differences arise in how a given platform deals with data representation and privacy, transaction authorization, progressing the state of an agreement, and so on.
+ 
+And so each platform has its own patterns for writing distributed ledger applications, typically in a general-purpose language such as Java, JavaScript, Kotlin, Go, Python, and C++. The result of this is that developers must pick which framework they want to use and then develop their application specifically for that platform. Their application is now tightly coupled to the underlying architecture of that ledger and if a better alternative arises for their needs, that likely results in a wholesale rewrite.
+ 
+One of the primary goals of DAML was to decouple smart contracts, the business logic itself, from the ledger by defining an abstraction over implementation details such as data distribution, cryptography, notifications, and the underlying shared store. This provides a clean ledger model accessible via a well specified API. With a mapping between this abstraction layer and the specifics of a given platform, as BTP is developing for Hyperledger Sawtooth, DAML applications can be ported from platform to platform without complex rewrites.
+ 
+Why do smart contracts need a new language?
+ 
+DAML’s deep abstraction doesn’t just enable the portability of applications—it greatly improves the productivity of the developer by delivering language-level constructs that deal with boilerplate concerns like signatures, data schemas, and privacy. Blockchain applications are notoriously difficult to get right. Libraries and packages can help improve productivity in some cases, but the application will remain bound to a given platform. Even Solidity, the language of choice for writing to an Ethereum Virtual Machine (EVM), exposes elements of the Ethereum platform directly to the developer. And we’ve seen several examples of how damaging a bug in a smart contract, or even the language itself, can be.
+ 
+Abstracting away the underlying complexities of blockchains allows you to focus only on the business logic of your project and leave lower-level issues to the platform.
+ 
+For example, when a contract involves many parties and data types it can be extremely difficult to define fine-grained data permissions in a general-purpose language. DAML allows you to define explicitly in code who is able to see which parts of your model, and who is allowed to perform which updates to it.
+ 
+As a very simple illustration, consider the model for a cash transfer. DAML’s powerful type system makes it easy to model data schemas—even far more complex schemas than this—directly in the application.
+ 
+
+ 
+ 
+DAML data model
+ 
+Built-in language elements simplify the specification of which party or parties need to sign a given contract, who can see it, and who is allowed to perform actions on it. These permissions can be specified on a very fine-grained, sub-transaction basis. For example, the issuer of cash does not need to know who owns that currency or what they do with it.
+ 
+
+ 
+ 
+DAML permissions
+ 
+DAML provides a very clean syntax for describing the actions available on a contract, together with their parameters, assertions, and precise consequences.
+ 
+
+ 
+ 
+DAML business logic
+ 
+What you won’t find in DAML are low-level, platform-specific concerns like hashing, cryptography, and consensus protocols. You define the rules in DAML, and the runtime enforces the rules that you set out.
+ 
+If you refer to the examples in the DAML SDK documentation, or the open source code for the set of complete sample applications we’ve provided, you’ll really come to appreciate the full richness of DAML and the simplifying effect it can have on complicated workflows.
+ 
+Why Hyperledger Sawtooth?
+ 
+Digital Asset has a long history with Hyperledger, being founding premier members and serving as both the Chairs of the Governing Board and Marketing Committees. In fact, we donated code to the initial implementation of Hyperledger Fabric and the trademark “Hyperledger” itself! I personally worked with Jim Zemlin and team at the Linux Foundation to establish the project and co-founded the company Hyperledger with my colleague Daniel Feichtinger back in early 2014.
+ 
+We have clearly always believed in the need for an organization such as Hyperledger to exist, to create an open source foundation of common components that can serve as the underlying plumbing for the future of global commerce.
+ 
+Hyperledger Sawtooth has quickly been emerging as an enterprise-grade platform that exemplifies the umbrella strategy that Brian laid out in his first blog post after joining as executive director. It has an extremely modular architecture that lends itself well to the plug-and-play composability that Hyperledger set out to achieve. 
+ 
+An example of this is that Hyperledger Sawtooth originally only offered support for the Proof of Elapsed Time, or PoET, consensus algorithm; consensus is now a pluggable feature. This modularity is accompanied by a very clean separation of business logic from platform logic, offering developers a degree of ‘future-proofing’ by limiting the amount of code that needs to be changed should a core component such as consensus be replaced.
+ 
+Modularity also makes Hyperledger Sawtooth very amenable to plugging in new language runtimes. We’ve already seen this in action with Hyperledger Burrow, which integrates an Ethereum Virtual Machine into Hyperledger Sawtooth to support contracts written in Solidity. Incorporating the DAML runtime into Hyperledger Sawtooth similarly enables support for contracts written in DAML as an enterprise-grade alternative to Solidity.
+ 
+Finally, from a ledger model point of view, many of the Hyperledger Sawtooth characteristics already map well to what DAML expects. Hyperledger Sawtooth’s Transaction Processor has a very flexible approach towards roles and permissions, for example, and is based on a very natural DLT network topology of fully distributed peers. DAML is based on a permissioned architecture and Hyperledger Sawtooth can be configured to be permissioned without requiring special nodes.
+ 
+What comes next?
+ 
+Digital Asset and BTP will soon be submitting the DAML Integration to the upstream Hyperledger Sawtooth framework, fully open sourcing our work.
+ 
+The integration will also be commercially supported by BTP’s blockchain management platform, Sextant, which provides application developers with a cloud-ready instance of Hyperledger Sawtooth. Sextant is already available on the AWS Marketplace for Containers, and DAML support for Sextant will be added in July. BTP expects to support Sextant on other cloud provider support soon thereafter.
+ 
+BTP is one of Digital Asset’s first partners to use the DAML Integration Toolkit, a new tool designed to enable developers and partners to easily integrate our open source DAML runtime with their own products, immediately offering the benefits of the best in class smart contract language to their end customers. We look forward to any collaboration that brings DAML to even more platforms, including the other frameworks in the Hyperledger family!
+ 
+To learn more, download the DAML SDK today and start building your applications for Hyperledger Sawtooth!
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

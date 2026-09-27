@@ -1,0 +1,574 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2024-01-06 Mainnet Halting Event - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+	2024-01-06 Mainnet Halting Event
+
+
+
+
+
+	2022-05-30 Phishing PRs
+
+
+
+
+
+	2021-08-04 Value transfer public transactions being rejected by Besu
+
+
+
+
+
+	2021-04-23 ATs failures
+
+
+
+
+
+	2022-11-11 Fork on Sepolia
+
+
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2024-01-06 Mainnet Halting Event
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2024-01-06 Mainnet Halting Event
+
+	Matt Nelson (Deactivated)
+
+
+
+	Sally MacFarlane
+
+
+
+	Gary Schulte
+
+
+
+	Justin Florentine
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Jun 12, 2024 by Sally MacFarlane
+
+
+
+
+
+
+
+
+
+
+Executive Summary:
+On January 6th, 2024 at block 18947893, an estimated 70% of Besu nodes on Mainnet experienced a halt. This included those running recent software releases, up to and including 23.10.3. Affected clients ceased processing blocks and updating the Ethereum state, until workarounds were communicated out to users, and a hotfix was published.
+What follows is a more detailed outline of the event, how it was mitigated, and the reasoning processes involved.
+Preamble:
+In late November, during development of new features, the Besu team identified a problem with the Bonsai state storage format.Â  Specifically, how Bonsai encoded the state changes in â€œtrie logs.â€�Â  Trielogs are essentially a delta of the ethereum state from block to block - they record the changed state values prior to block execution (preimage) and the new values that result from block execution.Â  The defect related to how Besu logged metamorphic contract deployment.Â  In some specific cases Besu could write an incorrect preimage in the trielog for storage that was self-destructed.Â  This defect, in some form, had been present in the Bonsai code for quite some time. We had been working on a couple fixes which addressed the root of the problem.Â Â Â 
+On Dec 19th we discovered several of our canary Besu nodes on the Sepolia network had halted.Â  Most of the Sepolia canary nodes had stopped at the same block.Â  Looking more closely, we discovered that on Dec 18th, a freshly funded address was experimenting with SELFDESTRUCT/CREATE2 patterns.Â  This was essentially the same case that we had discovered internally and were testing a fix for.
+This address tested a few iterations of this pattern, but the first iteration that caused an issue for Besu was a transaction in block 4913001. This version created, self-destructed and re-created the contract via create2 in a single transaction, ensuring that all of the transactions land in the same block.Â  Besu executed this block fine, but most recent versions of Besu created an invalid trielog with a bad preimage.Â  When Besu subsequently moved the worldstate head to this block via the engine api, it would halt while trying to apply the invalid trielog.Â  A similar pattern occurred on 4913006.Â  The last iteration was 4913057, where the contract was finally self-destructed and not recreated.Â Â 
+We run and monitor many canary instances of Besu on different networks, but we only had a few different versions of Besu running on Sepolia. Most of them halted on the first block.Â  Some halted on the final block.Â  Some development versions did not halt at all.Â  In short, they didnâ€™t all present with the same error or halt on the same block.Â  When we looked at the pattern of activity for this address, we had a suspicion that this was intentional or malicious activity, so we decided to expedite the work already in progress to fix this issue so we could get it out in the last release of the year, 23.10.3.
+Leading up to 23.10.3, we took great care to exercise the fix.Â  We completed a full sync on all test nets and found Besu had no problem with the blocks that halted it previously.Â  An additional Sepolia node was running a special version of Besu that would explicitly roll the state back and forth on each block to exercise the trielogs and ensure they were created and could be applied correctly.Â  When that testing completed we were confident we had fixed the issue.Â  Dec 30 we announced the release 23.10.3 on the hyperledger discord and strongly recommended users upgrade to that version.Â  Unfortunately the github release was left in draft, so some users that monitor github releases did not see the new release.Â  What we didnâ€™t realize was that full sync testing operates directly on the main mutable world state, and does not exercise some aspects of block execution that are used in the engine api.Â  So the bad trielog bug was still lurking even in the latest version.
+The Main Event:
+Christmas and New Years were quiet for Besu nodes.Â  There wasnâ€™t anything in particular that stood out as a problem, until the morning of Jan 6. A Besu engineer was the first to note that something was amiss when nearly all of our Mainnet nodes halted at block 18947983.Â  A freshly funded account had deployed a contract and sent transactions resulting in a bad trie log that halted most versions of Besu on Mainnet.
+Checking discord, we found many users alerting us to the same problem, looking for an explanation and support getting back online.Â  We quickly got our own nodes back online and used that to come up with multiple options to get Besu validators back online as quickly as possible and to share the same operations with Besu node runners. The community support from Besu users was really outstanding - sophisticated users and devs from other projects were helping troubleshoot and to get other users back online (shoutout to the Nethermind team for help in tracing the problematic block).Â Â Â 
+We were still trying to figure out what happened and why users on the latest version of Besu, 23.10.3, were affected.Â  We were reasonably certain that the metamorphic contract was the culprit, but we had to do some quick analysis, debugging, and reproduce the original case that caused the halt.Â  Some hours in, we discovered the condition that led to the fix not working when the block was executed via the engine API.Â  But reproducing the error condition was time consuming and difficult.Â  After consulting with our Teku counterparts about the best way to get a consensus layer client at a specific epoch, we decided it would be best to generate a beacon chain initial state from an archive consensus layer node just prior to the problem block.Â  We put out a call on discord for someone with a Mainnet archive consensus layer that could help us generate that state, and Jim McDonald from Attestant was able to help us.Â Â 
+Now we had a candidate fix and a way to reproduce the issue, all that was left was to test the fix, package it and get it out the door as a hotfix.Â  We decided to add an additional condition to the hotfix that would force a backward sync if the worldstate was unavailable or corrupt when the engine api was executing newPayload or forkchoiceUpdated calls.Â  In most cases, this would allow Besu to just auto-heal, and users could simply install the hotfix as a resolution.Â 
+With the ability to recreate the state before the problem, we instrumented Besu and observed the state and generated trielogs as it executed the problem block.Â  The first time without a fix to prove we had reproduced the problem, and subsequently with the fix to ensure Besu produced the correct trielogs and state.Â  After we were certain the fix for the root cause was good, we also started the hotfix on halted nodes to observe whether Besu would auto heal correctly.Â  In most cases Besu would auto-heal correctly, but there were still some outliers.Â  For example on some EL/CL pairs the consensus layer went off on a fork because Besu was reporting an invalid block.Â  Those cases were not able to auto-heal and still required some manual intervention.
+The fix was good and the auto-heal was good enough, so we decided to release the hotfix asap since there was nothing preventing some new similar block from halting all of the newly recovered Besu nodes.
+
+After publishing the hotfix, we announced on discord and communicated to users through various channels that it was important to upgrade even if they had already recovered their node(s).Â  We continued to run support through discord for a day or two to help as many users as possible, and things eventually relaxed a bit and gave us time to reflect.
+Circumstances:
+The timing is suspicious.Â  The contract deployed on Mainnet did not look like the experiment that was done on Sepolia.Â  If the Mainnet contract was indeed intentionally malicious, it was well camouflaged to look innocuous, if peculiar.Â  The contract deployment followed a similar pattern of being funded just before the incident, with no transaction history before or since, and all the contracts involved were self-destructed afterwards.Â Â 
+If this was an intentional attack, the attacker is certainly clever, but without clear motivation.Â  Perhaps there was some sunk cost after watching our attempts to patch this issue. They may have wanted to trigger this bug while they still could before a release.Â  As a reminder, halting bugs of this severity are eligible for the EF Bug Bounty program. The deployer could have earned thousands in USD as a bounty for this finding. More importantly their discovery could be celebrated publicly and earn the goodwill of client teams and the ethereum ecosystem.Â  The rewards of cooperation are better in this case, certainly.Â 
+Conclusion:
+This experience has highlighted the need for client diversity on Ethereum. Thankfully, Besu being impacted as a client under the 33% threshold caused no finality issues for the network nor did besu users have a significant correlated inactivity leak on Mainnet. Our learnings from this experience underscore the importance of maintaining canaries alongside an archive CL node. Given the complexity of managing state for Bonsai, we understand that it is crucial to implement specific test cases to prevent accidental future regressions. Moving forward, we plan to create more Besu-specific tests for Bonsai and to introduce new Hive engine API tests for this particular case. In a more light-hearted vein, we intend to celebrate the deprecation of the self-destruct opcode with a bottle of champagne at DenCun! 
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-01-13 AnonCreds Working Group Meeting
+2025-01-13 AnonCreds Working Group Meeting
+
+Hyperledger AnonCreds
+
+
+
+More like this
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-03-25 Indy Contributors Call
+2025-03-25 Indy Contributors Call
+
+Hyperledger Indy
+
+
+
+More like this
+
+
+
+
+
+
+09/23/24
+09/23/24
+
+Developer Relations
+
+
+
+More like this
+
+
+
+
+
+
+2021-08-04 Value transfer public transactions being rejected by Besu
+2021-08-04 Value transfer public transactions being rejected by Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "934d3b97be324440b4a6ffafffbfb96d"}

@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+One Year Later: Interoperability & Standardization Shine at Consensus – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          One Year Later: Interoperability & Standardization Shine at Consensus – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | May 24, 2018 9:00:19 AM 
+        
+
+        
+          Image: The Hyperledger booth at Consensus 2018
+ 
+Interoperability and standardization took center stage (literally) last week in New York at Consensus, when organizations like FedEx explained that both Ethereum and Hyperledger technology power their logistics solution and that it was a goal of theirs to be agnostic when choosing ledger technologies. Then there was the Enterprise Ethereum Alliance, which announced their 1.0 specification that many blockchain developer communities, including Hyperledger Sawtooth, plan to be compatible with in the near future. 
+ 
+It seems as though our hard work at Hyperledger has been paying off and Executive Director, Brian Behlendorf believes we’re now seeing evolution beyond the basic technology questions to more involved discussions about scale, interoperability and governance. In fact, he met with Steven Norton of The Wall Street Journal during Consensus to discuss just that. Brian told Steven:
+ 
+
+ “Now that we have running systems and there is real value on these different networks, figuring out how to wire them together is a greater priority now than it was a few years ago. But even outside the blockchain space, interoperability is always a process, never a destination. People are starting to finally ask how do we get out of a simplistic mode of saying everyone should all be on the same public ledger, and instead get to a more sophisticated set of questions, like what does interoperability actually mean. It might mean wiring these things together with common software underneath. It might also mean common software on top.”
+
+
+ 
+The discussions around interoperability were a significant contrast to what we saw one year ago at Consensus, when many were just trying to wrap their minds around the technology capabilities and experimentation was in full swing. The idea of different blockchains interacting with one another still seemed like several years away. At that time, we only saw a glimpse of potential possibilities for interoperability when the HACERA team created a fun chess game called Dutchess at the Building Blocks Hackathon that used a combination of technologies like Ethereum, Solidity, Quorum, and Hyperledger Sawtooth.
+ 
+
+ 
+ Jonathan Levi from HACERA explaining different technologies powering Dutchess
+
+
+ 
+At Hyperledger, we envision a world of many chains, some public like the crypto-currencies and some permissioned like you will see in healthcare settings. That’s why we focus on developing the common frameworks for building all kinds of chains. Our diverse developer communities remain diligent in helping the industry advance interoperability above the layer of the DLT, and are on constant look out for simple and open cross-blockchain approaches. An early example of this was the integration between the Hyperledger Sawtooth and Hyperledger Burrow projects last year. As a result of that integration, simple EVM smart contracts can be deployed to Hyperledger Sawtooth using the “Seth” (Sawtooth Ethereum) Transaction Family. 
+ 
+
+ “This integration validates that positioning and establishes a strong upstream-downstream relationship between the Sawtooth and Burrow projects. Successful open source endeavours are community driven, collaborative efforts and this linkage between the Hyperledger Sawtooth and Hyperledger Burrow teams reinforces that ethos.” – Adam Ludvik, Bitwise IO & Casey Kuhlman, Monax  
+
+
+ 
+Building on that development, the Hyperledger Sawtooth community released a feature called Dynamic Consensus, which goes beyond pluggable consensus to allow networks to change consensus on the fly. Hyperledger Sawtooth supports three consensus protocols right now and two more are in development. Also in development, is a change to the Sawtooth consensus API that will allow consensus providers written in a variety of languages. This follows a similar pattern to Sawtooth’s support for smart contracts in a variety of languages. This expands the breadth of possible consensus algorithm andprotocols that can be easily coupled to Sawtooth. A more recent example is the Hyperledger Fabric community, which has been working hard to create a bridge to the Ethereum community, so that developers can write EVM smart contracts on Fabric. The hope is that our community will continue to tighten integration and interoperability across Hyperledger projects and beyond, allowing a greater number of available options for developers. We hope that even more developers can start to think out of the box, connecting blockchains, and doing it securely. The problem of working with more than one technology stack is no longer a technical one.  
+ 
+
+ 
+ Community Architect, Tracy Kuhrt presenting at the Hyperledger NYC Meetup after Consensus
+
+
+ 
+Hyperledger was established to bring together related, and even competing, technologies with the expectation that the common governance will lead to interoperability and gradual consolidation. Interoperability will be essential to the widespread adoption of blockchain technology because that is what will help the blockchain business ecosystem standardize and thrive. As Brian mentioned to The Wall Street Journal, standards are hard, but getting everyone to agree will end up being the bigger challenge:
+ 
+
+  “I think the tech is ready for the volume of transactions people want to throw at it and the flexibility of programming models that they want. It’s really the governance. It’s hard enough for one organization to launch any new product. Getting multiple parties to agree on anything — like a time of day for a meeting, let alone a common application — will end up being a bigger challenge. Standards are hard. These things are alive and humming like a benzene ring. They depend upon everybody running the right thing at all times. That I think operationally will be the big challenge.” – Brian Behlendorf
+
+
+ 
+We look forward to the rest of 2018 and all the progress to be made with interoperability. We hope you join us in the effort by contributing to Hyperledger projects. 
+ 
+You can plug into the Hyperledger community at github, Rocket.Chat the wiki or our mailing list. As always, you can keep up with what’s new with Hyperledger on Twitter or email us with any questions: info@hyperledger.org. 
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

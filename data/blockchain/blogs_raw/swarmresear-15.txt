@@ -1,0 +1,229 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proof of Burn - paying for sync? - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Proof of Burn - paying for sync?
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                May 31, 2019,  2:13pm
+              
+              #1
+          
+        
+        
+          We have always maintained that we cannot ‘pay for sync’ because it is unclear who would pay whom.
+
+If the uploader pays the first node it syncs to, then what incentives does that node have to pass the content onward? And if the receiving party pays for syncing then a) how do we ensure that it has sufficient incentives to do so? i.e. how would we make sure that the data is sufficiently profitable
+
+afterwards? b) how do we prevent spam attacks?
+
+However, at the Swarm Orange Summit 2019 (summit.ethswarm.org) we discussed the following:
+
+Thesis: if we have a way of attaching proof-of-burn to each chunk ( see Proof of Burn (for spam protection) - #2 by nagydani ) then we maybe could have nodes pay for synced content - i.e. when you join swarm with the intent of becoming a full/serving node, you pay to fill up your storage (cheaper than regular retrieval requests, maybe 10%?), with the hope that it will be profitable to sell this data in future. The twist is that you only accept chunks that have sufficiently high proof-of-burn attached.
+
+Thus you pay to upload (the burn) and you pay to download (both retrieval and sync).
+
+What do you think? Is this incentive compatible?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                May 31, 2019,  2:17pm
+              
+              #2
+          
+        
+        
+          also imported from https://hackmd.io/t-OQFK3mTsGfrpLCqDrdlw
+
+The lottery method
+
+One idea might be the following:
+
+Deposit a bounty on the blockchain.
+
+When you upload a collection, sign each chunk with the corresponding key.
+
+Then there is some randomised probalistic lottery that you can win if you have the chunk (submit proof of custody) and the probability of winning increases if it is closer to your node address (somehow this has to be verified / registered nodes?).
+
+In this scenarion, during syncing, closer nodes compensate upstream nodes for the incoming sync. They are incentivised to do this based on the expected profitability of having the chunk as a result of this lottery.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            nagydani
+            
+          
+
+          
+
+
+
+          
+              
+                June 13, 2019,  4:32pm
+              
+              #3
+          
+        
+        
+          How about receiving a retrieval request (paid for through SWAP) for this chunk acting as “winning the lottery”?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

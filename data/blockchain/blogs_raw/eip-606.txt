@@ -1,0 +1,219 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-606: Hardfork Meta: Homestead
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-606: Hardfork Meta: Homestead
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Alex Beregszaszi (@axic)
+	Created	2017-04-23
+	Requires	
+
+  EIP-2, 
+
+  EIP-7, 
+
+  EIP-8
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	References
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This specifies the changes included in the hard fork named Homestead.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+	Codename: Homestead
+	Activation:
+    	Block >= 1,150,000 on Mainnet
+	Block >= 494,000 on Morden
+	Block >= 0 on future testnets
+
+
+  
+	Included EIPs:
+    	EIP-2 (Homestead Hard-fork Changes)
+	EIP-7 (DELEGATECALL)
+	EIP-8 (Networking layer: devp2p Forward Compatibility Requirements for Homestead)
+
+
+  
+
+
+  
+    
+      
+      
+         References
+      
+      
+    
+
+
+	https://blog.ethereum.org/2016/02/29/homestead-release/
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), "EIP-606: Hardfork Meta: Homestead," Ethereum Improvement Proposals, no. 606, April 2017. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-606.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

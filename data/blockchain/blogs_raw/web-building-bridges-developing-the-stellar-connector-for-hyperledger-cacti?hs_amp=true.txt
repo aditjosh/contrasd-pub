@@ -1,0 +1,119 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Building Bridges: Developing the Stellar Connector for Hyperledger Cacti
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Building Bridges: Developing the Stellar Connector for Hyperledger Cacti
+
+        
+
+        
+           Written by Fabricius (Fifo) Zatti, Principal Blockchain Engineer at Cheesecake Labs & Hyperledger Cacti contributor | Jun 27, 2024 4:00:00 PM 
+        
+
+        
+          Introduction: The Importance of Interoperability in Blockchain
+
+
+In the rapidly evolving blockchain landscape, interoperability is emerging as a crucial component for the future of blockchain solutions. With numerous specialized blockchain networks designed for various use cases, the ability to seamlessly integrate and interact across these networks is essential. Hyperledger Cacti stands out as a key project aimed at addressing these interoperability challenges.
+
+Recognizing the potential of Cacti, we at Cheesecake Labs saw an opportunity to contribute by developing a Stellar connector. As the Principal Blockchain Engineer at Cheesecake Labs, I was particularly excited about this initiative. It not only allowed us to familiarize ourselves with the Cacti project and its codebase but also provided a platform to collaborate and bring to the table our experience as integration partners with the Stellar Development Foundation (SDF).
+
+Beginning the Collaboration: Merging Expertise
+
+Diving into the Hyperledger Cacti project was uniquely challenging due to its origins from the merger of two well-established projects, Hyperledger Cactus and Weaver. This merger brought together their distinct architectures and codebases to form a comprehensive interoperability platform. The power of Hyperledger Cacti lies in its modular and scalable approach, allowing various blockchain networks to connect and interact without merging into a single chain. This flexibility and scalability, while providing robust solutions for cross-network transactions and data sharing, also added layers of complexity that required a deep understanding of the integrated systems.
+
+With this foundational context, Peter Somogyvari from the Hyperledger Cacti community immediately helped us set our initial target: building a Stellar connector. Developing the connector as the first step was crucial because it established the essential communication bridge between Stellar and other blockchain networks within the Cacti framework. This foundational piece enabled the seamless integration of Stellar’s capabilities with Cacti, laying the groundwork for future, more complex interoperability features.
+
+With that goal in mind, we started development with a Stellar connector to support  Soroban, Stellar’s smart contract platform. By integrating Soroban, we aim to bring Stellar's capabilities into the Hyperledger Cacti ecosystem. Although this was a small first step, it enabled a wide variety of use cases to be built on Stellar through the connector and smart contracts. This initial focus on Soroban was crucial, as it allowed us to demonstrate the potential of integrating Stellar with Cacti and paved the way for more advanced use cases.
+
+Collaborative Dynamics and Initial Steps
+
+Our work with the Cacti community began with a well-established dynamic that revolved around close and consistent communication. Peter dedicates daily slots to assist the community, during which he jumps into the Hyperledger Discord and joins one of the voice channels for Cacti. This channel is accessible to any user, and it operates on a first-come, first-served basis.
+
+Our workflow was structured in such a way that I would dive deeply into the project and try to make as much progress as possible on my own. Then, during these daily sessions, we would engage in pair programming to overcome specific challenges, review my approach, and ensure that things were moving in the right direction. I would bring my Stellar expertise to these sessions, discussing with Peter how best to adapt and incorporate Stellar's specifics within the broader vision of the Cacti project. This collaborative approach was incredibly valuable, combining Peter's expertise and vision of the project with my knowledge of Stellar, allowing us to maintain a fast pace of development.
+
+Working in this rhythm, we moved through a series of key steps: 
+
+Creating a Robust Testing Framework
+
+Given the complex nature of the Hyperledger Cacti project, it was crucial to ensure a rigorous testing process to verify the reliability and performance of each component. Cacti’s testing framework requires that all connectors and ledger-specific code be validated using pristine, isolated ledgers. To support this, Cacti provides tools that manage these test environments programmatically, leveraging Docker images to create clean instances of the ledgers each time they are needed.
+
+For our work with Stellar, the first task was to develop a Stellar test ledger tool. This tool pulls a fresh Docker image of Stellar and sets up its core services, including the Horizon API, Soroban RPC, and Friendbot. This setup ensures that every testing cycle begins with a clean state, eliminating any historical data that might interfere with the tests. Notably, this tool is independent of the connector and can be used on its own to provide a local Stellar ledger for development purposes, making it a versatile asset for developers working with Stellar.
+
+Building the Stellar Connector
+
+Initially, starting the development of a Stellar connector within the Hyperledger Cacti framework was a complex task due to the project's intricate architecture and its origins from the merger of Hyperledger Cactus and Weaver. Understanding where to begin was challenging without a full grasp of the system's structure. Peter's assistance was crucial in this phase. He prepared a branch and created an initial skeleton for the Stellar connector, modeled after another connector within the project that followed the standard structure. This foundational framework provided the essential coding structure and elements necessary for the connector to function within the Cacti ecosystem.
+
+With this skeleton in place, I could focus on integrating Stellar-specific functionalities. This involved implementing how operations should be translated and executed according to Stellar's protocols. The process required detailed, iterative development to ensure robustness and functionality. By combining Peter's expertise and vision of the project with my knowledge of Stellar, we were able to adapt and incorporate Stellar's unique features effectively. This collaboration enabled a fast development pace, allowing us to complete the initial version of the connector in just a couple of weeks.
+
+Demonstrating the Stellar Connector Prototype
+
+After successfully developing the first version of the Stellar connector, we looked into an existing example within the Hyperledger Cacti project for CBDC bridging based on the SATP protocol. This example provided a solid foundation for demonstrating cross-chain interoperability. To showcase our progress and the capabilities of the Stellar connector, we decided to adapt this example to create a small prototype.
+
+We implemented the necessary smart contracts in Stellar and ran the same example, but this time, bridging Stellar and Hyperledger Besu. This prototype was designed to be presented at the Consensus event, highlighting the practical applications of our work and the interoperability between different blockchain networks.
+
+The prototype showcased how a Central Bank Digital Currency (CBDC) could be bridged between Stellar and Besu using the SATP protocol, demonstrating seamless cross-chain transactions. Although the demo is not yet in the Cacti repository, there are plans to polish it further and add it as an example. For now, you can watch the demo presentation from the Consensus event below.
+
+
+
+
+
+ 
+
+Future Directions and Next Steps
+
+With the successful development and demonstration of the Stellar connector, the next steps involve further refining and expanding its capabilities. We plan to integrate support for Stellar's classic transactions and other advanced features, ensuring that the connector can fully leverage Stellar's robust functionality. This will enhance the interoperability potential and open up even more diverse use cases.
+
+Additionally, we aim to polish the prototype used in the Consensus demo and officially add it to the Cacti repository as a flexible example that can accommodate various networks without altering the original setup. This will provide the community with a versatile tool to explore and implement cross-chain interoperability solutions.
+
+Moving forward, we are also focusing on developing well-defined standards for secure asset exchange protocols, such as Delivery Versus Payment (DVP) and Hash Time-Locked Contracts (HTLCs). By incorporating these protocols into the logic layer and utilizing the Stellar connector, we can provide ready-to-use smart contract implementations that ensure secure and reliable asset exchanges across different blockchain ecosystems.
+
+Concluding Thoughts: The Path Forward
+
+Contributing to Hyperledger Cacti has been a highly productive and enriching experience for the Cheesecake Labs team. Developing the Stellar connector has not only demonstrated the power of cross-chain interoperability but also highlighted the importance of collaborative efforts in advancing blockchain technology. As we continue to refine and expand our work, we invite developers and blockchain enthusiasts to join us in exploring new possibilities and pushing the boundaries of what can be achieved with blockchain interoperability.
+
+If you are interested in contributing to this project or want to learn more about building solutions with Hyperledger Cacti and Stellar, please consider joining the Hyperledger Cacti community. Together, we can drive innovation and create a more connected and interoperable blockchain ecosystem.
+
+
+
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

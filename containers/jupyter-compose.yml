@@ -1,0 +1,31 @@
+services:
+  jupyter:
+      build:
+        context: ${WORKDIR}
+        dockerfile: ${WORKDIR}/containers/jupyter.dockerfile
+        args:
+          CUSTOM_PYTHONHOME: ${CUSTOM_PYTHONHOME}
+          WORKDIR: ${WORKDIR}
+      environment:
+        - CUSTOM_PYTHONHOME=${CUSTOM_PYTHONHOME}
+        - WORKDIR=${WORKDIR}
+      image: jupyter_basic
+      container_name: cbc_jupyter
+      ports:
+        - 10011:8888
+      networks:
+        - jupyter-network
+      volumes:
+        - ${WORKDIR}:/home_dir
+        - /my_dir:/home_dir/sense_encoder_cache
+      deploy:
+        resources:
+          reservations:
+            devices:
+              - driver: nvidia
+                count: all
+                capabilities: [gpu]
+
+networks:
+  jupyter-network:
+    driver: bridge

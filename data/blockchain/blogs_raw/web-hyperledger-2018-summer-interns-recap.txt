@@ -1,0 +1,936 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger 2018 Summer Interns Recap – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Burrow
+                            
+                        
+                    
+
+                
+                Hyperledger 2018 Summer Interns Recap
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Sep 13, 2018
+                    
+                
+
+            
+
+            
+            
+                It’s suddenly September and so it’s time to check in on our Hyperledger summer interns and mentors. Read on for more about five of the projects our interns tackled. We asked the interns about their summer with Hyperledger. 
+ 
+Here, their own words, are the goals, successes and lessons learned from each intern:
+ 
+Ahmad Zafar (Project: Running Solidity Smart Contracts on Hyperledger Fabric or Vice Versa)
+ 
+
+ 
+Project goals:
+ 
+I was working on Running Solidity Smart Contracts on Hyperledger Fabric Project. The Solidity smart contracts are easy to write and are widely used by developers. The aim of this project was to help the developers to translate the publicly available Solidity smart contracts into readable and, hopefully, functionally equivalent Hyperledger Fabric contracts without writing the contracts from scratch. For Hyperledger Fabric, we chose Javascript language. Our goal was to translate 70-80% of the Solidity grammar/programs correctly into fabric smart contracts that are also human readable to make them easy to understand and change.
+ 
+Successes:
+ 
+I have successfully translated approximately 65-70% of solidity code to javascript code for Fabric smart contracts. Examples of language features include types, expressions, functions, events, function modifiers, structs, and single inheritance. Since Ethereum is a public blockchain with notions of Ether (Cryptocurrency) and Ether transfer, I had to provide functional equivalence in terms of Ether transfer on Fabric – (we ignore gas for now).
+ 
+I have also translated 15 Solidity smart contracts examples to javascript code. These contract have been taken from different places. Some are from solidity documentation, and some are from github repositories, including the ERC20 token format which is used to create ICOs. These contracts were chosen with my mentor to cover a large number of Solidity features.
+ 
+My translator will work on other contracts as well if the contract has 65-70% of the common components. My translated code and all examples that I have tested are placed on my github repository along with all the other content related to my project, including which components we have covered, how you can run this tool and results of my translated code. 
+ 
+Lessons learned:
+ 
+For developing a translator from Solidity to Fabric, one has to have knowledge of compilers and has to learn both Solidity and chain code and both frameworks for testing code. Before starting this internship, I worked on compiler construction in my university project. The scope of that project was not big but making a translator for complete language was a massive task for me. Successfully completing that project boosted my skills in writing translator tools for different things. However, before starting this project, I had little knowledge about Ethereum and Hyperledger Fabric smart contracts. After this project, I have become skillful enough in writing both Ethereum and Fabric smart contracts. Other than languages, I have learned how to run contracts on both frameworks and their architecture. In short, I learned many things related to Ethereum and Hyperledger Fabric. This project will help me a lot to start development in blockchain, especially in Fabric and hopefully other Hyperledger frameworks.
+ 
+A V Lakshmy (Project: Extended Support for EVM and and Tooling in Hyperledger Fabric)
+ 
+
+ 
+Project goals:
+ 
+My project involved the integration of Ethereum events into Hyperledger Fabric. The two key goals of the project were:
+ 
+	Implementation of event-related interfaces from Hyperledger Burrow to work with the event framework in Hyperledger Fabric
+	Modification of the JSON-RPC API functions in the fabproxy module to deal with events
+
+ 
+Successes:
+ 
+	In the initial few weeks of my internship, I wrote some simple test cases for the chaincode evmscc.go. When my patch passed through the review process and finally got merged into the repository, I was elated
+	I also wrote code for an event manager module and modified the API functions in the fabproxy module. These pieces are still under review and will hopefully be merged before the September release.
+	This was my first experience with open-source development and in the exciting field of blockchain. I am thrilled that my work will eventually be included in the source code of a vast project like Fabric!
+
+ 
+Lessons learned:
+ 
+	I got to study a new programming language, Golang.
+	I learned about Ethereum and Fabric and how to interact with these blockchain frameworks.
+	I got an exposure to version control systems like Git.
+	I grasped good software engineering principles, such as test-driven development.
+
+ 
+I am very grateful to my mentors, Swetha Mam and Jay Sir , for patiently guiding me through this project. All in all, this project was an incredible learning experience for me!
+ 
+Daniel McSheehy (Project: Hyperledger Fabric Chrome Extension)
+ 
+ 
+
+ 
+Project goals:
+ 
+The goals of my project was to build a Chrome extension that can connect to a Hyperledger Fabric network and provide an easy to use api for websites to send transactions.
+ 
+ Successes:
+ 
+The Chrome Extension is operational. Through a simple api, a website can easily prompt the chrome extension to send transactions and query the ledger. The extension also requires confirmations from the user, preventing a website maliciously sending transactions.
+ 
+Lessons learned:
+ 
+Sometimes the “right” way to do something doesn’t work, so I had to come up with alternative solutions to get things working. Because my project is intended to make things easy for users, I also learned the importance of reaching out to others and receiving feedback.
+ 
+Martin Martinez (Project: Simulating Hyperledger Networks with Shadow)
+ 
+
+ 
+Project goals:
+ 
+We had two key goals for the project:
+ 
+	Analyzing the current Shadow tool characteristics to find compatibility with Hyperledger networks.
+	Testing the Shadow tool with platforms such a Hyperledger Sawtooth, Hyperledger Fabric and Hyperledger Iroha.
+
+ 
+Successes:
+ 
+We successfully identified that Hyperledger Iroha is the most suited candidate to use the Shadow network simulation tool.
+ 
+Lessons learned:
+ 
+I learn more about the complexity and benefits of working in an open source community. Also, I feel grateful for the support of my mentor as well as the Hyperledger community members that I contacted through different channels such a Hyperledger chat. 
+ 
+Shuo Wang (Project: Design Effective Operational Platform for Blockchain Management)
+ 
+
+ 
+Project goals:
+ 
+My internship project focused on supporting dynamic blockchain configuration and integrating Fabric-CA module into Hyperledger Cello to make it more suitable for production environment. For beginners or in the testing environment, we often use an offline tool to generate all the cryptographic configuration artifacts statically. However, it is a centralized and unsafe way for a single user to generate all users’ identities in a real application scenario. 
+ 
+Successes:
+ 
+I adopted Fabric-CA module and made the generation of cryptographic artifacts dynamic, automatic and decentralized. After users login into an operator dashboard, they could easily connect to a worker node and create the blockchain on it with quite simple configuration of the network type, size and roles in the blockchain. All the orderer nodes and peer nodes will register and enroll their identities from the CA server. Then users could login into a User-Dashboard to install and run chaincode in the blockchain with a newly generated user identity from the CA server.
+ 
+I will continue to work in Hyperledger Cello Project after internship, and I plan to make the process of Cello workflow more dynamic so that each organization in the blockchain network could change their own settings more freely.
+ 
+Currently, I am doing my master thesis at the Southern University of California and Tsinghua University. My research is focused on the blockchain consensus. Therefore， I am quite interested in seeing the Byzantine-fault-tolerant consensus used in the future version of Hyperledger Fabric.
+ 
+Lessons learned:
+ 
+During the internship, I enjoyed the culture of open source and learned some great tools for open source project development. The most important lesson I learned is to be timely in following up and keep in close touch with mentors and colleagues because people work collaboratively from all over the world. I really appreciate my mentor, Dr. Baohua Yang, and his kind help and guidance. He gave me many practical suggestions and shared deep insight of blockchain industry with me.
+ 
+As a bonus, we asked for the intern’s take on what they’d like to see Hyperledger do in the future. Here are a couple of our favorite answers:
+ 
+“I hope Hyperledger offers or organizes hackathons at universities. I think that it could be a great way to get students involved in blockchain and expose them to open source communities. I’m always amazed at the ideas people come up with at hackathons, and think that there could be projects and use cases that have never been thought of.” – Daniel McSheehy
+ 
+“I hope that Hyperledger continues to give such amazing internship opportunities to students!” – A V Lakshmy
+ 
+We would like to thank these interns for all their hard work and success. We would also like to recognize the mentors for all the time, effort and input they provided. Many of them went the extra mile and provided some their take on lessons learned, what they gained by being a mentor and advice for future interns as well. We will be posting their reactions and experiences with the program in another blog tomorrow – stay tuned! As always, you can keep up with what’s new with Hyperledger on Twitter or email us with any questions: info@hyperledger.org.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,207 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-141: Designated invalid EVM instruction
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-141: Designated invalid EVM instruction
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Alex Beregszaszi (@axic)
+	Created	2017-02-09
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+	Backwards Compatibility
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+An instruction is designated to remain as an invalid instruction.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+The invalid instruction can be used as a distinct reason to abort execution.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The opcode 0xfe is the INVALID instruction. It can be used to abort the execution (i.e. duplicates as an ABORT instruction).
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+This instruction was never used and therefore has no effect on past contracts.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), "EIP-141: Designated invalid EVM instruction," Ethereum Improvement Proposals, no. 141, February 2017. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-141.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

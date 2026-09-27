@@ -1,0 +1,608 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-02-04 Besu Contributor Call Notes - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+
+	2020 Notes
+
+
+
+
+	2020-01-07 Contributor Call
+
+
+
+
+
+	2020-01-21 Contributor Call
+
+
+
+
+
+	2020-02-04 Besu Contributor Call Notes
+
+
+
+
+
+	2020-02-18 Besu Contributor Call Notes
+
+
+
+
+
+	2020-03-17 Contributor Call Notes
+
+
+
+
+
+	2020-04-14 Contributor Call
+
+
+
+
+
+	2020-04-28 Contributor Call Notes
+
+
+
+
+
+	2020-05-12 Contributor Call Notes
+
+
+
+
+
+	2020-05-26 Contributor Call Notes
+
+
+
+
+
+	2020-06-09 Contributor Call Notes
+
+
+
+
+
+	2020-06-23 Contributor Call Notes
+
+
+
+
+
+	2020-07-07 Contributor Call Notes
+
+
+
+
+
+	2020-07-21 Contributor Call Notes
+
+
+
+
+
+	2020-08-04 Contributor Call Nodes
+
+
+
+
+
+	2020-08-18 Besu Contrubutor Call Notes
+
+
+
+
+
+	2020-09-01 Besu Contributor Call Notes
+
+
+
+
+
+	2020-09-15 Contributor Call Notes
+
+
+
+
+
+	2020-09-29 Besu Contributor Call Notes
+
+
+
+
+
+	2020-10-27 Office Hours Notes
+
+
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2020-02-04 Besu Contributor Call Notes
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2020-02-04 Besu Contributor Call Notes
+
+	Danno Ferrin
+
+
+
+	Felipe Faraggi
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Feb 05, 2020
+
+
+
+
+
+
+
+
+
+
+Recording of call -Â https://consensys.zoom.us/rec/share/6O5bN6P81X9OaNKKw0zPa6c5Toa-eaa80yJM-vpbzU4x3PEm42YXMU0BFS4ZKTyu?startTime=1580828569000
+Housekeeping
+General Announcements
+	Â DCI survey
+
+	3 conferences in next 2 months, EthDenver, EthCC, Hyperledger Global Forum
+
+updates
+	Beta higlights - bytes library and plugins API
+	RC in feb
+
+Work updates
+	May have 1.3.9 to support ETC
+
+Other Business
+	Creating Besu certificaiton course - Contact use on rocket chat or email to get added to the process
+
+Open Forum
+	no questions
+
+Future Topics
+	1.5 Roadmap in March meetings	Where to discuss?Â  Wiki?Â  Rocket Chat?Â  Email?
+	Perhaps put a proposal in the wiki, then solicit comments from rocket chat
+	We should get a template for such roadmap proposals
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "001a6875fc054df68f2597b39a394f86"}

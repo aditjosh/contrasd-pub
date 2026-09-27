@@ -1,0 +1,584 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+QBFT, Bonsai, and Snap-Sync testing - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+	2024 - Besu Performance Improvements since the Merge
+
+
+
+
+
+	Fast sync optimisation
+
+
+
+
+
+	Memory usage investigations on 23.7.3-RC
+
+
+
+
+
+	Permissioned chain performance testing
+
+
+
+
+	QBFT, Bonsai, and Snap-Sync testing
+
+
+
+
+
+	QBFT Performance
+
+
+
+
+
+
+
+	Q4 2022 Stability and Performance Improvements
+
+
+
+
+
+	Reduce Memory usage by choosing a different low level allocator
+
+
+
+
+
+	Testing Taskforce Brainstorming
+
+
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+QBFT, Bonsai, and Snap-Sync testing
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+QBFT, Bonsai, and Snap-Sync testing
+
+	Matthew Whitehead
+
+
+
+
+
+Owned by Matthew Whitehead
+
+
+Last updated: Jul 03, 2024
+
+
+
+
+
+
+
+
+
+
+Update: PR https://github.com/hyperledger/besu/pull/7140 now merged and adds working experimental support for QBFT + Bonsai + Snap sync
+
+
+Previous notes below:
+Prior to being able to recommend Bonsai and/or snap sync for permissioned chains work is needed to make the combination of QBFT, Bonsai, and snap-sync work reliably.
+Summary of PRs related to this work:
+	https://github.com/hyperledger/besu/pull/7204 (merged to main) - prevents persisting of proposed blocks to ensure only committed blocks are persisted to world state
+	https://github.com/hyperledger/besu/pull/7140 (WIP) - adds an experimental flag to enable QBFT + snap sync. Quits snap-sync early when a new chain scenario is detected.
+
+Issues seen before now when Bonsai and/or snap-sync is used with QBFT:
+	https://github.com/hyperledger/besu/issues/6680
+	https://github.com/hyperledger/besu/issues/6053
+
+For those working on this feature, the tar file below can be used to run a 4-validator QBFT chain for testing. The 4th node has Xsynchronizer-world-state-request-parallelism=1 set as without this, the account data range requests fail to all be marked as complete.
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+QBFT Performance
+QBFT Performance
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+Deliverables and Learnings - Performance analysis and Benchmarking of Besu using Caliper with complex workloads
+Deliverables and Learnings - Performance analysis and Benchmarking of Besu using Caliper with complex workloads
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+2021 Q4 Hyperledger Besu
+2021 Q4 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Modular Consensus
+Modular Consensus
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q3 Hyperledger Besu
+2022 Q3 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 43, "requestCorrelationId": "4429a50acdcf4593803417f22655ee3a"}

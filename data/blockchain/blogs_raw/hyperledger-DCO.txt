@@ -1,0 +1,638 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DCO - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+	I just have a quick question
+
+
+
+
+
+	First contribution
+
+
+
+
+
+	Issues
+
+
+
+
+
+	DCO
+
+
+
+
+
+	Suggesting Enhancements
+
+
+
+
+
+	Pull Requests
+
+
+
+
+
+	Code Reviews
+
+
+
+
+
+	Reporting Bugs
+
+
+
+
+
+	Copyright and License
+
+
+
+
+
+	Discord
+
+
+
+
+
+	Curators
+
+
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+DCO
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+DCO
+
+	Felipe Faraggi
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Aug 27, 2024 by Sally MacFarlane
+
+
+
+
+
+
+
+
+
+
+TL;DR:
+If you don't want to break the DCO check, ensure all your commits have signoff.
+Git has a built-in mechanism to allow this with theÂ -sÂ orÂ --signoffÂ argument toÂ git commitÂ command, providing yourÂ user.nameÂ andÂ user.emailÂ have been setup correctly.
+git config user.name "FIRST_NAME LAST_NAME"
+
+git config user.email "MY_NAME@example.com"
+
+you can also set up a git global alias - see below
+How to work with DCO
+When Committing
+You need to ensure that every commit message has a line "Signed-off-by: Your Legal Name <your-email@address>", and while you could add that manually every time, here are the steps to follow so the computer can add it for you:
+	Set your legal name in the git configuration:
+git config user.name "Legal Name"Â 
+	Set your email in the git configuration:
+git config user.email "email@address"Â 
+	Add theÂ -sÂ  orÂ --signoffÂ  to allÂ git commitÂ  invocations.	Add a git alias:
+git config --global alias.c 'commit --signoff'
+and then run "git c" instead of "git commit"
+	In IntelliJ
+
+
+
+
+When Merging
+The merge or a PR must also have a DCO so we can know the entire repository is under the associated license.
+	When Merging a Pull Request throughÂ "squash and merge", there must be aÂ Signed-off-byÂ line for every contributor, and you as the person merging - just make sure you don't delete them .
+
+When you have a DCO failure on your PR from DCO Bot
+'
+Click on that "Details" link and follow the instructions.
+
+When you have a DCO failure on your PR from CI
+On Circle CI you will see:
+
+In the full Console Output you will see DCO is checked on ALL branches:
+Checking commits in branch origin/main for commits missing DCO...
+Checking commits in branch origin/merge for commits missing DCO...
+11b5f95dd5ef51af398f8b343b266debadd6f0b9 is missing Signed-off-by line.
+Checking commits in branch origin/pull/2497 for commits missing DCO...
+Checking commits in branch origin/release-21.10.x for commits missing DCO...
+Checking commits in branch origin/release-22.1.0 for commits missing DCO...
+
+Exited with code exit status 1
+
+If the commit missing the signoff is on main branch, you will need to contact a Besu Maintainer Admin (main rebase required).
+If the commit missing the signoff is on a non-main branch (eg merge in the example above), and you are a Besu maintainer, you should be able to force-push to that branch (eg rollback the most recent commit).Â 
+Why?
+As per section 12.a of theÂ Hyperledger CharterÂ all code submitted to the Hyperledger Foundation needs to have aÂ Developer Certificate of OriginÂ (DCO) sign-off.
+This certifies that you are able to submit your contribution to our repository under the license of the repository, and for the contribution to be redistributed under that same license.
+You can "sign" this certificate by including a line in the git commit of "Signed-off-by: Legal Name <email-address>", using the email address associated with your GitHub account.
+
+
+
+Feel free to check out this tutorial for more help.
+
+
+As per section 12.a of theÂ Hyperledger CharterÂ all code submitted to the Hyperledger Foundation needs to have aÂ Developer Certificate of OriginÂ (DCO) sign-off.
+The sign off needs to be using your legal name, not a pseudonym. Git has a built-in mechanism to allow this with theÂ -sÂ orÂ --signoffÂ argument toÂ git commitÂ command, providing yourÂ user.nameÂ andÂ user.emailÂ have been setup correctly.
+If you have any questions, you can reach us on Discord
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Fixing DCO on main/release
+Fixing DCO on main/release
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+DCO Validation During Contribution Review
+DCO Validation During Contribution Review
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Making Iroha codebase conformant to DCO requirements: a step-by-step plan
+Making Iroha codebase conformant to DCO requirements: a step-by-step plan
+
+Hyperledger Iroha
+
+
+
+More like this
+
+
+
+
+
+
+Git signing with DIDs
+Git signing with DIDs
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+GitHub Merge Queue
+GitHub Merge Queue
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+DRAFT DOCUMENT - Best Practices for Automated Pipelines
+DRAFT DOCUMENT - Best Practices for Automated Pipelines
+
+Task Forces
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 39, "requestCorrelationId": "52bf5bdc2e3e41fdb829d00a28610cfe"}

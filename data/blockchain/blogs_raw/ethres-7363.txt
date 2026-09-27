@@ -1,0 +1,335 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adapting Pointproofs for Witness Compression - Execution Layer Research - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Adapting Pointproofs for Witness Compression
+    
+
+
+      
+          
+            
+              
+              
+                Execution Layer Research
+              
+            
+            
+
+
+
+        
+            stateless
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    May 7, 2020, 12:15am
+                  
+                  
+
+1
+              
+            
+            
+              Here is an approach that extends the ideas of pointproofs towards:
+
+	variable and unbounded growing of contract storage sizes,
+	unbounded growing of the world state, and
+	more importantly for validating clients to maintain only one commitment,
+
+
+with having small witnesses containing:
+
+	world state point proof,
+	contract Storage point proof,
+	relevant commitments for world state validation,
+	relevant commitments of contract storage data validation.
+
+
+A detailed version of the following write-up is available here: https://hackmd.io/jYZoAiK2THq50EvI6lGhMw?view
+
+Proposal
+
+The core idea is to build vector commitments trees (VCTs) for the world state (shown below) and for contract storages.
+
+
+
+PointProofs666×599 26.6 KB
+
+
+
+At the very bottom, we have 32 byte hashes of the account information: address, nonce, balance, root storage commitment (discussed later) and codehash. N of such hashes are committed by a depth 2 vector commitment, that are hashed again and N of such hashes are bound by a depth 1 commitment, and are hashed yet again, and N of such hashes are bound by the root vector commitment, shown by RootC. When N = 1000, the RootC binds 10^9 accounts with a depth of 2. Note that this VCT does not store the account information, it only stores the hashes of them.
+
+A validator needs to store only the world state root commitment. To verify, a stateless client needs to be provided with the read witness containing:
+
+	positions of the accessed accounts,
+	information of the accessed accounts,
+	involved commitments, and
+	the point proof \pi.
+
+
+We need to fix an order to traverse this VCT. Any fixed traversal order such as in-order traversal is fine. We can then verify the cross-commitment aggregated proof using the same equation provided in the paper.
+
+The number of required commitments inside the read witness for a block reading k accounts is in the order of k~log~k (logarithm base is N) in the worst case. Note that the size of Merkle proofs are in the order of the state size.
+
+In addition to the above 1. to 4., updating accounts require just the updated account information. Adding an account is straight forward. The figure below shows the edge case when adding an account requires adding a level to the world state VCT.
+
+
+
+AddingAccount846×477 41.9 KB
+
+
+
+The deletion of contract accounts can be achieved by updating the corresponding hash of the account to zeros. Note that we treat elements with all zeros to be empty accounts, or empty commitments.
+
+Implementation detail / optimisation: It will save the number of exponentiations both for the prover and for the verifier if we allow Hash(0) to be 0.
+
+The same concept of VCTs can be extended to contract storage also.
+
+Advantages
+
+	
+Witness compression. It can be seen that the number of relevant commitments needed is in O(k~log~k) where k is the number of accessed accounts in world state (correspondingly number of storage locations accessed in contract storage) and the logarithm is to the base N. In contrast, Merkle tree based proofs are in the order of the state size (correspondingly contract storage size). So, if a block accesses n accounts and k contract storage locations, we would need a witness, whose size in the order of O(n~log~n+k~log~k)
+
+	Validator stores only one world state root commitment.
+	
+One-time common trusted setup. Addition and deletion of accounts or the growth in contract storages do not require revisiting of the trusted setup.  The public parameters obtained from the trusted setup for the world state and for the contract storages are the same and stay unchanged for the life of the block chain.
+	
+Enables cache-friendly efficient implementation of World State and Contract Storage. Because VCTs do not need to store the account information or the contract storage data values. They store only the hashes and commitments. An independent implementation of these storages without hashes, enables faster access because of locality that can be exploited with caches.
+
+
+Disadvantages
+
+No exclusion proofs. Hence this approach is not applicable for data availability and accumulator problems.
+
+Thanks to Olivier Bégassat (PegaSys, ConsenSys) for reviews and inputs.
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 12, 2020,  2:51am
+                  
+                  
+
+2
+              
+            
+            
+              I see that the concept of Verkle trees (https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf)  is similar to this approach.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                sherif
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 18, 2020,  4:13pm
+                  
+                  
+
+3
+              
+            
+            
+              Wouldn’t it be more practice to find a way to avoid large public parameters and trusted setup ?.I think it would be a great add-on. I know that bulletproofs increased the verification time to quasilinear, so what new we have here ?. And if there is a chance that a link to the paper to be added .
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 25, 2020,  9:37am
+                  
+                  
+
+4
+              
+            
+            
+              Yes, I understand that size of public parameters is a blocker. Another blocker is not having exclusion proofs
+
+Which paper link do you want? I have already included the link to pointproofs paper.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

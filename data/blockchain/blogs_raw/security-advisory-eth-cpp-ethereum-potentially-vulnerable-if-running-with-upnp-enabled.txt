@@ -1,0 +1,179 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security Advisory [eth (cpp-ethereum) potentially vulnerable if running with UPnP enabled] | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Security Advisory [eth (cpp-ethereum) potentially vulnerable if running with UPnP enabled]
+Posted by Gustav Simonsson on October 10, 2015
+Security
+
+
+
+
+Affected configurations: Issue reported for eth (cpp-ethereum).Likelihood: MediumSeverity: HighImpact: Potentially achieve remote code execution on a machine running eth (cpp-ethereum)Details:A vulnerability found in the MiniUPnP library can potentially affect eth clients running with UPnP enabled.
+Effects on expected chain reorganisation depth: noneRemedial action taken by Ethereum: We are verifying whether this can indeed affect cpp-ethereum and will post an update shortly.Proposed temporary workaround: Only run eth (cpp-ethereum) with UPNP disabledby passing --upnp off to eth.ADVISORY: Disable UPnP if running the eth client (cpp-ethereum).
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

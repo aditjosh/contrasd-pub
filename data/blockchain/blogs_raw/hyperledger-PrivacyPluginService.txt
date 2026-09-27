@@ -1,0 +1,694 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PrivacyPluginService - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+	BesuContext
+
+
+
+
+
+	PermissioningService
+
+
+
+
+
+	PrivacyPluginService
+
+
+
+
+
+	RpcEndpointService
+
+
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+PrivacyPluginService
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+PrivacyPluginService
+
+	Antony Denyer
+
+
+
+
+
+Owned by Antony Denyer
+
+
+Oct 11, 2021
+
+
+
+
+
+
+
+
+
+
+public interface PrivacyPluginService
+extends BesuService
+
+A service that plugins can use to define how private transactions should be handled. 
+
+You must register a PrivacyPluginPayloadProvider when using this plugin and can optionally register a PrivateMarkerTransactionFactory and a PrivacyGroupGenesisProvider
+
+
+Method Summar
+	Modifier and Type	Method	Description
+	PrivacyPluginPayloadProvider	getPayloadProvider()	
+
+	PrivacyGroupAuthProvider	getPrivacyGroupAuthProvider()	
+
+	PrivacyGroupGenesisProvider	getPrivacyGroupGenesisProvider()	
+
+	PrivateMarkerTransactionFactory	getPrivateMarkerTransactionFactory()	
+
+	void	setPayloadProviderâ€‹(PrivacyPluginPayloadProviderÂ privacyPluginPayloadProvider)	Register a provider to use when handling privacy marker transactions.
+
+	void	setPrivacyGroupAuthProviderâ€‹(PrivacyGroupAuthProviderÂ privacyGroupAuthProvider)	Register a provider to use when auth requests for a multi-tenant environment.
+
+	void	setPrivacyGroupGenesisProviderâ€‹(PrivacyGroupGenesisProviderÂ privacyGroupAuthProvider)	Register a provider for initialising private state genesis
+
+	void	setPrivateMarkerTransactionFactoryâ€‹(PrivateMarkerTransactionFactoryÂ privateMarkerTransactionFactory)	Register a factory to specify your own method for signing and serializing privacy marker transactions.
+
+
+
+
+
+Method Details
+	setPayloadProvider
+
+voidÂ setPayloadProviderâ€‹(PrivacyPluginPayloadProviderÂ privacyPluginPayloadProvider) 
+Register a provider to use when handling privacy marker transactions.Parameters: privacyPluginPayloadProvider - the provider to use for the privacy marker payload
+
+	getPayloadProvider
+
+PrivacyPluginPayloadProviderÂ getPayloadProvider()
+	setPrivateMarkerTransactionFactory
+
+voidÂ setPrivateMarkerTransactionFactoryâ€‹(PrivateMarkerTransactionFactoryÂ privateMarkerTransactionFactory) 
+Register a factory to specify your own method for signing and serializing privacy marker transactions.Parameters: privateMarkerTransactionFactory - the factory to use to build the privacy marker transaction
+
+	getPrivateMarkerTransactionFactory
+
+PrivateMarkerTransactionFactoryÂ getPrivateMarkerTransactionFactory()
+	setPrivacyGroupAuthProvider
+
+voidÂ setPrivacyGroupAuthProviderâ€‹(PrivacyGroupAuthProviderÂ privacyGroupAuthProvider) 
+Register a provider to use when auth requests for a multi-tenant environment. If you are not using a multi-tenant environment you always return true.Parameters: privacyGroupAuthProvider - the provider to use to determine authz
+
+	getPrivacyGroupAuthProvider
+
+PrivacyGroupAuthProviderÂ getPrivacyGroupAuthProvider()
+	setPrivacyGroupGenesisProvider
+
+voidÂ setPrivacyGroupGenesisProviderâ€‹(PrivacyGroupGenesisProviderÂ privacyGroupAuthProvider) 
+Register a provider for initialising private state genesisParameters: privacyGroupAuthProvider - the provider for the initial private state
+
+	getPrivacyGroupGenesisProvider
+
+PrivacyGroupGenesisProviderÂ getPrivacyGroupGenesisProvider()
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2023-07-17 AnonCreds Specification Working Group Meeting
+2023-07-17 AnonCreds Specification Working Group Meeting
+
+Hyperledger AnonCreds
+
+
+
+More like this
+
+
+
+
+
+
+2023-05-08 AnonCreds Specification Working Group Meeting
+2023-05-08 AnonCreds Specification Working Group Meeting
+
+Hyperledger AnonCreds
+
+
+
+More like this
+
+
+
+
+
+
+2020-09-15 Contributor Call Notes
+2020-09-15 Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-05-01 AnonCreds v2.0 Working Group Meeting
+2023-05-01 AnonCreds v2.0 Working Group Meeting
+
+Hyperledger AnonCreds
+
+
+
+More like this
+
+
+
+
+
+
+2023-06-26 AnonCreds v2.0 Working Group Meeting
+2023-06-26 AnonCreds v2.0 Working Group Meeting
+
+Hyperledger AnonCreds
+
+
+
+More like this
+
+
+
+
+
+
+2022-12-19 AnonCreds Specification Working Group Meeting
+2022-12-19 AnonCreds Specification Working Group Meeting
+
+Hyperledger AnonCreds
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "b77e9ee81e8e473a88bed6590d3c8375"}

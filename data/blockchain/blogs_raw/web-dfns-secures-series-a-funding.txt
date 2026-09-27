@@ -1,0 +1,437 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dfns Secures Series A Funding
+
+
+
+
+
+
+Dfns Secures $16M Series A Funding – See the Full Announcement
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+
+
+
+
+Resources
+	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+
+
+
+PricingGet started
+
+Talk to sales
+
+Get started
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+
+	Blog
+
+	Update
+
+	Dfns Secures Series A Funding
+
+UpdateDfns Secures Series A Funding
+Clarisse Hagège
+
+Christopher Grilhault des Fontaines
+
+
+
+
+January 14, 2025
+
+Read time: 
+
+
+
+
+Dfns has closed its Series A led by Further Ventures, with support from previous backers. In this blog post, we share our thoughts on this milestone, our journey so far, and how our wallet infrastructure is helping over 130 fintechs enable secure blockchain adoption worldwide.
+Today, we’re delighted to announce a major milestone in the journey of Dfns:  the successful completion of our $16 million Series A funding round. Led by our new lead investor, Further Ventures, the venture capital arm backed by Abu Dhabi’s largest sovereign wealth fund, ADQ, this round also welcomed new investors, including Motive Ventures, Wintermute, and Motier Ventures (Galeries Lafayette Group), alongside existing backers like White Star Capital, Hashed, Semantic, Techstars, and others.
+First, we want to thank our investors for their continued trust in Dfns, our team, and our vision for the future of finance. We see this achievement as more than just securing funds; it’s a validation of our technology and the strategy we committed to amidst fast-changing, unpredictable crypto markets. The last two years have been a turbulent time for crypto, and making it through while continuing to grow is no small feat. Today, we're excited to share our roadmap, our priorities and how we plan to continue developing the industry’s most secure and scalable wallet infrastructure.
+Here’s a brief overview of the 2024 metrics we’re most proud of:
+	130+ clients: Trusted by leaders in banking, custody, payments, tokenization, and trading.
+	10 million wallets: Supporting both custodial and non-custodial models for treasury management and end-user onboarding experiences.
+	$1 billion in monthly transactions: Securing and processing critical payment volumes, globally.
+
+Foundational infrastructure for blockchain finance
+When we founded Dfns in 2020, the concept of wallets-as-a-service (WaaS) built on zero trust security architecture was met with cautious optimism, and also outright skepticism. Wallets, this very central yet misunderstood little piece of blockchain technology, have long been plagued by security flaws, poor user experiences, and a lack of institutional-grade infrastructure, hindering mass adoption across the board.
+We saw an opportunity to change that, to create something foundational. From the outset and at its core, Dfns has been an infrastructure and cybersecurity company. We’ve avoided chasing trends or superficial growth, choosing instead to focus on what fintechs and financial institutions truly need: a secure, reliable way to hold, trade, and manage digital assets.
+Nearly five years later, our platform supports over 130 fintechs across every continent, including industry leaders like Fidelity, Bridge (acquired by Stripe), Zodia Custody (backed by Standard Chartered Bank), Tungsten Custody (backed by ADQ), and many others. Achieving this has required building a dungeon of trust, as clients now entrust us with mission-critical parts of their infrastructure, a responsibility we take deeply seriously. With their trust, we have unlocked invaluable insight. Institutional clients (think: banks, governments, large-scale apps, etc.) share with us their trade secrets, security architectures, regulatory challenges, technical debt and other sensitive elements. These conversations empower us to design tailored solutions that enable seamless, secure blockchain adoption. Starting Q2 2025, with the release of our new Data Integrity Framework, we’re confident no vendor will be able to match our security model. 
+Wallets are the new subterranean rails of finance
+We often say that wallets are to cryptocurrencies what bank accounts are to fiat currencies. But the reality runs deeper: wallets are the linchpins of trust in the new decentralized internet. They enable people and businesses to interact with assets, validate ownership, and execute transfers in a way that traditional bank accounts never could. Although we think wallets don’t receive the attention they deserve, they undoubtedly form the simplest and most foundational primitives of blockchain finance.
+However, we believe the wallet space is currently undergoing a quiet renaissance. Analyst Robbie Petersen from Delphi Digital captures this in his "Fat Wallet Thesis." He argues that as blockchains and applications become commoditized, wallets are emerging as the primary interface for users (read: retail customers or business employees) within the crypto financial ecosystem. With diminishing differentiation at the protocol and application layers, and as the limits of onchain capabilities become clearer, wallets are taking center stage. They now serve as the critical access point for managing, authenticating, and securing user interactions and transaction flows, much of which happens offchain.
+Over the past two years, wallets have undergone profound transformations. For instance, we see that the distinction between keys and wallets is becoming clearer. Key management services focus on generating and securing digital signatures, while wallet infrastructures handle the full transaction lifecycle—creating, broadcasting, and managing multichain interactions independently. Also, the industry-wide perception of wallets have evolved far beyond simple cryptocurrency storage. They’re now dynamic operating systems for managing digital assets across multiple networks, facilitating seamless transactions, and integrating with third-party applications in a fluid, uninterrupted workflow.
+With that said, much work still lies ahead. To unlock the full potential of digital asset finance, wallets tooling must become more accessible, secure, and interoperable. Admittedly, today, many wallets and digital asset infrastructures remain siloed, burdened by clunky interfaces, poor transaction management, complex key processes, high costs, and limited interoperability among other bottlenecks. These issues are even more magnified for institutions, which demand scalability, compliance, and resilience at the organization level. How can banks, neobanks, and other fintechs confidently integrate blockchain technology and tokenized instruments when the infrastructure remains fragmented and insecure?
+As a wallets-as-a-service platform, our mission is clear: to enable any platform, app, or service to integrate crypto capabilities and launch wallets in days. We don’t believe in the notion of “a wallet to rule them all.” Instead, we think diversity will drive the evolution of global financial services with uncompromising security, proven cryptography, and modular infrastructure. By rethinking wallets from the ground up as secure, compliant, scalable, and flexible gateways, we’re making sure blockchain can integrate into existing financial systems. Our API-driven infrastructure equips institutions to deploy wallets with:
+	Ease: Simple interfaces make integration easy, helping fintechs bring solutions to market faster.
+	Functionality: Core financial features like secure transaction handling, activity logs, identity management, and approval workflows.
+	Interoperability: Full compatibility with all blockchains and digital asset types.
+	Security: Robust safeguards protect users, transactions, APIs, keys, and credentials from weak security practices or single points of failure.
+	Compliance: Comprehensive tools ensure operations meet regulatory standards, with support for access controls, entitlements, policies, quorums, and more.
+
+The Dfns strategic vision for 2025 and beyond
+Since 2020, Dfns has forged its path through the early stages of product development and the evolutions of crypto. The past two years have tested our resilience, particularly in the aftermath of FTX’s collapse, which redefined the industry. While economic, operational, and regulatory challenges led to some client turnover, Dfns has maintained an impressive 300% year-over-year growth since 2021. This momentum is now fueled by a new wave of fintech innovators—spanning trading, banking, payments, lending, investing, asset management, treasury, and more—focused on delivering real economic value and tangible utility.
+Two years ago, we made a strategic upmarket move focusing on institutional clients, a decision based on a deeply rooted thesis that has proven successful. Our vision remains steadfast: institutional investors are the key to crypto adoption as they control the lion’s share of global liquidity. To meet their standards, we built our foundation on uncompromising security and zero trust principles, abiding by the rigor of traditional finance while leveraging state-of-the-art technology to exceed expectations. As blockchain assets grow in value, so do the risks and regulatory scrutiny surrounding them. From the outset, Dfns positioned itself as the most secure blockchain wallet infrastructure to earn the trust of the leading institutions navigating the complexities of crypto and integrating it into the financial system. Today, the institutionalization of the crypto is undeniable, with players like BlackRock embracing Bitcoin.
+Dfns stands as a benchmark for transparency, reliability, and security, underpinned by a robust foundation of trust-building measures: industry-leading certifications, regulatory licenses, comprehensive insurance, independent audits, and collaborations with global leaders. Trusted by Tier-1 banks and licensed financial services, Dfns has established itself as the go-to wallet-as-a-service platform. In 2024, Dfns consistently outperformed competitors in active RFPs from banks and crypto custodians, cementing its leadership for fintechs and institutions managing digital assets with security, efficiency, and scalability.
+Following our $13 million seed round in 2022, this Series A funding positions Dfns to accelerate the global adoption of its multichain wallet APIs and infrastructure throughout 2025 and beyond. Our focus is clear: driving adoption across banks, neobanks, payment services, trading platforms, investment applications, tokenization projects, government and corporate treasuries, as well as fund administrators, with a strategic emphasis on the EU, UK, UAE, and the US markets ready to soar.
+We have a clear plan. In this volatile crypto market, sustainable growth is more important than rapid expansion. Instead of growing our team too quickly, we want to increase from 25 to 35 employees by year-end, depending on our progress and market conditions. Our focus is on providing top-notch infrastructure for fintech clients. They need bank-level security, smart transaction tooling, smooth third-party integrations, excellent developer APIs, and user-friendly interfaces. That’s where we excel, and it’s what we will continue to deliver.
+
+
+Authors
+
+Clarisse Hagège
+CEO & Co-founder
+
+Clarisse Hagège is the CEO and Cofounder of Dfns. She has an extensive background as a Board Member of the MPC Alliance, Mentor at Techstars Web3 Launchpad, and crypto startup Advisor at Station F. With BSc and MSc degrees in Finance, Economics and Political Science from Sorbonne University, Sciences Po, and Dauphine University, her career spans a decade in investment banking and corporate treasury in Paris and New York, including roles at Goldman Sachs, Merrill Lynch, and Crédit Agricole CIB.
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Christopher Grilhault des Fontaines
+Co-CEO & Co-founder
+
+Christopher Grilhault des Fontaines is the co-CEO and co-founder of Dfns. He’s also Chairman of the Supervisory Board of Super Capital and investor at Wagmi Ventures. Chris is a serial founder who’s worked across HR Tech, Sports, Food and Social media industries before joining the world of cybersecurity and blockchain finance at Dfns. He holds a BSc degree in Liberal Arts and Philosophy from the Bordeaux University as well as an MSc degree in Management and Organizational Behavior Studies from Dauphine University.
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+Related articles
+UpdateWelcome, Thibaud & Harrison
+Christopher Grilhault des Fontaines
+
+
+
+
+April 21, 2025
+
+
+
+
+UpdateDfns Joins ADAN Board
+Christopher Grilhault des Fontaines
+
+
+
+
+April 18, 2025
+
+
+
+
+UpdateWelcome, Maud Tezenas du Montcel
+Clarisse Hagège
+
+
+
+
+March 17, 2025
+
+
+
+
+
+
+
+
+Audited and pentested
+
+
+
+
+
+
+
+
+
+Certified and licensed
+
+
+
+
+
+
+
+Follow us
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+SLA
+
+
+Resources
+Pricing	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+Dfns vs Fireblocks
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+Brand
+
+
+
+
+
+© Dfns.co 2024
+Protected by reCaptcha
+
+and
+
+
+
+	Terms and Conditions
+
+	Privacy Policy
+
+
+
+
+
+
+
+Request a demo
+One of our security experts will get in touch as soon as possible.
+
+
+
+  
+  
+  
+  
+    First name*
+    
+  
+
+  
+  
+    Last name*
+    
+  
+
+  
+  
+    Work email*
+    
+  
+
+  
+  
+    Company*
+    
+  
+
+  
+  
+    Comments
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+
+
+
+Thanks for your interest.
+Please, check your inbox.
+Close
+
+
+
+
+
+
+

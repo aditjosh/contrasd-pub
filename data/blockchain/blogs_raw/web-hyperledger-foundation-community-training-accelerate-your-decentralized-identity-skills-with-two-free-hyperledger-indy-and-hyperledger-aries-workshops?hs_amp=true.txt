@@ -1,0 +1,107 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Foundation Community Training: Accelerate your decentralized identity skills with two free Hyperledger Indy and Hyperledger Aries workshops – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Foundation Community Training: Accelerate your decentralized identity skills with two free Hyperledger Indy and Hyperledger Aries workshops – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Nov 22, 2021 6:44:40 AM 
+        
+
+        
+          Hyperledger Indy and Hyperledger Aries are two of the popular open source repositories that can help propel development of decentralised identity products and services. Aries is a toolbox of several blockchain-agnostic repositories that allow for trusted online peer-to-peer interactions based on decentralized identities and verifiable credentials. The project grew out of work that was happening in Indy to create technologies for managing decentralized identity. Aries was moved to graduated status by the TSC in February 2021. Indy graduated in 2019 and provides a specific blockchain purpose-built for identity. 
+ 
+Seeing the growth in interest for these two projects, Hyperledger Foundation has partnered with member company Indicio and its team of deeply experienced developers and architects to develop this free, multi-course curriculum to help developers and architects gain a deeper understanding of decentralized identity, with a deep dive into Aries and Indy. Registration and preparation information can be found on this Workshops page. 
+ 
+These two four-hour, beginning level hands-on workshops provide opportunities to install and run the Indy and Aries components just like you would if you were making a real Indy-based network or Aries-based application. They introduce the necessary Git repos as well as how to use the Indy Command Line Interface (Indy CLI), run the Aries toolbox and create and issue a verifiable credential. They also introduce some current projects using Aries and Indy to help you accelerate your understanding of decentralized identity and build the skills necessary to successfully make changes to the underlying code with hands-on guidance to develop your own projects.
+ 
+About the courses
+ 
+Build Your Identity Solution Using Hyperledger Aries
+Thursday, January 20, 2022
+8 AM to noon Pacific 
+ 
+Register for free
+ 
+The first in the Hyperledger Foundation Community Workshop series, Intro to Decentralized Identity is a four hour online course to introduce the core concepts and principles of decentralized identity. As you progress, you’ll learn how to use a Hyperledger Indy-based network, be introduced to the Indy CLI, and install and run the Aries toolbox to create, issue, and verify a verifiable credential.
+ 
+Topics also include:
+ 
+	Decentralized identity concepts and principles
+	The verifiable credential data model
+	Decentralized identity ecosystem
+	Introduction to network tools indyscan and SelfServe
+	Intro to Indy CLI and how to use the CLI to access a network
+	What Aries is
+	Install and run Aries Toolbox
+	Create connections and issue a credential
+	How to verify credential
+
+ 
+Hyperledger Indy Technical Deep Dive
+February 3, 2022
+8:00 AM to noon Pacific
+ 
+Register for free
+ 
+The second in the series is a four-hour course that advances your skills related to Hyperledger Indy node code and the Indy SDK. It also covers the commonly used cryptography libraries contained in Hyperledger Ursa, the Plenum ledger and how to interact with and change the repositories and code.
+ 
+Topics also include:
+ 
+	Install and build with Indy SDK
+	Introduction to libindy, indycli etc
+	Indy VDR (replacement for Indy-SDK)
+	Making changes to Indy node code
+	Build and IndyTest the changes locally
+	How to get involved in the community further with chats, helplines, and meetings
+
+ 
+Both courses do have several must-have prerequisites, including the installation of docker, installation of Indy-CLI, installation of rust, and the download of important repositories. This can be done independently, or you will have the opportunity to connect with instructors during pre-course office hours on a dedicated helpline. 
+ 
+These new courses are the first community workshops offered by the Hyperledger Foundation for free in an effort to expand the use, contributions, and maintainer community of Hyperledger Indy and Aries. Recordings of the courses will be made available at the conclusion of the instructor-led events.
+ 
+Registration for the free course is limited to 100. Registration links and further information about the prerequisites and course materials can be found at https://wiki.hyperledger.org/display/events/Workshops.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

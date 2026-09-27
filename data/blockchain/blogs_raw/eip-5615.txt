@@ -1,0 +1,252 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-5615: ERC-1155 Supply Extension
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Standards Track: ERC
+    
+  
+  
+    
+      ERC-5615: ERC-1155 Supply Extension
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  A simple mechanism to fetch token supply data from ERC-1155 tokens
+
+  	Authors	Gavin John (@Pandapip1)
+	Created	2023-05-25
+	Requires	
+
+  EIP-1155
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	Rationale
+	Backwards Compatibility
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This ERC standardizes an existing mechanism to fetch token supply data from ERC-1155 tokens. It adds a totalSupply function, which fetches the number of tokens with a given id, and an exists function, which checks for the existence of a given id.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119.
+
+
+interface ERC1155Supply is ERC1155 {
+  // @notice      This function MUST return whether the given token id exists, previously existed, or may exist
+  // @param   id  The token id of which to check the existence
+  // @return      Whether the given token id exists, previously existed, or may exist
+  function exists(uint256 id) external view returns (bool);
+
+  // @notice      This function MUST return the number of tokens with a given id. If the token id does not exist, it MUST return 0.
+  // @param   id  The token id of which fetch the total supply
+  // @return      The total supply of the given token id
+  function totalSupply(uint256 id) external view returns (uint256);
+}
+
+
+
+
+
+Implementations MAY support ERC-165 interface discovery, but consumers MUST NOT rely on it.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+This ERC does not implement ERC-165, as this interface is simple enough that the extra complexity is unnecessary and would cause incompatibilities with pre-existing implementations.
+
+
+The totalSupply and exists functions were modeled after ERC-721 and ERC-20.
+
+
+totalSupply does not revert if the token ID does not exist, since contracts that care about that case should use exists instead (which might return false even if totalSupply is zero).
+
+
+exists is included to differentiate between the two ways that totalSupply could equal zero (either no tokens with the given ID have been minted yet, or no tokens with the given ID will ever be minted).
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+This ERC is designed to be backward compatible with the OpenZeppelin ERC1155Supply.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+None.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Gavin John (@Pandapip1), "ERC-5615: ERC-1155 Supply Extension," Ethereum Improvement Proposals, no. 5615, May 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-5615.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

@@ -1,0 +1,771 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2024-06-11 Contributor Call - US/EMEA - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+	2024-01-02 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2024-01-23 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2024-01-30 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-02-20 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-02-27 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-03-19 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-03-26 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-04-16 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-06-11 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-07-09 Contributor Call
+
+
+
+
+
+	2024-09-03 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-11-26 Contributor Call - US/AMEA
+
+
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2024-06-11 Contributor Call - US/EMEA
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2024-06-11 Contributor Call - US/EMEA
+
+	Matt Nelson (Deactivated)
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Jun 11, 2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨https://zoom.us/j/97540031823?pwd=dEJrRW1LakFlWnZPelI3VGxoVjg2dz09)
+EMEA Friendly TimeÂ (https://www.timeanddate.com/worldclock/converter.html?iso=20220607T150000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	8 am Tuesday Los Angeles time
+	11 amÂ Tuesday New York time
+	17hÂ Tuesday Paris time
+
+Agenda
+	Â Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	Release updates / issuesÂ 	24.6.0 in burn-in phase for releaseÂ 
+	Besu-Native (Gary and Matt Whitehead on action items)Â 	Some workarounds for current issues with release and local build.
+	How does this supply chain work so vendors and users can reliably build from specific commits against Besu-Native versions?Â 	Checks in the artifacts? Maven/JFrog/GHA?Â 
+	Need to review the code for verification of native in Besu-Main.
+
+
+	Besu-Native should now automatically derive a CalVer release from when it was built to avoid the overwrite problem of previous versions.Â 	Should target the same changes to release updates / GHA.Â 
+	Gradle properties file needs to be manually up-revved when a new version is being cut.Â 
+	Gary to take point on this.Â 
+
+
+	Maven should stop a version being released.
+
+
+
+
+	Work Updates	Release updates in the Wiki from Justin - looking for feedback: Release Process
+	QBFT + Bonsai Updates	Two PRs raised alongside testing --	Enabling Snapsync / Bonsai for BFT - https://github.com/hyperledger/besu/pull/7140
+	Fix for BFT state updates in Bonsai (invalid block issues) -Â https://github.com/hyperledger/besu/pull/7204
+
+
+	Working through network and topology testingÂ 
+	Some edge cases and implications for networks running new topologies (Snap / Bonsai)
+
+
+	Performance testing is next when Bonsai and QBFT can run in perpetuity without blocking bugsÂ 
+	So far, so good
+
+
+	Legacy Features Sunset Plan â€“ https://docs.google.com/document/d/1MmFQde4Câ€“JHvQWMabU7GyYwODYG3EhnT9IZ4uY8B4o/edit	Blog post announcement forthcoming for maintainer feedbackÂ 
+
+
+	Maintainers -- LFR:	https://github.com/hyperledger/besu/pull/6593
+
+
+
+
+	Other Business	Review CI credit usage and build time for the month https://app.circleci.com/insights/gh/hyperledger
+
+
+	Open Forum	/add item/
+
+
+	Future Topics	/add item/
+
+
+
+Recordings
+Find the recording in the playlist - https://www.youtube.com/playlist?list=PL0MZ85B_96CHpqsKmljUK8HB98wK67RjC
+
+
+    
+    
+
+
+
+    
+        
+            
+            
+            
+                                                    
+        
+
+                
+
+
+
+
+
+
+    
+
+
+	Â 	
+            File
+        	
+            Modified
+        
+
+
+
+
+    
+
+    
+                    
+                No files shared here yet.
+            
+
+            
+
+
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 34, "requestCorrelationId": "b0823c9161434bc89cdf38ce89cb3c50"}

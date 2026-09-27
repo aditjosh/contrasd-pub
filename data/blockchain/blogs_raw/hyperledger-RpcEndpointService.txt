@@ -1,0 +1,656 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RpcEndpointService - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+	BesuContext
+
+
+
+
+
+	PermissioningService
+
+
+
+
+
+	PrivacyPluginService
+
+
+
+
+
+	RpcEndpointService
+
+
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+RpcEndpointService
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+RpcEndpointService
+
+	Antony Denyer
+
+
+
+
+
+Owned by Antony Denyer
+
+
+Oct 11, 2021
+
+
+
+
+
+
+
+
+
+
+public interface RpcEndpointService
+extends BesuService
+This service allows you to add functions exposed via RPC endpoints.
+This service will be available during the registration callback and must be used during the registration callback. RPC endpoints are configured prior to the start callback and all endpoints connected. No endpoint will actually be called prior to the start callback so initialization unrelated to the callback registration can also be done at that time.
+
+
+Method Summary
+	Modifier and Type	Method	Description
+	<T>Â void	registerRPCEndpointâ€‹(java.lang.StringÂ namespace,
+java.lang.StringÂ functionName,
+java.util.function.Function<PluginRpcRequest,â€‹T>Â function)	Register a function as an RPC endpoint exposed via JSON-RPC.
+
+
+
+
+
+Method Details
+	registerRPCEndpoint
+
+<T>Â voidÂ registerRPCEndpointâ€‹(java.lang.StringÂ namespace, java.lang.StringÂ functionName, java.util.function.Function<PluginRpcRequest,â€‹T>Â function) Register a function as an RPC endpoint exposed via JSON-RPC.The mechanism is a Java function that takes a list of Strings and returns any Java object, registered in a specific namespace with a function name.
+The resulting endpoint is the namespace and the functionName concatenated with an underscore to create the JSON-RPC method name.
+The function takes a PluginRpcRequest which contains a list of the inputs expressed entirely as strings. Javascript numbers are converted to strings via their toString method, and complex input objects are not supported.
+The output is a Java object, primitive, or array that will be inspected via Jackson databind. In general if JavaBeans naming patterns are followed those names will be reflected in the returned JSON object. If the method throws an exception the return is an error with an INTERNAL_ERROR treatment.
+Type Parameters: T - specified type of return object Parameters: namespace - The namespace of the method, must be alphanumeric. functionName - The name of the function, must be alphanumeric. function - The function itself.
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+RPC Endpoint Service
+RPC Endpoint Service
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Plugin Services
+Plugin Services
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Library usage for HTTP and WebSocket protocols
+Library usage for HTTP and WebSocket protocols
+
+Hyperledger Iroha
+
+
+
+More like this
+
+
+
+
+
+
+Iroha 2: Java SDK feature completeness, improvements and refactoring
+Iroha 2: Java SDK feature completeness, improvements and refactoring
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Firefly Developer Resources for Giving Chain
+Firefly Developer Resources for Giving Chain
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+BesuContext
+BesuContext
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "039d145072274174a568b94b7f9b8d57"}

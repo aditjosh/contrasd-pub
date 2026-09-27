@@ -1,0 +1,351 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-663: Unlimited SWAP and DUP instructions
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+      ⚠️ Review
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-663: Unlimited SWAP and DUP instructions
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Introduce SWAPN and DUPN which take an immediate value for the depth
+
+  	Authors	Alex Beregszaszi (@axic)
+	Created	2017-07-03
+	Requires	
+
+  EIP-3540, 
+
+  EIP-5450
+
+
+
+
+  
+
+
+  
+    
+      
+      
+        This EIP is in the process of being peer-reviewed. If you are interested in this EIP, please participate using this discussion link.
+      
+
+    
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+	Rationale
+    	EOF-only
+	Size of immediate argument
+
+
+  
+	Backwards Compatibility
+	Test Cases
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+Currently, SWAP and DUP instructions are limited to a stack depth of 16. Introduce two new instructions, SWAPN and DUPN, which lift this limitation and allow accessing the stack up to depth of 256 items.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+While the stack is 1024 items deep, easy access is only possible for the top 16 items. Supporting more local variables is possible via manually keeping them in memory or through a “stack to memory elevation” in a compiler. This can result in complex and inefficient code.
+
+
+Furthermore, implementing higher level constructs, such as functions, on top of EVM will result in a list of input and output parameters as well as an instruction offset to return to.
+
+
+The number of these arguments (or stack items) can easily exceed 16 and thus will require extra care from a compiler to lay them out in a way that all of them are still accessible.
+
+
+Introducing SWAPN and DUPN will provide an option to compilers to simplify accessing deep stack items at the price of possibly increased gas costs.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+We introduce two new instructions:
+
+
+	DUPN (0xe6)
+	SWAPN (0xe7)
+
+
+
+If the code is legacy bytecode, both of these instructions result in an exceptional halt. (Note: This means no change to behaviour.)
+
+
+If the code is valid EOF1, the following rules apply:
+
+
+	
+    These instructions are followed by an 8-bit immediate value, which we call imm, and can have a value of 0 to 255. We introduce the variable n which equals to imm + 1.
+
+  
+	
+    Code validation is extended to check that no relative jump instruction (RJUMP/RJUMPI/RJUMPV) targets immmediate values of DUPN or SWAPN.
+
+  
+	
+    The stack validation algorithm of EIP-5450 is extended:
+  3.1. Before DUPN if the current stack height is less than n, code is invalid. After DUPN stack height is incremented.
+  3.2. Before SWAPN if the current stack height is less than n + 1, code is invalid. After SWAPN stack height is not changed.
+
+  
+	
+    Execution rules:
+  4.1. DUPN: the n‘th stack item is duplicated at the top of the stack. (Note: We use 1-based indexing here.)
+  4.2  SWAPN: the n + 1th stack item is swapped with the top stack item.
+
+  
+
+
+
+The gas cost for both instructions is set at 3.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+  
+    
+      
+      
+         EOF-only
+      
+      
+    
+
+
+Since this instruction depends on an immediate argument encoding, it can only be enabled within EOF. In legacy bytecode that encoding could contradict jumpdest-analysis.
+
+  
+    
+      
+      
+         Size of immediate argument
+      
+      
+    
+
+
+A 16-bit size was considered to accommodate the full stack space of 1024 items, however:
+
+
+	that would require an additional restriction/check (n < 1024)
+	the 256 depth is a large improvement over the current 16 and the overhead of an extra byte would make it less useful
+
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+This has no effect on backwards compatibility because the opcodes were not previously allocated and the feature is only enabled in EOF.
+
+  
+    
+      
+      
+         Test Cases
+      
+      
+    
+
+
+Given variable n, which equals to imm + 1, for 1 <= n <= 256:
+
+
+- `DUPN imm` to fail validation if `stack_height < n`.
+- `SWAPN imm` to fail validation if `stack_height < (n + 1)`.
+- `DUPN imm` to increment maximum stack height of a function. Validation fails if maximum stack height exceeds limit of 1023.
+- `DUPN imm` and `SWAPN imm` to fail at run-time if gas available is less than 3.
+- otherwise `DUPN imm` should push the `stack[n]` item to the stack, and `SWAPN imm` should swap `stack[n + 1]` with `stack[stack.top()]`.
+
+
+
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+The authors are not aware of any additional risks introduced here. The EVM stack is fixed at 1024 items and most implementations keep that in memory at all times. This change will increase the easy-to-access number of items from 16 to 256.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), "EIP-663: Unlimited SWAP and DUP instructions [DRAFT]," Ethereum Improvement Proposals, no. 663, July 2017. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-663.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

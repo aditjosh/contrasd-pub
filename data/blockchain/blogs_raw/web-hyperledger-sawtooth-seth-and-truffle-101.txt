@@ -1,0 +1,1009 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Sawtooth, Seth and Truffle 101 – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Burrow
+                            
+                        
+                    
+
+                
+                Hyperledger Sawtooth, Seth and Truffle 101
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jul 24, 2018
+                    
+                
+
+            
+
+            
+            
+                Guest post: Nathan Aw
+ 
+I develop on both Hyperledger Fabric/Sawtooth and Ethereum (to be specified, Quorum) so I am familiar with the languages available on both platform — chaincode (Go) and smart contract (Solidity). Often I am asked this question: “Which platform is better?” To which I will answer, this question is a false choice as with Hyperledger Sawtooth Seth, you can build your smart contracts in Solidity and deploy the same smart contract in Hyperledger Sawtooth — Pretty cool isn’t it? 😉 
+ 
+Before we get to the technical section, we need to get a handle on the basic terminology first.
+ 
+What is Hyperledger Sawtooth?
+ 
+Hyperledger Sawtooth is an enterprise blockchain platform for building distributed ledger applications and networks. The design philosophy targets keeping ledgers distributed and making smart contracts safe, particularly for enterprise use.
+ 
+Sawtooth simplifies blockchain application development by separating the core system from the application domain. Application developers can specify the business rules appropriate for their application, using the language of their choice, without needing to know the underlying design of the core system.
+ 
+Sawtooth is also highly modular. This modularity enables enterprises and consortia to make policy decisions that they are best equipped to make. Sawtooth’s core design allows applications to choose the transaction rules, permissioning, and consensus algorithms that support their unique business needs.
+ 
+What is Hyperledger Sawtooth Seth?
+ 
+The primary goal of the Sawtooth-Ethereum integration project, which is also known as “Seth” is to add support for running Ethereum Virtual Machine Smart Contracts to the Hyperledger Sawtooth Platform. 
+ 
+Ethereum Virtual Machine (EVM) Smart Contracts can be deployed to Sawtooth using the Seth Transaction family. The Seth Transaction Family enables the creation and execution of smart contracts. It integrates the Hyperledger Burrow implementation of the EVM into the Hyperledger Sawtooth Framework using the Sawtooth Transaction Processor SDK. 
+ 
+For those familiar with Ethereum Geth (Go-Ethereum) client, you will find out that Sawtooth Seth client replicates the Ethereum JSON RPC API. 
+ 
+Seth is composed of three components
+ 
+	Seth Client
+	Seth-TP Transaction Processor
+	Seth-RPC Server
+
+ 
+For more details on JSON RPC API, check out https://github.com/ethereum/wiki/wiki/JSON-RPC
+ 
+Do note that Seth is not a complete Ethereum implementation. The Sawtooth platform has made fundamental design decisions that differ from those made by the Ethereum platform. The specified differences can be found under Sources/References
+ 
+What is Truffle?
+ 
+Truffle is often considered the most popular Ethereum development framework. Truffle does a lot of things for the developer. It is a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier. We won’t be going through Truffle. Point of introducing Truffle is to share with you that one can build smart contracts with Solidity and enjoy Truffle and its related capabilities and yet deploy the end product (i.e., your Smart Contract) onto Hyperledger Sawtooth — this to me is pretty awesome! For more information on truffle, please check out https://truffleframework.com/
+ 
+Step by Step Setup Guide 
+ 
+I am using Ubuntu 16.04. You will need git and Docker installed.  
+ 
+	Do a git clone of sawtooth-seth
+
+ 
+
+ 
+2. Build the Sawtooth Seth
+ 
+
+ 
+This process will take 10 – 15 minutes. 
+ 
+	 Run Sawtooth Seth
+
+ 
+docker run -v $(pwd)/docs:/project/sawtooth-seth/docs seth-build-docs
+ 
+
+ 
+	 Verify if the components are running correctly  
+
+ 
+curl http://0.0.0.0:8080/blocks
+ 
+curl http://0.0.0.0:3030 -d ‘{“jsonrpc”: “2.0”, “id”: 1, “method”: “eth_blockNumber”}’ -H “Content-Type: application/json”
+ 
+	 Creating an Account. Generating a Key Pair
+
+ 
+In order to interact with Seth, we need to create an external account on the network. Creating an account is equivalent to generating a new private key that Seth can understand. Seth accepts secp256k1 private keys
+ 
+docker exec -it seth bash
+ 
+openssl ecparam -genkey -name secp256k1 | openssl ec -out mykey.pem -aes128
+ 
+Now we are ready to set up the account on the network. To do this, we need to use the seth command. From the prompt where you generated the key, run:
+ 
+seth account import mykey.pem myalias
+ 
+seth account create myalias –wait
+ 
+seth show account {address}
+ 
+	 Write the Smart Contract 
+
+ 
+Once you have an account created, you can use it to deploy EVM smart contracts. To demonstrate how to deploy and call contracts, we will be using the following Solidity contract, which is based loosely on the IntegerKey Transaction Family. Solidity is a high-level language for defining contracts that compiles to EVM byte code for deployment. To follow along with this guide, you should create a new file with this contract:
+ 
+pragma solidity ^0.4.0;
+ 
+contract intkey {
+ 
+  mapping (uint => uint) intmap;
+ 
+  event Set(uint key, uint value);
+ 
+function set(uint key, uint value) {
+ 
+    intmap[key] = value;
+ 
+    Set(key, value);
+ 
+  }
+ 
+  function inc(uint key){
+ 
+    intmap[key] = intmap[key] + 1;
+ 
+  }
+ 
+  function dec(uint key){
+ 
+    intmap[key] = intmap[key] – 1;
+ 
+  }
+ 
+  function get(uint key) constant returns (uint retVal) {
+ 
+    return intmap[key];
+ 
+  }
+ 
+}
+ 
+Save this contract in a file called “contract.sol” in your working directory. If you are working with the development environment described in :doc`./getting_started` you should save this file in the sawtooth-core/ directory on your host so that it is available within the seth container.
+ 
+Before we can deploy this contract, we have to compile it. The seth client expects that the contract will be passed as a hex-encoded byte array. We can use the Solidity compiler solc to create it. If you followed the Getting Started instructions, this tool is already installed in the seth container we created earlier. Connect to the seth container as explained there. If not, we assume you have it installed locally.
+ 
+$ solc –bin contract.sol
+ 
+======= contract.sol:intkey =======
+ 
+Binary:
+ 
+…byte array here…
+ 
+In place of {contract} you should insert the blob of hex that you saved from earlier. This will create a new contract creation transaction and submit it to the validator.
+ 
+If everything works, a new contract account will be created and the client will print the address of the newly created contract account along with some additional execution information. To confirm the contract was deployed, you can run:
+ 
+seth show account {address}
+ 
+	 Calling Contracts
+
+ 
+To call the deployed contract we need the address where the contract is deployed and the input data for the contract call. The address was printed when the contract was deployed. Constructing the input for the contract is a little harder.
+ 
+Solidity uses an Application Binary Interface or ABI to determine which function in your contract to run and what the function call’s arguments are. There are many tools available for abstracting the creation of the input data for a contract call. One option for generating the input data that is compatible with the seth client is the ethereumjs-abi library. If you are using the development environment described earlier, this is already installed in the seth docker container.
+ 
+To use this library to call a function in contract, you can use the simpleEncode. The following shows how to call the set() function in the contract we deployed earlier with arguments 19 and 42:
+ 
+$ node
+ 
+> var abi = require(‘ethereumjs-abi’)
+ 
+> abi.simpleEncode(“set(uint,uint)”, “0x13”, “0x2a”).toString(“hex”)
+ 
+…byte array here…
+ 
+To call our contract and run set(19,42), run:
+ 
+seth contract call –wait {address} {input}
+ 
+In place of {input} you should insert the blob of hex formatted according to the contract’s ABI that we created above. If everything works, the client will state that transaction was succesful and print the transaction id. To verify that the message call was successful, you can do:
+ 
+seth show receipt {transaction-id}
+ 
+seth contract create –wait myalias {contract}
+ 
+Conclusion
+ 
+Imagine having the best of both worlds — building smart contracts with Solidity, originally intended for EVM — and deploying it onto Hyperledger Sawtooth. Portability is the key differentiator here which explains why I love building smart contracts with Solidity and deploying it onto Sawtooth via Seth.  
+ 
+I am happy to answer any questions you might have on Hyperledger Sawtooth and Solidity or any blockchain related questions. Drop me a line at nathan.mk.aw@gmail.com and/or connect with me on Linkedin at https://www.linkedin.com/in/awnathan/
+ 
+Sources/References:
+ 
+https://github.com/hyperledger/sawtooth-seth/blob/master/docs/Dockerfile
+ 
+https://sawtooth.hyperledger.org/docs/seth/releases/latest/seth_developers_guide/getting_started.html#getting-seth
+ 
+https://sawtooth.hyperledger.org/docs/core/releases/latest/introduction.html
+ 
+https://github.com/trufflesuite/truffle 
+ 
+
+ 
+
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

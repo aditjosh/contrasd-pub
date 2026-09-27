@@ -1,0 +1,898 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Aries: An Epicenter for Decentralized Digital Identity Collaboration and Innovation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger AnonCreds
+                            |
+                        
+                            Hyperledger Aries
+                            
+                        
+                    
+
+                
+                Hyperledger Aries: An Epicenter for Decentralized Digital Identity Collaboration and Innovation
+ 
+                
+                    Hyperledger Aries Working Group
+                    |
+                    
+                        Apr 4, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                How was 2023 for Hyperledger Aries, and what’s in store for 2024? Given that Aries is uniquely positioned for anyone adopting a decentralized approach to data and identity verification, let’s review what’s been a fascinating year for the project.
+
+
+Achievements in 2023
+
+In 2023, the Aries Working Group continued to serve as a consistent home for digital identity projects to flourish and also a place to grow the different components that comprise Hyperledger Aries. 
+
+Our 2023 accomplishments include: 
+
+	Transition to ledger agnostic implementations for DIDs generally, and in particular, for privacy-preserving Hyperledger AnonCreds verifiable credentials. There was great work in adding support for Cheqd, and other ledgers.
+	Support added for new/better DID Peer variations, enabling a transition away from unqualified DIDs (from the time before the DID Core and DID Peer specifications).
+	Significant new capabilities in Aries Mobile Agent React Native (aka “Aries Bifold”, and now called “Bifold Wallet” within the Open Wallet Foundation) including OCA for Aries (to make displayed credentials beautiful!), a Mobile Verifier, and innumerable UX/usability enhancements, all released into production mobile apps.
+	Transition away from the indy-sdk to the newer and substantially better “shared components” — Aries Askar, Indy VDR and AnonCreds Rust.
+	Completion of Aries Interop Profile (AIP) 2.0 by all major Aries frameworks, and initial discussions on supporting the next AIP, which will include DIDComm v2.0.
+	Preliminary support for OpenID4VCs and SD-JWTs in some Aries frameworks.
+	Much progress on optimized production deployments of Aries, including:
+	Redis/Kafka persistent queue support;
+	a powerful Aries Load Test Generator capability (Aries Akrida) Locust;
+	a scalable DIDComm mediator; and
+	Aries SocketDock to enable even more scaling of mediators.
+
+
+
+	Substantial progress on Rust components as the basis for Aries VCX.
+	Continued progress on interoperability across Aries implementations.
+
+
+Aries Cloud Agent Python and Aries VCX continued to thrive, adding capabilities and supporting repositories (such as the Aries ACA-Py Plugins, a “store” ACA-Py extensions). 
+
+A couple of smaller, long dormant sub-projects were archived (Aries Framework .NET and Aries Framework Go). Aries Framework JavaScript, now called “Credo TS,” moved to the OpenWallet Foundation along with Bifold Wallet (built on Credo). Credo remains interoperable and a close collaborator with the Aries community, frameworks, Aries Cloud Agent Python and Aries VCX.
+
+Looking Ahead
+
+2024 promises to be an equally interesting year as Europe adopts eIDAS 2.0, OID4VC capabilities become integral to many in the Digital Trust space, and digital trust adoption accelerates. Hyperledger Aries continues to add support enabling the use of capabilities central to other communities, such as AnonCreds verifiable credentials using the W3C Verifiable Credential Data Model (VCDM) format, OpenID4VCs, SD-JWTs and so on. A goal of the Aries community is to enable long-term flexibility in the frameworks we are building to support leading protocols, verifiable credential formats and other specifications — whatever they might be. 
+
+Recent Aries Working Group meetings have been spent on defining a roadmap for 2024. The following is extracted from the discussions and notes from those meetings. The ordering is from activities well underway, to “reach for the clouds” ideas:
+
+	Completion of the Unqualified DIDs Community Coordinated Update
+	Continued development and publication of Aries best practices.
+	Ideally, leading to an Aries Long Term Support (LTS) program and an initial LTS release.
+
+
+
+	Aries RFC Publishing — Status Review and the human friendly publication of the Aries Protocol RFCs integrated with the DIDComm Protocols.
+	An evolution of the “Start Here” documentation for the Aries Frameworks
+	Marketing: Publishing information about the range and maturity of Aries capabilities and improving the overall awareness of Aries in digital trust and corporate circles. Ideas include:
+	Publishing a scalability report;
+	Raising awareness about the Aries frameworks’s flexibility in interacting with non-Indy ledgers/VDRs and verifiable credentials other than AnonCreds; and
+	Boosting visibility of implementations and deployments.
+
+
+
+	Continuing efforts to expand alignment / interop through activities such as: 
+	JFF PlugFest;
+	Aries Interopathon;
+	Open Wallet Foundation; and
+	Credo-TS.
+
+
+
+	Expanding Aries Interop Profile (AIP) v3 definition on AIP v2 on top of DIDComm v2 and/or the ToIP Trust Spanning Layer.
+	Expanding OIDC4VC Protocol support, including relevant VC formats
+	Research into adding support for the upcoming mobile driver’s license (mDL) standards.
+
+
+The ongoing evolution of the relationship between Aries and the OpenWallet Foundation will be a backdrop to the activity in Aries in 2024. Given the connections between the participants in both efforts and the shared knowledge, we’re confident that there will continue to be good collaboration and a focus on interoperability across the projects.
+
+Building on momentum
+
+Adoption of Hyperledger Aries is climbing along with the rest of the digital trust world. As more organizations enter the space, they gravitate towards one of the “competing” communities, including Aries. Acting as a “long tent pole” for the identity community and leveraging the full resources of Hyperledger, the Aries community not only is home to foster the various components that comprise Aries but is also a space where these tools can grow, interact, and gain insights from the other technologies and perspectives of others working in the field of digital trust. 
+
+Hyperledger Aries continues to excel in its maturity, focus on privacy, and enabling a lasting trusted digital relationship between parties. Regardless of where the winds push digital trust, the Aries codebases will be a fit.
+
+Check out LFX Insights page on Hyperledger Aries for more information on the project and join the weekly working group to get involved in creating an Internet built on digital trust. 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

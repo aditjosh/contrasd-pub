@@ -1,0 +1,286 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-2242: Transaction Postdata
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-2242: Transaction Postdata
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	John Adler (@adlerjohn)
+	Created	2019-08-16
+	Discussion Link	https://ethereum-magicians.org/t/eip-2242-transaction-postdata/3557
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Simple Summary
+	Abstract
+	Motivation
+	Specification
+	Rationale
+	Backwards Compatibility
+	Test Cases
+	Implementation
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Simple Summary
+      
+      
+    
+
+An additional, optional transaction field is added for “postdata,” data that is posted on-chain but that cannot be read from the EVM.
+
+  
+    
+      
+      
+         Abstract
+      
+      
+    
+
+A paradigm shift in how blockchains are used has been seen recently in Eth 2.0, with the rise of Execution Environments (EEs), and stateless clients. This shift involves blockchains serving as a secure data availability and arbitration layer, i.e., they provide a globally-accepted source of available data, and process fraud/validity and data availability proofs. This same paradigm can be applied on Eth 1.x, replacing EEs with trust-minimized side chains.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+While EIP-2028 provides a reduction in gas cost of calldata, and is a step in the right direction of encouraging use of history rather than state, the EVM does not actually need to see all data that is posted on-chain. Following the principle of “don’t pay for what you don’t use,” a distinct way of posting data on-chain, but without actually being usable within the EVM, is needed.
+
+
+For trust-minimized side chains with fraud proofs, we simply need to ensure that the side chain block proposer has attested that some data is available. Authentication can be performed as part of a fraud proof should that data end up invalid. Note that trust-minimized side chains with validity proofs can’t make use of the changes proposed in this EIP, as they required immediate authentication of the posted data. This will be the topic of a future EIP.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+We propose a consensus modification, beginning at FORK_BLKNUM:
+
+
+An additional optional field, postdata, is added to transactions. Serialized transactions now have the format:
+
+"from": bytes20,
+"to": bytes20,
+"startGas": uint256,
+"gasPrice": uint256,
+"value": uint256,
+"data": bytes,
+"nonce": uint256,
+["postdata": bytes],
+
+
+
+
+with witnesses signing over the RLP encoding of the above. postdata is data that is posted on-chain, for later historical retrieval by layer-2 systems.
+
+
+postdata is an RLP-encoded twople (version: uint64, data: bytes).
+
+	version is 0.
+	data is an RLP-encoded list of binary data. This EIP does not interpret the data in any way, simply considering it as a binary blob, though future EIPs may introduce different interpretation schemes for different values of version.
+
+
+
+The gas cost of the posted data is 1 gas per byte. This cost is deducted from the startGas; if the remaining gas is non-positive the transaction immediately reverts with an out of gas exception.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+The changes proposed are as minimal and non-disruptive to the existing EVM and transaction format as possible while also supporting possible future extensions through a version code.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+The new transaction format is backwards compatible, as the new postdata field is optionally appended to existing transactions.
+
+
+The proposed changes are not forwards-compatible, and will require a hard fork.
+
+  
+    
+      
+      
+         Test Cases
+      
+      
+    
+
+TODO
+
+  
+    
+      
+      
+         Implementation
+      
+      
+    
+
+TODO
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  John Adler (@adlerjohn), "EIP-2242: Transaction Postdata [DRAFT]," Ethereum Improvement Proposals, no. 2242, August 2019. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-2242.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

@@ -1,0 +1,214 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-7199: Linter Scope
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+      🛑 Withdrawn
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-7199: Linter Scope
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Relax the policy for updating EIP.
+
+  	Authors	Zainan Victor Zhou (@xinbenlv)
+	Created	2023-06-20
+	Discussion Link	https://ethereum-magicians.org/t/proposal-eipw-should-only-complain-about-changing-lines/14762
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	Rationale
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+Currently in practice EIP linter tools (EIPW, for example) will block a Pull Request for lint errors even if that lint errors was not introduced in that Pull Request.
+This EIP make it explicit that lint errors for untouched lines shall be considered ignoreable except for status change.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119.
+
+
+In an update to an EIP, A Pull Request SHOULD NOT be required to fix linter errors in untouched lines unless it’s changing the Status of the EIP.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+This policy allows micro contributions for anyone who just want to fix a typo or change a section of a section in a large EIP.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+None
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Zainan Victor Zhou (@xinbenlv), "EIP-7199: Linter Scope [DRAFT]," Ethereum Improvement Proposals, no. 7199, June 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-7199.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

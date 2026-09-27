@@ -1,0 +1,150 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Global Forum Highlights: CBDCs, programmable money and interoperability - Part I – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Global Forum Highlights: CBDCs, programmable money and interoperability - Part I – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Jul 14, 2021 10:21:49 AM 
+        
+
+        
+          Central Bank Digital Currency projects, known as CBDCs, are moving quickly from prototypes to pilots and beyond with some well known projects already in production. As CBDCs and other cross border payment use cases mature, central banks continue to partner with the private sector from small to big companies to accelerate and innovate, and the Hyperledger open source community is at the forefront of the most public CBDC projects.
+ 
+ As seen at this year’s 2021 Hyperledger Global Forum (HGF), the annual global event where the Hyperledger community gathers to showcase their work with Hyperledger technologies, there is a wide range of activities underway tied to CBDCs and cross border payment. Talks covered key technologies, lessons learned and industry trends  as well as production implementations like the work Hyperledger member Soramitsu has done with National Bank of Cambodia (NBC) to the leading work Accenture has been doing for years in the digital currency space.
+ 
+ In addition to developing products and services to deliver to their central bank customers, the Hyperledger community is also working to build the future of digital money with open source principles and goals. Efforts range from market leading discussions in our Capital Markets and Trade Finance Special Interest Groups to IBM’s recent contribution of code bases already in use in conjunction with a major European Central Bank Project. These are now Smart Fabric Client and Fabric Token SDK, two new Hyperledger Labs
+ 
+ Technology innovation happens when companies, academics and regulators come together to meet common goals, and Hyperledger is proud to host the development of code that will enable payment innovations around the world. Read on for highlights from HGF and to learn more about how you can get involved.
+ 
+ On Stage at Hyperledger Global Forum
+ 
+ Keynote Panel: Asia Pacific CBDC Innovation, Collaboration and the Drive to Interoperability – HE Serey Chea, National Bank of Cambodia (NBC); Sopnendu Mohanty, Monetary Authority of Singapore; Brian Behlendorf, Hyperledger
+ 
+ During this session, National Bank of Cambodia’s Assistant Governor HE Serey Chea shared with the audience the work NBC has already put into production with a retail CBDC, working with Hyperledger member Soramitsu using Hyperledger Iroha. A deep dive into this project is also available as a full Hyperledger case study.
+ 
+ Sopnendu Mohanty, Chief Fintech Officer, Monetary Authority of Singapore (MAS), shared some of the outcomes of their leading Project Ubin work and announced a new Global CBDC challenge that the Hyperledger community is supporting as a technical partner. Read more about the CBDC Challenge here.
+ 
+ While the National Bank Cambodia selected Hyperledger Iroha for its retail CBDC implementation, multiple implementations are using other Hyperledger projects, primarily Hyperledger Besu and Hyperledger Fabric. As highlighted below, choice in DLT protocols is important to support and nurture and with that the need for interoperability becomes more important, and during HGF many sessions addressed the needs of our community to come together and resolve.
+ 
+ Fireside Chat on Central Bank Digital Currencies – Dave Treat & John Velissarios, Accenture; Jennifer Peve, DTCC
+ 
+ In this session, both Accenture and DTCC highlighted how CBDC is fast approaching and here to stay.  Dave Treat, Senior Managing Director, Global Blockchain Lead, Accenture, and Jennifer Peve, Managing Director, Business Innovation, DTCC, covered the benefits and different approaches to developing a third form of central bank money for our digital world. They offered some practical examples of using Hyperledger Cactus and the Blockchain Automation Framework and a call for our community not to lose faith.
+ 
+ 
+
+ 
+ 
+  (23:30) 
+  DTTC’s Jennifer Peve on the positive momentum in the digital currency space: “Things are happening across Accenture, across DTCC, there many other financial institutions in this space progressing the conversation using distributed ledger and tokenized assets and even looking at the concept of digital currencies, it should be viewed as incredibly positive to see these iterations continue… these are not easy things to solve overnight..don’t lose faith, some of these things are just not easy things to solve.”
+ 
+ 
+ 
+
+  
+
+ 
+
+  
+
+ 
+
+ This engaging discussion was then followed by a deep dive from John Velissarios from Accenture into the current landscape of CBDC research and experimentation across the globe.
+
+ 
+
+  
+
+ 
+ 
+  
+  
+  
+   (52:28) John Velissarios’s call to action to get involved: “There’s a strong willingness to share to explore open source ideas, to openly develop new concepts and new ideas…get ready for innovation that will be coming out way imminently.”
+
+   
+  
+
+ 
+ 
+ 
+  (30:30) 
+  John Velissarios from Accenture on the innovation behind CBDC: “the ability to bundle both the value and the ownership in a single item that you can transfer from one entity to the next.” Why now: “The technology has become much more mature…there’s a lot more appetite in the marketplace.”
+
+  
+ 
+   
+   Hyperledger Besu Use Cases – Grace Hartley, ConsenSys; Adam Clarke, Fnality International
+ 
+   For those interested in Hyperledger Besu, this session provided an overview of how the platform is used by Fnality. Fnality International is a financial technology firm founded in 2019 by a consortium of international banks and an exchange to create a network of distributed financial market infrastructures using blockchain to deliver the means of payment-on-chain for wholesale banking markets.
+ 
+   
+   
+   
+    (7:33) 
+    Adam Clarke, CTO, Fnality International, on working with the Bank of England: “We’ve put in our application for our first central bank account…When participants of our network fund the Fnality bank account, we will effectively tokenize that money and give full ownership of that money back to them immediately and that effectively removes the counterparty risk. They don’t have to move money through a counterparty, but also they they can also use the DLT to move money between participants instantly with legal settlement finality without having to worry about two or three day settlement period.”
+   
+ 
+   
+   
+   
+   
+    (10:22) 
+    Adam Clarke on finding the right DLT platform: “It has to be closed. It has to be permissioned. We are never going to run this on mainnet for obvious reasons, we’re backing central bank money…and actually the consensus algorithm within Besu being IBFT2 or IBFT kind of algorithm allows us to actually get to the point we can show that we have legal settlement finality at a given point within the consensus algorithm so really important for central banks and for meeting regulation.”
+    
+   
+  Look for part II of this series, which will include highlights from technical talks centered around CBDC and digital currencies.
+ 
+  How else can you get involved in this work happening at Hyperledger?
+ 
+  	Join as a Hyperledger member. Our member companies are leaders in financial services and technology working on these exciting projects. Learn more about membership. 
+	Participate in our open communities, like our Capital Markets SIG.
+	Deep dive into Hyperledger projects with training and certifications.
+	Attend other Hyperledger events and webinars.
+
+ 
+  
+
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

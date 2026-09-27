@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Scaling EVM: Overview - Miscellaneous - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Scaling EVM: Overview
+    
+
+
+      
+          
+            
+              
+              
+                Miscellaneous
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                miohtama
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 15, 2021,  3:58am
+                  
+                  
+
+1
+              
+            
+            
+              Hi,
+
+I wrote an overview blog post on different EVM chains and L2s: the settings and tradeoffs they make, what problems are currently being researched and what innovation there exist outside the Ethereum ecosystem that could be adopted. The summary and the same discussion is also available on Twitter. Unsurprisingly you will find out that most of the L1 and L2 EVM based blockchains are heavily based on Go Ethereum and do not innovate much outside changing the consensus algorithm.
+
+While the post might be technical enough for the readers of this forum to discuss details, it should give a good high-level view of different competing EVM chains and layer two solutions available at the markets at the moment.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

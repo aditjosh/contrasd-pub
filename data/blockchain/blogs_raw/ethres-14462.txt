@@ -1,0 +1,1083 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2FA zk-rollups using SGX - zk-s[nt]arks - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      2FA zk-rollups using SGX
+    
+
+
+      
+          
+            
+              
+              
+                zk-s[nt]arks
+              
+            
+            
+
+
+
+        
+            zk-roll-up
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 21, 2022,  6:30pm
+                  
+                  
+
+1
+              
+            
+            
+              TLDR: We suggest using SGX as a pragmatic hedge against zk-rollup SNARK vulnerabilities.
+
+Thanks you for the feedback, some anonymous, to an early draft. Special thanks to the Flashbots and Puffer teams for their insights.
+
+Construction
+
+Require two state transition proofs to advance the on-chain zk-rollup state root:
+
+	
+cryptographic proof: a SNARK
+	
+2FA: an additional SGX proof
+
+
+SGX proofs are generated in two steps:
+
+	
+one-time registration: An SGX program first generates an Ethereum (pubkey, privkey) pair. This keypair is tied to a specific SGX enclave, and only signs valid state transitions (pre_state_root, post_state_root, block_root). The pubkey is registered on-chain by verifying an SGX remote attestation which attests to the pubkey being correctly generated.
+	
+proving: After registration the SGX program runs the rollup state transition function to sign messages of the form (pre_state_root, post_state_root, block_root). These SGX proofs are verified on-chain by checking signatures against the registered pubkey.
+
+
+Context
+
+Early zk-rollups are prone to SNARK soundness vulnerabilities from circuit or proof system bugs. This is concerning because:
+
+	
+complexity: The engineering of zk-rollups is particularly complex. Even bridges, an order of magnitude less complex than rollups, are routinely hacked.
+	
+value secured: The value secured by leading zk-rollups is expected to become significantly higher than that of today’s bridges. These large bounties may be a systemic risk for Ethereum.
+	
+competition: The zk-rollup landscape is competitive, with first-mover advantages. This encourages zk-rollups to launch early, e.g. without multi-proofs. (See Vitalik’s presentation and slides on multi-proofs.)
+
+
+Discussion
+
+SGX 2FA is particularly attractive:
+
+	
+safety: There is no loss of safety to the zk-rollup—the additional requirement for SGX proofs is a strict safety improvement. Notice that the SGX enclaves do not handle application secrets (unlike, say, the Secret Network).
+	
+liveness: There is almost no loss of liveness. The registration step does require Intel to sign an SGX remote attestation but:
+	a) The specific SGX application Intel is providing a remote attestation for can be hidden from Intel. Intel would have to stop providing remote attestations for multiple customers to deny remote attestations for a targetted zk-rollup.
+	b) Hundreds of SGX enclaves can register a pubkey prior to the rollup launch. The currently registered pubkeys can generate SGX proofs even if Intel completely stops producing remote attestations for new registrations.
+	c) If required, rollup governance can remove the SGX 2FA.
+
+
+
+	
+gas efficiency: The gas overhead of verifying an SGX proof is minimal since only an Ethereum ECDSA signature is being verified on-chain (other than the one-time cost of verifying remote attestations).
+	
+latency: There is no additional proof latency—producing SGX proofs is faster than producing SNARKs. Notice that SGX 2FA provides little value to optimistic rollups which have multi-day settlement and can use governance to fix fraud proof vulnerabilities.
+	
+throughput: There is no loss of throughput. The Flashbots team has shown Geth can run at over 100M gas per second on a single SGX enclave. If necessary multiple SGX enclaves can work in parallel, with their proofs aggregated.
+	
+computational resources: The SGX computational resources can be minimal. When the state transition is run statelessly (e.g. see minigeth) there is no need for an encrypted disk and minimal encrypted RAM is required.
+	
+simplicity: The engineering of SGX is easy relative to SNARK engineering. Geth can be compiled for Gramine with an 11-line diff. The Puffer team is working on a Solidity verifier for SGX remote attestations, supported by an Ethereum Foundation grant.
+	
+auditability: Auditing the 2FA should be relatively straightforward. The SGX proof verification logic is contained and the incremental smart contract risk from introducing SGX 2FA is minimal.
+	
+flexibility: Enclaves from non-Intel vendors (e.g. AMD SEV) can replace or be used in parallel to SGX enclaves.
+	
+bootstrapping: 2FA can be used alone—without SNARK verification—to bootstrap an incremental rollup deployment. (This would be similar to Optimism launching without fraud proofs.)
+	
+upgradability: The SGX proof verification logic is upgraded similarly to the SNARK verification logic. Previously registered pubkeys are invalidated and the definition of what constitutes a valid pubkey is changed by upgrading the remote attestation verification logic.
+	
+deactivation: SGX 2FA is removable even without governance. For example, the 2FA could automatically deactivate after 1559 days.
+
+
+There are also downsides to SGX 2FA:
+
+	
+memetics: SGX has a bad reputation, especially within the blockchain space. Association with the technology may be memetically suboptimal.
+	
+false sense of security: Easily-broken SGX 2FA (e.g. if the privkey is easily extractable) may provide a false sense of security.
+	
+novelty: No Ethereum application that verifies SGX remote attestations on-chain could be found.
+
+
+            
+
+
+            
+              
+25 Likes
+            
+
+            
+                
+
+                      
+                        Multi-Verifiers as a Hedge Against Validating Bridge Implementation Vulnerabilities
+                        
+
+
+            
+              
+                spacetractor
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 23, 2022, 12:00pm
+                  
+                  
+
+4
+              
+            
+            
+              Avoid dependency on SGX at all costs, it have been breached before, it will be breached in the future.  As you mentioned, it has a very bad reputation in the space for obvious reasons
+
+            
+
+
+            
+              
+7 Likes
+            
+
+            
+                
+
+            
+              
+                pepesza
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 23, 2022, 12:21pm
+                  
+                  
+
+5
+              
+            
+            
+              Following assumes that attacks against SGX can steal bits of private key, but only at rate of few bits per privkey access. And privkey is accessed only to produce signatures.
+
+Consider rotating the keypair with every attestation. Add pubkey of the new keypair to the tuple signed on every attestation: (pre_state_root, post_state_root, block_root, new_pubkey). Smart contract will update 2FA key with new_pubkey.
+
+This increases gas cost - one more SSTORE per state transition.
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 23, 2022,  1:13pm
+                  
+                  
+
+6
+              
+            
+            
+              If there was a critical failure of SGX (worst case scenario you can imagine, including Intel being actively malicious), what bad things would happen?  Assuming the ZK stuff was not broken then would nothing bad happen at all?  Is the bad scenario only when both SGX and ZK stuff are broken?
+
+One disadvantage of this is that you don’t get the benefit of an escalating “bug bounty” over time as the system attracts capital.  The set of attackers who can exploit a bug in the ZK stuff is limited to state actors, Intel, and maybe some hardware manufacturers involved in the chip production process.  This means everything seems to be fine right up until it catastrophically fails and that could be a long way off.  If the ZK is exposed directly, it is more likely to be attacked early before too much capital moves in.
+
+            
+
+
+            
+              
+6 Likes
+            
+
+            
+                
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 26, 2022,  9:55am
+                  
+                  
+
+7
+              
+            
+            
+              
+
+
+
+ pepesza:
+
+
+Consider rotating the keypair with every attestation.
+
+
+
+
+Oh, great suggestion! 
+
+
+
+
+
+ spacetractor:
+
+
+Avoid dependency on SGX […] it will be breached in the future.
+
+
+
+
+There is no dependency on SGX—that’s the point. When SGX is breached safety falls back to a “vanilla” zk-rollup. SNARKs plus SGX is a strict safety improvement over just SNARKs.
+
+
+
+
+
+ MicahZoltu:
+
+
+Assuming the ZK stuff was not broken then would nothing bad happen at all? Is the bad scenario only when both SGX and ZK stuff are broken?
+
+
+
+
+Yes to both questions.
+
+
+
+
+
+ MicahZoltu:
+
+
+One disadvantage of this is that you don’t get the benefit of an escalating “bug bounty” over time as the system attracts capital.
+
+
+
+
+In addition to the “organic” bug bounty for simultaneously breaking both the SNARK and SGX, one could design a “synthetic” escalating bug bounty for breaking either the SNARK or SGX. The synthetic bounty could escalate by, say, 10 ETH per day.
+
+
+
+
+
+ MicahZoltu:
+
+
+everything seems to be fine right up until it catastrophically fails
+
+
+
+
+The endgame for zk-rollups is that SNARKs are sufficient for security thanks to multi-proofs (see links in the post) and formal verification. You can think of SGX security-in-depth as a way to buy time to achieve this endgame and reduce the risk of ever failing catastrophically.
+
+            
+
+
+            
+              
+7 Likes
+            
+
+            
+                
+
+            
+              
+                jannikluhn
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 2, 2023,  1:34pm
+                  
+                  
+
+8
+              
+            
+            
+              
+
+
+
+ JustinDrake:
+
+
+Notice that SGX 2FA provides little value to optimistic rollups which have multi-day settlement and can use governance to fix fraud proof vulnerabilities.
+
+
+
+
+ORs often get criticized for this ability because arguably it means that users have to trust the governance mechanism first and foremost and the fraud proofs are not much more than decoration. Wouldn’t SGX 2FA be a great tool for ORs to minimize the power of governance? Emergency updates would only be allowed if there’s disagreement between the two factors. Other updates would require a notice period of about one month, giving everyone ample time to exit if they disagree.
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                nvmmonkey
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 5, 2023, 12:19pm
+                  
+                  
+
+9
+              
+            
+            
+              Setup a 2FA Network/Layer:  this should verify the 2FA proofs required by the protocol. The nodes could be run on low-cost hardware (e.g. Raspberry Pis) and could be distributed geographically to ensure redundancy and resilience.
+
+Aaggregated Proof: Also, the protocol could use proof aggregation techniques to minimize the overhead of generating and verifying 2FA proofs. This involves grouping multiple proofs together and creating a single, aggregated proof that can be verified more efficiently. Certainly, this will need to be designed to secure and resist attack.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                lead4good
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 28, 2023,  7:36pm
+                  
+                  
+
+10
+              
+            
+            
+              
+
+
+
+ JustinDrake:
+
+
+The pubkey is registered on-chain by verifying an SGX remote attestation which attests to the pubkey being correctly generated.
+
+
+
+
+What if we would move the remote attestation off-chain? Do you see any scenarios where it would make rollups less secure?
+
+The rollup could serve the remote attestation via a different channel upon request, allowing any user interested in interacting with the rollup to verify its attestation (and that it is the owner of privkey). Since the smart contract verifies signatures generated by SGX, full trust is established.
+
+Even key rotation could be implemented by the rollup, by just creating and storing the remote attestation of every key used.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                jvranek
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023,  4:43pm
+                  
+                  
+
+11
+              
+            
+            
+              This will certainly reduce gas costs, but I can see some tradeoffs:
+
+	Since this involves safeguarding privkey, this approach is vulnerable if SGX’s confidentiality is broken and privkey is ever extracted and used to sign bad state roots. Instead, verifying an SGX remote attestation on-chain per state root requires breaking SGX’s integrity to produce a bad state root (but also requires way more gas).
+	This approach seems to lend itself better to a permissioned rollup, where the sequencer controls which (key, remote attestation) pairs are whitelisted by the contract. The verify-before-use idea breaks down if we want > 1 sequencer per rollup.
+	More burden on the users - they could join a nefarious rollup if they are lazy and skip the off-chain verification.
+
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                jiayaoqijia
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 6, 2023,  5:27pm
+                  
+                  
+
+12
+              
+            
+            
+              It’s a quite nice use case of SGX for fair execution not for storing private keys. With guaranteed execution, it helps both Optimistic and ZK rollups for verification.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                lead4good
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 27, 2023,  5:23am
+                  
+                  
+
+13
+              
+            
+            
+              I believe we can combine both approaches.
+
+	a sequencer introduces itself to the contract with a remote attestation that also attests it and its private key have been created very recently (i.e. add latest known block hash before priv key generation to attestation quote)
+	the sequencer will publish new state roots and regenerate its private key every now and then (as per @pepesza 's suggestion)
+	if the delta between two private key switches is to big, the contract will dismiss sequencer submissions
+	A new sequencer can be introduced as per step 1
+
+
+This reduces gas costs as we’re only attesting during sequencer registration, But at the same time it should allow > 1 sequencer per rollup - as per your definition.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                jvranek
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 27, 2023,  9:58pm
+                  
+                  
+
+14
+              
+            
+            
+              I believe this can be taken even further and we can do a remote attestation (RA) + key-rotation per state root while only paying L2 gas fees!
+
+	The sequencer performs RA, committing to a fresh ETH public key and the last block hash.
+	The sequencer verifies the RA as part of the batched rollup txs (paying only L2 gas fees for on-chain RA verification). The ETH  public key becomes whitelisted, assuming the RA was valid and the committed last block hash is sufficiently fresh.
+	The L1 contract will only accept the state root if it was signed with the enclave’s corresponding ETH private key, otherwise it will revert (this relies on the rollup’s data being immediately available to the L1).
+
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                lead4good
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 28, 2023, 12:30pm
+                  
+                  
+
+15
+              
+            
+            
+              Interesting approach!
+
+	if RA is not trivial to implement in vanilla EVM, zkEVM’s might have more implementation issues and zk-rollups which do not have EVM compatibility will likely have even more issues doing RA?
+	if we have a setup where the rollup uses the TEE block transition proof as the only source of truth, then the enclave providing the RA would be the one verifying it’s correctness, which brings no gain (TEE only rollups have not really been discussed so far but are an interesting topic nonetheless)
+	in addition to that - if the zk proof can be faked I think the RA can be faked as well, so we would be loosing the 2FA guarantees
+
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                haraldh
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 22, 2023,  2:50pm
+                  
+                  
+
+16
+              
+            
+            
+              
+The pubkey is registered on-chain by verifying an SGX remote attestation which attests to the pubkey being correctly generated.
+
+
+
+This step would interest me the most on how this would be (is?) implemented in detail…
+
+Where is the attestation report + collateral stored for later verification by 3rd parties?
+
+I guess the attestation report_data will contain the hash of the pubkey.
+
+I doubt EVM could do a full attestation verification with all the TCB state verification and certificate revocation lists involved, but prove me wrong 
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 22, 2023,  3:03pm
+                  
+                  
+
+17
+              
+            
+            
+              
+
+
+
+ haraldh:
+
+
+I doubt EVM could do a full attestation verification
+
+
+
+
+It turns out I was wrong! Verifying the SGX remote attestation can be done offchain by users  This makes SGX 2FA easy to implement.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                haraldh
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 22, 2023,  3:24pm
+                  
+                  
+
+18
+              
+            
+            
+              Where is the attestation report + collateral stored for later verification by 3rd parties, then?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 22, 2023,  3:44pm
+                  
+                  
+
+19
+              
+            
+            
+              
+
+
+
+ haraldh:
+
+
+Where is the attestation report […] stored
+
+
+
+
+The SGX attestation can be hosted anywhere (e.g. on a traditional website, on IPFS, even on-chain).
+
+
+
+
+
+ haraldh:
+
+
+Where is the […] collateral stored
+
+
+
+
+Not sure what collateral you are referring to. The scheme described doesn’t have collateral.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                haraldh
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 23, 2023,  6:52am
+                  
+                  
+
+20
+              
+            
+            
+              
+The scheme described doesn’t have collateral.
+
+
+
+To completely verify an attestation report you need additional data from api.trustedservices.intel.com (see Intel® Trusted Services API Management Developer Portal).
+
+So a report with the collateral downloaded at the time of attestation, you need (bytes from an example report + collateral from this week):
+
+	the report itsself (4730 bytes)
+	collateral.pck_crl (3653 bytes)
+	collateral.pck_crl_issuer_chain (1905 bytes)
+	collateral.tcb_info (4291 bytes)
+	collateral.tcb_info_issuer_chain (1893 bytes)
+	collateral.qe_identity (1381 bytes)
+	collateral.qe_identity_issuer_chain (1893 bytes)
+	collateral.root_ca_crl (448 bytes)
+
+
+Which would sum up to: report 4730 bytes + collateral 15464 bytes = 20194 bytes for one of my TEEs as of this week.
+
+Then you have to define and record somewhere what TCB status is still acceptable, like “SWHardeningNeeded” and which advisory Ids the SGX software mitigates like “INTEL-SA-00615”.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                ameya-deshmukh
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 26, 2023,  7:27am
+                  
+                  
+
+21
+              
+            
+            
+              @JustinDrake this seems like a really cool idea for a thesis/paper, would love to pursue it if possible. What’s the best place to contact you?
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 26, 2023,  9:56am
+                  
+                  
+
+22
+              
+            
+            
+              Oh I see, “collateral” is some subset of the attestation data  (For me “collateral” usually means financial collateral.)
+
+To answer your question: the attestation data (report + collateral) can be stored anywhere—that’s an implementation detail. It just needs to be downloadable by prospective users.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+        next page →
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

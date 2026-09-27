@@ -1,0 +1,91 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Document, Review, and Implement Hyperledger AnonCreds ZKP Cryptographic Primitives
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Mentorship Spotlight: Document, Review, and Implement Hyperledger AnonCreds ZKP Cryptographic Primitives
+
+        
+
+        
+           Written by Aritra Bhaduri | Nov 28, 2023 3:40:20 PM 
+        
+
+        
+          Working on the Document, Review, and Implement Hyperledger AnonCreds ZKP Cryptographic Primitives Hyperledger Mentorship project has been a thrilling journey, filled with challenges, learnings, and a deep sense of contribution to a broader technical community. As a mentee of this project, I delved into various aspects that not only expanded my technical skills but also provided insights into the vast potential of verifiable credential solutions.
+
+
+What I worked on:
+
+Project Overview: Hyperledger AnonCreds – short for “Anonymous Credentials”- is the most commonly used Verifiable Credential (VC) format in the world. Ledger agnostic and with a formal open specification, AnonCreds is a VC format that adds important privacy-protecting ZKP (zero-knowledge proof) capabilities to the core VC assurances. My main task was to complete the AnonCreds v1.0 specification by extracting the cryptographic primitives from identified sources, confirming alignment with the Rust implementation of AnonCreds, and including the cryptographic primitives in the specification. This would be the last step of the specification to make it ready for submission to a standards development organization (SDO). The sources we referred to were the relevant codebases of AnonCreds and other projects, and the whitepaper of Hyperledger AnonCreds, which clearly states the mathematical details involved in the ZKP processes.
+
+Tools and Technologies: Throughout this venture, I utilized several tools and projects including:
+
+	Hyperledger Indy and Aries projects, which build on top of AnonCreds. I went through their source code (written in Python, JavaScript and Rust) whenever I needed to understand how AnonCreds is used in higher level components.
+	The most important codebase for this project was the anoncreds-clsignatures library, also written in Rust, that contains the core cryptographic primitive implementation used in AnonCreds.
+
+
+Potential Impact: The work undertaken in the AnonCreds project has the potential to revolutionize how credentials are shared in the digital realm. By maximizing privacy and security through ZKP-based verifiable credentials, we aim to empower individuals and organizations with a trusted and efficient identity solution. Verifiable credentials are proving useful for governance, as well as for decentralized domains like blockchain where verification of identities can be difficult while preserving privacy. The ZKP capabilities of AnonCreds are ideal for such scenarios.
+
+What I Learned and Accomplished:
+
+Understanding of Zero-Knowledge Proofs: The work done in developing the AnonCreds spec helped me to understand the concepts of ZKPs and their implementation in more detail. Zero knowledge proofs are a hot topic in cryptography, and there is huge potential in their use. Most of this project was based on reading articles like the AnonCreds ZKP whitepaper (of which I am now a contributor!) and understanding the codebase of such projects.
+
+Proficiency in Rust: Rust is a very popular end-to-end type-safe language that is one of the best choices for systems programmers or low-level engineers. Rust’s versatile nature, along with a no garbage-collection and blazingly fast runtime, makes it ideal for engineers writing cryptographic primitives. During this project I improved my Rust skills by reading, running, and understanding professionally written codebases, and working with experts who are proficient in the Rust Language.
+
+Deliverables and Overcoming Challenges: Over the course of the mentorship, I successfully contributed to the creation of the specification for Hyperledger AnonCreds verifiable credentials and presentations—a significant achievement. Overcoming technical challenges underscored the importance of perseverance and collaboration, key values within the Hyperledger community.
+
+What I gained from working with mentors:
+
+I was fortunate to work closely with Stephen Curran (Principal / Open Source Maintainer, Cloud Compass Computing Inc.) and Michael Lodder (Senior Cryptography Engineer, LIT Protocol) who provided invaluable guidance and support. Their expertise not only accelerated my learning but also instilled a deeper appreciation for collaborative efforts within the Hyperledger community.
+
+
+
+Anoncreds weekly meeting
+
+What comes next:
+
+Career Development: Armed with the experience gained, I am ready to take on more significant challenges in the realm of decentralized identity, verifiable credentials (VCs), zero-knowledge proofs, and blockchain technologies. My goal is to continue contributing to cutting-edge solutions that redefine how we approach digital trust.
+
+Advancing the Project: The journey doesn't end here. The next steps for advancing the Hyperledger AnonCreds project involves developing the AnonCreds v2.0 library and specifications, which are an improvement from v1.0 in terms of performance, extensibility, flexibility, and security. 
+
+In conclusion, my experience with the Hyperledger AnonCreds project has been a transformative chapter in my career. I look forward to playing a continued role in the Hyperledger community by contributing to the ongoing revolution in decentralized identity solutions and fostering a more secure and user-centric digital future.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

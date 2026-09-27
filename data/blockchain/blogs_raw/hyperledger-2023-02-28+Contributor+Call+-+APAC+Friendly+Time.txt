@@ -1,0 +1,975 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2023-02-28 Contributor Call - APAC Friendly Time - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+	2023-06-20 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-06-06 Contributor Call
+
+
+
+
+
+	2023-05-23 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-05-09 Contributor Call
+
+
+
+
+
+	2023-04-25 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2023-04-11 Contributor Call
+
+
+
+
+
+	2023-03-28 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-03-14 Contributor Call
+
+
+
+
+
+	2023-02-28 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-02-14 Contributor Call
+
+
+
+
+
+	2023-01-31 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-01-31 Contributor Call - AMEA Reschedule
+
+
+
+
+
+	2023-01-17 Contributor Call
+
+
+
+
+
+	2023-01-03 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-07-11 Contributor Call
+
+
+
+
+
+	2023-07-18 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2023-08-01 Contributor Call
+
+
+
+
+
+	2023-08-15 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-09-05 Contributor Call - EMEA Friendly Time
+
+
+
+
+
+	2023-09-12 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-10-02 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2023-10-10 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-10-31 Contributor Call
+
+
+
+
+
+	2023-11-07 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-11-28 Contributor Call
+
+
+
+
+
+	2023-12-05 Contributor Call - APAC Friendly Time
+
+
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2023-02-28 Contributor Call - APAC Friendly Time
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2023-02-28 Contributor Call - APAC Friendly Time
+
+	Jason Frame
+
+
+
+	Ry Jones
+
+
+
+	Sally MacFarlane
+
+
+
+	Simon Dudley
+
+
+
+
+
+Owned by Jason Frame
+
+
+Last updated: Feb 28, 2023 by Ry Jones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link: â�¨https://zoom.us/j/91405289771?pwd=QzA3a0ozTjVSZ0hsYzgwTm9lVDRPQT09)
+APAC Friendly Time (https://www.timeanddate.com/worldclock/converter.html?iso=20220621T010000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	5 pm Monday Los Angeles
+	8 pm Monday New York
+	1 am  Tuesday UTC
+	3 am Tuesday Paris/Berlin
+	11 am Tuesday Brisbane
+
+Agenda
+	 Housekeeping	Antitrust notice - https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	/add item/
+
+
+	Roadmap Review 	Besu Roadmap
+
+
+	Release updates	Release Rotations 2023
+ 
+	23.1.1 proposed for March 8 - thoughts?	Ideally would include Goerli Shanghai config
+	No objections to March 8 release date
+
+
+
+
+	Work Updates	Shanghai Epic: https://github.com/hyperledger/besu/issues/4746	Ready for Sepolia and on track for mainnet
+
+
+	Work started on EIP-6110: in-protocol deposits by external contributor https://github.com/hyperledger/besu/pull/5055	Appears to be done as part of the Ethereum Protocol Fellowship by Mikhail's mentee: https://hackmd.io/@doPpmyH4Ta-4Yc8pq3u-ZA/BkQKSAn2s
+	Any reason not to include this on main using ExperimentEipsTime as a feature toggle?	Have further discussion on contributor discord
+
+
+
+
+
+
+	Other Business	merge queue - any objections to enabling this?	the only change to how we currently work is you would have to manually squash commits on your branch PR rather than via the github UI - eg https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch
+	Sally has tested it out on a couple of repos - notes here https://github.com/hyperledger/besu/issues/5102 - I haven't come across any showstoppers
+	it's essentially the same as enabling auto-merge, except that any additional "merge from main" actions are automated
+	should reduce our CI spend, as well as reducing manual interventions
+	Outcome: No objections. Sally to enable it after the next release with notes on squash merge instructions
+
+
+	Final call to remove #besu-nodes Discord channel.	Previously mentioned 2022-12-06 Contributor Call - APAC Friendly Time
+	Discussion: https://discord.com/channels/905194001349627914/905205502940696607/1044723284597559298
+https://discord.com/channels/905194001349627914/905205502940696607/1044756214669643856
+	One way would be give a couple of days deprecation and ask users with outstanding questions to move them over to #besu
+	Outcome: Simon to ping Danno on concerns re: besu-nodes channel deprecation. No other objections. If objections are resolved then remove the channel.
+
+
+
+
+	Open Forum
+	Future Topics
+
+
+
+Recordings
+https://youtu.be/5Ek_B-e-OAU
+
+
+    
+    
+
+
+
+    
+        
+            
+            
+            
+                                                    
+        
+
+                
+
+
+
+
+
+
+    
+
+
+	 	
+            File
+        	
+            Modified
+        
+	
+                     
+
+                                        
+
+                        
+                                                Labels
+
+                        
+
+	
+		
+    
+    	
+            No labels
+        
+
+
+    
+
+
+
+
+                                                     
+
+                        
+                                                    
+                                                                        Preview
+                                
+                                                                                                                                                                                                                            
+                                    View
+                                                            
+
+                                            
+
+
+                	
+                    
+                        
+
+    
+
+
+Text File                                                    
+                                GMT20230228-010007_RecordingnewChat.txt
+                            
+                        
+                                                                        
+                                            
+
+                	
+                                        Feb 28, 2023
+                    by
+                                        Ry Jones
+                            
+	
+                     
+
+                                        
+
+                        
+                                                Labels
+
+                        
+
+	
+		
+    
+    	
+            No labels
+        
+
+
+    
+
+
+
+
+                                                     
+
+                        
+                                                    
+                                                                        Preview
+                                
+                                                                                                                                                                                                                            
+                                    View
+                                                            
+
+                                            
+
+
+                	
+                    
+                        
+
+    
+
+
+File                                                    
+                                GMT20230228-010007_Recording.transcript.vtt
+                            
+                        
+                                                                        
+                                            
+
+                	
+                                        Feb 28, 2023
+                    by
+                                        Ry Jones
+                            
+
+
+
+
+    
+
+    
+            
+
+
+    
+                    Download All
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "d8769ff85e5f45deb49bd43eb4ea3137"}

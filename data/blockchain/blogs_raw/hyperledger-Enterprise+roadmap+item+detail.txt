@@ -1,0 +1,550 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Enterprise roadmap item detail - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+	Cancun Planning
+
+
+
+
+
+	Enterprise roadmap item detail
+
+
+
+
+
+	Prague Planning
+
+
+
+
+
+	See Performance & Stability for Q4 Roadmap
+
+
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Enterprise roadmap item detail
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Enterprise roadmap item detail
+
+	Matthew Whitehead
+
+
+
+
+
+Owned by Matthew Whitehead
+
+
+Last updated: Jul 18, 2024
+
+
+
+
+
+
+
+
+
+
+The enterprise roadmap is currently led by Matthew Whitehead from Kaleido. To discuss the enterprise roadmap items reach out to matthew.whitehead on the Hyperledger discord server.
+
+
+The following is the roadmap summary slide that has been used in recent Hyperledger meetups:
+
+
+
+Empty block periods for QBFT chains
+Draft PR https://github.com/hyperledger/besu/pull/6965 is work-in-progress and aims to add support for a different block period when no transactions are in the TX pool to be included in a block. It will have the benefit of reducing storage requirements for permissioned chains when no transactions are submitted to the network.
+QBFT, Bonsai, & Snap Sync
+This feature adds experimental support for QBFT chains using snap sync to sync new nodes with an existing permissioned chain.
+PR https://github.com/hyperledger/besu/pull/7140 was included in Besu 24.7.0 and once the function has been exercised enough by other users it will be migrated out of experimental.
+Permissioned chain performance
+Wiki page QBFT Performance outlines work done by two of the Besu maintainers to understand some of the bottlenecks in a QBFT chain and determine the best tuning/configuration to improve overall TPS achievable in a permissioned chain.
+As of 2H 2024 further performance work is on hold while other features (see below) are prioritised
+Bonsai archive support
+Draft PR https://github.com/hyperledger/besu/pull/5865 started the work necessary to provide access to archive state when using Bonsai DB. This was paused for a period of time, and is now actively being progressed (see discord thread https://discord.com/channels/905194001349627914/1261348506648707133/1261348712047706243). It is an important step towards the deprecation and removal of the Forest database, since archive nodes will not be possible with Bonsai until this feature is implemented.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Besu Roadmap & Planning
+Besu Roadmap & Planning
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+10/16
+10/16
+
+Developer Relations
+
+
+
+More like this
+
+
+
+
+
+
+Besu 2022 Vision
+Besu 2022 Vision
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+QBFT, Bonsai, and Snap-Sync testing
+QBFT, Bonsai, and Snap-Sync testing
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021 Q4 Hyperledger Besu
+2021 Q4 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q3 Hyperledger Besu
+2022 Q3 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "d14bdfb841094492bb8d84d239278027"}

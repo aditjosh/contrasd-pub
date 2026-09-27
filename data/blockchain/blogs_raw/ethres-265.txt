@@ -1,0 +1,161 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+New transaction formats for sharding - Sharding - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      New transaction formats for sharding
+    
+
+
+      
+          
+            
+              
+              
+                Sharding
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 28, 2017,  6:37am
+                  
+                  
+
+1
+              
+            
+            
+              Here is a proposed new transaction format.
+
+[
+    version_num,  # Transaction format version, 0 for now
+    chain_id,     # 1 for ETH, 3 for ropsten...
+    shard_id,     # The ID of the shard the tx goes on
+    acct,         # The account the tx enters through
+    gas,          # Total gas supply
+    data          # Tx data
+]
+
+
+Depending on what is done in Tradeoffs in Account Abstraction Proposals, fields can simply be added on to the end of this as needed.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

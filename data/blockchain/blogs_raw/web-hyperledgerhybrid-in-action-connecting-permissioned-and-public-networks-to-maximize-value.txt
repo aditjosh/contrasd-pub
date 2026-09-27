@@ -1,0 +1,856 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HyperledgerHybrid in action: Connecting permissioned and public networks
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Aries
+                            
+                        
+                    
+
+                
+                #HyperledgerHybrid in action: Connecting permissioned and public networks
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Mar 28, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                We have long said there will not be one blockchain to rule them all. It will take a mix of blockchains and blockchain technologies to maximize the value of distributed ledgers, smart contracts, digital assets and self-sovereign identity between businesses, across industries and around the world.  
+ 
+Hybrid networks, which combine the capabilities of private and public blockchains, can deliver a number of advantages, including high levels of scalability and performance, and provide the right balance of security, privacy and transparency. The private blockchain offers secure, permissioned data storage—an essential feature that’s particularly crucial for highly regulated industries. Meanwhile, the public blockchain brings scale and immutability, enabling a more open and transparent ledger.
+ 
+As part of our spotlight on #HyperledgerHybrid, we’ve compiled a sampling of production deployments and solutions leveraging Hyperledger technologies to deliver value across a mix of permissioned and public chains. 
+ 
+Blockchain for Energy
+ 
+Energy industry consortium, Blockchain for Energy has launched a new decentralized and interoperable platform powered by Kaleido and leveraging Hyperledger FireFly. The B4E Network & Platform allows energy companies to access proven solutions and build applications that leverage Web3 constructs including smart contracts, digital assets, NFTs, and tokenization across both public and private chains. The first production-grade solution released on the new platform is from the B4E Commodity Transport Program, a collaborative effort led by Pioneer Natural Resources, that utilizes IIOT and blockchain technology to track chemical deliveries.
+ 
+IPwe Digital Assets
+ 
+In September 2022, Casper Labs and IPwe developed and launched a dynamic NFT blockchain solution, IPwe Digital Assets. The solution uses the permissioned distributed ledger technologies of open source Hyperledger Fabric and the public Casper Blockchain to securely store verified public and private information about each patent. The integration capitalizes on the data security and trust inherent on a Hyperledger Fabric network and enables Casper to securely bring assets locked on the private ledger to the public chain.
+ 
+IPwe is now deploying 25 million patent NFTs leveraging the hybrid Casper Blockchain and Hyperledger Fabric network. On top of that, IPwe’s solution includes Smart Intangible Asset Management (SIAM), a comprehensive SaaS tool for IP valuation and management that allows enterprises to fully utilize these patent NFTs to transact, manage, and value their IP. This revolutionary implementation of blockchain technology will enable IPwe to bring liquidity to the IP space, where currently approximately 95% of IP assets are not transacted or commercialized
+ 
+Palm Network
+ 
+The Palm network is an Ethereum sidechain dedicated to selling, purchasing, and trading NFTs that are associated with real-world and digital assets. It is built with Hyperledger Besu and uses IBFT 2.0 proof of authority (PoA) consensus, with network validators being run by key stakeholders. IBFT 2.0 offers fast transaction speed and free minting. 
+ 
+An automated bridge relay service connects payment tokens, like DAI, and NFTs on Ethereum and the Palm network, with bridging contracts deployed on both networks to manage the connection. Fees collected from this bridge are partially used to purchase carbon offsets.
+ 
+Starling Lab 
+ 
+Starling Lab is a joint effort developed by the USC Shoah Foundation and Stanford University’s Department of Electrical Engineering. The initiative’s goal is to develop a set of tools and principles to be used across non-profit organizations, news outlets, and industry experts to solve challenges when it comes to the uncertainty of the media we see today and our enduring effort to preserve the truth. 
+ 
+Starling provides an open-source, end-to-end framework for the media generation and verification process. The framework consists of three modules: capturing the image, storing the information, and verifying its authenticity. It leverages multiple blockchain and distributed ledger technologies. Each metadata record, such as the caption or photographer byline added by an editor to a photo’s record, is relayed to a Hyperledger Fabric peer for notarization on a private permissioned ledger. Each transaction posted to Hyperledger is recorded on Hedera Consensus Service (HCS) using a hashgraph that rapidly orders and stamps each entry. 
+ 
+Toko
+ 
+Global law firm DLA Piper developed its TOKO tokenization platform to issue non-fungible tokens across asset classes including real estate, fine art, debt and even intellectual property. Toko is a digital asset creation engine to solve inefficiencies in today’s capital markets by using DLTs to distribute, trade and settle transactions rapidly, bypassing the need for trusted third party intermediaries that are both expensive and slow. It is built using the combination of a permissioned Hyperledger Fabric network and the Hedera Consensus Service.
+ 
+Join the conversation about the use of Hyperledger technologies delivering value across permissioned and public networks with #HyperledgerHybrid. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

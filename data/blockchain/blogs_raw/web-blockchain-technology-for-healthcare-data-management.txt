@@ -1,0 +1,832 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain technology for healthcare data management – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Health and Public Sector
+                            
+                        
+                    
+
+                
+                Blockchain technology for healthcare data management
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Jan 11, 2021
+                    
+                
+
+            
+
+            
+            
+                The accelerating digitization of the healthcare sector has led to the creation of large volumes of sensitive data stored online. Swiss eHealth strategy promotes the adoption of the electronic patient record to allow registered patients and authorized healthcare professionals to access medical data anytime and anywhere. To achieve this, a reliable, compliant, and privacy-preserving solution is required to support definition, maintenance, and enforcement of fine-grained authorizations (consents). Convergence of distributed ledger technology and intelligent data management approaches provides a unique opportunity to bring trust, transparency, auditability, and optimization of medical data management and other healthcare processes. 
+ 
+Recent research works and numerous PoC implementations actively demonstrate the value of blockchain technology for connecting health care stakeholders in order to help maintain a complete history of patient’s health care data, ensure traceability of the data exchange and automate claims and reimbursement processing. Transparent and auditable prescription monitoring may help to avoid incompatibility of the prescribed medications and can provide incentives for writing fewer prescriptions for certain medications such as opioids. In the pharmaceutical supply chain, blockchain can bring traceability to the tracking of pharmaceutical goods, from verification of the producer, to the transportation and storage conditions and control over drugs returned to the pharmaceutical company. Applying blockchain technology in biomedical research may facilitate new ways for patients to contribute with their healthcare data while ensuring privacy and security and  may  speed-up participant recruitment and collection of large and integrated heterogeneous data. When building such heterogeneous datasets, ensuring authenticity of the data and their sources is essential in order to make informed unbiased decisions and get valuable insights from the data. 
+ 
+What are the important aspects and potential hurdles that deserve attention from practitioners when employing blockchain in the healthcare settings? While domain-specific requirements to the system functionality vary depending on the application, desirable properties of a resilient healthcare infrastructure for management of the sensitive data distributed among multiple sources are: data and process interoperability, privacy, security, and compliance. For instance, in the case of connecting healthcare stakeholders to facilitate management of patients’ history, some of the most important requirements are ensuring patients’ rights to access and share their sensitive data but also to erase their personal data. To achieve these, the system must ensure interoperability (i.e., must have the ability to exchange and interpret the data) and must be privacy-preserving (i.e, the patients must be able to have full control over the sharing/access revocation/erasure of their data). 
+ 
+Data erasure (i.e., the possibility to erase the data) itself is not an “out-of-the box property” of the blockchain technology. It is challenging to comply with the right of data erasure when using immutable ledger. However, different approaches exist to address this issue including off-chain management of sensitive data, privacy-preserving techniques (such as encryption, zero-knowledge proofs (ZKP), secure multi-party computations (MPC), and data pseudonymization and anonymization. If anonymized data are released, a reliable infrastructure is required to support a trustworthy collaborative environment and to verify that the data were not altered. 
+ 
+The choice of the appropriate approach depends on the underlying blockchain technology, the number of participants in the network and the sensitivity and volume of the data, among others. Moreover, patient control over his identifiable data and his actions (for instance, providing consent or authorizations) has to be efficiently verifiable and compatible with access to the data in an emergency situation such as when the patient is unconscious.
+ 
+Hyperledger Fabric is a permissioned blockchain technology framework that has been actively employed in the implementations of blockchain-based systems for healthcare data management. To ensure privacy of data subjects, Fabric mainly relies (i) on multiple channels support, which make it possible to limit the access to the data to certain participants of the consortia, and (ii) on private collections where sensitive data can be exchanged peer-to-peer and stored in the private databases, yet accessible from chaincode on authorized peers and hashed to verify authenticity. Storing only hash on-chain is also used to provide verifiability of vast amounts of anonymized data for data-driven research and applications. In this case, contrary to limiting the access to the data, it is of a high importance to set up a reliable multi-cloud environment and collaborative framework – a step forward towards attaining interoperability. 
+ 
+Blockchain infrastructure offered by Swisscom provides support for multi-cloud environments. Multiple non-endorsing peers provided by Swisscom are now dedicated to support verifiability of public COVID-19 related data, as a part of the multi-party, multi-source verifiable data sharing platform MiPasa. To address the scale of the problem, the types of data, languages, time-zones and jurisdictions,- many vendors joined forces to strengthen and support this blockchain-based shared infrastructure to unlock the potential of the data and deliver integrated, trusted, and verifiable insights across multiple industries around the globe. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

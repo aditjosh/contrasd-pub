@@ -1,0 +1,861 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Solang Release v0.3 (Venice) Delivers Improvements and New Features, Including Chain Extensions Support for Substrate – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Solang
+                            
+                        
+                    
+
+                
+                Hyperledger Solang Release v0.3 (Venice) Delivers Improvements and New Features, Including Chain Extensions Support for Substrate
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jun 1, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Development work on Hyperledger Solang has been ramping up quickly. The first commit to Solang on GitHub was made in December 2018. The idea was that it must be possible to write a new Solidity compiler in Rust using LLVM, and creating a functional proof of concept was one way to prove that. Based on this first sketch of a compiler, a grant was provided by the Web3 Foundation. Fast forward to 2022, Solang was accepted as a Hyperledger project. And now we are proudly celebrating reaching over 1,000 stars on GitHub! ⭐
+ 
+Solang went a long way transitioning from a proof of concept into being the first usable alternative Solidity compiler. Now, there are three people from different companies working full time on this project. 
+ 
+Solana Labs has commissioned a security audit of Solang. The first report covers the parser and semantic analysis stages of Hyperledger Solang. All the security sensitive findings of the report have already been resolved. It is publicly available to download at https://github.com/solana-labs/security-audits/blob/master/solang/Trail_of_Bits_Solang_Final_report.pdf. Further audits are underway and the reports will be made available in due course.
+ 
+New features in Hyperledger Solang 0.3
+ 
+The latest release of Hyperledger Solang, v0.3 (also known as Venice), delivers some key improvements as well as a number of new features. Compatibility with Ethereum Solidity is again much improved. Now, we’re running the parser and semantic tests from the Ethereum Solidity repo on Solang. There are still some failures, but we have solved many issues. Work continues on compatibility, and all of the remaining issues are minor edge cases.
+ 
+Developed by a Hyperledger mentee in 2022, the math overflow check now works correctly for all integer sizes, and is always enabled. If one does not wish to have overflow checks, the Solidity code must be placed in an `unchecked { … }` code block.
+ 
+Support for ink! Chain Extensions
+ 
+Chain Extensions provide contracts access to custom logic implemented by the parachain runtime, effectively allowing them to interact with the outside world beyond the set of API methods offered directly by pallet contacts. It’s what makes Hybrid Chains technically possible. And with great pleasure, we now support Chain Extension in Solidity contracts!
+ 
+As opposed to the code in contracts, Chain Extensions do not run in a sandbox environment, providing significant gains in performance. Because of that, it might be economically reasonable or even technically necessary to implement compute-heavy logic as a chain extension. For example, in the Ethereum Virtual Machine, there are precompiled contracts performing mathematical operations on the alt_bn128 elliptic curve, a requirement for on-chain verification of zero-knowledge (ZK) proofs. Without the precompiled contracts, it wouldn’t be possible to verify ZK proofs on ethereum because of the high gas cost. Consequently, a polkadot parachain aiming to support smart contracts capable of verifying ZK proofs in an economical manner would implement the mathematical primitives as a Chain Extension.
+ 
+Besides Hybrid Chain and use-cases and performance improvements, parachain authors can leverage Chain Extensions to expose additional functionality, like sending XCM messages to contracts. We are excited to see what the community will build on top of it!
+ 
+Solana new features
+ 
+Solana compatibility has improved leaps and bounds. Now Hyperledger Solang generates contracts that are compatible with Anchor and an IDL file for each contract. The IDL allows developers to interact with contracts deployed on chain using the Anchor Typescript library, which represents a major leap in functionality in terms of Solana compatibility. Solang can also parse IDL files to generate a Solidity interface to call other Anchor contracts deployed on the blockchain.
+ 
+In addition, Solidity features a new annotation syntax to specify a contract’s seed, bump and payer account. These additions further improve developer experience and permit that developers use Solana’s program derived addresses in Solidity.
+ 
+The team is continuously working to close the gap between Solidity and Solana. We are creating examples with the ERC-20 interface for Solana and integrating the Solana accounts coding scheme to Solidity. These changes aim to attract more developers to Solang and improve the overall tooling around the compiler.
+ 
+How to Get Involved with Hyperledger Solang
+ 
+The Hyperledger Solang maintainers are active on Discord, and can be found on #solang channel on Hyperledger Discord most days. Other places to get started include
+ 
+	Installing Hyperledger Solang: https://solang.readthedocs.io/en/latest/installing.html
+	Joining our  meeting each weekday at 13:30 GMT on Discord at #solang-meetup
+	Reading Hyperledger Solang documentation at https://solang.readthedocs.io/en/latest/
+	Visiting our github repo at https://github.com/hyperledger/solang
+	Checking the “good first issue” label on issues to start on contributing to https://github.com/hyperledger/solang/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

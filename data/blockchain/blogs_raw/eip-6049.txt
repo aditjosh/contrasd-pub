@@ -1,0 +1,236 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-6049: Deprecate SELFDESTRUCT
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-6049: Deprecate SELFDESTRUCT
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Deprecate SELFDESTRUCT by discouraging its use and warning about a potential future behavior change.
+
+  	Authors	William Entriken (@fulldecent)
+	Created	2022-11-27
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+	Rationale
+	Backwards Compatibility
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This EIP deprecates the SELFDESTRUCT opcode and warns against its use. A breaking change to this functionality is likely to come in the future.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+Discussions about how to change SELFDESTRUCT are ongoing. But there is a strong consensus that something will change.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+Documentation of the SELFDESTRUCT opcode is updated to warn against its use and to note that a breaking change may be forthcoming.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+As time goes on, the cost of doing something increases, because any change to SELFDESTRUCT will be a breaking change.
+
+
+The Ethereum Blog and other official sources have not provided any warning to developers about a potential forthcoming change.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+This EIP updates non-normative text in the Yellow Paper. No changes to clients is applicable.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+None.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  William Entriken (@fulldecent), "EIP-6049: Deprecate SELFDESTRUCT," Ethereum Improvement Proposals, no. 6049, November 2022. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-6049.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

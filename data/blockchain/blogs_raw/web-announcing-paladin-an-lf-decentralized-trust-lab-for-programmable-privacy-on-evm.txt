@@ -1,0 +1,993 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Announcing Paladin, an LF Decentralized Trust Lab for Programmable Privacy on EVM
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Labs
+                            
+                        
+                    
+
+                
+                Announcing Paladin, an LF Decentralized Trust Lab for Programmable Privacy on EVM
+ 
+                
+                    Peter Broadhurst, Paladin Maintainer and Co-Founder & Head of Engineering, Kaleido, and Andrew Richardson, Paladin Maintainer and Principal Engineer, Digital Assets, Kaleido
+                    |
+                    
+                        Feb 5, 2025
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                The Ethereum Virtual Machine (EVM) has become a development platform of choice for blockchain projects, thanks to its token standards, great open source samples, and vibrant ecosystem spanning countless public Layer 1, Layer 2, permissioned, and private blockchain ledgers.
+
+
+However, for enterprises, there is one challenge that must be overcome before production adoption is possible at scale: transaction privacy.
+
+It is a non-negotiable requirement in most regulated industries that confidential data stays confidential, both to protect consumers and to prevent anti-competitive behavior.
+
+This is at odds with the universal transparency that has powered public DeFi to date. The shared network maintains the data, and the end user just maintains a key and signs transactions. Any one thing can be trusted, because everything can be seen.
+
+When privacy is introduced, things get more complicated. You have to think about the problem differently—selecting who is allowed to see which parts of a transaction. If you aren’t careful, the powerful programmability of the Web3 technologies is lost, as the solution ends up mirroring the siloed API-based interactions that power the existing Web2 transactional systems of today.
+
+The good news is that the EVM community is also at the center of innovation in solving this problem, using advanced cryptography and sophisticated “off-chain” layers of data and execution to allow users to transact with confidentiality and anonymity.
+
+However, this innovation has been fractured into many individual research projects, without the common standards and runtime tools needed for consumers and enterprises to transact across these ecosystems, and without any one toolset providing a comprehensive end-to-end solution framework for programmable privacy on EVM.
+
+Paladin is a new Linux Foundation Decentralized Trust lab that tackles this challenge head-on, providing: 
+
+	A new, highly pluggable runtime client that brings together the stack of technologies needed to transact with privacy-preserving smart contracts, running on top of any EVM blockchain.
+	Reference implementations of privacy-preserving tokens using either Zero-Knowledge Proofs (ZKPs) or issuer pre-verification of transactions.
+	A model for programmable privacy across public and private token ecosystems, using private execution of EVM smart contracts that are scoped to a privacy group.
+
+
+ 
+
+
+
+Paladin runtime
+
+The Paladin runtime is made up of components that work together to handle the heavy lifting of interfacing with the underlying EVM blockchain, with plug points for any number of privacy “domains” that are used to customize its privacy-preserving features.
+
+Each node is a single process, and you can get a sample deployment environment running on your laptop very quickly. The quick start guide uses a Kubernetes operator to deploy and configure a blockchain test network alongside your Paladin nodes.
+
+The core components of the Paladin runtime include a JSON-RPC API surface (designed to be familiar to EVM devs), engines for driving the complex lifecycle of both public and private blockchain transactions, enterprise-ready key management, and tools for private data storage and transport. Each of these components is complex in its own right, but they represent the distillation of many years of innovation in the enterprise blockchain space.
+
+
+
+On top of this, Paladin provides a standardized packaging and integration system for “domains”—the privacy engines themselves. This system supports multiple programming languages and patterns of orchestration, each connected to a corresponding on-chain smart contract.
+
+What makes Paladin unique is its ability to host and connect many different privacy technologies, rather than being dedicated to just one. As the code, community. and standards evolve, we hope this can lead to a similarly open ecosystem to that of the wallets, clients, and dev tools in the public EVM community that it extends.
+
+Each domain, regardless of function, follows the established model for a privacy-preserving EVM smart contract: with a part that runs on-chain, and a part that runs against private data. However, there are some distinct categories that are needed to build programmable blockchain ecosystems.
+
+Privacy-preserving tokens
+
+Tokens have been established as the core programming construct of blockchain. They provide records of ownership and value, and each one comes with a trust model for proving authenticity and ownership, enforced via the code embedded within them.
+
+The most common blockchain trust model for tokens is transparent execution. Every transaction is verified by the consensus algorithm of the blockchain, and the transaction details are visible to all parties that maintain the blockchain. Widely adopted token standards like ERC-20 and ERC-721 have trust models based on this transparency. However, when you introduce data privacy, you need to establish a new trust model that is not reliant on everyone having access to all history to validate an individual token.
+
+Two alternate models have emerged for solving this fundamental trust challenge for privacy-preserving tokens, and the Paladin lab provides corresponding domain plugins for working with them both:
+
+	Trust an issuer or other special party to be involved in every transaction for a given token.
+	Use a Zero-Knowledge Proof (ZKP) circuit to prove that the token’s rules have been followed.
+
+
+Issuer-backed tokens
+
+In this model, you embrace that while the technology of blockchain is fully decentralized, individual ecosystems may have regulated entities with special roles. The issuer, transfer agent, registrar, or custodian of a regulated security (for example) may have specific obligations that mean they need to be involved in every transaction of a certain type.
+
+This approach has gained a lot of traction in enterprise shared ledger ecosystems: whole technology stacks (outside of the EVM ecosystem) have been developed that use a minimal shared ledger combined with off-chain encrypted transfer of data on a need-to-know basis. Paladin contains those same building blocks of hardened infrastructure, but in a way that is reusable and composable with other privacy models as well.
+
+In addition, because Paladin runs directly on top of the programmable EVM ledger of your choosing, the underlying blockchain can be used for interop with other EVM logic and tokens (public or private). This allows Paladin to provide sub-transaction privacy, so the issuer (or other special party) does not need to see everything about a transaction just because they are maintaining one of the tokens involved in that transaction.
+
+The Paladin reference implementation of this private token pattern is called Noto.
+
+Zero-Knowledge Proof tokens
+
+In this model, you trust mathematics. As long as the rules of the ecosystem can be encoded in pure logic, it can be converted into a mathematical proof using a ZKP circuit. Particularly for common rules, such as protecting against double-spending of tokens, this is becoming very well-proven and increasingly efficient as a fully decentralized way to preserve privacy in a token ecosystem with no special roles.
+
+The Paladin reference implementation of this private token pattern is called Zeto.
+
+Zeto is maintained as a separate lab inside of LF Decentralized Trust and has had significant collaboration on its internals and cryptography to provide hardened and extensible reference implementations of these patterns for the enterprise community. These patterns go beyond simple double-spend protection to consider multiple options for confidentiality, anonymity, and encryption, and enterprise governance requirements as well.
+
+However, Paladin is not limited to one ZKP implementation and is designed to accommodate many ZKP execution frameworks and approaches in a single runtime client.
+
+
+
+Other models
+
+What makes Paladin unique is not any one of the reference token implementations, but rather the fact that all of them can fit into a single runtime environment and execution model.
+
+Furthermore, the Paladin community is seeking to standardize the boundaries of these private smart contracts so they can work together in transactions. Similar to how standards like ERC-20 and ERC-721 have allowed for powerful and complex interop in fully transparent token ecosystems, Paladin is working to provide the same ecosystem programmability for privacy-preserving tokens, and working on the right types of standardization to form the “ZRC-20” / “ZRC-721” standards of the future.
+
+Programmable privacy
+
+For these minimum viable ecosystems to form, one more ingredient is needed beyond the tokens themselves: privacy-preserving workflows. Privacy-preserving tokens are not enough; it must be possible to program the DvP, PvP, and other exchanges and agreements that work between tokens in a privacy-preserving way.
+
+This is where a third type of domain comes into play: privacy groups. The Pente domain included with Paladin provides an implementation of privacy groups and a way to run any EVM logic in a completely private EVM world, visible only to the transacting parties. With this layer in place, business workflows can be coded in EVM across tokens.
+
+ 
+
+
+
+EVM private smart contracts
+
+Just as with private tokens, this technology approach isn’t new to Paladin. You might be familiar with previous implementations of EVM private smart contracts in Quorum/Constellation, and the recently deprecated Tessera project. However, Paladin has taken a generational step forward in the implementation of this technology with a radically different approach.
+
+
+
+ 
+
+Specifically, the private transaction model in Paladin:
+
+	Creates an ephemeral EVM in memory each time EVM execution is needed.
+	Records all masked input and output commitments on the underlying blockchain ledger.
+	Does not rely on any modifications to the underlying blockchain nodes or transactions.
+
+
+Ephemeral Besu EVMs
+
+Paladin ephemeral EVMs address the limitations on scalability of previous generations of technology. Every time EVM execution is needed, a new EVM is spun up in-memory with the right set of account states to execute that one transaction. This can happen multiple times on the journey of the blockchain transaction to being finalized on the base ledger, similarly to how multiple blockchain nodes execute a transaction while forming and sealing blocks on a traditional blockchain.
+
+The core EVM library of Besu, an LF Decentralized Trust project, provides the execution environment for the EVM logic, but this does not mean running a complete copy of the Besu client. Instead, the EVM runs embedded inside the Paladin runtime, using the same domain framework that is used to host privacy-preserving token runtimes.
+
+Full EVM transaction validation on-chain
+
+Previous generations of EVM private smart contracts only recorded the inputs to private transactions on the blockchain, then relied on everyone processing the same inputs in the same order to assure the same transaction result. No-cross checking was performed between the nodes on that result, and if divergence occurred, the system could continue in a “split brain” scenario with different nodes having a different view of the world.
+
+Paladin records output state commitments (masked account state hashes) to the underlying blockchain, as well as input state commitments, and the state of any account is simply read during the transaction execution. This is achieved by pre-executing the transaction and gathering endorsement signatures from the privacy group members before submitting the transaction to the blockchain.
+
+Un-modified EVM blockchain
+
+Just like all other transactions in Paladin, these EVM transactions are committed via completely standard smart contracts on the underlying blockchain.
+
+As such, no special features are needed in the blockchain Paladin runs on top of. It can just as easily be a public L1/L2 main-net like Polygon, Optimism, or Ethereum, as a permissioned Besu network.
+
+Even more significant is the fact these on-chain smart contract transactions can themselves execute functions on other smart contracts, or be executed by other smart contracts. This allows them to work together in a truly programmable way, powered by the fact that the base EVM blockchain is a fully programmable ledger.
+
+Bringing it all together
+
+By bringing together privacy-preserving tokens and EVM privacy groups for programmable workflow, on top of a programmable EVM underlying blockchain, Paladin provides flexible options for privacy while still retaining the ecosystem programmability that the Ethereum community is famous for.
+
+This means that even beyond what Paladin provides via its core functionality and its privacy domains, it unlocks even more functionality based on what you can build around it on EVM.
+
+Atomic Settlement
+
+A key value of decentralized programming in Web3 is in enabling use cases that rely on atomic transaction settlement.
+
+By this we mean that a single blockchain transaction (a single entry on a single ledger) can settle multiple legs of a business transaction, where each leg uses a different token, with a different privacy system backing it. Critically, it ensures that all legs complete, or none of them do.
+
+The most common example is Delivery vs. Payment (DvP), where an agreement to purchase a tokenized item is established through a digital agreement, and then settled via payment in a different tokenized cash token. Atomic DvP performs this as one single transaction, eliminating the need for escrow or other constructs to protect either party.
+
+The ability to perform these kinds of transactions is taken for granted now in public blockchain DeFi use cases. However, layering privacy on top has historically compromised the ability to program these types of transactions in a composable way. Paladin addresses that by using the power of the EVM at multiple layers. Because all privacy domains create blockchain transactions on the underlying shared EVM ledger, they can be composed in endless ways with each other and with other existing tokens and contracts on the EVM.
+
+
+
+Bridging, interop, and L2s
+
+You may wonder at this point whether Paladin is an “L2 technology” or if it somehow replaces the need for multiple blockchains and interop to exist.
+
+It is not. It does not.
+
+Paladin is similar in some ways to Layer 2s in its runtime form factor, but L2s exist to “roll up” multiple transactions for scale—they are not inherently a privacy technology. Instead, Paladin is a client for transacting with privacy-preserving smart contracts, where every private transaction is backed 1-to-1 by a transaction on the underlying blockchain smart contract.
+
+A world with everyone maintaining their own independent ledger does not deliver Web3 value over Web2 technologies. A world with just one ledger for everyone is unrealistic, for scale, security, regulatory, and practical reasons. So Paladin is additive to all L2, bridging, interop, and integration technologies—not a replacement for them.
+
+EVM has been trending as a common programming and interoperability standard for developers working across all these blockchains, and Paladin is built to help those developers preserve privacy in an extensible way.
+
+Learn more
+
+This post has given a broad introduction to the whole landscape of Paladin. You can learn more about each aspect by reading the documentation and engaging with the maintainers directly.
+
+As mentioned earlier, you can also get a sample deployment environment running on your laptop very quickly, with the quick start guide using a Kubernetes operator to deploy all the cloud native components you need for your own private Besu blockchain and three-node Paladin network.
+
+ 
+
+
+
+Join the community!
+
+The launch of Paladin marks a significant milestone for the EVM community, offering compatibility with any EVM chain. Paladin is already in use by some of the world’s largest enterprise digital asset initiatives, including the Project Guardian Wholesale Network for composable finance where Paladin is facilitating programmable testnet transactions among leading banks, asset managers, and financial service providers. As more projects adopt, test, and refine Paladin, its impact and utility will only continue to grow.
+
+Join the conversation and ongoing collaborations by connecting with us on the Paladin channel in the LF Decentralized Trust Discord. We look forward to welcoming you to the Paladin community as we unlock the full potential of blockchain, digital assets, and tokenization for enterprises with open-source solutions!
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

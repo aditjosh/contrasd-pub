@@ -1,0 +1,316 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Understanding Serenity, Part I: Abstraction | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Understanding Serenity, Part I: Abstraction
+Posted by Vitalik Buterin on December 24, 2015
+Research & Development
+
+
+
+
+Special thanks to Gavin Wood for prompting my interest into abstraction improvements, and Martin Becze, Vlad Zamfir and Dominic Williams for ongoing discussions.
+
+For a long time we have been public about our plans to continue improving the Ethereum protocol over time and our long development roadmap, learning from our mistakes that we either did not have the opportunity to fix in time for 1.0 or only realized after the fact. However, the Ethereum protocol development cycle has started up once again, with a Homestead release coming very soon, and us quietly starting to develop proof-of-concepts for the largest milestone that we had placed for ourselves in our development roadmap: Serenity.
+
+Serenity is intended to have two major feature sets: abstraction, a concept that I initially expanded on in this blog post here, and Casper, our security-deposit-based proof of stake algorithm. Additionally, we are exploring the idea of adding at least the scaffolding that will allow for the smooth deployment over time of our scalability proposals, and at the same time completely resolve parallelizability concerns brought up here - an instant very large gain for private blockchain instances of Ethereum with nodes being run in massively multi-core dedicated servers, and even the public chain may see a 2-5x improvement in scalability. Over the past few months, research on Casper and formalization of scalability and abstraction (eg. with EIP 101) have been progressing at a rapid pace between myself, Vlad Zamfir, Lucius Greg Meredith and a few others, and now I am happy to announce that the first proof of concept release for Serenity, albeit in a very limited form suitable only for testing, is now available.
+
+The PoC can be run by going into the ethereum directory and running python test.py (make sure to download and install the latest Serpent from https://github.com/ethereum/serpent, develop branch); if the output looks something like this then you are fine:
+
+vub@vub-ThinkPad-X250 15:01:03 serenity/ethereum: python test.py
+REVERTING 940534 gas from account 0x0000000000000000000000000000000000000000 to account 0x98c78be58d729dcdc3de9efb3428820990e4e3bf with data 0x
+Warning (file "casper.se.py", line 74, char 0): Warning: function return type inconsistent!
+Running with 13 maximum nodes
+Warning (file "casper.se.py", line 74, char 0): Warning: function return type inconsistent!
+Warning (file "casper.se.py", line 74, char 0): Warning: function return type inconsistent!
+Length of validation code: 57
+Length of account code: 0
+Joined with index 0
+Length of validation code: 57
+Length of account code: 0
+Joined with index 1
+Length of validation code: 57
+
+
+
+This is a simulation of 13 nodes running the Casper+Serenity protocol at a 5-second block time; this is fairly close to the upper limit of what the client can handle at the moment, though note that (i) this is python, and C++ and Go will likely show much higher performance, and (ii) this is all nodes running on one computer at the same time, so in a more "normal" environment it means you can expect python Casper to be able to handle at least ~169 nodes (though, on the other hand, we want consensus overhead to be much less than 100% of CPU time, so these two caveats combined do NOT mean that you should expect to see Casper running with thousands of nodes!). If your computer is too slow to handle the 13 nodes, try python test.py 10 to run the simulation with 10 nodes instead (or python test.py 7 for 7 nodes, etc). Of course, research on improving Casper's efficiency, though likely at the cost of somewhat slower convergence to finality, is still continuing, and these problems should reduce over time. The network.py file simulates a basic P2P network interface; future work will involve swapping this out for actual computers running on a real network.
+
+The code is split up into several main files as follows:
+
+
+	serenity_blocks.py - the code that describes the block class, the state class and the block and transaction-level transition functions (about 2x simpler than before)
+	serenity_transactions.py - the code that describes transactions (about 2x simpler than before)
+	casper.se.py - the serpent code for the Casper contract, which incentivizes correct betting
+	bet.py - Casper betting strategy and full client implementation
+	ecdsa_accounts.py - account code that allows you to replicate the account validation functionality available today in a Serenity context
+	test.py - the testing script
+	config.py - config parameters
+	vm.py - the virtual machine (faster implementation at fastvm.py)
+	network.py - the network simulator
+
+
+For this article, we will focus on the abstraction features and so serenity_blocks.py, ecdsa_accounts.py and serenity_transactions.py are most critical; for the next article discussing Casper in Serenity, casper.se.py and bet.py will be a primary focus.
+
+Abstraction and Accounts
+
+Currently, there are two types of accounts in Ethereum: externally owned accounts, controlled by a private key, and contracts, controlled by code. For externally owned accounts, we specify a particular digital signature algorithm (secp256k1 ECDSA) and a particular sequence number (aka. nonce) scheme, where every transaction must include a sequence number one higher than the previous, in order to prevent replay attacks. The primary change that we will make in order to increase abstraction is this: rather than having these two distinct types of accounts, we will now have only one - contracts. There is also a special "entry point" account, 0x0000000000000000000000000000000000000000, that anyone can send from by sending a transaction. Hence, instead of the signature+nonce verification logic of accounts being in the protocol, it is now up to the user to put this into a contract that will be securing their own account.
+
+The simplest kind of contract that is useful is probably the ECDSA verification contract, which simply provides the exact same functionality that is available right now: transactions pass through only if they have valid signatures and sequence numbers, and the sequence number is incremented by 1 if a transaction succeeds. The code for the contract looks as follows:
+
+# We assume that data takes the following schema:
+# bytes 0-31: v (ECDSA sig)
+# bytes 32-63: r (ECDSA sig)
+# bytes 64-95: s (ECDSA sig)
+# bytes 96-127: sequence number (formerly called "nonce")
+# bytes 128-159: gasprice
+# bytes 172-191: to
+# bytes 192-223: value
+# bytes 224+: data
+
+# Get the hash for transaction signing
+~mstore(0, ~txexecgas())
+~calldatacopy(32, 96, ~calldatasize() - 96)
+~mstore(0, ~sha3(0, ~calldatasize() - 64))
+~calldatacopy(32, 0, 96)
+# Call ECRECOVER contract to get the sender
+~call(5000, 1, 0, 0, 128, 0, 32)
+# Check sender correctness; exception if not
+if ~mload(0) != 0x82a978b3f5962a5b0957d9ee9eef472ee55b42f1:
+    ~invalid()
+# Sequence number operations
+with minusone = ~sub(0, 1):
+    with curseq = self.storage[minusone]:
+        # Check sequence number correctness, exception if not
+        if ~calldataload(96) != curseq:
+            ~invalid()
+        # Increment sequence number
+        self.storage[minusone] = curseq + 1
+# Make the sub-call and discard output
+with x = ~msize():
+    ~call(msg.gas - 50000, ~calldataload(160), ~calldataload(192), 160, ~calldatasize() - 224, x, 1000)
+    # Pay for gas
+    ~mstore(0, ~calldataload(128))
+    ~mstore(32, (~txexecgas() - msg.gas + 50000))
+    ~call(12000, ETHER, 0, 0, 64, 0, 0)
+    ~return(x, ~msize() - x)
+
+
+
+This code would sit as the contract code of the user's account; if the user wants to send a transaction, they would send a transaction (from the zero address) to this account, encoding the ECDSA signature, the sequence number, the gasprice, destination address, ether value and the actual transaction data using the encoding specified above in the code. The code checks the signature against the transaction gas limit and the data provided, and then checks the sequence number, and if both are correct it then increments the sequence number, sends the desired message, and then at the end sends a second message to pay for gas (note that miners can statically analyze accounts and refuse to process transactions sending to accounts that do not have gas payment code at the end).
+
+An important consequence of this is that Serenity introduces a model where all transactions (that satisfy basic formatting checks) are valid; transactions that are currently "invalid" will in Serenity simply have no effect (the invalid opcode in the code above simply points to an unused opcode, immediately triggering an exit from code execution). This does mean that transaction inclusion in a block is no longer a guarantee that the transaction was actually executed; to substitute for this, every transaction now gets a receipt entry that specifies whether or not it was successfully executed, providing one of three return codes: 0 (transaction not executed due to block gas limit), 1 (transaction executed but led to error), 2 (transaction executed successfully); more detailed information can be provided if the transaction returns data (which is now auto-logged) or creates its own logs.
+
+The main very large benefit of this is that it gives users much more freedom to innovate in the area of account policy; possible directions include:
+
+	Bitcoin-style multisig, where an account expects signatures from multiple public keys at the same time before sending a transaction, rather than accepting signatures one at a time and saving intermediate results in storage
+	Other elliptic curves, including ed25519
+	Better integration for more advanced crypto, eg. ring signatures, threshold signatures, ZKPs
+	More advanced sequence number schemes that allow for higher degrees of parallelization, so that users can send many transactions from one account and have them included more quickly; think a combination of a traditional sequence number and a bitmask. One can also include timestamps or block hashes into the validity check in various clever ways.
+	UTXO-based token management - some people dislike the fact that Ethereum uses accounts instead of Bitcoin's "unspent transaction output" (UTXO) model for managing token ownership, in part for privacy reasons. Now, you can create a system inside Ethereum that actually is UTXO-based, and Serenity no longer explicitly "privileges" one over the other.
+	Innovation in payment schemes - for some dapps, "contract pays" is a better model than "sender pays" as senders may not have any ether; now, individual dapps can implement such models, and if they are written in a way that miners can statically analyze and determine that they actually will get paid, then they can immediately accept them (essentially, this provides what Rootstock is trying to do with optional author-pays, but in a much more abstract and flexible way).
+	Stronger integration for "ethereum alarm clock"-style applications - the verification code for an account doesn't have to check for signatures, it could also check for Merkle proofs of receipts, state of other accounts, etc
+
+
+In all of these cases, the primary point is that through abstraction all of these other mechanisms become much easier to code as there is no longer a need to create a "pass-through layer" to feed the information in through Ethereum's default signature scheme; when no application is special, every application is.
+
+One particular interesting consequence is that with the current plan for Serenity, Ethereum will be optionally quantum-safe; if you are scared of the NSA having access to a quantum computer, and want to protect your account more securely, you can personally switch to Lamport signatures at any time. Proof of stake further bolsters this, as even if the NSA had a quantum computer and no one else they would not be able to exploit that to implement a 51% attack. The only cryptographic security assumption that will exist at protocol level in Ethereum is collision-resistance of SHA3.
+
+As a result of these changes, transactions are also going to become much simpler. Instead of having nine fields, as is the case right now, transactions will only have four fields: destination address, data, start gas and init code. Destination address, data and start gas are the same as they are now; "init code" is a field that can optionally contain contract creation code for the address that you are sending to.
+
+The reason for the latter mechanic is as follows. One important property that Ethereum currently provides is the ability to send to an account before it exists; you do not need to already have ether in order to create a contract on the blockchain before you can receive ether. To allow this in Serenity, an account's address can be determined from the desired initialization code for the account in advance, by using the formula sha3(creator + initcode) % 2**160 where creator is the account that created the contract (the zero account by default), and initcode is the initialization code for the contract (the output of running the initcode will become the contract code, just as is the case for CREATEs right now). You can thus generate the initialization code for your contract locally, compute the address, and let others send to that address. Then, once you want to send your first transaction, you include the init code in the transaction, and the init code will be executed automatically and the account created before proceeding to run the actual transaction (you can find this logic implemented here).
+
+Abstraction and Blocks
+
+Another clean separation that will be implemented in Serenity is the complete separation of blocks (which are now simply packages of transactions), state (ie. current contract storage, code and account balances) and the consensus layer. Consensus incentivization is done inside a contract, and consensus-level objects (eg. PoW, bets) should be included as transactions sent to a "consensus incentive manager contract" if one wishes to incentivize them.
+
+This should make it much easier to take the Serenity codebase and swap out Casper for any consensus algorithm - Tendermint, HoneyBadgerBFT, subjective consensus or even plain old proof of work; we welcome research in this direction and aim for maximum flexibility.
+
+Abstraction and Storage
+
+Currently, the "state" of the Ethereum system is actually quite complex and includes many parts:
+
+	Balance, code, nonce and storage of accounts
+	Gas limit, difficulty, block number, timestamp
+	The last 256 block hashes
+	During block execution, the transaction index, receipt tree and the current gas used
+
+
+These data structures exist in various places, including the block state transition function, the state tree, the block header and previous block headers. In Serenity, this will be simplified greatly: although many of these variables will still exist, they will all be moved to specialized contracts in storage; hence, the ONLY concept of "state" that will continue to exist is a tree, which can mathematically be viewed as a mapping {address: {key: value} }. Accounts will simply be trees; account code will be stored at key "" for each account (not mutable by SSTORE), balances will be stored in a specialized "ether contract" and sequence numbers will be left up to each account to determine how to store. Receipts will also be moved to storage; they will be stored in a "log contract" where the contents get overwritten every block.
+
+This allows the State object in implementations to be simplified greatly; all that remains is a two-level map of tries. The scalability upgrade may increase this to three levels of tries (shard ID, address, key) but this is not yet determined, and even then the complexity will be substantially smaller than today.
+
+Note that the move of ether into a contract does NOT constitute total ether abstraction; in fact, it is arguably not that large a change from the status quo, as opcodes that deal with ether (the value parameter in CALL, BALANCE, etc) still remain for backward-compatibility purposes. Rather, this is simply a reorganization of how data is stored.
+
+Future Plans
+
+For POC2, the plan is to take abstraction even further. Currently, substantial complexity still remains in the block and transaction-level state transition function (eg. updating receipts, gas limits, the transaction index, block number, stateroots); the goal will be to create an "entry point" object for transactions which handles all of this extra "boilerplate logic" that needs to be done per transaction, as well as a "block begins" and "block ends" entry point. A theoretical ultimate goal is to come up with a protocol where there is only one entry point, and the state transition function consists of simply sending a message from the zero address to the entry point containing the block contents as data. The objective here is to reduce the size of the actual consensus-critical client implementation as much as possible, pushing a maximum possible amount of logic directly into Ethereum code itself; this ensures that Ethereum's multi-client model can continue even with an aggressive development regime that is willing to accept hard forks and some degree of new complexity in order to achieve our goals of transaction speed and scalability without requiring an extremely large amount of ongoing development effort and security auditing.
+
+In the longer term, I intend to continue producing proof-of-concepts in python, while the Casper team works together on improving the efficiency and proving the safety and correctness of the protocol; at some point, the protocol will be mature enough to handle a public testnet of some form, possibly (but not certainly) with real value on-chain in order to provide stronger incentives for people to try to "hack" Casper they way that we inevitably expect that they will once the main chain goes live. This is only an initial step, although a very important one as it marks the first time when the research behind proof of stake and abstraction is finally moving from words, math on whiteboards and blog posts into a working implementation written in code.
+
+The next part of this series will discuss the other flagship feature of Serenity, the Casper consensus algorithm.
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

@@ -1,0 +1,919 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Iroha Security Audit Results – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Iroha
+                            
+                        
+                    
+
+                
+                Hyperledger Iroha Security Audit Results
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Feb 4, 2019
+                    
+                
+
+            
+
+            
+            
+                Introduction
+ 
+The time has come again for another Hyperledger project to begin their version 1.0 release process. Hyperledger Iroha is getting close to a 1.0 release and as part of that, Hyperledger hired an outside security auditing firm to review the code and audit it for security vulnerabilities. Nettitude conducted a review of the code this past fall and reported their findings to the Hyperledger security team and the Iroha developers.
+ 
+The Iroha audit found four security issues, including one that was critical enough to require us to issue our first Common Vulnerabilities and Exposure (CVE) notice. All four issues were tracked using our JIRA and resolved shortly after the audit concluded.
+ 
+I want to highlight the details of two of the security issues that the audit discovered because they show how easy it is to make bad assumptions about cryptography that results in a critical failure. Crypto code is always difficult to get right and as you will see, knowing good coding practices isn’t always enough. A developer must also be aware of algorithm and implementation details and the guarantees offered by a cryptographic primitive.
+ 
+Blockchain Review
+ 
+Before digging into the error, let us review the way things are supposed to work in a permissioned blockchain network. Figure 1 shows the normal process of transaction proposal and verification. In the diagram, Node 1 proposes the transaction by signing it and forwarding it to Node 2. Node 2 verifies the validity of the transaction as well as the validity of Node 1’s digital signature endorsement. Node 2 then endorses the transaction and forwards it to Node 3. Node 3 does the same checks as Node 2 except that it is also careful to ensure that the endorsements from Node 1 and Node 2 are both valid and unique. If everything passes the checks, Node 3 endorses the transaction and forwards it to Node 4. Node 4 now repeats the checks of Node 2 and Node 3 and sees that the transaction has enough valid and unique endorsements to be accepted into the next block of the blockchain. Node 4 transmits the fully endorsed and accepted transaction to all other nodes in preparation of the block construction and consensus steps. It is important to point out that not only is the validity of each digital signature important, but that a transaction also has enough unique endorsements before it will be accepted.
+ 
+
+ 
+  
+ 
+
+ 
+Figure 1—How a transaction is endorsed and validated.
+ 
+Signature Schemes
+ 
+Hyperledger Iroha uses the Twisted Edwards Curves based elliptic curve digital signature scheme more commonly known as Ed25519 or EdDSA. Unlike almost every other elliptic curve digital signature scheme, Ed25519 doesn’t take random data as one of its inputs. Most digital signature schemes generate a random number used only once—also known as a nonce (Number used ONCE)1—when calculating a digital signature of a message. The reason for this is because a digital signature is just a message digest encrypted using a public key encryption algorithm. Public key encryption algorithms are trivial to break if there is no nonce or a nonce gets reused, with the same secret key, to encrypt multiple messages.2 This is called a “chosen plaintext attack”.3 Figure 2 shows how a random nonce is used when encrypting the message digest to create the digital signature. By including a nonce, repeated use of the secret key over different messages does not compromise the encryption. Digital signatures using this method are different even though the same secret key and message are used.
+ 
+
+ 
+  
+ 
+
+ 
+Figure 2—Digital signature calculation with random nonce.
+ 
+The Ed25519 signature scheme used by Iroha is different in that it generates the nonce by processing the inputs to the signing algorithm and thus repeated signatures of the same data with the same key result in the same encrypted data.4 This doesn’t compromise the key because the nonce is still different for different inputs. Figure 3 illustrates how the nonce for an Ed25519 digital signature is calculated from the input message and are therefore deterministic rather than generated randomly. Digital signatures using this method are the same when the same secret key and message are given.
+ 
+
+ 
+  
+ 
+
+ 
+Figure 3—Digital signature calculated with deterministic nonce.
+ 
+The Bug
+ 
+The flaw in Iroha was that the developers wrote the signature checking code to assume that signing the same data with the same key would always result in the same encrypted data. When determining if a transaction has enough different signatures to be valid, the code was comparing the public key bytes as well as the digital signature bytes when testing to see if two signatures were different. Figure 4 shows how the public key bytes and the digital signature bytes were combined when checking to see if two endorsements were different.
+ 
+
+ 
+  
+ 
+
+ 
+Figure 4—Flawed endorsement check that includes digital signature bytes.
+ 
+The auditors at Nettitude created a modified version of the Ed25519 signature library so that it instead used random nonces, thus creating different encrypted data for the same secret key and message data. Figure 5 shows how the comparison of endorsements fails when random nonces are used. The resulting endorsements are not the same even though the message and secret key used to sign the message are the same.
+ 
+
+ 
+  
+ 
+
+ 
+Figure 5—Random nonces produce different signatures from the same inputs.
+ 
+The result is that other nodes in the Iroha network—nodes running unmodified Ed25519 libraries—correctly validate the signatures because the public key correctly decrypts the digital signatures but the code for testing the uniqueness of the signatures is fooled. Each validating node sees different signatures for the same data and the same secret key and assumes they are unique endorsements and that the transaction is properly endorsed. Figure 6 shows how the Nettitude engineers were able to fully bypass this check with their single malicious node. It resulted in a bypass of the Byzantine guarantees of the system.
+ 
+
+ 
+  
+ 
+
+ 
+Figure 6—A malicious node bypassing the Byzantine checks.
+ 
+The Fix
+ 
+The correction for this security bug is to change the transaction and block signature validation code to first check that all signatures are valid and then check only the public keys for uniqueness when determining if there are enough valid and unique signatures on a transaction or block. Figure 7 shows how the scenario in Figure 6 plays out with the fixed code. Again a malicious node with a modified Ed25519 implementation signs a transaction multiple times with the same key. The signature bytes are unique, but the keys are not. When the other nodes in the network check the transaction, they see three valid signatures but the keys are not different. Each nodes determines that there is only one unique and valid signature and rejects the transaction.
+ 
+
+ 
+  
+ 
+
+ 
+Figure 7—A malicious node unable to bypass the Byzantine checks.
+ 
+Two bugs were filed, one for transaction validation and one for block validation to address this flaw. The first bug is titled “multi-signature transactions can potentially be authorised by single user”5 The second bug is titled “vote early, vote often”6 Both flaws were fixed shortly after the report was given to us from Nettitude and the current version of Iroha has been fixed.
+ 
+Conclusion
+ 
+It is very important for developers to understand the subtleties of cryptography and applying it to engineering problems. Careful study and consideration of the guarantees and assumptions is required as well as multiple reviews from other engineers with similar knowledge and attention to detail. The “many eyeballs” theory of open source software development does work. This audit proved it.
+ 
+The management and technical reports from the audit can be found on the Hyperledger wiki.
+ 
+Links
+ 
+	https://en.wikipedia.org/wiki/Cryptographic_nonce
+	https://rdist.root.org/2010/11/19/dsa-requirements-for-random-k-value/
+	https://en.wikipedia.org/wiki/Chosen-plaintext_attack
+	https://ed25519.cr.yp.to/ed25519-20110926.pdf
+	https://jira.hyperledger.org/browse/IR-2
+	https://jira.hyperledger.org/browse/IR-3
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

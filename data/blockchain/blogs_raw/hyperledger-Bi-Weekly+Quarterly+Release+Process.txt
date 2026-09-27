@@ -1,0 +1,644 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bi-Weekly & Quarterly Release Process - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+	Release Rotations 2024
+
+
+
+
+
+	Using CalVer for Besu Releases
+
+
+
+
+
+	How to do a Besu Release
+
+
+
+
+
+	Off-cycle release process
+
+
+
+
+
+	Release Process
+
+
+
+
+
+	Obsolete Proposals and Policies
+
+
+
+
+	Bi-Weekly & Quarterly Release Process
+
+
+
+
+
+	Process change proposal: burn-in
+
+
+
+
+
+	Proposal for Off-Cycle, Delayed, and Scuttled Releases
+
+
+
+
+
+	Proposal: Avoid Cherry Picked Releases
+
+
+
+
+
+	Proposal: Create a Release Candidate for every release
+
+
+
+
+
+	Proposal: Increasing 1.4 RC/Beta window
+
+
+
+
+
+	Proposal: Quarterly releases from main by default
+
+
+
+
+
+	Release Philosophy
+
+
+
+
+
+
+
+	Archive
+
+
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Bi-Weekly & Quarterly Release Process
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Bi-Weekly & Quarterly Release Process
+
+	Tim Beiko
+
+
+
+	Danno Ferrin
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Tim Beiko
+
+
+Last updated: Oct 27, 2020 by Danno Ferrin
+
+
+
+
+
+
+
+
+
+
+During the August 4th Contributor Call, Besu's release process was discussed.Â 
+
+Over the past few months, every Besu release has required a release candidate (see the original proposal). This change was implemented at a time where Besu releases had run into several showstopper bugs.Â 
+Since then, things have stabilized. Since June, there hasn't been a bug found in a Besu RC requiring we scrub or re-do the release.Â 
+
+In order to streamline the release process, on the last contributor call, we agreed to the following proposal:
+
+Bi-Weekly Releases:Â Â 
+	No RC, release directly off master branch
+	Before the release is promoted by contributors' organizations, we recommend they:	Run it for 24 hours against the Ethereum mainnet network at the head of the chain, and;
+	Complete a fast sync from scratch against one of the major Ethereum testnets (i.e. Ropsten).Â 
+
+
+	If issues are found with the release during the release process (e.g. failing acceptance test), we:	Scrub the release, meaning we do not complete the process and make it available;
+	Re-use the same release number at the next bi-weekly release given it was never on a public release.
+
+
+	If issues are found with the release after the release process (e.g. issues processing blocks on mainnet once nodes are updated), we:	We recommend people not use it and stop promoting it;
+	We investigate the issue and potentially have an out-of-cycle release if maintainers judge the issue serious enough to do so;Â Â 
+	Have the next release (whether in-cycle or not) on an incremented version (e.g. if the scrubbed release is 1.1.1, the next one should still be 1.1.2)Â 
+
+
+
+Quarterly Releases:Â Â 
+	We cut RCs off a separate branch.	We aim to have two RCs before a quarterly release to allow bug fixes from RC1 to be included in RC2.Â 
+
+
+	Before the release isÂ promoted by contributors' organizations, we recommend they:	Run it for 48 hours against theÂ Ethereum mainnet network at the head of the chain, and;
+	Complete a fast sync from scratch against the Ethereum mainnet.Â 
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "1ee4eaf2ea9d416ab5c648c3def90632"}

@@ -1,0 +1,100 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Open Enterprise Agent, a new Hyperledger lab for self-sovereign digital identity DApps
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Introducing Open Enterprise Agent, a new Hyperledger lab for self-sovereign digital identity DApps
+
+        
+
+        
+           Written by Atala PRISM | Dec 4, 2023 2:30:00 PM 
+        
+
+        
+          Identity plays a significant role in our everyday lives. From online shopping to office visits and traveling, we use our identity to access services and complete transactions. When using our identity, we often reveal sensitive information, which, in the wrong hands, could cause harm.
+
+
+The Open Enterprise Agent provides a way to manage digital identity while preserving privacy, security, and trust. It uses open standards and protocols such as W3C Decentralized Identifiers (DID) spec, W3C JWT, Hyperledger AnonCreds, and DIDComm v2. Open standards are for fostering collaboration, innovation, portability, and interoperability, thus facilitating technologies to work together seamlessly. This promotes a user experience that can move data and applications across different platforms and devices with a similar experience.
+
+When looking to open source the Open Enterprise Agent, we needed to find a home that would support our mission to maintain transparency and trust. It is essential to continue to build with the community, for the community, and the Hyperledger Foundation was the natural choice.
+
+Language flexibility
+Through a streamlined REST API, the Open Enterprise Agent provides the freedom to develop controllers in most programming languages, for flexibility and adaptability to diverse development environments.
+
+Built on Scala
+Built on Scala, the agent is crafted for scalability and reliability, making it an ideal choice for building highly concurrent systems.
+
+Blockchain integration
+The agent uses the Cardano blockchain as a verifiable data registry (VDR), ensuring a high level of security, scalability, and availability.
+
+Cloud agent design
+Designed as a cloud agent, the Open Enterprise Agent is designed to ensure convenience and accessibility.
+
+Platform support
+The agent is a Java Virtual Machine (JVM)-based application. It runs on various platforms, including Docker-compatible container runtime environments and physical or virtual hosts.
+
+Agent roles
+The Open Enterprise Agent can assume different roles within decentralized identity ecosystems, including issuer, holder, and verifier.
+
+Credential types
+The agent supports W3C JWT and is in the process of implementing Hyperledger AnonCreds, showcasing its commitment to diverse credential formats.
+
+DIDComm Protocol support
+Leveraging DIDComm V2, the agent supports various protocols such as Mediator Coordinator, Issue Credential, Present Proof, Report Problem, and Routing Protocol.
+
+Join the Open Enterprise Agent community
+Whether you're an experienced developer, a passionate tester, a talented designer, or someone eager to learn, there's a place for you in the Open Enterprise Agent community. Your contributions will help to shape the project and build a vibrant, collaborative community. There are many ways to get involved and not every contribution requires you to make a pull request – you can help by reporting bugs, giving feedback on documentation, testing code, or sharing ideas for the lab’s design.  
+
+Everybody is welcome to join our maintainer and contributor call every second Tuesday at 3pm UTC, where we discuss progress and ideas for the future of the Open Enterprise Agent. 
+
+If you’re only interested in seeing the code, you can find it on the Hyperledger Foundation repo here.
+
+Join our launch event to hear from the Atala PRISM team
+Join our community launch event on December 5, at 3pm UTC to learn more about the Open Enterprise Agent Lab and hear from the Atala PRISM team, including:
+
+Technical Director, Bart Suichies
+Lead Engineer, Javier Ribo 
+Software Engineer, Curtis Harding
+Product Owner, Lohan Spies
+
+ 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

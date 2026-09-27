@@ -1,0 +1,705 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2024-01-23 Contributor Call - AMEA Friendly Time - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+	2024-01-02 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2024-01-23 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2024-01-30 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-02-20 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-02-27 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-03-19 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-03-26 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-04-16 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-06-11 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-07-09 Contributor Call
+
+
+
+
+
+	2024-09-03 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-11-26 Contributor Call - US/AMEA
+
+
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2024-01-23 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2024-01-23 Contributor Call - AMEA Friendly Time
+
+	Justin Florentine
+
+
+
+	Matt Nelson (Deactivated)
+
+
+
+
+
+Owned by Justin Florentine
+
+
+Last updated: Jan 23, 2024 by Matt Nelson (Deactivated)
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨https://zoom.us/j/91405289771?pwd=QzA3a0ozTjVSZ0hsYzgwTm9lVDRPQT09)
+AMEA Friendly Time (https://www.timeanddate.com/worldclock/converter.html?iso=20230123T170000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+San Francisco, USA Â  Â  Mon, Jan 23, 2023 at 9:00 am PST
+New York, USA Â  Â  Â  Â  Â Mon, Jan 23, 2023 at 12:00 noon EST
+UTC, Time Zone Â  Â  Â  Â  Mon, Jan 23, 2023 at 5:00 pmÂ 
+Paris, France Â  Â  Â  Â  Â Mon, Jan 23, 2023 at 6:00 pm CET
+Brisbane, Australia Â  Â Tue, Jan 24, 2023 at 3:00 am AEST
+
+
+Agenda
+	Â Migration from Circle CI to Github Actions.	LAST CALL on feedback for GHA migration. Will propose using it (with CircleCI still available as a backup) for the 24.1.2 release.
+	PR is https://github.com/hyperledger/besu/pull/6427
+	Design Doc is https://lf-hyperledger.atlassian.net/wiki/pages/viewpage.action?pageId=22155998Â 
+	NOTES:	Consensys team to test that maintainers can re-run jobs with current permissions
+	Consensys team to run CircleCI in parallel and measure results from GHA release (ensure that it works and disable Circle)
+	Acceptance on plan broad strokes, targeting 24.1.2 release with GHA (backup Circle)
+	Getting GHA merged in quickly so we can use snapshot builds
+
+
+
+
+	DefaultsÂ 	Targeting 24.1.2 releaseÂ 
+	Considering renaming selfish-staker profile
+	Need to determine mechanism for getting everyone to a fully flattened DB (with or without resync)
+
+
+	PerformanceÂ 	2024 - Besu Performance Improvements since the Merge
+
+
+	Prague Planning	Matt to create and outline a document for Besu team Prague scope opinions.
+	Consensys team to see if MM willing to discuss 3074
+
+
+	Roadmap	QBFT-focused fuzzing?Â 
+	Acceptance tests run selectively for QBFT networks (price, filtered out of current gradle tasks, available on-demand)	Price analysisÂ 
+	Specific follow up call scheduledÂ 
+
+
+	Public/Private feature parity	Snap - need test cases for QBFT and Snap (snap server & snap client tests)
+	Soak / burn testing needs to consider private QBFT networksÂ 	Sequenced pool needs to be exercised (can be done on Mainnet, private nets)
+	Long-lived, substantial state QBFT network Â 	Repeatable!
+
+
+
+
+	Scheduled GHA for private nets?Â 
+
+
+
+
+
+
+
+Recordings
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2023-09-05 Contributor Call - EMEA Friendly Time
+2023-09-05 Contributor Call - EMEA Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-01-17 Contributor Call
+2023-01-17 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-12-06 Contributor Call - APAC Friendly Time
+2022-12-06 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-05-10 Contributor Call
+2022-05-10 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-07-11 Contributor Call
+2023-07-11 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-06-06 Contributor Call
+2023-06-06 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 9, "requestCorrelationId": "35278fe5a79e4939b7cf1791a4cb75a0"}

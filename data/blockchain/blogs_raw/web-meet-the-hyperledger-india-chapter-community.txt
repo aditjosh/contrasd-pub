@@ -1,0 +1,895 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger India Chapter community! – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Meet the Hyperledger India Chapter community!
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Jan 19, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                LinkedIn | Email | Subscribe | Rocket.Chat
+ 
+
+
+Like many of us, my interest in blockchain started with Bitcoin. As novel applications started emerging using blockchain and excitement began to reach a high pitch for this technology, my interest grew deep. I realized that this technology can solve many social issues. I have chosen the area of blockchain for my academic project.
+ 
+At the same time, the relatively new programming languages such as Go, Rust and Swift that are used in blockchain development were in my mind so digging deeper into technology means I can gain much more for the investment of time. 
+
+
+ 
+I have a practical problem to be solved. The problem is how to ensure that the logs generated by various systems are not tampered with. Naturally, blockchain is one of the technology options for solving that problem and, in fact, is an affordable candidate.
+ 
+I considered Exonum and Hyperledger Sawtooth as they both have Rust SDKs. Meanwhile, I succeeded in installing Hyperledger Sawtooth in AWS Cloud, and, since then, Sawtooth and Rust have become my technical stack. During this installation, I started communicating with the Hyperledger Sawtooth mailing list.
+ 
+Rust has a steep learning curve but delivers beautiful results. Initially, I depended on Sawtooth documentation, but it was not comprehensive for the early stage of the work. I depended on Rust User-Lang forum, which is a fantastic group, and the Hyperledger Sawtooth mailing list. At this point, Arun S M had responded to my queries. He politely answered my questions. Mr. Arun shared his Rust code, which stood as an example. On glancing this, I got some ideas on using Rust in Sawtooth and developed my code. As I was less busy during Covid lockdown, I spent a lot of time understanding Rust and Sawtooth SDKs, which helped me a lot. In addition, Dan Anderson’s videos helped me.
+ 
+At last, the project has come up very nicely, and I could demonstrate to find out whether a log generated by a system is  tampered with or not. You can find the presentation in the Hyperledger YouTube channel as part 1 and part 2.
+ 
+I’m interested in Distributed Algorithms and wish to work towards trustable distributed systems. I’m more interested in subtle things. But you all know, interests mutate along the axis of time. If my health permits, I would like to contribute more, which can bring deep satisfaction to me. 
+ 
+The technologies like blockchain can certainly solve social problems, and I’m sure these technologies can bring next generation eGov applications and platforms.
+ 
+S Gopinath
+Scientist-F
+National Informatics Center, Chennai
+ 
+
+ 
+2020 as a year has been extremely challenging for all of us, for known reasons. However, that being said, there were a lot of innovative and productive actions taken by organizations and individuals across the globe.
+ 
+Personally this year has been immensely satisfactory with respect to my activities related to blockchain. During this year, I successfully  completed the Blockchain for Business certificate course from Linux Foundations through edX. Also I became a Certified Blockchain Solutions Architect from BTA. I have been actively volunteering with the Hyperledger India Chapter this year. If you don’t know already, the Hyperledger India chapter is a vibrant community focused on encouraging more participation in Hyperledger from this part of the world. As you would have noticed in the accomplishments list, we have done quite a lot  in 2020.
+ 
+In 2021, we, as a chapter, have some interesting and challenging activities planned like increased student outreach, reaching out to the industry to talk about the success stories, building a strong network, and much more. I hope to continue my volunteering activities in industry outreach. And I would request more people who are involved in building blockchain products and interested in learning and contributing to join us in this journey.
+ 
+Wishing you all a happy New Year.
+ 
+Sunitha Chandrasekaran
+Engineering Manager, Sabre India
+ 
+
+ 
+
+ 
+The year 2020 was where we completed a PoC on blockchain and also worked towards moving to production. I started volunteering with the Hyperledger India Chapter this  year, and it has been great to network with several blockchain experts from this region. The weekly meetings provide great insights into several Hyperledger projects and how newbies can join and contribute to them. The Blockchain Stories 2020 series and the Blockchain Techfest 2020 series provided an opportunity to share in depth about business use cases for enterprise blockchain and also knowledge around the Hyperledger ecosystem. These sessions also were great sources of the information on how to deploy/manage a production grade implementation. Julian and Brian gave us all volunteers a warm welcome to celebrate Hyperledger’s 5th Anniversary. They bring in so much energy/enthusiasm and manage to stay  connected with members from different time zones round the clock. I am looking forward to connecting and contributing to the lab projects that the Hyperledger India Chapter has planned in the year 2021.
+ 
+Rajesh Krishnan
+Distinguished Member of Technical Staff and Sr Technical Architect
+Dell Technologies
+ 
+
+ 
+
+ 
+
+ 
+“Tough times never last, tough people do!” ~ Robert H Schuller
+ 
+This famous quote by Robert Schuller summarises most of our 2020 journey. It was bitter; it was challenging and, obviously, it was a hell of a lot harder than what we expected on new year’s eve of 2020, but here we are. Even through all these struggles, there are certain glimpses of hope or progress that has happened in our lives during this tough year. For me, personally, it was the opportunity to give back to the community.
+ 
+This year I was given the opportunity to coordinate the student outreach program of Hyperledger India Chapter. Being an active member of various student and professional societies made the task much easier for me. In fact, we pulled together the first iteration of the same in a matter of days, all thanks to Arun S M, Kamlesh Nagavare, and the volunteers from IEEE Computer Society Kerala Chapter.
+ 
+That being said, I am confident that Hyperledger India Chapter will spearhead a lot more of these student outreach programs and will be an evangelist of Hyperledger and enterprise blockchain among the growing student and professional circuits of the subcontinent.
+ 
+Make sure you keep watching this space. A lot more is going to happen in 2021.
+ 
+Athil Gafoor
+Head of Blockchain
+Phaethon Technologies
+ 
+
+ 
+In the next blog post, you will hear from one of the Hyperledger members, Saintgits College of Engineering. Aneena Ann Alexander, a pioneer and a role model for women engineers, pens down her thoughts on Women in Blockchain.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

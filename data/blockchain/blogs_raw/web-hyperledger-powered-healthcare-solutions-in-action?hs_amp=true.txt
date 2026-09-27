@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger-Powered Healthcare Solutions in Action – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger-Powered Healthcare Solutions in Action – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Aug 24, 2021 9:00:00 AM 
+        
+
+        
+          While always critical, public health and healthcare have taken on added urgency in the last 18 months. Technology is a cornerstone of today’s healthcare, and blockchain adds a vital layer to the increasingly digital infrastructure in this complex market. Blockchain’s growing role ranges from managing new challenges relating to COVID-19 testing and credentials to increasing the efficiency of critical, data-intensive workflows like clinical trials or insurance claims to supporting new models that make it easier for patients to access and share critical healthcare information without sacrificing privacy.
+ 
+A number of Hyperledger technologies are at work helping drive new approaches to the existing and emerging complexities of healthcare. Read on for a sampling of Hyperledger-powered applications and solutions that are in production across the industry. And join the conversation using #HyperledgerHealth on social channels.
+ 
+Aruba Health App
+ 
+Indicio.tech, together with SITA and the Aruba Health Department, created the Aruba Health App to make it easy for visitors to share a trusted traveler credential — based on their health status — privately and securely on their mobile device. Using the Aruba Health App, visitors to the island who have provided required health tests to the Aruba government are issued a unique trusted traveler credential, using blockchain technology. This credential then can be verified by hotels, restaurants, and entertainment venues through the unique QR code on a visitor’s mobile device without sharing any private data. The digital credential also enables the Aruba government to restrict visitors from leaving their hotel rooms until they have received a negative PCR test result. Launched initially as a trial, the Aruba Health App is built using Cardea, an open-source code base that has since been contributed to the Linux Foundation Public Health (LFPH) project. Cardea leverages Hyperledger Indy, Hyperledger Aries and Hyperledger Ursa.
+ 
+MediConCen
+ 
+MediConCen built a consortium system powered by Hyperledger Fabric that automates medical insurance claims without using any paper. The blockchain has been in production for two years with over 223,000 blocks written. It is a great production use case showing how blockchain technology can sharpen the efficiency of insurance companies and medical providers, while eliminating the need for reconciliation among the participants. By implementing digital signature using QR codes, the platform is scalable and can include any insurers and any medical providers in the world without concern of the integrity of medical providers and the claim data. This greatly relieves the workload of all parties involved, especially the medical staff with more urgent matters to attend to. It has over 600,000 users, who are connected to over 900 doctors. MediConCen was included in the 2021 “Forbes Asia 100 to Watch” that spotlights notable startups on the rise across the Asia-Pacific region.
+ 
+U.S. HHS COVID-19 Immutable Testing Results Collections and Analysis
+ 
+As COVID-19 testing ramped up in 2020, getting accurate and complete data from various testing venues on a timely basis needed for pandemic surveillance and mitigation efforts was a challenge. When the FDA started approving at-home test kits and testing moved beyond the controlled environment of medical labs to work places, colleges and universities, airports, sports venues and, eventually, at-home testing, these challenges grew, creating an urgent need to ensure the completeness, integrity, and accuracy of the reported data and the pandemic mitigation efforts that rely on it. Oracle worked with HHS to address the need for a single source of truth across multiple agencies, data integrity, immutability/tamper-evidence, and privacy/confidentiality of the test results. Using the Oracle Blockchain Platform (OBP), which is based on Hyperledger Fabric, Oracle rapidly deployed a permissioned enterprise-grade blockchain network in Oracle Government Cloud.
+ 
+The solution is in production for HHS/CDC tracking of COVID-19 testing results reported by non-lab-based testing venues and testing manufacturers. It has received Conditional ATO approval from US Department of Health and Human Services (HHS) (full ATO is in process) and has over 1.5 million testing results on-chain. Learn more here: https://www.youtube.com/watch?v=foVdOfsFAeg.
+ 
+XATP
+ 
+Designed for licensed pharmacists in the United States to verify drugs under the Drug Supply Chain Security Act (DSCSA), XATP makes it easy to authenticate and and securely exchange information with trading partners. LedgerDomain, working with industry stakeholders including fellow Hyperledger member UCLA, developed XATP to be a new kind of lightweight Verification Router Service designed to authenticate dispenser identities and streamline verification requests. It allows pharmacists to scan a 2D barcode on any drug in the U.S. to bring essential information on expired, short dated, recalled, and counterfeit drugs. XATP, which leverages Hyperledger Fabric, is currently in production for pharmacy workgroups and is ramping up for deployments at major health centers. 
+ 
+Health and healthcare updates from Hyperledger Global Forum
+ 
+At Hyperledger Global Forum, there was a range of business, technical and demo sessions focused on health and healthcare developments and deployments, including:
+ 
+Covid Vaccine Beneficiary Identification using Verifiable Credentials – Punit Kumar & Hitarshi Buch, Wipro Technologies
+ 
+Blockchain-based Decision-support and Longitudinal Data Storage, with Illustration for Diabetes Type 2 Management – Alevtina Dubovitskaya, HSLU (Lucerne University of Applied Sciences and Arts)
+ 
+Bringing Trust and Privacy-Preserving Smart Contracts to Clinical Trials in Healthcare – Andrew Weiss, UMBC (in partnership with Softhread) & Bruno Vavala, Intel
+ 
+Fast, Secure, and Accurate Evaluation of Prescription Drug Reimbursement Claims using Hyperledger Fabric – Alevtina Dubovitskaya, Swisscom AG
+ 
+Blockchain in COVID-19 Fight – US HHS Testing Results Reporting Using Distributed Ledger – Mark Rakhmilevich & Bala Vellanki, Oracle 
+ 
+Ongoing activity in the space is driven by the very active Hyperledger Healthcare Special Interest Group (SIG), which unites healthcare professionals and technologists from around the world in advancing the state of the healthcare industry through the implementation of technology solutions using blockchain technologies in general, and the umbrella of Hyperledger frameworks and toolsets in specific. It includes subgroups focused on patients, payers and healthcare interoperability.
+ 
+Cover image: Piqsels
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

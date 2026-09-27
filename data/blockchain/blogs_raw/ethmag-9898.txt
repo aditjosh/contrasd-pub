@@ -1,0 +1,500 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Last Call] EIP-5216: ERC1155 Approval By Amount - EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      [Last Call] EIP-5216: ERC1155 Approval By Amount
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+        
+            pr-review, 
+            erc1155
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                ivanmmurcia
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 11, 2022,  8:55am
+                  
+                  
+
+1
+              
+            
+            
+              Hi everyone,
+
+After been discussed in this forum, I created an EIP PR for the initial idea of my draft (https://ethereum-magicians.org/t/working-draft-new-extension-for-erc1155).
+
+I open this topic to discuss here said PR.
+
+In case that I missed some step, feel free to comment and I’ll change it.
+
+Thank you very much.
+
+PR: https://github.com/ethereum/EIPs/pull/5216
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                ivanmmurcia
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 5, 2022,  3:42pm
+                  
+                  
+
+2
+              
+            
+            
+              UPDATE: This EIP is now in Last Call.
+
+I need the help of the community so feel free to check it, test the code and find bugs. Let’s discuss about the implementation and move it forward.
+
+Thank you in advance!
+
+EDIT.- This is the EIP: EIPs/eip-5216.md at master · ethereum/EIPs · GitHub
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                xinbenlv
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 3, 2022,  3:53pm
+                  
+                  
+
+3
+              
+            
+            
+              Hi @ivanmmurcia thanks for the EIP-5216
+
+QQ: why is approve disallowing the caller to be the operator?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                ivanmmurcia
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 5, 2022, 12:20pm
+                  
+                  
+
+4
+              
+            
+            
+              Hi @xinbenlv, thanks for your feedback.
+
+I have realized that reversing a call because of this check is silly, and also reviewing the OZ’s ERC-20 _approve function implementation, I have seen that what I should check instead, is that neither the owner nor the operator are zero address:
+
+require(owner != address(0), "ERC20: approve from the zero address");
+require(spender != address(0), "ERC20: approve to the zero address");
+
+
+What do you think?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                xinbenlv
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 8, 2022, 11:52pm
+                  
+                  
+
+5
+              
+            
+            
+              That sounds good. Can you create a new PR to update the spec accordingly?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                ivanmmurcia
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 11, 2022,  5:04pm
+                  
+                  
+
+6
+              
+            
+            
+              Of course, I’m on my way. Thanks dude!
+
+EDIT: Update EIP-5216 with zero address control in _approve function like EIP-20 by ivanmmurciaua · Pull Request #5917 · ethereum/EIPs · GitHub here is the PR 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                joestakey
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 12, 2022,  5:29pm
+                  
+                  
+
+7
+              
+            
+            
+              Hi @ivanmmurcia , love this EIP, the lack of a proper approval pattern is a big problem with ERC-1155, this EIP will definitely help to make it a more robust standard.
+
+A couple things regarding the reference implementation:
+
+1-The proposal states safeTransferFrom MUST Subtract the transferred amount of tokens from the approved amount if msg.sender is not approved with setApprovalForAll
+
+But in the reference implementation, the allowance is decremented in all cases. In the case of an operator being approvedForAll, this means _allowances[from][msg.sender][id] can underflow and lead to an allowance being silently inflated.
+
+You can add a check before decrementing:
+
+        require(
+            from == msg.sender || isApprovedForAll(from, msg.sender) || allowance(from, msg.sender, id) >= amount,
+            "ERC1155: caller is not owner nor approved nor approved for amount"
+        );
++       if (from != msg.sender && !isApprovedForAll(from, msg.sender)) {
+        unchecked {
+            _allowances[from][msg.sender][id] -= amount;
+        }
++       }
+        _safeTransferFrom(from, to, id, amount, data);
+
+
+2-There is a tiny logic issue in safeBatchTransferFrom: The error string line 89 in safeBatchTransferFrom will never be reached, because_checkApprovalForBatch never returns false, it either returns true or reverts line 111 if one of the ids to be transferred does not have sufficient allowance.
+
+You can amend the _checkApprovalForBatch so that it returns false instead of reverting if the allowance is not enough.
+
+-            require(allowance(from, to, ids[i]) >= amounts[i], "ERC1155ApprovalByAmount: operator is not approved for that id or amount");
++           if (allowance(from, to, ids[i]) < amounts[i]) {
++               return false;
++           }
+            unchecked { 
+                _allowances[from][to][ids[i]] -= amounts[i];
+                ++i; 
+            }
+
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                ivanmmurcia
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 14, 2022,  6:46pm
+                  
+                  
+
+8
+              
+            
+            
+              Hey @joestakey, thanks for the great feedback.
+
+1- Yes totally, and I’ve detected this but in my defense I have to say that I wrote the reference implementation and the testing suite in 0.8.15, i.e the compiler avoids the underflow you’ve said… however, this EIP could be implementated in any version of Solidity, so I’ll change.
+
+2- Was my mistake, I only checked that everything worked fine and reverted with the appropiate message but was a tiny logic issue, changed 
+
+Cheers!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                dcota
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 16, 2023, 12:28am
+                  
+                  
+
+9
+              
+            
+            
+              What is the latest status on this EIP?
+
+Can the title be simplified to ERC1155Allowance.
+
+Imo it would be less verbose than ApprovalByAmount.
+
+Anyone who knows the 1155 spec will know this is an extension for granular allowance.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

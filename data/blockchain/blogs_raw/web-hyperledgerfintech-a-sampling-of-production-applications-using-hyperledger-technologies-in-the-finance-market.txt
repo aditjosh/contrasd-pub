@@ -1,0 +1,861 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HyperledgerFinTech: A sampling of production applications using Hyperledger technologies in the finance market – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Finance
+                            |
+                        
+                            Project: Hyperledger Indy
+                            
+                        
+                    
+
+                
+                #HyperledgerFinTech: A sampling of production applications using Hyperledger technologies in the finance market
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Sep 28, 2020
+                    
+                
+
+            
+
+            
+            
+                The financial services market has long turned to technology to address a range of back-end challenges and enhance customer-facing services. Blockchain is increasingly becoming a go-to technology for advancing many different financial systems and solutions with different Hyperledger platforms serving as the core for an array of applications now in production. 
+ 
+Read on for just a sampling #HyperledgerFinTech solutions, built using a mix of Hyperledger technologies:
+ 
+Bakong
+ 
+Sponsored by the National Bank of Cambodia, the country’s central bank, Bakong is the first retail payments system in the world using blockchain technology. Built on Hyperledger Iroha, Bakong delivers value for customers, merchants and banks. Individuals can now transfer money and buy from merchants with a simple smartphone app. Merchants gain a fast, cashless, and secure payments system. And banks can do interbank transfers at much lower cost.
+ 
+Bakong was developed by Soramitsu and, after a soft launch in 2019, is now expanding with 16 financial institutions using the system and more expected to join in the near future. The project was also designed to promote financial inclusion for the country’s large number of unbanked citizens. Any citizen of the country can open a Bakong account, even if they don’t have a traditional bank account. The more than 500 merchants that accept Bakong can be viewed in a map inside the app. 
+ 
+daura 
+ 
+Built atop the private Swiss Trust Chain run by Swisscom and Swiss Post and powered by Hyperledger Fabric, daura is a digital share platform for financing and investing in Swiss SMEs. With daura, the share register is easily digitized and capital increases are carried out quickly and inexpensively at the push of a button. Shares can be split into any number of small lots and the share register is always digitally maintained, complete and up-to-date. With daura, companies have also transitioned virtual Annual General Meetings as a response to COVID-19 with authorization and access are granted directly via the blockchain. 
+ 
+ioCash
+ 
+ioBuilders is a blockchain technology company focused on building regulated fintech and enterprise solutions based on distributed ledger technology to help businesses succeed in their blockchain adoption. The company offers professional services, including technical, business and regulatory, and develops its own product line. ioBuilders has been one of the first adopters and advocates of Hyperledger Besu, providing essential feedback to improve its enterprise requirements capabilities. 
+ 
+ioCash, one of ioBuilder’s core products, is a fintech platform enabling the use of regulated fiat money on blockchain networks, making it programmable with smart contracts and able to interact with other blockchain use cases. ioCash’s platform operates under an electronic money licence, providing accounts (with or without IBAN) and complex payments functionalities through API and smart contracts connectivity. ioCash is also available as a technology license for financial institutions that hold banking or electronic money licences and are aiming to add the benefits of blockchain into their payment systems. 
+ 
+Memberpass
+ 
+CULedger, a credit union service organization (CUSO) that began when a group of credit unions came together in 2016 as a direct response to the increasing threat of fraud, set out to bring a decentralized identity solution product for credit unions to market. The result was MemberPass, a permanent, portable digital identity credential for credit union members.
+ 
+Built in partnership with Evernym and using Hyperledger Indy, Memberpass replaces vulnerable authentication processes such as common knowledge-based questions. Now credit unions are able to issue a digital credential to members, giving them a hassle-free way to control and prove their identity quickly and easily while protecting their personal information.  
+ 
+Verified.Me 
+ 
+Verified.Me offers a secure and convenient way to help Canadians verify their identities.
+ 
+Verified.Me is a service offered by SecureKey Technologies Inc. The Verified.Me service was developed in cooperation with seven of Canada’s major financial institutions – BMO, CIBC, Desjardins, National Bank of Canada, RBC, Scotiabank and TD. The Verified.Me network continues to evolve adding new identity providers and service providers to make your life easier.
+ 
+Verified.Me is built on top of the IBM Blockchain Platform which is based on Linux Foundation’s open source Hyperledger Fabric v1.2, and will be interoperable with Hyperledger Indy projects. 
+ 
+Users of the Verified.Me mobile app or web browser experience are able to get a free credit score with Equifax, register with Sun Life, verify their identity when registering for Dynacare Plus, an online and mobile service that lets users manage their health remotely, and more.
+ 
+Join the conversation about solutions and applications in the financial service market with #HyperledgerFinTech this month on social channels. Or get involved with the Capital Markets or Trade Finance Special Interest Groups.
+ 
+If you are interested in peer-to-peer transactions, mark your calendar for a webinar hosted by CoinDesk at 11:00 am ET on October 20th. A panel of experts on different Hyperledger platforms will be discussing “Governance, standards and interoperability: Getting past the roadblocks to peer-to-peer financial transactions.” Go here to find out more.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

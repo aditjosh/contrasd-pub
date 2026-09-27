@@ -1,0 +1,866 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Hyperledger Aries Framework JavaScript 0.2.0 – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Aries
+                            
+                        
+                    
+
+                
+                Introducing Hyperledger Aries Framework JavaScript 0.2.0
+ 
+                
+                    Karim Stekelenburg, Hyperledger Aries Maintainer - Animo Solutions Co-Founder
+                    |
+                    
+                        Jul 6, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                About half a year before we started Animo Solutions, my co-founders and I discovered Hyperledger Aries Framework JavaScript, an open source JavaScript/TypeScript framework designed to create interoperable self-sovereign identity solutions. At the time we were just getting acquainted with the concept of SSI. Just the idea that we could use TypeScript to build made our lives so much easier and the tech so much less daunting. It turned into one of the building blocks of our company, and I would end up becoming a maintainer and strong advocate of Hyperledger Aries Framework JavaScript. Now, after two years of hard work by the community, we’re excited to announce the 0.2.0 release of the framework. In this article, I’ll take you through what this newest release entails and why it will change the way self-sovereign solutions are built.
+ 
+Hyperledger Aries Framework JavaScript (AFJ) is a framework written in TypeScript for creating interoperable self-sovereign identity (SSI) solutions. The framework has two main focus points. It aims to be as accessible as possible for any developer whether new or experienced in the world of SSI. It is also designed specifically for multi-platform development, so both server-side and mobile solutions can be built with the framework.
+ 
+The framework has gained a lot of momentum lately. The community has been growing quickly with various governments and organizations stepping in. Our current contributor count is 37, and the working group calls now have around 10 active participants (as opposed to the two we had two years ago). The potential of the framework has become clear to developers other than us (the fanatics). For example, at Animo we recently received funding from the EU NGI eSSIF-Lab initiative to lift the framework to the next level regarding mobile development options.
+ 
+The new Hyperledger Aries Framework JavaScript release (0.2.0) contains some incredible steps forward. Especially in our goal to make the framework AIP 2.0 compliant. AIP 2.0 compliance will not only ensure the framework supports the latest standards and protocols, but it will also greatly increase interoperability and make it more useful outside of the Hyperledger Indy ecosystem. Specifically, this release contains:
+ 
+	Full support for the out of band and did-exchange protocols
+	Postgres wallet support
+  	Previously the framework only supported SQLite. This addition ensures the framework is better suited for cloud infrastructure.
+
+
+	Wallet import/export support
+  	This addition enables users to migrate their wallet data to and from other Hyperledger Indy-based wallets.
+
+
+	Pickup protocol v2 for better control over interactions with the mediator
+	Support for the issue-credential-v2 protocol
+  	The issue credential and present proof v2 extend the framework with the ability to support multiple credential and proof formats. Instead of adding a separate API for the v2 protocols, we have put a lot of effort in designing a single, easy-to-use API that works with both versions and is extensible for later versions in the future. In the next release we’ll be adding support for the present proof v2 protocol.
+
+
+	Credential revocation and revocation notifications for holders and verifiers
+  	This allows holders to prove that a credential hasn’t been revoked and verifiers to verify this. The revocation notifications allow the holders to be informed about the fact that one of their credentials has been revoked, rather than discovering this when trying to present proof.
+
+
+	Full did:peer support
+	A generic DID resolver that currently supports did:key, did:web, did:sov and did:peer.
+	An upgrade assistant to help users update their wallets to newer versions of the framework
+  	As the framework evolves over time, some of the underlying data structures may change. With the upgrade assistant, we aim to make it as easy as possible for users to migrate.
+
+
+
+ 
+We’re already working hard on version 0.3.0 that will, just like the 0.2.0 release, be packed with new features such as support for the W3C Verifiable Credential Format and BBS+ Signatures 2020, making the framework fully AIP 2.0 compliant.
+ 
+Check out the 0.2.0 release here and the update instructions here. For general documentation, please see aries.js.org.
+ 
+If you’re interested in Hyperledger Aries Framework JavaScript and its developments, we recommend you join the working group call (07:00 MT / 14:00 UTC on zoom) and check out the GitHub repo. If you want to discuss building a solution with the framework, feel free to reach out to me at karim@animo.id.
+ 
+For hands-on experience with AFJ, join us at Hyperledger Global Forum (HGF) for the half day workshop: How To Build a Self-Sovereign Identity Agent With Hyperledger Aries Framework JavaScript. To get a 20% discount to attend HGF and learn more about Hyperledger Foundation Identity projects, use the code: HGFHLFWG22.
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

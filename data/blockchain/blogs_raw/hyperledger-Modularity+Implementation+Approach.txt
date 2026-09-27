@@ -1,0 +1,756 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Modularity Implementation Approach - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+	Besu as a Modular Client for the Merge (OLD)
+
+
+
+
+
+	DRAFT - Besu Software Component Map
+
+
+
+
+
+	Modular Consensus
+
+
+
+
+
+	Modularity Implementation Approach
+
+
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Modularity Implementation Approach
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Modularity Implementation Approach
+
+	Justin Florentine
+
+
+
+	Matt Nelson (Deactivated)
+
+
+
+
+
+Owned by Justin Florentine
+
+
+Last updated: Aug 02, 2023 by Matt Nelson (Deactivated)
+
+
+
+
+
+
+
+
+
+
+Context
+Making Besu more modular requires thinking about the dimensions along which those modules are divided up and separated from each other. Those separations can be categorized into two types: areas of related business logic, and areas of related software function. The former is the domain of "stuff Ethereum needs" and the later is the domain of "stuff good Java software needs". When we modularize Besu, we are looking to produce reusable, composable software components within the business logic domain.Â Â 
+Bounded Contexts / Business Logic / Blockchain Domain are all synonyms for the type of modules we want to create to serve the pillars of our 2022 Vision. We will know we are doing this right when users can easily create a Besu that combines different modules into the client they need.
+Cross Cutting Concerns are a little bit different. These should be invisible to the users, but very helpful to the developers. Any Bounded Context may depend on any mix of Cross Cutting Concerns. This part is ok to be a web of dependencies, they are often external projects/libraries we have selected for use all throughout Besu.
+
+
+	Business Logic	Cross Cutting Concerns
+		Consensus	Proof of Work
+	External (or none?): Proof of Stake	driven by Engine API
+
+
+	Clique
+	IBFT
+	QBFT
+
+
+	P2P	ETH/66 and prior
+	DevP2P
+
+
+	Execution	EVM
+	Tracing
+
+
+	Transaction Management	Tessera integration
+	MEV
+	public and private transaction support
+	Proof of work tx validation
+
+
+	Synchronizing	Full sync
+	Fast sync
+	Snap sync
+	Checkpoint sync
+	Backwards sync
+
+
+	Storage	World State	Forest
+	Bonsai
+	Snapshot (RocksDB specific)
+	Verkle
+
+
+	BlockchainÂ 
+	Key-Value specific implementations under each.
+
+
+
+		Cryptography	Elliptic Curves
+	Signatures
+	Hashing
+	native implementations
+
+
+	Serialization	RLP
+	JSON
+	GraphQL(ish. it's a lot broader than just serialization)
+
+
+	APIs	RPC	HTTP
+	Websockets
+
+
+	GraphQL
+	IPC
+
+
+	Inversion of Control	Dagger
+	Spring
+
+
+	Observability	Logging
+	Metrics
+	Debugging extras
+
+
+	Configuration	PicoCLI
+	Genesis state vs. named networks
+
+
+	Builds	Static code analysisÂ 
+	Use-case specific distributions
+	test automation	Unit
+	Integration
+	System
+	Fuzz
+
+
+
+
+
+
+
+
+
+
+Goals
+	Pick relevant modules for abstraction against the goals outlined in our Modularity Design. A good consideration is the rule of threes: we should only abstract a module when we have a need for it in three contexts.
+	Begin work on one abstractionÂ 	Document approachÂ 
+	Design implementation of interface or inversion of control
+	Review software engineering practices with the working group
+	Review code changes and implementation details with working group
+
+
+	Define success criteria for remaining modules
+	Template design work from one slice and share learnings
+	Determine remaining modules (what needs new abstraction, against our goals)Â 
+	Create working group plan and discuss division of work
+
+Proof of Concept:
+Introduce Inversion of Control to implement a vertical slice of functionality. We need to find a feature that touches on a few cross-cutting concerns, but just one Bounded Context.
+Nominees:
+	Transaction validation stack - touches each consensus mechanism, any L2 network, MEV, block building, and more. Good candidate.Â 
+	MetricsSystem - Each time we need to expose a metric, we need to get this MetricsSystem from upper Layers and transfer it from constructor to constructor.Â 
+	Configuration management -Â 
+	Jumpdest caching. Only relevant to the EVM, but requires caching, configuration, Observability, and hashing. Plan would be to provide each of these as a dependency.
+	PoA consensus mechanisms. Impact TBD.
+	Transaction pool. Impact TBD.
+	Merge Context. What if the Merge Coordinator and related classes could be a dagger module?
+	Protocol Schedule. Impact TBD.
+
+Once the question of "will dependency injection make for cleaner composition of modules into an application" is answered, we can then start to incrementally adopt it within each bounded context, and across the cross-cutting concerns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Modular Consensus
+Modular Consensus
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Modular Besu
+Modular Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Refactor EVM into a stand alone library
+Refactor EVM into a stand alone library
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu as a Modular Client for the Merge (OLD)
+Besu as a Modular Client for the Merge (OLD)
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+DRAFT - Besu Software Component Map
+DRAFT - Besu Software Component Map
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 15, "requestCorrelationId": "418df2091e5c4d3e9aee17e42ebbacac"}

@@ -1,0 +1,495 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proposal - Besu maintainers become docs maintainers - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+	Documentation contribution workflow
+
+
+
+
+
+	Documentation contribution guidelines
+
+
+
+
+
+	Versioned documentation
+
+
+
+
+
+	Documentation archive
+
+
+
+
+	Documentation release process
+
+
+
+
+
+	Documentation style guide
+
+
+
+
+
+	Future Release Dates
+
+
+
+
+
+	MkDocs and Markdown guide
+
+
+
+
+
+	Proposal - Besu maintainers become docs maintainers
+
+
+
+
+
+	Raise issues
+
+
+
+
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Proposal - Besu maintainers become docs maintainers
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Proposal - Besu maintainers become docs maintainers
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Sept 08, 2020
+
+
+
+
+
+
+
+
+
+
+Background
+Currently the process for becoming a besu-docs maintainer mirrors the process for becoming a besu maintainer, but based on besu-docs contributions rather than besu code contributions.
+However this leads to the issue
+	besu developers contribute to the docs but none have so far met the requirement for "5 significant contributions" in order to become a besu-docs maintainer
+	small number of besu-docs maintainers is a bottleneck for getting PRs approved.
+
+The besu-docs repo has CI steps to check formatting, grammar, validity of internal and external HTTP links.Â 
+All changes to besu-docs also require separate approval.Â 
+ProposalÂ 
+Essentially relax the first requirement of the process for ie "The proposed maintainer authors and has accepted five significant changes".
+Since we trust besu maintainers to make changes to the code, this proposal is to also trust those individuals to make changes to the related docs. Individuals need to be aware of their areas of expertise. Just as we expect besu maintainers to use their judgment when reviewing besu PRs, we expect besu-docs maintainers to use their judgment when reviewing besu-docs PRs. If the change is significant, defer to someone with expertise in that area.
+Proposal:
+	ask for volunteers from current Besu maintainers become besu-docs maintainers
+	current besu-docs maintainers raise PR to add none/some/all of those volunteers (considering their contributions to besu-docs so far), and this PR requires approval as per theÂ processÂ 
+	the rest of the process is followed as-is
+	existing besu-docs maintainers remain besu-docs maintainers
+	still keep the separate process for someone to become a besu-docs maintainer without first becoming a besu maintainer.Â 
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 16, "requestCorrelationId": "07f8f6fb2f20471d97cd8211724a2d78"}

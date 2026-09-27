@@ -1,0 +1,88 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Upgrade Fabric network from 1.4.x to 2.2.x using Hyperledger Bevel – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Mentorship Spotlight: Upgrade Fabric network from 1.4.x to 2.2.x using Hyperledger Bevel – Hyperledger Foundation
+
+        
+
+        
+           Written by Mohit Vaish | Jan 11, 2023 9:37:44 AM 
+        
+
+        
+          What did you work on?
+ 
+Project name: Upgrade Fabric network from 1.4.x to 2.2.x using Hyperledger Bevel
+ 
+Objective:
+ 
+Hyperledger Bevel is an automation framework for rapidly and consistently deploying production-ready DLT platforms. This mentorship project enhances Hyperledger Bevel to perform a live upgrade of a Hyperledger Fabric network from version 1.4.x to 2.2.x and provide an operations guide to perform the steps. This project uses Ansible, Kubernetes, Helm, Hashicorp Vault and Hyperledger Fabric. 
+ 
+My mentors for this project were Sownak Roy and Jagpreet Singh Sasan. Their support and guidance has been immensely helpful for implementation of this project. 
+ 
+This development work has automated the steps to upgrade the Hyperledger Fabric network, which shall increase the productivity to carry out such upgrades.
+ 
+What did you learn or accomplish?
+ 
+Learnings:
+ 
+Before the start of this project, I had a basic understanding of setting up a Hyperledger Fabric network using Docker Compose. Hyperledger Bevel provided insights on how to automate and set up a production grade Hyperledger Fabric network on Kubernetes platform in various cloud providers.
+ 
+I learned how Ansible, Helm charts and Flux are tied together for this implementation. Ansible does the automation for deployment pipeline, Helm charts are the reusable packages for Kubernetes components, and Flux implements the GitOps model so that current Hyperledger Fabric Network state is available for the operator.
+ 
+Accomplishments:
+ 
+My mentors validated my approach and provided feedback. I learned about multiple orderer organizations in a Hyperledger Fabric network and improved the upgrade automation for such scenarios. I was able to set up the network in a local minikube environment and will be updating the Hyperledger Bevel documentation for the same. This will provide new developers who do not have a cloud Kubernetes environment to set up and learn Hyperledger Bevel.
+ 
+The code can be accessed here.
+ 
+The documentation is available at this link.
+ 
+What comes next?
+ 
+I worked primarily on SharePoint development during my career but last year started looking into blockchain technologies as it provides immense potential to bring trust to the internet. There are so many use cases in real-life scenarios that ultimately can be solved by these technologies
+ 
+The productivity that blockchain solutions bring to the table will be a win-win solution for enterprises as well as customers. This is an evolving technology that is community driven and, being open source, provides opportunity for all to learn and contribute. This mentorship program provided me a similar opportunity and now, along with Linux Foundation certification, my work is noticed by employers. I wholeheartedly thank my mentors and Linux Foundation for this opportunity and wish to keep contributing to this ecosystem.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

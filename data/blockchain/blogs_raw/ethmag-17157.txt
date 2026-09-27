@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-7572: Contract-level metadata via `contractURI()` - ERCs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      ERC-7572: Contract-level metadata via `contractURI()`
+    
+
+
+      
+          
+            
+              
+              
+                ERCs
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                ryanio
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 8, 2023,  6:04pm
+                  
+                  
+
+1
+              
+            
+            
+              PR: Add ERC-7572: Contract-level metadata via `contractURI()` by ryanio · Pull Request #150 · ethereum/ERCs · GitHub
+
+
+This specification standardizes contractURI() to return contract-level metadata. This is useful for dapps and offchain indexers to show rich information about a contract, such as its name, description and image, without specifying it manually or individually for each dapp.
+
+
+
+interface IERC7572 {
+  function contractURI() external view returns (string memory);
+
+  event ContractURIUpdated();
+}
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

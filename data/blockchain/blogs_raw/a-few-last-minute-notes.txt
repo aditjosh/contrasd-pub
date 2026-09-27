@@ -1,0 +1,199 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A few last minute notes… | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+A few last minute notes…
+Posted by Stephan Tual on July 30, 2015
+Protocol Announcements
+
+
+
+
+Genesis is roughly 4 hours away, here are a few last minute pointers for those preparing:
+
+
+	
+All clients are functional on all platforms and build to completion: http://ethereum-buildboard.meteor.com/
+
+
+	
+Please note that it will take a little while (10-1000 blocks) before the network stabilises. This is a marathon, not a sprint. For this reason we will not make the Genesis block hash known until a solid consensus has been formed. We will not announce the --extradata immediately either - if we did, we might as well launch centrally. We'll let the community come to a consensus on what it is (as there could be multiple blocks #1028201 on the testnet, while it undergoes a re-org, or multiple re-orgs).
+
+
+	
+Do not reuse keys from Olympic, especially if you are expecting Olympic rewards, as these should be considered completely insecure due to the development state of the various codebases that generated them. They may also be vulnerable to replay attacks. If you are expecting an Olympic reward for a key A, please create new key B with pyethereum, cpp-ethereum-0.9.36+ or go-ethereum-1.0 and place a transaction sent by A to B on the testnet; rewards will be given to the first such transaction following block #1026900. Don't use B on Olympic. If you have 'won' something, it will get sent to B on Frontier.
+
+
+	
+Difficulty will start at 2^34, this number was decided on based on what we observed on the testnet
+
+
+
+
+See you at Genesis!
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

@@ -1,0 +1,582 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maximum Validator count for an IBFT2 Network - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+	Decouple a class with Dagger - DRAFT
+
+
+
+
+
+	Deployment of Private Hyperledger Besu on AWS with hardware layer for Externally Owned Account
+
+
+
+
+
+	EIP-1559 testnet guide
+
+
+
+
+
+	Limit Trie Logs for Bonsai
+
+
+
+
+
+	Maximum Validator count for an IBFT2 Network
+
+
+
+
+
+	Ratified Smart Contract for Constrained Delivery with Oraclized Data
+
+
+
+
+
+	Transaction testing
+
+
+
+
+
+	Using Hive Test Suite
+
+
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Maximum Validator count for an IBFT2 Network
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Maximum Validator count for an IBFT2 Network
+
+	Joshua Fernandes
+
+
+
+
+
+Owned by Joshua Fernandes
+
+
+Last updated: Oct 25, 2022
+
+
+
+
+
+
+
+
+
+
+Summary
+We did some tests on the maximum number of validators in a network under various networking scenarios with light load. Results showed 30 to be safe under light load; beyond that you could experience degradation of performance and may stall the network. This is also dependant on the smart contracts that are in use on your network - the heavier and complex they are, you should reduce the max validators and we recommend you test this out prior to production.
+Test Setup
+	Besu 21.10.0
+	IBFT2 consensus algorithm - Block time 5s
+	AWS - t3.large instances 2Cpu 8G
+	No privacy
+	Test contract we used:Â https://github.com/ConsenSys/quorum-dev-quickstart/blob/master/files/common/smart_contracts/contracts/SimpleStorage.solÂ  Â 
+
+Assumptions
+	Even distribution of trafficÂ 
+	No private tnxs testing performed
+
+Tests
+Test1:Â Single Region with instances spread across 3 AZs; routing done internally on private IPsÂ Â 
+Upto 36 validators were fine and no loss of performance. Beyond 32 validators, block times rose 0.5s
+Test2:Â Across 3 Regions (Ohio, Paris, Sydney) with instances spread across 3 AZs in each region. VPCs were peered and routing was done internally on private IPs
+Upto 36 validators were fine and no loss of performance. Beyond 32 validators, block times rose 0.5s. At 36 validators and sustained load (5min+) the transaction pool started to grow exponentiallyÂ 
+Test3:Â Across 3 Regions (Ohio, Paris, Sydney) with instances spread across 3 AZs in each region. Routing was done on the public internet and on public IPs
+Upto 30 validators were fine and no major loss of performance. At 30 validators the transaction pool started to grow a bit, and block times went up 0.2s.Â 
+At 35-38 validators, sustained load (5min+) saw the tx pool time grow and then halted the network at 38 validators
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+QBFT Performance
+QBFT Performance
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Modular Consensus
+Modular Consensus
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Hyperledger Besu Performance with Caliper
+Hyperledger Besu Performance with Caliper
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+2024 - Besu Performance Improvements since the Merge
+2024 - Besu Performance Improvements since the Merge
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Performance analysis and Benchmarking of Besu using Caliper with complex workloads
+Performance analysis and Benchmarking of Besu using Caliper with complex workloads
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 10, "requestCorrelationId": "92a487b03d7c46fab3c82f295faeee0a"}

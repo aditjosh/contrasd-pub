@@ -1,0 +1,74 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer showcase series: Arielle Telesmanic, Scroll – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer showcase series: Arielle Telesmanic, Scroll – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Jan 8, 2019 9:00:26 AM 
+        
+
+        
+          Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is Arielle Telesmanic of Scroll.
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+Blockchain is quite different from its centralized information system’s counterparts. It is very important to understand the fundamentals of Blockchain Technology and design a Blockchain ecosystem that is both cost effective and efficient to provide the favorable conditions needed to support industry migration or a public user base depending on intended use. Before getting to carried away at the drawing board learn about smart contracts, consensus models, blockchain states and the nature of the peer to peer distribution of data within a blockchain system. Ask yourself, “Can this scale? Is this a better alternative to traditional systems? What information do I need to record and how is this information being distilled to the right participants?
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+Currently, I am working on the logistics and system design of three blockchain projects focused on ensuring data integrity in supply chains and streamlining data recovery in the advent of a data breach or leak. To complement the data recovery project, we are also developing a main net to strengthen the modularity and ease of use in migrating to a Blockchain. Our efforts include optimizing transaction speeds, side chain communication and a method to promote efficient change-management.
+ 
+My interest in blockchain peaked as I noticed the advancements in quantum computing have been Signiant. Quantum computing’s ability to decrypt cryptosystems used in industry is concerning and there needs to be more development on quantum-resistant encryption and data verification/handling.
+ 
+What project in Hyperledger are you working on? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+Currently, we are working with Hyperledger Fabric and Composer. Hyperledger’s framework uses chaincode which allows us to work with different states of the blockchain per transactions triggers by different applications. Out of the box, Hyperledger has promise in aiding the permissioned access to states of the ledger which is not typically supported in traditional Blockchain solutions. More information to follow on our integration efforts and contribution to the Hyperledger framework on Https://scroll.network
+ 
+As Hyperledger’s incubated projects start maturing and hit 1.0s and beyond, what are the most interesting technologies, apps or use cases coming out as a result from your perspective?
+ 
+Although Blockchain technology originated as a fintech solution, I am more interested in identity management and data quality assurance use cases (specifically data validity). The world is data-driven. Whether data is used to report manufacturing defects, drive patient care plans or execute a transaction that involves Personally Identifiable Information, it is of utmost importance that data is accurate.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

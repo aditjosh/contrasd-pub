@@ -1,0 +1,242 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-6821: Support ENS Name for Web3 URL
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+      ⚠️ Draft
+    
+    
+    
+      Standards Track: ERC
+    
+  
+  
+    
+      ERC-6821: Support ENS Name for Web3 URL
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  A mapping from an ENS name to the contract address in Web3 URL
+
+  	Authors	Qi Zhou (@qizhou), Qiang Zhu (@qzhodl)
+	Created	2023-04-02
+	Discussion Link	https://ethereum-magicians.org/t/eip-6821-support-ens-name-for-web3-url/13654
+	Requires	
+
+  EIP-137, 
+
+  EIP-634, 
+
+  EIP-3770, 
+
+  EIP-4804
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+	Rationale
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This standard defines the mapping from an Ethereum name service (ENS) name to an Ethereum address for ERC-4804.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+ERC-4804 defines a web3://-scheme RFC 2396 URI to call a smart contract either by its address or a name from name service.  If a name is specified, the standard specifies a way to resolve the contract address from the name.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+Given contractName and chainid from a web3:// URI defined in ERC-4804, the protocol will find the address of the contract using the following steps:
+
+
+	Find the contentcontract text record on ENS resolver on chain chainid.  Return an error if the chain does not have ENS or the record is an invalid ETH address.
+	If the contentcontract text record does not exist, the protocol will use the resolved address of name from ERC-137.
+	If the resolved address of name is the zero address, then return an “address not found” error.
+
+
+
+Note that contentcontract text record may return an Ethereum address in hexadecimal with a 0x prefix or an ERC-3770 chain-specific address.  If the address is an ERC-3770 chain-specific address, then the chainid to call the message will be overridden by the chainid specified by the ERC-3770 address.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+The standard uses contentcontract text record with ERC-3770 chain-specific address instead of contenthash so that the record is human-readable - a design principle of ERC-4804.  Further, we can use the text record to add additional fields such as time to live (TTL).
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+No security considerations were found.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Qi Zhou (@qizhou), Qiang Zhu (@qzhodl), "ERC-6821: Support ENS Name for Web3 URL [DRAFT]," Ethereum Improvement Proposals, no. 6821, April 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-6821.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

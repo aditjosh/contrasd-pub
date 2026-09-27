@@ -1,0 +1,867 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer showcase series: Lucas Saldanha, ConsenSys – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Developer Showcase
+                            
+                        
+                    
+
+                
+                Developer showcase series: Lucas Saldanha, ConsenSys
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Aug 9, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is Lucas Saldanha, Blockchain Protocol Engineer at ConsenSys.
+ 
+Give a bit of background on what you’re working on and how you got into blockchain
+ 
+I’ve been working on the Ethereum protocol for almost three years. It all started when I joined ConsenSys and started contributing to the project that would become Hyperledger Besu. I didn’t have much experience with blockchain or distributed systems when I started. Still, I have met some incredible people in the blockchain space, and, with their help, I was able to learn more and be an active member of the community. At the moment my time is dedicated to working on enterprise features in Besu, like Private Transactions, Network Permissioning and more.
+ 
+What Hyperledger frameworks or tools are you using in your projects? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+Regarding Hyperledger projects, my hands-on experience is limited to Besu. I haven’t had the chance to deep-dive into other Hyperledger projects yet. I am also on the Hyperledger Architecture Working Group, which has given me the opportunity to hear from other developers their experiences and learn from them.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+I believe we are now getting into a new era for blockchain technology. It is time to take everything that we learned so far and start solving real-world problems. I predict we will see exciting projects in this coming year, and Hyperledger should keep an eye out for projects that can benefit from joining the group and help them flourish.
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+Don’t wait another day to start! Blockchain technology has the potential to change the status quo on how technology is used and affects our day-to-day life. Now more than ever, the world needs technologies that can help us. 
+ 
+There are many projects and a bunch of questions that need answers. The blockchain community needs all the help that we can get! Every day is a learning day when we are working with blockchain, and it is exciting to be a part of it. You don’t want to miss out!
+ 
+As Hyperledger’s projects continue to mature, what do you see as the most interesting technologies, apps, or use cases coming out as a result?
+ 
+I am happy with the way that Hyperledger Besu has evolved since it joined Hyperledger. Besu started as a “new kid in the block,” but now it has proved to be a reliable Ethereum client with significant adoption, both by individuals and enterprises. By following Hyperledger processes and getting an active status, we have shown the world that Besu is a serious project with great potential.
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+I would love to see blockchain being used on democratic voting systems. It would be great to have a decentralized system that could replace paper-based vote (like in the US), and centralized electronic voting systems (like in Brazil). Both methods have their issues, and, unfortunately, we haven’t found a better replacement. But there is so much at stake in an election that I believe a trustworthy blockchain-based voting system would be amazing!
+ 
+Where do you hope to see Hyperledger and/or blockchain in five years?
+ 
+I hope to see Hyperledger projects being the number one option for everyone when it comes to blockchain technology. I also want to see different blockchain technologies working together. From the user point of view, I would love to see more accessible blockchain technologies to the end-user, with massive adoption worldwide.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+Be pragmatic! Find the balance between time, money and quality and remember that, at the end of the day, we implement solutions to solve real problems. Don’t neglect a solution but don’t over-engineer it either. The best developers I have ever worked with weren’t the smartest ones but the ones that knew how to share their ideas, to listen, and to compromise.
+ 
+What technology could you not live without?
+ 
+Well, this will probably be a bit controversial, but I’m a big fan of Java! I know it has got some problems, but it is my go-to language (probably because I have been working with it for so long that I know that I can do anything I want with it).
+ 
+I would also say that my laptop is essential because it is where I can do all my coding!
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

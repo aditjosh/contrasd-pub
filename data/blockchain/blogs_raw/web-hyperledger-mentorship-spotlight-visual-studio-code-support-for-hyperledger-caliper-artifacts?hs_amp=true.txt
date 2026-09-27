@@ -1,0 +1,96 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Visual Studio Code support for Hyperledger Caliper artifacts – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Mentorship Spotlight: Visual Studio Code support for Hyperledger Caliper artifacts – Hyperledger Foundation
+
+        
+
+        
+           Written by Eravatee Raje | Feb 27, 2023 6:00:00 AM 
+        
+
+        
+          What did you work on?
+ 
+Project name: Visual Studio Code support for Hyperledger Caliper artifacts
+ 
+A little background to the project 
+ 
+Hyperledger Caliper is a tool for performance benchmarking of existing Hyperledger projects. The goal here was to build a Visual Studio Code (VS Code) extension for Caliper to help developers understand the capabilities of Caliper and help work with it more effectively.  
+ 
+Objective 
+ 
+The primary objective of the project was to have a Visual Studio extension that provided assistance with the multiple configuration files the user has to write and to develop a way to index the config files on VS Code.  
+ 
+Mentor
+ 
+	Attila Klenik, Budapest University of Technology and Economics, Critical Systems Research  Group 
+
+ 
+What did you learn or accomplish?
+ 
+Achieved Outcomes 
+ 
+	Create a schema for the benchmark configuration file of Hyperledger Caliper. 
+	Create a schema for the Hyperledger Fabric network configuration file of Caliper. 
+	Create a schema for the Ethereum/Hyperledger Besu configuration file of Caliper. 
+	Create a schema for the runtime configuration file of Caliper. 
+
+ 
+Obstacles faced 
+ 
+I was supposed to create YAML schema files to help with creating schema for configuration files. The VSCode API does not traditionally come with support for YAML schema. It was complicated to navigate this issue. But we successfully found a solution for it. I initially attempted to build a solution by myself but, during the research, bumped into a plugin designed by RedHat that helped me achieve what I set out to do.
+ 
+Highlights of my experience 
+ 
+	I learned that the open source developer community is very helpful and friendly. My mentor was available to answer questions and go through issues, if any, with me.  
+	It was surprising how smoothly I could interact with my mentor and complete my tasks despite the time zone differences. The world is truly becoming a smaller place with all the technology that bridges gaps and allows for seamless work. 
+	It was very exciting to see my very first open source contribution go up online and for me to see my commit on the Hyperledger Caliper repository. It is a moment I will cherish. 
+
+ 
+What comes next?
+ 
+The extension itself can be developed a lot more with a few added features, such as having a mechanism to identify and alert users to which configuration files are essential, to provide for a more seamless experience for the developer using it. It would be interesting to see it grow and become a tool that many people use. I personally wish to continue working with the open source community for more exciting work and contributions.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

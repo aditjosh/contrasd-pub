@@ -1,0 +1,195 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-5875 Opcode for TXNUM - EVM - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      EIP-5875 Opcode for TXNUM
+    
+
+
+      
+          
+            
+              
+              
+                EVM
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                xinbenlv
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 4, 2022,  5:56pm
+                  
+                  
+
+1
+              
+            
+            
+              Hi, all I am proposing EIP-5875 to add opcode to retrieve TXNUM
+
+A TX is an atomic point of time for world state.
+
+Currently we have access to blocknum but there is no way to access a txnum within a smart contract.
+
+We hereby propose a TXNUM opcode instruction to fetch TXNUM which can be used to
+
+	identify the ordering of exact transaction in its block
+	Better than blockNum: identifying uniquely and unambiguously the world state.
+	Better than txHash: allow simply arithmatic by BlockNum.TxNum
+
+
+It would be helpful for on-chain and off-chain indexing and snapshotting.
+
+An example of use-case is EIP-5805 Voting with Delegation wants to store snapshot of voting rights. The current option with with either block.timesamp or block.number all only have the granularity at the level of blocks. But world state changes across transaction. If there is any TX in the same block cause a voting right to change, the blocknum or block.timstamp will not be sufficient to pin-point the world state of snapshot of voting rights.
+
+Please share your feedback in the main discussion thread
+
+
+  
+      
+
+      Fellowship of Ethereum Magicians – 4 Nov 22
+  
+
+  
+    
+
+EIP-5875: Opcode for TX number in a block
+
+
+  The TX is an atomic point of time for world state.  Currently we have access to blocknum but there is no way to access a txnum within a smart contract.  We hereby propose a TXNUM opcode instruction to fetch TXNUM which can be used to   identify the...
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

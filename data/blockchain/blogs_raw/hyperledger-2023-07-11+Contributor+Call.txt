@@ -1,0 +1,824 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2023-07-11 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+	2023-06-20 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-06-06 Contributor Call
+
+
+
+
+
+	2023-05-23 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-05-09 Contributor Call
+
+
+
+
+
+	2023-04-25 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2023-04-11 Contributor Call
+
+
+
+
+
+	2023-03-28 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-03-14 Contributor Call
+
+
+
+
+
+	2023-02-28 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-02-14 Contributor Call
+
+
+
+
+
+	2023-01-31 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-01-31 Contributor Call - AMEA Reschedule
+
+
+
+
+
+	2023-01-17 Contributor Call
+
+
+
+
+
+	2023-01-03 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-07-11 Contributor Call
+
+
+
+
+
+	2023-07-18 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2023-08-01 Contributor Call
+
+
+
+
+
+	2023-08-15 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-09-05 Contributor Call - EMEA Friendly Time
+
+
+
+
+
+	2023-09-12 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-10-02 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2023-10-10 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-10-31 Contributor Call
+
+
+
+
+
+	2023-11-07 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2023-11-28 Contributor Call
+
+
+
+
+
+	2023-12-05 Contributor Call - APAC Friendly Time
+
+
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2023-07-11 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2023-07-11 Contributor Call
+
+	Francesco Andreoli
+
+
+
+	Ry Jones
+
+
+
+	Matt Nelson (Deactivated)
+
+
+
+
+
+Owned by Francesco Andreoli
+
+
+Last updated: Jul 11, 2023 by Ry Jones
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨https://zoom.us/j/97540031823?pwd=dEJrRW1LakFlWnZPelI3VGxoVjg2dz09)
+EMEA Friendly TimeÂ (https://www.timeanddate.com/worldclock/converter.html?iso=20230412T160000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	9 am Tuesday Los Angeles time
+	12 am Tuesday New York time
+	18h Tuesday Paris time
+
+Agenda
+	Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Q2 Report submitted - https://github.com/hyperledger/toc/pull/133
+
+
+	Release updates	23.4.4 - Bug fix releaseÂ 
+	23.7.0 - Upcoming (Burn-in Friday the 21st)Â 	New layered tx pool as the Mainnet default	Running on production validators
+	Bug fixes uncovered to be included in the 23.7.0 release
+	Old pool could still be enabledÂ 
+	Private networks â†’ Default of 200 future tx by account was bumped to 500 in testing and didn't impact performanceÂ 
+	Avoiding any limit for local transactions (needs to be implemented) - might help with private network use-case.	Another flag (default allow all?) that allows you to tune local transactions allowed in the pool
+
+
+
+
+	BONSAI as default (need discovery)
+
+
+
+
+	Work Updates	Discussion of consensus mechanism plug-ins/modularity â†’	Modular Consensus - Working group / ApproachÂ 	Start with PoW?
+	Setting meeting at the end of July for working group start â†’ Matt N to share in #besu-contributors
+	Matt N to send materials on Plug-In system to call participants (Nischal, George, Diego, Matt W, Justin F)
+
+
+	Miro â†’ https://miro.com/app/board/uXjVMCPHPfg=/?share_link_id=795349574835 (Password: hyperledger)
+	Modularity Review
+
+
+	Technical documentation requests â†’Â 	Plug-ins and new updates to the features â†’ Matt N to create a page for plug-in system feedback and pain-points and details/tutorials/questions	Any time we update the plug-in API, we need to make sure we bring this back to the documentation
+	Need to make sure we are cataloging design goals and approaches
+	Specification of interface between the plug-ins and Besu as we modify the code in the docs
+
+
+	Trie-log shipping â†’ Gary, Karim
+	Need to place this back in the API docs
+
+
+	EVM LibraryÂ 
+	More 
+
+
+	Deprecation	âœ… Future removal of the Forest world state pruning https://besu.hyperledger.org/en/stable/public-networks/reference/cli/options/#pruning-enabled
+
+	âœ… Database version 0 - https://github.com/hyperledger/besu/pull/5681
+
+	âœ… GoQuorum Compatible Privacy - https://github.com/hyperledger/besu/pull/5607
+
+
+
+	Checker FrameworkÂ 	https://github.com/hyperledger/besu/pull/5536#discussion_r1247180442
+	Opening a PR against Danno's EVM performance work to see the state of the EVM with these changes later on â†’ Justin F
+
+
+
+
+	Other Business	REPEAT: RFC -Â Proposal: Avoid Cherry-Picked Releases - added Suggested Deprecation Policy
+
+
+	Metrics Review -Â https://insights.lfx.linuxfoundation.org/projects/hyperledger%2Fbesu/dashboard;quicktime=time_filter_3Y
+	Open Forum	Performance Testing with Caliper - Web3Labs	IBFT/QBFT testing, performance is not that great
+	Ameziane & Nischal â†’ to collaborate on Discord, Ameziane to provide advice on set-up and tests and review some resultsÂ 
+	Block processing is done 3 times per block on QBFT networks â†’ Ameziane POC https://github.com/ahamlat/besu/tree/cache-validation-block
+
+
+
+
+	Future Topics
+
+
+
+Recording
+	https://youtu.be/cYYXEp9NW7I
+	2023 07 11 Besu chat.txt
+	2023 07 11 Besu transcript.txt
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2023-01-17 Contributor Call
+2023-01-17 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-05-09 Contributor Call
+2023-05-09 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-02-14 Contributor Call
+2023-02-14 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-06-07 Contributor Call
+2022-06-07 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-06-06 Contributor Call
+2023-06-06 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-08-02 Contributor Call
+2022-08-02 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "300c3fe6a0ff40ad841fa6bcae8aece9"}

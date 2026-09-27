@@ -1,0 +1,432 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-7231: Identity-aggregated NFT
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+      📢 Last Call
+    
+    
+      Standards Track: ERC
+    
+  
+  
+    
+      ERC-7231: Identity-aggregated NFT
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  The aggregation of web2 & web3 identities to NFTs, authorized by individuals, gives attributes of ownerships, relationships, experiences.
+
+  	Authors	Chloe Gu <chloe@carv.io>, Navid X. (@xuxinlai2002), Victor Yu <victor@carv.io>,  Archer H.
+	Created	2023-06-25
+	Last Call Deadline	2023-11-28
+	Requires	
+
+  EIP-165, 
+
+  EIP-721, 
+
+  EIP-1271
+
+
+
+
+  
+
+
+  
+    
+      
+      
+        This EIP is in the process of being peer-reviewed. If you are interested in this EIP, please participate using this discussion link.
+      
+
+    
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+    	Every compliant contract must implement the Interface
+
+
+  
+	Rationale
+	Backwards Compatibility
+	Test Cases
+	Reference Implementation
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This standard extends ERC-721 by binding individuals’ Web2 and Web3 identities to non-fungible tokens (NFTs) and soulbound tokens (SBTs). By binding multiple identities, aggregated and composible identity infomation can be verified, resulting in more beneficial onchain scenarios for individuals, such as self-authentication, social overlapping, commercial value generation from user targetting, etc. By adding a custom schema in the metadata, and updating and verifying the schema hash in the contract, the binding of NFT and identity information is completed.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+One of the most interesting aspects of Web3 is the ability to bring an individual’s own identity to different applications. Even more powerful is the fact that individuals truly own their accounts without relying on centralized gatekeepers, disclosing to different apps components necessary for authentication and approved by individuals. 
+Exisiting solutions such as ENS, although open, decentralized, and more convenient for Ethereum-based applications, suffer from a lack of data standardization and authentication of identity due to inherent anominity. Other solutions such as SBTs rely on centralized attestors, can not prevent data tampering, and do not inscribe data into the ledger itself in a privacy enabling way.
+
+The proposed pushes the boundaries of solving identity problems with Identity Aggregated NFT, i.e., the individual-authenticated aggregation of web2 and web3 identities to NFTs (SBTs included).
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The keywords “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY” and “OPTIONAL” in this document are to be interpreted as described in RFC 2119.
+
+  
+    
+      
+      
+         Every compliant contract must implement the Interface
+      
+      
+    
+
+
+// SPDX-License-Identifier: CC0-1.0
+pragma solidity ^0.8.15;
+
+interface IERC7231 {
+
+    /**
+     * @notice emit the use binding informain
+     * @param id nft id 
+     * @param identitiesRoot new identity root
+     */
+    event SetIdentitiesRoot(
+        uint256 id,
+        bytes32 identitiesRoot
+    );
+
+    /**
+     * @notice 
+     * @dev set the user ID binding information of NFT with identitiesRoot
+     * @param id nft id 
+     * @param identitiesRoot multi UserID Root data hash
+     * MUST allow external calls
+     */
+    function setIdentitiesRoot(
+        uint256 id,
+        bytes32 identitiesRoot
+    ) external;
+
+    /**
+     * @notice 
+     * @dev get the multi-userID root by  NFTID
+     * @param id nft id 
+     * MUST return the bytes32 multiUserIDsRoot
+     * MUST NOT modify the state
+     * MUST allow external calls
+     */
+    function getIdentitiesRoot(
+        uint256 id
+    ) external returns(bytes32);
+
+    /**
+     * @notice 
+     * @dev verify the userIDs binding 
+    * @param id nft id 
+     * @param userIDs userIDs for check
+     * @param identitiesRoot msg hash to veriry
+     * @param signature ECDSA signature 
+     * MUST If the verification is passed, return true, otherwise return false
+     * MUST NOT modify the state
+     * MUST allow external calls
+     */
+    function verifyIdentitiesBinding(
+        uint256 id,address nftOwnerAddress,string[] memory userIDs,bytes32 identitiesRoot, bytes calldata signature
+    ) external returns (bool);
+}
+
+
+
+
+
+This is the “Metadata JSON Schema” referenced above.
+
+
+{
+  "title": "Asset Metadata",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Identifies the asset to which this NFT represents"
+    },
+    "description": {
+      "type": "string",
+      "description": "Describes the asset to which this NFT represents"
+    },
+    "image": {
+      "type": "string",
+      "description": "A URI pointing to a resource with mime type image"
+    },
+    "MultiIdentities": [
+      {
+        "userID": {
+          "type": "string",
+          "description": "User ID of Web2 and web3(DID)"
+        },
+        "verifierUri": {
+          "type": "string",
+          "description": "Verifier Uri of the userID"
+        },
+        "memo": {
+          "type": "string",
+          "description": "Memo of the userID"
+        },
+        "properties": {
+          "type": "object",
+          "description": "properties of the user ID information"
+        }
+      }
+    ]
+  }
+}
+
+
+
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+Designing the proposal, we considered the following problems that are solved by this standard:
+
+
+
+	Resolve the issue of multiple ID bindings for web2 and web3.
+By incorporating the MultiIdentities schema into the metadata file, an authorized bond is established between user identity information and NFTs. This schema encompasses a userID field that can be sourced from a variety of web2 platforms or a decentralized identity (DID) created on blockchain. By binding the NFT ID with the UserIDInfo array, it becomes possible to aggregate multiple identities seamlessly.
+	Users have full ownership and control of their data
+Once the user has set the metadata, they can utilize the setIdentitiesRoot function to establish a secure binding between hashed userIDs objects and NFT ID. As only the user holds the authority to carry out this binding, it can be assured that the data belongs solely to the user.
+	Verify the binding relationship between data on-chain and off-chain data through signature based on ERC-1271
+Through the signature method based on the ERC-1271 protocol, the verifyIdentiesBinding function of this EIP realizes the binding of the userID and NFT owner address between on-chain and off-chain.
+    	NFT ownership validation
+	UserID format validation
+	IdentitiesRoot Consistency verification
+	Signature validation from nft owner
+
+
+  
+
+
+
+As for how to verify the authenticity of the individuals’ identities, wallets, accounts, there are various methods, such as zk-based DID authentication onchain, and offchain authentication algorithms, such as auth2, openID2, etc.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+As mentioned in the specifications section, this standard can be fully ERC-721 compatible by adding an extension function set.
+In addition, new functions introduced in this standard have many similarities with the existing functions in ERC-721. This allows developers to easily adopt the standard quickly.
+
+  
+    
+      
+      
+         Test Cases
+      
+      
+    
+
+
+Tests are included in erc7231.ts.
+
+
+To run them in terminal, you can use the following commands:
+
+
+cd ../assets/eip-7231
+npm install
+npx hardhat test
+
+
+
+
+  
+    
+      
+      
+         Reference Implementation
+      
+      
+    
+
+
+ERC7231.sol Implementation: ERC7231.sol
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+This EIP standard can comprehensively empower individuals to have ownership and control of their identities, wallets, and relevant data by themselves adding or removing the NFTs and identity bound information.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Chloe Gu <chloe@carv.io>, Navid X. (@xuxinlai2002), Victor Yu <victor@carv.io>,  Archer H., "ERC-7231: Identity-aggregated NFT [DRAFT]," Ethereum Improvement Proposals, no. 7231, June 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-7231.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

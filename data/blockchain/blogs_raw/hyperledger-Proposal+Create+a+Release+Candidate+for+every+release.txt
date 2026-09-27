@@ -1,0 +1,643 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proposal: Create a Release Candidate for every release - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+	Release Rotations 2024
+
+
+
+
+
+	Using CalVer for Besu Releases
+
+
+
+
+
+	How to do a Besu Release
+
+
+
+
+
+	Off-cycle release process
+
+
+
+
+
+	Release Process
+
+
+
+
+
+	Obsolete Proposals and Policies
+
+
+
+
+	Bi-Weekly & Quarterly Release Process
+
+
+
+
+
+	Process change proposal: burn-in
+
+
+
+
+
+	Proposal for Off-Cycle, Delayed, and Scuttled Releases
+
+
+
+
+
+	Proposal: Avoid Cherry Picked Releases
+
+
+
+
+
+	Proposal: Create a Release Candidate for every release
+
+
+
+
+
+	Proposal: Increasing 1.4 RC/Beta window
+
+
+
+
+
+	Proposal: Quarterly releases from main by default
+
+
+
+
+
+	Release Philosophy
+
+
+
+
+
+
+
+	Archive
+
+
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Proposal: Create a Release Candidate for every release
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Proposal: Create a Release Candidate for every release
+
+	Edward Evans
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Edward Evans
+
+
+Last updated: Apr 28, 2020 by Sally MacFarlane
+
+
+
+
+
+
+
+
+
+
+Summary: Have every release go through a RC process for testing and evaluation of untestable requirements
+Background
+We have had several point releases have significant errors discovered after the release has been cut and announced.Â  The most recent of these caused errors in being able to sync mainnet on a fresh box, which were not found through the normal testing and evaluation cycle.
+Proposal
+	Every release gets an RC which needs to be formally evaluated before being accepted as a release
+	Only bugfixes to the RC should be accepted into the release branch for the RC
+	Bugfixes are to be merged to the master branch and cherry-picked onto the release branch
+	Any new commit other than the release commit on the release branch invalidates any testing done on the release already
+
+Test Process
+	To be done from the next release and following:	Upgrade a node already in-sync on each of the supported testnets and mainnet(s)	Ensure it stays in-sync
+	Ensure it maintains a full peer-count
+
+
+	Fast-sync the networks from 0	Ensure we get to HEAD and stay in sync
+	Ensure we are able to maintain our peers
+	Ensure we can do so within recommended system requirements (CPU and RAM)
+
+
+
+
+	Engineering work required	Create an IBFT-based testnet	1 long running
+	1 automated setup for testing initialization
+
+
+	Create private testnet with known number of peers (cross-client and cross-version) < --max-peersÂ 	If we cannot maintain the known number of peers, fail
+	If we cannot sync to HEAD, fail
+	If we cannot maintain sync for ~24h, fail
+
+
+	Include testing of mining and stratum-integration
+	Ideally these "private" test networks will be managed by Terraform and given a test load by Caliper
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 36, "requestCorrelationId": "36c74e134cd44f07ab96e134161d8db4"}

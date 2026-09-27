@@ -1,0 +1,867 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain and the Enterprise. But What about Security? Webinar Q&A – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Blockchain and the Enterprise. But What about Security? Webinar Q&A
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jul 17, 2018
+                    
+                
+
+            
+
+            
+            
+                Our Security Maven Dave and Director of Ecosystem, Marta recently presented the “Blockchain is the New Black, but What About Security?” webinar. It was a recap of a talk they gave at RSA. As Dave and Marta covered a lot of different aspects of blockchain from the history of distributed ledgers to the shifts in security models and use cases, it was no wonder that 45 minutes was not enough. Along with the general questions about the business and community side of things, we received a lot of questions on technical topics like identity systems, permissioned vs. permissionless systems, distributed ledger technology, performance and security. It is our pleasure to go into more detail on topics discussed during the webinar. We’ve organized them into the themes below. Let’s give it a shot!
+ 
+Business & Community
+ 
+For those that don’t know Hyperledger follows a greenhouse approach, and we believe collaboration enables innovation. This means that we do not plan to merge the frameworks together into a single Hyperledger framework, or take over any other ones to eliminate it. We welcome new projects and new ideas into our greenhouse and hope that they grow.
+ 
+We got comments on the fact that its mostly enterprises that develop blockchain based solutions, and that it is hard to evaluate the return on investment. The latter is very true. This is driven by the fact that there is no one blockchain solution and even when using a certain framework, depending on the setting used the cost will be different. It is worth remembering that, as we discussed in the webinar, blockchain can only be part of a larger solution. It’s not a magic fix or something that is going to answer to all your problems. Some important metrics are being evaluated by our Performance and Scalability Working Group. As everything technical in Hyperledger, the group is open to public, so please see what’s buzzing during the next meeting or browse through the wiki and mailing list. Blockchain offers cost-effective and time-efficient features impacting the total cost of ownership positively. The blockchain technology stack is robust and verifiable alternative to traditional proprietary stacks at a fraction of the cost. Blockchain technology makes it possible to give various parties (e.g., clients, custodians and regulators) access to their own live copies of a shared system of record.[1] To answer the first part: we see more startups and freshly created companies in this space than before. Blockchain enables creativity and expansion with very limited resources. Some of the stars in the field include BigchainDB, Medicalchain, or ChainNova. 
+ 
+We have a lot of Working Groups that meet regularly and try to evaluate some of the questions and issues around Hyperledger and permissioned blockchain. There is a healthcare working group that looks at how blockchain can be used to tackle problems around patient data sharing or prescriptions. There is a public sector working group that looks at the government use cases. We have an identity working group that is working on a whitepaper discussing the identity management in Hyperledger frameworks as well as we have worked together with a group of researchers on a GDPR and Blockchain paper. Everyone is welcome to come to the meetings and submit their questions and proposals. We also welcome discussions on our chat. If you think we are missing a topic, you can propose a new working group according to the process Technical Steering Committee defined. If you have code you’d like to contribute, we have also launched Hyperledger Labs. 
+ 
+In terms of where things are going, timelines, projects and such, we have some great news for you: all the code is available, and downloadable from our github. You can check out every project’s wiki page for roadmaps and plans and participate in their weekly meetings to have a peek at what is planned. Many of the frameworks are being used for live deployments. We are very happy to say, that we know of more than 40 live deployments on Hyperledger frameworks already. Depending on the industry, various technologies are being used. The use cases spread from supply chain, trade finance, music industry, all the way to fashion, healthcare and many more. And remember that due to the open source nature of the project we are unable to track all of them! 
+ 
+Permissioned vs Public Blockchains
+ 
+If we want to get a bit more technical, let’s start with the differences between permissioned blockchains like the platforms developed by the Hyperledger community and public blockchains such as Bitcoin and Ethereum. As we discussed in the webinar, Hyperledger was created to host enterprise grade blockchain frameworks. While we do not limit ourselves to only one type (like permissioned-private or permissionless-private) today all of our frameworks are permissioned and in theory only Hyperledger Sawtooth could be implemented as a permissionless system. The main difference is that public blockchains are open to anybody and rely on much slower consensus protocols based on proof-of-work. Hyperledger blockchain platforms are designed to work in environments where all participants need to fulfill a certain set of rules to participate. This allows the distributed ledger to use faster consensus protocols and to dynamically configurable over the lifetime of the blockchain. The consensus protocols are designed to be resilient as long as some fraction of nodes—typically 2/3rds—are honest nodes. But this is less of a concern in a permissioned network because participants usually have legal and/or business incentives to not be malicious. Moreover, participants of a permissioned blockchain are already incentivized to execute the consensus so we have no need to build in tokens to such solutions. If you’d like to learn more about permissioned blockchains and Hyperledger, we strongly recommend going through the open source, free course we created. 
+ 
+Distributed Ledger Architecture
+ 
+Now, that you have the basics, we can talk about how Hyperledger permissioned blockchains encode their configuration in configuration transactions stored in the blockchain. The configuration typically specifies which cryptographic algorithms are used for public/private encryption and signing as well as which consensus protocol is being used. This design allows the blockchain to evolve with business requirements and/or changes in cryptography (e.g. quantum computers or breaks in certain algorithms). Instead of having to throw away a blockchain—something that could cause considerable harm—Hyperledger blockchains can change which algorithms they are using (e.g. increasing key lengths) and/or which consensus protocol is being used if there is a different one that better fits the environment of the network.
+ 
+Membership in a permissioned network is typically controlled by a central authority that enrolls users. The enrollment process involves the membership authority storing the public key of the user and signing it with the master key. This will allow the user to use their private key to sign their messages to other participants in the network and the other participants can trust that the user is valid member of the network. When a user is removed from the network, their key isn’t deleted, but the central authority issues a revocation certificate telling the participants that they can no longer trust the key associated with the user. This does not invalidate any of the signatures made by the removed user, it just prevents them from signing anything else. It is a bit complicated, but thankfully our Architecture Working Group has published two great white papers: on consensus mechanisms used in Hyperledger, and on smart contracts. As we grow, and if community decides to adopt other ideas, we hope to keep the papers updated. 
+ 
+Performance Metrics
+ 
+A critique often stated is that blockchain technology doesn’t scale or is too slow. This is in reference to public permissionless implementations. With private or permissioned ledgers the speed of the update mechanisms are easily addressed. Hyperledger blockchain platforms don’t have fixed consensus windows like Bitcoins’ 10 minute block time. Also, because Hyperledger platforms have configurable consensus mechanisms, each deployment can choose and configure a consensus mechanism that best meets the need of the application.
+ 
+However, we don’t have any official numbers but we do have a Performance and Scalability working group that focuses on how to measure the performance of distributed ledgers. Distributed systems are difficult to quantify in terms of performance, especially that with such a new technology there is no agreed upon standard for what we should measure so that we can compare one blockchain to another. Thankfully we also have Hyperledger Caliper, which is a tool that is aiming to stress test your implementations. 
+ 
+Identity Systems
+ 
+It is great to see a lot of excitement around Identity Systems. And hopefully with the last webinar given by our Ambassador, Daniel Hardman, many of the questions have been already answered. The excitement of blockchain based identity systems comes from the fact that the security and authentication of blockchains is distributed and at the edges as opposed to being centralized. Distributed blockchains creates the possibility of realizing the dream of truly self-sovereign identity where the data about any given person is directly under the control of the person and endorsed and annotated sources of trust—a.k.a. trust anchors—that we already recognize in society (e.g. governments, professional certification organizations, civil rights organizations, universities, etc). For instance, I could store my identity, encrypted on a server, and then track that data and make it discoverable by adding it to an identity blockchain system.
+ 
+Trust anchors like my alma mater and my local government could issue verifiable claims that are linked to my identity. The claims can cryptographically prove that I earned a university degree or that I am old enough to drive a car or consume alcohol. The important detail is that everything is under my direct control. I present the claims when needed and I can reveal only pieces of my identity as needed.
+ 
+It is important to note that none of my personal data is stored directly in the blockchain. What is stored is the metadata about my personal data. Things like when my data was created, when it was updated and when it has been accessed. Blockchains are most useful for tracking the provenance of data and in this case it is tracking the set of personal identity data. Exiting, the EU Commission’s Blockchain Observatory Data Policy & Compliance Working Group met for a workshop in Brussels, Belgium, and discussed blockchain compatibility with the GDPR.The framework build in Hyperledger, Indy, has been announced as one of the two GDPR compliant!
+ 
+Security
+ 
+We were happy to see very few security questions. It gave us hope we actually did a decent job explaining the topic thoroughly. Since distributed ledgers is still an evolving technology, specifically the permissioned variety, it may be hard to argue that it is ‘proven’ and time tested. However, the usage of vetted cryptographic primitives, sound consensus mechanisms based on decades of research and improved security and privacy—especially compared to permissionless systems—creates a substantial foundation upon which distributed ledgers are built. Blockchain and distributed ledger technology ensure immutability of the data in a network. In terms of reliability, blockchains are designed to provide a distributed and shared ledger abstraction, where ledger immutability, cryptographic authenticity and the tolerance against attacks and faults is a core property. While currently efforts to canonize blockchain-based distributed ledgers in a generalized way tend to somewhat focus on the functional side (as the “chain of blocks“ data model or the distributed ledger abstraction), a blockchain-based DLT is also positively required to be highly tolerant against faults and attacks. However, generally when a system actively allocates resources to engage dependability or security mechanisms (e.g. for fault tolerance: spatial, time or data redundancy), its peak performance potentially diminishes.[2]
+ 
+[1]https://www.accenture.com/lv-en/insight-investment-bank-challenges-blockchain-technology
+ 
+[2]https://docs.google.com/document/d/1DQ6PqoeIH0pCNJSEYiw7JVbExDvWh_ZRVhWkuioG4k0/edit#heading=h.t3gztry2ja8i
+ 
+We hope this outline of topics we dove into helps clear up some things up for some people. If interested, you can watch a replay of the “Blockchain and the Enterprise. But What about Security” webinar here: https://gateway.on24.com/wcc/gateway/linux/1101876/1668381/blockchain-and-the-enterprise-but-what-about-security
+ 
+As always, you can keep up with what’s new with Hyperledger on Twitter or email us with any other questions: info@hyperledger.org.
+ 
+ 
+ 
+ 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

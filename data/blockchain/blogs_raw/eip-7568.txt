@@ -1,0 +1,410 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-7568: Hardfork Meta Backfill - Berlin to Shapella
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+      ⚠️ Draft
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-7568: Hardfork Meta Backfill - Berlin to Shapella
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Pointers to specifications used for the network upgrades from Berlin to Shapella.
+
+  	Authors	Tim Beiko (@timbeiko)
+	Created	2023-12-01
+	Discussion Link	https://ethereum-magicians.org/t/hardfork-meta-backfill/16923
+	Requires	
+
+  EIP-2070, 
+
+  EIP-2387, 
+
+  EIP-2982, 
+
+  EIP-6122, 
+
+  EIP-6953
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+    	Beacon Chain Launch - Serenity Phase 0 [CL]
+	Berlin [EL]
+	London [EL]
+	Altair [CL]
+	Arrow Glacier [EL]
+	Gray Glacier [EL]
+	The Merge
+	Shapella
+
+
+  
+	Rationale
+	Backwards Compatibility
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+Following Muir Glacier hard fork, Meta EIPs were abandoned in favor of other ways to track changes included in Ethereum network upgrades. This EIP aggregates the specifications for these upgrades, which themselves list the specific changes included. Specifically, it covers the Beacon Chain launch (Serenity Phase 0), Berlin, London, Altair, Arrow Glacier, Gray Glacier, The Merge (Paris + Bellatrix) and Shapella (Shanghai + Capella).
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+For many years, Ethereum used Meta EIPs to document network upgrades. Recently, consensus has formed around using them again. This EIP aggregates the network upgrades who did not have Meta EIPs and links out to their specifications.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The network upgrades below are listed in order of activation. Upgrades to Ethereum’s execution layer are marked “[EL]”, and those to Ethereum’s consensus layer are marked “[CL]”.
+
+  
+    
+      
+      
+         Beacon Chain Launch - Serenity Phase 0 [CL]
+      
+      
+    
+
+
+The full specifications for the Beacon Chain at launch can be found in the v1.0.0 release of the ethereum/consensus-specs repository. Additionally, EIP-2982 provides context on the Beacon Chain design and rationale for its mainnet parametrization.
+
+  
+    
+      
+      
+         Berlin [EL]
+      
+      
+    
+
+
+The set of EIPs included in Berlin were originally specified in EIP-2070, but then moved to the berlin.md file of the ethereum/execution-specs repository.
+
+  
+    
+      
+      
+         London [EL]
+      
+      
+    
+
+
+The set of EIPs included in London are specified in the london.md file of the ethereum/execution-specs repository.
+
+  
+    
+      
+      
+         Altair [CL]
+      
+      
+    
+
+
+The full specifications for the Altair network upgrade can be found in the v1.1.0 release of the ethereum/consensus-specs repository.
+
+  
+    
+      
+      
+         Arrow Glacier [EL]
+      
+      
+    
+
+
+The set of EIPs included in Arrow Glacier are specified in thearrow-glacier.md file of the ethereum/execution-specs repository.
+
+  
+    
+      
+      
+         Gray Glacier [EL]
+      
+      
+    
+
+
+The set of EIPs included in Gray Glacier are specified in thegray-glacier.md file of the ethereum/execution-specs repository.
+
+  
+    
+      
+      
+         The Merge
+      
+      
+    
+
+
+The Merge was the first upgrade to require coordination between the execution and consensus layers. The consensus layer first activated the Bellatrix upgrade, which was followed by the activation of Paris on the execution layer.
+
+  
+    
+      
+      
+         Bellatrix [CL]
+      
+      
+    
+
+
+The full specifications for the Bellatrix network upgrade can be found in the v1.2.0 release of the ethereum/consensus-specs repository.
+
+  
+    
+      
+      
+         Paris [EL]
+      
+      
+    
+
+
+The set of EIPs included in Paris are specified in the paris.md file of the ethereum/execution-specs repository.
+
+  
+    
+      
+      
+         Shapella
+      
+      
+    
+
+
+The Shapella upgrade was the first upgrade to activate at the same time on both the execution and consensus layers. To enable this, the upgrade activation mechanism on the execution layer was changed to use timestamps instead of blocks. This is described in EIP-6953 and EIP-6122.
+
+  
+    
+      
+      
+         Shanghai [EL]
+      
+      
+    
+
+
+The set of EIPs included in Shanghai are specified in theshanghai.md file of the ethereum/execution-specs repository.
+
+  
+    
+      
+      
+         Capella [CL]
+      
+      
+    
+
+
+The full specifications for the Capella network upgrade can be found in the v1.3.0 release of the ethereum/consensus-specs repository.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+The EIP repository is well known within the Ethereum community, and Meta EIPs have historically been useful to clearly list the EIPs included in a specific network upgrade.
+
+
+While the specification process for the execution and consensus layers differ, there is value in having a single, harmonized, list of EIPs included in each upgrade, and for the lists for both layers to be part of the same repository.
+
+
+Re-introducing Hardfork Meta EIPs enables this, and allows for de-duplication in cases where an EIP affects both the execution and consensus layer of Ethereum. This EIP covers the upgrades which did not use a Hardfork Meta EIP.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+No backward compatibility issues found.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+None.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Tim Beiko (@timbeiko), "EIP-7568: Hardfork Meta Backfill - Berlin to Shapella [DRAFT]," Ethereum Improvement Proposals, no. 7568, December 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-7568.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

@@ -1,0 +1,101 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger Besu Maintainers – Antoine Toulme, Splunk
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Meet the Hyperledger Besu Maintainers – Antoine Toulme, Splunk
+
+        
+
+        
+           Written by Hyperledger | Aug 9, 2023 4:35:00 PM 
+        
+
+        
+          As interest in enterprise Ethereum has grown, so too has the community driving development of Hyperledger Besu. Purpose-built to serve as either a public or private execution client for Ethereum, Besu offers flexibility for organizations that want to mix, match or keep their options open when it comes to private and public chains.
+
+
+The growing Hyperledger Besu project and community is led by a committed group of maintainers. This group, too, has grown recently, bringing new diversity and bandwidth to Hyperledger Besu. We have invited these community leaders to share their thoughts on why they are committing their time and effort to this project. 
+
+Below, we hear from Antoine Toulme from Splunk about his work as a maintainer and what excites him about Hyperledger Besu now and in the future.
+
+Q) Why does Hyperledger Besu matter? What’s its role in the evolving DLT landscape?
+
+The world of DLT is a very competitive field where all incumbents defend their unique advantage by creating momentum through faster iteration and breakthroughs in R&D. This reduces chances of collaboration, standardization and adoption of the product. In a sense, it feels like this new wave of software projects needs to learn the lessons of the first open source movement.
+
+Hyperledger Besu is, in my opinion, the best project for real collaboration in the open source space associated with new technologies such as DLT. The project is written in Java, allowing easy collaboration with a great base of developers and enterprise traction. The project implements all the mainnet Ethereum requirements, so it is considered a first class client and runs a chunk of the transactions validated in real time.
+
+Q) What are some of the use cases it is particularly well suited to support?
+
+Hyperledger Besu is particularly well suited for consortium chains or chains dedicated to private deployments. The client has the configuration and support options required to work well within highly constrained enterprise settings.
+
+This is why Hyperledger Besu supports many different consensus algorithms besides proof of stake. It allows a smaller set of nodes to come to consensus.
+
+Q) What is the role of the community in developing Hyperledger Besu? Why is open development important?
+
+I have been a contributor to the Eclipse Foundation, \Apache Software Foundation and now Hyperledger Foundation. I also work with the Cloud Native Computing Foundation on the OpenTelemetry project.
+
+For all of those, the key indicator of success of an open source project has been the rate of onboarding new contributors onto the project. The Apache Software Foundation board reports typically hone in on the date at which the latest contributor to the project has been added.
+
+By offering an open community, highlighting "help wanted" issues, running community meetings, reviewing patches and providing guidelines through automation, we can create a virtuous cycle where new folks are able to help onboard additional resources and grow the reach of the project. The community is also a great way to declutter and rationalize the code and decisions to become more incremental, measured, and of higher quality.
+
+Q) Why is contributor diversity important?
+
+Diversity - across time zones, organizations, languages, cultures, skill, interest and more - is a useful tool to help identify what the project is centered on. It forces conversations early on to help create the core values of the project and the processes by which the community will evolve.
+
+It's particularly useful with open source projects, as they are constantly in motion, with people coming in and out.
+
+Diversity helps enforce the rule of communication in the open as well. Because of the many parties involved, it forces people to use the shared medium offered by the project - email, Slack, Discord for Hyperledger - to discuss, debate, document and come together.
+
+Q) What about the Hyperledger Besu roadmap that really excites you?
+
+I am very excited for a chance to see how the modular view of Ethereum is going to take hold with Hyperledger Besu. I understand that we have a great opportunity to decouple execution and consensus code, not just from the packaging, but even at the level of the code. I expect this will help clean up the code and facilitate enterprise use cases.
+
+I am also still interested in offering other persistence mechanisms for blockchain data besides the current RockDB approach, with Infinispan and others as options. Ideally, I'd love to see Besu behave like other enterprise software offerings: highly available, clustered, and scalable.
+
+Q) How did you get involved in Hyperledger Besu?
+
+I began working on Ethereum through my employment at ConsenSys back in 2017 and was involved for a few months in the Pantheon project, which eventually became Besu. I worked on Orion and tooling for Quorum, which were early implementations of the Enterprise Ethereum vision. Through these engagements, I became a member of the Enterprise Ethereum Alliance and eventually contributed several features to Hyperledger Besu, such as its Stratum server. I still maintain some of the libraries associated with the manipulation of bytes or network protocols associated with Hyperledger Besu. 
+
+__
+Want to be part of this growing Hyperledger Besu community? Join the Hyperledger Besu channel on Discord or the regular contributor calls. Or check out this guide to contributing and dive right in.
+
+ 
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

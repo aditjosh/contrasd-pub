@@ -1,0 +1,893 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Dutchess Project: A Tale of True Interoperability Between Multiple Blockchains – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                The Dutchess Project: A Tale of True Interoperability Between Multiple Blockchains
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Apr 26, 2018
+                    
+                
+
+            
+
+            
+            
+                As we gear up for Consensus 2018, and for the great Building Blocks Hackathon, we thought it would make sense to resurface a blog on The Dutchess Project from last year’s hackathon that demonstrated radical interoperability across the following technologies:
+ 
+	Public Ethereum accounts to transfer money
+	Solidity for business logic using smart contracts (the Dutch Auction, Escrow, Release of Funds)
+	Quorum (JP Morgan’s fork of Ethereum) for encrypting transaction payloads
+	Hyperledger Sawtooth simulating a Trusted Execution Environment (TEE) for Chess moves validation, approvals and auditability.
+	HACERA’s Self-Sovereign Decentralized ID implementation (using DIDs) for registering identity tokens and creating a permissioned and public identity chain (for secure verifiable claims)
+	Microsoft Azure cloud deployment
+
+ 
+Ten project teams took home awards from the Consensus 2017: Building Blocks Hackathon. Among them was Dutchess, a chess game built with four blockchain technologies by Jonathan Levi, Sergey Klimenko, Elan Perah and Michael Bogdanov from the HACERA team. This project beautifully illustrates how different blockchains can handle isolated responsibilities while still working together within a larger system.
+ 
+Dutchess won two challenges in total. It won the Enterprise Ethereum Alliance challenge to “use an Enterprise Ethereum Alliance stack to create a decentralized Dutch auction network with secret bid matching” and the Microsoft challenge to “leverage Microsoft Azure as part of your blockchain project.”
+ 
+
+ 
+The HACERA Dutchess team: Jonathan Levi, Sergey K, Michael B and Elan Perah receiving the Enterprise Ethereum Award from Jeremey Millar (Consensys) and Sandra Ro (CME Group)
+ 
+We spent an hour with Jonathan to learn about the Dutchess project and what blockchain developers can learn from it. At the beginning of the hackathon, Jonathan wanted to build something useful, participate in as many of the challenges as possible, learn new technologies, and apply blockchain development expertise from his company to a project. Jonathan is the founder of the blockchain technology company HACERA, which works with several blockchain technology stacks to provide secure identity and access control management of users, devices and data on blockchains. This experience shines through in the way the Dutchess project uses multiple blockchains in an auditable and verifiable chess game with identity protection and privacy preservation.
+ 
+ 
+ 
+Dutchess uses four blockchain technologies: Ethereum, Quorum, Hyperledger Indy, and Hyperledger Sawtooth
+ 
+There are six steps to each Dutchess game, which use a total of four different blockchain technologies to implement. The project uses Ethereum for payments, Quorum for smart contracts, Hyperledger Indy for identity management, and Hyperledger Sawtooth for auditable computing. In addition, the project uses three instances of Microsoft Azure. Here’s how the project leverages these technologies across the six steps.
+ 
+Step 1: Bidding in a dutch auction and sending funds into escrow
+ 
+Two users, each of whom has some funds in Ethereum, can choose to play a chess game that’s preceded by a dutch auction. During the auction, whichever player agrees to pay the auction fee wins an advantage on the game board — the winner plays with all their pieces while their opponent plays without a queen.
+ 
+This auction uses one instance from Microsoft Azure that runs Quorum, which is a permissioned version of Ethereum. Quorum’s smart contract contains the logic of the auction and the ability to place blocks periodically. Since a dutch auction is a reverse auction, the smart contract starts with a high offer and reduces the offer with each block placed. The offer starts with 100 Ether. At the next block, it’s 90 Ether. At the next block, it’s 80 Ether, and so on until a player places a bid to accept the offer. By accepting the offer, this player wins the auction, gets the advantage, and sends the value of the bid into escrow via Quorum.
+ 
+Step 2: Registering IDs for Dutchess accounts
+ 
+With the bidding done, each player moves on to register an ID for his or her Dutchess account. The IDs allow players to play without exposing their actual identity. To the user, it just looks like they are choosing a username, but behind the scenes the game is registering a Sovrin identity using Hyperledger Indy. This registration process outputs a signed token and a waive token. The waive token is the one that you see in the game interface.
+ 
+
+ 
+Step 3: Play chess with the ID token
+ 
+Now, players start playing chess with their tokens. Each game has a white player, a black player, a transaction processor, and an auditor. Each time a move is made by a player, the move is sent to the transaction processor, which checks to ensure that the move is valid. If the move is valid, the transaction processor then posts the state of the board to an instance of Hyperledger Sawtooth in the form of a string. This string documents every position of every piece on the board at the end of each turn. Since a new string is committed to Hyperledger Sawtooth at the end of every move, all Dutchess games can be replayed and analyzed one move at a time by reading the string data back from the blockchain.
+ 
+Step 4: Update ranking
+ 
+When players complete a game, the auditor sends a ranking agent information about who won, who lost, or if the game was a stalemate. The ranking agent keeps every outcome of every Dutchess games in the Hyperledger Sawtooth blockchain, where it can be queried. The ranking agent also keeps a tally of player rank among all registered Dutchess player IDs.
+ 
+Step 5: Payment resolution with claims, proof of winning, and proof of ranking
+ 
+To collect payment after winning a Dutchess game, the winning player must make a claim that he or she won the game. If the claim is true, the ranking agent will issue a signed proof of the win, which the player can take to Quorum for payment resolution.
+ 
+Players can also use the ranking agent to output a proof of rank instead of a proof of win. For example, the top ranked player could make a claim that they are #1. The ranking agent would issue a signed proof, that yes, they are #1. This proof could be used to prove a player’s rank to some other system, such as a betting system based on player rank.
+ 
+Step 6: Release funds
+ 
+As long as the proof from the ranking agent says the player did indeed win the game, Quorum pays Ether out to the winner from the escrow account setup in step 1.
+ 
+The architecture of Dutchess achieves isolation of responsibility
+ 
+Here is a diagram of the architecture of Dutchess, as presented at the Consensus 2017: Building Blocks Hackathon:
+ 
+
+ 
+The beautiful thing about this architecture is how the game completely isolates multiple types of responsibilities. You can play chess in an anonymous way because the chess game doesn’t know your Ethereum account. You can know who won a game without having to know how the game was won because Hyperledger Sawtooth has the play-by-play while the ranking agent only knows wins, losses, stalemates, and a calculated player rank. This allows players to generate a proof of win or proof of rank from the ranking agent without it having to know anything about the amount of Ether being awarded. Finally, Quorum is able to distribute funds without needing to know anything about how wins and rankings are established. Quorum only needs to know that a player won, or that a player ranks at a certain position. Thus, each responsibility within the game is completely isolated.
+ 
+Implications for business applications built on blockchain technologies
+ 
+The Dutchess project shows how blockchain developers need not worry about consolidating all functionality of their business applications to one blockchain. Instead, different organizations with different responsibilities can work with the best blockchain for their specific type of responsibility. Sometimes that will be a permissionless blockchain like Ethereum or Bitcoin. Other times that will be a permissioned blockchain like Hyperledger Sawtooth or Quorum. Points of interoperability can be established between one isolated responsibility and another.
+ 
+The key takeaway here is that any time a business application requires something as a condition of something else, one blockchain can handle the something, and hand a proof of it off to another blockchain that can handle the something else. This architecture of isolated responsibilities can be applied to any kind of real-world application in areas such as auctions, trading, futures, betting, stock trading, equity, asset management, and more.
+ 
+
+ 
+Next steps for facilitating interoperability between multiple blockchains
+ 
+In less than two days, the Dutchess team achieved a lot. They made it clear that the problem of working with more than one technology stack is not a technical one. Blockchain developers can start thinking out of the box, connecting blockchains, and doing it securely. A huge amount of value can be created just by facilitating interoperability.Before you start your next blockchain application, be sure to check out the Dutchess game at https://hacera.com/demos. 
+ 
+We can’t wait to see what folks build this year with Hyperledger technologies at the Building Blocks Hackathon prior to Consensus on May 12-13. You can see all the ways Hyperledger will be involved at Consensus here – hope to see you there!
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

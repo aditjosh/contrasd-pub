@@ -1,0 +1,939 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-08-02 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+	2022-01-04 Besu Contributor Call
+
+
+
+
+
+	2022-01-11 Besu Contributor Call - Off-Cycle
+
+
+
+
+
+	2022-01-20 Besu Contributor Call
+
+
+
+
+
+	2022-01-31 Besu Contributor Call
+
+
+
+
+
+	2022-02-15 Contributor Call
+
+
+
+
+
+	2022-03-01 Contributor Call
+
+
+
+
+
+	2022-03-15 Contributor Call
+
+
+
+
+
+	2022-03-29 Contributor Call
+
+
+
+
+
+	2022-04-12 Contributor Call
+
+
+
+
+
+	2022-04-26 Contributor Call
+
+
+
+
+
+	2022-05-10 Contributor Call
+
+
+
+
+
+	2022-06-07 Contributor Call
+
+
+
+
+
+	2022-05-24 Contributor Call
+
+
+
+
+
+	2022-06-21 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-07-05 Contributor Call
+
+
+
+
+
+	2022-07-19 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-08-02 Contributor Call
+
+
+
+
+
+	2022-08-16 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-08-30 Contributor Call
+
+
+
+
+
+	2022-09-13 Contributor Call - APAC
+
+
+
+
+
+	2022-09-27 Contributor Call
+
+
+
+
+
+	2022-10-11 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-10-25 Contributor Call
+
+
+
+
+
+	2022-11-08 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-11-22 Contributor Call
+
+
+
+
+
+	2022-12-06 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-12-20 Contributor Call
+
+
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2022-08-02 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2022-08-02 Contributor Call
+
+	Francesco Andreoli
+
+
+
+
+
+Owned by Francesco Andreoli
+
+
+Last updated: Jul 31, 2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨https://zoom.us/j/97540031823?pwd=dEJrRW1LakFlWnZPelI3VGxoVjg2dz09)
+EMEA Friendly TimeÂ (https://www.timeanddate.com/worldclock/converter.html?iso=20220607T150000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	8 am Tuesday Los Angeles time
+	11 amÂ Tuesday New York time
+	17hÂ Tuesday Paris time
+
+Agenda
+	Â Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements
+	Release updates
+
+Work Updates
+		Merge Update (Justin Florentine )
+
+
+	Other Business
+	Metrics Review -Â https://insights.lfx.linuxfoundation.org/projects/hyperledger%2Fbesu/dashboard;quicktime=time_filter_3Y
+	Roadmap Review -Â Roadmap	optimistic support, rollup client diversity questionÂ 
+	New addition - peering improvement and node operations improvement
+
+
+	Open Forum
+	Chitchat calendar invite for the Besu group in Discord (every week after our Contributor Call)
+
+
+	Future Topics
+
+
+
+
+
+    
+    
+
+
+
+    
+        
+            
+            
+            
+                                                    
+        
+
+                
+
+
+
+
+
+
+    
+
+
+	Â 	
+            File
+        	
+            Modified
+        
+	
+                     
+
+                                        
+
+                        
+                                                Labels
+
+                        
+
+	
+		
+    
+    	
+            No labels
+        
+
+
+    
+
+
+
+
+                                                     
+
+                        
+                                                    
+                                                                        Preview
+                                
+                                                                                                                                                                                                                            
+                                    View
+                                                            
+
+                                            
+
+
+                	
+                    
+                        
+
+    
+
+
+Text File                                                    
+                                GMT20220705-150521_Recording.txt
+                            
+                        
+                                                                        
+                                            
+
+                	
+                                        Jul 31, 2022
+                    by
+                                        Francesco Andreoli
+                            
+	
+                     
+
+                                        
+
+                        
+                                                Labels
+
+                        
+
+	
+		
+    
+    	
+            No labels
+        
+
+
+    
+
+
+
+
+                                                     
+
+                        
+                                                    
+                                                                        Preview
+                                
+                                                                                                                                                                                                                            
+                                    View
+                                                            
+
+                                            
+
+
+                	
+                    
+                        
+
+    
+
+
+File                                                    
+                                GMT20220705-150521_Recording.transcript.vtt
+                            
+                        
+                                                                        
+                                            
+
+                	
+                                        Jul 31, 2022
+                    by
+                                        Francesco Andreoli
+                            
+
+
+
+
+    
+
+    
+            
+
+
+    
+                    Download All
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 10, "requestCorrelationId": "b3447548d13e432dabd49f7032875350"}

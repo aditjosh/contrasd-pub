@@ -1,0 +1,251 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What communication protocols do the eth clients/nodes use for communicating with other eth clients? - Networking - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      What communication protocols do the eth clients/nodes use for communicating with other eth clients?
+    
+
+
+      
+          
+            
+              
+              
+                Networking
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                EggsyOnCode
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023, 12:37am
+                  
+                  
+
+1
+              
+            
+            
+              Like normally we have HTTP or SSH or other networking protocols dictating how machines communicate via the OSI model; in a similar vein i was wondering how do eth nodes communicate with each other and sync the latest EVM state with the local EVM state stored on their SSDs.
+
+Any links to official documentation or other helping material would be appreciated!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                thogard785
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    November 19, 2023,  3:19pm
+                  
+                  
+
+2
+              
+            
+            
+              
+  
+      
+
+      GitHub
+  
+
+  
+    
+
+
+GitHub - ethereum/devp2p: Ethereum peer-to-peer networking specifications
+
+
+  Ethereum peer-to-peer networking specifications. Contribute to ethereum/devp2p development by creating an account on GitHub.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+I believe the current protocol is ETH68 but I could be out of date.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                mratsim
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 22, 2023,  9:47am
+                  
+                  
+
+3
+              
+            
+            
+              	Networking layer | ethereum.org
+	libp2p & Ethereum (the Merge) | libp2p Blog & News
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

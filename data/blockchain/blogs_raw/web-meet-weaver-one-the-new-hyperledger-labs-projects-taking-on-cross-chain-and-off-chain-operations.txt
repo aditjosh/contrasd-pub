@@ -1,0 +1,881 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet Weaver, one of the new Hyperledger Labs taking on cross-chain and off-chain operations – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Meet Weaver, one of the new Hyperledger Labs taking on cross-chain and off-chain operations
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jun 9, 2021
+                    
+                
+
+            
+
+            
+            
+                As enterprises and organizations increase their adoption and deployment of blockchain technology and networks, the overall complexity of systems are growing exponentially. While it’s exciting to see the expanding reach of blockchain, it also creates a host of new requirements for cross chain and off chain sharing of data, transactions and more. 
+ 
+At Hyperledger Global Forum (HGF) 2020 in Phoenix, one group of developers got together to share their work and create a blockchain integration tool designed to allow users to securely integrate different blockchains. They brought their project to Hyperledger Labs and, within a few months, it was approved as Hyperledger Cactus. 
+ 
+During this year’s HGF, three new Hyperledger Labs that are each tackling elements of cross-chain or off-chain operations are making their debuts: FireFly, Weaver and YUI. Read on to learn more about Weaver.
+ 
+Meet Weaver: DLT Interoperability
+ 
+By Venkatraman Ramakrishna, IBM Research – India
+ 
+We are excited to announce Weaver, a project that was incubated in IBM Research. Weaver is an architectural framework with a family of protocols that enables scalable interconnectivity and interoperability between distributed ledgers while preserving core tenets of decentralization and security. This framework was motivated by the fragmentation of the blockchain ecosystem, with different flavors of permissioned blockchain and distributed ledger technologies (DLTs) leading to the proliferation of independent networks managing processes of limited scope and keeping assets in silos. Weaver’s mission is to link processes and enable seamless but controlled flow of assets and data across network boundaries. It seeks to achieve this while maintaining the autonomy of the networks and the ledgers within and avoiding dependencies on trusted intermediaries.
+ 
+Overview
+ 
+Weaver is a general-purpose interoperability framework that provides a common set of capabilities for trustworthy information communication across ledgers, whether they belong to the same network or different networks running on different DLT stacks. Key principles that guide Weaver’s design are:
+ 
+	Accommodate DLT heterogeneity without favoring a particular DLT design
+	Allow networks to maintain their independence and collective sovereignty
+	Minimize coupling during cross-network interactions
+	Rely on common standards for cross-network protocol units
+	Do not require a trusted intermediary or third-party ledger
+	Do not require changes to existing DLT stacks
+	Make no security and trust assumptions on Weaver components
+	Treat privacy and least privilege as a first-class requirement
+
+ 
+Weaver addresses three broad classes of use cases:
+ 
+	Data transfer: ledger data (state) communication with proof
+	Asset transfer: movement of an asset from one ledger to another
+	Asset exchange: atomic exchange of asset ownership in different ledgers
+
+ 
+The protocols to realize these use cases can be abstracted into a common stack of layers akin to the OSI model, from message formats at the bottom to governance rules at the top (see diagram below).
+ 
+
+ 
+ 
+The Weaver architecture has three major components underpinning it:
+ 
+	DLT-agnostic Relays with DLT-specific drivers to route cross-network requests and responses.
+	Interoperation modules that operate through their network’s native consensus processes, typically smart contracts or decentralized applications.
+	Decentralized identity framework to share and authenticate network members’ identities.
+
+ 
+The figure below illustrates this architecture, with a typical Fabric network to the left and a typical Corda network at the right. Weaver components are marked in green, and the design of the relay is called out in detail.
+ 
+
+ 
+ 
+Hyperledger Labs Project
+ 
+The Weaver Hyperledger Labs project was launched at the end of March 2021 with specifications detailed in a set of RFCs, a framework to run end-to-end network tests for updated or new interoperation protocols, and documentation to help users understand Weaver concepts and code in more detail.
+ 
+Weaver currently offers protocols for data transfers among Hyperledger Fabric and Corda networks, and asset exchanges among Hyperledger Fabric networks. We hope to expand the coverage to more DLTs with the help of the community! Please check out the project repository for useful links and references and start contributing.
+ 
+Learn more about Weaver and other recent code contributions from IBM in this panel from HGF: 
+ 
+Panel: Hyperledger Contributions from IBM – Kelly Ryan, Rakesh Mohan, Chris Ferris, Arnaud Le Hors & Elli Androulaki, IBM (Sponsored by IBM)
+ 
+For a more technical dive into the challenges of interoperability and approaches to tackles them, check out this HGF session:
+ 
+Blockchain Interoperability: Challenges, Ongoing Efforts, and Potential Solutions – Vinayaka Pandit, IBM Research – India
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

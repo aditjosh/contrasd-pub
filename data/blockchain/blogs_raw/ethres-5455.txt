@@ -1,0 +1,691 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solidity AI demo - Data Science - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Solidity AI demo
+    
+
+
+      
+          
+            
+              
+              
+                Data Science
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 15, 2019,  8:51am
+                  
+                  
+
+1
+              
+            
+            
+              A demo of first-ever AI-enabled in a Solidity smart contract running on ETH side chain.  An image is being uploaded into a decentralized social network running on a blockchain.  Once the image is uploaded into the blockchain file storage, a precompiled SmartContract analyzes it using Resnet50 neural network, and rejects it if it contains an image of a cat.
+
+
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                rumkin
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 17, 2019,  1:46pm
+                  
+                  
+
+2
+              
+            
+            
+              Exciting. Wondering how much gas was spent by the call? And what size the image has?
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                Econymous
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 17, 2019,  6:25pm
+                  
+                  
+
+3
+              
+            
+            
+              Very promising.  I have the same questions,  how expensive is this operation?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                wanghs09
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 31, 2019,  7:25am
+                  
+                  
+
+4
+              
+            
+            
+              seems one way to filter out illegal information, but too expensive I guess
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 4, 2019, 12:23pm
+                  
+                  
+
+5
+              
+            
+            
+              Thank you guys - the operation is not expensive. It is the same order of magnitude as crypto algorithms (e.g. ECDSA signature verification) . We did not decide on the gas value yet, but we are able to do several hundred AI predictions per second in EVM …
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                wanghs09
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 10, 2019,  3:11pm
+                  
+                  
+
+6
+              
+            
+            
+              interesting, what about the transaction size and parameter size for the AI model?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                burrrata
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 15, 2019,  4:19am
+                  
+                  
+
+7
+              
+            
+            
+              This is awesome! 
+
+What kind of sidechain are you using?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                demisstif
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 17, 2019, 11:27am
+                  
+                  
+
+8
+              
+            
+            
+              Interesting:laughing:，want more detail
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                kashishkhullar
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 23, 2019,  9:44pm
+                  
+                  
+
+9
+              
+            
+            
+              Is the image processing off chain? It certainly cannot be on chain. Did you use a their party server to delegate the expensive computation?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 14, 2019,  3:56pm
+                  
+                  
+
+10
+              
+            
+            
+              Yep - in our case image processing is precompiled smartcontract on chain.
+
+We are using SKALE chains.
+
+
+  
+      
+      GitHub
+  
+  
+    
+
+skalenetwork/skaled
+
+
+SKALED is SKALE Ethereum-compatible, high performance C++ Proof-of-Stake client, tools and libraries. Uses SKALE consensus as a blockchain consensus core. Implements file storage and retrieval as a...
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                nollied
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 2, 2022,  6:14am
+                  
+                  
+
+11
+              
+            
+            
+              where are the inferences displayed? i couldn’t tell from the video, i only saw how the image was uploaded.
+
+also, could you share the code you wrote for this?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                sametcodes
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 17, 2022,  3:40pm
+                  
+                  
+
+12
+              
+            
+            
+              Is the code available or could you mention any open-source projects that demonstrate a similar idea? I would like to read and learn more.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                wangtsiao
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 19, 2022,  2:15am
+                  
+                  
+
+13
+              
+            
+            
+              Awesome! It’s hard to believe that this is an idea which has been realized in 2019.
+
+since I’m newbie to SKALE sidechain, so some questions here.
+
+	
+According to the large number of user requests in the past, we need to update the recognition model to improve the accuracy. Whether the model can still be updated after the contract is deployed?
+
+
+	
+Is SKALE sidechain based on zero-knowledge proofs and how does it achieve correctness?
+
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                iswarm
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 4, 2022,  2:45am
+                  
+                  
+
+14
+              
+            
+            
+              Running precompiled some AI inference is Very interesting.  Is there any advancement? and what is your idea?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                christiankesslers
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 24, 2022,  7:30pm
+                  
+                  
+
+15
+              
+            
+            
+              I could see this being useful to prevent the verification and injection of any known malicious smart contract Solidity action. Do away with being able to hide operations, set others’ permissions by blocking such things as msg.sender == newOwner and could also help limit or learn if the actin is being done too many times and I’d imagine built in wad calculation could work.
+
+Just some thoughts.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                hemedex.eth
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 16, 2022,  7:15pm
+                  
+                  
+
+16
+              
+            
+            
+              Would also love to see the relevant code open sourced. However, especially interested in optimize performance for using AI model in smart contract.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

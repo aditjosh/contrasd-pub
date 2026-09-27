@@ -1,0 +1,979 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conducting Data with Concerto and Hyperledger Fabric – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Composer
+                            
+                        
+                    
+
+                
+                Conducting Data with Concerto and Hyperledger Fabric
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Nov 28, 2018
+                    
+                
+
+            
+
+            
+            
+                 
+ 
+Guest post: Dan Selman, Maintainer Hyperledger Composer, Accord Project Cicero, CTO Clause Inc.
+ 
+ 
+ 
+Is the business logic in your blockchain chaincode hard to find because it is buried in code that is doing JSON serialization and data validation? Are you developing REST APIs by hand for your domain model? The good news is that there is now a better way! 
+ 
+In this article for developers and blockchain solution architects, I introduce the Concerto npm module and show you how you can use it from Hyperledger Fabric v1.3 Node.js chaincode. 
+ 
+Concerto is a lightweight, 100% JavaScript schema language and runtime. It works in both a Node.js process or in your browser. The browserified version of Concerto is ±280 KB and the maintainers are working to make it even smaller.
+ 
+Concerto has recently been modularized and moved out of Hyperledger Composer into the composer-concerto npm module, so you can use it in your Node.js applications,  Fabric Node.js chaincode or even in your web browser!
+ 
+Things you can do using Concerto:
+ 
+	Define an object-oriented model using a domain-specific language that is much easier to read and write than JSON/XML Schema, XMI or equivalents. The metamodel gives you “just enough” expressivity to capture real-world business models, while remaining easy to map to most runtime environments.
+	Optionally edit your models using a powerful VS Code add-on with syntax highlighting and validation
+	Create runtime instances of your model
+	Serialize your instances to JSON
+	Deserialize (and optionally validate) instances from JSON
+	Introspect the model using a powerful set of APIs
+	Convert the model to other formats including JSON Schema, XML Schema, Java, Go, Typescript, Loopback, PlantUML…
+	Generate dynamic web-forms from your data model and bind them to JSON data
+	Import models from URLs
+	Publish your reusable models to any website, including the Accord Project Open Source model repository, hosted at: https://models.accordproject.org
+
+ 
+Sidebar: Why Use Models?
+ 
+All software applications have a data or domain model. 
+ 
+Models are required to create generic tools because you need to reason about the structure of user-defined domain models. As soon as you want to implement something like an Object-Relational-Mapper or REST API browser or web-form generator, you need a data model.
+ 
+The data model for your application can either be implicit (duck typing…) or explicit. If it is explicit, it can be expressed using a wide range of technology including XML Schema, JSON Schema, protobufs, NoSQL design documents, Loopback schema, Java classes, Go structs, RDBMS tables, ad-hoc JSON or YAML documents…the list is almost endless.
+ 
+These different model representations make different trade-offs with respect to:
+ 
+	Integration with computation
+	Optimization of serialization/wire format
+	Cross-platform usage
+	Industry acceptance
+	Human readability and editability
+	Expressiveness of the metamodel
+	Composability and reuse
+
+ 
+If developers define models as part of application development, they tend to favour creating Java classes, Go structs, Typescript or similar, because they want to express the model in a language they are familiar with and that integrates closely with the type-system used for computation. The major downside with this approach is that it is almost impossible to then share and reuse these models outside of a single application. It also doesn’t integrate well with modern application development, where we may use different technology across the web, mobile, middle and backend tiers of an application. Out of sync models (or model mapping) is a huge source of anguish and bugs.
+ 
+When industry-standard bodies define models, they tend to favour representations that are more cross-platform and less tied to computation, such as publishing XML Schemas. Developers tend not to like using these models because the mapping from things like XML Schema to Java classes or Go structs for use at runtime is lossy/messy/complex.
+ 
+Concerto solves many of these problems by providing an Object-Oriented schema language that allows models to be moved outside of applications while mapping quite naturally to most common programming languages. We like to think of it as a “goldilocks” approach to modeling, “just enough” to cover most business use cases, with a natural mapping to most common programming languages, and with a JSON serialization.
+ 
+An example
+ 
+I’ve published a detailed code sample for Node.js chaincode and a HLF v1.3 client so you can start to experiment with using Concerto in HLF v1.3 Node.js chaincode: https://github.com/clauseHQ/fabric-samples/blob/master/concerto/README.md
+ 
+The sample shows you how to deploy Concerto models to the blockchain and then use the models to validate instances and to serialize them to JSON for long-lived persistence.
+ 
+
+ 
+Editing a Concerto model using the Concerto Form Generator
+ 
+ 
+ 
+The sample defines a simple Concerto domain model for an employee, which is deployed to the blockchain.
+ Here is the definition of the Concerto model:
+ 
+namespace io.clause
+
+enum Gender {
+
+  o MALE
+
+  o FEMALE
+
+  o OTHER
+
+}
+
+asset Employee identified by email {
+
+  o String email
+
+  o String firstName
+
+  o String lastName
+
+  o String middleName optional
+
+  o Gender gender
+
+  o DateTime startDate
+
+  o DateTime terminationDate optional
+
+}
+ 
+The sample then uses the model to validate instances and to serialize them to JSON for long-lived persistence on the blockchain.
+ 
+
+ 
+A React form, dynamically generated from the Concerto model
+ 
+First the client creates a valid instance of an employee, and the chaincode validates it and stores it on the blockchain:
+ 
+{ 
+
+$class : 'io.clause.Employee',
+
+email : 'bob@clause.io',
+
+firstName: 'Bob',
+
+lastName: 'Concerto',
+
+gender: 'MALE',
+
+startDate : Date.now()
+
+}
+ 
+When the client attempts to create an instance that is missing the required firstName field:
+ 
+{
+
+$class : 'io.clause.Employee',
+
+email : 'bob@clause.io',
+
+lastName: 'Concerto',
+
+gender: 'MALE',
+
+startDate : Date.now()
+
+}
+ 
+The instance fails validation, and the chaincode refuses to create the instance:
+ 
+ValidationException: Instance io.clause.Employee#bob@clause.io missing required field firstName
+ 
+What’s next?
+ 
+We’ve just scratched the surface of what you can do with Concerto. The metamodel is flexible enough to capture almost any business domain model.
+ 
+Here are some ideas for what to do next:
+ 
+	Generate Java, Go, XML Schema or Typescript code from your Concerto models, ensuring that other parts of your application infrastructure are all in sync with your canonical Concerto model. For any Open Source models that have been published to https://models.accordproject.org you can download these directly from the webpage.
+	Embed the Concerto Form Generator into your web application to dynamically generate web forms based on Concerto models.
+	Generate a Loopback schema from your Concerto model, and then use the Loopback framework to expose your modelled assets as a REST API.
+	Import types from the Open Source Accord Project Model Repository into your models: https://models.accordproject.org or publish your models to the Model Repository, or to any HTTP(S) site for import and reuse by others.
+	You can even write Accord Project legal contracts and type-safe Ergo logic over the types you’ve modelled. That’s an article for another day, however!
+
+ 
+Get Involved!
+ 
+If you are using Concerto already or would like to get involved with improving it further, please don’t hesitate to get in touch. In the true spirit of Open Source we welcome all contributions.
+ 
+ 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

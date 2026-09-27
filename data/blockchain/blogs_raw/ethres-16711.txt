@@ -1,0 +1,305 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Request for a new category of this site - Administrivia - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Request for a new category of this site
+    
+
+
+      
+          
+            
+              
+              
+                Administrivia
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                ghasshee
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2023,  1:44pm
+                  
+                  
+
+1
+              
+            
+            
+              Many people concern the safety problem over non-safe languages on EVMs.
+
+There are many topics aroud safety problems, such as
+
+	formal verification
+	model checking
+	automata theory
+	satisfiability theory
+	type theory
+	domain theory
+
+
+I think we will be happy if there is a category of such topics.
+
+I would name it e,g, “FormalVerification”, “Language”, or, “SafeLanguage” .
+
+            
+
+
+            
+              
+8 Likes
+            
+
+            
+                
+
+            
+              
+                fulldecent
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2023,  2:09pm
+                  
+                  
+
+2
+              
+            
+            
+              FormalVerification, please
+
+a b c d e f g h i j k l m n o p
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                hwwhww
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 26, 2023,  3:20pm
+                  
+                  
+
+3
+              
+            
+            
+              We currently have the EVM category. Are the proposed topics mainly for “formal verification for EVM”? Or you are looking for a more general formal verification category?
+
+Alternatively, if it’s not necessary to create a new category, we can a new “formal-verification” tag.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                ghasshee
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 27, 2023, 10:20am
+                  
+                  
+
+4
+              
+            
+            
+              @hwwhww I would say “Formal Verification towards EVM” rather than “Formal verification for EVM”, since it could include various researches that might adapt to it.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                ghasshee
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 2, 2023,  4:20am
+                  
+                  
+
+5
+              
+            
+            
+              @hwwhww
+
+I would say it’s completely different topic from EVM topics.
+
+I requested for this when I recently saw a topic which is tagged by a misunderstanding manner in the sense of research or technique. The topic tells an idea of, kind of, blockchain based, trusted system, which is kind of formal verification.
+
+Using EVM, pursuing trusted ways is a worth researching category since we have chosen the way of ordinal bug-friendly programming.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

@@ -1,0 +1,872 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet FireFly, one of the new Hyperledger Labs taking on cross-chain and off-chain operations – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Labs
+                            |
+                        
+                            Interoperability
+                            
+                        
+                    
+
+                
+                Meet FireFly, one of the new Hyperledger Labs taking on cross-chain and off-chain operations
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jun 9, 2021
+                    
+                
+
+            
+
+            
+            
+                As enterprises and organizations increase their adoption and deployment of blockchain technology and networks, the overall complexity of systems are growing exponentially. While it’s exciting to see the expanding reach of blockchain, it also creates a host of new requirements for cross chain and off chain sharing of data, transactions and more. 
+ 
+At Hyperledger Global Forum (HGF) 2020 in Phoenix, one group of developers got together to share their work and create a blockchain integration tool designed to allow users to securely integrate different blockchains. They brought their project to Hyperledger Labs and, within a few months, it was approved as Hyperledger Cactus. 
+ 
+During this year’s HGF, three new Hyperledger Labs that are each tackling elements of  cross-chain or off-chain operations are making their debuts: FireFly, Weaver and YUI. Read on to learn more about FireFly.
+ 
+Meet FireFly
+ 
+By Steve Cerveny, co-founder and CEO of Kaleido
+ 
+Today, we are excited to introduce you to FireFly.  FireFly is a multi-party system for enterprise data flows. It provides a purpose-built system upon which to build decentralized blockchain applications. Decentralized applications are a new category of business application. They bring with them a new set of challenges to successfully build and deploy.  
+ 
+In particular, multi-party data flows are complex and require significant plumbing – both cross-party and internally across the stack –  to run securely and reliably at an enterprise grade. 
+ 
+Key Ingredients of a Multi-Party System
+ 
+In our experience, consortia end up trying to build a multi-party system as a side effect of implementing their enterprise blockchain use case. This results in a large amount of “reinventing the wheel” and we’ve observed that most of the resources are spent on plumbing components. 
+ 
+At a high level, enterprise blockchain use cases attempt to coordinate data flows and transactions across disparate, separately owned systems (ERP, mainframe, commerce, etc.). To do this end-to-end, four things are required:
+ 
+	the single source of truth coordination system across parties
+	per-member plumbing software to enable reliable, private integration to and from the coordination system
+	cross-org plumbing software that provides robust cross-connectivity among members alongside (1) for use when the coordination system is not suitable or not preferred as the data flow mechanism. Examples include sensitive data, low latency messaging, and large data flows
+	a control plane to manage all of these runtime and configuration details
+
+ 
+We formally define a multi-party system as the set of technology, infrastructure, and management capability to enable a consortium to build and deploy a use case that includes (1), (2), (3), and (4). We observe nearly all the real world consortia that we worked with over the last six years require all of (1), (2), (3), and (4) to build and deploy an enterprise blockchain use case. It is our observation that consortia spend most of their budget on (2) and (3).
+ 
+Meet FireFly
+ 
+Hyperledger FireFly brings together (1), (2), (3), and (4) to offer a pre-integrated set of runtimes via a highly pluggable framework. Note that FireFly is NOT attempting to replace or invalidate any specific runtime technology, but rather pulls together multiple complementary technologies into a coherent, larger system. Indeed, many of the infrastructure runtimes FireFly relies on are separate open source projects.  Industry consortia globally have been using this technology to accelerate time to value for their production solutions.
+ 
+Enterprise blockchains are purpose built to deliver (1) with invaluable attributes like global ordering and finality. FireFly will support Hyperledger Fabric, Enterprise Ethereum (such as Quorum and Besu), and will investigate Corda support. (1) also includes global storage providers such as IPFS. FireFly also provides a significant amount of technology for (2) and (3) including cross-party messaging, cross-party private document transfer, and event propagation. All of these runtimes and connectors into the FireFly node. For (4), Hyperledger FireFly also provides a network map and registry that unifies all of the identity and bindings information needed.
+ 
+
+ 
+ 
+In a FireFly network, each member of the network deploys and runs one or more FireFly Nodes. Each Node consists of a FireFly Core application, as well as its dependencies. Each dependency is abstracted from the Core by a modular plugin system, so underlying technologies, such as the database for example, can be changed if necessary.
+ 
+
+ 
+ 
+To jumpstart the community around FireFly, the contributors held a virtual event to introduce the Lab and demo its capabilities:
+ 
+
+  
+   
+ 
+
+ 
+About the author:
+ 
+Steve Cerveny is co-founder and CEO of Kaleido. Steve has over fifteen years of experience in emerging technologies building, launching and growing enterprise products in a variety of business and technical roles. Prior to Kaleido, he led product teams at IBM, spearheading the creation of over a dozen cloud services and managed a strategic portfolio of software products. Steve launched the industry’s first blockchain managed service, developing new commercial approaches to meet the unique enterprise demands for privacy and scalability. Steve holds his Bachelor’s and Master’s degrees in Computer Engineering from Case Western and an MBA degree from Duke University.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

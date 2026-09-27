@@ -1,0 +1,169 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-7547: Inclusion lists - Core EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      EIP-7547: Inclusion lists
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+            
+              
+              
+                Core EIPs
+              
+            
+            
+      
+
+        
+
+            
+
+            
+              
+                mikeneuder
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 18, 2023,  3:57pm
+                  
+                  
+
+1
+              
+            
+            
+              Discussion thread for Inclusion List EIP by michaelneuder · Pull Request #7943 · ethereum/EIPs · GitHub
+
+Abstract
+
+Censorship resistance is a core value proposition of blockchains. Inclusion lists aim to provide a mechanism to improve the censorship resistance of Ethereum by allowing proposers to specify a set of transactions that must be promptly included for subsequent blocks to be considered valid.
+
+Motivation
+
+Since the merge, validators have started outsourcing almost all block production to a specialized set of builders who compete to extract the most MEV (this is commonly referred to as Proposer-Builder Separation). As of October 2023, nearly 95% of blocks are built by builders rather than the proposer. While it is great that all proposers have access to competitive blocks through the mev-boost ecosystem, a major downside of externally built blocks is the fact that the builders ultimately decide what transactions to include or exclude. Without any forced transaction inclusion mechanism, the proposer is faced with a difficult choice: they either have no say on the transactions that get included, or they build the block locally (thus have the final say on transactions) and sacrifice some MEV rewards.
+
+Inclusion lists aim to allow proposers to retain some authority by providing a mechanism by which transactions can be forcibly included. The simplest design is for the slot N proposer to specify a list of transactions that must be included in the block that is produced for their slot. However, this is not incentive-compatible because builders may choose to abstain from building blocks if the proposer sets some constraints on their behavior. This leads to the idea of “forward” inclusion lists, where the transactions specified by the slot N proposer are enforced in the slot N+1 block. The naïve implementation of the forward inclusion lists presents a different issue of potentially exposing free data availability, which could be exploited to bloat the size of the chain without paying the requisite gas costs. The free data availability problem is solved with observations about nonce reuse and allowing multiple inclusion lists to be specified for each slot. With the incentive compatibility and free data availability problems addressed, we can more safely proceed with the implementation of inclusion lists.
+
+Related work – inclusion-lists-related-work.md · GitHub
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

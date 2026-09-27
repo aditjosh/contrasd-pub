@@ -1,0 +1,350 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Analysis of Swap-or-Not SSLE proposal - Consensus - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Analysis of Swap-or-Not SSLE proposal
+    
+
+
+      
+          
+            
+              
+              
+                Consensus
+              
+            
+            
+
+
+
+        
+            single-secret-leader-election
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                khovratovich
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    May 23, 2022,  7:40am
+                  
+                  
+
+1
+              
+            
+            
+              
+Introduction
+
+Swap-or-Not is an  SSLE technique designed by Buterin. Recall that SSLE aims to select W out of N validators in a fair and uniform way over the course of W shuffles of validators’ commitments, so that only the commitment owner knows his position in the final order.
+
+
+Swap-or-Not
+
+Swap-or-Not mixes 32 commitments per single stir using only secret swaps (i.e. mixes of 2). First, two positions are determined by a RANDAO call and secret swapped. The RANDAO usage ensures the positions are unknown in advance.
+
+
+
+821×101 8.59 KB
+
+
+
+Then they are exchanged with two others, then with 4 others, and so on. The offsets of those positions are determined in the very first RANDAO call.
+
+
+
+3134×842 196 KB
+
+
+
+Therefore each of the first two commitments can end up in any of the 32 positions.
+
+Each tree layer is handled by a different shuffler.
+
+
+
+3356×956 447 KB
+
+
+
+To mix better, trees run in parallel (but we can ignore it)
+
+
+
+2813×466 145 KB
+
+
+
+
+Analysis
+
+In order to demonstrate the insecurity of this proposal, we expose some its non-obvious features.
+
+	
+Only the first two commitments’ positions are unknown at the time of the swap. As next layers are stirred by next shufflers, the latter know the positions to be swapped.
+
+
+
+3471×1545 398 KB
+
+
+
+
+	
+Even though the first-touch commitment can end up in any of 32 positions, each output commitment origins from at most 6 input ones!
+
+
+
+
+
+
+3170×1065 354 KB
+
+
+
+	
+Every commitment owner can trace its own commitment and effectively destroy all swaps it undergoes.
+
+
+
+3189×919 261 KB
+
+
+
+
+	
+Moreover, malicious owners can share their traces and kill many swaps.
+
+
+
+3211×916 298 KB
+
+
+
+
+	
+Malicious shufflers share their swaps and reduce the anonymity even further.
+
+
+
+
+
+
+3459×938 283 KB
+
+
+
+In this picture, only 10 swaps out of 31 survive, whereas we have <0.5 fraction of malicious.
+
+	Malicious shufflers can even choose their swap to decrease the overall anonymity. Swapping right would destroy one more swap.
+
+
+
+
+3208×1371 375 KB
+
+
+
+	In concrete numbers. For malicious fraction of \frac{1}{2} of shufflers&commitments with N=2^{14}:
+
+
+	
+\frac{1}{2} of swaps are instantly killed
+	
+\frac{1}{2}  of honest commitments undergoing a tree are not secretly swapped.
+	
+>5  commitments are fully known (no anonymity gain) after the full shuffle.
+	Anonymity further degrades as honest proposers reveal themselves.
+
+
+
+Summary
+
+	Anonymity set for Swap-or-Not outputs is too small.
+	Malicious shufflers reduce it a lot.
+	We need way more iterations of it to get security compared to Whisk.
+
+
+
+The attack does not work on Whisk
+
+Whisk is an SSLE method, where N=2^{14} commitments are shuffled by M=2^{13} shufflers. Each shuffler makes his own stir of K=128 commitments
+
+
+
+1795×838 56.6 KB
+
+
+
+and provides a zero-knowledge proof of correctness. Whisk tolerates up to 1/2 corrupted or offline shufflers.
+
+The attack does not apply to Whisk because the Whisk shuffles are much bigger (128 by default) and remain privacy-preserving even if a large fraction of the commitments is corrupt.
+
+            
+
+
+            
+              
+4 Likes
+            
+
+            
+                
+
+                      
+                        Simplified SSLE
+                        
+
+
+            
+              
+                Sh4d0wBlade
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 17, 2023, 11:37am
+                  
+                  
+
+2
+              
+            
+            
+              Hi khovratovich, i have some questions after reading in your post：
+
+“Moreover, malicious owners can share their traces and kill many swaps.”
+
+I don’t get it, why do malicious shufflers kill swaps by sharing them? In the Buterin’s design, “Size-2 blind-and-swap proves that two output commitments (OL1, OR1), (OL2, OR2) are re-encryptions of two given input commitments (IL1, IR1), (IL2, IR2) , without revealing which is a re-encryption of which”, so, it seems that the shuffler himself can not distinguish in his swap which one was the original commitment before the swap. So please explain why sharing swaps can kill them? Or, share what? the two commitments, or the positions of the two commitments?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

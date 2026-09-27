@@ -1,0 +1,698 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shandong Testnet - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+	GitHub Merge Queue
+
+
+
+
+
+	[ACCEPTED] DEBUG Log Improvement Proposal
+
+
+
+
+
+	Checklist for reporting privacy issues
+
+
+
+
+
+	Shandong Testnet
+
+
+
+
+
+	Using Postman with Besu
+
+
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Shandong Testnet
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Shandong Testnet
+
+	Diego Lopez Leon
+
+
+
+
+
+Owned by Diego Lopez Leon
+
+
+Last updated: Dec 20, 2022
+
+
+
+
+
+
+
+
+
+
+NOTE: Shandong has been retired. Here's the announcement 
+
+    
+                    
+
+    We have decided to deprecate Shandong following an exchange with @TimBeiko, @vdWijden (Geth), @parithosh_j (DevOps) and @elbuenmayini (Testing) on devnet alignment.
+
+What do we have and what will follow as devnets for Shanghai, Withdrawals, EOF and Sharding?
+
+A ðŸ§µ:
+â€” EF JavaScript Team (@EFJavaScript) December 1, 2022
+
+
+
+
+
+
+
+This testnet adds support for
+	EIP-3540: EOF - EVM Object Format v1
+	EIP-3651: Warm COINBASE
+	EIP-3670: Code Validation
+	EIP-3855: PUSH0 instruction
+	EIP-3860: Limit and meter initcode
+
+Running clients
+Consensus client
+As an after merge network, a consensus client is required. For running on Consensys' Teku you can follow the instructions bellow
+	Download config.yaml fromÂ ethereumjs repository
+	Start Teku with the following parameters
+
+--initial-state=https://raw.githubusercontent.com/ethereumjs/consensus-deployment-ansible/master/shandong-testnet/custom_config_data/genesis.ssz
+--network=[location of config.yaml]
+--data-base-path=[consensus data directory]
+--data-storage-mode=archive
+--ee-endpoint=http://localhost:8551
+--p2p-discovery-bootnodes=enr:-LK4QHkdCND7lcPwqP0oP8EvjtyEIEwlufo4Q2WLU7lfnE7wXaiPFYqrxG2ve0yjwobsv-JivPPnPgM5FXF9_AUe2JIGh2F0dG5ldHOIAAAAAAAAAACEZXRoMpA6j89cITN5Av__________gmlkgnY0gmlwhC5lfi2Jc2VjcDI1NmsxoQO2iyKHl53XEZpkmqwzrNde8tJtHBG1juKX6GQ8maqYAIN0Y3CCIyiDdWRwgiMo,enr:-LK4QFUme0A5wcehaAVkgo3wILst__VwT-CS90IAHRf81EEDewxXYOY3tGH0kYg8jm3dRap-ebt9W2YpYxK4RhICoc4Gh2F0dG5ldHOIAAAAAAAAAACEZXRoMpA6j89cITN5Av__________gmlkgnY0gmlwhLKAy_OJc2VjcDI1NmsxoQIioMWqai_HMbtalAFqTa97lLgjfA_D9NBt9BenWmKjDIN0Y3CCIyiDdWRwgiMo,enr:-LK4QClQvVrrQ9Jm0mOUX8I9vu-anp-dgD9FSiW8Ep0uR6pEZh4t8iMljhXnE2q1UjL2rHAJeIxlrdbwcn1wjeLaamwGh2F0dG5ldHOIAAAAAAAAAACEZXRoMpA6j89cITN5Av__________gmlkgnY0gmlwhI5draqJc2VjcDI1NmsxoQKZ1U-C4IWnkiu6EvbIls9iRazxW5RZej-htHgwNf3Ef4N0Y3CCIyiDdWRwgiMo,enr:-LK4QGMlUKIzZVYqB2uIsizLIaKrPlHrGyZFCg5ond0soaGGOdsV9oR_50PAnOTE_6GZN6p_uqqkvGtnXPyhKEiizbYGh2F0dG5ldHOIAAAAAAAAAACEZXRoMpA6j89cITN5Av__________gmlkgnY0gmlwhKRcrjiJc2VjcDI1NmsxoQIO0t2j7TMxczat4kjQJaFikgg3mNCMQmgUX99zotTV5YN0Y3CCIyiDdWRwgiMo
+Execution client
+Besu has support for Shandong testnet integrated on the main branch, so you only need to set --network=shandong and then you can define any of the existing CLI options as you need. E.g.
+--network=shandong
+--sync-mode=FULL
+--data-path=[execution data directory]
+--rpc-http-enabled=true
+--engine-rpc-enabled=true
+--engine-jwt-disabled=true
+--rpc-http-api=ADMIN,DEBUG,ETH,NET,WEB3
+Development
+Besu is able to stay in sync with Shandong(*)
+Implemented EIPs
+	EIP-3540: PR#4644
+	EIP-3651: PR#4620
+	EIP-3670: PR#4644
+	EIP-3855: PR#4660
+	EIP-3860: PR#4726 (pending)
+
+(*): including PR #4711 and solving #4740
+
+Other resources
+	Block explorer
+	#shandong-testnet @ EthereumJS' Discord server
+	Shandong Management Meta Issue @ ethereumjs repository
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+EIP-1559 testnet guide
+EIP-1559 testnet guide
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q1 Hyperledger Besu
+2022 Q1 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Support Clique for Besu on HL Labs BAF
+Support Clique for Besu on HL Labs BAF
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan - Support Clique Consensus for Besu on HL Labs Blockchain Automation Framework
+Project Plan - Support Clique Consensus for Besu on HL Labs Blockchain Automation Framework
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Hyperledger Indy Technical Deep Dive - Handout
+Hyperledger Indy Technical Deep Dive - Handout
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+2020-05-07 Meeting notes
+2020-05-07 Meeting notes
+
+Hyperledger Iroha
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "97e45dc3e398498dbdb8d81880868635"}

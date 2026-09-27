@@ -1,0 +1,849 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LocalTrail Takes On Farm-to-Table Supply Chain with Hyperledger Fabric and Composer – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Composer
+                            
+                        
+                    
+
+                
+                LocalTrail Takes On Farm-to-Table Supply Chain with Hyperledger Fabric and Composer
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jun 7, 2018
+                    
+                
+
+            
+
+            
+            
+                Pictured left to right: Brian Behlendorf, Rachel Black, Paco Garcia, Piers Powelesland, Saif Abu Hashish, Kevin Kim and Tracy Kuhrt
+ 
+With the goal of highlighting the value of blockchain beyond payments and digital currency, the Consensus 2018 Building Blocks Hackathon challenged teams of developers to tap into the robust programming capabilities of technologies to build applications with use cases in industries ranging from capital markets trading, food supply chain, digital rights management, new peer-to-peer insurance models, and the internet of things. Participants were able to build on top of any blockchain protocol including Bitcoin, Ethereum, Hyperledger etc.
+ 
+The Winning Team: Localtrail 
+ 
+The process of establishing a data trail of the food from farm-to-warehouse-to-market-to-retailer is very manual and incentivizes dishonest behavior. There is no effective way of trustlessly knowing if food is coming from the place that retailers say it is. The team behind LocalTrail, Rachel Black, Paco Garcia, Saif Abu Hashish, Piers Powlesland and Kevin Kim took on the challenge of providing transparency in the food and dairy supply chain. They’re aim was to make it possible to track the provenance of groceries and meals, as they reach the consumers’ plate. The end result was Localtrail, a community-first, transparent blockchain solution that tracks produce from farm to supply center to the end user, bringing accountability and trust to the farm-to-fork social movement.
+ 
+To build the solution, the team used Hyperledger Fabric, Hyperledger Composer and Tieron’s Chainpoint Node API. They coded in React Native and JavaScript.
+ 
+According to Piers Powlesland and Rachel Black from the Localtrail team:
+ 
+
+ “Given the task of providing a supply chain system that would connect many small businesses we wanted to minimise the need for expensive infrastructure, and since the target sector was agricultural we also wanted to provide a system that would be easy to learn and use for non technical people. Consequently we decided to make the system available via a mobile app due to the ubiquity of mobile devices and people’s familiarity with them. We used react-native to build the app so that we could target both Android and iOS with a single app, and also have the option of turning it into a desktop web-app with minimal adjustments.” 
+ 
+ “For the server-side blockchain implementation we chose Hyperledger Composer. Its user friendly graphical interface, allowed us to dive in and get started straight away, and its modeling language mapped well to our problem domain. It also helped a lot that the perishable-network sample project demonstrated a system very similar to the one we wanted to create. Furthermore Composer’s ability to automatically generate a REST api from a contract, meant that integration with our react native front end was a straightforward and familiar process.”
+
+
+ 
+The Value Chain for Localtrail
+ 
+The users of the Localtrail application include farmers, who grow the food, package it, and enter data; warehouse employees, who scan, perform QA check and ship to a market; market employees, who scan and perform QA check and sell to retailers; retailers, who scan and perform QA check, and serve food to end consumers; and the end consumers, who view the data from the process.
+ 
+
+ 
+
+ 
+Congrats to the Localtrail team for creating an application that showed the power blockchain can provide within the food supply chain by improving transparency and trackability. We’re excited to see where they take this application. You can get the Localtrail code at https://github.com/piersy/LocalTrailHyperledgerComposer and https://github.com/rachelyoti/food-app-front-end. 
+ 
+You can also plug into the Hyperledger community at github, Rocket.Chat the wiki or our mailing list. As always, you can keep up with what’s new with Hyperledger on Twitter or email us with any questions: info@hyperledger.org. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

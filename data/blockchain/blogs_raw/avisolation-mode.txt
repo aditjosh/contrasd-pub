@@ -1,0 +1,197 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Isolation Mode | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Supplying GuidesIsolation Mode
+beginner
+
+
+
+
+
+
+Introduction
+
+Isolation Mode in Aave V3 is a feature designed to safely introduce new or volatile assets into the protocol by limiting how they can be used as collateral. When an asset is designated as an "Isolated Collateral Asset," it can only be used to borrow specific stablecoins that have been approved by Aave Governance. This setup helps to contain the risk associated with these assets. In the Aave Labs interface, assets that can only be supplied in Isolation Mode are clearly marked with an isolated icon and description, making it easy for users to identify them.
+
+Supplying an Isolated Asset
+
+When you supply an Isolated Asset, it may be used as collateral under certain conditions. If it's the first asset you’re supplying or if you don’t have any other assets enabled as collateral, you can use the Isolated Asset to borrow approved stablecoins. However, if you already have other assets enabled as collateral, the Isolated Asset can still be supplied, but it won’t be eligible as collateral. This means you can earn interest on it, but you can’t use it to borrow unless it’s your only collateralised asset.
+
+Borrowing in Isolation Mode
+
+When using an Isolated Asset as collateral, you are limited to borrowing only the stablecoins that are approved for Isolation Mode. This restriction helps manage the risk associated with these assets. Additionally, while in Isolation Mode, you cannot enable any other assets as collateral, including other Isolated Collateral Assets. This enforces that the borrowing risks remain contained within the guidelines set by Aave Governance.
+
+Exiting Isolation Mode
+
+If you decide to exit Isolation Mode, the process requires that you first repay any outstanding debt associated with the Isolated Asset. Once the debt is cleared, you can disable the Isolated Asset as collateral, allowing you to revert to the standard borrowing options available in the protocol.
+
+
+
+Related
+Supply Tokens
+beginner
+
+Supply tokens to the Aave Protocol.
+4 min read
+Withdraw Tokens
+beginner
+
+Withdraw tokens from the Aave Protocol.
+4 min read
+Toggle Collateral Status
+intermediate
+
+Toggle collateral status of supply positions.
+3 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

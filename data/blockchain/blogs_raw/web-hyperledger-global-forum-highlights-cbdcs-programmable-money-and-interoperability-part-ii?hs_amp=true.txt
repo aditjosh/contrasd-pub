@@ -1,0 +1,139 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Global Forum Highlights: CBDCs, programmable money and interoperability - part II – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Global Forum Highlights: CBDCs, programmable money and interoperability - part II – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Jul 19, 2021 11:00:37 AM 
+        
+
+        
+          As we covered in Part I of this series, CBDC and other payment projects are moving quickly from prototypes to pilots and beyond with some well known projects already in production. As CBDCs and other cross border payment use cases mature, central banks continue to partner with the private sector from small to big companies to accelerate and innovate, and the Hyperledger open source community is at the forefront of the most public CBDC projects.
+ 
+ At this year’s Hyperledger Global Forum (HGF), those on the front lines of CBDC deployments and the development of critical underlying platforms and technologies presented a mix of talks about requirements for and challenges of implementing current and future payment solutions.
+ 
+ Read on for some of the more technical highlights from HGF on the CBDC, programmable money and currency interoperability:
+ 
+ Build CBDC Platform on Hyperledger Besu – Dive in Retail CBDC’s Architecture – Charles d’Haussy, ConsenSys
+ 
+ In this session, attendees got an overview of the architecture of the CBDC platforms powered by Hyperledger Besu.
+ 
+ 
+ 
+ 
+ 
+ 
+  (
+  8:16) Charles d’Haussy on selecting a CBDC platform: “We mostly recommend building platforms that have public and private capacities so it’s a perfect fit with Hyperledger Besu…we also like to build on systems which are interoperable and global…”
+ 
+ 
+ 
+This engaging discussion was then followed by a deep dive from John Velissarios from Accenture into the current landscape of CBDC research and experimentation across the globe.
+ 
+ 
+ 
+ 
+  (26:20) James Edwards on Bakong’s impact on the Cambodian payments ecosystem: “Bakong allows users of commercial banks to take advantage of the PSP’s huge networks of over the counter agents so it has made life a lot more convenient for Cambodians and for Cambodians small businesses. It 
+  has also incentivized PSPs to develop more bank-like services, a wider range of services, and has incentivized banks to develop a wider range of PSP-like services so it is enriching competition within the Cambodian payments ecosystem…”
+ 
+ 
+ 
+
+ Other sessions of interest from Hyperledger Global Forum on the subject:
+ 
+
+  
+ Panel: Hyperledger Contributions from IBM – Kelly Ryan, Rakesh Mohan, Chris Ferris, Arnaud Le Hors & Elli Androulaki, IBM (Sponsored by IBM)
+ 
+
+  
+ This session explored two new Hyperledger Labs: Fabric Token SDK, which enables the creation of CBDCs, and Smart Fabric Client, which is already in use with a major European Central Bank project.
+ 
+
+  
+ Digital Currency Interoperability With Messages – Vipin Bharathan, dlt.nyc
+ 
+
+  
+ This discussion, led by the Hyperledger Capital Markets SIG Chair Vipin Bharathan, focused on challenges facing digital currency interoperability and took a deep look at one of the current trends in implementing interoperability: message-based interoperability.
+ 
+
+  
+ Smart Contracts with Tokenized Fiat Currency on Sberbank’s Platform – Oleg Abdrashitov, Sberbank
+ 
+
+  
+ This presentation was an introduction to a platform for the issuance of digital assets and smart contracts developed at Sberbank’s Blockchain Laboratory. Smart contracts settle in Sber’s stablecoin: a tokenized ruble. The platform uses Hyperledger Fabric with improvements: Smart BFT for ordering, and with localized cryptography. Transaction confidentiality is achieved via Confidential Non Fungible Tokens. Sber’s platform is scheduled to go live in 2021 for the bank’s commercial clients and will be open for developers to deploy their smart contracts and applications.
+ 
+
+  
+ Beyond Hyperledger Global Forum
+ 
+
+  
+ In addition to being a key topic at HGF, CBDCs and other payment innovations are regular topics for discussions and activity across the Hyperledger community. Here are some talks and events, including resources for anyone looking to take part in the CBDC Global Challenge, to check out:
+ 
+ 
+	An on-demand replay of the July 13 Singapore Fintech Festival Green Shoots Series | Global CBDC Challenge session: “An impact making opportunity not to be missed” moderated by Sopnendu Mohanty, Chief Fintech Officer, MAS, with speakers for the IMF and World Bank as well as Hyperledger’s Brian Behlendorf
+	Hyperledger Capital Markets SIG talk by Saket Sinha, Global VP FSS, IBM on “CBDCs Promise and Risk : Operationalizing CBDCs”CBDCs, Promise & Risk”
+	A panel discussion from the May 26 virtual Synchronize series on CDBCs moderated by Hyperledger’s Karen Ottoni with speakers from ConsenSys, Digital Asset, SilverBank and more
+
+ 
+
+  
+ How else can you get involved in this work happening at Hyperledger?
+ 
+ 
+	Join as a Hyperledger member. Our member companies are leaders in financial services and technology working on these exciting projects. Learn more about membership.
+	Participate in our open communities, like our Capital Markets SIG.
+	Deep dive into Hyperledger projects with training and certifications.
+	Attend other Hyperledger events and webinars.
+
+ 
+
+  
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

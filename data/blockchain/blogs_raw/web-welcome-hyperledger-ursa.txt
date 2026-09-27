@@ -1,0 +1,857 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Welcome Hyperledger Ursa! – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Welcome Hyperledger Ursa!
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Dec 4, 2018
+                    
+                
+
+            
+
+            
+            
+                Hyperledger Ursa is the latest project to be accepted by the TSC! It is a modular, flexible cryptography library that is intended for—but not limited to—use by other projects in Hyperledger. Ursa’s objective is to make it much safer and easier for our distributed ledger projects to use existing, time tested, and trusted cryptographic libraries but also new cryptographic library implementations being developed. 
+ 
+Ursa aims to include things like a comprehensive library of modular signatures and symmetric-key primitives built on top of existing implementations, so blockchain developers can choose and modify their cryptographic schemes with a simple configuration file change. Ursa will also have implementations of newer, fancier cryptography, including things like pairing-based signatures, threshold signatures, and aggregate signatures, and also zero-knowledge primitives like SNARKs.
+ 
+Ursa will be written mostly in Rust, but will have interfaces in all of the different languages that are commonly used throughout Hyperledger.
+ 
+Why Ursa?
+ 
+As Hyperledger has matured, the individual projects within Hyperledger have started to find a need for sophisticated cryptographic implementations. Rather than have each project implement its own cryptographic protocols, it is much better to collaborate on a shared library. There are many reasons to do this, including the following:
+ 
+	Avoiding duplication: Crypto implementations are notoriously difficult to get correct (particularly when side channels are taken into account) and often require a lot of work in order to achieve a high level of security.  The library allows projects to share crypto implementations, avoiding unnecessary duplication and extra work.
+	Security: Having most (or all) of the crypto code in a single location substantially simplifies the security analysis of the crypto portion of Hyperledger.  In addition, the lack of duplication means maintenance is easier (and thus, hopefully security bugs are less numerous). The presence of easy to use, secure crypto implementations might also make it less likely for less experienced people to create their own less secure implementations.  
+	Expert Review: In addition, the ability to enforce expert review of all cryptographic code should increase security as well.  Having all of our cyptographic code in a single location makes it easier to concentrate all of the cryptographic expertise in the project and ensures that code will be well reviewed, thus decreasing the likelihood of dangerous security bugs.  
+	Cross-platform interoperability: If two projects use the same crypto libraries, it simplifies (substantially in some cases) cross-platform interoperability, since cryptographic verification involves the same protocols on both sides.
+	Modularity: This could be the first common component/module and a step towards modular DLT platforms, which share common components.   While we have already outlined most of the advantages this modularity brings in terms of actual functionality, a successful crypto library encourages and pushes forward more modular activities.
+	New Projects: It is easier for new projects to get off the ground if they have easy access to well-implemented, modular cryptographic abstractions.
+
+ 
+Who Is Involved in Ursa?
+ 
+On the more practical side, Ursa currently includes developers who work on the security aspects of Hyperledger Indy, Sawtooth, and Fabric. In addition, the Ursa project includes several cryptographers with an academic background in theoretical cryptography to ensure that all cryptographic algorithms meet the desired levels of security.
+ 
+Our goal in creating Ursa is to combine the efforts of all the security and cryptography experts in the Hyperledger community and move all of the projects forward.
+ 
+Features and Plans
+ 
+Currently Ursa has two distinct modules: a library for modular, flexible, and standardized basic cryptographic algorithms, and a library for more exotic cryptography, including so-called “smart” signatures and zero knowledge primitives called zmix.
+ 
+Our first library is our “base crypto” library. Right now we are focused on our shared modular signature library, but we plan to extend this to allow easy modularization of all commonly used cryptographic primitives in Minicrypt. This—work in progress—has the implementation of several different signature schemes with a common API, allowing for blockchain builders to change signature schemes almost on-the-fly—or to use and support multiple signature schemes easily. Exact implementations and APIs have not been finalized, but they are in progress.
+ 
+We note that there aren’t raw crypto implementations in this library—things here are stable and generally standardized—but wrappers for code from existing libraries and also code generated by commonly used cryptography libraries such as the Apache Milagro Crypto Library (AMCL). The novelty here is the modularization and API, which enables blockchain platforms to easily use a wide variety of changeable cryptographic algorithms without having to understand or interact with the underlying mathematics. 
+ 
+In the future, we expect other wrappings and modular code to go in this library. For instance, Indy makes use of aggregate signatures, a feature which the other platforms would also like available to them. There are also a variety of hash algorithms which provide different performance characteristics or support different signature schemes. Selecting vetted implementations and providing a common interface helps the Hyperledger community manage a growing crypto feature set in a responsible manner.
+ 
+Our second initial subproject is zmix, which offers a generic way to create zero knowledge proofs that prove statements about multiple cryptographic building blocks, including signatures, commitments, and verifiable encryption. The goal of zmix is to provide a single flexible and secure implementation to construct such zero knowledge proofs. Zmix consists of C-callable code but there are also convenience wrappers for various programming languages.
+ 
+Getting involved
+ 
+If you’re interested in learning more about, using, or contributing to Ursa, please check out the following: https://www.hyperledger.org/projects/ursa
+ 
+We welcome interest even from those who aren’t working with Hyperledger projects, so feel free to join us if you like!
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

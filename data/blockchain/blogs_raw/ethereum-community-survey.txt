@@ -1,0 +1,249 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ethereum Community Survey | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Ethereum Community Survey
+Posted by George Hallam on January 9, 2015
+Research & Development
+
+
+
+
+Back in November, we created a quick survey for the Ethereum community to help us gauge how we're doing, what can be improved, and how best we can engage with you all as we move forward towards the genesis block release in March. We feel it's very important to enable the community to interact with Ethereum as well as itself, and we hope to offer new and exciting tools to do so using the survey results for guidance.
+
+The survey itself consisted of 14 questions split into two sections; Ethereum as an "Organisation" and Ethereum as a "Technology".  There was a total of 286 responses. This represents 7.8% of the current Ethereum reddit population, or 2.4% of the current @ethereumproject followers.
+
+What country do you currently reside in?
+
+
+
+So, this is where everybody lives. To sum it up by continent - of the 286 respondents there are 123 (43%) in North America, 114 (40%) in Europe, 30 (10%) in Asia, 13 (5%) in Oceana and 6 (2%) in South America. No surprises there, though it does show how we - and the crypto space in general - have much work to do in areas south of the Brandt Line. One way to go about this is to seed more international Ethereum meetups. You can see a map of all the current Ethereum meetups here (We have 81 in total all over the world from London to New York to Tehran with over 6000 members taking part). If you'd like to start one yourself, please do message us and we can offer further assistance - info@ethereum.org.
+
+
+
+It's understood that our transparency is very important to the community. To that end, we strive to make much of our internal workings freely available on the internet. As indicated in the chart, most people agree that we are doing just that. However, more can always be done. We're currently working on a refresh of the ethereum.org website ready for the release of the genesis block. Expect much more content and information as we complete this towards the end of January. In the meantime, have a look at the Ethereum GitHub Repository, or head over to the new ΞTH ÐΞV website for a greater understanding of the entity that is delivering Ethereum 1.0, as well as its truly incredible team.
+
+ 
+
+
+
+
+We've always tried to give the community as much information about our financial situation as possible, and from the results it seems like a lot of you agree. For further information on how Ethereum intends to use the revenue generated in the Ether sale as we move forward, check out the Road Map and the ĐΞV PLAN. To learn more about the Ether Sale itself, have a look at Vitalik's Ether Sale Introduction, the Ethereum Bitcoin Wallet, or the Ether Sale Statistical Overview.
+
+
+
+Though most people agree Ethereum's use cases in society are clear, I wouldn't be so sure we've figured them all out just yet. Everyday we're speaking with developers and entrepreneurs via Skype or on IRC (Join in your browser - #ethereum / #ethereum-dev) who have thought of new and exciting ideas that they are looking to implement on top of Ethereum - many of which are brand new to us. For a brief overview of some of the use cases we've encountered, check out Stephan Tual's recent presentation at NewFinance.
+
+
+
+We're doing our best to keep everyone updated with the plethora of changes, updates and general progression of the project that's been taking place over the recent months. Gavin Wood and Jeff Wilcke especially have written some excellent blog updates on how things are going in their respective Berlin and Amsterdam ÐΞV Hubs.
+
+
+
+ΞTH ÐΞV's mission statement is now proudly presented on the ΞTH ÐΞV website for all to see. In detail, it explains what needs to be achieved as time goes on, but can be summed up as "To research, design and build software that, as best as possible, facilitates, in a secure, decentralised and fair manner, the communication and automatically-enforced agreement between parties."
+
+
+
+Much like the crypto space in general, Ethereum is somewhat difficult to initially get your head around. No doubt about that, and it's our job to make the process of gaining understanding and enabling participation as easy and intuitive as possible. As mentioned previously, the new look ethereum.org website will be an invaluable tool in helping people access the right information that is applicable to their own knowledge and skill set. Also, in time we aim to create a Udemy/Codacademy like utility which will allow people with skills ranging from none to Jedi Master to learn how Ethereum works and how to implement their ideas. In the mean time, a great place to start for those wanting to use Ethereum is Ken Kappler's recent Tutorials.
+
+
+
+This was an important question as it gave a lot of perspective on what aspects needed to be focused on before genesis, and what (though useful) could be developed afterwards. From a UI point of view, the Go team in Amsterdam is working towards the creation of Mist, Ethereum's "Ðapp Navigator". Mist's initial design ideas are presented by the Lead UI Designer, Alex Van de Sande in this video.
+
+Ease of installation will factor greatly in user adoption - we cant very well have people recompiling the client every time a new update is pushed! So binaries with internal update systems are in the pipeline. Client Reliability (bugs) is being actioned on by Jutta Steiner, the Manager of our internal and external security audits. We expect the community bug bounty project to be live by the middle of January, so stay tuned and be ready for epic 11 figure Satoshi rewards, leaderboards and more "1337" prizes.
+
+Developer tools are on the way too. Specifically, project "Mix". Mix supports some rather amazing features, including documentation, a compiler, debugger integration for writing information on code health, valid invariant, code structure and code formatting, as well as variable values and assertion truth annotations. It's a long term project expected to be delivered in the next 12-18 months, right now we are very much focused on completing the blockchain. Once complete, we can reallocate our resources to other important projects. You can find out more in the Mix presentation from ÐΞVcon-0. For now, documentation is constantly being generated on the Ethereum GitHub Wiki.
+
+The blog and social media interaction will continue to deliver Ethereum content on relevant channels with the aim of reaching the widest range of people as possible.
+
+ 
+
+
+
+With more people owning smartphones than computers already, imagine how prolific they'll will be as time goes on? This will be the case especially in emerging markets such as India and Nigeria, it's likely they'll leapfrog computers to some extent and gain wide adoption very quickly.  A mobile light client will be greatly important to the usability of Ethereum. As part of IBM and Samsung's joint project "Adept" (an IoT platform which is currently being unveiled at CES 2015), an Android version of the Ethereum Java client - ethereumj, is going to be open-sourced on GitHub. This will go a long way to getting Ethereum Mobile!
+
+
+
+It's interesting to see a very mixed bag of responses for this question. As was said previously, Ethereum's use cases are as wide as they are varied, and it's great to see how many different types of services people are looking to implement on top of Ethereum. The emphasis on governance based Ðapps highlights Ethereum's ability to facilitate interactions between the digital and physical world and create autonomously governed communities that can compete with both governments and corporations. Primavera De Filippi and Raffaele Mauro investigate this further in the Internet Policy Review Journal.
+
+
+
+This chart shows a reasonably even spread, we've done our best to make the various clients available on different operating systems. You can find the Alethzero binaries here, and the Mist binaries here. These however become obsolete very quickly and may not connect to the test net as development continues, so if you considering using Ethereum before release, it's well worth while checking the client building tutorials to get the most up to date versions of the clients.
+
+ 
+
+
+
+With Mist (Go), Alethzero (C++), Pythereum (Python) Node-Ethereum (Node.js), and Ethereumj (Java), Ethereum already has a plethora of clients available. The Yellow Paper written by Gavin Wood is a great reference for the community to create its own clients, as seen with those still under development such as the Clojure and Objective C iterations.
+
+
+
+As Gavin Wood has mentioned in a previous blogpost, Mutan and LLL as smart contract languages will be mothballed. Serpent will be continued to be developed by Vitalik with his team, and Soldity will continue as the primary development language for Ethereum contracts. You can try Solidity in your browser, or watch the recent vision and roadmap presentation by Gavin Wood and Vitalik Buterin at ÐΞVcon-0.
+
+Thanks to Alex Van de Sande for helping with the implementation of the survey and chart graphics. Icons retrieved from icons8. If anyone would like a copy of the raw survey results, feel free to email george@ethdev.com.
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

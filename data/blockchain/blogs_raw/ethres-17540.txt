@@ -1,0 +1,381 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Edinburgh Decentralization Index - Invitation to Contribute - Data Science - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Edinburgh Decentralization Index - Invitation to Contribute
+    
+
+
+      
+          
+            
+              
+              
+                Data Science
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                mtefagh
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 27, 2023, 12:00pm
+                  
+                  
+
+1
+              
+            
+            
+              Dear Ethereum Community,
+
+The Edinburgh Decentralisation Index (EDI) is a project of the Blockchain Technology Laboratory (BTL) at the University of Edinburgh which will measure the decentralization of blockchain systems. The EDI will be used by regulators, developers, and blockchain users alike for different purposes. For instance, regulators can use it to help decide whether a cryptocurrency constitutes a security. Developers and users can use it to decide which chain is safer to build and use applications.
+
+We are currently looking to extend the EDI by adding support for more blockchains. We would like to request your assistance in providing access to a full node as a data source, or to point us to someone in the community who might be interested in contributing. Other forms of contribution are also possible, see our GitHub repository.
+
+Thank you for your time and consideration.
+
+Best regards,
+
+Mojtaba Tefagh
+
+Blockchain Programme Manager
+
+School of Informatics, University of Edinburgh
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                isidorosp
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 30, 2023, 12:27pm
+                  
+                  
+
+2
+              
+            
+            
+              This is a really interesting initiative! It may also be worth reaching out to ETH Zuri who recently published this paper https://arxiv.org/pdf/2306.10777v2.pdf. I would be happy to discuss different measures relating to decentralization (what can be measured, how, what are the different facets (e.g. entity concentration/correlation, geographic and jurisdictional dispersion, infrastructure diversity) and you can also check out work done by rated.network (some work on network penetration and HHI) as well as @simbro’s initiative on geographic decentralization here.
+
+I contribute to Lido DAO and would be happy to help get you guys some more details about the node operators and validators that run validators as a part of the Lido protocol. In the meantime you can check out the metrics that are aggregated and published on a quarterly basis here: Lido Validator and Node Operator Metrics (VaNOM) and more info on the relevant forum thread.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                LadyChristina
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 4, 2023,  2:46pm
+                  
+                  
+
+3
+              
+            
+            
+              Hi @isidorosp, thanks so much for your response, the resources you linked seem very useful!
+
+I am also a member of the EDI team and I would be happy to arrange a discussion with you to talk about Lido and decentralization in general
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 4, 2023,  3:30pm
+                  
+                  
+
+4
+              
+            
+            
+              I think “decentralization” is not the right word here for what actually matters (at least for users).  Decentralization is a means to an end, but what actually matters is:
+
+	Censorship resistance.
+	Trustless.
+	Permissionless.
+
+
+In other words:
+
+	Can someone (or some group with a reasonable ability to coordinate) censor you?
+	Do you need to trust someone (or some group with a reasonable ability to coordinate)?
+	Can you gain the ability to take any particular action in the system upon meeting well defined technical/financial requirements, or are some actions limited to certain people with special privileges?
+
+
+If one can build a system that meets those requirements but is not decentralized, that is totally fine and great.  For example, maybe someone sends a satellite into space with some code deployed on it and anyone with a satellite dish can interact with it in a particular way and no one has control over the satellite (and it has the ability to avoid being taken over).  This hypothetical system could meet these requirements while not being decentralized.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                mtefagh
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 6, 2023,  6:36pm
+                  
+                  
+
+5
+              
+            
+            
+              Hi @MicahZoltu - Even though the EDI focuses more on the tools and the methodology, and the points you raised are more about the philosophy of decentralisation, I think decentralisation can be broader. Historically, people in politics and economics have considered the decentralisation of power and the risk of special interest groups, just like what people in blockchain worry about single points of failure. The main point is that the three items that you have listed are certainly important, but how can we be sure that this is the complete list and that there are no other security risks, such as the risk of censorship that you mentioned. One approach could be to try to come up with a comprehensive list, but decentralisation is a holistic measure of resilience.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 7, 2023,  5:27am
+                  
+                  
+
+6
+              
+            
+            
+              Even if one disagrees with the list of endpoints I provided, I still argue that “decentralization” is not a goal in and of itself.  Decentralization is a means to an end, but it is not something people actually care about other than when it helps them achieve their real goals.
+
+For example, “minimizing risk of some person or group doing Y bad thing” is a concrete endpoint that matters, and decentralization may be a means to achieve that end, but just saying “we have achieved decentralization” doesn’t matter if some person/group is still doing Y bad thing.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                smart38
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 7, 2023,  7:13pm
+                  
+                  
+
+7
+              
+            
+            
+              I really appreciated these post, I will walk on these and provide feedback later
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

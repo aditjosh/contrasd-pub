@@ -1,0 +1,618 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+First contribution - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+	I just have a quick question
+
+
+
+
+
+	First contribution
+
+
+
+
+
+	Issues
+
+
+
+
+
+	DCO
+
+
+
+
+
+	Suggesting Enhancements
+
+
+
+
+
+	Pull Requests
+
+
+
+
+
+	Code Reviews
+
+
+
+
+
+	Reporting Bugs
+
+
+
+
+
+	Copyright and License
+
+
+
+
+
+	Discord
+
+
+
+
+
+	Curators
+
+
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+First contribution
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+First contribution
+
+	Felipe Faraggi
+
+
+
+	Sally MacFarlane
+
+
+
+	Nicolas Massart
+
+
+
+	+2
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Sept 15, 2024 by Sally MacFarlane
+
+
+
+
+
+
+
+
+
+
+Accounts
+Having the following accounts is necessary for contributing code/issues to Besu.
+	If you want to raise an issue or contribute code or documentation, you will need a GitHub account.
+	Our Discord also requires a Discord login.
+	If you want to contribute to this wiki, you can make a Linux Foundation (LF) account here.
+
+Where to start?
+The first step is deciding what to work on! We use the "good first issue" label to identify issues that we think are a good place to start.
+If you find an issue that you'd like to work on, reach out on Discord and we can assign the issue to you.Â 
+If you have a different idea, reach out on Discord in the #besu channelÂ and we can discuss!
+Once the issue is assigned to you, follow the workflow below.
+Contribution Workflow
+The codebase and documentation are maintained using the same "contributor workflow" where everyone without exception contributes changes proposals using PRs or "pull-requests".
+This facilitates social contribution, easy testing, and peer review.
+To contribute changes, use the following workflow:
+	 Fork the repository. Make sure you also add an upstream to be able to update your fork.
+	Clone your fork to your computer.
+	Create a topic branch and name it appropriately. Starting the branch name with the issue number is a good practice and a reminder to fix only one issue in a Pull-Request (PR).
+	Make your changes adhering to the coding conventions described below.Â  In general a commit serves a single purpose and diffs should be easily comprehensible. For this reason do not mix any formatting fixes or code moves with actual code changes.
+	Commit your changes Â see How to Write a Git Commit Message article by Chris Beams.	Make sure to add DCO message to each commit (for example in the command line: git commit -s -m "..."), more information here
+
+
+	Test your changes locally before pushing to ensure that what you are proposing is not breaking another part of the software. Running the ./gradlew clean check test command locally will help you to be confident that your changes will pass CI tests once pushed as a Pull Request.
+	Push your changes to your remote fork (usually labeled asÂ  origin).
+	Create a pull-request (PR) on the Besu repository. If it's not ready to review, make it a `Draft` PR. If the PR addresses an existing issue, include the issue number in the PR title in square brackets (for example,Â  [#2374]).
+	Add labels to identify the type of your PR.Â  For example, if your PR fixes a bug, add the "bug" label.
+	If the PR address an existing issue, comment in the issue with the PR number.
+	Ensure your changes are reviewed.Â Let us know using Besu chat channels that your PR is ready for review. If you are a maintainer, you can choose reviewers, otherwise this will be done by one of the maintainers.
+	Make any required changes on your contribution from the reviewers feedback.Â  Make the changes, commit to your branch, and push to your remote fork.
+	When your PR is approved, validated, all tests pass and your branch has no conflicts, it can be merged. Again, this action needs to be done by a maintainer - usually the same person who approves will also merge it.
+
+
+
+You contributed to Besu! Thanks!
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+How to Contribute
+How to Contribute
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation contribution guidelines
+Documentation contribution guidelines
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation contribution workflow
+Documentation contribution workflow
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Start Here
+Start Here
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu - Community Support
+Besu - Community Support
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Issues
+Issues
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 15, "requestCorrelationId": "05936540509b4c1fbab178b9ad9ac559"}

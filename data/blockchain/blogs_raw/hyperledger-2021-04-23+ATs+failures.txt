@@ -1,0 +1,522 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2021-04-23 ATs failures - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+	2024-01-06 Mainnet Halting Event
+
+
+
+
+
+	2022-05-30 Phishing PRs
+
+
+
+
+
+	2021-08-04 Value transfer public transactions being rejected by Besu
+
+
+
+
+
+	2021-04-23 ATs failures
+
+
+
+
+
+	2022-11-11 Fork on Sepolia
+
+
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2021-04-23 ATs failures
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2021-04-23 ATs failures
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Jun 12, 2024
+
+
+
+
+
+
+
+
+
+
+Context: ATâ€™s started failing late April 2021
+	This Circle CI report is interesting - significant failures vs successes
+
+	these failures started happening April 23
+
+
+coinciding with (but not known to be caused by) the introduction of PRs:
+	SECP256R1 (PR 2008)
+
+	container tests (Tessera in Orion mode; some Besu privacy ATs)
+	notably, the Tessera in Orion mode container tests did not get merged into master
+
+	also I think the Besu container tests step has been disabled?
+
+
+
+
+This appears to be a problem with the Vertex queue being blocked and this likely happens because:
+	running out of entropy
+
+	code changes
+
+	init ing too often
+
+
+
+
+Investigate:
+Entropy:
+	confirm what the entropy is during the tests . Run the following during the tests and see how low it dips. If this dips below 1k, then this isn't good. If the entropy is fine during and at the end of the tests runs, entropy isn't the problem
+watch -n 2 cat /proc/sys/kernel/random/entropy_avail
+
+	The ATs have an override file https://github.com/hyperledger/besu/commit/dac36a5665e0fb574eca8c814881f60ef087ae49Confirm that the native libs are NOT using this. If so how can they be set to respect these settings? If they are reading from java.security then amend that file or provide an override( preferable, but better still is to get it to respect the AT settings directly)
+
+	If entropy is the problem look to seed a device and use that - use haveged etc
+
+
+What have we tried:
+	reducing parallelism - was 8, changed to 6 â†’ AT time 12 min â†’ 15 min
+
+	installing haveged on AT executor â†’ seemed to be better
+
+	explicitly setting securerandom.source=/dev/urandom â†’ no change evident
+
+	removing haveged and explicitly setting securerandom.source=file:/dev/urandom â†’ ATs failed in 8 min with a ECDH â€œInvalid point coordinatesâ€� error. NO â€œblocked threadâ€� errors in logs.
+
+	explicitly setting securerandom.source=file:/dev/./urandom â†’ same behaviour as file:/dev/urandom
+
+	installing haveged and explicitly setting securerandom.source=file:/dev/urandom â†’ ATs pass in 8 min.
+
+	so the PR that failed on SECP invalid point coordinates didn't have haveged. With haveged, and securerandom.source=file:/dev/urandom this PR has passed 2 times with ATs ~ 8 min. reference tests now take longer! 
+Third run failed (but no exceptions in the logs)
+
+
+Code Changes:
+	what was the last good commit where tests were fine?
+	Looking at PRs merged into master, 2181 was merged 22/23 April and 2008 was merged 21/22 April
+
+
+
+	2008 introduced SECP256R1 ie a new signature algorithm. Which generates a different public key from the same private key. And the reference to the signature algorithm is static in KeyPairUtil. So if those tests run first then other tests fail because the wrong signature algo is being used. So https://github.com/hyperledger/besu/pull/2273 ignores these tests. for now.
+
+	what new code/features were introduced?
+
+
+The answer
+Three things
+	install haveged on AT executor.
+
+	set the property securerandom.source=file:/dev/urandom explicitly for ATs
+
+	disable ATs for SECP256R1 because there is a static reference to the signature algorithm in KeyPairUtil so this needs some refactoring to handle multiple algos
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "da7db560e5584dd58182e71d641b13f5"}

@@ -1,0 +1,862 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Pathway to Becoming a Hyperledger Maintainer – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Aries
+                            
+                        
+                    
+
+                
+                The Pathway to Becoming a Hyperledger Maintainer
+ 
+                
+                    Emily Fisher
+                    |
+                    
+                        Nov 3, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                When I first came across Hyperledger Aries, I was still a student at the University of Applied Sciences in Utrecht. I had never contributed to open source, and only minimally understood how the process of contributing and maintaining even functioned. Now, only two years later, my company (Animo) specializes in building SSI solutions using Hyperledger Aries and other SSI technologies, and I am one of the core contributors to a lot of the open source libraries built on top of it.
+ 
+In this blogpost I’m going to share what it’s like to be a maintainer for the Hyperledger Aries project. You’ll learn how you can start contributing and maybe even set yourself on a path to becoming a maintainer.
+ 
+The ecosystem
+ 
+Hyperledger Aries provides standards and protocols focused on holding and exchanging verifiable credentials, but it is much more than that. Hyperledger Aries provides the foundation for peer-to-peer interactions, exchange of verifiable credentials and secure messaging. It provides standards through the so-called Aries RFCs and has open source implementations in Go, JavaScript, Python, Rust and .NET.
+ 
+Aries uses DIDComm for a secure messaging protocol, but DIDComm is a lot more than just a way to exchange credentials. Once you start getting a sense of the enormous potential of DIDComm, it’s difficult not to get excited. Aries provides you with an agent that helps you manage your digital interactions, just like your browser helps you interact with the web.
+ 
+At Animo, we’re leveraging Aries at the core of almost all of our projects. We contribute to several open source frameworks, develop applications on top of these frameworks and build end-to-end solutions using verifiable credentials. For example, we recently started a pilot with the Centre for Emergency Control Room Innovation that leverages DIDComm for secure communication and exchange of location between the emergency call centre staff and a qualified volunteer. Although we are involved with several Aries frameworks, we have a particular expertise in (and fondness for) Aries Framework JavaScript (AFJ).
+ 
+We use AFJ for most of our projects. We’ve contributed a lot to it because, simply put, we saw the potential of the framework and someone needed to do the work to get it there. Being a maintainer of a project means more than just contributing code.It means you’re responsible for the overall direction and vision of the project. Maintainers concern themselves with the roadmap, the place of the project within the ecosystem and coordination of working group efforts and calls. On a more operational level, there’s also a lot of reviewing pull requests, addressing github issues, answering questions on Rocket.Chat and writing documentation. If this sounds time consuming, that’s because it is. But putting in the effort is essential to creating long lasting, structurally sound code that can be freely used by anyone to build amazing things.
+ 
+Contributing to a project hosted by Hyperledger, specifically, means you get a lot of the needed infrastructure other projects might not have. There is a wiki for meeting notes, a Zoom account for our meetings, GitHub repos, unlimited CI minutes, a chat platform, and assistance from the Hyperledger staff when needed.
+ 
+Becoming a maintainer
+ 
+I can recommend that every developer be involved with open source, and every company invest in open source software. Open source software provides the foundation for almost all software in the world, and is essential for a world where self-sovereign identity becomes a standard.
+ 
+Besides, working on open source software can be a really good learning experience. You get to work with some of the greatest minds of the industry on the future of digital identity. Maintaining and contributing to Hyperledger, and open source in general, has been really valuable for me. There is something magical about how open source works, and how we can work together towards a shared goal, even if you’re halfway across the world.
+ 
+I can imagine that sounds a bit intimidating. Luckily, you don’t have to start out this way. You can start the way we all do, by quietly listening to working group calls until you find something you want to participate in. Once you decide you’d like to become a contributor or a maintainer, you’ll find that communities will be happy to help you get started.
+ 
+Here are some of my personal tips to get involved with a Hyperledger project. I’ve used the AFJ community as an example throughout.
+ 
+	Attend working group calls – Working group calls are the perfect place to introduce yourself and show your ambition to contribute to the project. This is also the place to stay up to date on the current and planned work of the project. (AFJ Meetings)
+	Get familiar with the codebase – Even though it can be daunting and hard to make sense of a project at first, it is important to get familiar with the project. You should make it as easy as possible for maintainers to review your initial PR and get it merged! (AFJ Repository)
+	Answer questions on Rocket.Chat – Help other people get started with the project and answer their questions! You learn a lot by finding answers to other people’s questions. And also don’t hesitate to ask questions yourself. There are a lot of people with very specific domain knowledge eager to answer your questions. (Aries Channel, AFJ Channel)
+	Look at open issues – Knowing what to work on can be complex when getting familiar with a new project. Github issues often describe missing features or bugs, which can be a great way to find the first item to work on. In AFJ, we currently have more than 70 open issues,  all waiting for someone to pick them up. (AFJ Open Issues)
+	Read about the topic – Read about the topics that underpin the project. For SSI, I recommend reading the Self Sovereign Identity book. If you’re ready to get a bit more in-depth, I recommend to start reading the Aries RFCs. These are fundamental for contributing to any Aries project.
+
+ 
+My best advice is to experience it yourself. Even the smallest pull request is valuable to a project and can give you the confidence to keep going. And, before you know it, you’re the maintainer of a project yourself.
+ 
+If you have any questions, or if you’d like to make contributing to open source software your job, you can reach me at timo@animo.id. We’re always looking for motivated and ambitious people to join our team and are always happy to help new contributors get started.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

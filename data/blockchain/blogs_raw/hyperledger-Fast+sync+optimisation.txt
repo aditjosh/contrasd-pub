@@ -1,0 +1,660 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fast sync optimisation - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+	2024 - Besu Performance Improvements since the Merge
+
+
+
+
+
+	Fast sync optimisation
+
+
+
+
+
+	Memory usage investigations on 23.7.3-RC
+
+
+
+
+
+	Permissioned chain performance testing
+
+
+
+
+
+	Q4 2022 Stability and Performance Improvements
+
+
+
+
+
+	Reduce Memory usage by choosing a different low level allocator
+
+
+
+
+
+	Testing Taskforce Brainstorming
+
+
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Fast sync optimisation
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Fast sync optimisation
+
+	Nicolas Massart
+
+
+
+
+
+Owned by Nicolas Massart
+
+
+Last updated: Apr 08, 2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ This page is a work in progress
+
+
+
+
+
+
+
+
+
+
+
+Environment setup
+Hardware
+AWS i3.xlarge
+Deployment
+TODOÂ add Ansible scripts used to run this tests
+Testing process
+Three distinct runs of aboutÂ 32478 imports (1 import = 200 blocks) â†’ took between 5 hours 30 minutes and 6 hours.Â 
+Collected data
+	Median response time per 200 blocks import
+	System metrics
+	CPU
+	Memory
+	Disk IO
+	Network IO
+
+
+	CPU Profiling
+	Memory Profiling
+
+
+Initial reference results
+	
+	Global elapsed time
+	Number of imports (1 import = 200 blocks)
+	Average Response time import 200 blocks (ms)
+	Median response time import 200 blocks (ms)
+	90th percentile response time import 200 blocks (ms)
+	95th percentile response time import 200 blocks (ms)
+	Maximum response time import 200 blocks (ms)
+
+	Execution #1
+	5 hours, 55 minutes
+	32478
+	632
+	294
+	1450
+	2210
+	27300
+
+	Execution #2
+	5 hours, 39 minutes
+	32674
+	611
+	308
+	1350
+	2020
+	18300
+
+	Execution #3
+	5 hours, 48 minutes
+	32770
+	616
+	325
+	1320
+	2010
+	27000
+
+
+
+Median response time per 200 blocks import
+Execution #1
+
+Execution #2
+
+Execution #3
+
+
+
+
+
+
+
+
+
+
+
+
+Optimisation attempts
+Attempt 1:Â Execute World Sate download before block Imports
+Expected effect
+TODO
+Results
+TODO
+Decision
+TODO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+QBFT, Bonsai, and Snap-Sync testing
+QBFT, Bonsai, and Snap-Sync testing
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Hyperledger Indy Read Replica Implementation
+Hyperledger Indy Read Replica Implementation
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan - Indy Read Replica Implementation
+Project Plan - Indy Read Replica Implementation
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+2024 - Besu Performance Improvements since the Merge
+2024 - Besu Performance Improvements since the Merge
+
+Besu
+
+
+
+Read with this
+
+
+
+
+
+
+QBFT Performance
+QBFT Performance
+
+Besu
+
+
+
+Read with this
+
+
+
+
+
+
+Memory usage investigations on 23.7.3-RC
+Memory usage investigations on 23.7.3-RC
+
+Besu
+
+
+
+Read with this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "c36aff8bbc5e4fb9aabbcf731f66221d"}

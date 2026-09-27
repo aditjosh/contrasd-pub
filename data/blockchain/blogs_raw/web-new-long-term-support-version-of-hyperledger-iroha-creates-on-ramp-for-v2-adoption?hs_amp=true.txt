@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+New Long-Term Support Version of Hyperledger Iroha Creates On-Ramp for v2 Adoption – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          New Long-Term Support Version of Hyperledger Iroha Creates On-Ramp for v2 Adoption – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | May 19, 2022 4:30:00 AM 
+        
+
+        
+          In 2016, a team at SORAMITSU envisioned a universal blockchain framework. They began work on Iroha with the aim of creating a Distributed Ledger Technology (DLT) platform that would be user-friendly, yet robust enough to work with various use cases in any industry, while providing complete client libraries, simple architecture, and easy-to-comprehend entities. In short, Iroha is both a framework and a poem that became a Japanese syllabary, ordered and beautiful.
+ 
+In the six years that have passed, Iroha was contributed to the Hyperledger Foundation, and the project has evolved immensely. When Hyperledger Iroha v1 was released, it was with the goal of being a flexible private blockchain ledger and to help flatten the DLT learning curve. Hyperledger Iroha v1 was to be like digital epoxy, moldable into whatever was needed, but once solidified — rock solid and reliable. The project was a resounding success, achieving what was originally planned and far beyond. 
+ 
+Hyperledger Iroha v1, which graduated as a project in 2019, is both a marvel of performance, speed, and reliability; as well as a platform for mentorship and learning. To this day, Iroha v1 and its SDKs are known as some of the cleanest code bases.
+ 
+Introducing Hyperledger Iroha V2
+ 
+The world of technology flows extremely fast, and by the time everybody talks about an idea, it’s already too late to implement it. “In our world, who can stay gold forever?” as the second line of the Iroha poem states. The Hyperledger Iroha community  has taken a forward-looking stance with the successor to Iroha v1. We anticipate what the world of tomorrow will need in a blockchain ledger. We intend to be the “the great mountain of Uwi,” of which the third line of the same poem speaks, accumulating the Karma of human beings and moving beyond it. 
+ 
+We thus proudly present to you a sneak peek at Hyperledger Iroha v2. 
+ 
+Hyperledger Iroha 2’s main goal is to embody the ideal of Kaizen: eliminate the excessive, preserve the unambiguously good. Iroha 2 is designed as a modular system that’s easy to reason about. You can deploy it as a toll-free intermediate ledger in a Hyperledger Cactus consortium, or you can use it as a standalone ledger with transaction fees. It can just as easily connect to parity Substrate networks and provide Byzantine fault-tolerant governance. But Iroha doesn’t need to be cumbersome. It only asks you questions when no reasonable default can be assumed. It can be as simple and as complex as you choose to make it.
+ 
+The second iteration of Hyperledger Iroha is close to being production-ready, but far from feature complete. It comes with its own bespoke execution model that can be optimized for parallel execution, something which few, if any, ledgers currently allow. Both elastic-supply currencies as well as NFTs are supported, and accounts are allowed to be identified both as a familiar name@domain as well as a verbose but cryptic SS58 address. 
+ 
+Another goal of Hyperledger Iroha 2 is to become the blockchain that would be more than capable of working with a greater variety of use cases while still being lightweight and easy to use. Iroha 2 has been developed in Rust, and will allow blockchain developers to connect to public networks, to Substrate networks; to collect or not collect transaction fees; to choose what assets to mint and how to use them. 
+ 
+In short, with Hyperledger Iroha 2 it is possible to build the type of network that would work best for you: be it a simplistic network that will only allow to create and transfer simple assets, or an elaborate system with reputation, connection to public networks, offline transactions, and complex assets.
+ 
+Join the Hyperledger Iroha v2 Community
+ 
+You can try out Hyperledger Iroha 2 right now, with the help of our Tutorial, which is still a work in progress, but already shows you many features of Iroha 2; such as the creation of basic systems, Iroha Special Instruction or WASM events, as well as usage of Iroha through different languages such as Java, Rust, JavaScript, Python 3 or simply through a CLI.
+ 
+Now Hyperledger Iroha 2 is hitting  a major milestone. We are releasing the 5th preview-release, which will be supported for the following six months. This will allow developers to start using Iroha 2 to design their products and get a preview of some of the innovative functions that are coming soon.
+ 
+Monthly preview-releases have been available since January 2022. The May 2022 release  is different, though. The long-term support provided to this particular version is intended for early adopters to build up their projects. We shall, of course, forge ahead and break things, but the preview release № 5 will remain unchanged (save for security and bug fixes) for at least half a year. In addition to the main peer binary (written in Rust), we will also release the accompanying JavaScript, Kotlin and Java SDKs so that any complex projects that require a stable base can be built. 
+ 
+Our ongoing goal is to keep growing the community – and as always, everyone is welcome at our bi-weekly meetings and in our dedicated Discord chat; especially anyone who wants to build the best blockchain technology with us, and anyone who would like to use it. Every contribution idea will be considered. Let us work together on the future of Hyperledger Iroha!
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

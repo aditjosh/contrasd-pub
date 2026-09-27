@@ -1,0 +1,846 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A Contributor Story: The Path from Custom APIs to Commercial Solutions and Bug Fixes to Fabric 2.1 Documentation – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                A Contributor Story: The Path from Custom APIs to Commercial Solutions and Bug Fixes to Fabric 2.1 Documentation
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Aug 4, 2020
+                    
+                
+
+            
+
+            
+            
+                In 2016, SIMBA Chain was awarded one of the very first DARPA Small Business Innovation Research contracts for blockchain on secure messaging. Dr. Ian Taylor, our CTO, has spent years in distributed computing, but, at the time, Ian and I knew very little of blockchain. I had done some Bitcoin mining in the early years, but had no experience with smart contracts. 
+ 
+As part of the contract, Adam Brinckman, a senior research programmer at the Center for Research Computing at the University of Notre Dame, wrote the chaincode (the “smart contract”) for an application enabling military agencies to create military interdepartmental purchase requests (MIPR transactions) on a privately shared Hyperledger Fabric distributed ledger for our project with DARPA. The goal of this project was to securely provide full traceability of all provisions as they were awarded through a very complicated procurement process. 
+ 
+The initial solution sought to take advantage of the tools provided by Hyperledger, which included  Hyperledger Composer, an interface designed to help developers define assets written to the ledger. However, as we developed the application, we were challenged by the sheer complexity of the MIPR acquisition process. The numerous ways in which transactions could be modeled and the different ways each agency had defined MIPR assets presented major challenges. It would be difficult to capture the problem correctly using a written piece of chaincode. 
+ 
+We realized quickly that we needed to build an auto-generated smart contract and API based on the assets and transactions to help simplify and capture this entire process. This proved to be a good solution for the challenges we faced. Over time, we developed this solution into a tool that would allow low code enthusiasts and business analysts to utilize blockchain and create adoption outside the normal community of interest. 
+ 
+The rest is history. We went on, and continue, to build solutions for the Department of Energy, the United States Navy, Air Force, and USMC, all utilizing Hyperledger Fabric. Many of these solutions are around supply chain traceability, provenance, risk mitigation, sustainability, and lifecycle management. 
+ 
+Hyperledger Fabric was the DLT platform of choice because it provides the following:
+ 
+	Open source!
+	Supply chain specific capabilities 
+	High throughput
+	Permissioned membership
+	Scalability
+	Levels of trust
+	Data on a “need to know” basis
+	Rich queries
+	Architecture that supports plugins
+	Protection of keys and sensitive data
+	Integration with the Fabric EVM that allows us to write Solidity-based smart contracts
+
+ 
+Our extensive work with Hyperledger Fabric and smart contracts has given us the expertise to contribute back to the development effort. Adam recently collaborated with Fabric developers working on the Fabric EVM chaincode to fix a minor bug. The exact problem occurred when attempting to use the Fab3 proxy with web3 python libraries (web3.py). Unlike its JavaScript counterpart, web3.py enforces all input data to conform to Ethereum’s yellow paper specifications, and data returned by Fab3 was failing these validations. Fab3 isn’t the only service that fails these validations; Quorum and other private EVM implementations also fail validation due to the extra bytes they pack into transactions and blocks. Tapping into his experience as an Ethereum Solidity developer, Adam worked with Hyperledger’s development community to make Fab3 compatible with web3.py’s strict validation rules and added new regression tests to ensure that future releases remain compatible.
+ 
+Adam also developed a guide for deploying Fabric EVM onto Hyperledger Fabric v2.1. The official documentation shows examples for installing Fabric EVM onto a 1.4 network so this guide will help developers transition their Fabric EVM chaincode as they begin to upgrade their network. 
+ 
+As a firm that has benefited from open source development of Hyperledger Fabric and other tools, we recognize the value of contributed code and expertise. We’ve been able to build Hyperledger-powered solutions that add the efficiency and effectiveness of key government services and want to help drive more open source innovation in the blockchain space. We encourage others to get involved. Check our this guide to contributing to Hyperledger Fabric or join #Fabric in the Hyperledger Chat channel to talk to the maintainers about your needs and ideas and about how to get involved or suggest a feature or fix. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

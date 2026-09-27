@@ -1,0 +1,428 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-7573: Conditional-upon-Transfer-Decryption for Delivery-Versus-Payment - ERCs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      ERC-7573: Conditional-upon-Transfer-Decryption for Delivery-Versus-Payment
+    
+
+
+      
+          
+            
+              
+              
+                ERCs
+              
+            
+            
+
+
+
+        
+            dvp
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                cfries
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    December 11, 2023,  8:04am
+                  
+                  
+
+1
+              
+            
+            
+              ERC-7573: Conditional-upon-Transfer-Decryption - A Proposal for a Lean and Functional Delivery versus Payment
+
+Abstract
+
+The interfaces model the functional transaction scheme to establish a secure delivery-versus-payment across two blockchains, where a) no intermediary is required and b) the operator of the payment chain/payment system has a small overhead and does not need to store state.
+
+The main idea comes with two requirements: First, the payment chain operator hosts a stateless decryption service that allows decrypting messages with his secret key. Second, a “Payment Contract” is deployed on the payment chain that implements a function
+
+function transferAndDecrypt(uint id, address from, address to, keyEncryptedSuccess, string keyEncryptedFailure) external;
+
+
+that processes the (trigger-based) payment and emits the decrypted key depending on the success or failure of the transaction. The respective key can then trigger an associated transaction, e.g. claiming delivery by the buyer or re-claiming the locked asset by the seller.
+
+Motivation
+
+Within the domain of financial transactions and distributed ledger technology (DLT), the Hash-Linked Contract (HLC) concept has been recognized as valuable and has been thoroughly investigated.
+
+The concept may help to solve the challenge of delivery-versus-payment (DvP), especially in cases where the asset chain and payment system (which may be a chain, too) are separated. The proposed solutions are based on an API-based interaction mechanism which bridges the communication between a so-called Asset Chain and a corresponding Payment System or require complex and problematic time-locks (\cite{BancaItalia}). We believe that an even more lightweight interaction across both systems is possible, especially when the payment system is also based on a DLT infrastructure.
+
+Specificaiton
+
+Methods
+
+Smart Contract on the Asset Chain
+
+interface IDeliveryWithKey {
+    event AssetTransferIncepted(address initiator, uint id);
+    event AssetTransferConfirmed(address confirmer, uint id);
+    event AssetClaimed(uint id, string key);
+    event AssetReclaimed(uint id, string key);
+
+    function inceptTransfer(uint id, int amount, address from, string keyEncryptedSeller) external;
+    function confirmTransfer(uint id, int amount, address to, string keyEncryptedBuyer) external;
+    function transferWithKey(uint id, string key) external;
+}
+
+
+Smart Contract on the Payment Chain
+
+interface IPaymentAndDecrypt {
+    event PaymentTransferIncepted(address initiator, uint id, int amount);
+    event TransferKeyRequested(uint id, string encryptedKey);
+    event TransferKeyReleased(uint id, bool success, string key);
+
+    function inceptTransfer(uint id, int amount, address from, string keyEncryptedSuccess, string keyEncryptedFailure) external;
+    function transferAndDecrypt(uint id, address from, address to, keyEncryptedSuccess, string keyEncryptedFailure) external;
+    function cancelAndDecrypt(uint id, address from, address to, keyEncryptedSuccess, string keyEncryptedFailure) external;
+}
+
+
+Rationale
+
+The rationale is described in the following sequence diagram.
+
+Sequence diagram of delivery versus payment
+
+
+DvP-Seq-Diag1920×3057 248 KB
+
+
+Original Concept
+
+A Proposal for a Lean and Functional Delivery versus Payment across two Blockchains
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Mani-T
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 11, 2023,  8:29am
+                  
+                  
+
+2
+              
+            
+            
+              If it indeed manages to address the challenge of delivery-versus-payment, particularly in situations where the asset chain and payment system operate as separate entities, then this would be a truly significant proposal.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                cfries
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 11, 2023, 10:29am
+                  
+                  
+
+3
+              
+            
+            
+              @pekola I have the following questions on the current interface specification:
+
+	Should the parameter id be a string rather than an uint to allow for more flexible usage? Id could then be a json specifiying which decryption orcale to use, etc.
+	Some function have redundant specification of “to/from” as these fields have already been specified when initiating with id. Should we require to have these redundant parameters specified?
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pekola
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 12, 2023,  1:26pm
+                  
+                  
+
+4
+              
+            
+            
+              Hello @cfries - I would rather suggest a first weak linkage to ERC-6123.
+
+We could extend the IDeliveryWithKey by the functions inceptTrade, cofirmTrade in which the trading parties agree on the trade terms. Based on the transactionSpecs which are agreed a hash gets generated. This will be used in the function pattern vor DvP. Therefore “id” is fine (transactionSpecs = tradedata, paymentamount, etc. are agreed before).
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                cfries
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 13, 2023,  7:03am
+                  
+                  
+
+5
+              
+            
+            
+              So id is generated by another function call (that is not part of the interface)? Otherwise they have to ensure that they do not use an existing id. Is it is required that id is identical on both chains, right?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pekola
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 13, 2023,  9:03am
+                  
+                  
+
+6
+              
+            
+            
+              Yes - I would prefer: Trading Parties agree on terms (incept/confirm), for those terms a unique id is generated which gets processed via DvP-Pattern. Asset Contract keeps track on the states within Dvp-Process. Gonna be a nice design.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                cfries
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 15, 2023,  9:03am
+                  
+                  
+
+7
+              
+            
+            
+              OK. But the point of making id a string instead of an int maybe remains. I believe an int is too narrow. The id could by a UUID.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

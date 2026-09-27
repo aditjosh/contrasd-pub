@@ -1,0 +1,888 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Solang Solidity Compiler optimizations and error handling – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Hyperledger Mentorship Spotlight: Solang Solidity Compiler optimizations and error handling
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jan 25, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                What did you work on?
+ 
+Project name: Solang Solidity Compiler optimizations and error handling
+ 
+Introduction: What is Hyperledger Solang?
+ 
+Hyperledger Solang is a Solidity compiler for Solana and Substrate written in Rust that utilizes LLVM as the backend. It can be considered the first solid initiative towards making Solidity available for non-EVM chains, while maintaining compatibility with Ethereum’s Solidity compiler: Solc.
+ 
+Chapter 1: Applying for the Hyperledger mentorship
+ 
+I found out through a friend that Hyperledger Foundation hosts mentorships for open-source projects related to blockchain infrastructure, which has been my main interest since it covers a whole lot of different Computer Science topics (Distributed systems, cryptography, networking, etc.). As I scrolled through the presented projects, I found a Hyperledger Solang mentorship project addressing three issues:
+ 
+	Make multiplication overflow detection during runtime work above a certain bit-width.
+	Improve the efficiency (gas cost or compute units) of array bounds checks.
+	Improve Solang’s parser resilience. 
+
+ 
+The first issue intrigued me personally. I was working on a De-fi app, using Remix Solc compiler version 0.7.6 that didn’t have runtime overflow checking. The lack thereof was causing a function to misbehave and consumed me a few valuable days to dig into the issue I was facing. The debugging process was captivating and motivated me to go further in understanding how overflow checking works. Although the problem was fixed on later versions of Solc, I saw in the mentorship an opportunity to improve my knowledge about the topic.
+ 
+I contacted Sean Young and Lucas Steuernagel, the mentors, and discussed some questions I had about the compiler. They were really helpful along the way.
+ 
+Chapter 2: Getting warmed up
+ 
+I was new to contributing to open source, didn’t have any experience with Rust and didn’t use Git quite often 🙂 I spent the first three weeks of my mentorship exploring the source code and deciding on what issue to start working on. Since it would give me a broader idea of the code base, I started with the array bounds optimization, whose goal was to decrease the number of instructions when checking if an array indexation is done within its length limits. More details about my work are available both in Solang’s documentation and in the pull request that addresses this.
+ 
+In my first pull request, my mentors pointed out issues on how I was solving the task and raised many problems with my Rust programming style. I was clearly struggling with it.  If you are learning Rust, do not take my approach of “learn by doing.” Please go to the Rust Book, read it, and try out the examples there. It will take some time in the beginning, but the examples will teach you the correct programming concepts. This is the only thing I regret not doing at the beginning of the mentorship. 
+ 
+After that PR was merged, I took some time to read Understanding Ownership and Smart Pointers chapters in the Rust book. That improved my code over the following PRs.
+ 
+Chapter 3: Multiplication Overflow Detection
+ 
+The issue at the core of this project was that there was no multiplication overflow detection for integers wider than 64 bits. There are some facts to consider before solving such a problem: 
+ 
+	LLVM introduces a set of intrinsics for arithmetic operations. The catch here is that there are no intrinsics for multiplication with overflow for integers wider than 64 bits, so we have to implement our own.
+	Solidity was designed for the EVM, which supports bit widths up to 256, and bit sizes of multiples of 8 (int128, int136, etc…). On the other hand, Solang compiles for BPF/WASM, and there is no inherent support for types bigger than 64 bits. 
+
+ 
+Given these two facts, Solang handled multiplication of larger bit widths by first rounding the value to the nearest 32 bits, then splitting the operands bits into chunks of 32 bits and performing long multiplication.
+ 
+The multiplication of N bit values will result in at most 2N bit values. So overflow checking was done by assessing whether the uppermost N bits contain any set bits, and raising a runtime error if there are any. Signed multiplication overflow was done first by doing unsigned multiplication, then checking the result for an unexpected change in the sign.
+ 
+Solang interfaces with LLVM using Inkwell crate. Basically, all of the above was written as Rust code that generates LLVM-IR with the desired logic.
+ 
+What did you learn or accomplish?
+ 
+	If one is in a mainly learning position, a mentorship, do not pinpoint your vision on completing the task. Instead, take some time and do some background readings in order to tie stuff together. For instance, the aforementioned issue needs some background readings on LLVM, and why Solang used Inkwell instead of LLVM’s C API.
+	One cannot develop resilient code without random testing.
+
+ 
+Chapter 4: Improving Solang’s parser resilience.
+ 
+Solang utilizes LALRPOP, a parser generator, for its parser. The problem was that once a parser or lexical error was found, the parser would throw an error and stop. If there are multiple errors in a Solidity file, the programmer will only see the first one.
+ 
+I have utilized LALRPOP’s error recovery documentation to add new grammar rules to account for errors, in such a way that the parser returns multiple errors which makes coding easier.
+ 
+Some messages for future mentees:
+ 
+	When in daily/weekly meetings with your mentors, do not focus on reporting what you have done. Try to focus more on what they have done, even if you do not understand immediately or have nothing to add to the conversation. This will give you a broader vision of the project and its future plans, in addition to benefiting from their knowledge in the field.
+	Do not take code comments personally. Remember that the goal is to learn from a more experienced person. They are criticizing your code, not you 🙂 It is also useful to review your own code multiple times before asking for reviews.
+	You will grow muscles, as in becoming a better software engineer. You will know  how the open source community works and gain a new set of technical and communication skills.
+
+ 
+What comes next? 
+ 
+For the next six months, I will continue working on Hyperledger Solang through a Web3 Foundation grant with a focus on improving the Solang developer experience. Also, my team and I will continue our thesis project (a cross chain wallet), making sure it is production ready by the end of the next Spring semester. For the long term, I will continue working on blockchain infrastructure-related projects.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

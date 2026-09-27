@@ -1,0 +1,897 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Announcing Hyperledger Besu v1.4 - Available Now – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Besu
+                            
+                        
+                    
+
+                
+                Announcing Hyperledger Besu v1.4 – Available Now
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Feb 27, 2020
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Learn about the improved enterprise functionality and performance in the latest release of Hyperledger’s first and only public chain-compatible Ethereum client.
+ 
+Evolution of Hyperledger Besu
+ 
+Hyperledger Besu was contributed to the Hyperledger organization in August of 2019 as the sole Ethereum blockchain client. Since then several notable improvements have been made that have continued to bridge the gap between permissioned and public chains.
+ 
+The v1.3 release of Besu released in October 2019 included state pruning, allowing organizations to save money on storage costs by reducing storage size in a node. It also offers relational database support allowing customers with local storage requirements to choose from a selection of DB storage options through transaction manager, Orion. Besu v1.3 was also upgraded to be compatible with the “Istanbul Hard Fork Upgrade,” which took place earlier this year.
+ 
+The Besu team is pleased to announce the next major release, Hyperledger Besu v1.4, which launched  February 26, 2020, and includes a number of much-anticipated features focusing on performance and enterprise-driven functionality such as:
+ 
+	Plugin APIs
+	New tracing APIs
+	Multi-Tenancy
+	Advanced Key Management
+	End-to-End TLS support for incoming and outgoing RPC endpoints
+
+ 
+Click here to download Hyperledger Besu 1.4.
+ 
+Key Features in 1.4
+ 
+Plugin APIs 
+ 
+Hyperledger Besu v1.4 also exposes a plugin API, allowing anyone to write custom plugins for Besu and enabling users to take data from any Besu network, public or permissioned, and feed it into the rest of their applications and systems easily. The API exposes data about the following components:
+ 
+	Blocks
+	Balances
+	Transactions
+	Smart Contracts
+	Execution Results
+	Logs 
+	Syncing State
+
+ 
+In the future, along with more data being exposed via the API, users can expect Besu to compartmentalize key supporting services, eventually allowing them to be swapped via a plugin.
+ 
+New tracing APIs
+ 
+As part of its 1.4 release, Besu will now support a new tracing API: trace_replayBlockTransaction. The addition of this API is a step towards Besu being fully compatible with all Ethereum clients on the network. For example, it enables the use of Parity-style traces, which are a more concise alternative to the current debug_* APIs in Besu. 
+
+Specifically, the vmTrace option provides an operation-by-operation trace of EVM execution, the stateDiff option highlights the differences in account and storage state before and after the transaction and the trace option details every type and result of calls to account and contracts. 
+
+More Parity-style traces will soon be added to Besu as well. The two next ones scheduled are trace_block and trace_transaction. 
+ 
+Multi-Tenancy – Secure Private Transactions in a shared environment 
+ 
+Hyperledger Besu v1.4 will be able to run in a “Multi-tenant environment,” allowing a number of users to use the same Ethereum node to connect to the network. The Hyperledger Besu multi-tenancy support enables a much wider user base to make use of the blockchain technology, reducing the barriers to entry associated with learning, upskilling, and additional costs associated with deploying  blockchain.
+ 
+Support for authenticated API access will also be given, allowing hosts custom control on who to grant access to, depending on the user’s  need. This coupled with Orion, the open-sourced, Apache 2.0 licensed private transaction manager, enables private transactions to take place all while ensuring only the correct recipient can access the data. Through the use of JWT tokens, a user identity is tied to a privacy identity, validating every API call to ensure the user is part of the privacy group before any data is revealed.
+ 
+
+ 
+ 
+Advanced Key Management
+ 
+The release of Hyperledger Besu v1.4 also includes additional key management functionality through EthSigner. By design, Hyperledger Besu does not allow keys to be stored in the client or node. You have to use an external key manager. In this release, multi-Key support has been added. This support allows for a number of private keys to be securely stored in vaults accessible only when needed to be used for signing a transaction.
+ 
+This advanced option adds the capability to select the correct key based on the details of transactions, regardless of where those keys are stored, allowing for rotation of keys and further security. 
+ 
+End-to-end encryption with TLS 
+ 
+While blockchain delivers significant security benefits, encryption is still critical across the transaction lifecycle. Hyperledger Besu v1.4 will offer end to-end encryption with TLS, meaning all communication from the generation of the private transaction to its signature using private keys stored in secure vaults (e.g., Hashicorp Keyvault), transmission through private transaction managers, and arriving at another node is encrypted. 
+ 
+What’s Next 
+ 
+The next quarterly release, v1.5, is scheduled for mid 2020 and will include our most ambitious features to date. In the meantime, Hyperledger Besu is happy to sit at the intersection of the Hyperledger and Ethereum communities and continue to grow its contributor network.  
+ 
+Those looking to interact one-on-one with Besu developers and contributors can join the conversation on Rocketchat at #besu, or join our regular contributor calls.
+ 
+Interested in learning more, or curious on how to get started with Besu? Check out the Besu docs, view the tutorials, visit the wiki, or take a look at some open issues in JIRA. 
+ 
+For those attending Hyperledger Global Forum, several project maintainers and contributors will also be present and speaking at the event and would love to chat with you. 
+ 
+This blog was written by PegaSys Digital Marketing Specialist, Gina Rubino, with contributions from PegaSys Product Managers Tim Beiko and Arash Mahboubi. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

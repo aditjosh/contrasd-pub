@@ -1,0 +1,852 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interoperability in the Open Source community – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Health and Public Sector
+                            
+                        
+                    
+
+                
+                Interoperability in the Open Source community
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Mar 14, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Without interoperability, you wouldn’t be able to read this article. Websites, computers, and servers must be able to recognize and share information with each other, and shared standards and protocols allow them to do so, thereby giving us the web. On a smaller scale, companies have their own intranets, and, on the smallest scale, you might have your own private thumb drive for personal documents that can interact with whatever machines you typically work on. 
+ 
+Interoperability is not a technological given or an inexorable process. It is a choice that needs to be actively made, and it can sometimes take considerable effort to make work. Think of electronic health care records and the years it has taken to make it easier for a patient to access their health data, something originally provisioned in a 2000 Privacy Rule to the Health Insurance Portability and Accountability Act (HIPAA) of 1996.
+ 
+Crises, however, can accelerate the slog to technological convergence—and that’s precisely what we’ve seen as a result of the global COVID-19 pandemic. In April 2021, a data-sharing provision of the 21st Century Cures Act came into effect: Patients must be able to have direct digital access to eight categories of clinical notes in an electronic health record, notably—given the need for COVID testing—lab test results. 
+ 
+Cometh the legislation, cometh the tech. Indicio and SITA had already been working on a decentralized, verifiable credential solution to integrate passenger health data with air travel in a privacy-preserving way. Built on Hyperledger Indy and Hyperledger Aries, the technology solved the problem of patient privacy by eliminating the need for a centralizing party to store patient data in order to facilitate verification. 
+ 
+With the Cures Act provision, there was now no obstacle to passengers in the US accessing their COVID test data directly from a Health Information Exchange in the form of a digital credential. They could use this credential to prove their test status without having to share personal information. In situations where it was important to know which test they had taken and when, they could choose to share this information with a verifier, such as the border control or health agency of the country they were visiting.
+ 
+This solution is now known as the Cardea Project. Successfully trialed in Aruba, its codebase has been donated to Linux Foundation Public Health as an open source solution for sharing health data through verifiable digital credentials. It has an active community group, led by Indicio and Shatzkin Systems, that is working on expanding its features and, critically, its interoperability.
+ 
+To do this, Cardea launched a hackathon for interoperability— dubbed an “Interop-a-thon”— in September 2021. The goal was to get companies using Aries agents to test those agents against a reference implementation of Cardea and each other. Over a half day, SITA, Liquid Avatar, IdRamp, GlobalID, Canadian Credentials Network, and Network Synergies all successfully interoperated. That’s the headline; the story, however, is that it took work to make this happen—it was an exercise in uncovering glitches, unexpected problems, and overcoming them. That’s what made the Interop-a-thon so valuable for all the participants—and that’s why Cardea is holding a second Interop-a-thon on March 17.
+ 
+This time, in addition to  agent testing, Cardea is going to field “out-of-band” invitations (a critical change coming to Hyperledger Aries at the end of March) and a simple reference implementation of machine readable governance (a way of adding governance rules at the agent level, thereby making governance portable and available offline).
+ 
+Participants see interop-a-thons as a testing ground for interoperability, and therefore a way to ensure that the products and services they are building have the capacity to scale. This is a critical step toward achieving a network of networks effect. Not surprisingly, the number of participants signed up for the next Interop-a-thon is much greater than the first.
+ 
+For Cardea, there are more and bigger trials on the way. And with each solution delivered, the scope for expansion becomes greater. If we can successfully implement a system for incorporating health data in travel, what about all the other clinical notes described by the Cures Act? What’s the roadmap to creating a decentralized health record?
+ 
+This is the perfect challenge for an open source community to solve. And by testing the solution through an interop-a-thon, we can figure out how to make the many function as one.
+ 
+If you want to learn about interoperability first hand, I highly encourage you to watch the video of their last Interopathon here: https://www.youtube.com/watch?v=KVywPPLhG0U. For more details or to register for the  next event on the 17th of March, go here: https://docs.google.com/forms/d/e/1FAIpQLSdpQmjxnYqohk0SfleulNOJXYsi1bhVhMjeGP5MxBMxCa-9TA/viewform 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

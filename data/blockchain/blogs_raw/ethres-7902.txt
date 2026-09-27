@@ -1,0 +1,213 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SGX security for ETH2 keys - Security - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      SGX security for ETH2 keys
+    
+
+
+      
+          
+            
+              
+              
+                Security
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 26, 2020,  6:04pm
+                  
+                  
+
+1
+              
+            
+            
+              Want to secure your #ETH2 validator keys so hackers do not steal them while they are stored in plaintext on your AWS machine?
+
+SKALE has opensource sgxwallet hardware security module that can be EASILY improved to be used by ETH2 (1-2 weeks of work).
+
+
+  
+      
+      GitHub
+  
+  
+    
+
+skalenetwork/sgxwallet
+
+
+sgxwallet is the first ever opensource hardware secure crypto wallet that is based on Intel SGX technology. It currently supports Ethereum and SKALE, and will support Bitcoin in the future.  Sgxwal...
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+We are looking for opensource developers interested to contribute to sgxwallet so it can be used for ETH2.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                kobigurk
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 27, 2020,  8:20pm
+                  
+                  
+
+2
+              
+            
+            
+              Nice work!
+
+Are the operations in libBLS constant-time? As far as I know, SGX doesn’t provide built-in protection against side-channels attacks.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

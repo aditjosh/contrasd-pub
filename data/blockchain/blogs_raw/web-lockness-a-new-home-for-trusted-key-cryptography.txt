@@ -1,0 +1,874 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lockness: A new home for trusted key cryptography
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Lockness
+                            
+                        
+                    
+
+                
+                Lockness: A new home for trusted key cryptography
+ 
+                
+                    Clarisse Hagege and Christopher Grilhault des Fontaines, Lockness Maintainers
+                    |
+                    
+                        Sep 16, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                We are thrilled to introduce Lockness, a new open-source ecosystem focused on key management and digital signature protocols, including technologies like Multi-Party Computation (MPC), Threshold Signature Schemes (TSS) and other state-of-the-art protocols in key cryptography. Our company, Dfns, has proudly contributed its open-source libraries to Lockness, which is a project of the just launched LF Decentralized Trust.
+
+A new chapter in the history of key cryptography
+
+At the heart of digital security lies the ability to manage keys and signatures with maximum integrity and minimum risk. Digital signatures ensure authenticity, non-repudiation, and integrity across a wide range of applications, from cryptocurrency wallets to secure communication protocols. However, traditional key management systems often suffer from vulnerabilities—primarily, the risks associated with private key exposure or loss.
+
+Lockness seeks to mitigate these risks through the promotion, distribution and implementation of advanced cryptographic techniques such as multi-party computation, distributed key generation, threshold signatures, threshold encryption and decryption, zero-knowledge proofs, and more. These protocols distribute private key shares, also known as “partial keys”, among multiple participants, enhancing both security and availability. Even if part of the network is compromised or fails, these protocols ensure that signing processes remain secure and operational.
+
+Multi-party compute protocols and threshold cryptography have been around for decades and are now widely used to create and secure keys and signatures across the digital asset industry. However, the broader institutional financial sector has been slow to adopt them. A major reason is the lack of standards and the hesitation to be the first to take risks. For example, NIST’s Cryptographic Module Validation Program lists 194 FIPS 140 certified modules, but only 3 use MPC; the rest rely on HSMs and related technologies. This outdated reliance on legacy systems is holding back the financial industry from benefiting from the security and efficiency of new cryptographic methods. Until now, there hasn’t been a serious effort to unite auditors, companies, and academics under one initiative for the trusted development of open-source cryptography. Today, that initiative is called Lockness, an LF Decentralized Trust project.
+
+Why the Linux Foundation 
+
+Lockness is not just a collection of libraries; it’s a movement towards a more secure and interoperable cryptographic future. Dfns believes that the most effective way to enhance digital security across industries is through collaborative development, transparent protocols and dynamic community-driven innovation. By contributing its open-source libraries to Lockness, Dfns takes a significant step towards accelerating and building a more resilient, trusted cryptographic infrastructure. 
+
+With that said, one of the greatest hurdles to wider MPC adoption isn’t the technology itself, but how it's viewed. Many technical executives in banks and financial institutions remain cautious, opting for hardware security modules (HSMs) over alternative cryptographic solutions like MPC. This preference is rooted in regulation and tradition—HSMs have been around longer, are widely trusted, and are seen as the gold standard in key management. However, MPC and similar cryptographic methods have been around for almost as long and are just as well tested. In fact, MPC protocols tend to have fewer exploits each year compared to HSMs and are already used–sometimes unknowingly–by thousands of fintechs globally. The problem isn’t what MPC can do, but how it's perceived. It hasn’t yet gained the wide acceptance and legitimacy that decision-makers in regulated industries expect.
+
+This is where the Linux Foundation comes into play. By housing Lockness as a project under LF Decentralized Trust, Dfns is ensuring that all open-source libraries will be governed and managed by trustworthy experts, under the supervision of product management and legal teams ensuring robust maintenance and compliance with industry standards and laws. This brings an additional layer of credibility and transparency that will help MPC gain the trust of decision-makers in banks and financial institutions.
+
+Dfns' contribution to Lockness includes a robust collection of open-source libraries, meticulously designed and implemented by the Dfns research team and several notable contributors, including cryptographic experts like Dr. Jonathan Katz, Dr. Nigel Smart, Chelsea Komlo, Antoine Urban, Denis Varlakov, Nikita Sorokovikov, and Orestis Alpos. These libraries form the foundational tools required to build scalable, secure cryptographic protocols.
+
+The donation includes:
+
+	`round-based`: A framework for writing MPC protocols, abstracting away the complexity of communication layers and providing reusable tools.
+	`generic-ec`: A library for generic elliptic curve cryptography, resistant to small-group attacks and designed for secure arithmetic operations.
+	`fast-paillier`: Optimized implementation of Paillier encryption, using the Chinese Remainder Theorem (CRT) to speed up encryption and decryption.
+	`cggmp21`: An audited implementation of the CGGMP21 ECDSA threshold protocol.
+	`stark-curve`: Pure Rust implementation of Stark curve.
+	`slip-10`: A crate for HD-wallet derivation.
+	`udigest`: A library for unambiguous hashing of structured data.
+	`generic-ec-zkp`: Zero-knowledge proof library based on `generic-ec`.
+
+
+Each library is fully documented, audited, and available for public use under the Apache 2.0 license, ensuring maximum transparency and security for cryptographic protocols.
+
+Vision: Making cryptographic protocols more accessible
+
+The creation of Lockness is driven by a clear and powerful vision: to make cryptographic protocols like MPC, TSS, DKG, ZKP and other novelties more accessible, auditable, secure, and performant. These technologies hold the potential to revolutionize the way organizations, particularly in institutional finance, manage sensitive digital assets and execute secure transactions on blockchains. 
+
+However, developing and maintaining MPC protocols is notoriously challenging. These protocols are based on complex cryptographic principles and come with many technical hurdles in implementation. Lockness aims to simplify this by fostering a unified, open-source platform that developers and organizations can use to create advanced cryptographic solutions more easily, reliably, and securely. The goal is to bring together top experts, resources, and knowledge in one trusted space, making cryptographic development simpler. By uniting expertise, Lockness believes it can help to tackle the difficulties of implementing and maintaining MPC and related protocols.
+
+Lastly, we want to emphasize that the Lockness project goes beyond MPC and supports innovations in other branches of key security and cryptography. We embrace advancements in authentication, API key management, HSMs, TEEs, secure enclaves, and other key management technologies and data storage environments. With this broad focus, Lockness aims to establish a new reference framework for cryptographic standards, providing clear guidance for both the private and public sectors on what should be considered standard in cryptography for digital financial services.
+
+A call to build trust and standards together
+
+To further this mission, we call upon the MPC Alliance and all its members to join us in contributing their open-source software to Lockness. By doing so, we can create stronger, more comprehensive standards that give the industry more control, transparency, and readability over this fast-moving and complex technology. MPC is powerful, but its complexity can often intimidate potential adopters. With Lockness, we aim to eliminate this barrier by creating one single point of reference, one repository, and one community working towards a common goal: making key management secure, compliant, and democratized across all critical industries. We believe that by consolidating efforts, we can build a more secure and trusted cryptographic infrastructure for the future.
+
+Lockness is now open to all developers, cryptographers, and organizations interested in exploring and contributing to key management and cryptography. We're excited to collaborate with LF Decentralized Trust and the broader cryptographic community to make MPC, TSS, and ZKP essential parts of the future of digital assets and blockchain technology.
+
+To get involved with the Lockness project, visit the Lockness Github repository and the Lockness channels on LF Decentralized Trust’s Discord server.
+
+Please note that we're still setting up some parts of the community infrastructure. We'll soon share details about community calls, meetups, and workshops where you can learn more and connect with others interested in the project.
+
+Join us on Tuesday, October 15 at 8:00 am Pacific Time, for “Intro to Lockness,” the community kick-off MeetUp for details on the project and steps for getting involved.
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

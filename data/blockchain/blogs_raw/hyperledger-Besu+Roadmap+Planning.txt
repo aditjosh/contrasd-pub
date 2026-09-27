@@ -1,0 +1,754 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu Roadmap & Planning - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+	Cancun Planning
+
+
+
+
+
+	Enterprise roadmap item detail
+
+
+
+
+
+	Prague Planning
+
+
+
+
+
+	See Performance & Stability for Q4 Roadmap
+
+
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Besu Roadmap & Planning
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Besu Roadmap & Planning
+
+	Felipe Faraggi
+
+
+
+	Matthew Whitehead
+
+
+
+	Sally MacFarlane
+
+
+
+	+8
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: yesterday at 6:09 am by Matthew Whitehead
+2 min read
+
+
+
+
+
+
+
+
+
+
+
+
+This document represents the current working roadmap for Besu. It is a living document, which will evolve and change over time. In particular the features in later versions are likely to change.
+We use the approach of #now, #next, #later used by foursquare, with a slightly different time horizon. Our #now scale is about 3 dmonths, #next about 6 months, and #later is 12+ months.
+
+
+The enterprise roadmap is currently led by Matthew Whitehead from Kaleido. To discuss the enterprise roadmap items reach out to matthew.whitehead on the discord server.
+Â 
+
+	Â 
+
+
+
+
+
+	Public Roadmap
+
+
+
+
+
+	Enterprise Roadmap
+
+
+
+
+
+
+
+
+
+
+
+	Â 
+
+
+
+
+
+	Public Roadmap
+
+
+
+
+
+	Enterprise Roadmap
+
+
+
+
+
+
+	Now
+(3 months)
+Related releases 25.1.x - 25.3.x
+	Prague Fork
+	Prague: polishing âœ…
+	Besu on Devnet5 âœ…
+
+	Besu on Devnet6 âœ…
+
+	25.2.0 is testnet-ready for Prague
+
+
+
+
+Ongoing performance workÂ 
+	Improve debug_trace* calls performance and reduce output size #8103  âœ…
+	debug_traceBlock 3x performance improvement
+
+	Donâ€™t trace memory/stack/storage by default
+
+	Exclude zeros and empty values
+
+
+
+	Block processing 
+	Improve conflict detection in parallelization by considering slots to reduce false positives #7923  âœ…
+
+
+
+
+Syncing time/memory improvements 
+	Disable tx indexing during sync (snap/checkpoint) - improves sync time ~ 20% #8181  âœ…
+
+	Sync block body memory improvements - reduces memory during syncing #8242  âœ…
+
+
+Client Evolution
+	Fusaka planning/dev
+	EOF devnet0
+
+
+
+	Bonsai-friendly Archive Mode
+
+	Plug-in technical docs
+
+	Codebase cleanup for better multi-use-case
+
+
+	Move QBFT snap sync out of experimental
+	Has been out since 24.7.1 âœ…
+
+
+Bonsai archive
+	See PR 7475
+
+	Provides equivalent function to FULL sync FOREST DB
+
+
+Bonsai archive with state proofs
+	Build on PR 7475 to provide proofs for historic state
+
+
+Stability under load
+	Performance and behaviour when the sequenced transaction pool hits its limits
+
+	Most testing until now has been performance close to the TX pool limits - not beyond them
+
+
+Run enterprise acceptance test every release
+
+	Next
+(6 months)
+Related releases 25.4.x - 25.12.x
+	4444s and Statelessness
+	EIP-4444 history expiry
+
+	Light client exploration
+
+	Verkle Trie ongoing development
+
+
+Client Evolution
+	Fusaka dev/test/ship
+	EOF devnet0
+
+
+
+	Removal of enterprise featuresÂ per sunset plan
+
+	Plug-in technical docs
+
+	Besu on more Layer 2 networks
+
+	Besu as a customizable L2/L3 sequencer
+
+	Ongoing performance work
+	Tx parallel processing: further optimization
+
+
+
+
+	Move empty block periods out of experimental
+	Has been in out since 24.7.1 âœ…
+
+
+Ensure Verkle + Archive has a solution
+Â 
+Enterprise options for history expiry
+	L1 will start dropping block bodies and receipts from 2Q2025
+
+	Enterprises will need to understand the options Besu provides and the architectures that are available to them
+	Might involve e.g. option to automatically remove blocks and receipts for chainHead-N blocks for non archive, non-full nodes
+
+
+
+
+Removing deprecated features including private transaction and tessera support
+
+	Later
+(12 months)
+Related releases 26.m.x
+	Client Evolution
+	Modularity of the protocol schedule
+
+	Modularity everywhere
+
+
+Ongoing Protocol Research 
+	Besu as an Ethereum reference client in Java
+
+	Statelessness State Expiry researchÂ 
+
+
+	Modularity work
+	Move consensus logic out of core Besu monorepo
+
+	Allow faster iteration on both core Besu and enterprise Besu features
+
+
+BFT peering via non-validators
+	Allow edge-of-network nodes that arenâ€™t BFT validators
+
+
+ 
+
+
+
+
+
+
+
+Â 
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Enterprise roadmap item detail
+Enterprise roadmap item detail
+
+Besu
+
+
+
+Read with this
+
+
+
+
+
+
+2022 Q1 Hyperledger Besu
+2022 Q1 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2021-09-28 Besu Contributor Call
+2021-09-28 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q3 Hyperledger Besu
+2022 Q3 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q2 Hyperledger Besu
+2022 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2021-08-31 Besu Contributor Call
+2021-08-31 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+Atlassian Intelligence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "d7ccff30d14b4fa99ef9797e36f55fc2"}

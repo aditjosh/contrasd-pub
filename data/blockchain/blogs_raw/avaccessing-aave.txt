@@ -1,0 +1,231 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessing Aave | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Aave 101 GuidesAccessing Aave
+beginner
+
+
+
+
+
+
+Introduction
+
+Aave is an open protocol, and users can interact with Aave through a variety of user-friendly interfaces, or directly with its smart contracts. This openness also enables the creation of third-party services or applications that integrate with the protocol.
+
+Interfaces
+
+There are multiple interfaces available to access the Aave Protocol. Below are just a few examples:
+
+	The Aave Interface located at app.aave.com – an interface hosted on IPFS, maintained by Aave Labs
+	DeFi Saver: all the protocol functionalities, combined withleverage and auto liquidation (repayment with collateral)
+	Flash Loans, supply and withdrawal from the Furucombo interface
+	Supply and withdraw from the Argent wallet
+	Manage positions via smart accounts with the Brahma Console
+	Asset management on Fireblocks
+	All actions are available directly through the protocol’s smart contracts, which can be accessed through block explorers or code, by following the guidelines available in the docs
+
+
+Deployments
+
+All official deployments of the Aave Protocol are approved through community governance. The protocol is currently deployed on the following blockchain networks:
+
+Mainnet
+
+	Ethereum Core (V3, V2, V1)
+	Ethereum Prime (V3)
+	Ethereum EtherFi (V3)
+	Polygon (V3, V2)
+	Avalanche C-Chain (V3, V2)
+	Arbitrum (V3)
+	Optimism (V3)
+	Base (V3)
+	BNB Chain (V3)
+	Scroll (V3)
+	Metis (V3)
+	Gnosis (V3)
+	ZKsync Era (V3)
+	Linea (V3)
+	Sonic (V3)
+	Celo (V3)
+	Fantom (V3)
+	Harmony (V3)
+
+
+The Ethereum Core market serves as the most liquid and risk-adjusted environment for a diverse range of assets, while the Ethereum Prime market is dedicated to blue-chip collaterals and high-leverage, correlated assets.
+
+Testnet
+
+	Ethereum Sepolia (V3)
+	Arbitrum Sepolia (V3)
+	Base Sepolia (V3)
+	Scroll Sepolia (V3)
+	Optimism Sepolia (V3)
+	Avalanche Fuji (V3)
+	Fantom Testnet (V3)
+
+
+Notice
+
+Beware of scams: Aave never advertises on any social media platform or search engine and does not have any downloadable mobile application available. Aave Protocol will never ask for your wallet seed phrase. Should you encounter any of these suspicious instances, do not interact with them.
+
+
+
+Related
+Introduction To Aave
+beginner
+
+Introduction to the Aave Protocol.
+6 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

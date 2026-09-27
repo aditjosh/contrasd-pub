@@ -1,0 +1,727 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GitHub Merge Queue - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+	GitHub Merge Queue
+
+
+
+
+
+	[ACCEPTED] DEBUG Log Improvement Proposal
+
+
+
+
+
+	Checklist for reporting privacy issues
+
+
+
+
+
+	Shandong Testnet
+
+
+
+
+
+	Using Postman with Besu
+
+
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+GitHub Merge Queue
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+GitHub Merge Queue
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Feb 13, 2025
+3 min read
+
+
+
+
+
+
+
+
+
+
+
+
+Update - disabled Feb 14 2025
+	branch protection (rulesets) set back to previous ie 
+	combined main + release* 
+
+	disallow force pushes to any branches
+
+
+
+
+Issues found
+	still runs all the checks (GHA) on merge group (PR enters merge queue) even if the PR is up to date - so we double up on CI - I think even if the queue is empty, definitely if a PR is removed from the queue
+	Merge Queue running checks twice? Â· community Â· Discussion #43988 - the issue has been closed and is apparently â€œexploratoryâ€� â†’ More control over required status checks for pull requests using merge queue Â· Issue #824 Â· github/roadmap 
+
+
+
+	GHA status not reported even though all workflows are complete and appear successful
+	maybe this? Merge queue checks don't report status back Â· community Â· Discussion #64027 
+
+
+
+	had to alter branch protection rules - merge queue creates temporary branches with a special prefix to validate pull request changes and we had a catchall branch protection disallowing force pushes to any branches. more info
+
+	had to add â€œon mergeâ€� event for GHA workflows to be able to run required checks - more info
+
+
+Update - Tried merge queue again since itâ€™s out of beta and thereâ€™s a lot of approved PRs to merge
+Action plan to try the experiment:
+	enable merge queue on besu
+	you can't enable it on rulesets with * match so would need to duplicate the ruleset - have a separate one for release*
+
+
+
+	merge this PR #8284  which hopefully will help with flaky ATs
+
+	add a bunch of other PRs to merge queue - we live with the merge commit message being the PR description - there's 10 approved
+	would exclude the maintainer update - still voting
+
+	also the BadBlockManager - has an open q
+
+	Â the gas limit one ? still has some open q's
+
+	so there's 7 to merge
+
+
+
+	if it doesn't work (only problem I see being flaky tests mean merge queue doesn't help), can switch off merge queue again - back to status quo
+
+
+Â 
+Update -Â disabled ~ Mar 17 2023
+Issues found
+	 still runs all the checks (including GHA) again even if the queue is empty https://github.com/orgs/community/discussions/46757?sort=top#discussioncomment-4912738
+
+	GH enforcing the max 20 runners at once limit, which they never did beforeÂ 
+
+	hence PRs were being silently removed from the queue (GHA not reporting status) and no benefit was being gained from the queue
+
+
+Â 
+Update - enabled on Mar 13 2023. DCO required adjusting as per https://github.com/hyperledger/besu/pull/5207.Â 
+Essentially this works the same as enabling auto-merge, except that any additional "merge from main" actions are automated.
+Impacts on current workflow
+	once the merge queue is enabled, it's a requirement - so all PRs will be merged via the queue.
+
+	to add your PR to the merge queue, you need to click the green "merge when ready" button" just as you would click the "enable auto-merge" button
+
+	"squash merge commits" is done automatically
+	with the commit message = PR title (full commit details still available in the PR)
+
+	so if you want to edit the commit message, you'll need to do this locally on your branch prior to adding it to the merge queue - eg https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch
+
+
+
+	avoiding unnecessary merge conflicts - think about inserting into a sensible place in the changelog, rather than appending to the end by default
+
+	when there's a merge conflict, the PR with the conflicts gets kicked out of the merge queue and manual intervention is required - same as if you had enabled "auto-merge"
+
+
+Discussion in Feb 28 contributor call on enabling the merge queue 2023-02-28 Contributor Call - APAC Friendly Time after 23.1.1 release
+Note - it's part of "branch protection" - so you turn it on for specific branch protection rules.
+This feature is still in beta - discussionÂ https://github.blog/changelog/2023-02-08-pull-request-merge-queue-public-beta/
+Link to Besu merge queue (when enabled) would be https://github.com/hyperledger/besu/queue/main
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+DRAFT DOCUMENT - Best Practices for Automated Pipelines
+DRAFT DOCUMENT - Best Practices for Automated Pipelines
+
+Task Forces
+
+
+
+More like this
+
+
+
+
+
+
+Release Process Improvement
+Release Process Improvement
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-03-14 Contributor Call
+2023-03-14 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-10-02 Contributor Call - AMEA Friendly Time
+2023-10-02 Contributor Call - AMEA Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-11-02 Meeting Notes
+2021-11-02 Meeting Notes
+
+Hyperledger Cacti
+
+
+
+More like this
+
+
+
+
+
+
+2020 02 14 DWG Agenda
+2020 02 14 DWG Agenda
+
+Hyperledger Fabric
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+Atlassian Intelligence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 42, "requestCorrelationId": "4cf0e06bb94a40938a8730939bd2af3a"}

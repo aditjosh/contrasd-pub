@@ -1,0 +1,612 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-10-01 Contributor call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+	2019-09-04 Onboarding call
+
+
+
+
+
+	2019-09-17 Contributor call
+
+
+
+
+
+	2019-10-01 Contributor call
+
+
+
+
+
+	2019-10-15 Contributor Call
+
+
+
+
+
+	2019-10-29 Contributor Call
+
+
+
+
+
+	2019-11-12 Contributor Call
+
+
+
+
+
+	2019-11-26 Contributor Call
+
+
+
+
+
+	2019-12-10 Contributor Call
+
+
+
+
+
+
+
+	2020 Notes
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2019-10-01 Contributor call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2019-10-01 Contributor call
+
+	Felipe Faraggi
+
+
+
+	Vipin Bharathan
+
+
+
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Oct 02, 2019 by Vipin Bharathan
+
+
+
+
+
+
+
+
+
+
+EMEA friendly time
+Recording
+dummyfile.txt
+Minutes
+	General Introduction
+	Antitrust Notice
+
+	General Announcements (Danno)
+
+	Devcon announcement
+
+	Consensys sponsored Besu Space
+	HL Event in Osaka
+
+	HL Forum announcement
+
+	https://events.linuxfoundation.org/events/hyperledger-global-forum-2020/
+
+	Release updates (Danno)
+
+	1.2.4 released - testnet block numbers are baked in
+	1.3-RC released on 2019/10/29
+	1.3 should be released this week
+
+	Work updates
+
+	Ethereum Classic (Greg):Â 
+
+	Chugging along, fully understanding the codebase before going through it
+	Working on toggles and how to configure options
+	They have a fork on github.com/ChainSafe/besu
+
+	No PR yet
+
+	Updated wiki with block numbers
+	Of the opinion that ETC needs another stable client for the network
+	CLI naming convention: classic.json
+	ETC testnets:Â 
+
+	Will support Kotti, no support for Morden
+	only variations of different json files
+
+	Istanbul Hard Fork
+
+	Some miner hiccups in Ropsten, but otherwise fine
+	Next; Goerli end of October, Rinkeby 2 weeks later
+
+	Other Business
+
+	CI issues
+
+	LGTM fixes needed (not urgent)
+
+	Long form presentations:
+
+	2 types of valuable presentations (Tim)
+
+	High level feature overview
+	Lower stack subjects
+
+	How/when to decide subjects?
+
+	Proposed subjects posted in agenda ~1 week before the call
+	Possibility of taking a presentation subjects during previous call
+
+	Two new Github repos
+
+	Mac Homebrew support
+	Smart Contract
+
+	Collaboration patterns
+
+	Maintainer guidelines will be posted in the wiki
+	Discussions should be open in rocket chat
+	Response times will be discussed
+	Gitter/Rocket chat migration discussed
+
+	Open Forum (Danno)
+
+	Storage options
+
+	Follow-up on RAM requirements; curious about when moving away from RocksDB will be possible? (Antony)
+	Plugin mechanism with ability to specify key/value storage provider
+
+	Possibility to plug into Redis/LevelDB/etc
+
+	Currently, RocksDB still seems best option performance wise
+
+	Chat question: have you talked about hard fork in IBFT2.0? (@eum602)
+
+	Not supported yet, but has been talked about
+
+	Future Topics
+
+	Plugin mechanism
+	Next meeting: on October 15th GMT 1h00
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "83d7890ff48c4e49b1153b4b5c414627"}

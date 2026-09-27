@@ -1,0 +1,109 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Fabric-Ethereum token bridging – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Mentorship Spotlight: Fabric-Ethereum token bridging – Hyperledger Foundation
+
+        
+
+        
+           Written by André Augusto, Ph.D. Student, Instituto Superior Técnico, Lisbon, Portugal | Jan 11, 2023 9:16:51 AM 
+        
+
+        
+          What did you work on?
+ 
+Project name: Fabric-Ethereum token bridging
+ 
+Main objectives:
+ 
+	Review cross-chain bridges state of the art.
+	Study and develop chaincode and smart contracts following ERC standards.
+	Prototype a cross-chain bridge between Hyperledger Fabric and EVM-based blockchains. Hyperledger Technologies: Hyperledger Fabric, Hyperledger Besu, Hyperledger Cactus.
+
+ 
+Mentors:
+ 
+	Imre Kocsis, assistant professor, Budapest University of Technology and Economics (BME), Budapest, Hungary.
+	László Gönczy, assistant professor, Budapest University of Technology and Economics (BME), Budapest, Hungary.
+
+ 
+Impact yielded from work:
+ 
+This work constitutes an add-on to the existing efforts to enable interoperability between permissioned networks. Moreover, we contribute to the community by developing a cross-chain bridge between Hyperledger Fabric and EVM-based blockchains using the Secure Asset Transfer Protocol (SATP), a protocol under standardization at the Internet Engineering Task Force (IETF).
+ 
+What did you learn or accomplish?
+ 
+Deliverables:
+ 
+	Create a report on blockchain interoperability solutions.
+	Design a cross-chain bridge between a Hyperledger Fabric and a Hyperledger Besu network.
+	Implement a prototype of the designed cross-chain bridge solution in Hyperledger Cactus.
+	Develop an academic paper.
+
+ 
+Issues overcome:
+ 
+	At the beginning there were a lot of unknowns: a new area, protocols, and new technology. After all, I am glad about the final product and all the lessons learned.
+
+ 
+Lessons learned and advice:
+ 
+	The community is here to help. We had fruitful discussions with various members of the Hyperledger community, which proved to be valuable for the final project.
+	The best is always yet to come. Believe me when I say things will always be better than they are at the moment — bugs appear, and sometimes we need to take a step back to take two steps forward.
+
+ 
+Exciting technology:
+ 
+	Hyperledger Fabric was considered the most adopted enterprise blockchain solution.
+	Hyperledger Cactus provides the building blocks for interoperability.
+	The integration of Self-Sovereign Identity (SSI) with interoperability solutions seems to be the way forward to perform identity management.
+
+ 
+What comes next?
+ 
+	The addition of SSI in our work seems a good next step as a way to remove some assumptions made in the solution design.
+	I envision to continue working and advancing the existing interoperability research. I aim to continue contributing to Hyperledger Cactus (now Hyperledger Cacti), the Hyperledger project directed toward interoperability.
+
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

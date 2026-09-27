@@ -1,0 +1,552 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Badge Status - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+	Hyperledger Besu Active Status Proposal
+
+
+
+
+
+	Project Badge Status
+
+
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Project Badge Status
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Project Badge Status
+
+	Danno Ferrin
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Feb 17, 2022 by Sally MacFarlane
+
+
+
+
+
+
+
+
+
+
+Legal
+A license check is performed as a part of each build. (Here's one from 22 Jun 2021).Â  If any dependency reports a license from anything other than the permitted list a build error occurs and the distribution is not generated.
+Decentralized
+LFX Analytics Report
+Just under a quarter of all contributions come from outside ConsenSys Quorum (Protocols, formerly known as PegaSys, was merged with ConsenSys Quorum)
+The top committing maintainer from each company over the last year:
+	ConsenSys - Sally MacFarlane
+	Splunk - Antoine Tolume
+	Chainsafe - Edward Mack
+	<No Affiliation> - Danno Ferrin
+
+Hyperledger Besu is critical infrastructure for both ConsenSys and the Ethereum Classic Cooperative, who both are committed to maintain the project for the Ethereum Mainnet and Ethereum Classic chains respectively. Both companies would independently maintain the project if required.Â 
+Release
+Hyperledger Besu maintains a roughly bi-weekly release schedule with roughly quarterly to three-times a year major releases cycles.
+All releases can be seen in the Besu Github Repo, and future anticipated release dates in the Wiki.
+Besu's roadmap is mostly driven by two external concerns: the Enterprise Ethereum Alliance specification and Ethereum Mainnet hard-forks (and to a lesser extent Ethereum Classic, whichÂ mostlyÂ aligns with Ethereum Mainnet)
+Testing
+Besu has robust unit, integration, and acceptance tests run with each main branch build that validate Besu behaves as expected, as well as reference testsÂ maintained by Ethereum core developers to check for mainnet standards compliance. These are run as part of every commit and often do catch unintended behavior changes.
+Documentation
+Besu maintains a ReadTheDocs site.Â  Documentation includes RPC interfaces, server deployment, dApp development, and more general documentation such as architectural structure.
+Alignment
+The Besu main wiki page lists the main use cases and specific features.
+As a standard Etheruem client, Hyperledger Besu interacts with all other Hyperledger projects that interface with Ethereum, specifically Avalon, Cactus, and Caliper.Â  Besu also works with a number of Labs projects, such as Firefly, Blockchain Automation Framework, and Yui.
+Infrastructure
+Hyperledger Besu is fully hosted on Hyperledger Infrastructure: GitHub for source control, Discord for Chat, Hyperledger email list (although Discord is the dominant communication channel), builds and release are run on CircleCI, and repolinter verifying conformance to the common repository structure.
+CII
+The most recent CII report for Hyperledger Besu.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Repositories and other projects
+Repositories and other projects
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Programs & Grants
+Programs & Grants
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu - Community Support
+Besu - Community Support
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu
+Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Versioned documentation
+Versioned documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "585ec41f4f0f49a5bdcab64383f62d9e"}

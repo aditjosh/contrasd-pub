@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mentorship Spotlight - AI-FAQ Lab: GUI implementation and prototype deployment
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Mentorship Spotlight - AI-FAQ Lab: GUI implementation and prototype deployment
+
+        
+
+        
+           Written by Jacqueline Zhang | Jan 24, 2025 3:46:00 PM 
+        
+
+        
+          Project: AI-FAQ Lab: GUI implementation and prototype deployment 
+
+
+I had the incredible opportunity to work on AI-FAQ, a proof-of-concept LLM ChatBot designed to answer questions about Hyperledger project documentation. Now an LD Decentralized Trust Lab, AI-FAQ aims to support users by streamlining access to critical information, reducing the need to navigate extensive documentation manually.
+
+Project Motivation
+
+Developers often waste time searching internal documentation, such as wiki pages, for simple answers. This inefficiency inspired the community to create an open-source conversational AI tool capable of answering context-specific questions quickly and accurately.
+
+At the start of the mentorship program, the initial implementation was a basic solution running on a Google Colab Notebook. Our primary goal was to enhance this into a robust system with a standard ChatBot GUI and deploy it on a cloud server, making it more user-friendly and scalable.
+
+Project Description
+
+The system is an open-source Python project that implements an AI chatbot to respond to HTTP requests. It serves as a flexible framework or template for communities, organizations, or companies to customize and enhance using advanced AI techniques such as Retrieval-Augmented Generation (RAG). Recent advancements in Large Language Models (LLMs) have enabled excellent performance even with common hardware resources.
+
+For my mentorship project, I analyzed the existing solution to identify areas for improvement and divided the project into three main tasks: developing a front-end component prototype, designing a containerized architecture, and producing high-quality documentation for deployment. Guided by my mentor and the  LF Decentralized Trust community, I overcame challenges inherent in large-scale open-source projects, refined my understanding of LLM technologies, and embraced the collaborative open-source philosophy.
+
+What I Learned and Accomplished
+
+During this project, I successfully developed a Proof-of-Concept API leveraging LLMs to analyze project documentation, dynamically generating questions and answers for an FAQ ChatBot. Additionally, I implemented an intuitive front-end interface using JavaScript and TypeScript and deployed the solution on a cloud server. These deliverables marked a significant milestone in creating a reusable, scalable, and open-source chatbot solution for the LF Decentralized Trust ecosystem.
+
+A key challenge was integrating the backend with the frontend interface. Through perseverance and guidance from my mentor, I enhanced my skills in front-end development, cloud architecture, and creating detailed technical documentation. This experience deepened my appreciation for collaborative problem solving within open-source communities.
+
+Working with a Mentor and the Community
+
+My mentor Gianluca played a pivotal role in my growth, providing valuable technical advice and insights into navigating open-source collaboration. Their guidance not only accelerated my learning but also helped me cultivate a problem-solving mindset essential for tackling complex technical challenges. Additionally, the community enriched my experience by fostering inclusivity, shared knowledge, and opportunities for skill development.
+
+Looking Ahead
+
+This experience has inspired me to continue contributing to AI-FAQ and other open-source initiatives, particularly those involving LLMs and scalable cloud solutions. I envision the AI-FAQ ChatBot evolving into a comprehensive resource for  the LF Decentralized Trust ecosystem, integrating multilingual capabilities and advanced contextual understanding. Looking ahead, I aim to deepen my expertise in cloud technologies and LLMs while remaining an active member of the LF Decentralized Trust community, driving impactful innovations.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

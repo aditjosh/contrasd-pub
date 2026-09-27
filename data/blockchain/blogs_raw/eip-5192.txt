@@ -1,0 +1,286 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-5192: Minimal Soulbound NFTs
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Standards Track: ERC
+    
+  
+  
+    
+      ERC-5192: Minimal Soulbound NFTs
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Minimal interface for soulbinding EIP-721 NFTs
+
+  	Authors	Tim Daubenschütz (@TimDaub), Anders (@0xanders)
+	Created	2022-07-01
+	Requires	
+
+  EIP-165, 
+
+  EIP-721
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+    	Contract Interface
+
+
+  
+	Rationale
+	Backwards Compatibility
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This standard is an extension of EIP-721. It proposes a minimal interface to make tokens soulbound using the feature detection functionality of EIP-165. A soulbound token is a non-fungible token bound to a single account.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+The Ethereum community has expressed a need for non-transferrable, non-fungible, and socially-priced tokens similar to World of Warcraft’s soulbound items. But the lack of a token standard leads many developers to simply throw errors upon a user’s invocation of transfer functionalities. Over the long term, this will lead to fragmentation and less composability.
+
+
+In this document, we outline a minimal addition to EIP-721 that allows wallet implementers to check for a token contract’s permanent (non-)transferability using EIP-165.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The keywords “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY” and “OPTIONAL” in this document are to be interpreted as described in RFC 2119.
+
+  
+    
+      
+      
+         Contract Interface
+      
+      
+    
+
+
+A token with a uint256 tokenId may be bound to a receiving account with function locked(...) returning true. In this case, all EIP-721 functions of the contract that transfer the token from one account to another must throw.
+
+
+// SPDX-License-Identifier: CC0-1.0
+pragma solidity ^0.8.0;
+
+interface IERC5192 {
+  /// @notice Emitted when the locking status is changed to locked.
+  /// @dev If a token is minted and the status is locked, this event should be emitted.
+  /// @param tokenId The identifier for a token.
+  event Locked(uint256 tokenId);
+
+  /// @notice Emitted when the locking status is changed to unlocked.
+  /// @dev If a token is minted and the status is unlocked, this event should be emitted.
+  /// @param tokenId The identifier for a token.
+  event Unlocked(uint256 tokenId);
+
+  /// @notice Returns the locking status of an Soulbound Token
+  /// @dev SBTs assigned to zero address are considered invalid, and queries
+  /// about them do throw.
+  /// @param tokenId The identifier for an SBT.
+  function locked(uint256 tokenId) external view returns (bool);
+}
+
+
+
+
+
+To aid recognition that an EIP-721 token implements “soulbinding” via this EIP upon calling EIP-721’s function supportsInterface(bytes4 interfaceID) external view returns (bool) with interfaceID=0xb45a3c0e, a contract implementing this EIP must return true.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+The above model is the simplest possible path towards a canonical interface for Soulbound tokens. It reflects upon the numerous Soulbound token implementations that simply revert upon transfers.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+This proposal is fully backward compatible with EIP-721.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+There are no security considerations related directly to the implementation of this standard.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Tim Daubenschütz (@TimDaub), Anders (@0xanders), "ERC-5192: Minimal Soulbound NFTs," Ethereum Improvement Proposals, no. 5192, July 2022. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-5192.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

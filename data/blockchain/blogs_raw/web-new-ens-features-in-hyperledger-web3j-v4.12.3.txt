@@ -1,0 +1,944 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+New ENS Features in Hyperledger Web3j v4.12.3
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Web3j
+                            
+                        
+                    
+
+                
+                New ENS Features in Hyperledger Web3j v4.12.3
+ 
+                
+                    Nischal Sharma, Hyperledger Webj3 maintainer and Blockchain Developer at Web3 Labs
+                    |
+                    
+                        Jan 23, 2025
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                The Ethereum Name Service (ENS) is a cornerstone of the decentralized web, simplifying blockchain interactions by replacing complex Ethereum addresses with human-readable names. With the release of v4.12.3 of Hyperledger Web3j, an LF Decentralized Trust project, developers gain powerful new features to manage and interact with ENS, bringing significant improvements to identity management and metadata handling in decentralized applications.
+
+
+What is ENS?
+
+The Ethereum Name Service (ENS) is a decentralized naming system built on the Ethereum blockchain. It translates machine-readable identifiers like Ethereum addresses into human-readable names such as alice.eth. This simplifies interactions with the blockchain by allowing users to:
+
+	Send and receive assets using readable names instead of long hexadecimal addresses.
+	Interact with decentralized applications (dApps) more intuitively.
+	Access decentralized websites hosted via ENS.
+
+
+ENS operates similarly to the traditional Domain Name System (DNS) but is designed for Web3. It maps ENS names to Ethereum addresses, smart contracts, IPFS content, and other types of data, making blockchain interactions more user-friendly.
+
+Overview of Existing ENS Features in Hyperledger Web3j
+
+Hyperledger Web3j has long supported core ENS functionality, including:
+
+	Forward Resolution: Resolve an ENS name (e.g., alice.eth) to its corresponding Ethereum address.
+	Reverse Resolution: Retrieve the primary ENS name associated with a given Ethereum address.
+
+
+You can use ENS names anywhere you wish to transact in Web3j. In practice this means, in smart contract wrappers, when you load them, such as:
+
+
+
+Also, when performing Ether transfers, such as using the command line tools:
+
+
+
+What’s New in Hyperledger Web3j v4.12.3?
+
+The latest release introduces a host of new ENS-related features that expand its capabilities:
+
+1. Set Primary ENS Name for Any Address
+
+Web3j now allows developers to set the primary ENS name for any Ethereum address. This feature is vital for establishing human-readable identities within decentralized applications, enhancing user experience.
+
+2. Manage ENS Records
+
+ENS names can store additional metadata in the form of ENS records. Web3j v4.12.3 enables developers to:
+
+	Retrieve records such as avatar, email, url, description, location, and more.
+	Dynamically update these records to personalize or enhance ENS metadata.
+
+
+3. ENS Metadata Service Integration
+
+With integration into the ENS Metadata Service, Web3j now allows fetching detailed ENS information, including:
+
+	Registration and expiration dates
+	Associated metadata and records
+	Ownership and resolver details.
+
+
+This feature simplifies access to ENS-related data and supports rich metadata handling for dApps.
+
+4. Extended Chain Support
+
+Web3j has expanded ENS support to additional Ethereum networks:
+
+	Holesky (Ethereum testnet)
+	Linea Mainnet
+	Linea Testnet
+
+
+This multi-chain support ensures greater flexibility for developers working in diverse blockchain environments.
+
+Code Examples
+
+Below are some practical examples to illustrate these new features:
+
+1. Forward Resolution: ENS Name to Address
+
+
+
+2. Reverse Resolution: Address to Primary ENS Name
+
+
+
+3. Setting Primary ENS Name
+
+
+
+4. Manage ENS Records
+
+
+
+5. Get Namehash and Labelhash
+
+
+
+6. Retrieve Owner and Resolver Details
+
+
+
+7. Fetch ENS Metadata
+
+
+
+Why These Updates Matter
+
+For Developers
+
+	Simplifies interaction with ENS, enabling advanced use cases like decentralized identity, metadata management, and personalized dApps.
+	Enhances multi-chain flexibility, allowing developers to build on both testnets and mainnets.
+
+
+For the ENS Ecosystem
+
+	Promotes greater adoption of ENS through improved tooling and user experience.
+	Encourages dApp developers to leverage ENS for decentralized identity solutions.
+
+
+If you’re interested in reviewing the implementation, you can check out the pull request on GitHub: Web3j ENS Features PR #2116
+
+Conclusion
+
+Hyperledger Web3j remains dedicated to supporting and advancing the Ethereum Name Service ecosystem. This release is a testament to the team’s commitment to enhancing ENS functionality.
+
+Try out Web3j v4.12.3 today and start leveraging these powerful new ENS features. Share your feedback, suggest improvements, and help shape the future of ENS support in Web3j. You can find us here on the LF Decentralized Trust Discord or register for our community calls here.
+
+Let’s build a more decentralized and user-friendly Web3 ecosystem together!
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

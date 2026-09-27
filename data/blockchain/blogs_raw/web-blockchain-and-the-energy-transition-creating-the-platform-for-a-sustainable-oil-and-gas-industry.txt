@@ -1,0 +1,862 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain and the Energy Transition: Creating the Platform for a Sustainable Oil and Gas Industry – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Climate
+                            |
+                        
+                            Special Interest Group
+                            
+                        
+                    
+
+                
+                Blockchain and the Energy Transition: Creating the Platform for a Sustainable Oil and Gas Industry
+ 
+                
+                    Si Chen, Open Source Strategies, Inc.
+                    |
+                    
+                        May 15, 2023
+                    
+                
+
+            
+
+            
+            
+                For the last three years, I’ve been looking at how blockchain could solve the climate problem as part of developing the blockchain-carbon-accounting solution in the Hyperledger Climate SIG. Thanks to Andrea Frosinini, one of the many people I’ve connected with through Hyperledger Foundation, I met Dr. Soheil Saraji, an expert on Carbon Capture and Storage, or CCS. This technology captures CO2 emissions and stores them underground in old oil fields. The meeting turned into a collaboration as Soheil and I have recently finished writing Sustainable Oil and Gas with Blockchain, which is set to be published in June 2023 by Springer.  
+ 
+While writing this book, I’ve discovered what an important role the oil and gas industry could play in solving the climate problem. I’ve also uncovered what I believe may be the biggest opportunity for blockchain, especially enterprise blockchain.  
+ 
+Oil and Gas and Climate
+ 
+I’ve never doubted that fossil fuels cause climate change.
+ 
+Working on the book, though, made me realize how much we need fossil fuels to keep the world going.  Everything that you’ve touched today used energy, and most of that energy came from fossil fuels.  Furthermore, most of those things will continue to need energy from fossil fuels for decades. Even under the aggressive 1.5℃ by 2100 scenario, the IEA predicts that about 70% of the world’s energy will come from fossil fuels in the 2020’s, falling to 48% in the 2030’s and 28% in the 2040’s. (Based on IEA 2021.)  Producing those fossil fuels generates a whopping 3 gigatons of CO2 equivalent emissions per year. It also requires $800 billion to $1 trillion a year in capital investments. (IEA 2022)  
+ 
+So if you’re interested in the climate problem, the oil and gas industry is actually where the action is. We must get it to reduce its own emissions. We must get it to shift its investments to produce zero carbon energy. At the same time, though,  the oil and gas industry must keep providing the world the energy we all need just to keep going. This is what the “energy transition” means, and it’s truly a delicate balancing act. 
+ 
+You might think that the oil and gas industry doesn’t want such a transition to happen. I found the opposite to be true. The whole sector is actually very concerned about climate change, because it knows its future, even its existence, depends on solving it. Just about every oil and gas company now publishes its own emissions. Most have a strategy to reduce emissions and are making investments to do it.
+ 
+Yet there’s no question they need to do more, and do it faster.
+ 
+Challenges of the Energy Transition
+ 
+The question is “How?”
+ 
+Each of the industry’s solutions have significant benefits but also potential downsides. Carbon capture and storage is a proven technology that certainly removes CO2 from the air, but it could also be used to extract more oil, which would cause more emissions. Biofuels are also a proven technology–you’ve probably already driven a car or even flown in an airplane powered by them. But they only reduce emissions if they don’t cause people to clear cut forests to grow crops for fuel. Hydrogen itself is clean and emission free, but its production and transportation could cause a lot of emissions. Finally, eliminating methane leakage and flaring requires constant monitoring and plugging of leaks.  
+ 
+In each case, whether the initiative reduces emissions depends on its specific production process. So, if the energy transition means higher values for lower emissions, then the industry would have to prove that its emissions reductions are real to get paid for its efforts. The value of the captured CO2, biofuels, hydrogen, and even traditional oil and gas would increasingly depend on environmental attributes associated with them.  
+ 
+Finally, all these initiatives will require massive – think trillions of dollars – of capital. Will investors pay? They’re already worried that climate change would render the oil and gas industry obsolete.  The good news, though, is that those same investors see tremendous growth potential in carbon capture, sustainable biofuels, and hydrogen. Thus, if the oil and gas industry could prove its climate initiatives, it could get much higher valuations from investors and be able to raise the capital it needs on good terms.
+ 
+Applications for the Blockchain
+ 
+This is where I think the blockchain comes in.  
+ 
+Blockchain technology could allow the oil and gas industry, its customers, investors, regulators, and the general public to work together faster and more efficiently. Smart contracts could turn the massive volumes of data from IOT sensors, drones, and satellites into metrics. Those metrics could then be used to create tokens, which could be traded or attached to physical products. The combination of metrics and tokens could then be used to prove climate benefits to investors and even structure investments.
+ 
+I see public and enterprise blockchains working together to do all this. Enterprise blockchains such as Hyperledger Fabric are great with large volumes of data and securing access to trusted parties. Public blockchains could connect larger networks of downstream customers and public investors. Hyperledger Besu and Cacti could help bridge the two, by creating enterprise versions of public blockchains and connecting public and enterprise blockchains.
+ 
+Where Next?
+ 
+Oil is the world’s most traded commodity.  Oil and gas is one of the world’s biggest industries.  
+ 
+As it transforms to meet the challenges of climate change, the environmental and emissions attributes of oil and gas will be increasingly important in determining its value. This transition of oil and gas from a physical commodity to a digital one is a huge opportunity for blockchain technology, because only blockchains can scale quickly enough to meet the needs of this transition. Blockchains, both public and enterprise, will play a big role in this transformation.
+ 
+So just as the Wild West of crypto speculation may be coming to an end, the biggest opportunity for blockchain, the technology, could be emerging. For those of us in blockchain, this is a chance to help solve one of society’s biggest challenges while building a whole new generation of software businesses.
+ 
+For more information about the book and related works on a sustainable oil and gas industry, see SustainableOilGas.com
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

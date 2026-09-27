@@ -1,0 +1,864 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Technologies in Action Building a Greener Future
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Digital Trust
+                            |
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Climate
+                            
+                        
+                    
+
+                
+                Hyperledger Technologies in Action Building a Greener Future
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jun 28, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Tackling climate change will take innovation and collaboration on a global scale. Open source blockchain technologies are particularly valuable at uniting parties to collect, validate and innovate with climate data. There is a growing range of applications that are leveraging distributed ledger and related technologies, including green finance, sustainability reporting, climate accounting and supply chain traceability.
+ 
+As part of our spotlight on #HyperledgerClimate, we’ve compiled a sampling of production deployments and solutions built using Hyperledger technologies that are leading the way towards a more sustainable future:
+ 
+4AIR’s Comprehensive Blockchain-based Registry for Sustainable Aviation Fuel (SAF)
+ 
+Sustainable Aviation Fuel (SAF) is a type of biofuel with a lower carbon footprint than conventional jet fuel. With mandates to use SAF on the horizon, companies need a way to collect and verify key information related to their use of SAF. 4AIR teamed with IntellectEU to build a blockchain-based registry that includes all necessary SAF details, regulatory eligibility, and ownership information. The main stakeholders within the 4AIR platform are fuel producers, fuel distributors, fuel sellers, airlines and operators.
+ 
+Developers used a private-instance of Hyperledger Fabric supported by IntellectEU’s Catalyst Blockchain Manager to build the platform. 4AIR’s resulting SAF Registry allows registering, transferring, retiring and tracking of tokenized aviation fuel batches across the platform. Tokens are used to represent the emission reduction claim from one metric ton of SAF. Once created by fuel producers, these digital tokens can be transferred to fuel distributors and fuel consumers, before then being burned/retired when a claim has been finalized. Read more here.
+ 
+Botanical Water Technologies 
+ 
+Botanical Water Technologies (BWT) from Australia is leveraging Hyperledger Fabric to tackle severe water shortages that are affecting populations around the world. BWT found a way to recover the water usually wasted making alcohol, juice, ketchup, and sugar. The process involves capturing, purifying and creating sustainable drinking water with technology housed in shipping containers and connected up to existing systems that process fruit, vegetables, or sugar cane. BWT teamed with Fujitsu to develop a blockchain-based marketplace for buyers and sellers of this plant-sourced water, opening the door to the sale and donation of this water or of “water impact credits” (WICs) to help fulfill corporate water stewardship goals. Read more here.
+ 
+Circulor
+ 
+Tracking the flow of materials through their lifecycle, including extraction, production and into second life and recycling, is a cornerstone of sustainable and responsible manufacturing. Circulor has united whole industry segments onto a Hyperledger Fabric-powered platform that is introducing critical traceability to automotive, construction, extraction and plastic recycling. Drawing on its work with electric vehicle OEMs and supply chain participants to manage the lifecycle of the materials required to manufacture EV batteries, Circulor was named as one of 11 consortium members and the lead technology implementer for Germany’s Federal Ministry for Economic Affairs and Climate Action (BMWK) “Battery Pass” project. 
+ 
+Energy & Mines Digital Trust
+ 
+Initiated by the Government of British Columbia, Canada, in partnership with TELUS, Energy & Mines Digital Trust provides digital trust solutions for the natural resource sector, empowering companies to prove their sustainability practices. To compete in a global market that prioritizes sustainably sourced products, mining companies must be able to prove where their products originated and how they were produced. The Energy & Mines Digital Trust project leverages tamper-proof digital credentials, issued in real time, as a new approach to sustainability reporting, and empowering mining companies to share verified data that can be trusted. The Government of British Columbia developed Traction, a tool based on Hyperledger Indy and Hyperledger Aries, to send and receive digital credentials.
+ 
+Participating mining companies will be issued two digital credentials: 
+ 
+	Mines Act Permit – A credential issued by the Government of British Columbia that regulates all mining activity in the province. Using this credential, mining companies can confirm the legality of their operations to a multitude of recipients.
+	Towards Sustainable Mining (TSM) report – A voluntary benchmarking standard governed by the Mining Association of Canada, a private-sector industry association, that recognizes environmental, social, and governance performance, enabling mining companies to differentiate themselves in global markets.
+
+ 
+Equipped with the Mines Act Permit and TSM report, a mining company can easily prove that they are operating legally, and their sustainability claims are backed by audited data. Read more here. 
+ 
+____
+ 
+Join the conversation about the use of Hyperledger technologies bringing new approaches to tackle climate changes and help ensure a more sustainable future. #HyperledgerClimate
+ 
+To learn even more about ways Hyperledger technologies are shaping the climate fight, check out the Hyperledger Climate Action and Accounting Special Interest Group. The group holds bi-weekly general meetings as well as programming working group calls. The general meetings often include guest presentations on new developments and applications that leverage Hyperledger and related technologies to tackle climate challenges. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,906 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Burrow - The Boring Blockchain – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Burrow
+                            
+                        
+                    
+
+                
+                Burrow – The Boring Blockchain
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Oct 8, 2019
+                    
+                
+
+            
+
+            
+            
+                Blockchains are too exciting. Burrow wants to be boring. Then we want to be simple. Then we want to be fast. Even more boring than Git is stupid. The kind of boring that lets you sleep well at night. Burrow gives you just enough blockchain to build a strongly decentralised public permissioned network. Enough but no more.
+ 
+Burrow philosophy
+ 
+Burrow aims to be simple, complete, opinionated, and lightweight. We want to be ‘the Redis of blockchain.’ Our guiding principles are:
+ 
+	Provide single pure Go binary running as a single process with (almost) everything included
+	Support public permissioned networks as first-class citizens
+	Prefer introspection and tight coupling of components over configurability
+	Provide a single Byzantine Fault Tolerant (BFT) consensus algorithm
+	Provide a clean and simple developer experience that gets you closer to the metal
+
+ 
+Boring deeper
+ 
+Burrow is a fully fledged blockchain and smart contract framework. That is, you ought to be able to service the same use cases as with Hyperledger Sawtooth, Fabric, and Besu (whereas Iroha takes a slightly different approach to smart contracts).
+ 
+The core of Burrow is a custom, fully compliant, Ethereum Virtual Machine (EVM) implementation with an authenticated state (Merkle tree) based on Tendermint consensus (A PBFT consensus variant which we embed as a library). Burrow has a coarse-grain Unix-style model of permissioning baked directly into its EVM implementation. Permissions are for things like SEND, CREATE (a contract), and BOND (become a validator).
+ 
+There are many other features wrought from our use of Burrow in the wild, both to run the Agreements Network and from years of working on use cases when it was still called eris-db.
+ 
+It is an explicit focus of Burrow to support running permissioned networks that are, in some sense ‘open to the public.’ There are many shades of grey in terms of network participation with Burrow’s permissions model; validators may be established on an invite-only basis, contract creation may be limited to autonomous contracts rather than human participants, or Burrow could be configured much like permissionless public Ethereum. We are particularly interested in modes of operation that bridge the gap between private chains and public permissionless ones. This bridge is why we value BFT consensus so highly, and why we include quorum-based governance primitives.
+ 
+Burrow avoids relying on container orchestration and virtual machines as part of its basic setup. These technologies are powerful and can also hide a multitude of sins. Burrow provides an ergonomic developer experience on bare metal — on your laptop or server without needing docker or container orchestration in the first instance. We still have high-quality Kubernetes support for use in production, but you can also spin up a multiple node network directly on your laptop. We aim to give a streamlined developer UX and to help build developer intuition with our tools such as burrow examine, our JSON debug output or our curl-able HTTP info endpoint.
+ 
+You can use our composable command line tools to spin up a simple chain:
+ 
+ burrow spec -v1 | burrow configure -s- | burrow start -c-
+
+
+ 
+We provide statically linked cross-compiled binaries for Linux, macOS, and Windows.
+ 
+We run over a Tendermint BFT consensus that prioritises correctness and finality and provides good throughput for networks with several validators in the low 100s. We only expose additional configuration where it is necessary and try to provide higher level configuration and sane default to reduce the numbers of levers you need to pull on.
+ 
+We provide a smart contract model exclusively in the Ethereum world view (state lives in buckets called ‘accounts’) and assume the structure provided by the EVM ABI.
+ 
+Our entire state is modelled in Google’s Protocol Buffers, which is used in our GRPC layer down to our underlying state storage.
+ 
+Three faces of Burrow
+ 
+Within the Hyperledger family Burrow can be seen to occupy three different niches:
+ 
+1) The Hyperledger bridge to the Tendermint/Cosmos ecosystem
+ 
+Burrow is tightly integrated with Tendermint via its ABCI interface for consensus. This integration means Burrow serves as an excellent way into the emerging Cosmos Network as that network and protocol emerge, Burrow will be amongst the first frameworks to join it. If you are interested in running smart contracts on Cosmos and their inter-blockchain proposals then the Burrow project has built most of what you need. We intend to continue to push the envelope on what can run on top of Tendermint/Cosmos.2. An Ethereum side-chain and compatibility project with support for advanced smart contract languages via WASM and experimental economic systems
+ 
+2) An Ethereum side-chain and compatibility project with support for advanced smart contract languages via WASM and experimental economic systems
+ 
+Since Burrow shares a smart contract language and ABI with Ethereum we have an impedance match with public Ethereum. We have plans to provide a two-way peg and support for staking on public Ethereum, which makes us a viable option for acting as an Ethereum side-chain. Since we are not pinned down by consensus, p2p, or low-level state compatibility with Ethereum mainnet, we have an excellent opportunity to innovate side-chain architectures and to help influence emerging standards in this direction.
+ 
+3) A lightweight hackable EVM/Solidity execution library
+ 
+Having entered Hyperledger as an independently developed Apache 2.0 licensed EVM implementation, we are most well-known for our EVM library. We successfully integrated into Fabric and Sawtooth, which helped us refine our internal interfaces and modularity. Our implementation is straightforward to read and understand and is not complicated by legacy support required for mainnet. In this respect we provide an excellent base for experimenting with the EVM – by extending it or making it run in other contexts (for example there has been recent discussion about running Burrow’s EVM within processor enclaves (e.g. Intel SGX) as part of the newly established Hyperledger Trusted Compute Framework.
+ 
+For a more detailed look at Hyperledger Burrow features, read an extended version of this article here. 
+ 
+Plea for help
+ 
+
+ 
+  
+  
+
+  Join us for 
+  Hacktoberfest
+   – see Burrow Issues 
+  here
+   
+ 
+ 
+If you are looking to get involved in Hyperledger, then you will find in Burrow a small and uncrowded community with much to do. We have interesting features for newcomers to work on, and we are in search of contributors and maintainers. Come and help us build! I or another Burrow maintainer will be happy to help you to get going with any of Burrow’s features if you swing by Burrow chat. If you are willing to spend a little time sequestering that knowledge by contributing to our documentation, I am willing to devote special attention to your learning and the needs of your use case, including by making changes to the Burrow roadmap or fixing bugs on the spot.
+ 
+References
+ 
+To learn more about the project and community, check out these resources: 
+ 
+	Burrow main documentation site
+	Burrow Hyperledger chat 
+	Burrow Hyperledger wiki 
+	Blackstone – Agreements Network 
+	Burrow godoc 
+
+ 
+About the Author
+ 
+Silas Davis is the Burrow maintainer and CTO at Monax.io. An outdoor adventurer, dad, math fan, and local political advocate, Silas looks forward to collaborating on Hyperledger  Burrow.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

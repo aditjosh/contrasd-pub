@@ -1,0 +1,157 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing the Flint Programming Language for ewasm - EVM - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Introducing the Flint Programming Language for ewasm
+    
+
+
+      
+          
+            
+              
+              
+                EVM
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                SusanEisenbach
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 17, 2020, 10:31am
+                  
+                  
+
+1
+              
+            
+            
+              Flint-2
+
+Last year the safer blockchain programming language Flint was developed. With the support of our friends in the Ethereum Foundation, the development of Flint has continued. There is a new compiler (hence Flint-2) written in Rust. Flint-2 has support for communication between contracts, possibly written in different languages.
+
+Flint targeted Solidity (via Yul) whereas Flint-2 has been designed to be used with multiple backend targets. Flint-2 currently has Libra and an Ethereum (ewasm) backends. As the targeted backends are currently under active development, to provide a usable compiler, Flint-2 needs to track the development.
+
+We are looking for like-minded people to join our development effort. There are many different directions this work could go, and some might be suitable for a masters capstone or individual project.
+
+Please get in touch, if our description of Flint-2 looks promising to you, and you like working on compilers. Just email susan@imperial.ac.uk and we can discuss potential collaborations.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

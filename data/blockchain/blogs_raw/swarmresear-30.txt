@@ -1,0 +1,351 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Postage (ex Proof of Burn) - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Postage (ex Proof of Burn)
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            nagydani
+            
+          
+
+          
+
+
+
+          
+              
+                June 13, 2019,  4:47pm
+              
+              #1
+          
+        
+        
+          A small piece of data cryptographically tied to a chunk carrying the following information can act as postage payment for spam protection and syncing incentivization:
+
+	The swarm hash of the chunk
+	Amount paid on-chain to an appropriate smart contract.
+	Timestamp of beginning of validity period
+	Timestamp of the end of validity period (expiration time)
+	Proof of the above. In the first version, a corresponding digital signature, later some ZKP not revealing anything beyond the above, but proving it.
+
+
+Chunks can have multiple (valid) postage stamps attached to them. The “value density” of a postage stamp is measured in wei/second/chunk. By definition, it is zero, if the chunk has no currently valid stamps attached to it. The value densities conferred to the chunk by valid postage stamps simply add up. The value density of a stamp is calculated as the value of the payment divided by the number of chunks stamped from the same payment and further divided by the length of the validity period of the stamp.
+
+If the same chunk is encountered with a different set of stamps, these sets are merged.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+                  
+                    
+                      
+
+Proof of Burn (for spam protection)
+                    
+                    
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+
+          
+              
+                June 13, 2019,  7:05pm
+              
+              #2
+          
+        
+        
+          If I understand correctly, a node won’t receive any kind of payment, but rather only has a guarantee that the content is spam-limited by the resources of the uploader.
+
+So in this scheme, how exactly is a node incentivized to propagate these chunks?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            nagydani
+            
+          
+
+          
+
+
+
+          
+              
+                June 17, 2019,  8:46am
+              
+              #3
+          
+        
+        
+          I am not sure which node you are talking about, but I suspect that I did not convey my idea correctly.
+
+The node of Bob that receives the chunk with a postage stamp on it from the node of Alice, indeed, has a guarantee that the content is spam-limited and THEREFORE, it is willing to credit Alice for it over SWAP. Now, since hashing does a good job of randomizing chunk adresses, this credit will be very probably balanced with chunks synced by Bob to Alice before any actual payment takes place, but on an abstract level, Bob does pay Alice for pushing spam-limited content his way that is closer to his address than to hers.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+
+          
+              
+                June 17, 2019,  2:26pm
+              
+              #4
+          
+        
+        
+          The node I was talking about was just a normal swarm node. I see, so the idea here is the that SWAP protocol would require that each chunk has a minimum threshold of value from the “last known on-chain
+
+payment proof” in order to be considered non-spam? so in the non-ZK version, how would this cryptographic proof look like? are there any deeper resources/specifications one could look at? It would be cool to understand what is the performance overhead this adds, or do you think it can be done efficiently enough to be viable?
+
+An extension of this idea I just had would be that instead of simply burning the payment, we could try to distribute it to nodes that are able to prove that they are storing certain content, for example using a custody game similar to that of eth 2 beacon chain, such that the mechanism would play a double-role by creating this extra layer of “competition” for providing random chunks proofs to an on-chain smart contract therefore helping assure availability of the files (sort of like an insured pinned content). What do you think?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            nagydani
+            
+          
+
+          
+
+
+
+          
+              
+                June 26, 2019,  6:52am
+              
+              #5
+          
+        
+        
+          In the non-ZK version, the proof would be a simple digital signature. The corresponding public key can be looked up with a smart contract (WiP), where it has a value and a duration, the quotient of which will need to be further divided by the (estimated) number of chunks signed with this key to obtain the value of the stamp.
+
+I am also thinking about distributing the payment with some probabilistic lottery that would disburse the funds at such a rate that it will run out by the time it would expire anyway. In fact, this is the main reason I opted for the name “postage stamp” instead of “proof of burn”, as it does not necessarily need to be burned.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+
+          
+              
+                January 7, 2020,  8:45pm
+              
+              #6
+          
+        
+        
+          After watching the devcon5 presentation, the idea looks very promising!
+
+Some initial thoughts and questions, regarding the lottery:
+
+	Could the uploader somehow game the system by creating multiple identities, and claim his own money back by both requesting storage, and participating in the lottery for the same chunks, therefore getting the system to store his/her data for a smaller fraction of the total cost imposed to the network?
+	Is there any specification or implementation on how the lottery would work? How far is this in the roadmap?
+	I wonder if having every participant on a smart contract list would scale in terms of storage. Any thoughts here?
+
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

@@ -1,0 +1,856 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DEON: A Hyperledger-based DEcentralized Off-grid Network – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Project: Hyperledger Indy
+                            
+                        
+                    
+
+                
+                DEON: A Hyperledger-based DEcentralized Off-grid Network
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Nov 5, 2020
+                    
+                
+
+            
+
+            
+            
+                The DEON project focuses on the application of blockchains to secure data sharing in private networks and was initiated in 2018 in the wireless and sensor networks laboratory at the Yale Institute for Network Science. The use case of off-grid communication networks was identified with the goal of enabling their full decentralization in terms of data management and identity management. Off-grid (communication) networks are peer-to-peer networks that are autonomous, without super nodes and not dependent on the Internet’s physical infrastructure. Several recent developments like goTenna[1] and the Beartooth[2] offer standalone wireless devices that could be used to form local peer-to-peer networks. Other developments like the well-known Guifi community network[3] in Catalonia, Spain, are community-led paradigms in that space. Although these networks promote decentralization, openness, and fairness, they rely on legacy, centralized technologies for specific parts of their architecture like data and identity management. The integration of blockchains into off-grid networks appeared promising since blockchain provides attributes like transparency, privacy, distribution of governance and decentralization that are highly desirable in off-grid networks.
+ 
+We chose Hyperledger Fabric as the framework to build our architecture because of its flexibility, performance and the potential we saw behind this huge community of enthusiasts and developers to further advance the technology. After we got familiar with the framework, we identified a key missing aspect: a decentralized identity management component. Unlike the rest of Fabric’s architecture, its native identity management is centralized and based on Certificate Authorities. So we came across the following questions: “which of the nodes in the network is going to host and manage the CA?”, “can we stick with the initial plan of having equal nodes?”and “how can we preserve the decentralization of off-grid networks if we rely on centralized nodes?”
+ 
+Looking at the rest of the Hyperledger ecosystem, we found that Hyperledger Indy and Aries enable decentralized identity management. We could transform the centralized CAs of Fabric to a distributed CA entity, aka the Indy ledger, so that they are accessible by all nodes but not hosted by a specific one. This approach would work like a distributed oracle of trust in the network but necessitated some changes in Fabric and other extensions in the entire stack to bring DIDs into the “Fabric world.”
+ 
+Approach and proposed architecture
+ 
+The first Fabric extension identified as necessary for the integration was an Indy-based MSP to verify identities, signatures and transactions signed by DIDs. In addition, we had to enable the Fabric SDK (Go) to sign transactions using DIDs. For the Indy/Aries part, we leveraged the Hyperledger Aries Cloud Agent (aca-py) [4], which is deployed in each node of the network and serves as both the verifier and the issuer in the network. On one hand, it signs Fabric transactions using DIDs and issues credentials to the users of the network, and on the other it verifies proofs and transactions signed by DIDs. The DEON Core Service leverages Fabric private data collections and an interface to IPFS to expose a REST API for secure, transparent, fast and privacy-preserving data storage. An overview of the integration is shown in the figure below. The proposed architecture can be employed by off-grid networks of any kind, from IoT to communication and inter-enterprise consortia networks, for enabling self-sovereign identity and user-centric data sharing.
+ 
+
+  
+ 
+  Figure 1: HL Fabric-Indy/Aries integration
+  
+ 
+Project outcomes and future work
+ 
+The work started as a joint effort between the wireless and sensor networks lab of Professor Leandros Tassiulas at the Yale Institute for Network Science and Tata Consultancy Services (TCS), which put its expertise in decentralized identity to work in the development of the identity parts. Part of the work and initial benchmarks of the architecture deployed in off-grid settings are presented in the paper “A Blockchain-based Decentralized Data Sharing Infrastructure for Off-grid Networking[5].”
+ 
+Currently the Yale team is working on improving the code to make it more usable by others as a standalone solution for integrating Fabric and Indy/Aries. The team is also working on feature enhancements for the DEON platform, such as supporting Fabric v2, updating DEON identity agents to the latest version of the aca-py agent, extending the DEON REST API with admin functionalities and finally looking for new applications of the platform. The code of the project can be found on GitHub https://github.com/off-grid-block.
+ 
+[1] goTenna off-grid device: https://gotenna.com/
+[2] Beartooth off-grid device: https://beartooth.com/
+[3] Guifi.net: https://guifi.net/
+[4] aca-py agent: https://github.com/hyperledger/aries-cloudagent-python/
+[5] “A Blockchain-based Decentralized Data Sharing Infrastructure for Off-grid Networking”: https://arxiv.org/abs/2006.07521v2
+ 
+About the author
+Harris Niavis is a Research Engineer at Yale University. His research interests lie in enterprise blockchain networks, decentralized identity management, mesh networks and IoT.
+ 
+ 
+ 
+Cover image by Pete Linforth from Pixabay
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

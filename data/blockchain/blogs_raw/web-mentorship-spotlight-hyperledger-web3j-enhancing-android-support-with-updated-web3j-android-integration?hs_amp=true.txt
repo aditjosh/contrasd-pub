@@ -1,0 +1,161 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mentorship Spotlight - Hyperledger Web3j: Enhancing Android Support with Updated Web3j-android Integration
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Mentorship Spotlight - Hyperledger Web3j: Enhancing Android Support with Updated Web3j-android Integration
+
+        
+
+        
+           Written by Shashank Kumar | Jan 13, 2025 4:07:08 PM 
+        
+
+        
+          Project: Hyperledger Web3j: Enhancing Android Support with Updated web3j-android Integration
+
+
+Initially, the Hyperledger Web3j-android library was designed to help developers integrate Android applications with the Ethereum blockchain using the capabilities of web3j. However, the library, last updated to version 4.8.8, faced several issues in coherence, functionality, and alignment with modern Android development standards.
+
+During the project, we decided to completely restructure and convert the library into a dedicated Android library, ensuring it adheres to the latest development practices, and update it to the latest 4.12.3 version. This approach allows for a separate release from the Java version, optimizing the library for Android-specific use cases.
+
+The updated web3j-android library makes blockchain development more accessible to Android developers, enabling the creation of decentralized applications (DApps) for mobile platforms. By addressing these challenges and providing valuable solutions, the project contributes to the growth of the blockchain ecosystem and supports innovation in mobile-first decentralized technologies.
+
+Deliverables:
+
+	Pull Requests: 2110, 2122
+	Testing App Repository: https://github.com/shashankiitbhu/web3japp
+	Setting up web3j-android library: Link to blog
+	New Android Branch: https://github.com/hyperledger-web3j/web3j/tree/web3j-android
+
+
+Issues Faced and Solutions Implemented
+
+1. Library Analysis and Environment Testing
+
+In the initial phase, the focus was on analyzing the library and its dependencies in an Android application environment. This included rigorous testing across various target SDK levels and Java versions.
+
+Issues Encountered:
+
+	Java Version Compatibility: The app encountered issues running with Java 8.
+Solution: Updated the project to use Java 17, ensuring compatibility with Android and resolving the version-related problems.
+	Packaging Error: Error message encountered:
+
+
+
+
+Solution: Added a packaging block to exclude the conflicting resource files:
+
+
+
+This resolved the issue by preventing duplicate resource files from causing conflicts during the build process.
+
+2. Conversion to an Android Library
+
+The next step was converting the library to comply with Android library requirements. The process of converting the library to comply with Android library requirements was a significant undertaking. Adjustments to the directory structure, configurations, and dependencies were essential to align with Android-specific standards.
+
+Issues and Solutions:
+
+	Directory Structure and Configuration: The directory structure and configurations needed adjustments for Android compatibility. Several Java dependencies were not supported with the Android plugin, including Javadocs, Spotless, and Jacoco.
+	Cross-Module Test Dependencies: In web3j, some modules utilized files from the test folder of another module by referencing them in the Gradle configuration. However, Android libraries do not support such imports.
+Workaround: Created a common module (android-test-utils) and moved shared files to the main directory of this module. This allowed multiple modules to access these shared resources as dependencies:
+
+
+
+
+	Unsupported javax Imports: The Android environment does not support javax imports (e.g., javax.lang.model.element.Modifier).
+Solution: Replaced javax imports with Android-compatible alternatives, requiring substantial code refactoring. Additionally, transitioned from javapoet to kotlinpoet for code generation, which is better supported in Android projects.
+	Publishing Configuration: The publishing process for Android libraries differs significantly from Java libraries. Custom publishing configurations had to be implemented for each module to handle the Android-specific requirements.
+
+
+Solution: Implemented a custom publishing configuration in each module:
+
+
+
+
+
+3. Handling the Codegen Module
+
+The codegen module required extensive changes due to the need for custom implementations to replace javax imports. Given the complexity of these changes, we decided not to ship the Android-compatible version of the module until further testing could be conducted.
+
+Interim Solution:
+
+To maintain functionality:
+
+	Created a new module, java-utils, where wrappers for specific contracts were generated using the web3j-gradle-plugin.
+	Imported these wrappers into the integration-tests module to enable continued testing and validation.
+
+
+This workaround ensured that critical functionalities dependent on the codegen module could still be tested, even as the module itself underwent further development and testing.
+
+Learning Through Mentorship
+
+Working with mentors in this program was incredibly enriching and played a significant role in accelerating my learning. Their guidance helped me navigate complex technical challenges, such as debugging issues, managing cross-module dependencies, and configuring publishing processes for Android libraries. Regular sync calls and constructive feedback from mentors enabled me to approach problems systematically and develop efficient solutions. Beyond technical skills, I gained valuable insights into project management, best practices in collaborative development, and strategies for overcoming unexpected roadblocks. Their support not only enhanced my understanding of blockchain and Android development but also gave me the confidence to tackle similar challenges in future projects.
+
+What’s Next
+
+For the web3j Android library project, the next steps involve further refining the library to ensure it meets the needs of Android developers and blockchain enthusiasts. A key priority is conducting extensive testing on modules like codegen to verify their compatibility and reliability in Android environments. Improving the library’s documentation and providing clear examples of integration would make it easier for developers to adopt and use the library effectively.
+
+__
+
+For more on this project, tune in to a Meetup presentation from Shashank on Tuesday, February 25, at· 11:00 AM EST
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

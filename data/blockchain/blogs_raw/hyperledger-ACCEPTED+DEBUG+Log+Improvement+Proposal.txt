@@ -1,0 +1,665 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ACCEPTED] DEBUG Log Improvement Proposal - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+	GitHub Merge Queue
+
+
+
+
+
+	[ACCEPTED] DEBUG Log Improvement Proposal
+
+
+
+
+
+	Checklist for reporting privacy issues
+
+
+
+
+
+	Shandong Testnet
+
+
+
+
+
+	Using Postman with Besu
+
+
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+[ACCEPTED] DEBUG Log Improvement Proposal
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+[ACCEPTED] DEBUG Log Improvement Proposal
+
+	Simon Dudley
+
+
+
+
+
+Owned by Simon Dudley
+
+
+Last updated: Nov 06, 2023
+
+
+
+
+
+
+
+
+
+
+Problem
+--logging=DEBUG level is too spammy for end users and either we have to use the ADMIN RPC endpoint to target packages/classes or get them to post full logs which is a barrier and error prone.
+Goal
+End users can enable --logging=DEBUG and have a chance at spotting an issue or pasting relevant snippets into support channels.
+
+DEBUG Principles
+	Â Aimed at both end users and developers
+	Â Should lead to resolution of common problems, whilst not spamming
+	Â Should not contain logs that take up more than one terminal screen, e.g. raw data, including RLP
+
+DEBUG Guidelines
+	Should not include peer discovery
+	Should not include txpool management
+	Could include some peering to debug peering issues
+	Could include some high level syncing
+	Could include API requests, including potentially truncated data, but not full RLP
+
+
+TRACE principles
+	Aimed at developers
+	Expectation is everything is there and it's spammy
+	Only useful when targetting certain packages/classes
+
+
+
+Actions (if no objections)
+	Submit PR(s) to move logs from DEBUG â†’ TRACE and any other tidy up to follow the proposal
+	Update existing documentation, e.g Coding Conventions and Logging
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Logging
+Logging
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Changelog Improvement Proposal
+Changelog Improvement Proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+VS Code Debugger Plugin for Hyperledger Fabric Chaincode
+VS Code Debugger Plugin for Hyperledger Fabric Chaincode
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan
+Project Plan
+
+LFDT Labs
+
+
+
+More like this
+
+
+
+
+
+
+VS Code Plugin - Project Plan
+VS Code Plugin - Project Plan
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "825be1265e5d42a38c0dcdf60c571f49"}

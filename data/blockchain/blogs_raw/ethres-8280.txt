@@ -1,0 +1,675 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prediction market design for betting on many highly improbable events - Economics - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Prediction market design for betting on many highly improbable events
+    
+
+
+      
+          
+            
+              
+              
+                Economics
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    November 29, 2020,  7:27am
+                  
+                  
+
+1
+              
+            
+            
+              One of the challenges with prediction markets on events where the probabilities are very lopsided (ie. either very close to 0 or very close to 1) is that betting on the more likely outcome is very capital inefficient. If the probability of some event is 90%, someone wishing to bet for that event must put up $0.9 of capital per $1 of position, whereas someone betting against the event need only put up $0.1 of capital. This potentially (and arguably already in practice) is leading to prediction markets on such events systematically providing probabilities that are “too far away” from the extremes of 0 and 1.
+
+Arguably, it is very socially valuable to be able to get accurate readings of probabilities for highly improbable events (if an event is highly probable, we’ll think about that event not happening as the improbable event): bad estimates of such events are a very important source of public irrationality. The position “don’t get too worried/excited, things will continue as normal” is often frequently undervalued in real life, and unfortunately because of capital efficiency issues prediction markets make it hard to express this position.
+
+This post introduces a proposal for how to remedy this. Specifically, it is a prediction market design optimized for the specific case where there are N highly improbable events, and we want to make it easy to bet that none of them will happen. The design allows taking a $1 position against each of the N improbable events at a total capital lockup of $1. The design compromises by making the market have somewhat unusual behavior in the case where multiple improbable events happen at the same time; particularly, if one improbable event happens, everyone who bet on that event gets negative exposure to every other event, and so there is no way to win $N on all N events happening at the same time.
+
+The two-event case
+
+We start with a description of the case of two improbable events, a and b. We abuse notation somewhat and use 1-a to refer to the event of a not happening, and similarly 1-b refers to b not happening. Note that you can mentally think of a and b as the probability of each event happening. We consider the “outcome space”, split into four quadrants: ab, a(1-b), (1-a)b and (1-a)(1-b). These quadrants add up to 1:
+
+
+
+Now, we will split this outcome space into three tokens: (i) the “yes A” token, (ii) the “yes B” token and (iii) the “no to both” token. The split is as follows:
+
+
+
+The “no to both” token pays $1 only if neither event happens. If only A happens, the YES A token pays. If only B happens, the YES B token pays. If both events happen, the payment is split 50/50 between the YES A and YES B sides.
+
+Another way to think about it is, assuming the probabilities of the events are a and b:
+
+	The price of the NO TO BOTH token should be (1-a)(1-b)
+
+	The price of the YES A token should be a(1-\frac{b}{2})
+
+	The price of the YES B token should be b(1-\frac{a}{2})
+
+
+
+If you expand these expressions, you’ll find that they do in fact sum up to 1 as expected. The goal of the design is that if the probabilities a and b are low, and the events are reasonably close to independent, then it should be okay to mentally just think of the YES A token as representing a (as the \frac{ab}{2} term is very small), and then YES B token as representing b.
+
+Expanding to more than two assets
+
+There is a geometrically and algebraically natural way to expand the design to more than two assets. Algebraically, consider the expression (1-x_1)(1-x_2) ... (1-x_n), claimed by the NO TO ALL token. The YES tokens claim their share of the complement of that expression: 1 - (1-x_1)(1-x_2) ... (1-x_n). This is a sum of 2^n - 1 monomials: x_1 + ... + x_n -  x_1x_2 - ... - x_{n-1}x_n + x_1x_2x_3 - ... 
+
+Each YES x_i token would simply claim its fair share of all monomials containing x_i: the full share of x_i, half of every x_i x_j, a third of x_i x_j x_k, etc. That is, if only one event x_i happens, the holder of the YES x_i token gets a full $1, but if m events x_i, x_j … x_z all happen, then the holder of each corresponding YES token gets paid \$\frac{1}{m}.
+
+Geometrically, we can see this by extending the outcome space to a hypercube, giving the largest (1-x_1)(1-x_2) ... (1-x_n) sub-hypercube to the “NO TO ALL” token, and then assigning the rest by giving the portion closest to the x_i “face” to x_i. In either interpretation, it’s easy to see how:
+
+	The different shares actually do sum up to $1 (so money does not get leaked in or out of the mechanism)
+	The events are treated fairly (no x_i is treated better than some other x_j)
+	The mechanism does a good job of giving each YES x_i holder as much exposure to x_i as possible and as little exposure to other events as possible given the constraints.
+
+
+Extensions
+
+Events with N>2 possibilities (eg. Augur’s “INVALID”)
+
+If there are more than two possibilities for some event, then the easiest extension is to simply treat all possibilities except the dominant as simply being separate events. Particularly, note that if we use the above technique on different improbable outcomes of one event, then it reduces exactly to a simple market that simply has different shares for each possible outcome.
+
+Emergently discovering which side of an event is improbable
+
+Another useful way to extend this mechanism would be to include some way to naturally discover which side of a given event is improbable, so that this information does not need to be provided at market creation time. This is left as future work.
+
+            
+
+
+            
+              
+6 Likes
+            
+
+            
+                
+
+            
+              
+                ryanberckmans
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 30, 2020,  4:24pm
+                  
+                  
+
+2
+              
+            
+            
+              Here, we may have a sort of “law of leaky abstraction,” where capital efficiencies gained from this proposed market design might be weighed against trader UX and wholistic transaction costs.
+
+Prediction markets’ predictive power increases with volume, especially ongoing volume as traders reassess their positions. At current levels of maturity, PMs are an entertainment product. What we’ve seen is that, all other things equal, simpler markets drive volume. The entertainment-minded trader wants to understand the market herself. There’s a reflexive common knowledge aspect in that she wants to believe that her fellow traders will trade the market so that her purchase of shares has a social utility component. She is likelier to believe that the market will be widely traded if she believes her fellow traders understand the market.
+
+Under this proposal, there may be a few tricky UX issues that have a chilling effect on volume:
+
+	explaining to traders why these events are bundled, and the choice of the bundle
+	explaining to traders why the “yes” side of long odds must split the pot if rare events co-occur
+	managing around the fact that trader has a price mapping problem in that she may care only about event A and not B, thinks YES A will occur with probability a, yet to buy YES A she must handle the fact that the price of YES A is a(1-b/2)
+
+	to a lesser degree, explaining why the “no” side loses if any rare event occurs
+
+
+Potential open questions / next steps for this proposal from the perspective of catnip.exchange:
+
+	can this market design be built on Augur v2, or does it require protocol changes?
+	what might be guidelines for identifying rare events to bundle into one of these markets? Starter: two events A and B that are expected to be rare (to Vitalik’s point, this may be hard to tell up front), maximally independent, and settle on the same date
+	proposals for UI mechanisms + messaging to address the UX issues above
+
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 1, 2020,  1:43am
+                  
+                  
+
+3
+              
+            
+            
+              I agree that the assets other than NO TO ALL are tricky to explain; hence I think this kind of market would work best when the probabilities of the events truly are quite low and there’s only a ~10-20% or less chance that any event would be triggered. And I agree that the choice of bundle is somewhat arbitrary.
+
+
+	can this market design be built on Augur v2, or does it require protocol changes?
+
+
+
+
+I think it can be built on top of augur v2, except that the events would need to be defined differently. They would all need to be range events (ie. like prices), which are defined as “this market should resolve to 1 if event A and no other event in the bundle {A, B … Z} happens, 1/k if k events in the bundle {A, B … Z}, including A, happen, and otherwise 0”.
+
+I think there are natural categories to experiment with; “will weird third party political candidates do well” (aggregating across multiple electoral races and maybe even countries) is one. That said, for early-stage experiments, I think just centrally picking a bundle of eg. unlikely political events and a bundle of unlikely economic events, would work fine.
+
+
+	proposals for UI mechanisms + messaging to address the UX issues above
+
+
+
+
+I’m somehow less worried about this! “NO TO ALL” is quite self-explanatory, and the others can be described as “A [reduced payout if multiple events from this bundle happen]”. I predict some unavoidable level of confusion when something like this is rolled out initially, but then the community would quickly understand what’s going on after even a single round finishes.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                samueldashadrach
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 4, 2020,  5:18pm
+                  
+                  
+
+4
+              
+            
+            
+              This design transfers the complexity of the model to YES betters. Practically speaking however, YES betters are more likely to be common folk, either seeking insurance or gambling, whereas NO betters are larger funds who provide insurance for lower returns.
+
+I would prefer a model that transfers the complexity to the NO betters instead.
+
+Transferring complexity to a third party is also possible, in fact it’s the kind of model that TradFi may be most comfortable with. Allow NO betters to use their NO tokens as collateral to buy NO tokens on more markets, as they please. This choice is important because not everyone wants to provide insurance on every market. Have liquidators as a third party that bear the losses if two NO markets simultaneously swing at the same time, which leads to collateral not being liquidated in time.
+
+Liquidators will profit from people using NO collateral, either via a margin of capital left for liquidation, or an interest rate.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2020,  1:28am
+                  
+                  
+
+5
+              
+            
+            
+              So that design would still require $N collateral to bet against N events, at least if we want to preserve simplicity for YES voters by giving them an unconditional guarantee of $1 upon victory. It just creates two classes of NO voters, one of them called “liquidators” that absorbs the complexity.
+
+Unfortunately, I do think that the asymmetry of the situation inherently doesn’t leave good choices other than increasing complexity on the YES side…
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                samueldashadrach
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2020,  6:02am
+                  
+                  
+
+6
+              
+            
+            
+              You’re right, I just tried to take advantage of the fact that bet resolutions (and antecedent price movements) are likely to happen sequentially not simultaneously. In the worst case, this still requires liquidators to have a lot of capital ready to absorb losses.
+
+Is there a better way to take advantage of this (sequential resolution)?
+
+Also my kind of a model creates three tranches with different risk-reward tradeoffs. Some more analysis of how many actors are willing to take on how much risk may be prudent, since the lack of low risk - low reward actors is what causes prediction markets to skew towards YES betters in the first place as you note. Tranching is common in TradFi since it allows actors with various risk-reward profiles to enter the market in some way or the other.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2020, 10:55am
+                  
+                  
+
+8
+              
+            
+            
+              Agree that tranching is valuable and can create efficiencies! We could for example adjust the design by adding a tranche for “<= 1 event will happen”, so that there’s two winners in any result and event bettors will be fully compensated if the case of anywhere up to (and including) two events taking place.
+
+If the events resolve sequentially, one approach would be to structure the assets as follows:
+
+	YES TO 1
+	NO TO 1 BUT YES TO 2
+	NO TO {1, 2} BUT YES TO 3
+	…
+	NO TO {1, 2...n-1} BUT YES TO n
+	NO TO ALL
+
+
+This way you can get the odds for each event by taking the ratio of the price of its associated asset to the sum of the prices of all assets later than it in the list (assuming the event is independent of sequentially earlier events, of course). This market structure would also be really interesting and worth trying out.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                samueldashadrach
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2020, 11:34am
+                  
+                  
+
+9
+              
+            
+            
+              This looks interesting. Sorry if I’m slow but … how does someone bet on an event in this sequential model? If someone wants to bet YES on event 3 and have no exposure to other events, does he have to wait for events 1 and 2 to settle before buying event 3?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2020, 11:46am
+                  
+                  
+
+10
+              
+            
+            
+              Unfortunately yes… Or they could balance their exposure somewhat by buying a little bit of the first two assets alongside the third.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                samueldashadrach
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 5, 2020,  1:20pm
+                  
+                  
+
+11
+              
+            
+            
+              If we assume all tokens are fairly priced, then that’s doable actually. Using that ratio they can calculate the implied probability of each of the events and figure out how much to hedge. Ofcourse a buyer would prefer not to assume a market is fairly priced when he can’t analyse it himself.
+
+I do still kinda feel like we’re optimising for the wrong thing, I’ll writeup when I have something concrete. Definitely an interesting topic.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                hoytech
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 17, 2021,  2:07pm
+                  
+                  
+
+12
+              
+            
+            
+              The common name for a bet of this type is a parlay, and it’s one of the most common types of sport bets. To initiate an in-depth discussion on this topic, go to literally any bar on a Sunday night (or to any horse track) and ask your neighbours what’s on their tickets.
+
+Usually parlays are bad bets since the sportsbook marks them up a lot. There are some exceptions though:
+
+
+the events are reasonably close to independent
+
+
+
+This is much easier said than done. A common strategy is to find bets that are more correlated than the sportsbook understands, for example when a low-scoring game favours team A more than team B.
+
+Another smart reason to use parlays is to place bets that are larger than the betting limits offered by the sportsbook. If the first 2 legs on a 3-leg parlay win, then the remaining leg can have a much higher amount bet on it than the sportsbook would have allowed if you had singly bet that last leg (do this at 2^2 books for full coverage).
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                sheegaon
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 13, 2021,  7:54pm
+                  
+                  
+
+13
+              
+            
+            
+              I agree with @samueldashadrach that the complexity of the bet should be shifted as much as possible to the “NO” side. Of course, as @vbuterin says, a design that has absolutely no complexity on the “YES” side would require full collateralization by the “NO” side. The trick to solving this is likely to be a design which shifts enough complexity to the “NO” side so that the corresponding “YES” bet can be seen as practically equivalent to the simple “YES” bet, but still allowing << $N collateral from “NO” bettors.
+
+The situation we’re talking about is a classic insurance problem. “YES” bettors are akin to insurance policy holders, while “NO” bettors are the issuers, or insurance companies. Insurance companies hold far less collateral than would be necessary to make payments on all their claims. Nevertheless they are trusted by most common people to have enough money to make good on their claims very close to 100% of the time.
+
+The right prediction market design for highly improbably events is functionally equivalent to a market design for blockchain-based insurance. A few models for such insurance already exist, but there is no clear winner as of yet. I believe the right market design for what you discuss has not yet been invented. I have some ideas on how to improve on these models, which I’m still fleshing out before posting publicly. I believe borrowing the core idea of tranching risk from TradFi, with multiple interlinked collateral pools, is the right one. I don’t know if what I have in mind is similar to what @samueldashadrach is referencing. I’d welcome further discussion offline.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                chaseth
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 23, 2023, 11:08am
+                  
+                  
+
+15
+              
+            
+            
+              It’s been 2 years since anyone has posted… Are there any experiments ran, or running, that showcase any of these theories? Where are we now…?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

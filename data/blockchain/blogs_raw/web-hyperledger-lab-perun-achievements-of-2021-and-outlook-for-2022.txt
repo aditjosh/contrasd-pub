@@ -1,0 +1,869 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Lab Perun: Achievements of 2021 and Outlook for 2022 – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Hyperledger Lab Perun: Achievements of 2021 and Outlook for 2022
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Apr 12, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                2021 was an eventful year for the Hyperledger Lab Perun, which is maintained by PolyCrypt GmbH and Robert Bosch GmbH’s project “Economy of Things.” Below we summarize developments and achievements for the project and the growing network surrounding it. We also  provide a brief outlook on what’s to come in 2022.
+ 
+This Hyperledger Lab  aims at establishing an open-source project based on Perun channel protocols, which is a technology for scalability and interoperability of blockchains. The core components are the Go-Perun SDK and the Perun Node.
+ 
+New features in Go-Perun SDK & Perun Node 
+ 
+Virtual channels: The SDK now supports virtual channels. This allows opening channels with funds from other channels and therefore without any on-chain fees.
+ 
+Reorg-resistance (Ethereum backend): The Ethereum backend now supports reorg-resistance. That is, it is possible to configure how many blocks are required in order to confirm an on-chain transaction. This improves the robustness of our library as it protects against chain reorgs.
+ 
+External watcher: Go-Perun now has an interface for injecting a custom watcher logic. This means that SDK users can now implement their own watcher logic or use an external service for watching and reacting to chain events.
+ 
+Perun Node v0.6: A new client that adds a text-based user interface for trying out Perun Node, support for ERC20 tokens and improved error handling.
+ 
+More supported blockchains 
+ 
+Polkadot backend: We successfully developed a Polkadot backend for Go-Perun. This means that it is now possible to use Go-Perun on Polkadot chains. The backend is currently restricted to single asset payment channels.
+ 
+Cosmos backend: We successfully developed a Cosmos backend for Go-Perun. The on-chain logic has been implemented in the form of a CosmWasm smart contract. This means that it is now possible to use Go-Perun on a Cosmos chain supporting CosmWasm. The backend is currently restricted to payment channels.
+ 
+Dfinity backend (smart contract): We started the development of a backend for the Dfinity Internet Computer. This currently includes the Perun smart contracts for this network. We plan to continue the backend development later this year.
+ 
+Demonstrators, Tutorials, Talks
+ 
+Perun Credential Payment: We have published a proof of concept implementation that shows how trustless and low-fee payments for verifiable credentials in the context of self-sovereign identities (SSI) can be realized using Perun State Channels.
+ 
+Perun Tutorial and Protocol Documentation: We extended the documentation of our software. In particular, we added developer tutorials that explain how one can get started with using Go-Perun for developing their favorite state channel application. We also added a description of the perun protocols.
+ 
+Talks: We have given several talks on the Perun Project:
+ 
+	Hyperledger In-depth: An hour with Bosch on Scaling DLTs with the Perun lab Framework
+	Getting hands on Perun State Channels (Hyperledger Lab)
+	Blockchain Scaling & Interoperability with Perun Framework
+
+ 
+Outlook for 2022
+ 
+Cross-chain interoperability: We will be working towards enabling cross-chain capabilities of the Perun Framework. This will enable, for example, asset swaps between different blockchains and more.
+ 
+IoT Readiness: We will make the architecture of Perun Node more flexible, so that funding and watching services can be accessed over remote interfaces. We will also add an alternate client implementation that can be deployed on resource constrained embedded devices.
+ 
+More blockchain backends: We will be looking into extending the feature set of our existing backends, for example, enabling generalized state channels on Polkadot. We plan to add more blockchains to our list of supported backends.
+ 
+Building out the ecosystem: As development with the protocol and surrounding network continues, we will be working to further define the components of the Perun ecosystem and the communities working to advance these technologies.
+ 
+If you want to learn more about the framework, please refer to the white paper and our last Hyperledger labs post or this Hyperledger presentation on Perun or reach out via our Discord channel. (New to Discord? Go here for more and to get signed up.)
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

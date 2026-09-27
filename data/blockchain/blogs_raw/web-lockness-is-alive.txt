@@ -1,0 +1,501 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lockness Is Alive
+
+
+
+
+
+
+Dfns Secures $16M Series A Funding – See the Full Announcement
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+
+
+
+
+Resources
+	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+
+
+
+PricingGet started
+
+Talk to sales
+
+Get started
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+
+	Blog
+
+	Research
+
+	Lockness Is Alive
+
+ResearchLockness Is Alive
+Christopher Grilhault des Fontaines
+
+Clarisse Hagège
+
+Denis Varlakov
+
+Nikita Sorokovikov
+
+Jonathan Katz
+
+
+
+
+September 16, 2024
+
+Read time: 
+
+
+
+
+Introducing Lockness, a Dfns-led initiative that brings together state-of-the-art public key protocols, digital signatures and data storage technology for the first time under LF Decentralized Trust, formerly known as the Hyperledger Foundation.
+Dfns is thrilled to announce the creation of Lockness, a new open-source ecosystem focused on key management and digital signature protocols, including technologies like Multi-Party Computation (MPC), Threshold Signature Schemes (TSS) and other state-of-the-art protocols in public key cryptography. 
+Dfns is equally proud to announce the contribution of its open-source libraries to Lockness, which is a new project  under LF Decentralized Trust, part of the Linux Foundation. LF Decentralized Trust now manages many of the Linux Foundation’s projects related to blockchain, identity, and cryptography, including those from the former Hyperledger Foundation. In this post, we’ll explain our approach and why this is an important step in strengthening cryptographic security for digital assets.
+A new chapter in the history of key cryptography
+At the heart of digital security lies the ability to manage keys and signatures with maximum integrity and minimum risk. Digital signatures ensure authenticity, non-repudiation, and integrity across a wide range of applications, from cryptocurrency wallets to secure communication protocols. However, traditional key management systems often suffer from vulnerabilities—primarily, the risks associated with private key exposure or loss.
+Lockness seeks to mitigate these risks through the promotion, distribution and implementation of advanced cryptographic techniques such as multi-party computation, distributed key generation, threshold signatures, threshold encryption and decryption, zero-knowledge proofs, and more. These protocols distribute private key shares, also known as “partial keys”, among multiple participants, enhancing both security and availability. Even if part of the network is compromised or fails, these protocols ensure that signing processes remain secure and operational.
+Multi-party compute protocols and threshold cryptography have been around for decades and are now widely used to create and secure keys and signatures across the digital asset industry. However, the broader institutional financial sector has been slow to adopt them. A major reason is the lack of standards and the hesitation to be the first to take risks. For example, NIST’s Cryptographic Module Validation Program lists 194 FIPS 140 certified modules, but only 3 use MPC. The rest rely on HSMs and related technologies. This outdated reliance on legacy systems is holding back the financial industry from benefiting from the security and efficiency of new cryptographic methods. Until now, there hasn’t been a serious effort to unite auditors, companies, and academics under one initiative for the trusted development of open-source cryptography. Today, that initiative is called Lockness.
+Why the Linux Foundation 
+Lockness is not just a collection of libraries; it’s a movement towards a more secure and interoperable cryptographic future. Dfns believes that the most effective way to enhance digital security across industries is through collaborative development, transparent protocols, and dynamic community-driven innovation. By contributing its open-source libraries to Lockness, Dfns takes a significant step towards accelerating and building a more resilient, trusted cryptographic infrastructure. 
+With that said, one of the greatest hurdles to wider MPC adoption isn’t the technology itself, but how it's viewed. Many technical executives in banks and financial institutions remain cautious, opting for hardware security modules (HSMs) over alternative cryptographic solutions like MPC. This preference is rooted in regulation and tradition—HSMs have been around longer, are widely trusted, and are seen as the gold standard in key management. However, MPC and similar cryptographic methods have been around for almost as long and are just as well tested. In fact, MPC protocols tend to have fewer exploits each year compared to HSMs and are already used–sometimes unknowingly–by thousands of fintechs globally. The problem isn’t what MPC can do, but how it's perceived. It hasn’t yet gained the wide acceptance and legitimacy that decision-makers in regulated industries expect.
+This is where the Linux Foundation comes into play. By housing Lockness as a project under LF Decentralized Trust, Dfns is ensuring that all open-source libraries will be governed and managed by trustworthy experts, under the supervision of product management and legal teams ensuring robust maintenance and compliance with industry standards and laws. This brings an additional layer of credibility and transparency that will help MPC gain the trust of decision-makers in banks and financial institutions.
+Dfns' contribution to Lockness includes a robust collection of open-source libraries, meticulously designed and implemented by the Dfns research team and several notable contributors, including cryptographic experts like Jonathan Katz, Nigel Smart, Chelsea Komlo, Antoine Urban, Denis Varlakov, Nikita Sorokovikov, and Orestis Alpos. These libraries form the foundational tools required to build scalable, secure cryptographic protocols.
+The donation includes:
+	`round-based`: A framework for writing MPC protocols, abstracting away the complexity of communication layers and providing reusable tools.
+	`generic-ec`: A library for generic elliptic curve cryptography, resistant to small-group attacks and designed for secure arithmetic operations.
+	`fast-paillier`: Optimized implementation of Paillier encryption, using the Chinese Remainder Theorem (CRT) to speed up encryption and decryption.
+	`cggmp21`: An audited implementation of the CGGMP21 ECDSA threshold protocol.
+	`stark-curve`: Pure Rust implementation of Stark curve.
+	`slip-10`: A crate for HD-wallet derivation.
+	`udigest`: A library for unambiguous hashing of structured data.
+	`generic-ec-zkp`: Zero-knowledge proof library based on `generic-ec`.
+
+Each library is fully documented, audited, and available for public use under the Apache 2.0 license, ensuring maximum transparency and security for cryptographic protocols.
+Lockness: A new home for trusted key cryptography
+The creation of Lockness is driven by a clear and powerful vision: to make cryptographic protocols like MPC, TSS, DKG, ZKP and other novelties more accessible, auditable, secure, and performant. These technologies hold the potential to revolutionize the way organizations, particularly in institutional finance, manage sensitive digital assets and execute secure transactions on blockchains. 
+However, developing and maintaining MPC protocols is notoriously challenging. These protocols are based on complex cryptographic principles and come with many technical hurdles in implementation. Lockness aims to simplify this by fostering a unified, open-source platform that developers and organizations can use to create advanced cryptographic solutions more easily, reliably, and securely. The goal is to bring together top experts, resources, and knowledge in one trusted space, making cryptographic development simpler. By uniting expertise, Lockness believes it can help to tackle the difficulties of implementing and maintaining MPC and related protocols.
+Lastly, we want to emphasize that the Lockness project goes beyond MPC and supports innovations in other branches of key security and cryptography. We embrace advancements in authentication, API key management, HSMs, TEEs, secure enclaves, and other key management technologies and data storage environments. With this broad focus, Lockness aims to establish a new reference framework for cryptographic standards, providing clear guidance for both the private and public sectors on what should be considered standard in cryptography for digital financial services.
+"We're excited to join the Linux Foundation Decentralized Trust initiative and work with the community to grow Lockness, a new project that we contributed," said Clarisse Hagège, CEO of Dfns. "This will be the first platform to bring together all major cryptographic protocols and digital signatures in one place. By sharing our software with LF Decentralized Trust, we're reinforcing our belief in the value of trustworthy open-source communities." 
+“I’m thrilled that Lockness has come to LF Decentralized Trust,” said Hart Montgomery, CTO of LF Decentralized Trust.  “The cutting-edge cryptography that Lockness brings to the table not only excites me as a cryptographer, but also has the potential to allow users to greatly enhance their security and security practices via open source code.”
+A call to build trust and standards together
+To further this mission, we call upon the MPC Alliance and all its members to join us in contributing their open-source software to Lockness. By doing so, we can create stronger, more comprehensive standards that give the industry more control, transparency, and readability over this fast-moving and complex technology. MPC is powerful, but its complexity can often intimidate potential adopters. With Lockness, we aim to eliminate this barrier by creating one single point of reference, one repository, and one community working towards a common goal: making key management secure, compliant, and democratized across all critical industries. We believe that by consolidating efforts, we can build a more secure and trusted cryptographic infrastructure for the future.
+Lockness is now open to all developers, cryptographers, and organizations interested in exploring and contributing to key management and cryptography. We're excited to collaborate with LF Decentralized Trust and the broader cryptographic community to make MPC, TSS, and ZKP essential parts of the future of digital assets and blockchain technology.
+To get involved with the Lockness project, visit the Lockness Github repository and the Lockness channels on LF Decentralized Trust’s Discord server.
+Join us on Tuesday, October 15 at 8:00 AM Pacific Time for "Intro to Lockness," our community kick-off meetup to learn more about the project and how you can get involved: https://www.meetup.com/hyperledger-nyc/events/303412332/
+
+
+Authors
+
+Christopher Grilhault des Fontaines
+Co-CEO & Co-founder
+
+Christopher Grilhault des Fontaines is the co-CEO and co-founder of Dfns. He’s also Chairman of the Supervisory Board of Super Capital and investor at Wagmi Ventures. Chris is a serial founder who’s worked across HR Tech, Sports, Food and Social media industries before joining the world of cybersecurity and blockchain finance at Dfns. He holds a BSc degree in Liberal Arts and Philosophy from the Bordeaux University as well as an MSc degree in Management and Organizational Behavior Studies from Dauphine University.
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Clarisse Hagège
+CEO & Co-founder
+
+Clarisse Hagège is the CEO and Cofounder of Dfns. She has an extensive background as a Board Member of the MPC Alliance, Mentor at Techstars Web3 Launchpad, and crypto startup Advisor at Station F. With BSc and MSc degrees in Finance, Economics and Political Science from Sorbonne University, Sciences Po, and Dauphine University, her career spans a decade in investment banking and corporate treasury in Paris and New York, including roles at Goldman Sachs, Merrill Lynch, and Crédit Agricole CIB.
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Denis Varlakov
+Lead MPC Engineer
+
+Denis Varlakov is the Lead MPC Engineer at Dfns in charge of protocol engineering and library design. Prior to joining Dfns, Denis worked for ZenGo as a cryptographer engineer where he led most of the open-source implementations under Omer Shlomovits, namely multi-party-ecdsa and other libs of ZenGo X. Denis holds a BSc in computer science from Tomsk University.
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Nikita Sorokovikov
+MPC Engineer
+
+Nikita Sorokovikov is a Senior Cryptography Engineer at Dfns, author of minifrost among many other libraries in the dfns repository. Before Dfns, Nikita worked for banking application Tinkoff and offensive security firm Sibear. He holds an MSc in computer science from Tomsk University.
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Jonathan Katz
+Scientific Advisor
+
+Dr. Jonathan Katz is a globally recognized professor and researcher in cryptography, affiliated with the University of Maryland. He is a Fellow of both IACR and ACM, as well as a recipient of the prestigious Humboldt Research Award. Dr. Katz has authored numerous seminal books in computer science and cryptography, which have been cited over 30,000 times. Dr. Katz earned a BSc degree in Mathematics from MIT and a PhD in Computer Science from Columbia University. Currently, he works as a scientific advisor for Dfns. 
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+Related articles
+ResearchDfns Steps Into MPCA Presidency
+Christopher Grilhault des Fontaines
+
+
+
+
+February 19, 2025
+
+
+
+
+ResearchKU23: High-Performance Threshold ECDSA
+Jonathan Katz
+
+
+
+
+November 5, 2024
+
+
+
+
+ResearchA FROST Library Called "Givre"
+Denis Varlakov
+
+
+
+
+October 10, 2024
+
+
+
+
+
+
+
+
+Audited and pentested
+
+
+
+
+
+
+
+
+
+Certified and licensed
+
+
+
+
+
+
+
+Follow us
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+SLA
+
+
+Resources
+Pricing	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+Dfns vs Fireblocks
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+Brand
+
+
+
+
+
+© Dfns.co 2024
+Protected by reCaptcha
+
+and
+
+
+
+	Terms and Conditions
+
+	Privacy Policy
+
+
+
+
+
+
+
+Request a demo
+One of our security experts will get in touch as soon as possible.
+
+
+
+  
+  
+  
+  
+    First name*
+    
+  
+
+  
+  
+    Last name*
+    
+  
+
+  
+  
+    Work email*
+    
+  
+
+  
+  
+    Company*
+    
+  
+
+  
+  
+    Comments
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+
+
+
+Thanks for your interest.
+Please, check your inbox.
+Close
+
+
+
+
+
+
+

@@ -1,0 +1,205 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Supply Tokens | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Supplying GuidesSupply Tokens
+beginner
+
+
+
+
+
+
+Introduction
+
+Supplying tokens to the Aave Protocol allows you to earn interest on your digital assets and utilize supplied tokens as collateral. When tokens are supplied, they are transferred to the Aave liquidity pool, a system of smart contracts that facilitates overcollateralized borrowing of tokens. Supplied tokens automatically accumulate interest by updating in balance at the current market supply rate. This interest accrual happens dynamically as the balance of your supplied tokens increases linearly over time, reflecting the current rate allocated to suppliers.
+
+Interest rates for supplied tokens are determined by the borrow utilization rate, which measures the proportion of assets currently borrowed against the total supplied in the pool, and by governance parameters that can be adjusted through community decisions. These parameters, including collateralization requirements and interest rates for suppliers and borrowers, are influenced by on-chain inputs such as token balances, oracle prices, and the borrow utilization ratio. As liquidity is supplied, borrowed, repaid, or withdrawn from the pool, the interest rates are updated accordingly.
+
+Tokens can be supplied through protocol smart contracts or through a frontend such as the Aave Labs interface, by performing the following steps:
+
+Step 1: Connect Wallet
+
+To begin, press ‘Connect Wallet’ and select the Ethereum wallet provider corresponding to the wallet holding tokens intended to supply.
+
+Step 2: Select Token To Supply
+
+Once connected, navigate to the ‘Dashboard’ where you’ll find the ‘Assets To Supply’ table, which lists current token balances and asset parameters. More details on supply and borrow parameters can be found by selecting the individual token icon, which will navigate to the reserve details page.
+
+Step 3: Approve Token Transfer
+
+In order to transfer tokens on an Ethereum-based network, the Aave Pool smart contract must be granted an allowance to transfer tokens from the connected wallet address. Approvals can be performed through transaction (which will incur a network fee) or signature (which does not incur a network fee). After selecting a token to supply, a modal will appear which will prompt a transaction or message signature request in the connected wallet.
+
+Step 4: Perform Supply Transaction
+
+After approval, enter the amount you wish to supply and confirm, which will prompt a transaction in the connected wallet. Your supplied tokens are then added to the Aave liquidity pool, where they are made available for borrowers. The supplied tokens will start earning interest immediately, which can be monitored from the ‘Dashboard’ tab.
+
+
+
+Related
+Withdraw Tokens
+beginner
+
+Withdraw tokens from the Aave Protocol.
+4 min read
+Toggle Collateral Status
+intermediate
+
+Toggle collateral status of supply positions.
+3 min read
+Isolation Mode
+beginner
+
+Supply isolated collateral assets.
+3 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

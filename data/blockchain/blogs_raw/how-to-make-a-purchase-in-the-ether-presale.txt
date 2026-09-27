@@ -1,0 +1,254 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Background on the mechanics of the ether pre-sale | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Background on the mechanics of the ether pre-sale
+Posted by Taylor Gerring on July 9, 2014
+Organizational
+
+
+
+
+During the run-up to the ether sale we will be releasing a series of blog posts regarding our development plans and intended organizational structure. Today we describe some of the background details of the ether sale module.  The sale module will be displayed on our website at https://www.ethereum.org for the duration of the sale.
+
+
+
+What is it?
+
+The ether sale is an HTML/JavaScript web application that enables people and organizations to pre-purchase ether tokens with bitcoin. Ether may be purchased by parties interested in using it in their development of distributed applications on the Ethereum platform or simply to pay for the use of applications on the platform once the genesis block is released.  The application runs mostly inside the browser, including pseudo random number generation (PRNG) and encryption/decryption of user secrets.
+
+Additionally, we will be making available a standalone pure Python application that can be used from a command line interface to purchase ether in lieu of using the website store.
+
+
+
+Website workflow:
+
+
+	After agreeing to the store’s Terms and Conditions, the buyer enters the desired amount of ether to purchase, their email address, a password to use for encryption, and generates a “random” seed forming the basis for their transaction-specific bitcoin & Ethereum addresses.
+	The user buyer sends payment in bitcoin to the generated address which is displayed on the store page and also provided in a downloadable encrypted wallet file. When the browser, which is monitoring the bitcoin blockchain, sees enough funds have been sent to this generated address, the browser creates a new transaction forwarding the bitcoin to the genesis sale address. This transaction is signed by the buyer’s browser and submitted to the bitcoin network. No transaction data is stored on the any servers because the Bitcoin blockchain serves as the purchase database.
+	After the transaction has been successfully submitted, the user buyer is again prompted to download a backup copy of their encrypted wallet in addition to being emailed another backup file.  The buyer should be aware that keeping the wallet as an email attachment in an email account for any period of time represents a vulnerability.  The email attachment should be downloaded to a safe computer at the earliest opportunity and the email should be expunged from the email system.
+
+
+
+(What follows is technical information, the GUI we have developed abstracts all of this is in a very user-friendly manner)
+
+
+Wallet encryption process: 
+
+	Randomgen a SEED.
+	BKPKEY = sha3(SEED + “\x02″)[:16]
+	KEY = pbkdf2(PW)
+	ENCSEED = encrypt(KEY, SEED)
+	WALLET = [ ENCSEED, BKPKEY ] (plus non-sensitive data like ethereum and bitcoin address)
+
+
+The BTC and ETH privkeys and addresses are derived from the SEED.
+
+
+
+Seed recovery process: 
+
+	WALLET + PW recovery:  (normal)
+	KEY = pbkdf2(PW)
+	SEED = decrypt(KEY, ENCSEED)
+
+
+
+
+Overview of website steps for making an ether purchase:
+
+	Buyer clicks “Buy Ether” and agrees to the Terms & Conditions
+	Buyer enters initial purchase information
+	Buyer enters the amount of ether they’d like to purchase
+	Buyer enters email address as the destination for wallet backup file
+	Buyer enters passphrase, which serves as an encryption seed. A very strong passphrase is highly recommended
+
+
+
+	Buyer generates entropy by moving their mouse or tapping their screen. A “seed” is constructed based on this generated entropy as well as other random system inputs. When the desired entropy length is achieved the wallet is generated using the seed.  The wallet contains:
+	an individual BTC address to send the funds to
+	an individual ETH address
+	an encrypted seed
+	a backup encrypted seed
+
+
+
+	The browser sale app checks the newly created BTC address to see if funds arrive. Before sending any funds, the buyer has an opportunity to download the wallet. If a problem occurs between transactions, any funds send to the buyer’s personal deposit address will be accessible with the passphrase. If the unspent balance of the BTC address > 0.01 BTC, the browser sale app generates a signed transaction from the newly created BTC address with 2 specific outputs:
+	an output of the total unspent balance minus miners fee to the main sale BTC address–this btc address is where all the funds go, it’s a fixed, known BTC address.
+	an output of 10000 satoshi to a BTC address generated from the (string) ETH address–this bitcoin address is for confirming ethereum addresses and is unique for every transaction.
+
+
+
+	The browser sale app prompts the purchaser to download their wallet again & and also sends the buyer an email containing a backup for the ether wallet.  The same caution as stated above applies.  Do not leave the wallet as an email attachment in an email system.  Download as soon as possible and ensure that the email is expunged.
+	The browser sale app will display the number of bitcoin transaction confirmations
+
+
+
+
+So that’s it! Although there’s a lot of technical things happening in the background, the GUI we have developed will make the process a click by click operation.
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

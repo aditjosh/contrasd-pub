@@ -1,0 +1,875 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A Message on Why Localization Matters from the New Hyperledger Japan Chapter – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                A Message on Why Localization Matters from the New Hyperledger Japan Chapter
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Aug 18, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Recently, we added  another regional chapter of the Hyperledger community launched by Japanese community participants. Normally, open source projects emphasize the importance of “upstream” or “mainline” contributions so as to not “fork” the codes and communication. 
+ 
+However, with the addition of the new Hyperledger Japan Chapter, Hyperledger has now launched six regional chapters. Many community members are gathering around the regional chapters to exchange thoughts and ideas rather than gathering around the mainline mailing lists. Some people might see this as a “fork.”
+ 
+But the regional chapters play very important roles in helping Hyperledger prosper all around the globe.
+ 
+“Language” is a huge barrier – how can we be more inclusive to non-English speakers?
+ 
+Needless to say, the unofficial official language of open source projects, including Hyperledger, is English. To participate in the upstream development, people are expected to be capable of communicating in English. As English is the standard language platform to communicate among the people from different countries and cultures regardless, this is how it should be.
+ 
+But still this causes issues for non-English speakers to participate in the projects.
+ 
+First of all, unless the information about the projects (web pages, blogs, news releases, etc.) are translated into the local languages, the projects remain “unknown” in the region. Normally, non-native English speakers won’t read English content day to day unless they really have to. So the projects won’t be noticed by non-English speaking people in the first place.
+ 
+Even if the projects are noticed by the non-English speaking audience, the next hurdle is understanding the projects in depth. People may want to dig into such things as:
+ 
+	Technology in detail 
+	Upstream development trends and directions (roadmap)
+	Existing use cases
+	Step-by-step guides of how to implement
+	Troubleshooting
+
+ 
+In order for all of this information to become available in a local language, it takes a very solid local community and translation ecosystem. But we tend to face the Columbus Egg issue here because, unless the information is translated, it is extremely hard to grow a solid local community.
+ 
+Above all, “people” matters most. It is important for the non-English speaking community participants to be able to ask questions to someone who can potentially help in their local language. Reading the technical documents and blogs in local languages are very essential steps to become familiar with the technology, but talking to people can strengthen the confidence in the projects and become a very big motivation to start really using and participating in the projects.
+ 
+Language issues can only be solved by the regional chapters
+ 
+So the biggest value of the regional chapters is to solve these problems caused by the language barrier.
+ 
+At the Hyperledger Japan Chapter, we identified the “Chapter Leaders.” The chapter leaders will get together to evangelize the Hyperledger projects in Japan through events, blogs, etc., so the projects are “noticed” by the Japanese industry.
+ 
+The chapter leaders are planning to bring more and more useful information about Hyperledger projects to the Japan Chapter wiki, so it will become easier for Hyperledger newbies to find out the information (technologies, use cases, etc.). Ideally, the wiki will grow to a one-stop portal where people can  find anything they need.
+ 
+We’ve opened up the Japanese rocket chat channel as well so people can ask questions and the chapter leaders can answer  in Japanese language. 
+ 
+Growing a solid regional open source community is not an easy task. It takes an effort to make it happen, and the Hyperledger Japan Chapter launched to take on the challenge. 
+ 
+All blockchain and Hyperledger enthusiasts in Japan, please come join Hyperledger Japan Chapter! We will welcome you all!
+ 
+Find us here: 
+ 
+Wiki: Hyperledger Japan Chapter
+Rocketchat: Japanese
+Meetups: Hyperledger Tokyo Meetup
+Facebook: Linux Foundation Japan
+Twitter: Linux Foundation Japan
+ 
+「Hyperledger Japan Chapter へのご参加お待ちしてます！」
+ 
+Cover image by 3D Animation Production Company from Pixabay
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

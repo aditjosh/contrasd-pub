@@ -1,0 +1,194 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sync committees - exited validators participating in sync committee? - Security - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Sync committees - exited validators participating in sync committee?
+    
+
+
+      
+          
+            
+              
+              
+                Security
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                builderbenny
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 18, 2023,  2:56pm
+                  
+                  
+
+1
+              
+            
+            
+              Probably late to the party - but I just realized that a validator can be “exited” but still participate in the sync committee.
+
+Unless I am mis-reading the specs - it appears that the sync committee is chosen 256 epochs ahead (see for instance: process_sync_committee_updates; get_next_sync_committee; get_next_sync_committee_indices and  get_active_validator_indices ]
+
+Once a validator has exited it is no longer in the active set - but for sync committee assignment it appears that get_active_validator_indices is checked 256 epochs before the sync committee. So a validator can be included in the next sync committee (in 256 epochs) then request to exit…their exit can be processed before the sync committee happens.
+
+(Our data team found some instances where this appears to be happening - Validator 102888 - Open Source Ethereum Blockchain Explorer - beaconcha.in - 2023 - note the withdrawal pattern; same thing here: Validator 114440 - Open Source Ethereum Blockchain Explorer - beaconcha.in - 2023)
+
+I am assuming that currently this isn’t a huge security risk - but, big picture, the idea that a validator is still performing duties but has had their stake withdrawn is a concern (IMHO).
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                builderbenny
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 18, 2023,  5:56pm
+                  
+                  
+
+3
+              
+            
+            
+              two more points:
+
+	most importantly - this seems to be a pesky edge case - the odds that a validator is exiting AND is assigned to participate in sync committee should be very low (i.e., 512 validators chosen of, currently, about 575,000)
+	I was not quite right above - due to withdrawability delay of 256 epochs, a validator requesting to exit after being selected for sync committee would exit at some point during their sync committee period
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

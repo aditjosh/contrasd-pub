@@ -1,0 +1,906 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Assembling the Future of Smart Contracts with Sawtooth Sabre – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Assembling the Future of Smart Contracts with Sawtooth Sabre
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Feb 8, 2019
+                    
+                
+
+            
+
+            
+            
+                Is WebAssembly the future of smart contracts? We think so. In this post, we will talk about Sawtooth Sabre, a WebAssembly smart contract engine for Hyperledger Sawtooth.
+ 
+We first learned about WebAssembly a couple of years ago at Midwest JS, a JavaScript conference in Minneapolis. The lecture focused on using WebAssembly inside a web browser, which had nothing to do with blockchain or distributed ledgers. Nonetheless, as we left the conference, we were excitedly discussing the possibilities for the future of smart contracts. WebAssembly is a stack-based virtual machine, newly implemented in major browsers, that provides a sandboxed approach to fast code execution. While that sounds like a perfect way to run smart contracts, what really excited us was the potential for WebAssembly to grow a large ecosystem of libraries and tools because of its association with the browser community.
+ 
+A smart contract is software that encapsulates the business logic for modifying a database by processing a transaction. In Hyperledger Sawtooth, this database is called “global state”. A smart contract engine is software that can execute a smart contract. By developing Sawtooth Sabre, we hope to leverage the WebAssembly ecosystem for the benefit of application developers writing the business logic for distributed ledger systems. We expect an ever-growing list of WebAssembly programming languages and development environments.
+ 
+Unblocking Contract Deployment
+ 
+The primary mechanism for smart contract development in Hyperledger Sawtooth is a transaction processor, which takes a transaction as input and updates global state. Sound like a smart contract? It is! If you implement business logic in the transaction processor, then you are creating a smart contract. If you instead implement support for smart contracts with a virtual machine (or interpreter) like WebAssembly, then you have created a smart contract engine.
+ 
+If we can implement smart contracts as transaction processors, why bother with a WebAssembly model like Sabre? Well, it is really about deployment strategy. There are three deployment models for smart contracts:
+ 
+	Off-chain push: Smart contracts are deployed by pushing them to all nodes from a central authority on the network.
+	Off-chain pull: Smart contracts are deployed by network administrators pulling the code from a centralized location. Network administrators operate independently.
+	On-chain: Smart contracts are submitted to the network and inserted into state. Later, as transactions are submitted, the smart contracts are read from state and executed (generally in a sandboxed environment).
+
+ 
+We won’t discuss off-chain push, other than to note that this strategy—having a centralized authority push code to everyone in the network—isn’t consistent with distributed ledgers and blockchain’s promise of distributing trust.
+ 
+Off-chain pull is an opt-in strategy for updating software, and is widely used for Linux distribution updates. We use this model to distribute Sawtooth, including the transaction processors. By adding the Sawtooth apt repository on an Ubuntu system, you pull the software and install it via the apt-get command. Each software repository is centrally managed, though it is possible to have multiple software repositories configured and managed independently. This model has a practical problem—it requires administrators across organizations to coordinate software updates—which makes business logic updates more complicated than we would like.
+ 
+On-chain smart contracts are installed on the blockchain with a transaction that stores the contract into an address in global state. The smart contract can later be executed with another transaction. The execution of the smart contract starts by loading it from global state and continues by executing the smart contract in a virtual machine (or interpreter). On-chain smart contracts have a big advantage over off-chain contracts: because the blockchain is immutable and the smart contract itself is now on the chain, we can guarantee that the same smart contract code was used to create the original block and during replay. Specifically, the transaction will always be executed using the same global state, including the stored smart contract. Because contracts are deployed by submitting transactions onto the network, we can define the process that controls the smart contract creation and deletion with other smart contracts! Yes, this is a little meta, but isn’t it great?
+ 
+The on-chain approach seems superior, so why did we implement Hyperledger Sawtooth transaction processors with the off-chain model? Because our long-term vision—and a main focus for Sawtooth—has been smart contract engines that run on-chain smart contracts. Smart contract engines are more suitable for off-chain distribution, because they do not contain business logic, and are likely to be upgraded at the same time as the rest of the software. 
+
+ 
+Our initial transaction processor design reflected our goal for several types of smart contract engines. We later implemented one of them: Sawtooth Seth, a smart contract engine that runs Ethereum Virtual Machine (EVM) smart contracts. For us, Seth was a validation that our transaction processor design was flexible enough to implement radically different approaches for smart contracts. Like Ethereum, Seth uses on-chain smart contracts, so Seth is great if you want Ethereum characteristics and compatibility with tools such as Truffle. However, Seth is limited by Ethereum’s design and ecosystem, and does not expose all the features in our blockchain platform. We knew that we needed an additional approach for smart contracts in Hyperledger Sawtooth.
+ 
+Crafting a Compatible Path Forward
+ 
+Sawtooth Sabre, our WebAssembly smart contract engine, is our solution for native, on-chain smart contracts.  
+ 
+The programming model for Sabre smart contracts is the same as that for transaction processors. A transaction processor has full control of data representation, both in global state and in transaction payloads (within certain determinism requirements). Hyperledger Sawtooth uses a global state Merkle-Radix tree, and the transaction processors handle addressing within the tree. A transaction processor can use different approaches for addressing, ranging from calculating an address with a simple field hash to organizing data within the tree in a complex way (to optimize for parallel execution, for example). Multiple transaction processors can access the same global state if they agree on the conventions used in that portion of state.
+ 
+Sawtooth Sabre smart contracts use this same method for data storage, which means they can access global state in the same way that transaction processors do. In fact, smart contracts and transaction processors can comfortably coexist on the same blockchain.
+ 
+The other major feature is SDK compatibility. The Sawtooth Sabre SDK API is compatible with the Hyperledger Sawtooth transaction processor API, which means that smart contracts written in Rust can switch between the Sawtooth SDK and the Sabre SDK with a simple compile-time flag. (Currently, Rust is the only supported Sabre SDK.) The details of running within a WebAssembly interpreter are hidden from the smart contract author. Because Sabre smart contracts use the same API as transaction processors, porting a transaction processor to Sabre is relatively easy—just change a few import statements to refer to the Sabre SDK instead of the Hyperledger Sawtooth SDK.
+
+ 
+Now the choice between off-chain and on-chain smart contracts is a compile-time option. We use this approach regularly, because we can separate our deployment decisions from the decisions for smart contract development. Most of the transaction-processor-based smart contracts included in Hyperledger Sawtooth are now compatible with Sawtooth Sabre.
+ 
+A Stately Approach to Permissioning
+ 
+Hyperledger Sawtooth provides several ways to control which transaction processors can participate on a network. As explained above, transaction processors are deployed with the off-chain pull method. This method lets administrators verify the the transaction processors before adding them to the network. Note that Hyperledger Sawtooth requires the same set of transaction processors for every node in the network, which prevents a single node from adding a malicious transaction processor. Additional controls can limit the accepted transactions (by setting the allowed transaction types) and specify each transaction processor’s read and write access to global state (by restricting namespaces).
+ 
+These permissions, however, are not granular enough for Sawtooth Sabre, which is itself a transaction processor. Sabre is therefore subject to the same restrictions, which would then apply to all smart contracts. Using the same permission control has several problems:
+ 
+	Sabre smart contracts are transaction-based, which means that a smart contract is created by submitting a transaction. This removes the chance to review a contract before it is deployed. 
+	Sabre transactions must be accepted by the network to run smart contracts, but we cannot limit which smart contracts these transactions are for, because this information is not available to validator. 
+	Sabre must be allowed to access the same areas of global state that the smart contracts can access. 
+
+ 
+An “uncontrolled” version of Sabre would make it too easy to deploy smart contracts that are  not inherently restricted to a to the permissions that the publisher of the smart contract selects.
+ 
+Our solution in Sawtooth Sabre is to assign owners for both contracts and namespaces (a subset of global state). A contract has a set of owners and a list of namespaces that it expects to read from and write to. Each namespace also has an owner. The namespace owner can choose which contracts have read and write access to that owner’s area of state. If a contract does not have the namespace permissions it needs, a transaction run against the smart contract will fail. So, while the namespace owner and contract owner are not necessarily the same, there is an implied degree of trust and coordination between them.
+ 
+Also, contracts are versioned. Only the owners of a contract are able to submit new versions to Sabre, which removes the chance that a malicious smart contract change could be accepted.
+ 
+A Final Note About WebAssembly
+ 
+On-chain WebAssembly isn’t limited to just smart contracts. For example, in Hyperledger Grid, we are using on-chain WebAssembly to execute smart permissions for organization-specific permissioning. Another example is smart consensus, which allows consensus algorithm updates to be submitted as a transaction. There are several more possibilities for on-chain WebAssembly as well.
+ 
+In short, we think WebAssembly is awesome! Sawtooth Sabre combines WebAssembly with existing Hyperledger Sawtooth transaction processors to provide flexible smart contracts with all the benefits of both a normal transaction processor and on-chain smart-contract execution. Sabre also takes advantage of WebAssembly’s ability to maintain dual-target smart contracts, where the contract can be run as either a native transaction processor or a Sabre contract. And the permission control in Sawtooth Sabre allows fine-grained control over both contract changes and access to global state. 
+ 
+	If you would like to learn more about WebAssembly, take a look at webassembly.org. 
+	To learn more about Sawtooth Sabre and write your own Sabre smart contract, take a look at the Sabre documentation, the Wasm Smart Contracts RFC, and the sawtooth-sabre repository. Join the Sabre community by visiting the #sawtooth-sabre channel on Hyperledger.
+
+ 
+We are incredibly grateful for Cargill’s sponsorship of Sawtooth Sabre and Hyperledger Grid (a supply chain platform built with Sawtooth Sabre). We would also like to thank the following people who help make our blog posts a success: Anne Chenette, Mark Ford, David Huseby, and Jessica Rampen.
+ 
+About the Authors
+ 
+
+ 
+  
+ 
+
+ 
+Andi Gunderson is a Software Engineer at Bitwise IO and maintainer on Hyperledger Sawtooth and Sawtooth Sabre. 
+ 
+
+ 
+
+ 
+  
+ 
+
+ 
+Shawn Amundson is Chief Technology Officer at Bitwise IO, a Hyperledger technical ambassador, and a maintainer and architect on Hyperledger Sawtooth and Hyperledger Grid.
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

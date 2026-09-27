@@ -1,0 +1,485 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+On DEX evolution (1) - Decentralized exchanges - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      On DEX evolution (1)
+    
+
+
+      
+          
+            
+              
+              
+                Decentralized exchanges
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                paven86
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 30, 2023, 10:14am
+                  
+                  
+
+1
+              
+            
+            
+              DEXes, along with stablecoins, lending services, and trading aggregators, are the critical building blocks of DeFi. However, among these, DEXes have emerged as the most important foundation, serving as the central hub of DeFi. This post shall provide a succinct overview of the generational advancements of DEXes since 2018.
+
+
+The first generation
+
+1st-gen DEXes emerged between 2018 and 2019 and relied on the reserve model. Under this model, a DEX would maintain a reserve of tokens on a contract, enabling traders to exchange one type of token for another based on a price provided by the DEX developer. This model bears similarities to physical foreign-currency exchange shops. Examples of DEXes that utilized this model during this period include Bancor, Balancer and Kyber in their first versions. However, the reserve model was constrained by liquidity shortages since the reserves were often limited and could even run out. Additionally, these types of DEXes relied on price feed aggregated from centralized exchanges (CEXes).  Some others like IDEX, Binance DEX combined centralized order-book with onchain settlement. Howoever, this model did not last for long.
+
+
+The second generation
+
+2nd-gen of DEXes is based on the constant product or inverse function and liquidity pool model. This model was pioneered by Uniswap, which launched in November 2018 and is founded on a simple mathematical formula of x*y=k, where x and y represent cryptocurrencies in a trading pair, and k is a constant parameter. For mathematical formalization, refer to the relevant literature \cite{uni}. Uniswap was a game-changing protocol as it introduced the Automated Market Making (AMM) mechanism, which subsequently set the trend in DeFi from 2020 to 2021. Other DEXes (Balancer, Kyber, Bancor) followed suit and implemented AMM mechanisms, replacing the reserve model. AMM allows anyone to become a market maker or liquidity provider, and it is easy, permissionless to create any trading pair on Uniswap and swap any amount instantly, providing an infinitely and permanently available liquidity pool for the swap pair. These features are in contrast to the intrinsic limitations of reserve-type DEXes and centralized exchanges (CEXes). Additionally, the on-chain execution nature of Uniswap and AMM-type DEXes ensures transparency and resistance to censorship. From a mathematical standpoint, this DEX model theoretically offers unlimited liquidity, which is impossible for reserve-type DEXes and CEXes based on order-book and pricing matching mechanisms. However, the Uniswap model has limitations, including impermanent loss (IL) and slippage, which had never been encountered before.
+
+
+The third generation
+
+3rd-gen of decentralized exchanges (DEXes) represent advancements on the previous Uniswap model to reduce slippage and increase capital (liquidity) efficiency by concentrating liquidity and swap requests in specific ranges instead of spreading prices on the entire inverse curve. Uniswap V3 led this improvement, followed by other DEXes. However, liquidity concentration makes the trading experience more complicated and somewhat limits liquid capacity in extreme volatility (e.g. regarding new listed token with low liquidity). An alternative improvement for the constant product formula introduced by Uniswap was the Proactive Market Maker (PMM) algorithm invented by DodoEX. The PMM formula is, in fact, an integral curve of liquidity and price function, offering a more concentrated curve of unlimited liquidity around the current market price. This significantly reduces IL and slippage while multiplying the capital efficiency of the liquidity pool. Unfortunately, DodoEX only works if the (average) market price is fed into its markets, which is not necessary for Uniswap. Curve Finance introduced StableSwap - an efficient mechanism for Stablecoin liquidity. Several projects has also introduced various ways to improve capital efficiency for general token pairs, e.g. Maverick protocol.
+
+
+Summary
+
+Automated Market Maker (AMM) models have rather matured for spot trading, including the Uniswap model, its variations, and the Proactive Market Maker (PMM) algorithm. While some developers have attempted to reduce the impermanent loss (IL) and slippage through concentration techniques or improving the mathematical curves for liquidity pools, another focus is to build DEXes for trading derivatives, synthetic assets, and perpetual futures or options. This marks the beginning of the fourth evolutionary generation of DEXes. With this advancement, decentralized exchanges are poised to offer a wider range of financial products, making them more competitive with centralized exchanges.
+
+We will review the decentralized derivative exchanges in next posts.
+
+My LinkedIn https://www.linkedin.com/in/paven-do/
+
+My Twitter https://twitter.com/pavendo86
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                SilkE
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 26, 2023,  3:11pm
+                  
+                  
+
+2
+              
+            
+            
+              Decent post. I think DEXs become more prominent over the next few years as regulation clamps down on CEXs. Things like Travel Rule regulations will drive more DEX adoption.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                xyzq-dev
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 26, 2023,  5:23pm
+                  
+                  
+
+3
+              
+            
+            
+              In response to Paven86’s post, I was thinking about what might be the most important improvements we are witnessing right now or will be witnessing in the future for DEXes:
+
+	
+Interchain and Cross-Chain DEXes:
+
+
+	With the emergence of multiple blockchains, we could foresee DEXes that support cross-chain transactions, facilitating asset swaps across various blockchains without centralized bridges.
+
+
+	
+DEXes with Advanced Privacy Features:
+
+
+	The need for privacy remains paramount for many. The future might hold DEXes integrated with zk-SNARKs or zk-STARKs, ensuring transactions are verifiable but their details remain concealed.
+
+
+	
+Adaptive Liquidity & Dynamic Fee Structures:
+
+
+	Building on the AMM concept, future DEXes might incorporate AI-driven adaptive liquidity pools adjusting in real-time to market conditions. Alongside, dynamic fee structures can incentivize liquidity during high-volatility periods.
+
+
+	
+Integration with Layer-2 Solutions:
+
+
+	Addressing scalability and high transaction costs, DEXes could deeply integrate with Layer-2 solutions, ensuring faster trades while maintaining the security benefits of the main chain.
+
+
+	
+DEX Governance and Community-driven Features:
+
+
+	We might see a push towards more democratic features with voting mechanisms that introduce new trading pairs, adjust fee structures, or determine the development direction, making DEXes adaptive to user needs.
+
+
+	
+Advanced Trading Features:
+
+
+	DEXes may introduce features commonly found in CEXes like margin trading, stop-limit orders, and even algorithmic trading setups, but within a decentralized framework.
+
+
+What do you guys think are the most important improvements we will see?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Fei
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 27, 2023,  3:21am
+                  
+                  
+
+4
+              
+            
+            
+              Very informative. Just hope to learn more about the fourth generation of DEXes from your perspectives.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                xiaomaogy
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 28, 2023, 10:05pm
+                  
+                  
+
+5
+              
+            
+            
+              Nice summarization. But I think there are different ways of categorization, and it seems a bit premature to summarize them into different generations.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                paven86
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 8, 2023,  6:22am
+                  
+                  
+
+6
+              
+            
+            
+              you are all right. DEXes will continue to evolve in next time. In my classification, I only tried to the most essential & fundamental problems of finance, e.g. spot, derivatives. Extensive implementations & improvements (like what you mentioned) are on the ways.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                maniou-T
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 10, 2023,  8:36am
+                  
+                  
+
+7
+              
+            
+            
+              Kudos for the innovative breakdown of DEX generations! The historical categorization, mathematical insights, and forward-looking perspective make this article a standout in decentralized exchange discussions.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                studentmtk
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 8, 2023,  1:05am
+                  
+                  
+
+8
+              
+            
+            
+              Watching the evolution of decentralized exchanges, which have come a long way from the early days to their current state, is truly captivating.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                mina2023aa
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 16, 2023,  3:59pm
+                  
+                  
+
+9
+              
+            
+            
+              Thank you for providing a detailed overview of the generational advancements of decentralized exchanges (DEXes) in the realm of decentralized finance (DeFi). It’s evident that DEXes have undergone significant evolution in a relatively short period. The transition from the reserve model to the constant product or inverse function and liquidity pool model, as well as the subsequent improvements in the third generation, highlights the dynamic nature of the DeFi space.
+
+I look forward to your future posts on decentralized derivative exchanges, as it promises to provide further insights into the expanding landscape of decentralized finance.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

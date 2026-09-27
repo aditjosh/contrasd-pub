@@ -1,0 +1,908 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Hyperledger Web3j, the Ethereum Integration Library for Enterprises
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Web3j
+                            
+                        
+                    
+
+                
+                Introducing Hyperledger Web3j, the Ethereum Integration Library for Enterprises
+ 
+                
+                    Conor Svensson, author of Web3j and founder of Web3 Labs
+                    |
+                    
+                        Feb 12, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                We are very excited to announce the newest Hyperledger project, Hyperledger Web3j. Contributed by Web3 Labs to Hyperledger Foundation in January 2024, Web3j is a well-established open source project with an active community that plans to further thrive within the Hyperledger ecosystem.
+
+
+What is Hyperledger Web3j?
+
+Web3j is the Java and Android integration library for Ethereum. It was created back in 2016 by Web3 Labs founder, Conor Svensson, to provide the plumbing for enterprise developers to work with Ethereum-compatible blockchains.
+
+During the past two decades, many large enterprises invested heavily in the Java Virtual Machine (JVM) platform for building out their internal platforms. However, public blockchain networks were not designed with the enterprise users in mind.
+
+Web3j was created to provide a straightforward integration path for enterprises using the JVM platform to work with Ethereum technology.
+
+
+
+Since its initial release back in September 2016, Web3j has continued to go from strength to strength. This is reflected by key metrics of the project:
+
+	4.8k GitHub stars
+	192 contributors
+	106 releases
+	1.7k forks
+	More than 1000 resolved issues
+	More than 2 million downloads
+
+
+By bringing in Web3j, Hyperledger Foundation gains another well-established open source project that will benefit from its governance and stewardship.
+
+Benefits of Hyperledger Web3j
+
+Ease of Integration with Existing Systems: Hyperledger Web3j is a lightweight, highly modular Java library that can be easily integrated into existing enterprise systems. This makes it an ideal choice for organizations looking to adopt blockchain technology without overhauling their current infrastructure.
+
+Comprehensive Ethereum Support: As a Java library for working with the Ethereum blockchain, Hyperledger Web3j provides comprehensive support for a number of Ethereum components and ecosystems. This includes smart contract deployment and integration, transaction signing, wallet creation and management, and querying blockchain data, making it a versatile tool for enterprise blockchain applications.
+
+Highly Modular: Hyperledger Web3j is a highly modular project that enables users of the library to easily select the components they need for their project. If a project just wants to use the cryptography components of Hyperledger Web3j, they can. Or they can opt just to use the RPC capabilities for querying nodes but not the smart contract capabilities. All of this is straightforward due to its modular nature.
+
+Powerful Build Tools: Hyperledger Web3j enables developers to stay in  their JVM environment when developing using the library. It takes care of Solidity code compilation and testing via its build tools providing a highly integrated development experience.
+
+Smart Contract Wrappers: Hyperledger Web3j simplifies the interaction with smart contracts by generating Java smart contract wrappers. This allows enterprise developers to deploy and interact with smart contracts as if they were Java objects, significantly reducing the learning curve and development time.
+
+Reactive Functional Programming: The library supports reactive functional programming, enabling developers to easily write code to ingest historic and real-time blockchain data. This is particularly beneficial for enterprises dealing with complex systems and large volumes of data.
+
+Secure Transaction Management: Hyperledger Web3j provides robust features for secure transaction management, including offline transaction signing. This ensures that private keys remain secure, which is a critical concern for enterprise applications.
+
+Compatibility with Popular Java Tools: Hyperledger Web3j is compatible with popular Java tools and frameworks like Spring Boot, making it easier for Java developers to adopt and integrate into their existing workflows.
+
+Active Community and Support: Hyperledger Web3j already has a strong and active community, providing enterprises with access to a wealth of knowledge and support. This community-driven development ensures continuous improvements and updates, keeping the library aligned with the latest blockchain innovations.
+
+Reduced Blockchain Complexity: By abstracting the complexities of the Ethereum blockchain, Hyperledger Web3j allows enterprise technologists to focus on building business logic rather than dealing with the intricacies of blockchain technology.
+
+Performance and Scalability: Designed with performance in mind, Hyperledger Web3j is suitable for enterprise-grade applications that require high throughput and scalability.
+
+Support for Both Public and Private Networks: Hyperledger Web3j fully supports integrating with public and private Ethereum networks. For instance, it supports Hyperledger Besu's transaction privacy and private network API.
+
+Synergies with Hyperledger Besu: Hyperledger Besu and Hyperledger Web3j already have reciprocal relationships, with both projects leveraging one another.
+
+What's Next for Hyperledger Web3j?
+
+Hyperledger Web3j continues to evolve with the public and permissioned Ethereum landscape, and the community is keen to find additional maintainers!
+
+On the public network landscape, EIP-4844 support for Proto-Danksharding has recently been added, and the project will continue to evolve to keep pace with   the public Ethereum roadmap.
+
+Other areas will likely include layer 2-specific functionality for blockchains such as Optimism and Polygon, and private network features for Hyperledger Besu as they evolve.
+
+The Hyperledger Web3j team is keen to hear from the community to learn about how they can make the project even better — be this via further integrations with other Hyperledger projects or new features.
+
+How Can I Get Involved?
+
+We're really keen to get contributions from the Hyperledger community and find maintainers from more organizations. This will help the project thrive further.
+
+The easiest way to get started is to try out Hyperledger Web3j and create your own project via the Web3j command line interface:
+
+curl -L get.web3j.io |sh
+web3j new
+
+You can then dig around the project structure that gets created.
+
+If you have an RPC endpoint and wallet with a balance to pay for gas fees, you can run the application with:
+
+web3j run <network_url> <wallet_path> <wallet_password>
+
+From here we encourage you to check out the project home page at github.com/web3j/web3j and the documentation at docs.web3j.io.
+
+You can chat to the Hyperledger Web3j community and maintainers at the Hyperledger Discord.
+
+Learn More
+
+Interested in learning more about Hyperledger Web3j?  There will be a virtual meetup where you can hear from the maintainers on February 29 at 9:00 a.m. Pacific Time. In addition, there will be upcoming workshop where you can get more hands-on experience with the project.
+
+To get details or register for the February 29th meetup, go here. 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

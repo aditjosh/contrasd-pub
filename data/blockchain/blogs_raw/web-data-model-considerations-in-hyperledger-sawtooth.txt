@@ -1,0 +1,943 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data Model Considerations in Hyperledger Sawtooth – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Data Model Considerations in Hyperledger Sawtooth
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jan 16, 2018
+                    
+                
+
+            
+
+            
+            
+                Guest post: Zac Delventhal, Hyperledger Sawtooth maintainer, Bitwise IO
+ 
+Hyperledger Sawtooth is an enterprise blockchain platform for building distributed ledger applications and networks. Sawtooth simplifies blockchain application development by separating the core system from the application domain. Application developers can specify the business rules appropriate for their application, using the language of their choice, without needing to know the underlying design of the core system.
+ 
+In this blog post though, we wanted to get past the “Hello World” content and talk about some of that underlying design to allow advanced developers to extract more performance. (TLDR: Read this design doc). Sawtooth relies on a merkle radix data structure as the underlying data store. This differs from Hyperledger Fabric, but is common with some other blockchain implementations. 
+ 
+If you are just getting started with Sawtooth you really don’t need to understand any of this, but if you are interested in digging deeper or are working on an intensive blockchain application there’s some design considerations to think through on your data model.
+ 
+Let’s say we have some resources we plan to store as UTF-8 encoded JSON strings. You can use any byte encoding you like, and there are better options than JSON, but this will give us something familiar and human readable as an example. Our resources are going to have a pretty simple structure, just a unique id, a description, and an array of numbers:
+ 
+  {
+
+    "id": "123",
+
+    "description": "An example resource",
+
+    "numbers": [4, 5, 6]
+
+  } 
+ 
+ 
+ 
+So now we have to decide how to store this data on the merkle radix tree. Sawtooth addresses are made up of 35-bytes, typically represented as 70 hexadecimal characters. The first six characters are the namespace for our transaction family, but the final 64 characters we can use however we like. Let’s go through three possible setups we could choose:
+ 
+	All of our data is stored at a single address.
+	Each resource is stored its own address.
+	Each resource is stored over multiple addresses.
+
+ 
+One Address For Everything
+ 
+This is an absurd design only appropriate for the most rudimentary hello world examples. But why is it absurd? Exploring that should provide some useful insights. Let’s say we just take all of our data, and throw it in one JSON object indexed by the resource ids:
+ 
+{
+
+    "123": { "id": "123", "description": ... },
+
+    "456": { "id": "456", "description": ... },
+
+ 
+    ...
+ 
+ 
+ 
+And we store this massive string at whatever our namespace is plus 64 zeros:
+ 
+  123456 0000000000000000000000000000000000000000000000000000000000000000:
+
+    '{"123":{"id":"123","description":...},"456":{"id":"456",...'
+
+  }
+
+
+ 
+(Note that the space after the namespace in the addresses above are just for illustration purposes. Sawtooth addresses do not have spaces.)
+ 
+From a certain perspective this may be attractive for its simplicity. You don't need to think about addressing at all! You just always read/write from the one address and pull up whatever JSON is there. There are unfortunately two big downsides to this approach:
+ 
+	First, you now need to read/write a lot of data anytime you want to make a modification. Anytime anything changes, you will be parsing a huge JSON string, updating some small part of the resulting data, then re-encoding it as JSON and writing it back to the merkle tree. With any number of resources this will quickly become a huge performance bottleneck. 
+	Second, you will have hamstrung one of Sawtooth's greatest strengths: parallelism. Sawtooth validators are capable of simultaneously validating multiple transactions, but if those transactions are trying to write to the same address, they cannot be executed in parallel, and must be validated sequentially.  So with all of our data in a single address we guarantee validators will only ever work on one transaction at a time.
+
+ 
+One Address per Resource
+ 
+This approach is a little more sensible and still fairly simple. While you don't get to ignore addressing completely, all you really need to do is to find a way to turn each resource's unique identifier into 64 hex characters. A common method is to just take the first 64 characters of a hash. Here's how we would store our example resource above if we took the SHA-512 hash of the “id” field:
+ 
+123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7ab1c1:
+
+    '{"id":"123","description":"An example resource","numbers":[4,5,6]}'
+
+
+ 
+This is likely the approach you'll see in many applications. It is easy to reason about, and as long as each resource is not too large, or updated too frequently, performance should be reasonable. But what if we do have large or frequently updated resources? Could we split this up further?
+ 
+One Resource over Multiple Addresses
+ 
+64 hex characters provides us with trillions and trillions of potential addresses. There is no reason not to get as fine-grained as we like with them. For example we could use the first 60 characters for a hash of the identifier, and then use the remaining 4 characters for a hash of each property name:
+ 
+123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7a f0bc:
+
+    '{id:"123","name":"id","value":"123"}'
+
+  123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7a 384f:
+
+    '{id:"123","name":"description","value":"An example resource"}'
+
+  123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7a 542a:
+
+    '{id:"123","name":"numbers","value":[4,5,6]}'
+
+
+ 
+This is also a pretty absurd example. In order to reconstruct the resource later we have to spell out the property name and include the resource id repeatedly. Overall we are storing a lot more data, but we have minimized the amount of data we need read/write in each update. Also, while our validator can now do some fancy tricks like updating the "description" at the same time it updates the "number", that probably isn't important with our tiny little array of three numbers.
+ 
+But what if we had thousands of numbers that changed frequently? We could instead use those last address characters as array indexes. Something like this:
+ 
+  123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c04 00000000:
+
+    '{id:"123","description":"An example resource","nextIndex":4}'
+
+  123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c04 00000001:
+
+    '{id:"123","number":4}'
+
+  123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c04 00000002:
+
+    '{id:"123","number":5}'
+
+  123456 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c04 00000003:
+
+    '{id:"123","number":6}'
+
+
+ 
+So now we are using 56 characters for the id hash, and reserving the last eight for pieces of the resource, which gives us room for a few billion pieces. All of the basic resource info is at 00000000, while any remaining addresses each store a single number.
+ 
+This is starting to get pretty complex, and reconstructing this resource later will be a pain, but adding a new numbers has become extremely simple. Imagine the array was 10,000 items long. In any of the previous designs we would have had to parse that entire gigantic string and then re-encode it, just to add one item. With this design, we just add a new entry to the next index. Also, the validator can be highly parallelized now. Adding new numbers, updating the description, and changing existing numbers can all happen at the same time.
+ 
+Conclusion
+ 
+There is no one correct answer or strategy when it comes to structuring your data model. You'll need to decide for yourself what is appropriate based on your developer and application needs. In Sawtooth Supply Chain, we have "Record" resources with multiple arrays of telemetry data that could be updated on a second by second basis, and might stretch to millions of entries. So Records are highly split up in a manner similar to the numbers example above. Logically we are just pushing to an array, but in practice we needed to break that into different buckets. For a full discussion of this pattern take a look at the supply chain doc on the subject.
+ 
+By contrast, in Sawtooth Marketplace there wasn't as much opportunity or need to do anything so complex, and it follows uses a simple one address per resource pattern.
+ 
+If you’re interested, you can learn more about Hyperledger Sawtooth and see real world examples of how the technology is being used. You can also read the documentation, join the community on RocketChat or pull the code from GitHub to kick the tires today.
+ 
+Zac Delventhal is senior software engineer at Bitwise IO, and a maintainer on Hyperledger Sawtooth. When bored, he can be found giving overly long explanations about Hyperledger concepts in blog posts or on RocketChat.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

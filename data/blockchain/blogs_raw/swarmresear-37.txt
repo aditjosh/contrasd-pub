@@ -1,0 +1,388 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Questions on Incentive Development - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Questions on Incentive Development
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+            
+
+
+          
+              
+                July 18, 2019, 12:10pm
+              
+              #1
+          
+        
+        
+          This is copied from a google-doc discussion by the swarm incentive development team and the research team.
+
+
+Swarm Incentives
+
+Questions
+
+Please read the last Incentive update in the Track Sync for better context before answering these questions Tracks sync 09.03.2020 - HackMD.
+
+
+Open
+
+Q: How to best propose, track and finalise these questions in future? There was a proposal to create repo and do PRs.
+
+A: As for high level design and reasoning, I think we should aspire to create the SWIP for SWAP, then through PR reviews and comments. If a discussion is significant and shows scope for in-depth discussion, we use the swarmresear.ch .
+
+Q: If we have multiple assets you can pay with, how do we ensure that the price for the service is more or less constant. E.g. transfer of 100 MB costs 1 DAI stablecoin, how do we ensure the ETH equivalent is comparable? What if we don’t agree on prices? (e.g. I think 200 DAI is 1 ETH, you think 199 DAI is 1 ETH)
+
+A: Our preference is for all fees to be paid in ether - after all, ether is designed to be the infrastructure-fee currency. However, if you want to allow multiple tokens, then presumably you would have to agree on an exchange rate oracle in advance.
+
+Indeed we can also assume that any peer handshake will eventually contain a price oracle for chunks (for the ether-to-chunk exchange rate) to take care of fluctuating ether prices… However it is premature to say that chunk prices should be pegged to some DAI value or some other reference token.
+
+Q: What is the postage definition ETA?
+
+A: Not complete, but there is a SWIP PR WIP Postage Stamps for Swarm Messages by nagydani · Pull Request #8 · ethersphere/SWIPs · GitHub
+
+Q: Interoperability between different settlement solutions - unified API/hooks
+
+A-ish: Yes (Viktor during Balaton hack week) we can allow nodes to accept multiple coins/tokens on the same Swarm network
+
+A: The central balance interface (called by the accounting hook) needs to be separate from the settlement layer which then is implemented by Chequebook SWAP protocol or Raiden or other method. The interface between the two is
+
+	Settlement layer registers a hook which is called when a settlement is due (payment threshold is reached)
+	After settlement is done, the balance.add method is called.
+
+
+Q: Strategy/guidelines/recommendations for cheque cashing out - ideal vs MVP. Currently cashing as soon as cheque arrives which makes very little sense.
+
+A: (Daniel during Balaton hack week) What makes more sense - you cash out right after timeout.
+
+First constraint: never cash a cheque if it is not worth it.
+
+In fact the payment threshold should have a lower bound which guarantees that a majority is not spent on transaction cost given current gas prices.
+
+All other settings are up to the user.
+
+As an initial strategy: a user friendly configuration concept to implement is ‘what percentage of your income you are willing to spend on transaction cost?’.
+
+Example: if you set this at 1%, you cash the cheques you hold as soon as the transaction cost is below 1% of the face value of the cheque.
+
+In future we might want more complex reasoning here taking into account past performance of the peers, current chequebook balance, and other metrics.
+
+Q: Can cheque spamming be an issue? Do we need to introduce minimal threshold?
+
+A: No, because of the cumulative nature of cheques, you only ever need to cash a single one (the last one).
+
+Viktor suggests we can disconnect/penalise peers that send too frequent cheques and thus we establish a similar dynamic preventing too frequent cheques as we have for not paying frequently enough. Thus peers would converge on a medium frequency for payments.
+
+Q: What information should nodes exchange during handshake? E.g. SWAP cheque book, thresholds, payment options…?
+
+A:
+
+Swap Handshake:
+
+	Settlement Module (chequebook or raiden or …)
+	Price-per-kb / price oracle
+
+
+Chequebook Handshake:
+
+	
+Chequebook address
+
+
+	
+Last cheque from previous session.
+
+
+	
+Payment Thresholds - “I expect to be paid after a balance of X has been exceeded or a period of N hours has past - whichever comes first” (the precise disconnect/punishment thresholds remains secret).
+
+
+	
+[Minimum payment] - don’t pay me unless the balance is at least x (except of course if the N hours have been reached). (see previous question).
+
+
+
+
+Accepting the handshake implies that you will pay your peer at some point between x and X, and always send a cheque at least once every N hours. [ maybe pay at x + (X-x)/3 or sth like that.]
+
+Q: What is the use of keeping peer connections open, if they don’t pay (or other critical error appears) and you reach disconnect threshold? Are they still useful for kademlia or something?
+
+A:
+
+The technical answer is devp2p doesn’t allow matching protocols not to be connected - doesn’t allow you to drop a protocol connection with a peer without dropping all other protocols and disconnecting the peer.
+
+
+Are they still useful for kademlia or something?
+
+
+
+Yes. As long as they are proximate. We want to make every effort to ensure that the most proximate nbhd remains connected. As long as the offending peer is still correctly responding to retrieval requests that we originate and correctly forwarding other data (such as PSS?) then the connection benefits both you and the network overall.
+
+Q: What are the severity levels (if any) for different offences? (Right now we always disconnect.)
+
+	Disconnect
+	Ignore (some) messages/communication
+	…
+
+
+A:
+
+Q: As a node I misbehaved (or my network was temporarily bad) and over time all or majority of my peers dropped me. Can I recover in any way or do I have to create new identity?
+
+A: I don’t know, ask your peers if they forgive you or hold a grudge 
+
+…initially you should expect that there is no way back. You need a new identity.
+
+In future … see “peer metrics” discussion on swarmresear.ch (Rating your peers: Connection Metrics)
+
+Q: How do we estimate sensible prices per bytes, test them and validate these are the right amounts?
+
+A: Postage prices are automatically determined as nodes garbage collect chunks whose postage is too low … like transaction fees paid for eth transactions in past blocks, you can determine (based on local information) what postage you should pay.
+
+For bandwidth / retrievals … we must start with an artificially low, but fixed price and then observe the network dynamics before we can determine the correct pricing mechanism.
+
+Q: Right now we send cheque received confirmation message. Can we remove this?
+
+
+
+Happy path SWAP1512×1548 153 KB
+
+
+
+A: We do not need this message. For one, the TCP connection handles all ACKs, and if we don’t receive that, we must have disconnected. When we reconnect we send the last cheque as part of the handshake.
+
+Note: you must always store the last cheque received and sent - and you should never accept a “last” cheque with lower face value than the one you remember.
+
+Q: Do we adjust the balance right after issuing a cheque/receiving it?
+
+A: Yes.
+
+Q: Will we update the SW3 papers with findings from implementing the proposed solutions? Or will these be SWIPs? SW3 paper is not up to date and limitations discovered from implementation are not reflected/answered. Example: Soft swap - going through the proposal in the research paper, what does not work
+
+A: Everything should be a SWIP. (We might update the papers but that is a separate issue)
+
+Q: Are we using hard deposits in MVP? (initial deposit)
+
+A: No
+
+Q: Do we agree on requesting a cheque for the amount of “what the other node thinks they owe” rather than “what the node requesting the cheque thinks the other node owes”?
+
+A: No longer relevant, we now issue cheques directly. We no longer request cheques.
+
+Q: What if a chunk is not in the nearest node and needs to be retrieved with a certain number of hops? How is it retrieved?
+
+A: The middleman node downloads and provides the chunk. However, the chunk sum balance will cancel out: whatever the middleman pays for the chunk from one of the farther away nodes, it will charge the nodes which receive this chunk; the same will happen up until the final destination node.
+
+Q: What if a chunk gets lost during file retrieval? What happens to the billing? (the user could pay for a number of chunks but receive less than that; in that case they would be paying for a whole file without having access to it)
+
+A: (Aron) you only ever pay for chunks you receive. After all you are doing the accounting directly with your connected peers. However, if you get 99% of an encrypted file and the last chunk is missing, then you’d already have paid for 99% of the file even though it is of no use to you. – see also erasure codes below.
+
+Q: What if a file can not be completely retrieved?
+
+A: (Dani) at the chunk level, participants have no way of knowing which chunk belongs to what file. The situation is analogous to packet loss; it’s bandwidth-accounting, not file-delivery accounting. Availability could be improved by erasure codes - chunks can be recovered even if erased (research paper).
+
+Q: Do users need to pay for knowing the price of a download? A manifest needs retrieval; in this case the user would need to pay to know how much they will have to pay to download a file.
+
+A: Proposed solution: pre-paying for data (e.g. 100 GB) similarly to how mobile data plans work. Pre-payment is done to your own checkbook contract; not using all the pre-paid traffic when disconnecting means you can get your money back.
+
+Q: What if we use a different message type for price requests?
+
+A: Dani does not think we need this, it is just HTTP head request, the cost is negligible. Using bzz instead of bzz-raw will allow us to do a HTTP HEAD request, which will get the file size without actually downloading the file. An alternative is parsing JSON (manifest “size” field).
+
+Q: What is “fork content”? (see here)
+
+A: Fork is a verb. You can fork content from someone else’s dapp simply by embedding the hash in your own manifest or ENS name. For example, currently theswarm.eth site is at 7c121cec08576aff9a202d3853a50b5960006fb58faa6cb9e733f12cd6a8e9c4. I can now take this hash and include it in my manifest as the hash assigned to some key, and now the exact same content will be part of my swarmsite too. I have in effect forked the website… and I can do this to lots of content without ever downloading any of it.
+
+Q: How does billed syncing affect the user when uploading?
+
+A: If you are syncing to somebody, you are passing chunks with postage stamps on them to nodes who are closer to the address. So you are getting paid for syncing but only if they have postage stamps on them (otherwise you would be paid for spamming). Basically this means we need to add cost to uploading because uploading needs to add postage for each chunk. The cost is proportional to:
+
+	Size of the file
+	Amount of time for which you are paying
+	Priority of the file (if swarm is full it would be garbage collected)
+	Cheap initially - voluntary fee - as long as there is redundant storage, it will be cheap.
+	Price dynamically adjusted for upload
+
+
+Q: Are we charging per byte or billing by chunk? Some chunks can be partially empty (e.g. the last chunk of a file).
+
+A: We are internally billing per chunk. For encrypted and entanglement the chunks are always full (always padded).
+
+(Aron) we should do accounting by byte. That way we don’t have to worry about what size chunks are or even if chunk size can vary now or in future.
+
+Q: What are advantages/disadvantages of using different payment channel settlement outside of Swap (soft/hard deposits) if the latter works?
+
+	There are some things Swap cannot do and it has very limited guarantees. However, this is only going to become relevant long after the MVP.
+	If the need is justified, how do we interface with other mechanisms?
+	Through some RPC?
+
+
+
+
+
+A: Let us distinguish between Swap (the accounting protocol itself) and the back and forth payments using a chequebook. It should be a really simple step of using Swap to account for data back and forth while letting the ‘payment’ step either be a call to the chequebook system or the raiden channel or any other settlement.
+
+Q: What is the status of the Generalised swap swear and swindle games paper?
+
+A: (Viktor) it is in pretty solid state up to what is written. The sections not written should be cleaned up and it can be considered complete. Nothing is ever final 
+
+Q: How do I monitor the economic performance of my node?
+
+A: My suggestion would be to display the amount of traffic (e.g. in megabytes or gigabytes) you can use without contributing any resources to the network. If your node is doing well, this number will increase.
+
+Q: How to monitor that the accounting/economing parts of the MVP are working properly?
+
+A: Good question. I think, we will need to first define proper working (i.e. set measurable objectives) and then figure out ways of monitoring.
+
+Q: Pricing - currently in wei, should it be in bytes and then priced according based on which coin is used.
+
+A: (Danie & Viktorl during Balaton hack week) Currently two things are paid over Swap
+
+	Bandwidth measured in bytes
+	Storage measured in bytes/time
+
+
+Q: How pss will be priced - goal is to identify how this will affect our architecture
+
+A: (Daniel during Balaton hack week) Treat all uploads as file uploads and post stamp them
+
+Q: Fixed prices - analogy with ethereum gas which is fixed and gas price which floats
+
+A: (Daniel during Balaton hack week) For uploads you have a free market, for downloads you can set a fixed price (in bytes)
+
+Q: Postage - is this MVP scoped?
+
+A: (Daniel) It tells you how much uploader has paid, it tells you how much money you can get if you store it. It is part of MVP, the research is done, specs will be uploaded soon
+
+Q: How do we solve the balance difference between nodes stemming from dropped Retrieve Request messages? (see “Situation 1” here)
+
+A:
+
+Q: How do we solve dropped messages which would reduce debts while over the disconnect threshold? (see “Situation 2” here).
+
+A:
+
+Q: Can we expect nodes to have different payment thresholds?
+
+A: Yes, each node can set their own thresholds.
+
+Q: What price(s) do we want to start with?
+
+A: (Aron) how about 1 accounting token per bit of data?
+
+A: (Viktor during hack week) We should test this by setting it high and gradually decreasing the price.
+
+        
+
+
+        
+           
+2 Likes
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

@@ -1,0 +1,133 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Hiero: Bringing Hedera’s Core Network Software to Linux Foundation Decentralized Trust
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Introducing Hiero: Bringing Hedera’s Core Network Software to Linux Foundation Decentralized Trust
+
+        
+
+        
+           Written by By Alex Popowycz, Chief Information & Chief Information Security Officer, Hedera and Hiero Technical Steering Committee Member | Sep 16, 2024 7:01:47 AM 
+        
+
+        
+          In the ever-evolving landscape of decentralized technologies, few innovations stand out like the Hedera network. Offering unparalleled speed, security, and scalability, Hedera's Hashgraph consensus algorithm has demonstrated its ability to power enterprise-grade distributed ledger solutions. Today, we are excited to announce the next chapter in the Hedera network's journey—its core software will be contributed to Linux Foundation Decentralized Trust under the new name Hiero.
+
+
+Why Move to the Linux Foundation?
+
+The Linux Foundation has a long-standing reputation for fostering collaboration and innovation in the open-source community. With the rise of distributed ledger technologies (DLT), Linux Foundation Decentralized Trust provides a natural home for a project like Hedera. By joining this ecosystem, Hiero seeks to benefit by collaborating across the web3 open source community, including shared resources, and a neutral governance structure that promotes participation from a diverse set of contributors and stakeholders.
+
+Some key reasons behind the migration include:
+
+	Enhanced Collaboration: Moving to the Linux Foundation fosters collaboration between Hiero and other blockchain and DLT projects under the Decentralized Trust umbrella, including those within the Hyperledger ecosystem.
+	Vendor Neutrality: A vendor-neutral governance model ensures no single entity exerts undue influence over the project's direction, promoting a fair and open development environment.
+	Increased Adoption: Through the Linux Foundation’s vast network and established processes, Hiero will gain exposure to a broader community of developers, enterprises, and innovators, driving further adoption.
+	Resource Sharing: Leveraging shared infrastructure and tools available in the Decentralized Trust ecosystem will streamline development and integration efforts, saving time and resources and enhancing interoperability.
+
+
+What is Hiero?
+
+At the heart of Hiero lies Hedera’s unique Hashgraph consensus algorithm, an asynchronous Byzantine Fault Tolerant (aBFT) consensus mechanism. Unlike traditional blockchain consensus algorithms, Hashgraph’s efficient design ensures high throughput, low latency, with top-tier security, making it an ideal solution for use cases requiring fast and secure transactions.
+
+Hiero is not just a single software component but a collection of key modules necessary to run and interact with a fully decentralized network. These components include:
+
+	Consensus Node: Responsible for maintaining the ledger, processing transactions, and running the consensus, token, and smart contract services.
+	Mirror Node: Stores historical data and provides additional services such as auditing, analytics, and API access.
+	JSON-RPC Relay: Enables Ethereum clients to interact with the consensus network, facilitating interoperability with Ethereum-based applications.
+	SDKs in Multiple Languages: A line-up of SDKs in various languages, including Java, JavaScript, Go, C++, Rust, and Swift, to foster developer engagement and broad access.
+	Explorer Interface: A visual tool built on top of the Mirror Node to give users an intuitive interface for querying with the network.
+
+
+
+
+A Natural Fit for the LF Decentralized Trust Ecosystem
+
+As part of its transition to the Linux Foundation, Hiero will collaborate closely with other LF Decentralized Trust projects including those from the Hyperledger ecosystem. Already, several technologies developed by Hyperledger communities have been integrated into Hedera’s network infrastructure:
+
+	The Consensus Node utilizes Besu, an Ethereum client, for its Ethereum Virtual Machine (EVM) support.
+	The Mirror Node employs Hyperledger Web3j, a lightweight Java and Android library for connecting with Ethereum blockchains.
+
+
+This alignment between Hiero and other LF Decentralized Trust umbrella projects will unlock new opportunities for integration, driving forward the decentralized web (Web3) vision. By contributing to open standards and development efforts within LF Decentralized Trust communities, Hiero will help accelerate enterprise adoption of blockchain technologies.
+
+Open-Source Contributions and Community Growth
+
+As part of the contribution to the Linux Foundation, the entire Hiero codebase, including core network components and SDKs, will be available under the Apache 2.0 license. The move aims to promote transparency, community participation, and the evolution of the codebase through contributions from a diverse set of developers, enterprises, and organizations.
+
+The Hiero maintainers are committed to an inclusive development model, offering multiple opportunities for the community to engage and contribute. 
+
+Key engagement areas include:
+
+	Code Contributions: Developers can contribute to any of the various sub-projects, such as the Consensus Node, Mirror Node, or SDKs, all hosted on GitHub.
+	Improvement Proposals: Hiero will adopt an open improvement proposal process modeled after Hedera’s existing HIP repository, enabling the community to suggest and vote on new features.
+	Documentation: In line with the Linux Foundation’s best practices, Hiero’s documentation will be migrated and hosted in a neutral location to ensure accessibility and ease of use for developers and users alike.
+
+
+A Collaborative Future for Enterprise DLT
+
+The successful migration of Hedera’s core network software to LF Decentralized Trust represents more than just a rebranding. It signals a bold step toward an inclusive, collaborative future for enterprise-grade distributed ledger technologies. By joining forces with the Linux Foundation and LF Decentralized Trust, Hiero will help shape the future of DLT and Web3 technologies, offering unparalleled innovation, security, and scalability.
+
+We invite you to explore the Hiero ecosystem, contribute to its development, and participate in its vibrant community. Together, we can push the boundaries of decentralized technology, fostering a more open, fair, and efficient digital world.
+
+
+Stay tuned for more updates on Hiero’s roadmap, upcoming releases, and community initiatives. In the meantime, feel free to explore the following resources and learn how to get involved in the Hiero community.  Note that some of the community infrastructure is still being set up so watch the following links for further details.
+
+
+	Visit Hiero.org 
+	Join the Hiero channels on LF Decentralized Trust’s Discord
+	Contribute to the Hedera Hashgraph Github Repository  (Code base moving imminently)
+
+
+
+	Upcoming Events
+
+
+
+	Stay tuned for a meetup with the Hiero Technical Steering Committee 
+	Hacktoberfest
+	Join the LF Decentralized Trust Community on Meetup for future Hiero events and workshops
+
+
+
+Welcome to Hiero—where the future of decentralized trust begins.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

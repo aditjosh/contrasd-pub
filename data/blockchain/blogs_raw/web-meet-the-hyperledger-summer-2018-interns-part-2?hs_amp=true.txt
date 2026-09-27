@@ -1,0 +1,165 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger Summer 2018 Interns Part 2 – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Meet the Hyperledger Summer 2018 Interns Part 2 – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Jun 13, 2018 9:00:37 AM 
+        
+
+        
+          We first announced the return of Hyperledger’s Summer Internship Program back in March. The program offers students one-on-one mentorship from some of the leading technologists in our community and builds their development portfolio with projects that will feed into the larger Hyperledger ecosystem. The students applied to work on an extensive line-up of internship projects proposed by our community mentors. 
+ 
+In case you missed the first post in this series, it included information about six of our interns. Today, we’d like to introduce the other six interns, see what they will be working on and help you get to know them a bit better. We asked each intern a few questions including:
+ 
+	How did you first become interested in blockchain, and why are you excited to work on Hyperledger and your project in particular? 
+	How do you see blockchain technology evolving over the next five years?
+	If there’s one or issue you hope blockchain can solve, what is it and why?
+
+ 
+Let’s see what they had to say!
+ 
+Daniel McSheehy
+ 
+Pursuing a Bachelor’s in electrical engineering at the University of Texas
+ 
+Hyperledger intern project: Hyperledger Fabric Chrome Extension
+ 
+
+ 
+1. I was originally intrigued by Etherium and the possibilities of smart contracts. I worked on an Etherium game called EtherStocks based on these smart contracts. A user would use a chrome extension wallet called MetaMask that the website would detect and all the users assets and data would load. The user would never have to login and all the assets were safely stored in the user’s wallet. This is similar to my Hyperledger project, which is to build a chrome extension that can securely access the Fabric network and opt in to allow websites access to certain data. This could make Hyperledger Fabric more accessible but still very secure.
+ 
+2. Before widespread adoption of blockchain, blockchain technology needs to be more scalable with reduced transaction costs and computational power. I predict there will also be advancements in permissioned blockchains such as Hyperledger Fabric that deal with security and storing sensitive information. Permissioned blockchains could then replace current IT infrastructures such as medical or supply chains. 
+ 
+3. In emerging countries, there is often a problem with a lack of stable currency and available capital. While obviously cryptocurrencies can replace unstable currencies, there’s also an opportunity for regulated blockchain crowdfunding. Startups in emerging countries could be offered funding from thousands of people all over the world. With smart contracts, these startups would be held accountable to continue to receive funding.
+ 
+Shuo Wang
+ 
+Pursuing a Master’s degree in computer science at Tsinghua University in China
+ 
+Hyperledger intern project: Design Effective Operational Platform for Blockchain Management
+ 
+
+ 
+1. I read the original paper on Bitcoin in 2016 and became attracted by its decentralized way to build trust. It is amazing to keep the whole system working without a centralized third party.
+ 
+Hyperledger focuses on developing distributed ledgers among parties in an industry consortium. It aims at better performance and flexible smart contracts to support complex applications. I believe permissioned blockchain will change the business models of more and more industries, and Hyperledger is playing a leading role in that era of innovation. My internship project is for Hyperledger Cello, where I will be  building an operational platform to manage blockchain. I feel excited to work on Cello and help develop blockchain as a service.
+ 
+2. Cryptocurrency has aroused great public interest in the last few years. More importantly, blockchain has introduced us to the philosophy of building decentralized trust, and we are exploring how it can change our lives in various aspects. In the next five years, I think blockchain will achieve higher transaction throughput with lower latency, which is currently a bottleneck to support business applications. Blockchain platforms will become more mature and secure so that companies will have the confidence to handle their business processes in blockchain. Based on this, more novel business models will come forth to change the world fundamentally, and I feel excited to be part of this process.
+ 
+3. The supply chain is a great application scenario where blockchain can make a significant difference. Different parties in the supply chain share a distributed ledger of business transactions. Blockchain could make the whole process of supply chain more traceable and transparent. In addition, blockchain’s immutability helps the transaction records gain more trust from the financial institution. It is essential to the small and medium-sized enterprise because they could obtain more credit and more loans based on their business operation history in the blockchain.
+ 
+Dixing Xu 
+ 
+Pursuing a Bachelor’s degree in Information and Computing Sciences at the Xi’an Jiaotong-Liverpool University
+ 
+Hyperledger intern project: Hyperledger Fabric SDK-py 
+ 
+
+ 
+1. During my second year of university, I joined a research team and did some research on cryptocurrency trading with deep reinforcement learning [1]. Although it’s not necessary to learn the technology behind what you trade, I found the idea of decentralized currency fascinating and learned how to implement some test nets to play around with. Later, I participated in a hackathon, and our team used Hyperledger Fabric and Hyperledger Composer to build a decentralized house-renting platform [2]. Hyperledger Fabric is very friendly for developers to build applications with a modular architecture. However, Hyperledger Fabric only supports Java & NodeJS SDK. So I want to help the community develop a Python SDK since Python is very popular among AI researchers and data scientists. I am really excited to see the interaction between the Hyperledger and the data science communities.
+ 
+2. It is hard to tell where blockchain technology will lead to in five years since the technology is evolving very fast with many talented people are contributing. In my opinion, there will be more efficient algorithms to reach consensus balancing among speed, scalability and finality. More and more developers will get interested in developing DApps or writing smart contracts. I also see an exciting usage named “predictive smart contracts.” An example is GainForest [3], where the team use smart contracts to reward people for saving forestland  and neural networks to predict the deforestation for the area.The reward can be adjusted based on the risk determined by the prediction. Combined with blockchain and AI, the smart contracts formed strategic incentives from data. I think such applications that combine blockchain and other state-of-art technologies are very exciting and we will see more in the next five years. 
+ 
+3. I hope blockchain will solve the issue of inefficiency in value-based transactions and administration of central authority. With distributed ledgers, it is very easy to track records of all transactions and verify the validity of the transaction. There are several reasons for adopting blockchain technology. First, it can reduce the cost and simplify the logic. The ledger is not a new concept, but, with the openness of Internet and the security of cryptography, blockchain provides a faster and safer way to verify key information and establish trust. Last but not least, with smart contracts, one can easily build an autonomous system that improves the efficiency of verification and execution.
+ 
+[1] Jiang, Zhengyao, Dixing Xu, and Jinjun Liang. “A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem.” arXiv preprint arXiv:1706.10059(2017).
+ 
+[2] “DSharing” hackx.org, www.hackx.org/projects/169
+ 
+[3] Dao, David. “Predictive Smart Contracts” Medium, 23 Nov. 2017, medium.com/@daviddao/predictive-smart-contracts-dc15b9986d8c.
+ 
+Roger (Meng Kang) Hsieh
+ 
+Pursuing a Masters degree in management information systems at National Chengchi University in Taiwan
+ 
+Hyperledger Intern Project: Utilizing Hyperledger Fabric to Develop Supply Chain Application
+ 
+
+ 
+1. At first, I heard about blockchain and Bitcoin from my friends. I didn’t know much about them. But then the price of Bitcoin grew and grew, and I started to get interested. This is the first time I am studying blockchain. My lab focus has been on fintech. I study deep learning and distributed computation. But we found that we need blockchain to verify whether our prediction results are worthy of trust. So I devoted myself to blockchain. I found Hyperledger Fabric to have many advantages like that it is open source and has a unique mechanism. I am looking forward to building a blockchain application. I am excited to work on my supply chain project. I hope I can succeed in building the project and making myself more proficient in technological and English speaking skills.
+ 
+2. Blockchain is very important. It can make record immutable and can be anonymous or published. So I think blockchain will become an industry infrastructure norm like the internet. As long as the threshold is  easier. It can be easy to deploy on a server and easy to develop an application. Hyperledger, Ethereum … and so on will compete to become leaders of blockchain industry. Like iOS, Android and Windows. 
+ 
+3. I hope blockchain can accomplish financial information transparency. I hope it can make the government become more efficient and reduce corruption. And make supply chain information open to everyone so farmers, workers and the poor can get what they should get. With smart contracts, we can offer donations and scholarships when the right conditions are achieved. With blockchain we can make the world better.
+ 
+Ugobame Uchibeke
+ 
+Pursuing a Bachelor’s degree in computer Science and psychology at University of Saskatchewan, Canada
+ 
+Hyperledger intern project: Hyperledger Composer Modelling Tools
+ 
+
+ 
+1. My interest in blockchain was sparked by a meetup I attended in Toronto in the spring of 2017. I was amazed by the potentials of blockchain as demonstrated by a sample coffee seller and grower blockchain network. The talk and demo inspired me to learn more about the technology and start exploring platforms that are built on it. Around the same time, I got a offer to work at the Royal Bank of Canada in the Amplify Program with 54 other students from three countries who were brought into the bank to solve some of the bank’s biggest challenges using the latest and greatest technology. My project used Hyperledger, and we won two  of four awards and $25,000. We also filled a provisional patent. After this, I was hooked. I then went on to do some more blockchain work and wrote a research paper to be presented in the 2018 IEEE International Conference on Blockchain.
+ 
+2. The original paper by Satoshi was for a network that was truly open and decentralized. This is good for many use cases like for Bitcoin and some cryptocurrencies. However, blockchain technology, the engine driving these cryptocurrencies, has more potential and can change the way we do business by digitally enabling more entreprises to be more robust, secure and profitable. In the next f ive years, I see private and permissioned blockchains being used by many companies to streamline their processes, enhance auditability and compliance, provide transparency and modernize security. For me, this is one of blockchain’s greatest potentials, and Hyperledger is at the forefront of this technological shift and disruption.
+ 
+3. The fashion industry is full of many innovative and creative people who come up with ideas and design new clothes and trends. Sadly, they often do not get credit for for their work or they have the design copied by large fashion companies. A recent case was a shirt designed by Word, a woman-owned branding agency, to raise money for planned parenthood. Their design was later stolen and mass-produced by Forever21, the big fast-fashion brand. This is sad and I think something can be done about it. I would like to see us being able to store, verify, transfer, revoke and contest our rights to a design on the blockchain. I am passionate about this because my mother was a fashion designer who started with less than $5 and grew her business to many states in Nigeria, trained and sponsored more than 100 women, and came up with new ways to design clothes but did not get credit for her work. It’s personal for me and I would like to see upcoming fashion designers get credit for their work. I am looking forward to a time when we can do this on a blockchain network, and I am eager to continue learning and contributing to the advancement of blockchain technology.
+ 
+Martin Martinez
+ 
+A PhD student studying distributed systems, security in IoT and blockchain-related systems at the University of Southern California
+ 
+Hyperledger intern project: Simulating Hyperledger Networks with Shadow
+ 
+
+ 
+1. The first time I heard about a blockchain-related system was actually when I found out about Bitcoin. A few years ago, my curiosity led me to search around the web for information about how governments, organizations and even hackers could eventually track any individual who had Internet access. While reading about identity protection and how computer networks work, I came across Tor and how this system makes it more difficult to trace a user in the network. Additionally, I found out that, in order to make online transactions untraceable, users used a cryptocurrency called Bitcoin in this platform. Then, five  years later, my advisor started a blockchain class at my university, and I found out blockchain was the technology behind Bitcoin. The class involved multiple reading assignments about developments that shaped the blockchain landscape, which made me aware of the endless possibilities of this technology. Because of this, and after reading the paper written by Satoshi Nakamoto, I learn that blockchain as a technology had a bright future in lots of different applications.
+ 
+Particularly, I am thrilled to have the opportunity to work on my project, which involves the use of the Shadow network simulation tool currently used by Bitcoin and Tor deployments but not yet for Hyperledger. I believe there is a vast potential for what currently Hyperledger can offer, and I am looking forward to working with David, my mentor, and the rest of The Linux Foundation community to integrate the Shadow tool as a viable solution for simulating and assessing the performance of blockchain deployments in Hyperledger networks.
+ 
+2. Similar to Satoshi Nakamoto, I believe that blockchain is not just the technology behind Bitcoin but a large-scale platform that will enable advancements in other fields. As a result, I can see advancements empowered by blockchain in fields such as storage (guaranteed immutability and protection of data), supply chain (quality verification of the goods) and even data mining (aggregation and distribution of the training data set). Over the next five years, more and more industries will embrace blockchain due to its properties and, in the long run, this will benefit society as well.
+ 
+3. I am from Peru and I can see how the agricultural industry is still one of our strongest sources of income. However, at the same time, I consider that sometimes bigger companies take advantage of the small farmers by buying those supplies at a lower rate than what the market has to offer. Therefore, if these farmers could empower their product by showing their high quality and checking this information in a inmutable and distributed way, which is where blockchain can help, this will force bigger companies to offer a fair price for them. It can also help these companies keep track of the quality and ensure and show it to the end customers. Another problem that I see that my country sometimes faces is in the healthcare industry. Sometimes, health records for every patient are not provided during a transfer  from one clinic or hospital to another. This lack of information causes delays or even a bad diagnosis due to missing documentation of previous symptoms. Therefore, I believe blockchain and its immutability property could help patients to be able to transfer all their information between organizations while saving time and, sometimes, saving lives.
+ 
+That’s it for all of our interns this summer! We look forward to seeing all that they can contribute to the Hyperledger community.
+ 
+We hope you join them in the effort by contributing to Hyperledger projects. You can plug into the Hyperledger community at github, Rocket.Chat the wiki or our mailing list. As always, you can keep up with what’s new with Hyperledger on Twitter or email us with any questions: info@hyperledger.org.
+ 
+ 
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

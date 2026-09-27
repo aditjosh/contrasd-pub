@@ -1,0 +1,865 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+	2024-01-02 Contributor Call - APAC Friendly Time - CANCELLED
+
+
+
+
+
+	2024-01-23 Contributor Call - AMEA Friendly Time
+
+
+
+
+
+	2024-01-30 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-02-20 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-02-27 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-03-19 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-03-26 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2024-04-16 Contributor Call - US/EMEA Friendly Time
+
+
+
+
+
+	2024-06-11 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-07-09 Contributor Call
+
+
+
+
+
+	2024-09-03 Contributor Call - US/EMEA
+
+
+
+
+
+	2024-11-26 Contributor Call - US/AMEA
+
+
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2024-09-03 Contributor Call - US/EMEA
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+
+	Matt Nelson (Deactivated)
+
+
+
+	Matthew Whitehead
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Sept 03, 2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨https://zoom.us/j/97540031823?pwd=dEJrRW1LakFlWnZPelI3VGxoVjg2dz09)
+EMEA Friendly TimeÂ (https://www.timeanddate.com/worldclock/converter.html?iso=20220607T150000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	8 am Tuesday Los Angeles time
+	11 amÂ Tuesday New York time
+	17hÂ Tuesday Paris time
+
+Agenda
+	Â Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Matt Whitehead permissions in Github unable to assign tickets - Matt to check with Sally on permissionsÂ 
+	Matt Whitehead provided an update on the Bonsai Archive solution developedÂ 	Basic support first that the team wants to use to gather data on storage versus latency trade-offs in the checkpointing strategy. We ideally make this user configurable with a sensible default.Â 
+
+
+	Indy on Besu Meetup - September 24th
+	Discussed naming change - maintainers want clarity on the mechanics of removing the Hyperledger name from the actual code-bases and namespaces. How does this play out? Matt to get clarityÂ Â 	Do we have a complete list of impacted areas?	Docker
+	Git
+	Plug-Ins
+	ReleasesÂ 
+	Homebrew
+	Maven
+	Twitter
+	Package names
+	Documentation
+
+
+	Can we do a staged rollout of just the branding and then the code-base?Â 
+	Discussions in #besu-contributors
+
+
+	Sunset plan to move forward starting September 11thÂ 
+
+
+	Roadmap ReviewÂ 	Besu Roadmap
+
+
+	Release updates	24.9.0 - small functional regression that is being patched before releaseÂ 
+
+
+	Work Updates	Bonsai archive support update
+
+
+	Other Business	Review CI credit usage and build time for the month https://app.circleci.com/insights/gh/hyperledger
+	Git issue assignment (permission to assign to someone)
+	/add item/
+
+
+	Open Forum	/add item/
+
+
+	Future Topics	/add item/
+
+
+
+Recordings
+Find the recording in the playlist - https://www.youtube.com/playlist?list=PL0MZ85B_96CHpqsKmljUK8HB98wK67RjC
+
+
+    
+    
+
+
+
+    
+        
+            
+            
+            
+                                                    
+        
+
+                
+
+
+
+
+
+
+    
+
+
+	Â 	
+            File
+        	
+            Modified
+        
+
+
+
+
+    
+
+    
+                    
+                No files shared here yet.
+            
+
+            
+
+
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2024-07-09 Contributor Call
+2024-07-09 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-03-26 Contributor Call - APAC Friendly Time
+2024-03-26 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-02-19 Meeting notes
+2025-02-19 Meeting notes
+
+Web3j
+
+
+
+More like this
+
+
+
+
+
+
+2024 - 04 - 30
+2024 - 04 - 30
+
+Hyperledger Identus
+
+
+
+More like this
+
+
+
+
+
+
+10 - WG General Meeting | November 21/22 2024
+10 - WG General Meeting | November 21/22 2024
+
+Besu Financial Services WG
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "5e212e8c4030400995e0095af31b54c5"}

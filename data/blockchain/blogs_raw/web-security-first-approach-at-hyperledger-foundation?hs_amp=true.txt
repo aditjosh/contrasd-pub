@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security First Approach at Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Security First Approach at Hyperledger Foundation
+
+        
+
+        
+           Written by Arun S M, Vice Chair, Hyperledger TOC, and Hart Montgomery, CTO, Hyperledger Foundation | Oct 10, 2023 2:36:10 PM 
+        
+
+        
+          The secure software development lifecycle defines the indispensable best practices a software developer must follow. These encompass a panoply of recommendations that include using approved cryptographic libraries; adopting architecture design patterns to follow the principle of least privileges for user and service access; performing input validations; encrypting data at rest and data in motion;  authenticating and authorizing  actionable requests, code and binary scanning; etc. However, within the realm of open source ecosystems such as Hyperledger Foundation (a community that produces premier quality code for multiparty systems), these practices are not sufficient to claim security. The impact, positive or otherwise, due to security vulnerabilities resonates across a spectrum far broader than one may intuit. While these best practices are borrowed during the development lifecycle, there needs to be a holistic framework for how security related concerns are dealt with.
+
+Secure code is paramount to the success of any project. A chain is no stronger than its weakest link. Likewise, security is guaranteed only when the framework under which it is executed is secure. A project that attains the highest security rating in the software development process, but lacks a secure release process, remains as weak as possible. An attacker can simply impersonate and generate a vulnerable binary. The threat posed by identified vulnerabilities, especially in a setup like the Hyperledger Foundation, which prides itself on producing multiparty technologies that unite competitor organizations, is significantly higher.
+
+Hyperledger Foundation’s leadership, spearheaded by Executive Director Daniela Barbosa and CTO Hart Montgomery, recognized these security opportunities and the necessity for an enhanced governance framework. “Security is obviously critical to all software, but especially for software that is the backbone of high-value systems, like those that are typically run on a blockchain,” Montgomery said. “We at Hyperledger Foundation want to emphasize our commitment to following best security practices and believe that this direction is most impactful if it comes from leadership.”
+
+Hyperledger’s Technical Oversight Committee (TOC) established a task force to emphasize the importance of security in mainstream discussion channels and promote awareness. Commencing in 2022, the task force dedicated a significant amount of time to identifying and disseminating insights regarding the intricacies of threat modeling for multiparty technologies. As of 2023, a separate task force was instituted to scrutinize and refine the process of reporting and addressing security issues across the projects. Hyperledger Foundation has played a pivotal role in engaging new and first-time contributors within the open-source realm. Streamlining the workflow for reporting security issues and providing project maintainers with the flexibility to adopt cutting-edge industry tools became imperative. Defining the roles of community members participating in resolving reported issues and bridging the gap between project consumers and maintainers in the event of an identified vulnerability were also paramount.
+
+Enough said; here's a summary along with key highlights from the updated security policy for vulnerability reporting and addressing processes:
+
+	Establish a people infrastructure within each project to oversee and address security issues.
+	Facilitate a process to collaborate with security researchers in obtaining a Common Vulnerabilities and Exposures (CVE) score while addressing the issue.
+	Define guidelines and establish roles and responsibilities to address security issues in a timely manner.
+	Recommend addressing security issues through a private development infrastructure and issuing advisories post-release.
+	Provide support for an embargo list to expedite the release of solutions.
+
+
+With these policies and practices in place, the TOC is poised to advance additional measures, which include but are not limited to:
+
+	Defining standards and best practices for secure software releases.
+	Establish measurable metrics to determine the significance of security when evaluating a project's lifecycle.
+	Develop a shared reference framework for threat modeling across all projects.
+
+
+
+
+Read the security policy at Hyperledger Foundation TOC security policy document. If this piques your interest and you would like to participate, feel free to join the upcoming Hyperledger Foundation’s Technical Oversight Committee meeting. All are welcome!
+
+Building on ideas laid out in the new look announcement at the Hyperledger Foundation, the new security first policy set forth across the foundation aims to improve quality of production grade projects. The policy and the governance adopts the best practices guidelines set by the Open Source Security Foundation’s Vulnerability Disclosures Working Group. The content is peer reviewed by the members of OpenSSF’s Vulnerability Disclosures Working Group and has been debated over by the Hyperledger’s Technical Oversight Committee.
+
+A huge shoutout to the Hyperledger Foundation’s Security Process Task Force, OpenSSF’s Vulnerability Disclosures Working Group, and the countless volunteers without whom this policy definition would not have been possible.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Announcing Hyperledger Iroha 2
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Announcing Hyperledger Iroha 2
+
+        
+
+        
+           Written by Hyperledger Iroha maintainers | Feb 5, 2025 1:30:00 AM 
+        
+
+        
+          Hyperledger Iroha 2 is an innovative blockchain framework aimed to be robust, fast, and efficient for digital asset and identity use cases. Now a project of LF Decentralized Trust, Hyperledger Iroha 2 stands out due to its ease of use for developers, speed, and built-in support for various use cases via a predefined library of digital asset and identity management features.
+
+
+What is New in Hyperledger Iroha 2?
+
+Building on the lessons learned from its predecessor, Iroha 2 represents a significant leap forward in the evolution of the Hyperledger Iroha blockchain platform, offering a comprehensive overhaul of its architecture, design and functionality. 
+
+The following features highlight the key advancements and improvements that make Iroha 2 an ideal choice for businesses and developers searching for a scalable, customizable and efficient blockchain platform:
+
+	Innovation: Iroha 2 features a role-based permission model with granular permissions and roles for access control, triggers for deferred execution of arbitrary logic, multi-signature transactions, and a rich query language with filtering, sorting, and pagination.
+	Security: The rewrite of Iroha in Rust and the introduction of Sumeragi, the new and improved Byzantine-fault-tolerant consensus algorithm that can handle up to 33% byzantine-faulty nodes, ensure the security and reliability of Iroha 2.
+	Flexibility: Iroha 2 supports WASM-based smart contracts and provides simplified and efficient execution of basic smart contract operations through Iroha Special Instructions.
+	User-friendly: Iroha 2 has a command-line client interface for interacting with Iroha peers. It also supports Rust, Python, Java/Kotlin, and JavaScript SDKs.
+	Enterprise-focused: Iroha 2 is a permissioned blockchain suitable for trusted environments with planned support for permissionless networks in the future.
+	Customizability: Users can easily extend Iroha's functionality with custom executors, instructions, and data models. Iroha 2 also supports customizable fungible and non-fungible assets.
+
+
+What is Hyperledger Iroha 2 Ideal for?
+
+Hyperledger Iroha 2 is ideal for businesses and developers looking to implement blockchain solutions without the complexity usually associated with such technologies. It offers a rich set of features, including a role-based permission model, multi-signature transactions, and a rich query language, as well as support for smart contracts and WASM. These features make Iroha suitable for various applications, from financial services to supply chain management.
+
+Why is Hyperledger Iroha 2 Interesting?
+
+One of Hyperledger Iroha 2’s most compelling aspects is its simplicity and developer-friendly environment. Iroha’s architecture emphasizes modularity and ease of use, reducing the barrier to entry for developers who may not have extensive blockchain experience.
+
+When writing smart contracts, Iroha 2 supports WebAssembly (WASM), which provides an efficient and safe way to write smart contracts and compile them into a binary format that works on Iroha.
+
+Iroha also comes with SDKs for various programming languages (Rust, Python, JavaScript, Kotlin/Java), which makes it easier to develop Iroha-based applications for any platform or integrate Iroha 2 with existing software.
+
+Hyperledger Iroha 2 continues to evolve with new features and improvements to enhance its functionality and user experience. This MVP release is only the beginning of the framework's constant improvements. 
+
+Don't just take our word for it; try Iroha 2 now by following the Documentation, specifically the Get Started section, and contribute to its development by following our Contributing Guide or adding your comments and feedback to improve it in our Discord Channel or Telegram Community.
+
+Live Use Cases
+
+Hyperledger Iroha's practical applications are already being demonstrated in several live projects worldwide. Notable examples are the Bakong CBDC project in Cambodia, which has been operational since late 2020, while use cases on Iroha 2 include the Papua New Guinea CBDC PoC and the Bokolo Cash project in the Solomon Islands. Additionally, there is another interesting use case, Palau Invest, a blockchain-based savings bond system prototype in the Pacific nation of Palau.
+
+The Digital Kina proof of concept successfully concluded in December 2024, using Hyperledger Iroha 2; this currency seeks to strengthen the economy of Papua New Guinea by enhancing economic efficiency and security, as well as fostering financial inclusion through a digital payment system that will be accepted in the entire Pacific nation. The Bank of Papua New Guinea will analyze the results of the PoC and establish the requirements to implement this system. We look forward to more news later in 2025.
+
+The Bokolo Cash project in the Solomon Islands utilizes Hyperledger Iroha 2 to offer a digital currency solution that addresses the unique challenges faced by the island nation. With a significant portion of the population unbanked, Bokolo Cash provides an accessible and secure way for people to engage in financial transactions. Iroha ensures the system is robust, scalable, and adaptable to local needs. It also features an innovative bridge to the public SORA blockchain.
+
+On the other hand, the Palau Invest project uses Hyperledger Iroha 2 to provide digital savings bonds that allow people to contribute to developing their country’s infrastructure while receiving benefits in the form of yields, all through the comfort of their mobile phones. This is a great example of a blockchain project used to foster social improvement. The prototype was launched during the celebration of Palau’s 30th independence anniversary.
+
+Palau Invest will use a Hyperledger Iroha 2-based iteration of the SORA decentralized network called SORA v3. This network has public blockchain features while being fully compatible with permissioned networks. The SORA v3 blockchain will be a hub for other Iroha-based networks operating and providing financial services to Central Banks, NGOs, and other TradFi organizations looking for a safe and affordable yet powerful platform to tokenize their assets and provide these services. Ultimately, the SORA platform seeks to bring wide social benefits to its users through cutting-edge technology with the robust flexibility that only a Hyperledger like Iroha 2 can provide. A promising pool of projects, including the aforementioned SORA decentralized economy, is already underway to take advantage of Iroha 2's capabilities.  
+
+The SORA v3 testnet Fujiwara showcasing Hyperledger Iroha 2 technology is live. You can set up a node and participate by following the instructions here.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

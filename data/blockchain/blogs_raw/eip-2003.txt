@@ -1,0 +1,348 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-2003: EVMC modules for implementations of precompiled contracts
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Standards Track: Interface
+    
+  
+  
+    
+      EIP-2003: EVMC modules for implementations of precompiled contracts
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Paweł Bylica (@chfast), Alex Beregszaszi (@axic)
+	Created	2019-05-09
+	Discussion Link	https://github.com/ethereum/evmc/issues/259
+	Requires	
+
+  EIP-1352
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	Rationale
+	Test Cases
+	Implementations
+	References
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+EVMC specifies a generic API for Ethereum execution engines.
+This EIP specifies a way of providing implementations of Ethereum precompiled contracts
+using the EVMC VM API.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+For the complete EVMC specification visit the EVMC documentation first.
+This EIP is based on and is compatible with EVMC ABI version 6.
+
+
+The EVMC module with implementations of precompiled contracts SHOULD:
+
+
+	
+    Advertise the EVMC_CAPABILITY_PRECOMPILES capability
+in the get_capabilities() method.
+
+  
+	
+    Implement the execute() method in the following way:
+
+
+    	
+        Validate the incoming execution request requirements:
+
+
+        	
+            The message kind (evmc_message::kind) is a call (EVMC_CALL).
+
+          
+	
+            The call destination address (evmc_message::destination)
+is within the range of precompiled contracts defined by EIP-1352.
+
+          
+	
+            There is no code provided (the code argument is NULL and code_size argument is 0).
+
+          
+
+
+
+        If the requirements are not fulfilled, abort execution with the EVMC_REJECTED status code.
+
+      
+	
+        Check if the call destination address (evmc_message::destination)
+targets existing precompiled contract.
+Consider the EVM revision (evmc_revision) requested by
+the rev parameter of execute().
+
+
+        If yes, execute as follows:
+
+
+        	
+            Inspect the input data (evmc_message::input_data, evmc_message::input_size)
+and calculate the gas cost of the execution.
+
+          
+	
+            Compute the amount of gas left after execution by
+subtracting the gas cost from the call gas limit (evmc_message::gas).
+
+          
+	
+            If gas left is negative,
+abort execution with the EVMC_OUT_OF_GAS status code.
+
+          
+	
+            Otherwise,
+execute the code of the precompiled contract,
+return the EVMC_SUCCESS status code, the output and gas left
+(evmc_result::output_data, evmc_result::output_size, evmc_result::gas_left).
+
+          
+
+
+      
+	
+        Otherwise, emulate execution of empty code by returning
+the EVMC_SUCCESS status code
+and gas left equal the call gas limit (evmc_message::gas).
+
+      
+
+
+  
+
+
+
+Precompiled contract implementations are allowed to return two more EVMC error codes:
+
+	EVMC_FAILURE if the failure was caused due to something other than out of gas (e.g. input validation error)
+	EVMC_REVERT if the precompile doesn’t want to forfeit all supplied gas (as of May 2019 no such precompile exists)
+
+
+
+The Client is not required to provide the Host interface ([evmc_context] argument of execute() is set to NULL).
+Therefore, the precompiled contracts implementation MUST NOT access the evmc_context.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+It is very unlikely that any precompile will need to access or modify a contract state.
+Not requiring the Client to implement the EVMC Host interface removes the big portion of work
+needed for full EVMC integration.
+
+  
+    
+      
+      
+         Test Cases
+      
+      
+    
+
+
+EVMC provides the evmc-vmtester tool for checking compatibility with the EVMC specification.
+
+  
+    
+      
+      
+         Implementations
+      
+      
+    
+
+
+	Example of Precompiles VM implementation
+	ewasm precompiles
+	Aleth code for precompiles
+	Parity code for precompiles
+	EIP-1962 implemented as an EVMC precompile module
+
+
+  
+    
+      
+      
+         References
+      
+      
+    
+
+
+	EVMC – Ethereum Client-VM Connector API
+	EVMC documentation
+	EVMC VM Implementation Guide
+	EIP 1352: Specify restricted address range for precompiles/system contracts
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Paweł Bylica (@chfast), Alex Beregszaszi (@axic), "EIP-2003: EVMC modules for implementations of precompiled contracts [DRAFT]," Ethereum Improvement Proposals, no. 2003, May 2019. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-2003.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

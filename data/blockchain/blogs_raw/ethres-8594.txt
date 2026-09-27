@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+USM "minimalist decentralized stablecoin" could use final feedback before v1 launch - Decentralized exchanges - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      USM "minimalist decentralized stablecoin" could use final feedback before v1 launch
+    
+
+
+      
+          
+            
+              
+              
+                Decentralized exchanges
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                jacob-eliosoff
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 29, 2021,  6:02am
+                  
+                  
+
+1
+              
+            
+            
+              I’ve posted a few times about our USM project since July: it’s gone from a “here’s a fun idea” blog post to a working codebase with a security audit, two testnet deployments and a 1-month mainnet “baby USM” v0.1 trial release.  We’re now (still!) nearing v1 launch, but we could really use feedback on some final design decisions.  In particular how to calculate the fees raises some quite interesting mathy/mechanism design questions.  See my latest blog post, USM part 4: fee math decisions, and kindly tear it apart.
+
+I suppose somewhere in here I should be shilling a bit but I dunno whatever…  A lot of people are keen for decentralized stablecoins right now, we’re building one, it’s a not-for-profit volunteer-driven project (with Alberto Cuesta Cañada and Alex Roan, plus others chipping in bits) and it already worked for a month - if that sounds up your alley, check it out.  And follow @usmfum on Twitter.
+
+If we have to delay (again), we will, but I personally will be disappointed and surprised if we haven’t launched v1 in a month!  Please quote this back at me…
+
+PS this post was flagged for moderator attention…  We are actually looking for researchy input here, the math in the above post is (at least for me) nontrivial, but if anyone has advice on how to make these posts less annoying to the community I welcome thoughts on that either here or via DM!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+                      
+                        13 dev takeaways from developing the USM stablecoin
+                        
+
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

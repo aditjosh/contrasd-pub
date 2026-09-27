@@ -1,0 +1,606 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Near-Term Besu Incentive Program proposal - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+	Besu Execution Client Incentive Program
+
+
+
+
+	[WIP] Proposal #4
+
+
+
+
+
+	Mainnet activity log H1 2022
+
+
+
+
+
+	Mainnet activity log H2 2022
+
+
+
+
+
+	Near-Term Besu Incentive Program proposal
+
+
+
+
+
+	Proposal #3
+
+
+
+
+
+	Proposal #3.5
+
+
+
+
+
+	Second Incentive Proposal
+
+
+
+
+
+	Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+
+
+
+
+
+
+
+	Grants
+
+
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Near-Term Besu Incentive Program proposal
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Near-Term Besu Incentive Program proposal
+
+	Grace Hartley (Deactivated)
+
+
+
+	SajZ
+
+
+
+
+
+Owned by Grace Hartley (Deactivated)
+
+
+Last updated: Jan 11, 2022 by SajZ
+
+
+
+
+
+
+
+
+
+
+Feedback Requested. This is a draft document.Â 
+Near-Term Set Up :
+Note: This is targeted to be a six month resolution. The only funds that the Hyperledger Besu team will receive pre Merge are beacon chain staking rewards. The Merge is currently tentatively scheduled for Q3 2022.
+	ConsenSys will run the validator nodes for this 6 month term because the team is set up to do so and timing is critical to begin participating in the Incentive program
+	All profits received are distributed into a multi-sig. HLF, EF, and ConsenSys are the three parties that will have access to the multi-sig. Funds will be distributed to organization/participants based on the below. A sample breakdown to demonstrate distribution can be found here on the second tab.Â 
+
+	40% - # of pull requests for mainnet (add in a mainnet tag to PRs to track)
+	45% - # of running of validator nodes	Feedback: We should probably map this amount to be cost + margin.
+
+
+	5% of all funds will be put into bounty program	Feedback: We want to make sure the bounty program is fully functioning. We have had various results with bounties in the past.
+
+
+	10% of reserves to be used for community engagement purposes in future.
+
+	HLF will be responsible for attributing rewards to contributors other than ConsenSys. At least 2 of the 3 signatories (EF, HLF, ConsenSys) will have to be present to distribute the funds, but HLF should attribute/track the addresses of contributors.
+
+PR Repos:
+	hyperledger/besu
+	hyperledger/besu-native
+	hyperledger/besu-docs
+
+Link to the spreadsheet (funds breakdown simulation): Incentive Program Breakdown
+At the end of 6 months, we will conduct a reevaluation of the Funds Distribution Program with the EF, HLF, ConsenSys, and Besu Maintainers approving revisions. Throughout the six months, we will be working towards a long-term solution.
+Medium/Long Term Set Up:Â 
+Note: The funds received post 6 months will include EVM fee rewards (Justin Drake's spreadsheet, more info on rewards). 
+These are items to be addressed as we build a long-term solution for how to manage Besu's governance and the funds from the Incentive Program.
+	Other organizations can consider running validator nodes. If they meet requirements as indicated in the requirements documentation provided. Besu maintainers can vote to decide if an organization meets requirements. Details to be agreed upon.
+	A more complex DAO could be set up to manage voting, tokens, or other aspects.
+	Determine if pull requests are a good fit and working well given some pull requests might be smaller than others.
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Besu Execution Client Incentive Program
+Besu Execution Client Incentive Program
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Second Incentive Proposal
+Second Incentive Proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Grants
+Grants
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+[WIP] Proposal #4
+[WIP] Proposal #4
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal #3.5
+Proposal #3.5
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "02d3920c7a7f42e998ddc6b6dec1b6df"}

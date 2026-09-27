@@ -1,0 +1,200 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-1588: Hardfork Meta: Ethereum ProgPoW
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-1588: Hardfork Meta: Ethereum ProgPoW
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Ikmyeong Na (@naikmyeong)
+	Created	2018-11-16
+	Requires	
+
+  EIP-1057
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This meta-EIP specifies the changes included in the alternative Ethereum hardfork named Ethereum ProgPoW.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+	Codename: Ethereum ProgPoW
+	Aliases: N/A
+	Activation:
+    	Block >= 7280000 on the Ethereum mainnet
+
+
+  
+	Included EIPs:
+    	EIP-1057: ProgPoW, a Programmatic Proof-of-Work
+
+
+  
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Ikmyeong Na (@naikmyeong), "EIP-1588: Hardfork Meta: Ethereum ProgPoW [DRAFT]," Ethereum Improvement Proposals, no. 1588, November 2018. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-1588.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

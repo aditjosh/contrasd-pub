@@ -1,0 +1,986 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-7208: On-chain Data Container - ERCs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      ERC-7208: On-chain Data Container
+    
+
+
+      
+          
+            
+              
+              
+                ERCs
+              
+            
+            
+
+
+
+        
+            erc-721, 
+            token, 
+            nft, 
+            metadata, 
+            odc
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                galimba
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 21, 2023,  6:25pm
+                  
+                  
+
+1
+              
+            
+            
+              Hello Magicians,
+
+Today we are excited to introduce ERC-7208, a set of interfaces that we call the On-Chain Data Container (ODC).
+
+An ODC is an on-chain data container that houses both data and metadata and can be modified (mutable), expanded upon (extensible), and integrated with other assets (composable). Furthermore, it can be characterized by specific Properties, governed by Restrictions, and can trigger certain actions through Hooks. As ODCs are mutable, they can be split and merged, fractionalized, and the Properties within them can be attached or detached. The programmability of ODCs is abstracted into Property Manager smart contracts, enabling the implementation of multiple interfaces for the same stored values.
+
+Cohesion Through Standardization
+
+As the Ethereum landscape evolves, we’ve witnessed an influx of ERC standards targeting niche use cases. ERC-7208 aims to provide a universal interface for on-chain data management, irrespective of the ERC implemented on the specific use case. In particular, by bridging interoperability gaps between existing token standards. For example, consider the tokenization of a luxury car rental. Use cases like this would probably require the implementation of many moving parts, each one of them with its functional requirements. But if we focus just on the formalization, this use case calls for the interoperability between 1) rentable NFTs (ERC-4907), 2) a security token (ERC-3643), and 3) a compliance system (using one or several standards). The issue that this solution presents, is that once it is built, the ERCs are fixed and the product is not necessarily interoperable with other solutions (i.e. a DEX would have to implement compatibility with the three standards, in a specific way, to be able to support a listing of this type of product. There is no standard interface for interacting between standard interfaces, and this is why we are presenting ERC-7208. Custom solutions that once were necessary for interoperability can now be streamlined through ODCs, facilitating interactions across different standard interfaces.
+
+Now and then, we see a stream of new ERC proposals flooding the ecosystem. At the time of this writing, there are over 50 new ERC proposals that have been introduced in the past three weeks. If we continue with the previous luxury car rental example we can imagine a scenario where soon, there will be a new standard proposal, this time for the specific tokenization of the rental of real-world assets (cars) that are rentable. This is a big problem for the ecosystem, as it would be standardizing a use case rather than the interface required for a cohesive interaction between smart contracts. The main motivation driving ERC-7208 resides in future-proofing all previous ERC interfaces, making them interoperable with their future counterparts by enabling the logic specific to each implementation to work independently of the stored data they require.
+
+Abstraction of Logic from Storage
+
+At the core of the ERC-7208 is the conceptual abstraction of logic from storage. This means that a storage variable with a value can represent multiple things concurrently, depending on the implemented interpretation. For example, a uint Property with a stored value of 100 within the ODC can represent both 100 USDT and 100 USDC concurrently, by utilizing two different contracts which can manage their respective interfaces (Property Managers).
+
+Properties in ERC-7208
+
+Properties within ERC-7208 are central to its functionality. They are modifiable units of information stored within On-Chain Data Containers (ODCs). These Properties can store various types of data, such as bytes32 key-value pairs, sets of values, and mappings. This flexible data structure enables dynamic management of information related to tokens, including ownership details, identity information, programmable rules and triggers for how to handle the information itself, and more. Properties empower developers to implement complex, mutable states for tokens, reflecting changes over time. This versatility makes ERC-7208 particularly effective in tokenization scenarios, especially for real-world assets that often require complex and detailed data representation.
+
+In our luxury car rental example, the cars can be represented with ODCs. One possible representation would be to store Properties with the storage values of the ERC-4907, the ERC-3643, and the compliance rules the car ownership (and rental) has to abide by. Property Managers would be used for managing the logic that governs the stored data.
+
+More often than not, users are represented as addresses or SBTs. We can think of a scenario where they are represented by their ODC UniqueID, and the information stored within it. If ERC-3643 is being used, then OnchainID must be implemented… but what if the company has other identity requirements? Well, they could be stored as Properties, and exposed through a Property Manager implementing the OnchainID interface.
+
+Restrictions in ERC-7208
+
+Restrictions in ERC-7208 provide a cohesive layer, dictating how Properties can be altered. These include transfer restrictions and lock restrictions, ensuring that changes to Properties adhere to predefined rules. This mechanism preserves the integrity and intended use of the data stored within the Properties. Coming back to the luxury car rental example, users being identified with a token will have a Transfer restriction on the identity Properties within their ODCs. Additionally, users themselves can configure access Restrictions to limit who can read the information stored within those identity Properties. Moreover, the tokenized car’s Properties may have Restrictions, limiting access to just the owner for data such as mileage, the status of components, the last service date, or the price for which it was last rented. Lastly, lock restrictions can be employed when an asset is staked for a given period or when an asset undergoes fractionalization and new tokenized fractions are minted. By using Restrictions and Properties in this way, the whole luxury car rental business itself can be represented as an ODC. In other words, data can be streamed directly to Properties and Restrictions will apply when accessing sensitive data.
+
+Metadata Exposed from Properties
+
+Some information is worth storing on-chain. However, we see the majority of on-chain tokens that make use of Metadata use it to store data off-chain. Continuing with our example, a fair solution would be to use a dynamic NFT for representing the car, where the off-chain metadata can be updated to reflect the information about the current driver, model number, and year of manufacturing. This solution, although acceptable in some scenarios, comes with a major limitation: the metadata is not actionable by smart contracts. Data that would otherwise be usable or accessible (actionable) by smart contracts is stored off-chain. By storing additional on-chain data related to ODCs, this ERC addresses this limitation by exposing Properties as a procedurally generated Metadata JSON. This on-chain metadata generation can include all Properties and Restrictions. Information like the asset’s name, description, a default URI, or the asset’s own URI updated in real-time, can be retrieved from the ODC and shown as Metadata. ODC’s metadata is programmable and is dynamically rendered from within the ODC. This hits two birds with one stone: 1) it enables smart contracts to interact with richer, actionable data stored within Properties, and 2) the tokenized asset becomes a self-contained entity, where data and metadata live within the same space (on-chain). And if there is a need for some resources to be stored off-chain, a reference to them can be stored within a Property, which would be rendered within the Metadata (i.e. a link to IPFS where to store the photo of the car).
+
+Property Managers
+
+In ERC-7208, PMs are smart contracts that manage data within ODCs. They are vital for maintaining the structure and integrity of the data stored in Properties. Property Managers are responsible for enforcing Restrictions and managing the data following predefined rules and protocols. PMs are categorized based on their access to Properties. This categorization, managed by governance, allows for organized and secure interaction with ODCs, mitigating the risk of unauthorized data manipulation. Categories help define roles and permissions for Property Managers. Therefore, they are the governance layer for data within the ecosystem.
+
+Examples of Property Managers
+
+	
+Wrapper Property Manager: Manages the bundling and unbundling of various asset types into a single ODC, increasing composability and interoperability.
+
+
+	
+Fractionalizer Property Manager: Enables the creation of fraction tokens for a specific ODC, particularly useful for assets that require fractional ownership, governance, and shared participation.
+
+
+	
+Oracle Property Manager: Streams data from Oracles directly into Properties, updating them with real-time information like asset prices, arbitrary data that can fit within the ODC and may be relevant to use-case-specific logic (Impermanent Loss, weather conditions, position within a map, etc).
+
+
+	
+Identity Property Manager: Manages Credentials stored within Properties, where Restrictions apply based on identity within the ODC. Signatures and Verifications can be based on zero-knowledge proofs and Verifiable Credentials, enabling Identity Management without exposing any personally identifiable information. With this kind of PM, Self-Sovereign Identity solutions can be integrated regardless of the implementation, ensuring security and privacy for other standards.
+
+
+	
+Rules Engine Property Manager: This component enables the definition of rules that govern how information is allowed to flow between ODCs. Rules are smart contracts that can be triggered by a call or delegateCall and often return a boolean with an approval value. For example, in the case of zero-knowledge proofs of residence, a rule can be an on-chain implementation stating that the country of origin is not within a sanctioned list. “One of many”, “many of many”, and “none of many”, are examples of rules that can be verified to achieve Regulatory Compliance requirements with governmental institutions, even across borders.
+
+
+	
+Recovery Property Manager: Can be developed to support partial or full recovery of ODC based on Identity, regulatory framework, estate planning, and other customizable triggers.
+
+
+	
+Real World Asset Tokenization: If we combine the Abstraction of logic from Storage, the dynamic generation of Metadata from on-chain actionable data, together with the privacy-preserving self-sovereign identity storage, we can achieve a regulatory-compliant tokenization of real-world assets. For example, in Arkefi (https://www.arkefi.com/) ODCs are being used to represent fractionalized ownership of real art pieces. Property Managers are used to comply with regulations and to govern the financing, investment, acquisition, and buy-back options. In AgriFi (https://agrifiafrica.com/), each user owns their ODC, which acts as a non-transferrable data container. Property Managers are utilized to represent the flow of assets (crops, investments, and debt), and to implement the logic that governs the use case, adhering to regulation and without exposing any private information.
+
+
+
+
+A mechanism for Account Abstraction
+
+Over the past few years, much has been discussed about Account Abstraction, especially with the approval of ERC-4337. We propose that data is at the core of any concept of an account. It is the on-chain data the one that represents an individual on-chain. The digital self is derived from digital interactions on-chain. This applies to accounts, and individuals, but also applies to entities like businesses, institutions, intellectual property, and the business of renting tokenized luxury cars. Using ODCs the digital self is not represented by an account but by a composition of the data stored within the container, the rules that govern such data, its rules, Properties, and Restrictions.
+
+Nexera Protocol (default implementation)
+
+The default implementation of ERC-7208 we are introducing has several added features outside of the standard interface. It is based on the Solidstate implementation of Diamond (ERC-2535), and it introduces identity management, a programmable rule system for managing Properties and Restrictions in a compliant manner, wrapping of native assets as well as other ERC tokens, fractionalization, splitting, and merging of ODCs, dynamic metadata exposing the ODC’s internal stored data, an Oracle PM capable of streaming data and delegating calls through triggers, programmable recovery rules, and a Smart Wallet system (being actively used on https://brillion.finance)
+
+This design choice empowers a more efficient and scalable approach to tokenization, especially for real-world assets, which often require mutability, interoperability, and compliance with regulatory frameworks. For instance, it can enhance ERC-1400 by providing dynamic data management for security tokens, or work alongside EIP-2615 to enrich swap orders with additional data capabilities. This interoperability extends to other standards like ERC-4885 (Fractional Ownership), enabling more efficient and transparent management of fractional ownership.
+
+
+  
+
+      github.com/ethereum/ERCs
+  
+
+  
+    
+
+
+
+    
+      
+    
+
+
+  
+
+
+
+      
+        Add ERC: On-Chain Data Container (import from EIP-7208)
+      
+
+
+    
+      ethereum:master ← NexeraProtocol:master
+    
+
+
+      
+        
+          opened 09:27PM - 03 Nov 23 UTC
+        
+
+
+        
+          
+            
+            galimba
+          
+        
+
+
+        
+          
+            +638
+            -0
+          
+        
+
+      
+
+  
+
+
+
+
+  
+    Migrating from https://github.com/ethereum/EIPs/pull/7210
+
+----
+
+ERC-7208 in…troduces a series of interfaces for On-chain Data Containers, abstracting the token data storage away from the implementation logic of specific use cases.
+
+* Ethereum Magicians Discussion: [ERC-7208: On-chain Data Container](https://ethereum-magicians.org/t/erc-7208-on-chain-data-container/14778) 
+* Default Implementation: [Coming soon](https://github.com/NexeraProtocol/MetaNFT)
+* Full Documentation: [Coming soon](https://docs.nexeraprotocol.com/)
+
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+Although we have a default implementation live, audited, and with several use cases implementing it, this standard is still in draft and will likely be amended with the community’s input. We’re eager to hear your thoughts and feedback on ERC-7208. Your insights will be invaluable in refining this standard.
+
+We are looking forward to a lively and insightful discussion!
+
+            
+
+
+            
+              
+24 Likes
+            
+
+            
+                
+
+            
+              
+                farzad
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  9:07am
+                  
+                  
+
+2
+              
+            
+            
+              This post was flagged by the community and is temporarily hidden.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Dannn
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023, 10:35am
+                  
+                  
+
+3
+              
+            
+            
+              This post was flagged by the community and is temporarily hidden.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Cook
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023, 12:40pm
+                  
+                  
+
+4
+              
+            
+            
+              This post was flagged by the community and is temporarily hidden.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                CryptoBeast
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023, 12:47pm
+                  
+                  
+
+5
+              
+            
+            
+              This post was flagged by the community and is temporarily hidden.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Hunty
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  1:31pm
+                  
+                  
+
+6
+              
+            
+            
+              This post was flagged by the community and is temporarily hidden.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Ridgestarr
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  1:45pm
+                  
+                  
+
+7
+              
+            
+            
+              BOSS moves. Confidence in this team only growing. No mercy.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                Hairoun
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  1:49pm
+                  
+                  
+
+8
+              
+            
+            
+              This post was flagged by the community and is temporarily hidden.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Howee
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  3:23pm
+                  
+                  
+
+9
+              
+            
+            
+              Great breakdown and technical overview of the overall vision of the AllianceBlock project, very exciting to see it at this stage 
+
+            
+
+
+            
+              
+6 Likes
+            
+
+            
+                
+
+            
+              
+                D_Ddefi
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  6:12pm
+                  
+                  
+
+10
+              
+            
+            
+              Amazing work the #NXRA team is doing!
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                kamelion
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  6:35pm
+                  
+                  
+
+11
+              
+            
+            
+              Man! this provides a comprehensive and insightful overview of ERC-7208 , particularly highlighting the innovative approach of On-Chain Data Containers (ODC) in enhancing data management and interoperability across various token standards. I think tht its impressive how this delves into the technicalities while also considering practical use cases like the tokenization of real-world assets. RWA needs this in my opinion.
+
+I’m curious about the potential impact of ERC-7208 on the broader Ethereum ecosystem. how might the introduction of ERC-7208 and its On-Chain Data Containers influence the development and deployment of decentralized applications (DApps), particularly in terms of scalability and user experience?
+
+            
+
+
+            
+              
+9 Likes
+            
+
+            
+                
+
+            
+              
+                Howee
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  7:00pm
+                  
+                  
+
+12
+              
+            
+            
+              …a comprehensive and well-thought-out proposal! The concept of On-Chain Data Containers (ODCs) and ERC-7208’s focus on standardization and interoperability make a lot of sense, especially in a rapidly evolving Ethereum ecosystem with a constant influx of ERC proposals.
+
+I appreciate the attention to detail, especially the abstraction of logic from storage, the versatility of Properties, and the role of Property Managers. The use case examples, like the luxury car rental scenario, add practical context to how ERC-7208 can streamline complex interactions.
+
+The approach to expose Properties as procedurally generated Metadata JSON on-chain is a smart move, addressing the limitation of off-chain metadata storage. The variety of Property Managers, such as Identity and Rules Engine, showcase the flexibility and extensibility of the proposed standard.
+
+…examples of real-world asset tokenisation using ODCs and the default implementation with added features demonstrate a thoughtful consideration for efficiency, scalability, and compliance. Overall, ERC-7208 seems like a promising step towards a more cohesive and adaptable on-chain data management solution. Kudos to the team!
+
+            
+
+
+            
+              
+8 Likes
+            
+
+            
+                
+
+            
+              
+                Hairoun
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  7:14pm
+                  
+                  
+
+13
+              
+            
+            
+              Love how projects keep innovating, the RWAs sector is critical to DeFi.
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+            
+              
+                Leon_S
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  7:43pm
+                  
+                  
+
+14
+              
+            
+            
+              Very informative read on ODC’s. Thanks for giving insight on the topic. Love to see this as the new standard!
+
+            
+
+
+            
+              
+4 Likes
+            
+
+            
+                
+
+            
+              
+                farzad
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  8:40pm
+                  
+                  
+
+15
+              
+            
+            
+              Unlocking seamless interoperability, abstraction of logic from storage, and empowering dynamic tokenization scenarios. Innovation in the Ethereum ecosystem always exciting 
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                Hunty
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023,  9:47pm
+                  
+                  
+
+16
+              
+            
+            
+              A great read, thanks for the informative information.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                jaws
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023, 10:16pm
+                  
+                  
+
+17
+              
+            
+            
+              I too think that this is not necessarily restricted to real-world asset tokenization. it could enable some wider-reaching applications.
+
+A good example would be digital asset tokenization in on-chain gaming applications. Think of a character or avatar as an ODC with the PMs managing all the various abilities, powers, or assets of that avatar. I also wonder if the generated JSON metadata could be harnessed to render certain assets in digital space and thus removing the need to store assets in centralized cloud storage.
+
+            
+
+
+            
+              
+6 Likes
+            
+
+            
+                
+
+            
+              
+                Nellykhan
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 17, 2023, 11:59pm
+                  
+                  
+
+18
+              
+            
+            
+              This is very smart. No mercy!
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                AndyVi
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 18, 2023,  9:30am
+                  
+                  
+
+19
+              
+            
+            
+              ODC can replace a wallets of all sorts eventually, can it?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                RWAfan
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 18, 2023,  9:33am
+                  
+                  
+
+20
+              
+            
+            
+              As someone who talks with a lot of companies that are looking into RWA tokenization, I can safely say that ODCs are much needed and will open op a wide range of new business opportunities to the Ethereum community and beyond. From a professional and business perspective, I see this as the next much needed evolution of NFTs. I have explored ODCs with businesses from different industries, from creative businesses looking into creative NFT use cases, all the way to dynamic licensing companies, real-estate and carbon credit projects.
+
+All these businesses have one thing in common, they want this!
+
+As I am personally very biased, in favour of this proposal. I would also like to hear from the community what potential ‘drawbacks’ could be. In what scenario would you prefer a different standard instead of this one? And when would you use ERC-7208?
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+        next page →
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

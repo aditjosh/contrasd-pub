@@ -1,0 +1,628 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-04-14 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+
+	2020 Notes
+
+
+
+
+	2020-01-07 Contributor Call
+
+
+
+
+
+	2020-01-21 Contributor Call
+
+
+
+
+
+	2020-02-04 Besu Contributor Call Notes
+
+
+
+
+
+	2020-02-18 Besu Contributor Call Notes
+
+
+
+
+
+	2020-03-17 Contributor Call Notes
+
+
+
+
+
+	2020-04-14 Contributor Call
+
+
+
+
+
+	2020-04-28 Contributor Call Notes
+
+
+
+
+
+	2020-05-12 Contributor Call Notes
+
+
+
+
+
+	2020-05-26 Contributor Call Notes
+
+
+
+
+
+	2020-06-09 Contributor Call Notes
+
+
+
+
+
+	2020-06-23 Contributor Call Notes
+
+
+
+
+
+	2020-07-07 Contributor Call Notes
+
+
+
+
+
+	2020-07-21 Contributor Call Notes
+
+
+
+
+
+	2020-08-04 Contributor Call Nodes
+
+
+
+
+
+	2020-08-18 Besu Contrubutor Call Notes
+
+
+
+
+
+	2020-09-01 Besu Contributor Call Notes
+
+
+
+
+
+	2020-09-15 Contributor Call Notes
+
+
+
+
+
+	2020-09-29 Besu Contributor Call Notes
+
+
+
+
+
+	2020-10-27 Office Hours Notes
+
+
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2020-04-14 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2020-04-14 Contributor Call
+
+	Danno Ferrin
+
+
+
+	Felipe Faraggi
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Apr 16, 2020 by Felipe Faraggi
+
+
+
+
+
+
+
+
+
+
+Video -Â dummyfile.txt
+	went over housekeeping
+	Conferences	Went over past events - NONCON, HL Denver, Blockchain Columbia, IOBuilders
+	went over future virtual meetups.
+
+
+	Release updates	1.4.3 highlights (Tim Beiko, David Mechler)
+	1.4.3 known issues (software hard drive, Danno Ferrin)
+
+
+	Work Updates	ETC Phoenix - (Ed.	Mordor is running fine
+	Approx Classic switch in Jun	June 4th of 2020
+	https://etherplan.com/2020/02/26/ethereum-classic-phoenix-upgrade-set-for-block-10500839-estimated-on-june-2020/10191/
+
+
+
+
+	Besu Native (Danno)	secp256k1 near term
+	EIP2537 sooner
+	AltBN128 needed in the near future
+	Not all libraries will have native fallbacks
+	Some future native libraries may not be crypto based.Â  Crypto is just the first use case.
+	Libraries that can be built once a quarter are good candidates.
+
+
+
+
+	Other Business	Moving ROADMAP out of the repo into wiki	Have repo be a pointer to the wiki, in README.md
+
+
+	NOTICE and ISSUE_TEMPLATE	https://github.com/hyperledger-labs/hyperledger-community-management-tools/tree/master/repo_structure
+
+
+	contributors and mainter per repo	Post as two separapte proposals.
+
+
+
+
+	Open Forum	Low nonce transactions	abdel will answer offline
+
+
+
+
+	Future topics	Demos?
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "6291f573127a49ccb21d18ffd4b78417"}

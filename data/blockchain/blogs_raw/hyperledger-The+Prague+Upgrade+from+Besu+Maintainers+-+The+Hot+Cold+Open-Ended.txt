@@ -1,0 +1,636 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Prague Upgrade from Besu Maintainers - The Hot, Cold,  & Open-Ended - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+	Cancun Planning
+
+
+
+
+
+	Enterprise roadmap item detail
+
+
+
+
+
+	Prague Planning
+
+
+
+
+	The Prague Upgrade from Besu Maintainers - The Hot, Cold,  & Open-Ended
+
+
+
+
+
+
+
+	See Performance & Stability for Q4 Roadmap
+
+
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+The Prague Upgrade from Besu Maintainers - The Hot, Cold,  & Open-Ended
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+The Prague Upgrade from Besu Maintainers - The Hot, Cold,  & Open-Ended
+
+	Matt Nelson (Deactivated)
+
+
+
+	Danno Ferrin
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Apr 10, 2024 by Danno Ferrin
+
+
+
+
+
+
+
+
+
+
+Written by the Besu Maintainers.
+
+
+To streamline Prague planning from the Besu client team, our maintainers propose the following scope...
+Prague Meta-Thread
+In-Favor
+EOF
+Besu advocates for adding EOF to the Prague hard fork.Â 
+The EVM Object Format is a collection of smaller changes aiming at paying down a significant amount of technical debt that the EVM has accrued over nearly a decade, and prepare the EVM so that "calcification" can occur on a robust foundation. EOF does not fundamentally change the execution of the EVM, instead it introduces a container format and migrates key instructions to new formats that resolve long standing problems such as eliminating dynamic jumps and the associated JUMPDEST analysis. Generally speaking there are four major themes addressed
+	Making EVM code O(n) to JIT and AOT compile
+
+	Eliminating Code IntrospectionÂ 
+
+	Eliminating Gas IntrospectionÂ 
+
+	Make â€œQuality of Lifeâ€� improvements easier
+
+The last bullet point enables features in future forks and L2 usages of the evm. L2s can more safely perform wholesale changes to their gas schedule. Experimental and non-conforming EVM features (such as new opcodes) can be signaled with extra header fields. And because JUMPDEST analysis has been replace with deploy time code validation the contract size limit could be safely increased or even uncapped. Team Ipsolon has launched https://evmobjectformat.org/ for a more comprehensive list of features.Â 
+Besu's implementation of EOF is nearly complete, awaiting the finalization of a few final details.
+EOAs, AA, & Next Steps
+	EIP-3074Â - AUTH and AUTHCALL
+
+Besu supports adoption of EIP-3074
+This EIP was considered and rejected for the London hard fork, almost three years ago, citing security issues. There was a call for a security audit at the time, which has not been done. The EIP would benefit from such an assessment. A major recent update to the nonce handling rules allows for a user to revoke authorizations with a single action. This recent specification change has removed the major safety concerns team members have had.
+The Besu team views the need for 3074 as an opportunity cost. If we do not ship something in Prague, we run the risk of not supporting AA for the next 2-3 years. While this necessarily creates complexity in censorship resistance workstreams, the learnings from implementing AA sooner will allow us to have a better, more informed design where AA transaction validation logic is baked-in. This is a feature, not a bug. Keeping UX on Ethereum stunted for 2-3 years in order to solve some niche MEV challenges via ePBS seems like a poor trade-off.Â 
+
+
+	EIP-7553: Separated Payer Transaction	Another tool to help enhance EOA UX, easy to reason about and implement new TX types and testÂ 
+
+
+
+Supported Grab-Bag EIPsÂ 
+	EIP-2935: Save historical block hashes in stateÂ 2	Implemented, not complex, brings value after Verkle. Shipping this in Prague will allow us to simplify Osaka for Verkle.Â 
+
+
+	EIP-2537 - BLS Precompile
+	EIP-7212Â - Precompile for Secp256R1Â 	Besu team to run Benchmarks and help with understanding libraries, gas costing, and existing tooling
+
+
+	EIP-7623: Increase calldata cost	Happy with costing changes, smaller blocks, lower latency/state, chain opsÂ 
+	Small implementation in the EL
+
+
+
+Neutral/No Opinion
+	EIP-7664: Access-Key opcode	Could be significant EVM work. Do we have an alternative?Â 
+	Not sure of necessityÂ 
+	Might provide better security UXÂ 
+
+
+	EIP-7557: Block-level Warming
+	Need to better understand the code complexityÂ 
+	Might add complexity to the state DB that may add more data, memory, etc. Need to understand the impact to our code.Â 
+
+
+	EIP-7377: Migration Transaction	Good migration path for AA, but not instead of an encompassing AA solution like 3074Â 
+
+
+
+
+
+	EIP-7545: Verkle proof verification precompileÂ 1
+	EIP-7609: Decrease TLOAD/TSTORE pricing for common casesÂ 1
+	EIP-3068: Precompile for BN256 HashToCurve Algorithms
+
+Opposed
+SSZ
+	EIP-6404: SSZ Transactions RootÂ 18
+	EIP-6465: SSZ Withdrawals RootÂ 9
+	EIP-6466: SSZ Receipts RootÂ 7
+	EIP-6493: SSZ Transaction Signature Scheme
+
+Aesthetics and consistency with the CL is not necessarily a reason to engage on a large bucket of work on the EL.Â 
+Opposed Grab Bag EIPsÂ 
+	EIP-6913: SETCODE instruction	Code immutability is questionable.Â 
+
+
+	EIP-5806 Delegate Transaction
+	Weakly Opposed -Â EIP-5920: PAY opcodeÂ 1	Might break some assumptions of existing smart contractsÂ 
+	Ether can get stuck in a smart contract that cannot send itÂ 
+	Users may create issues with stuck Ether andÂ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Prague Planning
+Prague Planning
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu Roadmap & Planning
+Besu Roadmap & Planning
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021 Q4 Hyperledger Besu
+2021 Q4 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2021-08-31 Besu Contributor Call
+2021-08-31 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-09-28 Besu Contributor Call
+2021-09-28 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-11-09 Besu Contributor Call
+2021-11-09 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 10, "requestCorrelationId": "4254008a2d1747469074a50c1ec7bb3a"}

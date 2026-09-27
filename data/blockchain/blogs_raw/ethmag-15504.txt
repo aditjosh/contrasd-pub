@@ -1,0 +1,226 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proposal for a new EIP: ERC-2612 style permits for ERC1155 NFTs - EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      Proposal for a new EIP: ERC-2612 style permits for ERC1155 NFTs
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+        
+            nft
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                emiliolanzalaco
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 20, 2023, 11:06pm
+                  
+                  
+
+1
+              
+            
+            
+              Motivation
+
+Permits enable a one-transaction transfer flow, removing the approval step. There is a standard for ERC20 Permits EIP-2612 and ERC721 Permits ERC-4494.
+
+ERC1155 is widely adopted; it would make sense to standardise permits for this token type to enable homogeneous support in third-party applications. Further, I’ve seen a few implementations in the wild like t11s’ here: ERC1155Permit.
+
+I’ve put together an example implementation.
+
+You’ll notice a choice to go with bytes sig rather than uint8 v, bytes32 r, bytes32 s. This decision was discussed in the ERC4494 thread and the reasoning is that bytes sig supports smart contract signing.
+
+Given that ERC1155s can be fungible, it makes sense that an address permits an operator to transfer their tokens. This flow is more similar to ERC2612 than ERC4494. This means nonces are indexed by address: nonces(address owner).
+
+I’d like to open up this thread for feedback on standardising the ERC1155 Permit flow.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                dcota
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 9, 2023,  4:22am
+                  
+                  
+
+2
+              
+            
+            
+              ERC1155 has a limited approval system.
+
+In the original implementation it is out of the box an all-or-nothing type of approval due to setApprovalForAll.
+
+Could the permit implementation give more granular control on by the owner to the spender for certain id in a specified amount?
+
+function permit(
+      address owner,
+      address spender,
+      uint256 tokenId,
+      uint256 value,
+      uint256 deadline,
+      uint8 v,
+      bytes32 r,
+      bytes32 s
+  ) external payable override {
+
+
+That would of course require a new mapping. Something like:
+
+mapping(owner => mapping(tokenId => mapping(spender => amount))) public allowance;
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

@@ -1,0 +1,706 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Extensions - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+	Documentation contribution workflow
+
+
+
+
+
+	Documentation contribution guidelines
+
+
+
+
+
+	Versioned documentation
+
+
+
+
+
+	Documentation archive
+
+
+
+
+	Documentation release process
+
+
+
+
+
+	Documentation style guide
+
+
+
+
+
+	Future Release Dates
+
+
+
+
+
+	MkDocs and Markdown guide
+
+
+
+
+	Configure and format Markdown
+
+
+
+
+
+	Preview the documentation
+
+
+
+
+
+	Extensions
+
+
+
+
+	Web Design
+
+
+
+
+
+
+
+
+
+	Proposal - Besu maintainers become docs maintainers
+
+
+
+
+
+	Raise issues
+
+
+
+
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Extensions
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Extensions
+
+	Felipe Faraggi
+
+
+
+	Nicolas Massart
+
+
+
+	Sally MacFarlane
+
+
+
+	+2
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Sept 12, 2022 by Nicolas Massart
+
+
+
+
+
+
+
+
+
+
+Extensions allow you to use simple Markdown syntax to achieve complex rendering. The following are the available extensions for Besu documentation.
+Important: Extensions are only available for the Markdown files under theÂ docsÂ directory.
+
+ 
+Abbreviations
+We recommend avoiding the use of abbreviations, but some such as â€œPoWâ€� for â€œproof of workâ€� or â€œdappâ€� for â€œdecentralized applicationâ€� have become part of the Ethereum jargon. TheÂ AbbreviationsÂ extension enables defining abbreviations, so that the full form displays when you hover over the abbreviation.
+Define abbreviations at the end of the Markdown file.
+Example:
+---
+description: This is an example page
+---
+
+# My example This page explains PoA networks.
+
+... more text ...
+
+*[PoA]: proof of authority
+Call-outs
+TheÂ AdmonitionÂ extension enables call-out blocks. These are used frequently in the ConsenSys documentation to include side content or highlight important content.
+Begin each call-out with three exclamation points and theÂ call-out type. You canÂ change the call-out titleÂ by adding it in quotes.
+Example:
+!!! note
+
+Â  Â  This is a multi-line note in the ConsenSys documentation.
+Â  Â  You can replace `note` with a different call-out type.
+Â  Â  The default note title is `Note`.
+Â  Â  Each line in the call-out content must be indented by four spaces to be included in the call-out.
+Supported types include:
+	Note: Used to add information about a subject that doesnâ€™t always need to be taken into account. For example, â€œWhen running on localhost, include 127.0.0.1 as a listed IP address.â€�
+
+	Important: Used to add important information about a subject that should always be taken into account. For example, â€œAllow Docker up to 6G of memory.â€�
+
+	Example: Used to display an example. This is often used with aÂ code sample.
+
+	Info: Used to add non-essential detail about a subject. For example, â€œThe miner coinbase account is one of the accounts defined in the genesis file.â€�
+
+	Tip: Used to add information that could help improve the use of a tool. For example, â€œTo restart the private network in the future, start from step 4.â€�
+
+	Caution: Used to warn the users to proceed with caution. For example, â€œConfiguring alternative elliptic curves is an experimental feature.â€�
+
+	Warning: Used to warn the users about something important. For example, â€œThis will be deprecated in the next version.â€�
+
+	Critical: Used to alert the user about a potential dangerous effect such as a risk of destroying something or losing assets. For example, â€œNever use the development private keys for production use.â€�
+
+
+Collapsible call-outs
+TheÂ DetailsÂ extension enables collapsible call-outs by replacing the exclamation points with question marks. The call-out can be open or collapsed by default. This helps reduce the content length and enables a faster overview of the whole page.
+Example:
+???+ note "Collapsible note"
+
+Â  Â  This is a collapsible note.
+Â  Â  The plus sign makes it open by default.
+Â  Â  Remove the plus sign and it will be collapsed by default.
+Checklists
+TheÂ TasklistÂ extension enables displaying an unordered list as a checklist.
+Example:
+- [ ] This list item has an unchecked checkbox.
+- [x] This list item has a checked checkbox.
+Code samples
+TheÂ SuperFencesÂ extension enables using code blocks to present code samples in the documentation. A basic code block uses triple back ticks (`) and the language name to enableÂ syntax highlighting. Always surround code blocks with blank lines.
+Example:
+```json
+{
+Â  "jsonrpc": "2.0",
+Â  "id": 1,
+Â  "result": true
+}
+```
+Tabbed code blocks
+SuperFencesÂ also enables tabbed code blocks. The following example groups usage syntax and an example in different tabs in the same block.
+Example:
+=== "Syntax"
+
+Â  Â  ```bash
+Â  Â  ethsigner --chain-id=<chainId>
+Â  Â  ```
+
+=== "Example"
+
+Â  Â  ```bash
+Â  Â  ethsigner --chain-id=1337
+Â  Â  ```
+Line numbers
+SuperFencesÂ also enables addingÂ line numbersÂ to long code samples, which makes it easier when discussing the sample. The line numbers only appear in a code block that uses theÂ linenums="1"Â parameter.
+Example:
+```javascript linenums="1"
+const Web3 = require("web3");
+const Web3Quorum = require("web3js-quorum");
+const web3 = new Web3Quorum(new Web3("http://localhost:22000"));
+web3.priv.generateAndSendRawTransaction(options);
+```
+Code syntax highlight
+TheÂ HighlightÂ extension enables automatic syntax highlighting of code blocks. Define the code language after the code block delimiter to ensure correct highlighting. If you donâ€™t provide the language name, the extension attempts to automatically discover it, but this can lead to errors.
+Example:
+```json
+{
+Â  "jsonrpc" : "2.0",
+Â  "id" : 51,
+Â  "result" : {
+Â  Â  "startingBlock" : "0x5a0", 
+Â  Â  "currentBlock" : "0xad9",
+Â  Â  "highestBlock" : "0xad9"
+Â  }
+}
+```
+Refer to theÂ full list of support languages.
+Definitions
+TheÂ Definition ListÂ extension enables listing definitions. This may be useful for creating glossaries.
+Example:
+Consensus layer
+:Â  Â The layer of the Ethereum network that enforces network rules, and generates and verifies blocks.
+Â  Â  PreviouslyÂ known as "Ethereum 2.0" or "Eth2."
+
+Execution layer
+:Â  Â The layer of the Ethereum network that contains and executes smart contracts.
+Â  Â  Previously known as "Ethereum 1.0" or "Eth1."
+Emojis
+You can use emojis in the Markdown. Emojis are fun, but they can also be useful to draw the userâ€™s attention. Use only neutral emojis such asÂ :warning:, which displaysÂ .
+Refer to theÂ full list of available emojis.
+Footnotes
+TheÂ FootnotesÂ extension enables adding footnotes at the end of a page.
+Example:
+---
+description: This is an example page
+---
+
+# My example
+
+You can add a footnote[^1] to provide additional information about a subject.
+The footnote number displays as a clickable superscript that takes the user to the footnote.
+
+... more text ...
+
+[^1]:
+    The footnote goes here.
+Â  Â  A clickable arrow displays that takes the user back to the original text.
+Â  Â  When writing multi-line footnotes, indent each line with four spaces.
+
+Global content
+If you have content to be repeated on multiple pages, you can create it in a common page in theÂ /docs/globalÂ directory and include it in all required pages.
+For example, useÂ --8<-- "global/test_account.md"Â to include the content of theÂ test_accounts.mdÂ page in another page.
+Info
+TheÂ exclude pluginÂ excludes pages in theÂ /docs/globalÂ directory (configurable inÂ mkdocs.yml) from the final rendered site, since otherwise, every Markdown file is rendered and copied. Itâ€™s useful to prevent global files to be reachable as standalone pages, since theyâ€™re intended to be included in other pages.
+Excluded pages are still in the source repository, but they arenâ€™t copied in the final site and donâ€™t appear in the search results.
+Highlight
+TheÂ MarkÂ extension enables highlighting of text. Text surrounded by double equal signs is highlighted in yellow.
+Example:
+==This is highlighted text==
+
+Key presses
+TheÂ KeysÂ extension enables styling key presses by surrounding them with double plus signs.
+Example:
+++ctrl+alt+delete++
+
+Magic links
+TheÂ MagicLinkÂ extension automatically displays a URL as a link. You donâ€™t need to surround the URL with Markdown link syntax.
+Math
+TheÂ ArithmatexÂ extension enables rendered math formulas in the documentation usingÂ MathJaxÂ syntax.
+Example:
+$\sigma=\displaystyle\prod_{k=1}^t\sigma_{i_k}^{L_{i_k}(0)}$
+
+Constructing the threshold signature $\sigma$ from $t$ individual
+signatures $\sigma_{i_k}$, $k=1,\dots,t$ and the Lagrange polynomials
+$L_{i_1}, \dots,L_{i_t}$ associated to the set $I=\{i_1,\dots,i_t\}$ of signers.
+
+Plant UML diagrams
+You can add diagrams usingÂ Plant UMLÂ syntax.
+Example:
+```plantuml format="svg" alt="Plantum diagram example" title="My super diagram"
+Actor1 ->  Actor2: calls
+Actor1 <-- Actor2: responds
+```
+
+Strikethrough
+TheÂ TildeÂ extension enables displaying text strikethrough by surrounding the text with double tildes (~).
+Example:
+~~This text is struck through~~
+
+Symbols
+TheÂ SmartSymbolsÂ extension enables symbols. For example,Â -->Â displays as â†’.
+TOC
+TheÂ Table of ContentsÂ extension automatically displays a table of contents of the current page on the right side of the page. It displays titles to the third level (titles prefixed withÂ ###).
+This extension also displays a permalink on the right of any title. This permalink can be used to point directly to the title from another website.
+Variables
+TheÂ Extra VariablesÂ plugin enables using values from theÂ extraÂ section inÂ mkdocs.yml, or if using the new system, fromÂ mkdocs.extra.yml, as variables in the Markdown code.
+For example, if you have the following inÂ mkdocs.ymlÂ orÂ mkdocs.extra.yml:
+extra:
+Â  support:
+Â  Â  email: quorum@consensys.net
+
+You can display the email in any documentation page using:
+{{support.email}}
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "32692468dc414e369e84de4f02c57466"}

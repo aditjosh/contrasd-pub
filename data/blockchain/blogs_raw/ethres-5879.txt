@@ -1,0 +1,159 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The last mile for Ethereum: encrypted transport - Networking - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      The last mile for Ethereum: encrypted transport
+    
+
+
+      
+          
+            
+              
+              
+                Networking
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                rumkin
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 26, 2019,  5:45pm
+                  
+                  
+
+1
+              
+            
+            
+              Today Ethereum users depends on centralized infrastructure while loading clients, communicating with nodes or sending transactions. Some of users can setup VPN. But anyway all of them should to use domains and SSL certificates created by centralized/trustful organizations of pre-blockchain era. It makes Ethereum UX incomplete and ENS itself not a real NS. Also it slow down the progress. We need to make Ethereum fully independent. The solution is creation of Ethereum’s CA which will be trustles, distributed and use blockchain. It will be good if it will use existing infrastructure. After my research I found a solution how to create such CA and implement Ethereum TLS. I have working prototype and will publish it soon after some cleanup. Also I’m working on browser which can use both networks.
+
+This solution allows to use ENS as complete domain name system and connect regular web sites to such network without any modifications, If they configurable. However this network requires a pool of DNS servers which should be trustles. And now we come to the questions part:
+
+	Is there any other projects which works on it?
+	Could shardes became a DNS servers in Ethereum 2.0?
+	Current SSL certificates are using obsolete ASN.1 encoding and TLS has legacy protocols which shouldn’t be supported never. So maybe it’s make sense to reimplement TLS using Ethereum 2 solutions?
+	What name should this TLS have (and should it)?
+	What name should such network have (and should it)?
+	What protocol name should be used instead of https://?
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

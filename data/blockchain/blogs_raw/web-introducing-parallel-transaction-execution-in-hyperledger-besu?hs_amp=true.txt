@@ -1,0 +1,225 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Parallel Transaction Execution in Hyperledger Besu
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Introducing Parallel Transaction Execution in Hyperledger Besu
+
+        
+
+        
+           Written by Ameziane Hamlat, Karim Taam, and the Besu Team at Consensys | Jul 31, 2024 2:00:00 PM 
+        
+
+        
+          I. Introduction
+
+In our continuous effort to enhance the performance of Hyperledger Besu as an execution client, we are excited to introduce one of the most significant improvements to date: Parallel Transaction execution. This update addresses a major goal highlighted in this previous blog post, "2024 - Besu Performance Improvements since the Merge," under the section "Future work around performance."
+
+
+Our approach was influenced by insights from the Reth team, as detailed in their blog post, "Reth’s path to 1 gigagas per second, and beyond." They revealed that approximately 80% of Ethereum storage slots are accessed independently, suggesting that parallelism could achieve up to a 5x improvement in EVM execution. Coupled with the Bonsai design, which efficiently manages slot storage, account, and code changes in memory, we embarked on an investigation to execute transactions in parallel within Besu when running the Bonsai database layer implementation.
+
+This blog post delves into the details of this Parallel Transaction feature, its underlying mechanisms, and the substantial benefits it brings to block processing in Hyperledger Besu.
+
+You can find a link to the PR here.
+
+II. Parallelization Mechanism Overview
+
+We're adopting an optimistic approach to parallelizing transactions within a block. The core idea is to initially execute all transactions in parallel, operating under the assumption that they can all be executed concurrently without conflict. This parallel execution occurs in the background, and we proceed with the block's sequential processing without waiting for these parallel executions to complete.
+
+Block Processing Steps
+
+1. Transaction Execution Completion Check: We first determine if a transaction has been completed by the background thread or is "finalized." 
+
+
+
+2. Import Transactions into the Block:
+
+	If the transaction is completed, we examine whether there are any conflicts in modifications with previously executed transactions.
+	No Conflict: If no conflict is detected, we directly apply the state modifications generated in the background to the block, avoiding re-execution.
+	Conflict Detected: If a conflict is found, we replay the transaction, utilizing a cache of background reads to improve efficiency.
+
+
+
+
+
+	If the transaction hasn't been completed, it is executed sequentially within the block to ensure its completion, independent of the background threads.
+
+
+Conflict Detection Strategy
+
+Our current conflict detection strategy is intentionally basic to simplify debugging and manage fewer edge cases. This simplicity also facilitates future enhancements aimed at reducing false positives.
+
+We leverage a Bonsai feature that tracks addresses and slots touched or modified during a block or transaction's execution, called the accumulator. More information on this code can be found in our Bonsai Explainer. If a slot, code, or anything else related to an account is modified, the Bonsai accumulator will keep track of this information. This is how we enable Bonsai's storage benefits too, only keeping track of state diffs block to block in our storage. We only need to take what the accumulator tracks at the block and transaction level, compare the modified state slots, and check for conflicts. By comparing the list of touched accounts from the transaction against the block's list, we can identify potential conflicts. Each time a transaction is added to the block, its list is incorporated into the block's list. Before adding a new transaction, we verify that it hasn't interacted with an account modified by the block (i.e., by previous transactions). 
+Note: Accounts read by the block are not considered conflicts. 
+
+In this check, we must exclude the tips/rewards given to the validator coinbase address at the end of each transaction from consideration. Otherwise, every transaction would conflict with this address. We identify this address as a conflict only if it is accessed for reasons other than receiving the rewards at the transaction's conclusion.
+
+While more sophisticated verification mechanisms could be implemented to identify the exact nature of modifications (e.g., slot, balance), we do not currently pursue this level of granularity. Still, with this approach close to 40% of transactions do not require replay, indicating preliminary effectiveness. We are not ruling out the possibility of achieving more refined detection and obtaining better results with fewer false positives, but we wish to start with this initial step for now.
+
+
+
+III. Metrics
+
+The metrics were collected on nodes running on Azure VMs: Standard D8as v5 (8 vCPUs, 32 GiB memory). In the screenshots below:
+
+	release-25-5-2-01 is running the main branch (with Teku as a CL).
+	release-25-5-2-02 is running the main branch with parallel transaction PR changes (with Teku as a CL).
+	parallel-evm-03 is running this PR on top of the main branch and synchronized from scratch (with Nimbus as a CL).
+
+
+Block processing improvement (new payload call)
+
+
+
+Block processing time has seen a performance improvement of at least 25%, with the 50th percentile decreasing from 282 ms to 207 ms and the 95th percentile dropping from 479 ms to 393 ms.
+
+
+
+With Nimbus as a CL, the improvement is even more pronounced, with the 50th percentile at 155 ms and the 95th percentile at 299 ms. This is likely due to both the EL and CL running on the same machine, which reduces cache misses and context switches by avoiding the overhead of a second JVM.
+
+Fork choice update (FCU)
+
+FCU maintains its performance levels as it remains unchanged by this PR, and there is no additional overhead introduced by this PR on FCU.
+
+
+
+The execution throughput (mgas/s)
+
+The 50th percentile of mgas/s is slightly less than 100 mgas/s with peaks at more than 250 mgas/s.
+
+
+
+	Mean of mgas_per_s: 96 mgas/s
+	75th percentile of mgas_per_s: 104 mgas/s
+	95th percentile of mgas_per_s: 123 mgas/s
+	99th percentile of mgas_per_s: 150 mgas/s
+	Maximum of mgas_per_s: 268 mgas/s
+
+
+The block that has the best throughput (mgas/s) is this one:
+
+
+
+This block was processed in 112 ms on the reference node (release-25-5-2-01, the node running main without this PR).
+
+
+
+Parallel TPS
+
+This feature introduces two new metrics: besu_block_processing_parallelized_transactions_counter_total, which tracks the number of transactions executed in parallel, and besu_block_processing_conflicted_transactions_counter_total, which records the transactions that encountered conflicts and were therefore executed sequentially.
+
+We observed that approximately 40% of the transactions were parallelized thanks to this PR, while the remaining transactions were conflicting. However, the execution results were cached to minimize disk reads during the transaction execution replay.
+
+The conflict detection algorithm remains very simple at this stage, we can improve it in future PRs and thus improve the number of parallel executions.
+
+
+
+Sync time
+
+The node completed sync in 27 hours and 5 minutes, with the following breakdown for each step:
+
+	Block import and world state download up to the pivot block: 24 hours and 5 minutes
+	World state healing: 2 hours and 55 minutes
+	Backward sync: 6 minutes
+
+
+Block import time was around 6 ms on average.
+
+
+
+The metrics for block import time during synchronization with some other CL clients are quite similar. The graph below shows the block import times for Teku, Lighthouse, and Nimbus:
+
+	Teku: 5.91 ms
+	Nimbus: 5.86 ms
+	Lighthouse: 5.75 ms
+
+
+
+
+CPU profiling 
+
+The profiling is enabled during 300 seconds (5 minutes) with samples taken each 11 ms for both nodes, the one running this PR and the one without this PR. The profiling is done during the same period on both nodes.
+
+Before the parallel execution PR
+
+
+
+The new payload call on the reference node took 572 samples over the 5 minutes profiling time (~25 blocks). The average execution time is 572 * 11 / 25 = 251.68 ms. We can find below the 3 known big time consumers
+
+	SLOAD operation: 179 samples (179 * 11 / 25 = 78.76 ms per block)
+	Persist step: 67 samples (67 * 11 / 25 = 29.48 ms per block)
+	Commit step: 24 samples (24 * 11 / 25 = 10.56 ms per bock)
+
+
+After the parallel execution PR
+
+
+
+The new payload call on the node running the parallel transaction execution PR took 391 samples over the 5 minutes execution (~25 blocks). The average execution time in this case is 391 * 11 / 25 = 172.04 ms. We can see below the 3 biggest time consumers:
+
+	SLOAD operation: 39 samples (39 * 11 / 25 = 17.16 ms per block)
+	Persist step: 81 samples (81 * 11 / 25 = 35.64 ms per block)
+	Commit step: 56 samples (56 * 11 / 25 = 24.64 ms per bock)
+
+
+We can notice that the biggest improvement was on the Sload operation time, as multiple reads are done in parallel. There is a performance impact on the commit phase, when trying to either create a new entry in the pendingStorageUpdates data structure or update the existing slotkey with the updated value. This is likely to be related to the fact that this data structure grows quicker than before as it is updated in parallel, and thus it takes more time to get storage slot values, as more equals needs to be done on the underlying concurrentHashMap.
+
+System metrics
+
+With this feature, Besu uses slightly more CPU than before because more work is done in parallel, but CPU usage is still negligible on block processing as most of the blocks are executed in less than 300 ms for a slot of 12 seconds. Also, keep in mind that the metric granularity here is 15 seconds, so CPU usage is averaged even if we might have 100% CPU during block processing.
+
+
+
+The spikes we can see can be explained by RocksDB compaction, and they’re happening on both instances.
+
+
+
+Memory usage is nearly identical between both nodes. Although we encountered a memory issue with this feature during development, it has since been resolved.
+
+
+
+IV. Conclusion
+
+The Parallel Transaction feature introduces substantial performance improvements. We noticed a ~45% improvement to block processing when running with Nimbus compared to the main branch with Teku, bringing the 50th percentile to 155 ms and the 95th percentile to around 300 ms. Gas throughput increased, with an average of 96 Mgas/s and peaks up to 268 Mgas/s. Snap Sync completed in 27 hours and 5 minutes, with no negative impact from the feature. CPU profiling indicated a reduction in the new payload call time from 251.68 ms to 172.04 ms on average, with notable improvements in SLOAD operation times due to parallel execution. Initial memory usage differences were resolved, ensuring consistent performance. Overall, this PR improves Besu block processing performance between 25 to 45 % with almost no resource usage overhead.
+
+We are eager for users and stakers to try out this experimental feature. To enable it, add --Xbonsai-parallel-tx-processing-enabled to your configuration. As a reminder, this is a new feature and may not be suitable for production, though we have it deployed to our Mainnet nodes without issue. As always, please bring feedback and metrics to our team in Discord! We look forward to improving this feature and sharing more about performance in the future. Happy staking! 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

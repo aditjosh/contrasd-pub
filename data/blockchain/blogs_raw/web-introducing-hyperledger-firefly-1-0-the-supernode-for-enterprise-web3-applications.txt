@@ -1,0 +1,872 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Hyperledger FireFly 1.0: The SuperNode for Enterprise Web3 Applications – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger FireFly
+                            
+                        
+                    
+
+                
+                Introducing Hyperledger FireFly 1.0: The SuperNode for Enterprise Web3 Applications
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Apr 13, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                It’s been a busy 10 months for Hyperledger FireFly. From its inception as a Hyperledger Lab contributed by Kaleido in June of 2021, FireFly moved quickly to be a full Hyperledger project just four months later. And today the community is excited to announce that version 1.0 of Hyperledger FireFly is now generally available. 
+ 
+Hyperledger FireFly 1.0 combines a number of technical and market milestones. At its core, it offers a composable Web3 stack to help speed up decentralized application (dApp) development by a factor of 10x-100x, making it the first open-source SuperNode for enterprises to build and scale secure Web3 applications. 
+ 
+It is already in production deployments with a number of leading blockchain consortia today, including RiskStream Collaborative in the insurance industry, Synaptic Health Alliance in healthcare, and TradeGo in commodity trade finance.
+ 
+A Composable Web3 Stack To Support Decentralized Apps
+ 
+Over the last decade of enterprise blockchain projects, architects and developers have realized that they need much more than a blockchain node for their projects to be successful. Early custom-built blockchain engagements often were multi-million dollar, multi-year projects that struggled to get into production. 
+ 
+As the $3T market for Web3 has materialized around areas such as decentralized finance (DeFi), non-fungible tokens (NFTs), and the metaverse, companies are looking to embrace these disruptive technologies and the potential for new business opportunities. Writing decentralized applications, however, requires a large set of composable Web3 and traditional IT technologies that interact with each other as enterprise building blocks that anyone can use. 
+ 
+The Hyperledger FireFly SuperNode provides this new type of decentralized orchestration layer between companies’ existing systems and Web3. It enables the shift of value in open network systems and reduces the reliance on proprietary technology or custom-built code. It solves for the layers of complexity that sit between the low level blockchain and high level business processes and user interfaces, letting developers focus on building business logic instead of infrastructure. 
+ 
+
+ 
+ 
+By enabling companies to avoid “reinventing the wheel” just to connect to Web3, Hyperledger FireFly increases developer efficiency and fills a void of previously missing functionality to help companies create secure and auditable connections to Web3’s open ecosystems. In doing so, companies using FireFly will gain a first-mover advantage over their peers that can’t successfully make the leap to Web3.
+ 
+The Best of Public and Private Blockchain Technologies
+ 
+Hyperledger FireFly’s open-source approach brings the best of both public and private blockchain technologies onto a single platform. Its multi-chain support also provides companies a crucial step towards interoperability. Companies can quickly bootstrap projects on FireFly by tapping into Web3 innovations such as smart contracts and NFTs without having to build everything from scratch, while also satisfying enterprise requirements for simple APIs, reliable delivery, and robust connections. FireFly also helps to ‘future-proof’ these applications by providing a blockchain-neutral platform to build on. 
+ 
+Hyperledger FireFly has built-in integrations and support for popular communities such as Ethereum (Quorum, Hyperledger Besu, Geth, public mainnet), Hyperledger Fabric and Corda, and for standard digital assets such as ERC20, ERC721 and ERC 1155. The FireFly code base comprises more than 200,000 lines of enterprise-ready code, and is extensible and pluggable for token bridges, L2s such as Polygon, and standards-led approaches such as the Baseline protocol. 
+ 
+Here’s a full overview of components available in the 1.0 release: 
+ 
+
+ 
+ 
+Hyperledger FireFly has come a long way in a short time. We are excited about how quickly we’ve been able to grow the project and the community and how quickly enterprises and consortia are adopting the technology. We would like to invite you to come be part of our community. Here’s our Github and our Discord. We also hosted a deep dive into FireFly SuperNodes and the 1.0 release on April 13 watch below.
+ 
+Recorded webinar: (download slides here)
+ 
+ 
+ 
+ 
+  
+  
+    
+     
+   
+
+   
+ 
+ 
+ 
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

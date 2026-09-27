@@ -1,0 +1,90 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Edmund To, Industrie&Co – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer Showcase Series: Edmund To, Industrie&Co – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Feb 27, 2018 9:00:23 AM 
+        
+
+        
+          Our Developer Showcase blog series serves to highlight the work and motivations of developers, users and researchers collaborating on Hyperledger’s incubated projects. Next up is Edmund To from Industrie&Co. Let’s see what he has to say!
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+At Industrie&Co, we work with both enterprises and startups to help solve business problems using a variety of technologies, including blockchain and distributed ledger technologies. We are currently engaging with industry leaders and domain experts to help build a number of blockchain-based ventures related to insurance, digital identity, peer-to-peer energy trading and carbon credit.
+ 
+I first got into blockchain because of my curiosity around cryptocurrencies, but the more I learned about it, the more I believed in the underlying technology (i.e. blockchain), which is much more promising than it simply being a ledger for financial transactions. I soon came to realise it could potentially solve many problems in other domains.
+ 
+
+ 
+ Edmund To, software engineer, Industrie&Co
+
+
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain?
+ 
+I have always preferred a hands-on approach. The documentation of Hyperledger is excellent. I would recommend starting with the tutorials and getting some sample implementations running. That way, you will have a clearer picture of the architecture of a permissioned blockchain. Once you are comfortable with that, I would suggest you to build a blockchain-based application even as a side project. Hyperledger Composer is an excellent tool for you to build data model and business logic for your blockchain application.
+ 
+After that, I would encourage you to explore and learn about other blockchain protocols such as: Bitcoin, Ethereum, Corda, Ripple, and to compare them in terms of the architecture and the problem each intends to solve. It is important to understand how consensus algorithms are being implemented, in particular, how permissioned blockchains, like Hyperledger Fabric, which uses Practical Byzantine Fault Tolerance Algorithm by default, differs from public blockchain implementations such as Bitcoin and Ethereum, which use Proof of Work.
+ 
+I also found learning the programming language ‘Go’ to be helpful. Not only because this is a well designed language, but because the most popular implementation of Hyperledger and Ethereum are written in Go. Reading the white paper of each blockchain protocol will help you in understanding the vision behind them. If you are interested in the academic aspect of blockchain, I would highly recommend the course titled ‘Bitcoin and Cryptocurrency Technologies’ by the Princeton University, which is free and available online.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+Since Hyperledger Fabric has matured into 1.0 in June 2017, with over one hundred proof of concept applications being built, now is certainly the time to have some of these moving towards production. Also sharing the use cases with the community too would be great as there is a community of people out there who’d love to hear about what has been built with Hyperledger.
+ 
+Where do you hope to see Hyperledger and/or blockchain in 5 years?
+ 
+I hope to see blockchain and Hyperledger being adopted outside of the finance industry. Today, we are very excited to see Hyperledger projects announced in different industries including: supply chain, healthcare, manufacturing, land registry and government. In five years time, it would be nice to see many of these projects be deployed and used by people on a daily basis.
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+Transparency.
+ 
+I hope to see blockchain technology helping to increase transparency in organizations, in particular,  the non-profit space. By leveraging features such as smart contract and immutability of data, I believe this technology could transform the industry to be more transparent and efficient, and better in allocating resources to those who are in need.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

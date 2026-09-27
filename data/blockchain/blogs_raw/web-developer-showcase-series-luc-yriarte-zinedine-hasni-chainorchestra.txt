@@ -1,0 +1,896 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Luc Yriarte & Zinedine Hasni, ChainOrchestra – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Developer Showcase
+                            |
+                        
+                            Hyperledger Composer
+                            
+                        
+                    
+
+                
+                Developer Showcase Series: Luc Yriarte & Zinedine Hasni, ChainOrchestra
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Feb 23, 2018
+                    
+                
+
+            
+
+            
+            
+                Our Developer Showcase blog series serves to highlight the work and motivations of developers, users and researchers collaborating on Hyperledger’s incubated projects. Next up is Luc Yriarte and Zinedine Hasni  from ChainOrchestra. Let’s see what they have to say!
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain?
+ 
+First things first. Blockchain is the buzzword of the day, before falling for the hype I would recommend taking a step back, and pondering what you are trying to achieve. Do you have a specific problem to solve that you feel that blockchain technology would help address, or do you want to provide a service based on the blockchain ?
+ 
+If it’s the former, you might want to consider what blockchain has to offer regarding your specific need versus run of the mill encryption methods or just data replication. Some questions to ask yourself:
+ 
+	Does your use-case involve several participants who don’t necessarily trust each other ?
+	Is it something about transactions in the generalized acceptation of the term? For instance where a participant would transfer an asset to another, or provide some document, measure, or any other data that the other should read and acknowledge?
+	Do you need to keep a record of these transactions ? Do all participants in your use-case want to know the transaction record is sound and unadulterated ?
+
+ 
+Answering “no” to any of these questions means you are shooting yourself in the foot and should do something more straightforward. Otherwise… go for it!
+ 
+Now what if you want to provide a service based on the blockchain ? There again, all hype and buzzword effect put aside, you need to consider if Hyperledger is right for you. The major existing blockchain instances Bitcoin and Ethereum are not going to disappear anytime soon, and it is very easy to deploy a solution on these systems – at least for now.
+ 
+	Does your service need to be backed by a cryptocurrency, or is it more of a burden than anything else?
+	Do you need to control membership access to your service?
+	Will you need fine granularity and control on the transaction volume, speed, or size of the network?
+
+ 
+If your service can be pegged to some cryptocurrency and you don’t need control over membership or network specifics, the legacy systems will do, otherwise… time to consider building your solution on Hyperledger.
+ 
+
+ 
+ Luc Yriarte and Zinedine Hasni of ChainOrchestra
+
+
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+I’m the lead engineer for ChainOrchestra, a start-up focused on blockchain network deployment and operation.
+ 
+About 18 months ago, late winter of 2016, I had an encounter with some people who wanted to build a secure network for the Internet of Things, based on a blockchain. The advantages of the blockchain in this area are many, most obviously protecting sensor measures from being tampered with, but also triggering automated procedures in a secure way, and so on. First we started reviewing Ethereum, but it didn’t seem able to cope with the potential huge volume of sensor data to manage, and the needs for quick response time. And over all, the whole proof-of-work rewarded by crypto-currency scheme seemed just overkill for what we were trying to achieve.
+ 
+Then, spring of 2016, we got invited as part of the local tech ecosystem to the IBM Client Center in our hometown of Montpellier, France, for a conference on Hyperledger. A few things ensued:
+ 
+	We decided to give Hyperledger a go for our first prototypes.
+	We figured that since we’d be deploying and managing blockchain networks for the IoT, we might as well do the same for the other use-cases.
+	I was hired to do networking and IoT, I ended-up being the blockchain engineer for lack of other options.
+
+ 
+Right after that, we got Zinedine Hasni, our devops and systems engineer, on board. As of summer 2016, we started working on our first Hyperledger Fabric v0.6 network and a few use-case demos.
+ 
+Zinedine: “When we started working on this, we added just PDF support from an IBM workshop. At the time Hyperledger was at version 0.5, and was powering IBM’s Open Blockchain.
+ 
+While I was digging into this documentation I was surprised to see a lot virtualisation programs (docker inside vagrant)
+ 
+so we had to figure out what was worth focusing on.
+ 
+Also a lot of stuff was new to me (blockchain included), I only used docker once before, during my studies at the 42 Paris engineering school.
+ 
+So we started by analyzing all the yaml files to understand how it works, and learned golang to write our chaincode. We had to figure out why our peers were crashing and fix them (had to update rocksdb in the docker images), which was quite painful.”
+ 
+…But eventually we got things to work.
+ 
+The web-based demos, revolving mainly around private data management and IoT device control, were rather well received. Now we are on the final steps of releasing a pre-production Hyperledger Fabric v1.0 network that will allow us to address the different segments we are aiming for. The features added for Fabric v1.0, especially channels and certificate authorities, bring a whole lot of flexibility to the blockchain. But also these features add a new layer of complexity, justifying the role of blockchain network operator that we are taking on in the ecosystem.
+ 
+As Hyperledger’s incubated projects start maturing and hit 1.0s and beyond, what are the most interesting technologies, apps, or use cases coming out as a result from your perspective?
+ 
+Hyperledger Fabric has come a long way between the last stable v0.6 and v1.0, and as I just mentioned, a lot of these features are very relevant from a blockchain network operator perspective. I already mentioned the separate channels and the certificate authority servers, but the most salient feature in my opinion, the one that enables the others, is the orderer network. By having an orderer network independent from the business networks you manage, you can truly allow different use-cases to co-exist in the same blockchain. Engaging several different user communities around a single blockchain infrastructure without having to duplicate a history of irrelevant transactions on each and every server becomes possible.
+ 
+Then there are the other, user-related Hyperledger projects. Hyperledger Composer will most likely become the application framework of choice as app development for Hyperledger becomes more mainstream. On the same token, we are following with the Hyperledger Cello project with a lot of interest. Cello is aimed at blockchain network management, pretty much our core business. We are currently on an early evaluation phase, but we’d love to be able to participate at some point.
+ 
+Zinedine: “Right now we are taking a bottom up approach to build our network with several organisations, channels, certificates authorities in addition to committer and endorser peers without forgetting orderers, kafka, zookeepers…(and SBFT coming soon).
+ 
+The main goal for us is to get to the bare bones of all those components and build incrementally from there.”
+ 
+We are also digging into the other Hyperledger implemenations besides Fabric, i.e. Sawtooth, Iroha and Indy. We consider the ability to have several implementations at hand, with different consensus mechanisms, very important. That’s a bit of a longer term perspective, but the flexibility that those implementation bring will be needed to address a wide range of areas, from the IoT to traditional businesses.
+ 
+What technology could you not live without?
+ 
+Running water. Like most people on this earth. And also electricity… and the internet. I’m old enough to have developed software when the internet didn’t exist, and I really wouldn’t want to go back. And when you look at it this way, Hyperledger being more of a protocol than an implementation of a blockchain, is the next layer of the internet, right after IP and the World Wide Web.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

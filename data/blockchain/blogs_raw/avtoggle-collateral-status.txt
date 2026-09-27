@@ -1,0 +1,207 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Toggle Collateral Status | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Supplying GuidesToggle Collateral Status
+intermediate
+
+
+
+
+
+
+Introduction
+
+Supplying tokens to the Aave Protocol allows you to use these assets as collateral to borrow other assets. Managing the collateral status of your supplied tokens is crucial for maintaining borrowing power and avoiding liquidation. The health factor is a key indicator: a value above 1 means your collateral is sufficient, while a value below 1 signals that your position is at risk of liquidation.
+
+You can manage the collateral status of your supplied tokens through protocol smart contracts or through a frontend such as Aave Labs interface by performing the following steps:
+
+Step 1: Connect Wallet
+
+To begin, press ‘Connect Wallet’ and select the Ethereum wallet provider corresponding to the wallet holding the supplied tokens.
+
+Step 2: Navigate to 'Your Supplies'
+
+Once connected, navigate to the ‘Dashboard’ where you’ll find the 'Your Supplies' section. This table lists the tokens you have supplied and their current collateral status.
+
+Step 3: Toggle Collateral Status
+
+To manage the collateral status, locate the token you wish to adjust and toggle the collateral switch. This action will update the status, allowing the token to be used (or not used) as collateral. Confirm the transaction in your wallet to apply the change.
+
+Step 4: Monitor Your Health Factor
+
+Regularly monitor your health factor from the ‘Dashboard’, especially if you have active borrow positions. If the value of your collateral drops or the amount of borrowed assets increases, consider supplying more tokens or repaying part of your borrow position to improve your health factor.
+
+Parameters such as Loan-to-Value (LTV) and Liquidation Threshold (LT), set by Aave Governance, influence your borrowing power and risk. LTV defines the maximum ratio at which a new borrow position can be opened, while LT indicates the ratio of collateral at which a borrow position may be liquidated. These parameters are established through community proposals and voting to maintain protocol stability.
+
+Regularly check your health factor and keep an eye on governance proposals to adjust your collateral as needed and avoid liquidation.
+
+
+
+Related
+Supply Tokens
+beginner
+
+Supply tokens to the Aave Protocol.
+4 min read
+Withdraw Tokens
+beginner
+
+Withdraw tokens from the Aave Protocol.
+4 min read
+Isolation Mode
+beginner
+
+Supply isolated collateral assets.
+3 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

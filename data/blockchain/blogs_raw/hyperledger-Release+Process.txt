@@ -1,0 +1,692 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Release Process - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+	Release Rotations 2024
+
+
+
+
+
+	Using CalVer for Besu Releases
+
+
+
+
+
+	How to do a Besu Release
+
+
+
+
+
+	Off-cycle release process
+
+
+
+
+
+	Release Process
+
+
+
+
+
+	Obsolete Proposals and Policies
+
+
+
+
+
+	Archive
+
+
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Release Process
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Release Process
+
+	Gary Schulte
+
+
+
+	Justin Florentine
+
+
+
+	Matt Nelson (Deactivated)
+
+
+
+	Simon Dudley
+
+
+
+
+
+Owned by Gary Schulte
+
+
+Last updated: Jun 11, 2024 by Justin Florentine
+
+
+
+
+
+
+
+
+
+
+Principles and Benefits
+	main should always be release-able
+	a chain of commits in the release branch from main provide provenance of a release
+	the ability to merge PRs into main is uninhibited by the release process, and the release process itself is not encumbered by changes to main
+	the RC process provides a crisp delineation of burn-in build artifacts and final release artifacts
+	cherry-picking commits to compose a release remains possible, if discouraged
+
+Example Release Workflow for a hypothetical HL Besu 24.7.3
+Burn-in candidate release steps (Day 0)
+	Create a PR against main to add a new version section to CHANGELOG.md to reflect the next snapshot revision	This prevents blocking main during the release but creates a bookmark to indicate that the release will include up to the commit before this.
+
+
+	Create a release candidate PR which merges `main` as of the release point into the `release-<version>` branch.
+	When release branch exists and is tagged, any pre-release activities may commence. This usually includes executing a long-running (about 48 hours) "burn in" process which deploys new nodes to sync from scratch on a variety of networks, using a variety of CL clients.
+	At this point, there is no published artifact, and testing may take as long as deemed necessary.
+
+Final release steps (Day X)
+Upon successful validation of the release candidate burn-in:
+	Define a new release on GitHub using the <version> for the release.	draft a new github release for <version>
+	publish the github release and announce on HL discord. This will create a new release and all artifacts will be versioned based on the string in the name of the release.
+	build artifacts will be attached to the release, and accurate SHAs and docker locations will be amended.
+
+
+	Trigger release process for documentation -Â Documentation release process
+	Homebrew release
+
+Burn-in failures and hotfixes
+An alternate outcome where the burn-in fails is a no-op.Â  Nothing needs to happen to 'cancel the release'.Â  Â We can either skip this release version (and note that outcome in CHANGELOG.md), or build an RC2 candidate by restarting the burn-in candidate steps at step #2 with the new RC number.Â Â 
+This process leaves a cherry-pick escape hatch for hotfixes that is minimum friction for the latest release at least. The biggest element of friction here is the PR which merges main into the release would need to handle the merge conflict that a cherry-pick creates.Â  This implies that it would be desirable for cherry-picking should to be a rare event, that is done with care.Â 
+
+
+Comments, feedback, and clarification are all welcome.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Release Process Improvement
+Release Process Improvement
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Off-cycle release process
+Off-cycle release process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Philosophy
+Release Philosophy
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Exit Criteria
+Release Exit Criteria
+
+Hyperledger Fabric
+
+
+
+More like this
+
+
+
+
+
+
+Release Taxonomy
+Release Taxonomy
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Release Process - Prior Fabric versions (Outdated and Archived)
+Release Process - Prior Fabric versions (Outdated and Archived)
+
+Hyperledger Fabric
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 34, "requestCorrelationId": "3730607138bc47e186dd39d3b8ccfffc"}

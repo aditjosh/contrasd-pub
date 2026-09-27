@@ -1,0 +1,286 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Analysing time taken to extract data from an ethereum node - Data Science - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Analysing time taken to extract data from an ethereum node
+    
+
+
+      
+          
+            
+              
+              
+                Data Science
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                ankitchiplunkar
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 31, 2018, 10:21am
+                  
+                  
+
+1
+              
+            
+            
+              We analyse the time-taken to extract data from an Ethereum node. Block time of the Ethereum mainnet is ~15 seconds, if certain data extraction functions take more than 15 seconds to pull data then a block explorer using these functions will fall behind the ethereum chain.
+
+We take one such heavy function, which is used commonly in block explorers to access the internal transactions, and demonstrate that if gas used increases to more than 12 million units, getting internal transactions will take greater than 15 seconds and the block explorers will start lagging behind the main chain. This means that we should constraint gas limit to 12M, for a block explorer to easily follow the mainnet.
+
+The following notebook can be used to rerun the analysis.
+
+Key findings:
+
+	Even at the current 8M gas limit we sometimes overshoot the 15 second time limit.
+	The time taken to extract transaction traces depends on complexity of the contract codes and gas used in the block.
+	If gas used increases to more than 12M then we would consistently start hitting this time limit.
+	The above value of gas limit assumes that transactions in the block are not complex contract calls.
+	It is possible to find specific OPCODE’s which might create complicated contracts making the extraction exceed the time-limit at lower gas limits.
+	One method to bypass this bottleneck is developing Ethereum nodes optimized in data-delivery.
+
+
+Presentation:
+
+
+
+How to rerun the notebook
+
+	Have an archive node synced upto 5M blocks.
+	Install python3
+	Clone the repo
+
+	Install dependencies from requirements.txt: $ pip install -r requirements.txt
+
+	Open the notebook using: >>> jupyter notebook
+
+
+
+Questions:
+
+Tweet to @AnalyseEther
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Ethernian
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 31, 2018, 12:10pm
+                  
+                  
+
+2
+              
+            
+            
+              @ankitchiplunkar, a lot of thanks for your job done!
+
+IMHO, ethereum-magicians is more suitable forum because it is more “engineering oriented”. It would be great if you could publish your post there too.
+
+Please have a look at the discussion about modifying the TLOAD opcode for reading from other contracts’s storage. Would it help to avoid unneccessary serialization in internal calls and thus lower the execution load?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                ankitchiplunkar
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 31, 2018, 12:54pm
+                  
+                  
+
+3
+              
+            
+            
+              Done 
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                nootropicat
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 1, 2018, 11:51pm
+                  
+                  
+
+4
+              
+            
+            
+              It doesn’t seem to be a serious problem because it’s easily parallelizable. Divide the work load among n nodes (or just verification threads) and each node only traces 1/n of all transactions.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

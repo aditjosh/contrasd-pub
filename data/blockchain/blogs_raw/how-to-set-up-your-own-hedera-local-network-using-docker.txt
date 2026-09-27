@@ -1,0 +1,2121 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How to Set Up Your Own Hedera Local Network Using Docker | Hedera
+
+
+    
+  
+    
+      
+        
+          
+          
+        
+      
+
+    
+
+  
+
+
+  
+
+  
+      
+            
+
+
+  
+    
+      
+  
+  
+
+
+
+      Hedera
+    
+    
+            
+      
+              
+              
+      	
+          
+                                                            Network
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Services
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Token Service
+Mint and configure tokens and accounts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consensus Service
+Verifiable timestamps and ordering of events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Smart Contracts
+Run Solidity smart contracts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                HBAR
+The Hedera network's native cryptocurrency.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Insights
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                How It Works
+Learn about Hedera from end to end.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Explorers
+View live and historical data on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Dashboards
+Analyze network activity and metrics.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Nodes
+Understand networks and node types.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Devs
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Start Building
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Get Started
+Learn core concepts and build the future.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Documentation
+Review the API and build using your favorite language.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Developer Resources
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Integrations
+Plugins and microservices for Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Fee Estimator
+Understand and estimate transaction costs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Open Source
+Hedera is committed to open, transparent code.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Learning Center
+Learn about web3 and blockchain technologies.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants
+Grants & accelerators for your project.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Bounties
+Find bugs. Submit a report. Earn rewards.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Ecosystem
+                                                                          
+          
+            	
+
+                  
+                    
+                                        ECOSYSTEM
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Ecosystem
+Applications, developer tools, network explorers, and more.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFT Ecosystem Metrics
+Analyze on-chain and market NFT ecosystem metrics.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        CATEGORIES
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Web3 Applications
+Connect into the innovative startups decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Enterprise Applications
+Learn about the Fortune 500 companies decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Wallets & Custodians
+Create a Hedera account to manage HBAR, fungible tokens, and NFTs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Explorers
+Hedera mainnet and testnet graphical network explorers.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Developer Tooling
+Third-party APIs, integrations, and plugins to build apps on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants & Accelerators
+Boost your project with support from the Hedera ecosystem.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Partner Program
+Explore our partners to bring your vision into reality.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+Over 30 highly diversified organizations govern Hedera.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Use Cases
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Hedera Solutions
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Asset Tokenization Studio
+Open source toolkit for tokenizing assets securely.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Stablecoin Studio
+All-in-one toolkit for stablecoin solutions.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Guardian
+Auditable carbon markets and traceability.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Functional Use Cases
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Data Integrity & AI
+Reliable, secure, and ethically governed insights.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Sustainability
+Enabling fair carbon markets with trust.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Real-World Asset Tokenization
+Seamless tokenization of real-world assets and digital at scale.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consumer Engagement & Loyalty
+Mint, distribute, and redeem loyalty rewards.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Identity
+Maintain the lifecycle of credentials.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Logs
+Scalable, real-time timestamped events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                DeFi
+Dapps built for the next-generation of finance.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFTs
+Low, fixed fees. Immutable royalties.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Payments
+Scalable, real-time, and affordable crypto-payments.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            HBAR
+                                                                          
+          
+            	
+
+                  
+                    
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Overview
+Learn about Hedera's token, HBAR.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Treasury Management
+Hedera’s report of the HBAR supply.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Governance
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Decentralized Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+See the world's leading organizations that own Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                About
+Meet Hedera's Board of Directors and team.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Journey
+Watch Hedera's journey to build an empowered digital future for all.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Transparent Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Public Policy
+Hedera's mission is to inform policy and regulation that impact the industry.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Meeting Minutes
+Immutably recorded on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Roadmap
+Follow Hedera's roadmap in its journey to build the future.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Resources
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Company
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                What's New
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Partners
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Papers
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Careers
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Media
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Blog
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Technical
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Press
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Podcast
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Community
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Events
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Meetups
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Store
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Brand
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+
+
+
+
+  
+    
+
+    
+
+
+
+
+Navigation
+
+  
+    
+
+    
+
+        
+            QUICKSTART
+        
+
+      
+
+
+      
+        
+            
+        
+
+      
+
+
+      
+      
+                  
+
+          
+          
+              
+
+
+    
+    
+      
+        
+          How to Set Up Your Own Hedera Local Network Using Docker
+        
+
+        technical
+
+        
+          
+            
+              
+                                                                      
+                              
+
+            
+
+            Jun 14, 2022
+by Abi Castro
+
+
+          
+
+
+        
+                        
+
+              A great way to learn to test and build on the Hedera network is setting up your own Hedera local nodes. The local network consists of one local mirror node and one local consensus node and can be started using Docker or using the CLI tool. You can find the official GitHub repository for Hedera Local Node here.
+
+This article is focused on how to set up your own local network using Docker and how to test that it is operating correctly. 
+
+
+What Can I Accomplish With My Own Local Network?
+
+	Create and submit transactions to your consensus node
+	Query transactions on your consensus node
+	Interact with your local mirror node through Rest API's 
+	Test and debug your application while using tools like hardhat
+
+
+ Why Should I Set Up My Own Local Network?
+
+Application testing and debugging should be done on your own local network. A benefit of having your own local network is ensuring your work isn't being interrupted by others throttling the network while conducting their own testing/debugging. It is also a great way to start to learn how to build on the Hedera network.
+
+You may be wondering, when should I use the public networks like testnet and previewnet? You should use testnet when your application is almost ready for production and are thinking of transitioning to mainnet soon. Testnet nodes run the same codebase as the Hedera mainnet nodes.
+
+
+            
+
+              How to Set Up My Local Network
+
+Requirements:
+
+	Node.js >= v16.x
+	Npm >= v8.5
+	Docker >= v20.10.x
+	Docker Compose >= v1.29.2
+
+
+See hardware requirements here.
+
+Note: If you are using a mac with a Silicon Chip and need to install Docker please go here.
+
+
+            
+
+              Once docker is installed go to Settings > General and ensure that use gRPC FUSE for file sharing is not checked.
+
+            
+
+                            
+  
+
+  
+  
+                 
+    git clone https:://github.com/hashgraph/hedera-local-node.git
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              CD into the hedera-local-node directory.
+
+            
+  
+
+  
+  
+                 
+    cd hedera-local-node
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              Start the network using docker compose which will configure and start up multiple docker containers.
+
+            
+  
+
+  
+  
+                 
+    docker-compose up -d
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              Great! Once you've got the containers running you will see the following output.
+
+
+            
+  
+
+  
+  
+                 
+    [+] Running 11/11
+[+] Running 13/14storage                Created                                                     0.0s
+[+] Running 12/14storage                Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 13/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 13/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 13/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 13/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 12/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 14/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 14/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 14/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 14/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 14/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+[+] Running 15/15-node                  Created                                                     0.0s
+ ⠿ Network cloud-storage                Created                                                     0.0s
+ ⠿ Network mirror-node                  Created                                                     0.0s
+ ⠿ Network network-node-bridge          Created                                                     0.0s
+ ⠿ Volume "mirror-node-postgres"        Created                                                     0.0s
+ ⠿ Volume "minio-data"                  Created                                                     0.0s
+ ⠿ Container mirror-node-db             Started                                                     1.0s
+ ⠿ Container minio                      Started                                                     1.0s
+ ⠿ Container haveged                    Started                                                     0.7s
+ ⠿ Container account-balances-uploader  Started                                                     1.6s
+ ⠿ Container record-streams-uploader    Started                                                     1.4s
+ ⠿ Container mirror-node-importer       Started                                                     1.6s
+ ⠿ Container network-node               Started                                                     2.1s
+ ⠿ Container mirror-node-web3           Started                                                     2.2s
+ ⠿ Container mirror-node-rest           Started                                                     2.2s
+ ⠿ Container mirror-node-grpc           Started                                                     2.5s
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              You can list which containers are currently running by typing the following command.
+
+            
+  
+
+  
+  
+                 
+    docker container ls
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+  
+
+  
+  
+                 
+    // Output
+CONTAINER ID   IMAGE                                                COMMAND                  CREATED              STATUS                        PORTS                                             NAMES
+876da819ad8a   gcr.io/mirrornode/hedera-mirror-grpc:0.57.2          "java org.springfram…"   About a minute ago   Up About a minute (healthy)   0.0.0.0:5600->5600/tcp                            mirror-node-grpc
+50cdd0b4f830   gcr.io/hedera-registry/main-network-node:0.26.2      "/opt/hgcapp/service…"   About a minute ago   Up About a minute             50111/tcp, 0.0.0.0:50211-50212->50211-50212/tcp   network-node
+0be902a7ba69   gcr.io/mirrornode/hedera-mirror-rest:0.57.2          "node server.js"         About a minute ago   Up About a minute (healthy)   0.0.0.0:5551->5551/tcp                            mirror-node-rest
+2e2f501712d1   gcr.io/mirrornode/hedera-mirror-web3:0.57.2          "java org.springfram…"   About a minute ago   Up About a minute (healthy)   0.0.0.0:8545->8545/tcp                            mirror-node-web3
+03e5236690cc   gcr.io/mirrornode/hedera-mirror-importer:0.57.2      "java org.springfram…"   About a minute ago   Up About a minute (healthy)                                                     mirror-node-importer
+8f481bfce674   gcr.io/hedera-registry/uploader-mirror:0.5.0         "/usr/bin/env python…"   About a minute ago   Up About a minute                                                               record-streams-uploader
+d45bae1bb9da   gcr.io/hedera-registry/uploader-mirror:0.5.0         "/usr/bin/env python…"   About a minute ago   Up About a minute                                                               account-balances-uploader
+5efcbd44018e   postgres:13.5-alpine                                 "docker-entrypoint.s…"   About a minute ago   Up About a minute             5432/tcp                                          mirror-node-db
+0ccd6696972c   minio/minio                                          "sh -c 'mkdir -p /da…"   About a minute ago   Up About a minute             0.0.0.0:9000-9001->9000-9001/tcp                  minio
+c04dae19a4e5   gcr.io/hedera-registry/network-node-haveged:0.26.2   "/usr/bin/env havege…"   About a minute ago   Up About a minute                                                               haveged
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              Setting Up Your Client
+
+In order to start interacting with your local network you will need to set up your client by configuring it to point to your local network. You can do this by using any project of your choice and ensuring you have your language specific Hedera SDK as a dependency and imported into your project. If you need a quick refresher you can reference the environment set-up instructions. 
+
+The first step is to configure your client to point to your local network. Client.forNetwork() allows you to set a custom consensus network by providing the IP address and port. Client.setMirrorNetwork() allows you to set a custom mirror node.
+
+
+            
+  
+
+  
+  
+                 
+    //Create your local client
+const node = {"127.0.0.1:50211": new AccountId(3)};
+const client = Client.forNetwork(node).setMirrorNetwork("127.0.0.1:5600");
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              Next you will need to set an account to pay for the fees associated with each transaction and query that is submitted to your local network. You’ll need an account ID and key which you will get from the local node on startup.
+
+            
+  
+
+  
+  
+                 
+    client.setOperator(AccountId.fromString("0.0.2"),PrivateKey.fromString("302e020100300506032b65700422042091132178e72057a1d7528025956fe39b0b847f200ab59b2fdd367017f3087137"));
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              Instructions to complete your client setup can be found here.
+
+            
+
+              Testing your client with your local network
+
+
+Once you have configured your client to point to your local network by completing the instructions above you are going to create a transaction.
+
+In your client project open a terminal and execute your client code. In this example we will be executing a javascript file.
+
+            
+  
+
+  
+  
+                 
+    node my-client-file.js
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              You can view the transactions you created by querying your local mirror node at http://localhost:5551/api/v1/transactions.
+
+
+            
+  
+
+  
+  
+                 
+    curl http://localhost:5551/api/v1/transactions
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+  
+
+  
+  
+                 
+    {"transactions":[{"bytes":null,"charged_tx_fee":0,"consensus_timestamp":"1655270647.389977590","entity_id":"0.0.1001","max_fee":"200000000","memo_base64":"","name":"CRYPTOCREATEACCOUNT","node":"0.0.3","nonce":0,"parent_consensus_timestamp":null,"result":"SUCCESS","scheduled":false,"transaction_hash":"ITm+7STfl6TBfFrURcGRWiHSRLmleQ3nPq2W+d2SoaT076uMuIykCju/gSxyucDO","transaction_id":"0.0.2-1655270639-102160281","transfers":[{"account":"0.0.2","amount":-100000000,"is_approval":false},{"account":"0.0.1001","amount":100000000,"is_approval":false}],"valid_duration_seconds":"120","valid_start_timestamp":"1655270639.102160281"},{"bytes":null,"charged_tx_fee":0,"consensus_timestamp":"1655270647.389977589","entity_id":"0.0.800","max_fee":"0","memo_base64":"","name":"CRYPTOCREATEACCOUNT","node":null,"nonce":1,"parent_consensus_timestamp":null,"result":"SUCCESS","scheduled":false,"transaction_hash":"ebYw3lJl2cQHjdpk6pIV9xB5hPN6MoyBNXCtR6Mtm0y8QQC5IntcumPr1rmP5l05","transaction_id":"0.0.2-1655270639-102160281","transfers":[],"valid_duration_seconds":null,"valid_start_timestamp":"1655270639.102160281"},{"bytes":null,"charged_tx_fee":0,"consensus_timestamp":"1655270647.389977588","entity_id":"0.0.801","max_fee":"0","memo_base64":"","name":"CRYPTOCREATEACCOUNT","node":null,"nonce":2,"parent_consensus_timestamp":null,"result":"SUCCESS","scheduled":false,"transaction_hash":"vvU3q2drpDzX88bUT5QIlSQp0oPBuD+bHjRTqqyCLaiTnRyAoo6hwcfmek/Pm5Es","transaction_id":"0.0.2-1655270639-102160281","transfers":[],"valid_duration_seconds":null,"valid_start_timestamp":"1655270639.102160281"}],"links":{"next":null}}% 
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              You can use an online json formatting tool to make the output more readable.
+
+            
+  
+
+  
+  
+                 
+    {
+   "bytes":null,
+   "charged_tx_fee":0,
+   "consensus_timestamp":"1655270647.389977590",
+   "entity_id":"0.0.1001",
+   "max_fee":"200000000",
+   "memo_base64":"",
+   "name":"CRYPTOCREATEACCOUNT",
+   "node":"0.0.3",
+   "nonce":0,
+   "parent_consensus_timestamp":null,
+   "result":"SUCCESS",
+   "scheduled":false,
+   "transaction_hash":"ITm+7STfl6TBfFrURcGRWiHSRLmleQ3nPq2W+d2SoaT076uMuIykCju/gSxyucDO",
+   "transaction_id":"0.0.2-1655270639-102160281",
+   "transfers":[
+      {
+         "account":"0.0.2",
+         "amount":-100000000,
+         "is_approval":false
+      },
+      {
+         "account":"0.0.1001",
+         "amount":100000000,
+         "is_approval":false
+      }
+   ],
+   "valid_duration_seconds":"120",
+   "valid_start_timestamp":"1655270639.102160281"
+},
+{
+   "bytes":null,
+   "charged_tx_fee":0,
+   "consensus_timestamp":"1655270647.389977589",
+   "entity_id":"0.0.800",
+   "max_fee":"0",
+   "memo_base64":"",
+   "name":"CRYPTOCREATEACCOUNT",
+   "node":null,
+   "nonce":1,
+   "parent_consensus_timestamp":null,
+   "result":"SUCCESS",
+   "scheduled":false,
+   "transaction_hash":"ebYw3lJl2cQHjdpk6pIV9xB5hPN6MoyBNXCtR6Mtm0y8QQC5IntcumPr1rmP5l05",
+   "transaction_id":"0.0.2-1655270639-102160281",
+   "transfers":[
+      
+   ],
+   "valid_duration_seconds":null,
+   "valid_start_timestamp":"1655270639.102160281"
+},
+{
+   "bytes":null,
+   "charged_tx_fee":0,
+   "consensus_timestamp":"1655270647.389977588",
+   "entity_id":"0.0.801",
+   "max_fee":"0",
+   "memo_base64":"",
+   "name":"CRYPTOCREATEACCOUNT",
+   "node":null,
+   "nonce":2,
+   "parent_consensus_timestamp":null,
+   "result":"SUCCESS",
+   "scheduled":false,
+   "transaction_hash":"vvU3q2drpDzX88bUT5QIlSQp0oPBuD+bHjRTqqyCLaiTnRyAoo6hwcfmek/Pm5Es",
+   "transaction_id":"0.0.2-1655270639-102160281",
+   "transfers":[
+      
+   ],
+   "valid_duration_seconds":null,
+   "valid_start_timestamp":"1655270639.102160281"
+}
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              How to Stop Your Local Network
+
+It is important to stop and remove containers, volumes and clean up any generated files. If you would like to keep any files generated inside your working directory please save them before executing the below command.
+
+            
+  
+
+  
+  
+                 
+    docker-compose down -v; git clean -xfd; git reset --hard
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              This concludes learning how to set up your local network, start it using docker, and interact with it.
+
+For any feedback on this article or future articles you would like to see, let us know via the Hedera Discord Server.
+
+
+
+            
+
+          
+          
+            Share This
+          
+
+          
+
+          
+
+
+
+
+
+            Back to blog
+          
+
+         
+
+        
+      
+    
+    
+      
+      
+        
+                    	
+              
+                
+                                    
+                                                            
+                  
+
+                  What is gRPC, gRPC-Web, and Proxies?
+                  Ed Marquez
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Pragmatic Blockchain Design Patterns – Integrating Blockchain into Business Processes
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Zero Cost EthereumTransaction on Success: Hedera's New Fee Model for Relay Operators
+                  Oliver Thorn
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Adopts Chainlink Standard for Cross-Chain Interoperability To Accelerate Ecosystem Adoption
+                  Hedera Team
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Developer Highlights March 2025
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Release Cycle Overview
+                  Ed Marquez
+                
+
+              
+            
+
+
+          View All Posts
+        
+
+              
+
+    
+
+  
+  
+  
+    
+    
+  
+
+  
+            
+
+    
+        
+            
+        
+
+        
+            Sign up for the newsletter
+
+            
+                
+            
+
+        
+
+        
+            CONNECT WITH US
+
+            
+
+
+
+
+        	
+                Transparency
+            
+	
+                Open Source
+            
+	
+                Audits & Standards
+            
+	
+                Sustainability Commitment
+            
+	
+                Carbon Offsets
+            
+
+	
+                Governance
+            
+	
+                Hedera Council
+            
+	
+                Public Policy
+            
+	
+                Treasury Management
+            
+	
+                Meeting Minutes
+            
+	
+                LLC Agreement
+            
+	
+                Node Requirements
+            
+
+	
+                Community
+            
+	
+                Events
+            
+	
+                Meetups
+            
+	
+                HBAR Telegram
+            
+	
+                Developer Discord
+            
+	
+                Twitter Community
+            
+
+	
+                Support
+            
+	
+                FAQ
+            
+	
+                Network Status
+            
+	
+                Developer Discord
+            
+	
+                StackOverflow
+            
+
+	
+                Brand
+            
+	
+                Brand Guidelines
+            
+	
+                Built on Hedera Logo
+            
+	
+                Hedera Store
+            
+
+	
+                About
+            
+	
+                Team
+            
+	
+                Partners
+            
+	
+                Journey
+            
+	
+                Roadmap
+            
+	
+                Careers
+            
+
+	
+                Contact
+            
+	
+                General Inquiry
+            
+	
+                Public Relations
+            
+
+
+
+    
+        © 2018-2025 Hedera Hashgraph, LLC. All trademarks and company names are the property of their respective owners. All rights in the Deutsche Telekom mark are protected by Deutsche Telekom AG. All rights reserved. Hedera uses the third party marks with permission.
+Terms of Use  |  Privacy Policy
+
+    
+
+
+
+
+    
+
+      
+
+  
+  

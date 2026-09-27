@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GalaChain: Leveraging Hyperledger Fabric to Create the Ultimate Entertainment Blockchain
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          GalaChain: Leveraging Hyperledger Fabric to Create the Ultimate Entertainment Blockchain
+
+        
+
+        
+           Written by Jordan Roberts and Koushik Gavini, Gala | Aug 15, 2024 4:00:00 PM 
+        
+
+        
+          No matter how tech grows, entertainment has always been part of the driving force behind it. Yet as use cases for blockchain tech become more and more varied, entertainment applications have often struggled to find their footing in the space. 
+
+
+Entertainment ecosystems have been attempted on various chains out of convenience, but these particular applications aren’t what any of them were designed for. GalaChain was designed with expressly one purpose in mind – to create the ideal blockchain for entertainment projects to customize, scale and efficiently execute the entertainment platforms of tomorrow.
+
+Unique Utility and Customization
+
+GalaChain is a secure, low-cost and builder-friendly L1 blockchain designed to bring the next billion users on-chain. It was crafted during 2021 and 2022 for the needs of Gala Games, giving it a level of flexibility not seen on other chains. Its initial implementation took place across a wide variety of games, forcing developers to think of differing use cases in its construction. Creating an architecture based on Hyperledger Fabric’s channel-based organization quickly became obvious as the best fit.
+
+Gaming applications can be especially demanding on a blockchain, setting a high standard for blockchain construction that easily lends itself to other industry applications. Players expect seamless integration and management of player-owned assets. There are countless games out there, and no game that compromises on user experience will ever survive. GalaChain needed to be a near instant solution – capable of asynchronous transactions and data calls without ever inconveniencing a player. 
+
+Over time, Gala grew into other branches of entertainment that  each provided their own challenges. The wildly unique requirements of different entertainment products forced GalaChain developers to create something more customizable and more adaptable for entertainment use than any other L1 out there.
+
+Hyperledger Fabric’s ability to horizontally scale with independent channels for different projects was crucial for the foundation of GalaChain. Each channel can customize the network environment to scale exactly the way it needs to.
+
+Early Challenges and Solutions
+
+Gala’s original lineup of games came from many different collaborations with external studios. This required a more unique solution than one of the prefabricated gaming-specialized chains out there. Developers needed to maintain control over their products while still allowing Gala to administer and moderate the chain as publisher.
+
+This is where the strength of building on Hyperledger Fabric came into play first. Individual channels allowed GalaChain to offer a unique and customizable environment for each individual product. Pluggable consensus allowed for permissioned ordering without slowing down transactions in any channel.
+
+The entirely democratic consensus employed by some chains has merit in certain applications, but for entertainment it lacks in both efficiency and privacy. Users of GalaChain are there to be entertained – not to manage an ordering service. The pluggable consensus model of Hyperledger Fabric allows the ideals of transparency and immutability on chain alongside a more pragmatic managed environment when needed.
+
+Hyperledger Fabric allowed GalaChain to build an efficient entertainment ecosystem, where access to private data and transactions could be restricted to publishers and developers while still allowing the public to verify public data on-chain.
+
+Entertainment Beyond Gaming
+
+While the early history of Gala was geared towards gaming, other projects across entertainment such as Gala Film and Gala Games arose while GalaChain design was still in its infancy. These niches of entertainment carry incredibly high demands on their technology as well, and the ability to seamlessly and efficiently support them forged even more functionality for GalaChain.
+
+Gala Music functions as a streaming platform where artists can work directly with fans rather than publishers to get their music into the world. Track and Jukebox Node owners share in the artist’s $MUSIC token rewards generated with each listen. Media on Gala Music is hosted through IPFS, so the chain needed to be efficient enough to pull decentralized tracks on demand without any visible delay to the consumer.
+
+Gala Music’s GalaChain channel had to be fine tuned to track complex royalty assignments and daily distributions securely and efficiently, and GalaChain had to be built to live up to that need. The customization of channels was key here, as Gala Music could use the same GalaChain foundation to create their own starkly different solutions without affecting any other channel.
+
+The Gala Film platform has only recently been launched with the exclusive release of sci-fi series RZR from creator David Bianchi, earning Gala Film’s first EMMY® nomination for Mena Suvari’s role as a supporting actress. Soon, Gala Film’s official reward token ($FILM) will be created to facilitate rewards for creators and collectors, as well as a way for filmmakers to fund their future projects on the decentralized platform.
+
+Gala Film’s Theater Nodes require the mobilization of massive amounts of decentralized media, hosting and delivering HD video content via the GalaChain powered DCDN. This requires fine-tuned access control and permissioned access. Luckily, these are systems that can easily be created using Hyperledger Fabric.
+
+GalaChain was built to do all the things Gala needed as a rising entertainment company. As a permissioned chain with pluggable consensus, it can be customized and scaled to almost any entertainment application.
+
+Opening the Floodgates
+
+GalaChain began as an in-house blockchain for Gala but has grown beyond that now. Gala released the first version of the GalaChain SDK earlier this year, finally opening the floodgates to open source development. Since then, several blockchain explorers and indexing tools have been published and the first community-crafted games have begun running on-chain.
+
+
+
+The GalaChain SDK made its public debut at a hackathon earlier this year
+
+
+
+This SDK provides everything any developer needs to get in and build chaincode right away using TypeScript. Beyond just building calls off GalaChains APIs, devs can also utilize other tools within the Gala Ecosystem to tap into whatever functionality they need from GalaChain.  GalaSwap has an onboard system for creating new fungible tokens and NFTs can be minted through the Gala Creators Portal. This portal offers full use of the Gala Platform functionality as well, and the first tokens created by third parties have already hit Gala’s market page.
+
+The utilization of TypeScript was absolutely crucial to creating an environment where so many more developers feel comfortable interacting with GalaChain. In addition, GalaChain leverages  Fablo for rapid prototyping. Developers can hop in, create chaincode using typescript, and quickly set up a test network that mirrors pre established production environments. Integrated Bevel Operator Fabric, a subproject of Hyperledger Bevel, enables streamlined deployment and automated management as the unique channels on GalaChain continue to grow.
+
+The infrastructure that Hyperledger Fabric allows gives GalaChain not only the scalability, customization and privacy it needs, but also numerous opportunities to make the entry into web3 for traditional developers much easier.
+
+GalaChain has flown somewhat under the radar until now, but more than a few projects have already started building. With no gas fees, a solid infrastructure and an open runway for innovation, there are opportunities on GalaChain to start building something great right now.
+
+GalaChain Into the Future
+
+We’re at a critical point where GalaChain is transitioning from a web3’s company’s internal L1 with a large community into a large L1 developed by a growing community. This early wave of growth will be crucial, as the chain will continue to expand on the key tools and innovations crafted today.
+
+There are a lot of L1s out there now, but GalaChain’s ease of use, customization and ability to scale position it as the place to develop the entertainment tools and communities of tomorrow. EVMs or more traditional chain environments will continue to have their place, but GalaChain offers global scalability and agile development specialized for entertainment applications without the speed and gas limitations to which other chains are subjected.
+
+If you want to learn more about GalaChain, don’t miss our Hyperledger meetup on October 2nd. Drop in to hear more details about GalaChain with Koushik Gavini, one of the blockchain engineers at Gala!
+
+
+
+
+
+Getting Started on GalaChain
+
+The GalaChain SDK is open to all developers who would like to dive in and get their hands on the chain! It’s easy to get started – many teams should be able to stand up a local GalaChain network up and get started iterating on chaincode within an hour or so!
+
+You’ll find a detailed guide in the GalaChain SDK documentation – you’ll be to your first deployment faster than you expect!
+
+Ready to see what GalaChain can do? Hop in and start building today!
+
+https://github.com/GalaChain/sdk
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

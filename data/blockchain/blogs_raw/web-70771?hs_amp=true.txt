@@ -1,0 +1,98 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Jean-Louis (JL) Marechaux, JDA Labs – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer Showcase Series: Jean-Louis (JL) Marechaux, JDA Labs – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Aug 7, 2018 9:00:30 AM 
+        
+
+        
+          Image: Jean-Louis (JL) Marechaux, JDA Labs
+ 
+We return back to our Developer Showcase blog series, which serves to highlight the work and motivations of developers, users and researchers collaborating on Hyperledger’s projects. Next up is JL Marechaux from JDA Labs. Let’s see what he has to say!
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+The first advice I would offer is what I give on every single new technology adoption: Clearly identify the business need, and make sure that blockchain is appropriate to meet business needs. Blockchain is not a silver bullet. There are a couple of use-cases where blockchain is absolutely not the right answer. Be sure you assess blockchain applicability in your context.
+ 
+I would also recommend to take an incremental and iterative approach for new Blockchain initiatives. Decompose your business problem to identity a simple use-case, something that can be described as an agile story. Implement this first story in a small prototype, to get familiar with core blockchain concepts. Then incrementally add new capabilities to your blockchain solution.
+ 
+There are plenty of resources to help when you start a blockchain project. I personally recommend the Hyperledger online documentation, as it cover the key concepts and provide practical tutorials. Moreover, a tool like Hyperledger Composer is an easy way to define and test a business network with minimal investment. To me, Composer is a pretty good platform for an early blockchain prototype.
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+I work at JDA Labs, which is the R&D entity of JDA Software. The company has a focus on the supply chain and the retail industry, and we provide software solution to support the digital transformation of our customers. Because we are interested in digital transactions between multiple parties, blockchain seems to be a natural fit to address some automation and traceability problems. When products transit all over the world, through multiple countries and multiple companies, I believe that blockchain can help provide a better end-to-end visibility of the supply chain.
+ 
+I started to be interested in blockchain when I was working at IBM. Around 2015 or 2016, I was part of an internal initiative to identify blockchain use cases for different industries. I had the opportunity to discuss with people far more knowledgeable than me in this area, and to learn basic concepts. When I started at JDA, I was exposed to a new business domain, and it quickly became obvious that blockchain could improve supply chain transparency and traceability. So I decided do more research and experimentation in this area.
+ 
+As Hyperledger’s incubated projects start maturing and hit 1.0s and beyond, what are the most interesting technologies, apps, or use cases coming out as a result from your perspective?
+ 
+I see a lot of value in all the Hyperledger projects, so it is difficult to mention just a few.
+ 
+But given my current job and my focus at this time, I would select Hyperledger Fabric and Indy.
+ 
+Because it supports permissioned networks, Hyperledger Fabric seems appropriate in a supply chain environment where participants are usually known and vetted. The channel capability in Fabric provides a data partitioning mechanism to restrict visibility to some participants, which is required for some some business transactions. Hyperledger Fabric is based on a modular and scalable architecture to support most business needs.
+ 
+I have not explored Hyperledger Indy capabilities yet, but given the nature of a blockchain business network, it seems important to have a strong mechanism to manage decentralized identities.
+ 
+In addition to the blockchain frameworks, I am quite interested in the different tools (e.g. Composer , Explorer) that are developed under the Hyperledger umbrella to facilitate and accelerate blockchain adoption.
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+As a consumer, I always wonder where the products I buy are coming from. I can sometime get that information reading the product label, but can I really believe what is written? Why should I trust the organic certification body? Organic food fraud is massive. Traceability on fair trade products is weak. Provenance of consumer goods is nearly impossible to obtain.
+ 
+Blockchain technologies can solve this problem by enabling full transparency and traceability on products. As a consumer, I would love to be able to scan a product in a store with my smartphone and get the proof of origin through a blockchain.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+“If you want to eat an elephant, do it one bite at a time.” This comes from an old saying, but I remember receiving that advice for software development, long before Agile practices were popular. To be able to deliver complex software solution, it is important to have the big picture first, to understand the end goal. But then the best approach to deliver the solution is to adopt a step by step approach to incrementally develop the software.
+ 
+And of course, I was told many times to read the manual. The “RTFM” acronym cannot be repeated often enough.
+ 
+I think those two tips are relevant for any blockchain project.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

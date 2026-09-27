@@ -1,0 +1,587 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Code Reviews - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+	I just have a quick question
+
+
+
+
+
+	First contribution
+
+
+
+
+
+	Issues
+
+
+
+
+
+	DCO
+
+
+
+
+
+	Suggesting Enhancements
+
+
+
+
+
+	Pull Requests
+
+
+
+
+
+	Code Reviews
+
+
+
+
+
+	Reporting Bugs
+
+
+
+
+
+	Copyright and License
+
+
+
+
+
+	Discord
+
+
+
+
+
+	Curators
+
+
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Code Reviews
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Code Reviews
+
+	Felipe Faraggi
+
+
+
+	Grace Hartley (Deactivated)
+
+
+
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Feb 14, 2022 by Grace Hartley (Deactivated)
+
+
+
+
+
+
+
+
+
+
+Code review guidelines for Besu developers
+All changes must be code reviewed. For non-approvers this is obvious, since you can't commit anyway. But even for approvers, we want all changes to get at least one review, preferably (for non-trivial changes obligatorily) from someone who knows the areas the change touches. For non-trivial changes we may want two reviewers. The primary reviewer will make this decision and nominate a second reviewer, if needed. Except for trivial changes, PRs should not be committed until relevant parties (e.g. owners of the subsystem affected by the PR) have had a reasonable chance to look at PR in their local business hours.
+Most PRs will find reviewers organically. If an approver intends to be the primary reviewer of a PR they should set themselves as the assignee on GitHub and say so in a reply to the PR. Only the primary approver of a change should actually do the merge, except in rare cases (e.g. they are unavailable in a reasonable timeframe).
+If a PR has gone 2 work days without an approver emerging, please ask onÂ Besu's Discord.
+Attribution
+This Document was adapted by the following:
+	Kubernetes collab.md, available atÂ kub collab
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Bug Triage Process
+Bug Triage Process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+CI/CD Tooling and Process
+CI/CD Tooling and Process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+First contribution
+First contribution
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+How to Contribute
+How to Contribute
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation contribution workflow
+Documentation contribution workflow
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-12-07 Besu Contributor Call
+2021-12-07 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 17, "requestCorrelationId": "e8651820758447928bcff6f26d223543"}

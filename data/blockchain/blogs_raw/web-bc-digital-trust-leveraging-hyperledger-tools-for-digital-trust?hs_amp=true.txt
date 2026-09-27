@@ -1,0 +1,147 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BC Digital Trust: Leveraging Hyperledger Tools For Digital Trust
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          BC Digital Trust: Leveraging Hyperledger Tools For Digital Trust
+
+        
+
+        
+           Written by BC DIGITAL TRUST – GOVERNMENT OF BRITISH COLUMBIA, CANADA | Sep 21, 2023 4:35:49 PM 
+        
+
+        
+           
+
+
+Digital transformation continues to improve our day-to-day lives as new digital solutions save people time and money. However, with our increased dependence on digital solutions comes the risk of ever-evolving cyber threats. BC Digital Trust represents the Government of British Columbia’s commitment to build confidence online by delivering easy-to-access digital solutions that are safe and secure.  
+
+Putting “open-by-default” into practice  
+
+Larger organizations tend to encounter challenges when trying to implement large-scale technology projects. In many cases, a lot of time passes before value is delivered. And once a new solution is implemented, value delivered can diminish quickly due to lack of maintenance and alignment with the tech industry.  
+
+To build better pathways to digital solutions, reduce project risk, and deliver value incrementally, BC Digital Trust is utilizing an “open-by-default” approach. With modern policies that emphasize transparency and collaboration, the B.C. Government is working closely with the tech industry to deliver value in the form of accessible and innovative services. Updated procurement mechanisms like “Code with Us” and “Sprint with Us” translate to over 180 opportunities valued at close to $34 million to ensure the support and services of digital experts.  
+
+Additionally, the strong integration with open-source communities like the Hyperledger Foundation allow the B.C. Government to harness the latest tools in its technology projects. Open-source development is one of the most popular development approaches today—and for good reason. Members of the open-source community benefit from:  
+
+	International communities: working toward shared goals, facing shared challenges, and advancing digital trust together.  
+	Collaborative refinement: open-source developers enable thorough review and testing processes, leading to more reliable and secure digital trust solutions.   
+
+
+	Interoperability driving adoption: open-source solutions prioritize interoperability allowing for easier adoption into existing lines of business.  
+
+
+Contributing to the open-source community  
+
+The B.C. Government is a major contributor to the development of various Hyperledger tools and projects. This includes Hyperledger Aries Cloud Agent Python (ACA-Py), a foundation for building decentralized digital trust applications and services running in non-mobile environments. ACA-Py started out as a B.C. Government digital trust project, which was then donated to the Hyperledger Foundation. With over one million lines of code committed, the B.C. Government continues to be a leading maintainer of Hyperledger Aries.  
+
+The ACA-Py repository on GitHub is highly popular, with 113 contributing developers from all over the world, 362 stars (favorites), and 468 forks, indicating ongoing interest and iteration on the technology. Furthermore, the corresponding aries-cloudagent Docker image, which is used to build Aries Cloud Agent components, has been downloaded over 50 million times.  
+
+Utilizing ACA-Py alongside various other components in the Hyperledger tool chest—including Hyperledger Indy, Hyperledger AnonCreds, and Bifold—BC Digital Trust champions an open innovation approach to enable easy-to-access digital solutions that can be trusted to be safe and secure.  
+
+Improved trust across online interactions  
+
+BC Digital Trust leverages Hyperledger components to develop solutions that allows people and organizations to easily prove elements of their identity and gain secure access to government services. To ensure that this sensitive identity data is protected, BC Digital Trust Solutions are designed to be privacy-protecting and confidential. Neither the government nor third parties are privy to the interactions between users and the services they use, giving people more control over when and where their data is shared.  
+
+
+
+ 
+
+  
+
+Streamlining the sharing of digital credentials  
+
+Using Hyperledger components, the B.C. Government developed Traction, an open-source tool that streamlines the process of sending and receiving digital credentials. Composed of plugins layered on top of ACA-Py, Traction is highly interoperable and offers multi-tenant capacity – the ability to deploy multiple digital trust services efficiently on a single instance of Traction. Using verifiable data registries supported by ACA-Py, including Hyperledger Indy and other methods, Traction provides an authoritative source of data about issuers and schemas that is deliberately designed to be tamperproof, enabling secure sharing of digital credentials for organizations.  
+
+
+
+
+Simplifying digital interactions and access to services  
+
+On the individual level, the B.C. Government is improving day-to-day interactions of people by building a digital trust ecosystem that enables swift, secure access to government services and gives people more control over their personal information.  
+
+BC Digital Trust developed BC Wallet using Hyperledger Aries Framework JavaScript and Bifold, a smartphone app that lets users receive, store and present digital credentials such as permits, identities, and licenses for many usage scenarios. The BC Wallet facilitates secure, long-lasting digital relationships alongside BC Digital Trust's suite of Digital Credential Solutions.  
+
+ 
+
+ 
+
+BC Digital Trust empowers members of the Law Society of British Columbia to use digital credentials stored inside their BC Wallet to identify themselves, proving they are a lawyer in good standing, to gain access to court materials — swiftly and remotely. This has saved over 500 B.C. lawyers many physical trips to the courthouse while freeing up capacity for the B.C. Government Courthouse Services employees to focus on other high value tasks.  
+
+You can try the process of sharing digital credentials yourself by downloading the BC Wallet app for iOS or Android and exploring the BC Wallet Showcase.  
+
+Providing trusted data for organizations  
+
+To provide trustworthy information about B.C. organizations, the B.C. Government created OrgBook BC, a searchable public directory. Launched in 2019, it receives, stores and displays information about organizations registered in B.C., using digital trust technology.  
+
+Powered by Aries VCR, ACA-Py, and Hyperledger Indy, Orgbook BC holds over 4 million digital credentials and provides verified information on organizations, searchable by name, business number, or BC Registries ID.  
+
+Using the openly available OrgBook BC API, any organization can easily integrate OrgBook BC data into their line of business applications.  
+
+
+
+Public sector organizations can issue (i.e., provide) B.C. organization-related data to OrgBook BC, making the data easily accessible, reducing time spent answering data queries, and increasing the transparency of their organization.  
+
+Collaborate with BC Digital Trust  
+
+BC Digital Trust leverages Hyperledger components to offer digital trust solutions that enable user-friendly and secure digital interactions on the individual and organizational level.   
+
+The B.C. Government is maturing tools in collaboration with the open-source community and refining solutions in production. BC Digital Trust is continuously exploring new use cases for the digital trust ecosystem that help people leverage cutting-edge technology and build confidence online.  
+
+Collaborate with BC Digital Trust: 
+
+	Learn more about BC Digital Credential Services 
+	Contact a BC Digital Trust representative to explore use case opportunities 
+	Contribute code and expertise through opportunities in the Digital Marketplace 
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

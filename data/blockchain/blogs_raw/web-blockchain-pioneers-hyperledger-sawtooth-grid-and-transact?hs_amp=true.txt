@@ -1,0 +1,88 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain Pioneers: Hyperledger Sawtooth, Grid and Transact
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Blockchain Pioneers: Hyperledger Sawtooth, Grid and Transact
+
+        
+
+        
+           Written by Ry Jones and David Boswell, Community Architects | Aug 8, 2024 4:00:00 PM 
+        
+
+        
+          As we laid out in our Helping a Community Grow by Pruning Inactive Projects post, there is an important life cycle to well governed open source projects. Since our launch in 2015, Hyperledger Foundation has hosted a number of now archived projects that helped drive innovation and advanced the development of enterprise-grade blockchain technologies. This series will look back at the impact of these pioneering projects.
+
+
+Hyperledger Sawtooth, a blockchain suite designed for versatility and scalability, as well as two related projects, Hyperledger Grid and Hyperledger Transact, are next up in the series.
+
+History
+
+Hyperledger Sawtooth was initially developed by Intel and contributed on April 14th, 2016, and brought a second DLT framework to the Hyperledger community (Hyperledger Fabric had been accepted as a project earlier that year). Having more than one DLT framework in the community drives innovation and allows developers to try out multiple approaches and ideas to see what solution works best.
+
+Community members involved with Hyperledger Sawtooth also started two other closely related projects.  In 2018, Hyperledger Grid, a platform for building supply chain solutions that include distributed ledger components, was started. The Grid project was initially contributed by Cargill, Intel, and Bitwise IO. And in 2019, Hyperledger Transact, a shared software library that handles the execution of smart contracts, was formed, taking architectural elements from Hyperledger Sawtooth's transaction execution platform.
+
+Innovation in Hyperledger Sawtooth
+
+Hyperledger Sawtooth introduced several innovative features. It had a modular architecture designed to allow for flexibility in consensus algorithms, which enabled developers to tailor the blockchain to specific use cases. Sawtooth supported a variety of consensus algorithms, including Practical Byzantine Fault Tolerance (PBFT) and Proof of Elapsed Time (PoET). PoET introduced the use of Confidential Computing with blockchains. Confidential Computing is now found in a variety of blockchain projects around the globe and is now growing in its own Linux Foundation project.
+
+Sawtooth also supported smart contracts written in various languages, like Solidity, Go, and Python, making it accessible to developers with different skill sets. Sawtooth also focused on scalability by leveraging a unique mechanism called "Parallel Transaction Execution," allowing concurrent transaction processing.  
+
+The launch of Hyperledger Grid was the first attempt to enable specific use cases for a general-purpose DLT by providing reusable components for implementing blockchain-based supply chain solutions. In addition to supply chain use cases, Sawtooth was adopted in other types of solutions, including in Panini’s licensed digital collectibles product and the world's first fractional bond exchange, BondEvalue.
+
+Challenges and Move from Hyperledger Community
+
+Challenges with Sawtooth around complexity, competition with other blockchain platforms and issues with growing the number of contributors and maintainers led to the decision to end its journey as a Hyperledger project. However, unlike other projects we’ve covered in this Blockchain Pioneer series, development work on Sawtooth continues, in the Splinter community.
+
+The Linux Foundation model for hosting open source projects is to support maintainers and that can include helping them move their projects out of the Linux Foundation if the maintainers think there is a better home for their project. At the beginning of 2024, after rolling Transact back into the project, the Sawtooth maintainers made a request to the Technical Oversight Committee that development activity in the Hyperledger community be archived and that we direct people to the Splinter community. Hyperledger Grid was transferred to Splinter as well.
+
+To learn more about recent developments with these projects check out what is happening in the Splinter community, although note that the governance of the code may be under different terms than when it was hosted by the Hyperledger Foundation.
+
+Legacy
+
+Hyperledger Sawtooth, Transact, and Grid were all projects under the Hyperledger umbrella that helped to expand the scope of the community. The original vision for Hyperledger was to collaborate on just one blockchain platform. The addition of the Sawtooth project and then Hyperledger Iroha, which started six months after and is still an active project, helped drive an evolution towards a larger collaboration that brings more ideas and people into the community.
+
+We would like to thank all of the people who contributed to Hyperledger Sawtooth while it was an active project in the Hyperledger community. This includes: 
+
+	The top five contributors: Shawn T Amundson, Peter Schwarz, Andi Gunderson, Nick Drozd, and Zac Delventhal, as well as the more than 120 other developers who made a contribution to the project. We would also like to thank the 67 people who also contributed to Hyperledger Grid and Transact
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

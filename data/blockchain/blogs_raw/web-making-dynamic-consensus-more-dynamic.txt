@@ -1,0 +1,876 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Making Dynamic Consensus More Dynamic – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Making Dynamic Consensus More Dynamic
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Dec 11, 2018
+                    
+                
+
+            
+
+            
+            
+                In October 2017, the Hyperledger Sawtooth team started to implement a new consensus algorithm for Hyperledger Sawtooth. We wanted a voting-based algorithm with finality, which is very different from the Proof of Elapsed Time (PoET) consensus algorithm that has been closely associated with Hyperledger Sawtooth since its start. This project presented a number of challenges and opportunities.
+ 
+The greatest challenge in implementing this new consensus algorithm with Sawtooth was in breaking apart an architecture that has been heavily influenced by a lottery-based consensus algorithm with forking. A lot of refactoring and architectural work went into making both voting-based and lottery-based algorithms work well with Sawtooth.
+ 
+However, the opportunities that we discovered from this effort made overcoming these challenges more than worth it. We designed a new consensus API that simplifies the process of adding new consensus algorithms while continuing to support the existing PoET and Dev mode consensus algorithms. We completed the first prototype validator with consensus API support in July 2018. Since then, we have been able to implement two new voting-based consensus algorithms for the Hyperledger Sawtooth platform: Raft and PBFT.
+ 
+We are pleased to announce that the Sawtooth 1.1 release supports the new consensus API. This release also includes consensus SDKs to make it easier to implement new consensus algorithms.
+ 
+Consensus as a Process
+ 
+The new consensus architecture moves consensus functionality to a separate process, called a consensus engine, and provides an API for each consensus engine to interact with the validator.
+ 
+
+ 
+Moving the consensus functionality to a separate process allows consensus engines to be implemented in a variety of languages. Currently, SDKs are available for Python and Rust and have been used to create the consensus engines for PoET, PBFT, and Raft.
+ 
+Multi-language support is important beyond providing a choice for implementing a new consensus engine. This support makes it much easier to reuse existing implementations of consensus algorithms. For example, the Sawtooth Raft consensus engine is built on the pingcap/raft-rs library. We were able to easily integrate this well-regarded Raft library, which is itself a port from the widely-used etcd Raft library.
+ 
+As SDKs for additional languages are built on top of the consensus API, it will be possible to add more and more consensus algorithms into Hyperledger Sawtooth. For example, a consensus SDK for Go would bring existing implementations such as Hyperledger Labs’ MinBFT one step closer to being compatible with Sawtooth.
+ 
+Driving the Blockchain with a Consensus Engine
+ 
+The consensus API is centered around a new consensus engine abstraction that handles consensus-specific functionality. A consensus engine is a separate process that interacts with the validator through the consensus API using protobuf messages and ZMQ.
+ 
+The role of a consensus engine is to advance the blockchain by creating new blocks and deciding which blocks should be committed. Specifically, a consensus engine must accomplish the following tasks:
+ 
+	Determine consensus-related messages to send to peers
+	Send commands to progress the blockchain
+	React to updates from the validator
+
+ 
+The validator continues to handle the mechanics of validation, communication, and storage for blocks, batches, and transactions. The validator must perform these tasks:
+ 
+	Validate the integrity of blocks, batches, and transactions
+	Validate the signatures for blocks, batches, transactions, and messages
+	Gossip blocks, batches, and transactions
+	Handle the mechanics of block creation and storage
+	Manage the chain head directly
+
+ 
+New Consensus API and SDKs
+ 
+The validator exposes the API for consensus engines as a set of protobuf messages sent over a network interface. This API is split into two types of interactions:
+ 
+	Service: A pair of (request, response) messages that allow a consensus engine to send commands to the validator and receive information back. For example, a consensus engine can instruct the validator to commit a block or request an on-chain setting from a specific block. Services are synchronous and on-demand.
+	Updates: Information that the validator sends to a consensus engine, such as the arrival of a new block or receipt of a new consensus message from a peer. Updates are sent asynchronously as they occur.
+
+ 
+Although you could use the API directly to implement a new consensus engine, the recommended interface is a consensus SDK. The SDK provides several useful classes that make it easier to implement a consensus engine. Sawtooth currently provides consensus SDKs for Python and Rust. We have used these SDKs to create the consensus engines for the PoET engine (Python), PBFT engine (Rust), and Raft engine (Rust).
+ 
+These SDKs have a consistent design with an abstract Engine class, an engine Driver, and a validator Service. The abstract Engine class provides a clear starting point for new consensus engine implementations. If you plan to write your own consensus SDK, we recommend conforming to this design.
+ 
+Try it Today!
+ 
+One of the most important decisions for a distributed ledger application is the choice of consensus. By opening up this interface, we hope that each application built on Hyperledger Sawtooth can select the consensus algorithm that suits it best.
+ 
+	To check out the new Sawtooth consensus engines, please see sawtooth-raft and sawtooth-pbft.
+	For design information, take a look at the Consensus Engine API RFC.
+	To get started writing your own consensus engine, see the Python Consensus SDK or Rust Consensus SDK.
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

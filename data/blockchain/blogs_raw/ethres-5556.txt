@@ -1,0 +1,256 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Continuous VDFs for random beacons - Sharding - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Continuous VDFs for random beacons
+    
+
+
+      
+          
+            
+              
+              
+                Sharding
+              
+            
+            
+
+
+
+        
+            random-number-generator
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                MihailoBjelic
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 4, 2019,  9:13pm
+                  
+                  
+
+1
+              
+            
+            
+              Cornell researchers have proposed Continuous VDFs.
+
+In a nutshell (if I understood everything right ), continuous VDF enable efficient verification of “sequences of VDFs”, which was not possible before.
+
+The authors demonstrate three potential applications, the most interesting one probably being the construction of public randomness beacons that only require an initial random seed (and no further unpredictable sources of randomness).
+
+Was wondering if someone looked into this in the context of blockains/beacon chains…
+
+https://eprint.iacr.org/2019/619
+
+cc @JustinDrake
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 6, 2019,  7:36am
+                  
+                  
+
+2
+              
+            
+            
+              
+
+
+
+ MihailoBjelic:
+
+
+public randomness beacons that only require an initial random seed (and no further unpredictable sources of randomness)
+
+
+
+
+If true this would be huge. Unfortunately, IMO their statement is at best very misleading. The authors have burried a critical caveat in footnote 2:
+
+
+we can only guarantee that the (\epsilon \cdot t)-th value into the future is unpredictable
+
+
+
+So basically an attacker with non-zero speed advantage relative to honest players has linearly growing lookahead over time. This makes their construction non-practical for any application I can think of. Moreover, such an “eventually unpredictable” randomness beacon can trivially be built using a non-continuous VDF, especially in the context of blockchains where we have light clients.
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                gokulsan
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 7, 2020,  8:53am
+                  
+                  
+
+3
+              
+            
+            
+              Hi @JustinDrake Nice to see your succinct and sharp reviews on Continuous VDF. Can we construct a continuous VDF with recursive SNARKs with multi-exponentiation provers such that it can reduce the chance of linearly growing lookahead over time for verification. Please correct me if my inputs are misplaced.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

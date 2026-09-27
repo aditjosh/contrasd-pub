@@ -1,0 +1,193 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+General purpose Oracle smart contract - Miscellaneous - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      General purpose Oracle smart contract
+    
+
+
+      
+          
+            
+              
+              
+                Miscellaneous
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                Econymous
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 25, 2020,  1:16pm
+                  
+                  
+
+1
+              
+            
+            
+              I’ve tested and modified the code since I’ve done this video, but the idea is still the same.
+
+Tokens are deposited into the contract, used to vote on oracle configurations (Fees, punishments and such) and also used to back different watchers (oracle verifiers)
+
+	A request ticket is filed (query string, data type,  “is it subjective?” boolean)
+	Watchers commit a secret vote
+	Watchers reveal their vote
+	If the request ticket is subjective, watchers go through a “attacking phase” for outliers
+	In finalize request ticket votes are counted up and rewards distributed.
+
+
+
+  
+      
+
+      Pastebin
+  
+
+  
+    
+
+Oracle.sol - Pastebin.com
+
+
+  Pastebin.com is the number one paste tool since 2002. Pastebin is a website where you can store text online for a set period of time.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

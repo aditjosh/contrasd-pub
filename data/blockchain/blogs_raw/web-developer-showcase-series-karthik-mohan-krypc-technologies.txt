@@ -1,0 +1,871 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer showcase series: Karthik Mohan, KrypC Technologies – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Developer Showcase
+                            
+                        
+                    
+
+                
+                Developer showcase series: Karthik Mohan, KrypC Technologies
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jul 21, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is Karthik Mohan, Enterprise Blockchain Research Engineer at KrypC Technologies.
+ 
+Give a bit of background on what you’re working on and how you got into blockchain
+ 
+At KrypC, I work on the development of the KrypCore Blockchain as a Service Product Suite. This suit extends our KrypCore Product, which is a designer studio built over Hyperledger Fabric for network, chaincode and fabric component management. I am responsible for the managed services that are provided through two different channels in the market. 
+ 
+KrypCore Managed Services uses our in-house deployer tool “BaaS Central” to create managed clusters in multiple cloud environments along with other storage and key management services. KrypCore Managed Services provides on-demand network expansion by providing features to add and run setup for organisations and to add peers to existing networks. I handle the research, design and development of everything under the managed services category.
+ 
+I learned a lot during the design and development of our managed services and still continue to learn as cloud native development of blockchain systems, especially Hyperledger Fabric, is still a long way from being perfect.
+ 
+The second channel of managed services is provided via Azure Marketplace in the form of Infrastructure as Code. I have been part of this research and implementation activity over the last six months and have worked on different cloud environments and marketplaces in this period. Cloud marketplaces are a great way to understand which model appeals to actual consumers. 
+ 
+I took a liking to blockchain while I was with IBM as the concept of decentralization and a tool that enables it in such scale seemed fascinating. I read blockchain content available online and took mentorship programmes during my free time. All the effort I put in during this phase of my career has helped me become a very productive developer in this technology. 
+ 
+What Hyperledger frameworks or tools are you using in your projects? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+We work with Hyperledger Fabric and Hyperledger Fabric SDK Go. We have done our fair share of research and development with Hyperledger Explorer, Cello and Caliper as well. 
+ 
+Hyperledger Fabric essentially is the bespoke enterprise blockchain protocol. We are able to build multiple use cases of varying complexities in a short amount of time, and we see a solid roadmap being laid out for its development by the community. These are all encouraging signs for anyone to start developing with Hyperledger. At the start, we advocated using Hyperledger projects for enterprise use cases. Now, as the projects have matured, we are observing the market preferring Hyperledger projects over others without any nudge in that direction from us. Overall, the experience has been great, and the community for Hyperledger is very active. It’s great to be a developer.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+Interoperability with public blockchain protocols where a set of few keys and their read-write information can be transcribed to become available as public information would go a long way in helping present Hyperledger Fabric as the baseline blockchain framework. If this could come as a native feature, it would be very beneficial. Better monitoring and analytics capability on Fabric’s infrastructure and transactions is another important milestone for the community to focus on for the next year.
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+Understand the infrastructure needed for the blockchain systems to function in early stages of learning. Each protocol comes with its own trade-offs so understanding the underlying infrastructure helps paint a picture in your mind regarding the architecture, transaction flow and applicability of those protocols to your use case.
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+Public transit could be the gateway for blockchain to enter everyday lives of the population. This use case could mean that the commuters won’t have to deal with poor treatment when they resort to public transportation. A blockchain-based solution could deliver greater visibility of transportation availability, maintenance schedule and transit equality. A token-based payments and incentive system could further the green cause.
+ 
+Where do you hope to see Hyperledger and/or blockchain in five years?
+ 
+I hope to see blockchain systems in smart cities governing public transit in the next five years and then moving onto becoming an all encompassing nervous system for our future metropolises. 
+ 
+Hyperledger could grow much further by incubating more supplementary projects that enhance the distributed ledgers that have seen large-scale mainstream adoption. The improving support system for the DLTs will drive the enterprise blockchain economy with a clear view of return on investment in a shorter period of time.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+Leave the code cleaner than you found it!
+ 
+What technology could you not live without?
+ 
+An Android Smartphone – data at your fingertips.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,839 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Building an EVM for Bitcoin - EVM - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Building an EVM for Bitcoin
+    
+
+
+      
+          
+            
+              
+              
+                EVM
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                punk3700
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    April 24, 2023,  5:15pm
+                  
+                  
+
+1
+              
+            
+            
+              Our team has been working on a fun experiment of combining an EVM with Bitcoin in the last couple of months.  Since the Taproot Upgrade, we can write more data onto Bitcoin.  Ordinals was the first one that let people write files onto Bitcoin.  We took a different approach.  Instead of jpegs and text files, we let developers deploy smart contracts and dapps onto Bitcoin.
+
+So now we can write “bigger” smart contracts thanks to the large on-chain storage on Bitcoin.  Did anyone explore this direction?  Would love to exchange notes.
+
+
+
+pasted image 01138×1600 81.3 KB
+
+
+
+
+  
+      
+
+      docs.trustless.computer
+  
+
+  
+    
+
+
+Architecture
+
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+7 Likes
+            
+
+            
+                
+
+            
+              
+                bsanchez1998
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 24, 2023,  5:31pm
+                  
+                  
+
+2
+              
+            
+            
+              This is really interesting. What stage are you in? I think building the UI will be a challenge for sure. When I tried to invest in Ordinals, setting up sparrow and having to read the docs to do it and the risks just made it seem like a nightmare if it were to be introduced to the masses, it just would not take as is. I am curious about your take on how you’re approaching this issue.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                punk3700
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    April 24, 2023,  6:13pm
+                  
+                  
+
+3
+              
+            
+            
+              The protocol is live.  There are already some sample dapps on Bitcoin (written in Solidity).  These dapps are super easy to use.  You can even use MetaMask to interact with these dapps.
+
+
+  
+      
+
+      trustless.computer
+  
+
+  
+    
+
+
+Trustless Computer
+
+
+  Write smart contracts & build dapps on Bitcoin
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                BitcoinEvm
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 27, 2023,  2:24am
+                  
+                  
+
+5
+              
+            
+            
+              This has already been accomplished over a year ago & been stress tested.
+
+
+  
+      
+
+      bitcoinevm.com
+  
+
+  
+    
+
+Bitcoin Evm – BTC Ethereum Virtual Machine
+
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+Enjoy!
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                BitcoinEvm
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 27, 2023,  2:30am
+                  
+                  
+
+6
+              
+            
+            
+              Bitcoin nft marketplace https://crosschainasset.com
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                BitcoinEvm
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 27, 2023,  2:31am
+                  
+                  
+
+7
+              
+            
+            
+              Bitcoin decentralized swap https://BTCswap.org you can swap using Bitcoin with extremely low fees.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                bsanchez1998
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 27, 2023,  8:12pm
+                  
+                  
+
+8
+              
+            
+            
+              Oh okay awesome. Super interesting, I am excited to see where it goes!
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                LuozhuZhang
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023, 12:22am
+                  
+                  
+
+9
+              
+            
+            
+              Can I understand that you run an “off-chain” EVM and write the states of the transaction results to the Bitcoin blockchain ledger?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                punk3700
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023,  1:17am
+                  
+                  
+
+10
+              
+            
+            
+              Hello.  Each Trustless Computer node batches & writes EVM transactions to Bitcoin.  The other Trustless Computer nodes read the EVM transactions from Bitcoin and update the “state” locally.  So it inherits Bitcoin consensus & security.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                punk3700
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023,  1:17am
+                  
+                  
+
+11
+              
+            
+            
+              Hello.  Will study it more.  Looks interesting.  Thank you for sharing!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023, 11:51am
+                  
+                  
+
+12
+              
+            
+            
+              
+
+
+
+ punk3700:
+
+
+Each Trustless Computer node batches & writes EVM transactions to Bitcoin. The other Trustless Computer nodes read the EVM transactions from Bitcoin and update the “state” locally. So it inherits Bitcoin consensus & security.
+
+
+
+
+How do you deal with clients diverging if there aren’t regular state updates that are agreed to via some consensus mechanism that the network can synchcronize on?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                punk3700
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023,  2:42pm
+                  
+                  
+
+13
+              
+            
+            
+              The consensus mechanism is actually the Bitcoin consensus mechanism.  Trustless Computer inherits Bitcoin security.  Trustless Computer nodes agree on the ordering of the EVM transactions written to each Bitcoin block.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023,  5:14pm
+                  
+                  
+
+14
+              
+            
+            
+              Agreeing on transaction order alone is great in a hypothetical world where all software does exactly what it was supposed to do rather than what it was programmed to do.  The reason Ethereum includes the latest state root in the block header is to allow clients to synchronize on what the current state is so if any individual client has a bug or corrupted data it can immediately notice that it disagrees with the network and people can troubleshoot the problem.
+
+Today I learned that Bitcoin doesn’t do this!  This feels crazy to me, but perhaps it is acceptable in the Bitcoin world because there is functionally only one client so the chance of desync is low (but not zero!).
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 1, 2023, 11:35am
+                  
+                  
+
+15
+              
+            
+            
+              So its basically merged mining. The blocks of the other chain are posted on Bitcoin and Bitcoin serves as a ledger that orders transactions.
+
+Which mechanism do you use to transfer actual bitcoins into this chain ?) Also, how do you incentivize mining - do you have a separate token ?))
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                tycho1212
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 1, 2023,  7:08pm
+                  
+                  
+
+16
+              
+            
+            
+              I’m very interested in the response to this question 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Zergity
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 15, 2023,  1:45am
+                  
+                  
+
+17
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+The reason Ethereum includes the latest state root in the block header is to allow clients to synchronize on what the current state is so if any individual client has a bug or corrupted data it can immediately notice that it disagrees with the network and people can troubleshoot the problem.
+
+
+
+
+I think the latest state root in the block header is mainly for state proofs, as client synchronization can easily be done via P2P messages between clients.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                zilayo
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 7, 2023, 10:08pm
+                  
+                  
+
+18
+              
+            
+            
+              has there been any further progress on this?
+
+it seems like taproot related stuff has became really popular this year (ordinals in particular)
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SilkE
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 8, 2023,  9:25am
+                  
+                  
+
+19
+              
+            
+            
+              What is the tps potential here? Anything that promotes more activity on Bitcoin is always worth exploring. Only concern is scalability compared to the likes of Solana and even Monad coming to ETH
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

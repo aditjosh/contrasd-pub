@@ -1,0 +1,861 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How Hyperledger Besu Will Help Solve the Pharmaceutical Waste Problem in the U.S. – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Besu
+                            |
+                        
+                            Health and Public Sector
+                            
+                        
+                    
+
+                
+                How Hyperledger Besu Will Help Solve the Pharmaceutical Waste Problem in the U.S.
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jan 28, 2020
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                 The problem of surplus medication is getting increasingly serious. Each year, tons of prescription drugs remain unused in clinics, assisted living facilities, and at individual patients’ homes. Often, the law demands that any unused medications be destroyed, which results in a whole complex set of problems. 
+ 
+On the one hand, about $2 billion worth of prescription drugs are wasted every year. On the other hand, one in every three Americans cannot afford their prescribed medications due to the high cost or absence of medical insurance. At the same time, there is no unified procedure for using surplus medications and making them available to those who need it. 
+ 
+Another issue to consider in this context is the cost of unused drug disposal, which can be around $1.25 per pound. The rules require that unused drugs be disposed of through incineration that creates additional environmental concerns. 
+ 
+The obvious solution to this complex problem is establishing a mechanism for returning the unused medications and offering them to patients who need them. In fact, the drug donation and reuse programs have been researched for more than twenty years, but only 38 states have passed laws on drug reuse as of now. 
+ 
+At the same time, the implementation of these laws gives hope that the multi-faceted problem of surplus drugs can be resolved. However, to achieve true effectiveness and prevent misuse, such programs need to take into account many practical aspects: 
+ 
+– Control over the donated drugs’ quality and expiration. Of course, to be accepted, drugs must be unexpired and their packaging must be intact. 
+ 
+– Motivation for pharmacies to act as drug acceptance facilities. Participation in the drug donation program has its costs, which pharmacies are not too eager to bear. 
+ 
+– Motivation for clinics and patients to donate unused drugs. The law prohibits selling medications, thus, their owners should be motivated in a different way. 
+ 
+– Data security. Medication-related data is highly sensitive and needs special protection from unauthorized access. 
+ 
+How technology can help 
+ 
+Our experience with blockchain and distributed applications proves that these technologies can become the core of an effective and secure platform for unused drug donation and redistribution. It resolves the problems of data security and traceability and can help to automate a number of processes. 
+ 
+Together with the Save Pharmaceutical project, Adoriasoft is now building a blockchain-based platform to join drug donors (clinics, assisted living facilities, individual persons), drug repositories (pharmacies), and patients. The solution will be a multi-functional product allowing donors to donate the medications they do not need, and pharmacies to approve or reject the donations and, ultimately, to provide them to patients. 
+ 
+We are using Hyperledger Besu as the base technology for this project. By choosing Hyperledger Besu, we plan to leverage the benefits of the protocol to enable transaction processing. Furthermore, we see Hyperledger Besu as a platform for building a permissioned enterprise-scale network to serve the drug repository system. 
+ 
+In view of the high sensitivity of healthcare data that is going to be exchanged in the network, the transactions will be processed via smart contracts executed on Hyperledger Besu. Only the parties directly involved in the transaction will have access to its details. 
+ 
+At the same time, blockchain provides the means of controlling the entire transaction flow from the drug donation by the owner to its final assignment to the patient. The platform will include a mechanism of monitoring the pharmacy income from reselling the donated drugs and distributing it among the other participants. 
+ 
+Since the law explicitly prohibits donors from demanding payment for the drugs they donate, there should be other methods of motivating them to participate in the program. The state laws establish a tax deduction for drug donation, but our product can include an additional compensation in the form of a tradable digital token. 
+ 
+The tokens issued on the blockchain can be used towards a discount on the platform or exchanged for other assets. The same tokens can be issued to pharmacies, too, to attract them to the program. 
+ 
+Blockchain-based drug repository networks are going to be a true quantum leap in the healthcare industry, on the one hand, bringing significant cost savings, and, on the other hand, making medications accessible to patients who were otherwise unable to purchase them. We are proud to be a part of a project of such a social impact and to make the knowledge accumulated by the Hyperledger community serve this noble cause. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,890 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Spotlighting #HyperledgerWomen: Stories from front lines of community building—Elli Androulaki, IBM Research
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Community
+                            |
+                        
+                            Hyperledger Fabric
+                            
+                        
+                    
+
+                
+                Spotlighting #HyperledgerWomen: Stories from front lines of community building—Elli Androulaki, IBM Research
+ 
+                
+                    Hyperledger Foundation
+                    |
+                    
+                        Aug 16, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                To celebrate #HyperledgerWomen and their contributions to our community, we are asking a cross section of the many women leaders in our community to share stories about their careers, what brought them to the blockchain space, what projects they’re excited about and advice they’ve received or have to share. In this series, we will share stories from a diverse group of #HyperledgerWomen who are driving progress in our community, and in the industry at large.
+
+Today, we hear from Elli Androulaki, IBM Distinguished Engineer at IBM Research.
+
+You have an extensive background in academic cryptography. How did you move into the blockchain space from there?
+
+Yes indeed; my PhD was on privacy for e-commerce processes and surrounding systems. That is from management of individuals’ bank account balances in a taxable way to physical product delivery and reputation systems on top, all enabling anonymity of customers and ensuring security of transactions along the way. 
+
+In 2011, after my PhD completion and during my postdoc at ETHZ, my research interests naturally led into investigating Bitcoin security and privacy, where I co-authored the first security attack on Bitcoin. When I joined IBM, and with a good understanding on blockchain systems, I participated in internal promotions of the Blockchain for Business concept. I soon  became the lead security and privacy architect of the platform with regards to  IBM’s contributions to Hyperledger. I believe you know the rest :) 
+
+What do you think are the most exciting new technologies or developments in blockchain (or general cryptography) that you think will have a large practical impact in the next few years?
+
+Zero Knowledge Proofs are an important tool allowing the combination of privacy (sensitive data only being made available on the users involved in a transaction), and transparency in settlement (everyone can verify that a transaction complies with the value preservation and ownership authorization of asset management rules). This is immensely important for protecting individual privacy in payments or enterprise privacy in transactions, while ensuring transparent processing increases levels of security and interoperability.
+
+Secure Multiparty computation is another cryptographic primitive that, for specific use cases, can allow for efficient computation of multi domain private data, with guarantees against quantum-computers.
+
+What is your favorite paper posted to eprint this calendar year (2023)?
+
+The one we will post in a month from now, allowing Hyperledger Fabric to process payment transactions with full decentralization in place and a throughput of more than > 80K TPS!
+
+What is something that you and your team are working on that you think will have lasting market impact?
+
+Combining privacy with regulation compliance and strong accountability in payments / financial asset transfer in a highly resilient and performant manner is one of them. 
+
+This work lends itself well to critical infrastructure systems like central bank digital currency systems. Such systems not only require privacy combined with strong accountability, but also high availability and resilience to all sorts of cyber or insider attacks. Notice that the incentive of an attacker in this case would not be to solely “steal money,” but to hurt the credibility of the central bank and its currency as a whole, impacting the corresponding economy.
+
+How (if at all) has working in research helped or prepared you for working in the open source world?
+
+Working in research, and at IBM Research in particular, has surely influenced my work in the open source world. IBM has been a strong open source player for a long time, and I was in particular exposed to open source via my interaction with the IBM Blockchain unit, with the donation of the Open Blockchain (later known as Hyperledger Fabric) code base to Hyperledger. Because blockchain’s value differentiation is around distribution of trust, its success is strongly entangled to  ecosystem-building and open source. 
+
+What has your experience as a researcher in the Hyperledger community been like?
+
+It is quite fascinating to see how many projects are part of the Hyperledger ecosystem.any of them incarnate technologies that we have been doing research on for quite some time, making multiple steps to the practical use of such technologies. Of course, this is a reflection of what is happening to the entire blockchain ecosystem, where we see lots of secure hardware, advanced cryptography, and consensus algorithms getting together to move the needle of the state of the art of practical and secure systems quite quickly.
+
+Why do you believe blockchain technology is important?
+
+Enterprise blockchain or distributed ledger technology allows for a few enterprise properties that, in  combination, bring value to the enterprise world. These are 
+
+	Transparency of the transaction processing (important from security point of view since one can detect errors and set parties accountable, but equally important tool for interoperation)
+	Transparency of the way system evolves / is governed (important from security point of view since one can detect fraud and  hold governing parties accountable)
+	Accountability of all parties involved (consumers and transaction processors) to ensure that nobody is able to repudiate what they have submitted into the system
+	Resilience of the operation of the system to compromise (the system can sufficiently well tolerate a few compromised nodes without being broken), which is important for critical infrastructure
+	Extensible transaction processing logic as the system can be easily extended to accommodate different transaction types or rules (smart contracts)
+
+
+In addition to these features, Hyperledger Fabric adds high throughput and configurable governance mechanisms, allowing the use of the system for critical infrastructure regardless of whether it employs centralised (or decentralised) governance. A good example of such use cases is Central Bank Digital Currencies, or tokenized deposits, an area the team at IBM  and I are working on.
+
+Privacy on blockchain is an extremely important issue. What work (that you or others are doing) do you like that is currently addressing this?
+
+Privacy is very important indeed. It’s critical for both enterprise data and individual data that are processed via a blockchain-based system. We have been working on bringing together privacy and transparency in settlement use cases (e.g., central bank digital currencies, or tokenized deposits) while at the same time offering secure audit support capabilities and accountability properties (much in compliance to regulation). We have shared academic outcomes of this work at scientific conferences, but we have also implemented a simplified version of these protocols in Hyperledger Labs Token SDK, leading them to be integrated into recent Central Bank Digital Currency projects.  
+
+What has your experience been like as a woman in the blockchain and tech sectors?
+
+I have been privileged to be employed by a company with a highly inclusive and equitable culture, which has been a key in bringing out the best of me. I am a mother of two kids, including a toddler, and my employer and colleagues have been supportive and accommodating of my responsibilities as a (young) parent. Yes, there have been moments in my career where I felt people would be biased in a conversation, but I have always felt that technical arguments speak for themselves. Hence, I always worked to get to those and keep myself on a safe and successful path forward.
+
+What advice do you have for women interested in cryptography or blockchain?
+
+Be confident of your ideas and point of view. Be focused, be persistent and focus on technical argumentation in the discussion. Be mindful of where the industry goes. See how one can bridge the gap between theoretical designs and practical deployments.
+
+What was the best advice someone gave you?
+
+I have received multiple equally good pieces of advice. I'll mention one that goes in the direction of how to integrate constructive feedback and move forward: “Consider not spending your energy defending a mistake/bad outcome, but mostly understanding why it happened, and see how to move forward from there.” :) 
+
+__
+
+For more stories on women making their mark in the Cryptography space, join the RISE (Research Insights and Stories for Enlightenment) events happening throughout Crypto 2023 in Santa Barbara, California, on August 19-24, 2023. Hyperledger Foundation is proud to be the event sponsor for RISE.
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

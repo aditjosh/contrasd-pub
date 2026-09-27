@@ -1,0 +1,96 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Thomas Brooke, Brooke and Brooke Attorneys – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer Showcase Series: Thomas Brooke, Brooke and Brooke Attorneys – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | May 30, 2018 9:00:05 AM 
+        
+
+        
+          Image: Thomas Brooke, Brooke and Brooke Attorneys
+ 
+Next up in our Developer Showcase blog series is Thomas Brooke from Brooke and Brooke Attorneys. This blog series serves to highlight the work and motivations of developers, users and researchers collaborating on Hyperledger’s projects. Let’s see what Thomas has to say!
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+There is so much information out there and it is changing so rapidly that I would recommend keeping an open mind. It is impossible to tell what the blockchain ecosystem will look like even a year from now not to mention five years from now. With that being said I think I would pick a platform and build a project with blockchain technology or just play with it to get a feel of actually working with it. There is so much hype and conflicting opinions now and I think the best way to get a clear picture of the technology is to use it some way and see what it can do as opposed to what it might do.
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+I am a practicing lawyer and a part time developer. I am very involved in the legal hacker movement and, no we do not hack into bank accounts or email accounts. We are an International group of lawyers interested in change, technology and ways to improve law. We want to “hack” law to make it better. This naturally lead me to look at “smart Contracts”, blockchain and Hyperledger. 
+ 
+What project in Hyperledger are you working on? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+I am actually working on two projects. The first is the Cicero Project where I am volunteering in the technology workgroup. Cicero is a smart contract platform that allows legally enforceable contract language to be bound to executable business logic.
+ 
+Cicero uses Hyperledger Composer and currently works with Hyperledger Fabric, both of which are currently in the Hyperledger project. To create a smart contract with Cicero you create a model of the relevant concepts, assets, and participants in the contract using Composer’s model language. The clause or contract is the text of the legal contract that works with the model and the business logic is currently encoded in javascript. As Cicero matures the team will develop a domain specific language for describing legal contracts.
+ 
+A complete contract or Clause as it is known in Cicero can then be used as a template to create an instance of the contract that can be executed in conjunction with a blockchain such as Hyperledger Fabric or in conjunction with an API call to another resource. Cicero clauses can interact with the internet of things, web services or blockchains to create dynamic contracts that can automatically respond to changing conditions.
+ 
+The second project I am working is a smaller scale project where we are making a a token based barter system for Main Street Mission a Food Pantry located in China Grove, North Carolina, my hometown. We are developing it using Hyperledger Fabric and Hyperledger Composer. China Grove was a town that was hit hard when the local cotton mills closed and even though that was several years ago it still has not recovered. Main Street Mission has been in existence for about 10 years and it currently gives out food several days a week to about 350 households per month.
+ 
+At Main Street Mission we are changing our method of operation and we are creating a more empowering system that uses tokens to create a shopping experience for our neighbors. We are using design thinking to actively involve our community in developing our new system. In our plan, people can earn tokens by participating in one of our classes or by helping at the mission. They will be able to spend their tokens on food from the pantry and participants will be able to exchange tokens with one another for food and services. We hope to create a small barter economy based on our tokens or Barts as we call them. We do not need the multiple peers or a sophisticated consensus system but the tools provided by Hyperledger Fabric and Composer are well designed and approachable, even for a small project like ours.
+ 
+While blockchain has obvious advantages in large exchanges and supply chains I believe that the real test for a new technology is how well it can scale downward to help everybody. I recently gave a talk about blockchain and at the end someone asked; “This all sounds great but how is this going to help the small guy, the person with a mom and pop store.” One of our goals at Main Street Mission is to find out.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+Simplifying blockchain to make it usable across a wide spectrum of use cases.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+My developer hero is Rich Hickey, the developer of Clojure. One of his more famous quotes is:
+ 
+”Simplicity is hard work. But, there’s a huge payoff. The person who has a genuinely simpler system – a system made out of genuinely simple parts, is going to be able to affect the greatest change with the least work. He’s going to kick your ass. He’s gonna spend more time simplifying things up front and in the long haul he’s gonna wipe the plate with you because he’ll have that ability to change things when you’re struggling to push elephants around.”
+ 
+https://hvops.com/articles/simplicity-is-key/
+ 
+What technology could you not live without?
+ 
+My MacBook
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

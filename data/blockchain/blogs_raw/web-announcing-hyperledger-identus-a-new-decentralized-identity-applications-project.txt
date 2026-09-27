@@ -1,0 +1,894 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Announcing Hyperledger Identus, a new decentralized identity applications project
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Decentralized Identity
+                            |
+                        
+                            Hyperledger Identus
+                            
+                        
+                    
+
+                
+                Announcing Hyperledger Identus, a new decentralized identity applications project
+ 
+                
+                    Peter Vielhaber, Hyperledger Identus Contributor
+                    |
+                    
+                        May 22, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                We are thrilled to share the latest addition to the Hyperledger family - Hyperledger Identus. The Atala team at IOG contributed this code base to Hyperledger Labs as Open Enterprise Agent in October 2023 and has since been working to grow a vibrant open source community to support it. We are pleased to announce that Identus has now been accepted as a Hyperledger project and has moved into Incubation status.
+
+
+What is Hyperledger Identus?
+
+Hyperledger Identus is a platform designed for businesses of all sizes that aim to incorporate decentralized identity into their applications. It offers extensive Self-Sovereign Identity (SSI) support built on the W3C Decentralized Identity specification including DID and verifiable credential functionality and simplifies the complexities of adopting a decentralized identity solution into existing and new workflows. With Identus, businesses can confidently integrate and quickly build and deploy decentralized identity applications. It is a powerful tool for companies that want to stay ahead of the curve and take advantage of the benefits of decentralized identity.
+
+Advancing the Hyperledger Decentralized Identity Ecosystem
+
+Hyperledger Identus is a project focused on decentralized identity. It shares some features with Hyperledger Aries, but it was developed independently. While it incorporates some Aries protocols, it currently does not work with Hyperledger Aries due to a difference in the DIDComm protocol version.
+
+Identus uses the AnonCreds open specification, which aligns with the Hyperledger AnonCreds project. It currently uses the Cardano blockchain for its Verifiable Data Registry (VDR). 
+
+As part of the Hyperledger project landscape, Identus aims to advance the collaborative adoption and improvement of decentralized identity technologies.
+
+Features
+
+	Complete DID operations
+	Verifiable credentials
+	Issuance, updating, and revocation supporting the following formats:
+	Hyperledger AnonCreds
+	JWT
+
+
+
+
+
+
+	Cloud Agent:
+	A Scala-written agent compliant with Aries/W3C standards, featuring multi-tenancy support, DIDComm V2, HTTP events notification, and Cardano ledger integration. It also supports W3C-compliant DID methods, credential management (JWT and Anoncreds), and secrets management via Hashicorp Vault.
+
+
+
+	Edge Agent SDKs (wallets)
+	Identus offers three software development kits (SDKs) that simplify creating wallet applications for various platforms and programming languages. While each SDK provides core features like cryptographic operations, DID management, verifiable credential handling, and secure peer-to-peer communication with DIDComm V2 messaging, they are customized to suit specific platforms so developers can incorporate wallet functionalities into their applications, regardless of their technology stack.
+	TypeScript is for web-based applications. This SDK targets Browser and NodeJS applications.
+	KMM targets Android and JVM-based systems and supports Android API level 21+, Kotlin 1.9.22+, and JVM 17+.
+	Swift is for Apple platforms, including iOS and MacOS. This SDK is compatible with iOS 15+, MacOS 12+, and Xcode 13.4+.
+
+
+
+
+
+
+	DIDComm v2 Mediators:
+	A decentralized communication protocol enabling secure and private messaging via DIDComm v2. It supports BasicMessage 2.0 and MediatorCoordination 2.0.
+
+
+
+
+
+How does it work?
+
+Hyperledger Identus is a decentralized identity management platform written in Scala programming language. However, the platform’s OpenAPI interface allows developers to use any programming language for application development. The platform has a modular architecture, which has interchangeable components that allow for easy customization and scalability. This modular architecture enables developers to create tailored solutions that fit specific business needs, making Hyperledger Identus a highly versatile and powerful platform for identity management.
+
+How can I get involved?
+
+Now, as a Hyperledger project, Identus will continue to have the support of the IOG Atala team, which is committed to continuing to contribute new features and growing the developer community. But, importantly, it will also have the expertise and visibility of the Hyperledger community. 
+
+We encourage the community to get involved and contribute to the project. There are many areas to contribute across different skill sets. It’s easy to get the source code on GitHub and start today! To get in touch with the maintainers, contributors, and community working on Identus, join the Identus channels on Hyperledger’s Discord. We would love to hear from you during our open community calls! Please check our public calendar for the most up-to-date schedule and joining information.
+
+You are also welcome to join an online meetup to learn more about Hyperledger Identus on Wednesday, June 5, 8:00 AM Pacific. Sign up for the event to get dial-in details.
+
+ 
+
+
+
+ 
+
+We are excited to be on this journey as part of the Hyperledger community. Join us in working on accelerating the development and adoption of Hyperledger Identus. We hope to see you on the journey! 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

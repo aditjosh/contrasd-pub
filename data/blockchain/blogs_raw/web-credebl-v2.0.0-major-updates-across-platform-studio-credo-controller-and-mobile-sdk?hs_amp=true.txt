@@ -1,0 +1,119 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREDEBL v2.0.0: Major Updates Across Platform, Studio, Credo-Controller, and Mobile SDK
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          CREDEBL v2.0.0: Major Updates Across Platform, Studio, Credo-Controller, and Mobile SDK
+
+        
+
+        
+           Written by Ajay Jadhav, CREDEBL Maintainer | Mar 26, 2025 1:00:00 PM 
+        
+
+        
+          We are excited to announce the release of CREDEBL v2.0.0, the first major update as an LF Decentralized Trust project. The new version is packed with significant enhancements, new features, and crucial fixes across our Platform, Studio, Credo-Controller, and Mobile SDK. This release improves security, functionality, and user experience while ensuring seamless integration with emerging technologies. Here’s what’s new:
+
+1. Platform
+
+Key Features:
+
+	API Versioning: VerificationService and Send Proof-Request API now support versioning, ensuring future compatibility and scalability.
+	Improved Messaging: Users will now receive more concise error messages when retrieving all proofs, aiding troubleshooting.
+	Purpose Property in Proof Requests: A new purpose property has been introduced for more specific and detailed proof submissions.
+	Schema Archival for Deleted Wallets: Enhancing data management by supporting schema archival.
+	Advanced Monitoring & Logging: ELK (Elasticsearch, Logstash, Kibana) integration improves system observability.
+	Enhanced Message Processing: A global NATS interceptor is implemented to streamline message interception across services.
+	Refined Organization Data Retrieval: orgdid is now included in the getOrganizations() response.
+	Security Upgrades: OpenSSL installation support added for Docker images.
+	OSSF Scorecard Integration: Ensuring open-source security best practices.
+
+
+Learn more here.
+
+2. Studio
+
+Key Features:
+
+	Multiple Connection Selection: Users can now select multiple connections for proof requests.
+	Enhanced Security Measures: Strengthened security across the platform.
+	UI/UX Improvements: Fixes include schema details display, UI mis-alignment corrections, and better error handling.
+	Updated Pipeline Variables: Enhancing configurability and deployment efficiency.
+	Landing Page & Schema Card Refinements: Improving overall user experience.
+
+
+Learn more here.
+
+3. Credo-Controller
+
+Key Features:
+
+	DID Creation Enhancements: DID responses now return the full didDocument, providing more transparency.
+	Proof Controller Updates: Addition of new fields and refactored proof payload for better clarity.
+	Out-of-Band Proof API Enhancement: Introduction of goalCode for better tracking.
+	Credential API Improvements: Includes goalCode, outOfBandRecordId, and credentialRequestThreadId.
+	Polygon Schema Route Fix: Ensuring correct schema creation.
+	Credential Form Data API: New API introduced to fetch credential form data.
+
+
+Learn more here.
+
+4. Mobile SDK
+
+Key Features:
+
+	DigiLocker Integration: Enables integration with India's digital document storage service - DigiLocker.
+	OpenID4VC Support: Facilitates secure receipt, storage, and presentation of OpenId4VC JWT credentials.
+	Credo-TS Library Upgrade: Upgraded to v5.11 for improved performance and many fixes.
+
+
+Learn more here.
+
+Final Thoughts
+
+The CREDEBL v2.0.0 release brings an impressive set of updates across all components of our platform. With major improvements in security, usability, and functionality, this release will significantly enhance user experience, streamline workflows, and ensure greater scalability for future updates. With improved security, enhanced logging, refined proof management, and integrations like DigiLocker and OpenID4VC, this release ensures a more seamless and efficient experience for our users.
+
+Get Involved
+
+We are looking to grow the CREDEBL community and invite developers, enterprises, and other stakeholders to get involved. Find us on GitHub or Discord or join our community calls.
+
+Stay tuned for more updates and thank you for being a part of the CREDEBL community!
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

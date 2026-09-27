@@ -1,0 +1,675 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-7524: PLUME Signature in Wallets - EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      ERC-7524: PLUME Signature in Wallets
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+        
+            erc, 
+            zkp
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                yush
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2023,  8:45pm
+                  
+                  
+
+1
+              
+            
+            
+              Discussion thread for Readd ERC 7524: PLUME Signature in Wallets by Divide-By-0 · Pull Request #37 · ethereum/ERCs · GitHub
+
+This ERC adds a signature scheme called PLUME to existing Ethereum keypairs that enables unique anonymous nullifiers for accounts in ZK. This enables ZK voting, anonymous proof of solvency, unlinked airdrops, and moderation on anonymous message boards – all directly with Ethereum keypairs.
+
+            
+
+
+            
+              
+9 Likes
+            
+
+            
+                
+
+            
+              
+                yush
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 6, 2023,  6:19pm
+                  
+                  
+
+2
+              
+            
+            
+              A good point was raised by @OrenYomtov that we should really call the V1/V2 as verifier-optimized vs prover-optimized.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                oren
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 15, 2023,  8:47am
+                  
+                  
+
+3
+              
+            
+            
+              A PR to Taho Wallet implementing ERC-7524 has been created:
+
+  
+
+      github.com/tahowallet/extension
+  
+
+  
+    
+
+
+
+    
+      
+    
+
+
+  
+
+
+
+      
+        Implement EIP-7524 (PLUME Signatures)
+      
+
+
+    
+      tahowallet:main ← orenyomtov:main
+    
+
+
+      
+        
+          opened 08:59PM - 06 Oct 23 UTC
+        
+
+
+        
+          
+            
+            orenyomtov
+          
+        
+
+
+        
+          
+            +531
+            -6
+          
+        
+
+      
+
+  
+
+
+
+
+  
+    ## Explanation
+We want Taho to be the first wallet to support private voting an…d private airdrops on Ethereum and other EVM chains.
+
+This PR adds new `eth_getPlumeSignature` RPC method that implements a [novel ECDSA nullifier scheme](https://aayushg.com/thesis.pdf) as [described](https://blog.aayushg.com/posts/nullifier) in [EIP-7524](https://github.com/ethereum/EIPs/blob/53683e7716ff7c962e5a30a087ced51a4c60951b/EIPS/eip-7524.md).
+
+The `eth_getPlumeSignature` method takes in two parameters, a **message** and an **address**, then generates a deterministic signature (PLUME) and several other inputs. The plume can be used as a nullifier to prevent double-spending in an anonymity set. This capability unlocks novel on-chain behavior, such as [private DAO voting](https://prop.house/nouns/private-voting-research-sprint), [fair, non-doxxing airdrops](https://github.com/stealthdrop/stealthdrop), and more.
+
+## Screenshot
+<img width="496" alt="plume confirmation window" src="https://github.com/tahowallet/extension/assets/168856/4bd555e2-a873-42d1-b138-39e77d7b3dc7">
+
+
+## Manual Testing Steps
+
+After building and running Taho locally, enter this into the browser console
+
+```js
+await window.ethereum.request({
+  "method": "eth_requestAccounts",
+  "params": []
+});
+
+accountAddress = (await window.ethereum.request({
+  "method": "eth_accounts",
+  "params": []
+}))[0];
+
+await window.ethereum.request({
+  "method": "eth_getPlumeSignature",
+  "params": [
+    "this is a test message - hi aayush",
+    accountAddress
+  ]
+});
+```
+
+A confirmation screen should open up. After clicking "Sign", you will see the plume and other signals outputted into the console.
+
+## Discussion
+
+[Discord thread](https://discord.com/channels/808358975287722045/1158018958251802634)
+
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                aguzmant103
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 6, 2023,  5:11pm
+                  
+                  
+
+4
+              
+            
+            
+              Great to see this moving forward! Are there PRs for other wallets?
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                gitarg
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 6, 2023,  8:37pm
+                  
+                  
+
+5
+              
+            
+            
+              So cool, working on something similar with orgs, identity and handshakes, I don’t think its a different direction just neat name
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                gitarg
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 6, 2023,  8:49pm
+                  
+                  
+
+6
+              
+            
+            
+              code looks more like implementation than a standard, anyone working on the eip:
+
+
+  
+
+      Ethereum Improvement Proposals
+  
+
+  
+    
+
+All | Ethereum Improvement Proposals
+
+
+  Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+maybe a different standard already set?
+
+I’ll take a crack at it but might need a different standard for what I’m working on, will review
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yush
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 7, 2023,  6:32am
+                  
+                  
+
+7
+              
+            
+            
+              Yeah! For metamask, we have an open PR set (rpc, api, core), and folks are working on Ledger implementations right now! Mina has an implementation and Aztec is currently building one.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yush
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 7, 2023,  6:34am
+                  
+                  
+
+8
+              
+            
+            
+              Hey – this standard has nothing to do with handshakes, are you sure you’re commenting on the  right post?
+
+We think it’s important to have a standard so that different wallets can interoperate with each other, as everyone in some anonymity set needs to have the same PLUME signature for the nullifiers to work.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yush
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 7, 2023,  6:35am
+                  
+                  
+
+9
+              
+            
+            
+              We have reference implementations, but we expect many wallets (such as Ledger) to require bespoke implementations. You’ve linked to a blank EIPs page, are you referring to anything concrete?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                zemse
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 13, 2023,  7:45am
+                  
+                  
+
+10
+              
+            
+            
+              This is so needed, why this is not a thing already?! Some zk apps require nullifiers, which have to be derived using the user’s secret. Since wallets are not supposed to provide access to private keys, there should be a way to get something that only the user knows, but seems there’s no API for it.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yush
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023, 12:47am
+                  
+                  
+
+11
+              
+            
+            
+              Hey! We think the reason it hasn’t been adopted is due to slow wallet adoption and time needed to finish and audit the halo2 circuits for fast in browser proving. We wre optimistic that this will get better within the next few months.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                shreyas-londhe
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 12, 2023,  2:47pm
+                  
+                  
+
+12
+              
+            
+            
+              Hey Ayush, would love to know the status on the Plume Halo2 circuit. And also if metamask supports creating Plume Nullifiers. Thanks!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

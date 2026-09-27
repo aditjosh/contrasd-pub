@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BondEvalue Upends the Global Bond Market Using Hyperledger Sawtooth – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          BondEvalue Upends the Global Bond Market Using Hyperledger Sawtooth – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Apr 28, 2021 6:15:00 AM 
+        
+
+        
+          As many industries struggled to find their footing amid the aggressive headwinds caused by the COVID-19 pandemic, the global bond market has managed to thrive. With near zero interest rates implemented worldwide to ease the financial burdens caused by the coronavirus, the demand for bonds soared.
+ 
+But for those interested in investing in international bonds, the bond markets in Asia and Europe are particularly hard to break into for two reasons: high investment thresholds and lack of electronic infrastructure.
+ 
+In the international bond markets, the minimum investment is $200,000. Typically, only those who have $5 million or above can afford to diversify their portfolio, and they pour about one-third of their wealth into bonds. 
+ 
+But there are roughly 500 million people who have assets that range from $100,000 to $1 million and are eager to expand their portfolio. However, they find the bond market impenetrable because of the investment barrier. 
+ 
+For those who have the means to break into the international bond market, it can still be a challenge as trading in the bond markets still happens over the phone and involves a number of intermediaries, with everyone taking a cut.
+ 
+To make managing bonds faster, more accessible, and more technologically advanced, the team at BondEvalue recognized the need to upend the global bond market and create a modern infrastructure. In November 2019, BondEvalue launched the BondbloX Bond Exchange, replacing the traditional over-the-counter trading experience with the world’s first fully regulated blockchain-based bond exchange that allows consumers to instantaneously and transparently trade bonds in smaller denominations of $1,000 each.
+ 
+Fully licensed and regulated by the Monetary Authority of Singapore as a Recognized Market Operator, the BondbloX Bond Exchange operates under a strategic partnership with Northern Trust, which is the exclusive custodian for the exchange. Together they deliver integrated asset servicing and digital ownership of fractionalized fixed income bonds on a blockchain network. 
+ 
+Using depository receipts as a model, traditional bonds are brought into the BondbloX Bond Exchange through designated market makers or a member participant from a secondary market. A designated custodian on the exchange (in this case, Northern Trust) confirms receipt of the bond into the blockchain, which then triggers the bond to be divided into fractionalized BondbloX worth $1,000 each and backed one-to-one on the blockchain. 
+ 
+These BondbloX are then traded on the BondbloX Bond Exchange and, with the blockchain infrastructure, settlement is nearly instantaneous, occurring on a T+0 basis. So instead of waiting for the normal two-day settlement cycle for traditional bond transactions, BondbloX trades are final within seconds, reducing counterparty settlement risks for investors. 
+ 
+The BondEvalue team realized the only way to feed the beast of building an innovative, groundbreaking global bond exchange would be to deploy Hyperledger Sawtooth. As a modular and flexible architecture, Hyperledger Sawtooth allows developers to separate the core system from the application domain so smart contracts can specify the business rules for applications without needing to know the underlying design of the core system. 
+ 
+Hyperledger worked up with BondEvalue on a case study that details how the exchange works, the technology and governance behind it and plans to scale to include more participants in more markets. 
+ 
+Read the full case study here.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

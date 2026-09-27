@@ -1,0 +1,202 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Voting | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Governance GuidesVoting
+beginner
+
+
+
+
+
+
+Introduction
+
+Voting in Aave Governance is a critical process that empowers AAVE, stkAAVE, and aAAVE token holders to shape the protocol’s future. By participating in voting, community members can directly impact decisions on new features, parameter changes, and other key aspects of the protocol. The process typically begins with off-chain voting via Snapshot to gauge community sentiment, followed by on-chain voting for proposals that require formal approval and execution. Voting helps Aave remain a decentralised and community-driven platform, with each token holder's input contributing to the protocol's evolution.
+
+Off-chain Voting (Snapshot)
+
+Off-chain voting in Aave, conducted via Snapshot, is primarily used for gauging community sentiment during the early stages of proposal development, such as Temp Checks and Aave Requests for Comments (ARFCs). These votes are non-binding and serve as informal polls to assess whether there is enough support for a proposal to move forward. The voting period for both Temp Checks and ARFCs lasts three days. Off-chain voting allows token holders to express their views without incurring transaction fees, making it a convenient way to measure the community’s interest and refine proposals before they proceed to the on-chain stage.
+
+On-chain Voting (Governance Interfaces)
+
+On-chain voting is required for Aave Improvement Proposals (AIPs) that propose changes to the protocol and is conducted through various governance interfaces such as  Aave Labs, BGD Labs, and Tally This process involves a more formal and secure approach, where proposals undergo a thorough review to check for safety and correctness. Once a proposal is approved for on-chain voting, it goes through a one-day delay before becoming active, followed by a voting period. During this time, token holders can cast their votes directly on-chain, with their voting power proportional to the amount of AAVE, stkAAVE, or aAAVE they hold or have been delegated on Ethereum mainnet. The proposal must meet quorum and majority requirements to succeed, after which it is queued with a timelock before execution.
+
+Voting Timelines
+
+The following timelines are relevant to the voting process:
+
+	Off-chain Voting (Snapshot): The voting period for Temp Checks and ARFCs lasts three days.
+	On-chain Voting: After a proposal is submitted onchain, there is a one-day delay before it becomes active. The voting period and execution timelock depend on the type of proposal. Most proposals are targeted for the “Short Executor” which has a three-day voting period and one-day timelock for execution. Proposals that modify governance processes are targeted for the “Long Executor,” which has a 10-day voting period and a seven-day timelock for execution.
+
+
+Voting Representatives
+
+In Aave Governance, voting representatives facilitate cross-chain voting, especially for users with smart contract wallets or those participating across multiple blockchain networks. A voting representative links your governance decisions to the voting process when your wallet can't participate directly due to technical constraints, like the inability to sign messages for storage proof voting or interact with cross-chain contracts.
+
+You can select a voting representative through interfaces like Aave Labs interface. This representative can cast votes on your behalf using your delegated voting power, managing voting for multiple users and enhancing flexibility and accessibility for all governance participants.
+
+
+
+Related
+Aave Community
+beginner
+
+Learn about Aave community governance.
+10 min read
+Proposals
+beginner
+
+Aave Governance proposal lifecycle.
+7 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

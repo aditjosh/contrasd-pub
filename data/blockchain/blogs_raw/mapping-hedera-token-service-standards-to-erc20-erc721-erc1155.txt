@@ -1,0 +1,2261 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mapping Hedera Token Service Standards to ERC20, ERC721, &… | Hedera
+
+
+    
+  
+    
+      
+        
+          
+          
+        
+      
+
+    
+
+  
+
+
+  
+
+  
+      
+            
+
+
+  
+    
+      
+  
+  
+
+
+
+      Hedera
+    
+    
+            
+      
+              
+              
+      	
+          
+                                                            Network
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Services
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Token Service
+Mint and configure tokens and accounts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consensus Service
+Verifiable timestamps and ordering of events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Smart Contracts
+Run Solidity smart contracts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                HBAR
+The Hedera network's native cryptocurrency.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Insights
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                How It Works
+Learn about Hedera from end to end.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Explorers
+View live and historical data on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Dashboards
+Analyze network activity and metrics.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Nodes
+Understand networks and node types.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Devs
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Start Building
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Get Started
+Learn core concepts and build the future.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Documentation
+Review the API and build using your favorite language.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Developer Resources
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Integrations
+Plugins and microservices for Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Fee Estimator
+Understand and estimate transaction costs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Open Source
+Hedera is committed to open, transparent code.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Learning Center
+Learn about web3 and blockchain technologies.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants
+Grants & accelerators for your project.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Bounties
+Find bugs. Submit a report. Earn rewards.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Ecosystem
+                                                                          
+          
+            	
+
+                  
+                    
+                                        ECOSYSTEM
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Ecosystem
+Applications, developer tools, network explorers, and more.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFT Ecosystem Metrics
+Analyze on-chain and market NFT ecosystem metrics.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        CATEGORIES
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Web3 Applications
+Connect into the innovative startups decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Enterprise Applications
+Learn about the Fortune 500 companies decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Wallets & Custodians
+Create a Hedera account to manage HBAR, fungible tokens, and NFTs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Explorers
+Hedera mainnet and testnet graphical network explorers.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Developer Tooling
+Third-party APIs, integrations, and plugins to build apps on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants & Accelerators
+Boost your project with support from the Hedera ecosystem.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Partner Program
+Explore our partners to bring your vision into reality.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+Over 30 highly diversified organizations govern Hedera.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Use Cases
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Hedera Solutions
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Asset Tokenization Studio
+Open source toolkit for tokenizing assets securely.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Stablecoin Studio
+All-in-one toolkit for stablecoin solutions.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Guardian
+Auditable carbon markets and traceability.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Functional Use Cases
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Data Integrity & AI
+Reliable, secure, and ethically governed insights.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Sustainability
+Enabling fair carbon markets with trust.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Real-World Asset Tokenization
+Seamless tokenization of real-world assets and digital at scale.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consumer Engagement & Loyalty
+Mint, distribute, and redeem loyalty rewards.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Identity
+Maintain the lifecycle of credentials.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Logs
+Scalable, real-time timestamped events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                DeFi
+Dapps built for the next-generation of finance.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFTs
+Low, fixed fees. Immutable royalties.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Payments
+Scalable, real-time, and affordable crypto-payments.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            HBAR
+                                                                          
+          
+            	
+
+                  
+                    
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Overview
+Learn about Hedera's token, HBAR.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Treasury Management
+Hedera’s report of the HBAR supply.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Governance
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Decentralized Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+See the world's leading organizations that own Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                About
+Meet Hedera's Board of Directors and team.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Journey
+Watch Hedera's journey to build an empowered digital future for all.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Transparent Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Public Policy
+Hedera's mission is to inform policy and regulation that impact the industry.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Meeting Minutes
+Immutably recorded on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Roadmap
+Follow Hedera's roadmap in its journey to build the future.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Resources
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Company
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                What's New
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Partners
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Papers
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Careers
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Media
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Blog
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Technical
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Press
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Podcast
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Community
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Events
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Meetups
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Store
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Brand
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+
+
+
+
+  
+    
+
+    
+
+
+
+
+Navigation
+
+  
+    
+
+    
+
+        
+            QUICKSTART
+        
+
+      
+
+
+      
+        
+            
+        
+
+      
+
+
+      
+      
+                  
+
+          
+          
+              
+
+
+    
+    
+      
+        
+          Mapping Hedera Token Service Standards to ERC20, ERC721, & ERC1155
+        
+
+        technical
+
+        
+          
+            
+              
+                                                                      
+                              
+
+            
+
+            Sep 26, 2021
+by Greg Scullard
+Lead Developer Advocate
+
+
+          
+
+
+        
+                        
+
+              Hedera released the Hedera Token Service on February 9th, 2021. This service offers configuration and issuance of native fungible and non-fungible tokens in a fast, secure, and sustainable way with low, predictable fees. 
+
+At Hedera, we’re often asked how Hedera Token Service (HTS) tokens map to the most ubiquitous fungible and non-fungible token models: ERC20, ERC721 and ERC1155. Let’s dive deeper into the Hedera Token Service and highlight how Hedera token models and ERC token models overlap.
+
+In this blog post, we’ll take a look at how Hedera token models extend beyond ERC models through built-in configurable compliance and programmability, such as custom token fees and scheduled transactions.
+
+While there may have been evolutions of the ERC models over time, or developer-own customizations, we have used the following OpenZeppelin implementation as a reference:
+
+
+	ERC20: Fungible Token Standard (link) 
+
+	ERC721: Non-Fungible Token Standard (link) 
+
+	ERC1155: Multi Token Standard (link)
+
+
+
+Note: Only functions and getters that are external in the contract definitions, along with events are documented here. Likewise, interfaces have not been included.
+
+Token Identification using Hedera Token Service
+
+Tokens on Hedera are identified by a Token Id, made of three numerals separated by a dot; for example, 0.0.123344. The Token Id is allocated by the network when a token is first issued and cannot change. The Id is the equivalent to a smart contract address for an ERC token.
+
+Just like ERC tokens, there is no enforcement of the uniqueness of a token’s name or symbol. Two tokens with the same name and/or symbol may exist on the Hedera network but they will have different token Ids.
+
+
+Mapping | ERC20: Fungible Token Standard
+
+The ERC20 token specification is the simplest standard of the three. It maps to the Hedera Token Service as follows:
+
+ERC20 contract
+
+constructor method
+
+A tokenCreate transaction constructs a new token on Hedera, returning the token’s unique identifier known as Token Id (e.g. 0.0.123433).
+
+name, symbol, decimals and totalSupply getters
+
+The getInfo query for a particular Token Id will return the properties of the token. This includes its name, symbol, decimals, and total supply.
+
+balanceOf getter
+
+Querying the balance of an account for a given Account Id will return a list of tokens which are held by the account and the balance of each token.
+
+transfer method
+
+The cryptoTransfer Hedera transaction enables a token to be transferred between accounts. Moreover, the same transaction supports complex atomic swaps including one or more tokens and optionally some hbar in the same transaction. Should any of the specified transfers fail due to insufficient balances or incorrect signatures, the entire transaction is cancelled.
+
+An example atomic transfer may be Alice sending 5 blue tokens to Bob and Bob sending 2 yellow tokens to Carol while Carol sends 20 hbar to Alice.
+
+mint method
+
+Subject to the token having a supplyKey, additional tokens may be minted in a quantity expressed in the decimal value of the token via the mintToken transaction. Note that if the token has a finite supply, it is not possible to mint more than the maxSupply specified when the token was issued (see ERC20Capped below).
+
+burn method
+
+Subject to the token having a supplyKey, tokens may be burnt in a quantity expressed in the decimal value of the token via the burnToken transaction.
+
+allowance related methods
+
+The allowance features of an ERC20 token comprise approve, transferFrom, increaseAllowance and decreaseAllowance. There is no direct equivalent of these methods in the Token Service API, however through the use of the native multi-sig capabilities of Hedera Accounts, it is possible to effect an allowance as explained below.
+
+First, create a new account with at least two keys (could be more to enable allowance towards multiple people at once), these keys would be subject to a threshold such as 1 of M and one of the keys would be known to the token holder wishing to allow others to spend on his/her behalf.
+
+Second, transfer the desired amount of tokens to be approved to this new account from the token holding account. From this point, any of the key holders in the threshold list is able to transfer tokens from this new account to any other. This satisfies the approve (transfer to the new account) and transferFrom (a key from the keylist can transfer from the new account) methods in the ERC20 contract.
+
+Similarly, by transferring additional tokens to this new account, or inversely, transferring from the new account, the allowance can be increased or decreased, thus satisfying the increaseAllowance and decreaseAllowance features of the ERC20 contract.
+
+Finally, querying the balance of the new account would return the remaining allowance which is equivalent to the allowance getter in the ERC20 contract.
+
+transfer event
+
+The equivalent of an event is a transaction recorded on a mirror node, by querying a mirror node for CRYPTOTRANSFER transactions for a given account, the token transfers included in the transaction can be identified.
+
+approval event
+
+Similarly to the transfer event, this would require querying a mirror node for CRYPTOTRANSFER transactions involving the approving account and token.
+
+ERC20Burnable contract
+
+This contract implements additional burn-related methods.
+
+burn method
+
+Subject to the token having a supplyKey, tokens may be burnt in a quantity expressed in the decimal value of the token via the burnToken transaction.
+
+burnFrom method
+
+Subject to the token being issued with a wipeKey, a quantity of tokens may be removed from an account which will also burn the same quantity from the token itself.
+
+ERC20Capped contract
+
+constructor method
+
+When issuing a new token, it’s possible to specify the token’s supplyType which may be FINITE or INFINITE.
+
+In the event the supplyType is FINITE, a maxSupply amount has to be specified which essentially determines the supply cap on the token.
+
+cap getter
+
+getInfo on a token will return the maxSupply and supplyType for the token. If the maxSupply is 0, the token is considered to have infinite supply (in fact limited to 2^63-1).
+
+ERC20Pausable contract
+
+There is no equivalent implementation of this, except that if the token has a freezeKey, the appropriate key holder(s) could iteratively freeze all accounts that hold a balance of the token, then later unfreeze those accounts if necessary.
+
+Ownable contract
+
+owner getter
+
+The owner of the token can be identified by querying the token via a getInfo and inspecting the treasuryAccountId for the token.
+
+onlyOwner function
+
+This is native to the Token Service whereby operations on the token can only occur if signed by the appropriate private key(s).
+
+transferOwnership method
+
+If the token has an adminKey, it is possible to update the treasuryAccountId for the token, thus transferring ownership of the token.
+
+ownershipTransferred event
+
+This can be determined by querying a mirror node for a TOKENUPDATE operation involving the token and seeing a change in treasuryAccountId.
+
+ERC20PresetFixedSupply
+
+When issuing a token, it is possible to define an initialSupply in the decimal denomination of the token.
+
+Summary
+
+The table below summarizes the mappings described above. To review documentation for the Hedera Token Service equivalent API call, please visit the documentation.
+
+
+
+
+	Solidity Contract
+	Method/function/event
+	HTS Equivalent
+
+	ERC20
+	constructor
+	tokenCreate
+
+	ERC20
+	name, symbol, decimals and totalSupply getters
+	tokenGetInfo
+
+	ERC20
+	balanceOf and allowance getters
+	cryptoGetAccountBalance
+
+	ERC20
+	transfer method
+	cryptoTransfer
+
+	ERC20
+	mint method
+	tokenMint
+
+	ERC20
+	burn method
+	tokenBurn
+
+	ERC20
+	approve, transferFrom, increaseAllowance and decreaseAllowance methods
+	Use multisig feature of Hedera accounts.
+
+	ERC20
+	transfer event
+	Use mirror node
+
+	ERC20
+	approve event
+	Use mirror node
+
+	ERC20Burnable
+	burn
+	tokenBurn
+
+	ERC20Burnable
+	burnFrom
+	tokenWipe
+
+	ERC20Capped
+	constructor
+	tokenCreate
+
+	ERC20Capped
+	cap getter
+	tokenGetInfo
+
+	ECR20Pausable
+	all
+	tokenFreeze and tokenUnfreeze on all accounts holding the token
+
+	Ownable
+	owner getter
+	tokenGetInfo
+
+	Ownable
+	onlyOwner function
+	Only approved keys can operate the token natively
+
+	Ownable
+	transferOwnership method
+	tokenUpdate
+
+	Ownable
+	ownershipTransferred method
+	Use mirror node
+
+	ERC20PresetFixedSupply
+	all
+	tokenCreate
+
+	ECDSA
+	all
+	Not required
+
+	SafeMath
+	all
+	Not necessary, the Hedera Token Service takes care of the necessary calculations
+
+	TokenTimeLock
+	all
+	Not necessary due to the atomicity of transfer transactions which can involve multiple tokens at once
+
+	ERC20FlashMint
+
+ERC20Snapshot
+
+ERC20Votes
+
+ERC20VotesComp
+
+ERC20Wrapper
+
+ERC20PresetMinterPauser
+	all
+	No equivalent at the time of writing this blog.
+
+
+
+
+
+
+
+
+Mapping | ERC721: Non-Fungible Token Standard
+
+The ERC721 token specification introduces the ability to support non fungible tokens. It maps to the Hedera Token Service as follows:
+
+ERC721 contract
+
+constructor method
+
+A tokenCreate transaction constructs a new token on Hedera, returning the token’s unique identifier known as Token Id (e.g. 0.0.123433).
+
+supportsInterface getter
+
+There is no direct equivalent to this function
+
+balanceOf getter
+
+A TokenGetAccountNftInfosQuery will return the list of non fungible tokens held by a given Account Id.
+
+ownerOf getter
+
+A TokenGetNftInfoQuery will return the AccountId which owns a given NFT token.
+
+name and symbol getters
+
+A getInfo on the Token Id will return its name and symbol.
+
+tokenURI getter
+
+A tokenGetNFTInfoQuery on a given NFT Id will return a metadata value which may contain the URI of the NFT or any other arbitrary binary data up to 100 bytes.
+
+approve, transferFrom and safeTransferFrom methods
+
+There are no direct equivalent of these methods in the Token Service API, however through the use of the native multi-sig capabilities of Hedera Accounts, it is possible to effect an approval as explained below.
+
+First, create a new account with at least two keys (could be more to enable approval towards multiple people at once), these keys would be subject to a threshold such as 1 of M and one of the keys would be known to the token holder wishing to allow others to spend on his/her behalf.
+
+Second, transfer the desired tokens to be approved to this new account from the token holding account. From this point, any of the key holders in the threshold list is able to transfer tokens from this new account to any other. This satisfies the approve (transfer to the new account) and transferFrom (a key from the keylist can transfer from the new account) methods in the ERC20 contract.
+
+getApproved getter
+
+A TokenGetNftInfoQuery will return the AccountId which owns a given NFT token. If this Account Id has multiple keys associated with it, it’s likely the NFT has been approved previously, a query against mirror node using the public keys would enable anyone to identify the approved accounts.
+
+setApprovalForAll method
+
+A token is associated with a treasury Account Id which holds all newly minted NFTs. Using Hedera’s native multisig capabilities, the keys on the treasury account can be updated to include as many other approved keys as required in order to allow these keys to transfer tokens from treasury to other accounts.
+
+isApprovedForAll method
+
+Querying the keys associated with the token’s treasury Account Id (cryptoGetInfo) would yield one or more keys. If more than one key is returned, the token is approved for transfer by more than one key. Querying a mirror node using the public keys would identify which Account Ids are approved.
+
+transfer event
+
+The equivalent of an event is a transaction recorded on a mirror node, by querying a mirror node for CRYPTOTRANSFER transactions for a given account, the token transfers included in the transaction can be identified.
+
+approval event
+
+Similarly to the transfer event, this would require querying a mirror node for CRYPTOTRANSFER transactions involving the approving account and token.
+
+approvalForAll event
+
+An approve for all operation would be performed by updating the keys on the token’s treasury Account Id, this transaction can be witnessed on a mirror node.
+
+ERC721Burnable contract
+
+burn method
+
+Subject to the token having a supplyKey, NFTs may be burnt individually or in bulk by supplying a list of NFTs to burn via a tokenBurn transaction.
+
+ERC721Enumerable contract
+
+supportsInterface method
+
+There is no equivalent in the Hedera Token Service.
+
+tokenOfOwnerByIndex getter
+
+A TokenGetAccountNftInfosQuery query will return an array of NFTs owned by a given Account Id. By specifying the start and end indices of the range of NFTs to return, it’s possible to get the owned NFTs by index.
+
+totalSupply getter
+
+A tokenGetInfo will return the total supply for a given token.
+
+tokenByIndex getter
+
+A TokenGetNftInfosQuery query will return an array of NFTs for a given Token Id. The range of returned NFTs can be specified with a start and end index.
+
+ERC721Storage contract
+
+tokenURI getter
+
+A tokenGetNFTInfoQuery on a given NFT Id will return a metadata value which may contain the URI of the NFT or any other arbitrary binary data up to 100 bytes.
+
+ERC721PresetMinterPauserAutoId contract
+
+constructor
+
+A tokenCreate transaction constructs a new token on Hedera, returning the token’s unique identifier known as Token Id (e.g. 0.0.123433).
+
+This constructor takes a baseTokenURI which in HTS could either be stored in the token’s memo or symbol although this value isn’t used by subsequently minted NFTs.
+
+mint method
+
+The tokenMint transaction enables one or more NFTs to be minted. Indeed an array of metadata may be supplied which will determine the number of NFTs to mint and will associate each metadata value to its corresponding NFT. The receipt for the transaction will include an array of serial numbers uniquely identifying the newly minted NFTs.
+
+Note that this transaction mints the NFTs to the treasury, subsequent cryptoTransfer transactions are necessary to transfer the minted NFTs to their owner unless they are to be kept in treasury.
+
+Minting can only take place if the token has a supplyKey.
+
+pause and unpause methods
+
+There is no equivalent implementation of this, except that if the token has a freezeKey, the appropriate key holder(s) could iteratively freeze all accounts that hold a balance of the token, then later unfreeze those accounts if necessary.
+
+supportsInterface getter
+
+There is no equivalent in the Hedera Token Service.
+
+Summary
+
+The table below summarizes the mappings described above. To review documentation for the Hedera Token Service equivalent API call, please visit the documentation.
+
+
+
+
+	Solidity Contract
+	Method/function/event
+	HTS Equivalent
+
+	ERC721
+	constructor
+	tokenCreate
+
+	ERC721
+	supportsInterface
+	No equivalent
+
+	ERC721
+	balanceOf
+	tokenGetAccountNftInfosQuery
+
+	ERC721
+	ownerOf
+	tokenGetNftInfoQuery
+
+	ERC721
+	name and symbol 
+	tokenGetInfo
+
+	ERC721
+	tokenURI
+	tokenGetNFTInfoQuery
+
+	ERC721
+	approve, transferFrom and safeTransferFrom
+	Use multisig feature of Hedera accounts and cryptoTransfer transaction to make the transfers
+
+	ERC721
+	getApproved
+	tokenGetNftInfoQuery
+
+	ERC721
+	setApprovalForAll
+	Use multisig feature of Hedera accounts.
+
+	ERC721
+	isApprovedForAll
+	Query keys on token’s treasury account
+
+	ERC721
+	Transfer, approval and approvalForAll
+	Use mirror node
+
+	ERC721Burnable
+	burn
+	tokenBurn
+
+	ERC721Enumerable
+	supportsInterface
+	No equivalent
+
+	ERC721Enumerable
+	tokenOfOwnerByIndex
+	tokenGetAccountNftInfosQuery
+
+	ERC721Enumerable
+	totalSupply
+	tokenGetInfo
+
+	ERC721Enumerable
+	tokenByIndex
+	tokenGetNftInfosQuery
+
+	ERC721Storage
+	tokenURI
+	tokenGetNFTInfoQuery
+
+	ERC721PresetMinterPauserAutoId
+	constructor
+	tokenCreate
+
+	ERC721PresetMinterPauserAutoId
+	mint
+	tokenMint
+
+	ERC721PresetMinterPauserAutoId
+	pause and unpause
+	tokenFreeze and tokenUnfreeze on all accounts holding the token
+
+	ERC721PresetMinterPauserAutoId
+	supportsInterface
+	No equivalent
+
+
+
+
+
+
+
+
+Mapping | ERC1155: Multi Token Standard
+
+The ERC1155 token specification introduces the ability to support fungible and non fungible tokens within the same contract definition. It maps to the Hedera Token Service as follows:
+
+ERC1155 contract
+
+constructor method
+
+There is no direct equivalent in the Hedera Token Service. Once could consider that HTS implements ERC1155 natively, allowing any and all token types to be created without instantiating a contract in the first place.
+
+supportsInterface getter
+
+There is no equivalent in the Hedera Token Service for this.
+
+uri getter
+
+There is no equivalent in the Hedera Token Service for this, although NFT tokens may be minted with empty metadata and the corresponding URI be derived from the token type’s metadata + the id of the resulting NFT.
+
+balanceOf getter
+
+Querying the balance (cryptoGetBalance) of an Account Id will return the balance of all Fungible Tokens owned by this account.
+
+Querying TokenGetAccountNftInfosQuery for a given Account Id will return the NFTs the account owns.
+
+balanceOfBatch getter
+
+There is no equivalent in the Hedera Token Service for this other than querying each account in turn.
+
+setApprovalForAll method
+
+A token is associated with a treasury Account Id which holds all newly minted NFTs. Using Hedera’s native multisig capabilities, the keys on the treasury account can be updated to include as many other approved keys as required in order to allow these keys to transfer tokens from treasury to other accounts.
+
+isApprovedForAll method
+
+Querying the keys associated with the token’s treasury Account Id (cryptoGetInfo) would yield one or more keys. If more than one key is returned, the token is approved for transfer by more than one key. Querying a mirror node using the public keys would identify which Account Ids are approved.
+
+safeTransferFrom and safeBatchTransferFrom methods
+
+All token exchanges are performed atomically through a cryptoTransfer transaction listing the senders, tokens, amounts and recipients. Subject to the necessary signatures being present on the transaction to validate it, transfers occur atomically as a batch (or single token).
+
+ERC1155Burnable contract
+
+burn method
+
+A tokenBurn transaction will burn a number of tokens or a list of NFTs from the treasury account for a given Token Id.
+
+burnBatch method
+
+A tokenBurn transaction will burn a number of tokens or a list of NFTs from the treasury account for a given Token Id. If multiple token types need to be burnt from, a separate tokenBurn transaction must be issued for each token type.
+
+ERC1155Supply contract
+
+totalSupply getter
+
+A tokenGetInfo query will return the token’s total supply amongst other token details.
+
+exists getter
+
+A tokenGetInfo query for a Token Id will return its details, indicating it exists. If a non-existent Token Id is supplied, the query would return an error.
+
+ERC1155PresetMinterPauser contract
+
+constructor
+
+No Hedera Token Service equivalent.
+
+mint function
+
+Subject to having a supplyKey, any token may be minted with a tokenMint transaction. If the token is fungible, a quantity to mint is required. If the token is non fungible, an array of metadata for each minted NFT determines the quantity to mint.
+
+Note: The mint operation mints to the token’s treasury Account Id, subsequent transfers are required to send the minted tokens to other accounts than treasury.
+
+mintBatch function
+
+A tokenMint transaction mints to a specific Token Id, if multiple tokens need to be minted, a transaction needs to be issued for each Token Id.
+
+pause and unpause methods
+
+There is no equivalent implementation of this, except that if the token has a freezeKey, the appropriate key holder(s) could iteratively freeze all accounts that hold a balance of the token, then later unfreeze those accounts if necessary. If multiple tokens need to be paused, then transactions have to be issued for each Token Id.
+
+supportsInterface method
+
+There is no equivalent in the Hedera Token Service.
+
+Summary
+
+The table below summarizes the mappings described above. To review documentation for the Hedera Token Service equivalent API call, please visit the documentation.
+
+
+
+
+	Solidity Contract
+	Method/function/event
+	HTS Equivalent
+
+	ERC1155
+	constructor
+	No equivalent
+
+	ERC1155
+	supportsInterface
+	No equivalent
+
+	ERC1155
+	uri
+	Mint tokens with empty metadata. Use token type’s metadata + NFTid for uri
+
+	ERC1155
+	balanceOf
+	cryptoGetBalance and tokenGetAccountNftInfosQuery
+
+	ERC1155
+	balanceOf
+	repeat cryptoGetBalance and tokenGetAccountNftInfosQuery
+
+	ERC1155
+	setApprovalForAll
+	Use multisig feature of Hedera accounts.
+
+	ERC1155
+	isApprovedForAll
+	Query keys on token’s treasury account
+
+	ERC1155
+	safeTransferFrom and safeBatchTransferFrom
+	cryptoTransfer
+
+	ERC1155Burnable
+	burn
+	tokenBurn
+
+	ERC1155Burnable
+	burnBatch
+	Repeat tokenBurn for each token type
+
+	ERC1155Supply
+	totalSupply
+	tokenGetInfo
+
+	ERC1155Supply
+	exists
+	tokenGetInfo (fails if Token Id doesn’t exist)
+
+	ERC1155PresetMinterPauser
+	constructor
+	No equivalent
+
+	ERC1155PresetMinterPauser
+	mint
+	tokenMint
+
+	ERC1155PresetMinterPauser
+	mintBatch
+	tokenMint (optionally multiple times)
+
+	ERC1155PresetMinterPauser
+	pause and unpause
+	tokenFreeze and tokenUnfreeze
+
+	ERC1155PresetMinterPauser
+	supportsInterface
+	No equivalent
+
+
+
+
+
+            
+
+          
+          
+            Share This
+          
+
+          
+
+          
+
+
+
+
+
+            Back to blog
+          
+
+         
+
+        
+      
+    
+    
+      
+      
+        
+                    	
+              
+                
+                                    
+                                                            
+                  
+
+                  What is gRPC, gRPC-Web, and Proxies?
+                  Ed Marquez
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Pragmatic Blockchain Design Patterns – Integrating Blockchain into Business Processes
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Zero Cost EthereumTransaction on Success: Hedera's New Fee Model for Relay Operators
+                  Oliver Thorn
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Adopts Chainlink Standard for Cross-Chain Interoperability To Accelerate Ecosystem Adoption
+                  Hedera Team
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Developer Highlights March 2025
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Release Cycle Overview
+                  Ed Marquez
+                
+
+              
+            
+
+
+          View All Posts
+        
+
+              
+
+    
+
+  
+  
+  
+    
+    
+  
+
+  
+            
+
+    
+        
+            
+        
+
+        
+            Sign up for the newsletter
+
+            
+                
+            
+
+        
+
+        
+            CONNECT WITH US
+
+            
+
+
+
+
+        	
+                Transparency
+            
+	
+                Open Source
+            
+	
+                Audits & Standards
+            
+	
+                Sustainability Commitment
+            
+	
+                Carbon Offsets
+            
+
+	
+                Governance
+            
+	
+                Hedera Council
+            
+	
+                Public Policy
+            
+	
+                Treasury Management
+            
+	
+                Meeting Minutes
+            
+	
+                LLC Agreement
+            
+	
+                Node Requirements
+            
+
+	
+                Community
+            
+	
+                Events
+            
+	
+                Meetups
+            
+	
+                HBAR Telegram
+            
+	
+                Developer Discord
+            
+	
+                Twitter Community
+            
+
+	
+                Support
+            
+	
+                FAQ
+            
+	
+                Network Status
+            
+	
+                Developer Discord
+            
+	
+                StackOverflow
+            
+
+	
+                Brand
+            
+	
+                Brand Guidelines
+            
+	
+                Built on Hedera Logo
+            
+	
+                Hedera Store
+            
+
+	
+                About
+            
+	
+                Team
+            
+	
+                Partners
+            
+	
+                Journey
+            
+	
+                Roadmap
+            
+	
+                Careers
+            
+
+	
+                Contact
+            
+	
+                General Inquiry
+            
+	
+                Public Relations
+            
+
+
+
+    
+        © 2018-2025 Hedera Hashgraph, LLC. All trademarks and company names are the property of their respective owners. All rights in the Deutsche Telekom mark are protected by Deutsche Telekom AG. All rights reserved. Hedera uses the third party marks with permission.
+Terms of Use  |  Privacy Policy
+
+    
+
+
+
+
+    
+
+      
+
+  
+  

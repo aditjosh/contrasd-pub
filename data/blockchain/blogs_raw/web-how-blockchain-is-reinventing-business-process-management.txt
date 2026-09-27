@@ -1,0 +1,833 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How Blockchain is Reinventing Business Process Management – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                How Blockchain is Reinventing Business Process Management
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jun 12, 2018
+                    
+                
+
+            
+
+            
+            
+                Guest post: Jesse Chenard, CEO, MonetaGo
+ 
+When the general population is asked about blockchain, their understanding is often limited to Bitcoin and possibly other tokens. From there, they may associate blockchain with payments. Those with a more sophisticated understanding may understand the concepts of executing logic on a distributed ledger or distributed application platform. However, we know from experience that implementing blockchain within enterprise in the next year or two will likely not be a glitzy process, especially within heavily regulated environments.
+ 
+One of Blockchain’s best fits in financial services is as a communication layer for Business Process Management (BPM). By leveraging smart contracts and the auditability of distributed ledger technologies, blockchain can facilitate processes involving multiple parties following specific regulatory guidelines. In these scenarios, the technology is being used primarily as a way to share documentation, communicate information, and track different states of transactions. Integration of these systems with existing workflows and back offices provides better visibility among all participants. It is not about pushing everyone to adopt a whole new platform. Instead, it is about enabling simple integration of legacy infrastructure  into new networks which are able to provide improved functionality. This is how blockchain technology based on Hyperledger Fabric is used among competing Indian factoring exchanges to securely and confidentially share information which reduces fraud around receivables financing.  
+ 
+If blockchain technology provides value in BPM, how is it different than the BPM solutions and services available today? BPM is not new. Traditional BPM services that do workflow management have been around for decades. The difference, however, is that traditional BMP services tend to handle internal workflows within a single organization only. They do not manage the workflow process and information across organizations. If they do, they fall into the same trap that blockchain is helping to move away from, which is having a centralized repository of information controlled by a third party (in this case, the business process or workflow provider). If a third party holds data and is responsible for passing it from one organization to another, there is a risk of resiliency problems that come with that central or single point of failure. 
+ 
+Blockchain technology allows for the creation of a peer-to-peer BPM system that eliminates the central repository of information and allows multiple corporations to exchange information directly with counterparties while guaranteeing the integrity of the process. The system allows for organizations to verify and enforce that specific steps are being taken and performed correctly by any party on the network. This is essential when dealing with regulated transactions that require specific guideline compliance. With blockchain systems, one can code guidelines into smart contracts, and the verification of a party conforming with those guidelines can then be performed by a counterparty as well. As a result, everyone can enforce the rules on everyone else and ensure that the correct steps are being taken throughout these workflows. This is real-time auditing that provides assurances to counterparties that corners are not being cut. 
+ 
+Additionally, allowing the participants and counterparties to maintain control of their own data is another important benefit of using a blockchain for BPM. Even though participating organizations have enforced rules upon them by the network, they still maintain control of their data rather than a third party.
+ 
+Along these lines, another BPM-related problem that blockchain technology can solve is internal fraud. Consider the recent BNP fraud where a sophisticated and long-running scheme disguising billions of dollars in financial transactions was perpetrated in violation of American sanctions against Sudan, Iran and Cuba. From a risk perspective, a blockchain network enforces transaction rules on a party’s own employees so that they cannot misbehave and circumvent rules and regulations.
+ 
+What types of organizations today stand to benefit from incorporating blockchain as a communications layer to do BPM? Any over the counter (OTC) transactions which are off-exchange can benefit from a distributed ledger network. Example OTC transactions include loans, swaps, and bank guarantees. Basically, transactions where one person or party is dealing directly with another person or party with no intermediary. 
+ 
+While saying blockchain technology as a communication layer for Business Process Management is a promising use case, it is by no means an out of the box solution – a lot depends on the actual workflow, the use case, and the local laws and regulations. There are a number of different choices based on the varying inputs. However, if blockchain can provide an auditing source among multiple parties for sharing documentation, communicating information, and tracking different states of transactions – all without having to hand over data to a third party – it may just be the beginning of major change in the Business Process Management market.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

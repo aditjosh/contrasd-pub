@@ -1,0 +1,257 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-1352: Specify restricted address range for precompiles/system contracts
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-1352: Specify restricted address range for precompiles/system contracts
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Alex Beregszaszi (@axic)
+	Created	2018-07-27
+	Discussion Link	https://ethereum-magicians.org/t/eip-1352-specify-restricted-address-range-for-precompiles-system-contracts/1151
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Simple Summary
+	Abstract
+	Motivation
+	Specification
+	Rationale
+	Backwards Compatibility
+	Test Cases
+	Implementation
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Simple Summary
+      
+      
+    
+
+Specify an Ethereum address range occupied by precompiles and future system contracts. Regular accounts and contracts cannot obtain such an address.
+
+  
+    
+      
+      
+         Abstract
+      
+      
+    
+
+The address range between 0x0000000000000000000000000000000000000000 and 0x000000000000000000000000000000000000ffff is reserved for precompiles and system contracts.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+This will simplify certain future features where unless this is implemented, several exceptions must be specified.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+The address range between 0x0000000000000000000000000000000000000000 and 0x000000000000000000000000000000000000ffff is reserved for precompiles and system contracts.
+
+
+Due to the extremely low probability (and lack of adequate testing possibilities) no explicit checks should be added to ensure that external transaction signing or
+the invoking of the CREATE instruction can result in a precompile address.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+N/A
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+No contracts on the main network have been created at the specified addresses. As a result it should pose no backwards compatibility problems.
+
+  
+    
+      
+      
+         Test Cases
+      
+      
+    
+
+N/A
+
+  
+    
+      
+      
+         Implementation
+      
+      
+    
+
+N/A
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), "EIP-1352: Specify restricted address range for precompiles/system contracts [DRAFT]," Ethereum Improvement Proposals, no. 1352, July 2018. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-1352.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

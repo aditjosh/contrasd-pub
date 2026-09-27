@@ -1,0 +1,902 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Trust Registry Query Protocol (TRQP) V2.0 Now Open for Public Review
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Trust Over IP
+                            
+                        
+                    
+
+                
+                Trust Registry Query Protocol (TRQP) V2.0 Now Open for Public Review
+ 
+                
+                    Andor Kesselman, Darrell O’Donnell, Antti Kettunen, and Drummond Reed, editors of the TRQP spec
+                    |
+                    
+                        Apr 7, 2025
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                
+Internet Identity Workshop—Mountain View: The Trust Registry Task Force (TRTF) at Trust Over IP (ToIP) today announced Public Review Draft 01 of its Trust Registry Query Protocol Specification V2.0. We invite feedback from architects and developers of trust registry client software, backend services, and bridges to different systems of record. Instructions for commenting are at the end of this post.
+
+What problem do trust registries solve?
+
+The power of open standard digital wallets, such as those now being implemented in the EU, Canada, Bhutan, and other countries, is that they can accept open standard digital credentials—widely referred to as “verifiable credentials” because they are digitally signed by the issuer so they can be cryptographically verified by the party accepting the credential (called the relying party or verifier).
+
+
+
+However, it is not enough for the relying party to simply verify the public key of the issuer. The relying party also needs to know the issuer is authorized to issue this type of credential. For example, to verify a State of California mobile driving license (mDL), the relying party needs to first verify that the issuer is the real California Department of Motor Vehicles.
+
+Now multiply that by 50 U.S. states that could issue mDLs—times hundreds more mDL issuers in other countries around the world—times thousands of other types of digital credentials that can be issued for all kinds of digital trust use cases. Suddenly it becomes clear that we need a simple, fast, secure way to verify trusted issuers.
+
+The need for efficient trust verification does not stop with issuers. For data protection reasons, the EU eIDAS 2.0 legislation also requires “verifying the verifier” (i.e., checking to make sure the verifier is authorized to request specific types of personal data from an EUDIW wallet holder).
+
+Both cases can be addressed by a network service called a trust registry (also called—especially in the EU—a trust list). A trust registry is a system of record that contains the authoritative information that relying parties need to make trust decisions. Many such systems of record already exist. For example, almost any legal jurisdiction has a method of registering and licensing all types of businesses and professionals (CPAs, lawyers, doctors, professional engineers, etc.) And there are hundreds of registries of accredited institutions—universities, hospitals, insurance companies, nursing homes, etc.
+
+Why do we need a Trust Registry Query Protocol?
+
+As a distributed global network of trust registries starts emerging, we need a standard protocol to query them just as much as we needed standard protocols to create the Internet or the Web. That’s the purpose of the Trust Registry Query Protocol (TRQP), a simple, read-only protocol—often described as “DNS for trust”—that allows anyone to query authoritative sources of trust data, regardless of the underlying system of record.
+
+
+
+TRQP enables a trust registry to efficiently answer queries like:
+
+	Is hospital X authorized to issue health credential Y in ecosystem Z?
+	Is company X authorized to verify employment credential Y in ecosystem Z?
+	Is auditor X authorized to conduct security audit Y in ecosystem Z?
+	Is certification body X accredited to certify Y in ecosystem Z?
+
+
+For a complete overview of TRQP architecture, see this description on the ToIP wiki.
+
+What is new is TRQP v2.0?
+
+TRQP v2.0 has made the following refinements to improve clarity, extensibility, and real-world applicability:
+
+	Enhanced introductory material
+	New definitions section.
+	New high-level architecture diagrams.
+	Deeper explanation of key concepts, including TRQP consumers, TRQP endpoints, and how TRQP bridges can adapt to different systems of record (e.g., OpenID Federation, X.509, blockchains) without changes to that existing infrastructure.
+	Separation of the roles of ecosystem governing authority and trust registry operator.
+
+
+
+	Separation of the core specification from bindings that specify how to implement TRQP over specific transport protocols, starting with REST/HTTPS.
+	Consolidated requirements for identifiers and identifier verification, including ecosystem IDs, entity IDs, authority IDs, and entity IDs.
+	More tightly defined data model and query vocabulary for four categories of authority statements:
+	Authorization (e.g., issuing VCs, verifying VCs, auditing, etc.)
+	Recognition of one ecosystem by another
+	Delegation of authority from one authority to another
+	Description (i.e., metadata describing any entity {public keys, verification metadata, verifiable credentials, etc.})
+
+
+
+	A new section on TRQP error handling.
+	Refactored Swagger/OpenAPI-based REST Binding
+	Makes TRQP integration straightforward for developers.
+	Includes definitions of endpoints, expected responses, and error handling.
+
+
+
+
+
+You can explore the full API definition here: TRQP Swagger/OpenAPI Documentation
+
+Your Feedback Matters
+
+We invite trust registry operators, ecosystem architects, wallet developers, credential issuers, verifiers, and other stakeholders to review and provide feedback on TRQP before v2.0 goes final. Please help us ensure TRQP is:
+
+	Practical and usable for real-world ecosystems.
+	Flexible enough to accommodate different underlying systems of record and ecosystem governance models.
+	Comprehensive without being overly complex.
+
+
+To provide feedback:
+
+	Read the TRQP v2.0 Draft Specification: TRQP v2.0 HTML Spec
+	Explore the REST API (Swagger): GitHub - TRQP Specification and API
+	Join the conversation and share feedback: GitHub Discussions and Issues
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

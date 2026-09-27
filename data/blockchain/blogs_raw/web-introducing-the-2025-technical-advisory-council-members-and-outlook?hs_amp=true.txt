@@ -1,0 +1,149 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing the 2025 Technical Advisory Council Members and Outlook
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Introducing the 2025 Technical Advisory Council Members and Outlook
+
+        
+
+        
+           Written by LF Decentralized Trust | Jan 16, 2025 5:00:00 PM 
+        
+
+        
+          To kick off 2025, we welcome a new Technical Advisory Council (TAC), the first elected under the charter of LF Decentralized Trust. This group provides technical governance across the diverse landscape of projects hosted under the foundation’s umbrella. While each project has its own Technical Oversight Committee (TSC) that drives development efforts and priorities for its specific community and/or codebase, the TAC provides the overall technical vision for the ecosystem. 
+
+
+Of the 11 TAC members, six are new to the technical governance body. They represent the expanded project landscape of LF Decentralized Trust. As a group, the TAC selects a chair and a co-chair. This year’s new cohort has elected Tracy Kuhrt of Accenture and Arun SM to reprise their roles as chair and vice chair, respectively. This choice reflects the valuable leadership and expertise Tracy and Arun bring to their roles and the confidence the community has in the guidance they will provide as LF Decentralized Trust grows.
+
+We asked Tracy and Arun a few questions about what to expect in 2025. Read on for their insights and ambitions for the year ahead:
+
+As leaders in the Hyperledger community, you were both instrumental in establishing the vision for LF Decentralized Trust as a new, bigger umbrella for hosting code bases and communities that are critical to a decentralized future. What about this new chapter is most exciting to you?
+
+[Tracy] With LF Decentralized Trust, I am excited to see the continued momentum of our existing projects and labs plus the expectation for new projects and labs to join the organization. I attended the Maintainers Summit in San Francisco in October, and I was happy to see many new faces that have entered the community – both those who have recently joined existing projects as well as people who were looking to contribute new projects and labs to LF Decentralized Trust. In addition, we have six new members in the 2025 Technical Advisory Council. With these fresh eyes, I am enthusiastic for the new ideas and opportunities that we will be able to work on together.
+
+[Arun] What excites me most about LF Decentralized Trust is how the steps we are taking now will shape the future of how information is shared, stored, and accessed. In this era of massive computational capabilities—where quantum computers threaten to break traditional cryptographic algorithms and generative AI enables machines to think and create—the need of the hour is ensuring the integrity and security of information at its origin. If the source of information is compromised, it undermines trust, making even the most advanced technologies ineffective in delivering reliable and meaningful outcomes.
+
+LF Decentralized Trust takes a holistic approach to establishing trust in multi-party systems, extending beyond ledgers to embrace a broader range of trust-enabling technologies. By adhering to the core principles of decentralization, this initiative lays a strong foundation for scalable, secure, and interoperable solutions that prioritize authenticity, privacy, and the integrity of information. The vision is to build a robust framework of decentralized technologies that enable trusted and secure environments to thrive.
+
+What are the kinds of projects you would like to see become part of LF Decentralized Trust?
+
+[Tracy] The LF Decentralized Trust’s Charter documents the mission and scope of LF Decentralized Trust. It includes “enable development of platforms, libraries, tools and solutions, for decentralized systems and applications using blockchain, distributed ledger, and related technologies… various open source, open data and/or open standards projects relating to Decentralized Technologies, including infrastructure and support initiatives.” The places where I see expansion of our projects happening will be in the related technologies area. 
+
+While this is intentionally broad, some areas that I would expect to see contributions would include source code in privacy preserving techniques, unique ways of sharing data, and decentralized identity. One such example, Paladin, which provides programmable privacy for EVM, has already been contributed to LF Decentralized Trust Labs. In addition to code projects, it is also noteworthy that our scope has been increased to include open standards projects. One of those projects is Trust Over IP. I am looking forward to seeing project proposals for implementations of the standards being created in this community, as well as new standards projects. 
+
+[Arun] I envision LF Decentralized Trust becoming a hub for projects driving innovation in decentralized identity, privacy-preserving technologies, distributed governance frameworks, and verifiable data sharing among other multi-party systems. There is immense opportunity in credential exchange across different identity ecosystems, helping to establish more interoperable and secure systems. Given that the majority of users are already consuming ledger projects from LF Decentralized Trust, I consider cross-ledger interoperability to be of utmost importance for ensuring secure, scalable, and efficient solutions. Additionally, there is a growing demand for diverse SDKs and tools that enable seamless integration and development. We can also host projects that connect off-chain data with on-chain data and advance layer-n scaling solutions to further enhance decentralized ledger technologies.
+
+What is the TAC's role in shaping, growing, and governing the LF Decentralized Trust project ecosystem?
+
+[Tracy] The LF Decentralized Trust’s Charter documents the stated responsibilities of the Technical Advisory Council (TAC) in section 5.a. In addition, the TAC has documented the expectations for the TAC members, vice chair, and chair on our governance site at: TAC Responsibilities. In short, the TAC is responsible for facilitating communication and collaboration among the technical projects and developing an overall technical vision for the community. This includes approving new proposals for project lifecycle changes, establishing community norms, workflows, or policies that are not within the scope of any single project, and resolving technical matters that affect multiple projects.
+
+[Arun] TAC members guide project teams, fostering collaboration, knowledge sharing, and the adoption of open standards. The previous TAC was instrumental in shaping the ecosystem’s growth, focusing on security, open governance, and continuous innovation. Under LF Decentralized Trust, the scope of projects within the ecosystem has expanded, bringing new types of projects that present both challenges and opportunities. While the TAC provides a general governance framework and recommendations, the introduction of the project's Technical Steering Committee (TSC) adapts these to meet the specific needs of each project at its growth phase, ensuring flexibility while maintaining consistency across the ecosystem.
+
+What goals do you have for the TAC in 2025?
+
+[Tracy] The following goals were set by the TAC members during the January 9, 2025, meeting:
+
+	Exploring whether our lifecycle fits the needs of all project types for LFDT, specifically, look at whether we need a distinct lifecycle for standards-type projects
+	Creating a contributor ladder
+	Lowering barrier to entry for maintainers
+	Automation - common reusable CI workflow components
+
+
+
+	Continuing developer engagement
+	Determining if there are specific improvements we want to make for mentorship program
+
+
+
+	Inventorying entry points for new community members
+	Understanding hurdles for projects and addressing those
+	Connecting ToIP into the broader community; making the concepts and theory easy for the broader community to understand
+	Making implementation of ToIP software available in LFDT
+	Ensuring that projects fulfill the qualities that LFDT stands for (both new and existing projects)
+
+
+
+	Promoting cross-project collaboration
+	Identifying opportunities in the projects that might be shared across the projects
+
+
+
+	Determining how to get end-user feedback for our projects
+	Creating project onboarding guidelines for DCO and licensing
+	Increasing consistency in how projects approach things
+	Determining ways for projects to report problems and challenges to the TAC
+	Establishing guidelines for determining whether code is a lab or part of an existing project
+
+
+[Arun] I am committed to fostering security, transparency, and collaboration across the LF Decentralized Trust ecosystem, ensuring the community thrives on a strong foundation. Enhancing contributor engagement remains a top priority, alongside creating new pathways to amplify participation and empower contributors from diverse geographies and backgrounds. I aim to advance automation in governance processes, introducing smarter tools and utilities to streamline feedback collection and community growth. These efforts will support a more responsive and adaptive ecosystem while identifying opportunities to scale successful programs and sustain momentum.
+
+What are the opportunities you see in the coming year? Potential pitfalls?
+
+[Arun] The coming year presents significant opportunities for LF Decentralized Trust to drive advancements on multiple fronts. The rise of decentralized asset tracking and sustained innovation in FinTech highlight the potential for transformative solutions in these evolving domains. However, we must remain vigilant against fragmentation and siloed developments that could hinder interoperability and limit progress.
+
+Additionally, as the “Year of Data” unfolds, the demand for data ownership models, authenticity, and privacy-preserving techniques is set to grow exponentially. This creates fertile ground for LF Decentralized Trust to pioneer multi-party solutions that redefine collaboration and trust across industries.
+
+Any other thoughts?
+
+[Tracy] If you see an area where the TAC could improve the LF Decentralized Trust’s technical community, please reach out on the #tac channel in Discord. Also, please join us at an upcoming TAC call. They are held weekly on Thursdays at 7:00 AM US/PT, and everyone is welcome to join and participate.
+
+__
+
+Here’s the full list of the 2025 LF Decentralized Trust TAC:
+
+Marcus Brandenburger
+Wenjing Chu*
+Hendrik Ebbers*
+Char Howland*
+Tracy Kuhrt (Chair)
+Enrique Lacal*
+Diane Mueller*
+Venkatraman Ramakrishna
+Arun S M (Vice Chair)
+Peter Somogyvari
+Matthew Whitehead*
+
+*New members
+
+ 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

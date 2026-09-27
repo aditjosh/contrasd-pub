@@ -1,0 +1,895 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HyperledgerIdentity round-up: A cross section of production digital identity solutions built using Hyperledger technologies – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Decentralized Identity
+                            
+                        
+                    
+
+                
+                #HyperledgerIdentity round-up: A cross section of production digital identity solutions built using Hyperledger technologies
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Sep 28, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Verifying identities and information in a digital world is critical for establishing trust. But there are issues of privacy as well as efficiency, scale and accuracy in models that rely on centralized data collectors and databases. 
+ 
+The adoption of a new generation of digital identity solutions that leverage decentralized technologies such as distributed ledgers and verifiable credentials is accelerating. And Hyperledger technologies are playing a major role in this transformation. 
+ 
+Read on for a cross section of the many Hyperledger-powered solutions that are in production now. For other examples, check out these past #HyperledgerIdentity round-ups:
+ 
+	Hyperledger-Powered Digital Identity Solutions at Work                
+	Identity Applications in Action & Powered by Hyperledger
+
+ 
+IBM Digital Health Pass
+ 
+IBM Digital Health Pass, built on Hyperledger Fabric, offers a multi-credential verifier that organizations can use to manage and execute their verification policies for COVID-19 and vaccination status in a way that balances the privacy of the individual with the requirements set by the organization and local health authorities. With IBM Digital Health Pass, organizations can verify multiple types of health credentials, such as Good Health Pass, IBM Digital Health Pass, Smart Health Card and EU Digital COVID Certificate. Privacy is central to the solution, where the verifier application minimizes the personal data that is ever displayed to the user through the execution of business rules and it never lets any personal data leave, or be stored in, the verifier app.
+ 
+Indicio Network 
+ 
+The Indicio Network is a collection of four professionally-staffed, enterprise-grade public-permissioned ledgers that provide a neutral, independent, and reliable network for the exchange of verifiable credentials. MainNet, DemoNet, TestNet, and TempNet are all Hyperledger Indy-based networks with nodes operating on five continents—and a growing number of node operators. The Indicio Network is one of the networks that can support Indicio Proven, a complete suite of decentralized identity components for authenticating and sharing high value data in a privacy-preserving way using verifiable digital credentials. Built on Hyperledger Aries and Hyperledger Ursa, as well as AnonCreds and DIDComm, Proven is designed to make implementing and using these open source codebases simple, providing users with a fully-owned solution that’s easy to integrate with existing systems, to innovate on, and to scale.  
+ 
+IDUnion 
+ 
+IDUnion, the European identity verification network created as part of the “Secure Digital Identities Showcase” funding project, brings together public institutions, government agencies, private organizations, associations, educational institutions and other stakeholders from various fields to enable a fundamentally new, secure digital infrastructure for the verification of identity information. In August, 2022, IDUnion spun off Sociedad Cooperativa Europea (SCE) to operate the production network for credential verification. 
+ 
+The IDUnion network, which is built on Hyperledger Indy, enables the clear verification of individuals, companies and institutions while allowing people and organizations to manage their identity information by themselves and to decide when they want to share this information and with whom. It has a decentralized structure and stores no personal data – not even as a hash. In order to protect privacy right from the start, all personal data is stored on the user’s end device. Users have a choice of wallets for storing and presenting credentials to third parties as required. Credentials are issued, verified and stored using open standards to ensure interoperability. Hyperledger Aries is the framework for managing the credentials.
+ 
+NHS Covid-19 Digital Staff Passport
+ 
+In 2019, the NHS was preparing to pilot a digital passport project that would allow staff to carry their HR and other records as credentials on their phones as a long-term plan to make it easier to transfer from one facility to another. When the pandemic hit, this went from a pilot to a production deployment quickly. The NHS Covid-19 Digital Staff Passport rolled out in summer to support swift and efficient staff movement between NHS organizations in response to the response health emergency. The COVID-19 Digital Staff Passport provided a solid legal framework for staff to be temporarily deployed into other NHS organizations with evidence available that checks have been completed before staff move. As laid out in the pilot, the information was transferred securely by the staff member as verified credentials stored on their own smartphone, putting them in control.
+ 
+This staff passport used the Sorvin Network, which is built on Hyperledger Indy, to verify the digital credentials, and the Evernym (now Avast) Connect.me digital wallet app, which is powered by Hyperledger Aries, Indy and Ursa, to enable staff to store and share their credentials. 
+ 
+The NHS is now gearing up to roll out the next generation of its Digital Staff Passport, which will streamline transfers and staff movements through the NHS. 
+ 
+OrgBook BC 
+ 
+OrgBook BC is a searchable public directory of organizations registered in British Columbia, Canada, provided by the BC Government’s Ministry of Citizens’ Services. OrgBook BC provides verified data, including legal names and DBA names, business numbers, BC registration status and select licensee and permits, for more than 1.4 million organizations. All of the information in the OrgBookBC is received, stored, verified and displayed using the latest digital trust technologies. 
+ 
+OrgBookBC uses verifiable credentials to ensure that information about organizations are digitally signed by the entity that issues it. Issuers are public sector organizations that hold information about businesses, issue licenses or permits or certify processes. That electronic signature stays with the data throughout its life in OrgBook and is validated before its is display on the website. 
+ 
+OrgBookBC is part of an overall commitment to digital trust technologies by the Government of British Columbia. In addition to deploying Hyperledger Aries, Indy and Ursa, the team there is leading much of the open source development for those projects. Read more on the Government of BC’s investment in verifiable credentials and digital wallet technologies here. 
+ 
+Digital Identity updates from Hyperledger Global Forum
+ 
+At Hyperledger Global Forum 2022, there was a range of business, technical and demo sessions focused on digital identity, including:
+ 
+	Bringing Trustworthiness in Industrial Device Lifecycle using Verifiable Credentials – Marquart Franz & Saad Bin Shams, Siemens AG
+
+ 
+	Findy Agency — Highway to Verified Data Networks – Laura Vuorenoja & Harri Lainio, OP Financial Group
+
+ 
+	Digital Identity Using the vLEI – Christoph Schneider, Global Legal Entity Identifier Foundation (GLEIF)
+
+ 
+	Blockchain, Biometrics and Geo-Location: Lessons Learned from the Implementation of Innovative Technologies at the United Nations Joint Staff Pension Fund – Dino Cataldo Dellaccio, United Nations Joint Staff Pension Fund & Shashank Rai, United Nations International Computing Centre (UNICC)
+
+ 
+	Hosted Discussion: Rhode Island Leads on Digital Identity Solutions with Hyperledger – Liz Tanner, State of Rhode Island & Jim Mason, DTCC
+
+ 
+	Last Mile Problem in Self-Sovereign Identity – Biometric Authentification and Device Independent Wallet for Hyperledger Indy – Non Kawana & Ken Naganuma, Hitachi, Ltd.
+
+ 
+	Workshop: How To Build a Self-Sovereign Identity Agent With Hyperledger Aries Framework JavaScript – Timo Glastra & Berend Sliedrecht, ANIMO & Jakub Koci, ABSA
+
+ 
+Join the conversation about blockchain-based identity technologies and solutions with #HyperledgerIdentity on social channels. For a hands-on introduction to the market and technologies, join the free four hour Build Your Identity Solution Using Hyperledger Aries workshop. Or, for a more business level introduction, sign up for the free Getting Started with Self-Sovereign Identity (LFS178x) online course from Linux Foundation Training & Certification.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

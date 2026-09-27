@@ -1,0 +1,89 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Linea ENS Support in Hyperledger Web3j
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Introducing Linea ENS Support in Hyperledger Web3j
+
+        
+
+        
+           Written by Nischal Sharma, Hyperledger Webj3 maintainer and Blockchain Developer at Web3 Labs | Oct 8, 2024 2:13:24 PM 
+        
+
+        
+          Ethereum addresses, with their 42 characters, have become a hallmark of the web3 ecosystem. However, memorizing these long strings is nearly impossible for most users. The Ethereum Name Service (ENS) addresses this issue by offering a decentralized naming protocol on the Ethereum blockchain. 
+
+
+As of July 30th, ENS domains are also available on Linea, the fastest-growing zkEVM on Ethereum. With the recent updates in Hyperledger Web3j, developers can now seamlessly integrate Linea ENS functionality into their Java applications. This makes it easier to interact with these human-readable domain names across the Ethereum ecosystem.
+
+What is Linea ENS?
+
+The adoption of ENS on Linea marks a significant milestone. Linea, a zkEVM Layer 2 blockchain, has implemented the EIP-3668 standard - CCIP Read, enabling efficient operation of ENS with lower gas costs and improved interoperability. Linea ENS domains take the format name.linea.eth and provide users with a human-readable alternative to their Ethereum addresses, all while ensuring high security and lower transaction costs. 
+
+This system simplifies the user experience, reduces the likelihood of transaction errors, and increases accessibility. Users can switch their wallet address to a human-readable domain. Developers can use CCIP Read (ERC-3668) for cross-chain data retrieval.
+
+ 
+
+
+
+ENS Implementation in Linea
+
+Linea Support in Hyperledger Web3j
+
+Hyperledger Web3j, the Java library for interacting with Ethereum, now supports Linea ENS, thanks to recent updates. We have added the ENS registry contracts for both Linea Mainnet and Linea Sepolia testnet from their GitHub repository. 
+
+This enhancement allows developers to seamlessly integrate Linea ENS functionality into their Java applications. It enables them to resolve all ENS names into addresses or reverse resolve addresses into Linea ENS domains. The inclusion of both the Linea Mainnet and Linea Sepolia testnet ensures that developers can test and deploy their applications across different environments with ease.
+
+Code Example: Resolving Linea ENS with Hyperledger Web3j
+
+Below is a simple example of how to use ENS on the Linea network using Hyperledger Web3j:
+
+
+
+This code snippet demonstrates how to resolve a Linea ENS domain (alex.linea.eth) to its associated Ethereum address and then reverse resolve that address back to the ENS name. The functionality is available for both Linea Mainnet and Linea Sepolia testnet, ensuring full support for developers working across different stages of deployment.
+
+For more details, you can check the pull request on GitHub.
+
+Conclusion
+
+The addition of Linea ENS support in Hyperledger Web3j, now an LF Decentralized Trust project, marks a significant step forward for developers looking to build on the Linea network. By enabling easier interaction with ENS domains on Linea, this update reduces complexity and fosters a more user-friendly experience within the Ethereum ecosystem.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

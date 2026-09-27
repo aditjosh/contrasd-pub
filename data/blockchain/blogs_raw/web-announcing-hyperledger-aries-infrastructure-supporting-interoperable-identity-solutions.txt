@@ -1,0 +1,886 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Announcing Hyperledger Aries, infrastructure supporting interoperable identity solutions! – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Project: Hyperledger Indy
+                            
+                        
+                    
+
+                
+                Announcing Hyperledger Aries, infrastructure supporting interoperable identity solutions!
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        May 14, 2019
+                    
+                
+
+            
+
+            
+            
+                Identity is commonly cited as one of the most promising use-cases for distributed ledger technology. Initiatives and solutions focused on creating, transmitting and storing verifiable digital credentials will benefit from a shared, reusable, interoperable tool kit. Hyperledger Aries, the newest Hyperledger project (the13th!), is a shared infrastructure of tools that enables the exchange of blockchain-based data, supports peer-to-peer messaging in various scenarios, and facilitates interoperable interaction between different blockchains and other distributed ledger technologies (DLTs).
+
+ 
+Hyperledger Aries intends to:
+ 
+	Provide code for peer-to-peer interaction, secrets management, verifiable information exchange, and secure messaging for different decentralized systems.
+	Foster practical interoperability in support of ongoing standards work and extend the applicability of technologies developed within Indy beyond its current community components from the Hyperledger stack into a single, effective business solution.
+
+ 
+What is Aries?
+Hyperledger Aries is infrastructure for blockchain-rooted, peer-to-peer interactions. It’s not a blockchain and it’s not an application. 
+
+ 
+It includes:
+ 
+	A blockchain interface layer (known as a resolver) for creating and signing blockchain transactions.
+	A cryptographic wallet for secure storage (the secure storage tech, not a UI) of cryptographic secrets and other information used to build blockchain clients.
+	An encrypted messaging system for off-ledger interactions between clients using multiple transport protocols.
+	An implementation of ZKP-capable W3C verifiable credentials using the ZKP primitives found in Ursa.
+	An implementation of the Decentralized Key Management System (DKMS) specification currently being incubated in Hyperledger Indy.
+	A mechanism to build higher-level protocols and API-like use cases based on the secure messaging functionality described earlier.
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+The generic interface of Aries will initially support the Hyperledger Indy resolver but is flexible enough so that someone could build a pluggable method using other DID method resolvers such as Hyperledger Fabric, Ethereum, or another DID method resolver they wish. These types of resolvers would support the resolving of transactions and other data on other ledgers. 
+
+Additionally, Hyperledger Aries will provide features and functionality outside of the scope of the Indy ledger to be planned and fully supported. We have reached out to other groups, including Ethereum-based decentralized identity efforts and others participating at the W3C to contribute to this code base. 
+
+With all of these capabilities, the open source community will now be able to build core message families that are necessary to facilitate interoperable interactions a wide variety of use cases involving blockchain-based identity. 
+
+Where did Aries come from?
+Hyperledger Aries is related to both Hyperledger Indy, which provides a resolver implementation, and Hyperledger Ursa, which it uses for cryptographic functionality. Aries will consume the cryptographic support provided by Ursa to provide both secure secret management and hardware security modules support. 
+
+ 
+One of the main purposes of this project is to change the client layers in Hyperledger Indy to be interoperable with other identity projects. Hyperledger Indy has been incubating protocol work for peer interactions between identity owners for some time but as the development community has grown, it has become clear that the scope of that work extends beyond the functionality provided by Indy for support of other systems and networks. 
+
+ 
+With the main wallet and cryptographic code moving to its own project, it makes sense to move the pieces necessary to support that process with them in order to support a standards-driven approach and avoid cross dependencies between Indy and Aries.
+
+What’s next for Aries?
+The ultimate goal of Hyperledger Aries is to provide a dynamic set of capabilities to store and exchange data related to blockchain-based identity. These capabilities will range from the secured, secret storage of data such as private keys, up to the capability of globally accessible data that can be viewed and accessed by anyone. An example of such support is the creation of a secure storage solution similar to the wallet available in Hyperledger Indy today. 
+
+ 
+Other Aries functionality that would be in scope for a 1.0 project release would be a Decentralized Key Management Solution (DKMS) which would add key recovery, social recovery, and wallet backup and restore functionality. Using DKMS, clients will need a way to interact with one another peer to peer that is currently in development within Hyperledger Indy. Much of this work would be based on the DKMS documents outlined in the Indy-HIPE dkms design folder. This would be capable of storing verifiable credential data, private keys, relationship state data, and functionality that could perform operations with this data without having to extract this data. 
+
+ 
+We also hope to eventually have a scalable, searchable storage layer which is capable of storing other associated data necessary for identity maintenance. Examples of such data would be pictures, health records, or other personal information.
+
+ 
+Who’s Involved?
+The Sovrin Foundation has been the primary contributor to this initial initiative along with the team from the Government of British Columbia, but endorsements and possible contributions are in flight from several other organizations. Hyperledger has proven to be a collaborative and open environment for growing the community and has helped attract a variety of contributors. We are excited by the enthusiastic response from like-minded members of the community and look forward to collaborating further.
+
+ 
+Want to Learn More?
+If you’re interested in learning more about Aries, Indy, or Ursa, consider visiting https://wiki.hyperledger.org/display/HYP/Hyperledger+Aries+Proposal or #Aries on Hyperledger chat at https://chat.hyperledger.org/channel/aries
+
+ 
+We welcome interest from all groups and organizations, including enterprises and standards organizations.  We are looking forward to hearing from you!
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

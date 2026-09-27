@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The journey to becoming a Hyperledger contributor – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          The journey to becoming a Hyperledger contributor – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Nov 16, 2018 9:00:09 AM 
+        
+
+        
+          Guest Post: Av Lakshmy
+ 
+I am an undergraduate student in the Department of Computer Science and Engineering at the Indian Institute of Technology Madras (IIT Madras), India. This summer, I had a wonderful opportunity to intern at Hyperledger. I worked on a module related to the integration of Burrow EVM into Hyperledger Fabric, specifically integrating Ethereum events into Fabric, under my mentors, Swetha Mam and Jay Sir.
+ 
+Before this internship, I had very little knowledge of blockchains. Moreover, this was my first experience with open-source development. But, over the course of the internship, I have learnt a lot! Let me share with you my journey over the past few months: how I learnt about blockchain frameworks, became familiar with the Hyperledger development process, and submitted my first patch using Git. I would also like to share some of the key lessons I learnt along the way.
+ 
+Most people who are new to open source development may find it a bit difficult to get started, since there are no clearly-defined instructions or hard deadlines. Indeed, open source development is more self-driven but is a joy once we get used to it! Let me outline the steps involved in contributing to open source code, especially for Hyperledger projects.
+ 
+The first and most important step in open source development is identifying the area where we want to contribute. Fortunately for me, this was taken care of by my mentors. This is the first lesson I learnt. Like many other endeavours in life, once we have a mentor, things become much easier. Of course, as we understand the project more and more, we can ourselves develop a better idea of where we can contribute.
+ 
+Prior knowledge of the programming language involved in the project is desirable but not essential. We can always learn the language while writing the code. This brings us to another important lesson I learnt. Lack of proficiency in the language being used should not be a mental block while volunteering for an open source project. Most of the Fabric code is in Golang, which I had never worked with so I had some apprehensions. But, within a few days, my confidence increased, and by the time I finished the internship, I had become reasonably proficient in Golang.
+ 
+Another lesson I learnt is that, besides the specific module on which we are working, we must also have a broad awareness of related modules, so that we have a holistic understanding of the project. For this, we must go through the documentation on the project, and do some background reading. I spent the first three weeks of the 12-week internship just studying about blockchains, and the three main platforms involved in my project, namely Hyperledger Fabric, Hyperledger Burrow and Ethereum.
+ 
+The next lesson I learnt is that, we have to carefully set up our development environment to ensure that all the versions of the different softwares and tools downloaded are compatible. Otherwise, we may face problems later on. This is the phase where we may have a lot of questions and doubts, since the environment on each developer’s machine will be different. The documentation usually does not have the answers to all these questions. Online discussion forums can come in handy here; we can learn from others who have also faced similar issues. Posting doubts on the Hyperledger mailing lists, or in the Rocket Chat channels also helps. In my case, my mentors were very patient and helpful, and they clarified almost all my doubts.
+ 
+The next step is to delve deep into the specific module we will be working on. We can’t rely on the documentation to guide us here. This is where my mentors gave me an important insight. The best place to understand more about the project is by going through the source code itself. I learnt the importance of going through the source code of vast projects like Fabric and Burrow in a systematic way. I learnt how to track the code flow, starting from an entry point, and tracing the flow of data through several function calls, until the exit point. This gave me a better picture of what is already in place, and where exactly I would have to add my code.
+ 
+The internship also taught me the importance of test-driven development. The conventional way of software development is to write the code and then test it. But, while implementing large complex software projects, which should work in various scenarios, this method is not recommended. A better method is test-driven development (TDD), where we start with test cases and incrementally build the actual code. As we keep building the code, we can keep adding more complicated test cases to check how well the code works. The rationale behind TDD is that, if a particular test case doesn’t pass, we will know exactly where our code went wrong. This is a much more reliable and convenient way of improving the code. TDD is ideal for open source development where many people are involved. TDD makes it easy for the next contributor to pick up from where we have left because the test cases already being used will indicate the scenarios that have already been dealt with. In my case, we made use of Go testing frameworks like Ginkgo and Gomega to write our test-suites.
+ 
+The essence of an open source project is the coordination and synchronization of many contributors,working on the code simultaneously. This is where a powerful version control tool like Git comes into the picture.  Once I had written some code for my project, it was time for me to push up a patch. For this, I became familiar with the process of pushing up a Git commit, thereby submitting the code for review. The process of review is iterative and continues till the reviewers find the code good enough to be merged into the repository.
+ 
+Looking back, my internship project of integrating Ethereum events into Fabric was a rewarding and enriching experience! In the first few weeks, I wrote some simple test cases (using TDD) for the main piece of the project, the chaincode evmcc.go. When my patch passed through the review process and finally got merged into the repository, I was elated! I also wrote code for an event manager module to be integrated with the evmcc.go chaincode. These pieces are still under review and will hopefully be merged soon. I am thrilled that my work will eventually be included in the source code of a prestigious project like Fabric!
+ 
+I hope this article will motivate people to start contributing to open source projects in general, and Hyperledger in particular.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

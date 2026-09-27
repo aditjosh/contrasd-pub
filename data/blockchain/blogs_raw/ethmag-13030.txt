@@ -1,0 +1,1156 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-6551: Non-fungible Token Bound Accounts - Tokens - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      ERC-6551: Non-fungible Token Bound Accounts
+    
+
+
+      
+          
+            
+              
+              
+                Tokens
+              
+            
+            
+
+
+
+        
+            nft, 
+            accounts
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 23, 2023,  4:20pm
+                  
+                  
+
+1
+              
+            
+            
+              An interface and registry for smart contract accounts owned by ERC-721 tokens.
+
+
+  
+
+      github.com/ethereum/EIPs
+  
+
+  
+    
+
+
+
+    
+      
+    
+
+
+  
+
+
+
+      
+        Add EIP: Non-fungible Token Bound Accounts
+      
+
+
+    
+      ethereum:master ← jaydenwindle:token_bound_accounts
+    
+
+
+      
+        
+          opened 04:16PM - 23 Feb 23 UTC
+        
+
+
+        
+          
+            
+            jaydenwindle
+          
+        
+
+
+        
+          
+            +391
+            -0
+          
+        
+
+      
+
+  
+
+
+
+
+  
+    When opening a pull request to submit a new EIP, please use the suggested templa…te: https://github.com/ethereum/EIPs/blob/master/eip-template.md
+
+We have a GitHub bot that automatically merges some PRs. It will merge yours immediately if certain criteria are met:
+
+ - The PR edits only existing draft PRs.
+ - The build passes.
+ - Your GitHub username or email address is listed in the 'author' header of all affected PRs, inside <triangular brackets>.
+ - If matching on email address, the email address is the one publicly listed on your GitHub profile.
+
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+18 Likes
+            
+
+            
+                
+
+            
+              
+                ccamrobertson
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 23, 2023,  7:57pm
+                  
+                  
+
+2
+              
+            
+            
+              I love the simplicity of this proposal, yet it enables significant capabilities for ERC721 creators and holders.
+
+A few thoughts crop up:
+
+	
+It seems like there is significant opportunity for bad actors to deploy either duplicate registries or implementations for a given ERC721. Although I see that preventing fraud is outside the scope of this EIP, has there been thought given to providing more information about who calls createAccount? For instance I would likely have far more trust in an account created by the minter of the original account.
+
+
+	
+This might not be desirable, but I am trying to work out whether or not it would be possible to have a registry that allows for the broad registration of Account Implementations without targeting specific token IDs until a user needs to take an action with the account. I suppose this might result in something like an impliedAccount from createAccountImplementation that can be read from the contract prior to creation so that assets can be deposited to an entire collection vs. single tokenIds.
+
+
+	
+Despite the permissionless nature, is it expected that a canonical registry will (or should) emerge?
+
+
+
+
+Excited to see this in the wild!
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 25, 2023,  1:15am
+                  
+                  
+
+3
+              
+            
+            
+              These are great questions @ccamrobertson!
+
+	Yes, this does present an opportunity for fraud. The closest analogue I can think of would be airdropping “scam” NFTs into a wallet, which is quite common. This behavior is harmless to the end user so long as the malicious accounts are not interacted with. Because the address of the created account is tied to the implementation it points to, a holder can trust that an account created using a trusted implementation address is secure, regardless of who calls createAccount. The ability to permissionlessly deploy accounts for tokens that you do not own is desirable in many cases, and I think this functionality should be maintained if possible. One example is NFT creators who wish to deploy token bound accounts on behalf of their holders. Determining whether an account is trustworthy seems like something that should happen off-chain at the client level (as both the caller of createAccount and the implementation address will be queryable via transaction logs), or perhaps via an on-chain registry of trusted implementations (although that seems like a large increase in the scope of this EIP, and may warrant a separate proposal). Would love to hear any suggestions you have for how this type of fraud could be addressed within the scope of this proposal!
+	This is definitely an interesting idea to explore. I had considered adding a discoverAccount function which would emit an event registering an account address, but ultimately decided against it because the same data could be queried off-chain at the application level given an implementation address. Depositing assets to an entire collection is definitely an interesting use case, but the logic for this may be better implemented at the asset contract level rather than the within the context of this proposal. It might be interesting to add a registerImplementation function which emits an event notifying listeners that a new implementation is available. However, I fear this may compound the risk of malicious account implementations as it gives them an appearance of legitimacy.
+	Since the proposal defines both a registry implementation and a registry address that are permissionless, it is expected that this will become the canonical registry. A single entry point for token bound accounts will make it much easier for the ecosystem to adopt this proposal vs. multiple registries. The proposed registry should be flexible enough to accommodate the majority of token bound account implementations, as the EIP-1167 proxy pattern is very well supported. Of course, anyone is free to deploy their own registry implementation, or to deploy token bound account contracts without using a registry.
+
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                scorpion9979
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 26, 2023,  5:18pm
+                  
+                  
+
+4
+              
+            
+            
+              I think this is a great concept that enables a whole new array of use cases and the best thing about it is that it would already work with any existing NFTs. I think it could also give rise to a whole new and unique model of project airdrops.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 26, 2023,  9:47pm
+                  
+                  
+
+5
+              
+            
+            
+              Thanks @scorpion9979!
+
+This proposal definitely has interesting implications for airdrops. It could eliminate the need for projects to capture point-in-time snapshots of token holders, since the token bound account address for each NFT is static and computable.
+
+Additionally, because each token bound account address can be computed from the token ID of the NFT which owns it, the data required to distribute tokens could potentially be stored in a compressed format on chain. This may significantly reduce the gas cost required to perform airdrops.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                william1293
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 27, 2023,  6:02am
+                  
+                  
+
+6
+              
+            
+            
+              As far as I know, a project called A3S Protocol has implemented a similar function, but I don’t know the difference between its implementation and your proposal.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 27, 2023,  6:01pm
+                  
+                  
+
+7
+              
+            
+            
+              Thanks for highlighting this project @william1293! I haven’t seen it before. It looks like A3S uses a similar approach, but from a quick glance it seems like there are a few key differences:
+
+	A3S uses a single central NFT collection which it deploys smart contract accounts for. It is not compatible with other NFTs. This proposal gives every NFT the ability to have a smart contract account.
+	The A3S factory contract is centrally owned and upgradable by the owner. The registry defined in this proposal is neither owned or upgradable.
+	Each A3S account calls back into the central factory to determine ownership of the account, which theoretically gives A3S the ability to modify the owner of an A3S account without the current owner’s permission. This proposal defers ownership checks to the account implementation, allowing fully sovereign account implementations to be developed. The example account implementation defined in this proposal is sovereign by default.
+
+
+In short, this proposal defines a system that gives every NFT a smart contract account in a decentralized manner. A3S seems to be a for-profit protocol company that creates smart contract accounts for their own NFT collection.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                hskang9
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 28, 2023,  5:55pm
+                  
+                  
+
+8
+              
+            
+            
+              That sounds similar to previous standard EIP-5252. I think proxy method to generate account contract would make the gas cost more efficient. I think EIP validators will finalize this one as they could not understand the code and gave up. It is such a shame they need take effort on discovering new primitives but then they are not funded when @vbuterin sells eth for $350 million.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                hskang9
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 28, 2023,  6:39pm
+                  
+                  
+
+9
+              
+            
+            
+              @SamWilsn I volunteer to review this EIP and get it finalized, and hopefully I might find someone interested to finalize my EIP as well?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SamWilsn
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 28, 2023,  7:09pm
+                  
+                  
+
+10
+              
+            
+            
+              
+
+
+
+ hskang9:
+
+
+I volunteer to review this EIP and get it finalized
+
+
+
+
+Always happy to have more peer reviewers!
+
+
+
+
+
+ hskang9:
+
+
+hopefully I might find someone interested to finalize my EIP as well?
+
+
+
+
+ERC-5252? You can open a pull request to move it to status: Review whenever you think it’s ready. Peer review—while recommended—is optional.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                RobAnon
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 28, 2023,  9:27pm
+                  
+                  
+
+11
+              
+            
+            
+              Pretty neat, we’ve already done this with Revest FNFTs. Suggest including backwards compatibility in some manner.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 28, 2023, 11:54pm
+                  
+                  
+
+12
+              
+            
+            
+              @hskang9 I’d love to learn more about the similarities you see between this proposal and ERC-5252. I’ve taken a read through that proposal and I’m not totally clear on how it could provide smart contract accounts for NFTs.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023, 12:17am
+                  
+                  
+
+13
+              
+            
+            
+              @RobAnon thanks for sharing! From a cursory look, it seems like Revest uses ERC-1155 tokens under the hood. ERC-1155 support was considered during the development of this proposal, but ultimately decided against.
+
+Since ERC-1155 tokens support multiple owners for a given token ID, binding an account to an ERC-1155 token would significantly complicate the ownership model of this proposal. In the case of an account bound to an ERC-1155 token, would each token holder be able to execute arbitrary transactions? Would signatures from all holders be required? Or would signatures only need to be collected from a majority of holders?
+
+Some ERC-1155 tokens (potentially including Revest?) support single account ownership of of a ERC-1155 tokens by limiting the balance of each token ID to 1. The challenge to supporting these tokens is that the ERC-1155 standard doesn’t define a method for querying the total number of tokens in existence for a given token ID. It is therefore impossible to differentiate between ERC-1155 tokens that have multiple owners per token ID and those that have a single owner per token ID without using non-standard interfaces.
+
+Since this proposal purposefully excludes ERC-1155 tokens from its scope, I don’t think Revest tokens can be supported in their current form. However, Revest would be welcome to implement a custom token bound account implementation that uses an alternative ownership scheme if they wish to support this proposal. Another potential solution would be to wrap the existing ERC-1155 tokens in an ERC-721 token, which would then make them compatible with this proposal.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                hskang9
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023, 12:45am
+                  
+                  
+
+14
+              
+            
+            
+              That is because you don’t clarify ambuiguity of account using NFT and haven’t even made a contract implementation yet. Your proposal currently have not clarified how much one’s NFT have access to its account contract and how the access will be managed. If you can’t make contract implementation, you don’t know what you are doing. What I look feasible in your proposal is unified interface for operating account bound contracts, and this is the first thing I will review. Other items will be reviewed once the contract for binding logic on each case in the proposal is implemented. Account bound finance(EIP-5252) fits in the case where one NFT manages access one contract bound to its nft owner. EIP-5252 creates account with contract clone method. Backward compatibility may be considered if this EIP tries to implement EIP-5252’s structure.
+
+Also, one question about security considerations, have you considered adding metadata in your NFT registry and make it display in opensea metadata format? Why is this a security concern if a metadata can be retrieved from its registry for account bounding? Do you have the certain metadata format you would propose?
+
+For example, OpenRarity have come up with their metadata to show NFT rarity.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                hskang9
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023, 12:51am
+                  
+                  
+
+15
+              
+            
+            
+              It would be actually great if we include each of our cases on clarifying account ambiguity into this eip and try to come up with most unified interface for all in democratic way.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                hskang9
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023,  1:14am
+                  
+                  
+
+16
+              
+            
+            
+              It is not true that EIP-1155 cannot be used for account bounding, account bounding can already be done by checking ownership of an EIP-1155 token of sender in account contract. Ids can actually be assigned to EIP-1155 and it is more gas efficient.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023,  1:36am
+                  
+                  
+
+17
+              
+            
+            
+              @hskang9 a few comments:
+
+
+haven’t even made a contract implementation yet
+
+
+
+A fully-functional implementation is included in the “Reference Implementation” section.
+
+
+If you can’t make contract implementation, you don’t know what you are doing
+
+
+
+This seems unnecessarily hostile - let’s try to keep things civil 
+
+
+Account bound finance(EIP-5252) fits in the case where one NFT manages access one contract bound to its nft owner
+
+
+
+Right - I guess my question is whether ERC-5252 works with all existing NFT contracts? Or does it only work with NFTs that implement the ERC-5252 interface?
+
+
+have you considered adding metadata in your NFT registry and make it display in opensea metadata format? Why is this a security concern if a metadata can be retrieved from its registry for account bounding?
+
+
+
+This proposal is designed to work with external NFT contracts, especially ones that have already been deployed and already have metadata systems in place. As such, it doesn’t specify any requirements for metadata beyond those set out in EIP-721. This is not a security concern.
+
+
+account bounding can already be done by checking ownership of an EIP-1155 token of sender in account contract
+
+
+
+Right - you can check that a sender’s balance of an ERC-1155 token is non-zero. My point is that there can be many owners of a single ERC-1155 token with a given token ID. How would you recommend handling account authorization given multiple token holders?
+
+            
+
+
+            
+              
+4 Likes
+            
+
+            
+                
+
+            
+              
+                hskang9
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023,  2:13am
+                  
+                  
+
+18
+              
+            
+            
+              
+
+
+
+ jay:
+
+
+A fully-functional implementation is included in the “Reference Implementation” section.
+
+
+
+
+The reference implementation does have a case of account contract being a proxy to interact with another smart contract, but it does not cover all ambiguity such as a case where an account being operated by the rules on smart contract.
+
+
+
+
+
+ jay:
+
+
+If you can’t make contract implementation, you don’t know what you are doing
+
+
+
+
+Sorry if it hurts you, but it is true that you haven’t covered the case on other previous references where the contract account can have other utilities. The way to use smart contract with NFT as a proxy account is very interesting and has its point enough if it is clarified.
+
+
+
+
+
+ jay:
+
+
+Right - I guess my question is whether ERC-5252 works with all existing NFT contracts? Or does it only work with NFTs that implement the ERC-5252 interface?
+
+
+
+
+Definitely not. your proposal is something new from what I did. Your proposal is providing a way where a proxy account can be made in EVM blockchain with NFT. Problem is you cover the proposal as if it covers all cases of account bound with NFT.
+
+
+
+
+
+ jay:
+
+
+This proposal is designed to work with external NFT contracts, especially ones that have already been deployed and already have metadata systems in place. As such, it doesn’t specify any requirements for metadata beyond those set out in EIP-721. This is not a security concern.
+
+
+
+
+I agree as this is rather a specification of a proxy account by owning an nft from the reference implementation for now. The proposal has its value on its generic interface to interact with other contracts, but I think it is currently neglecting the fact on who is reponsible on which and which on connecting account to NFT. However, I believe this has a huge potential when it comes to proxy trade. As you declare there is no security concern, it is clear that this is just used as generic proxy account.
+
+
+
+
+
+ jay:
+
+
+Right - you can check that a sender’s balance of an ERC-1155 token is non-zero. My point is that there can be many owners of a single ERC-1155 token with a given token ID. How would you recommend handling account authorization given multiple token holders?
+
+
+
+
+ERC-1155 with id can be made with setting asset key as an id (e.g. (“1”, 1), (“2”, 1)). This way one can handle account authorization as same as ERC721.
+
+After looking at the reference implementation, I suggest amending the proposal name from “Non-fungible Token Bound Accounts” into “Non-fungible Token Bound Proxy Accounts”.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                hskang9
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023,  2:40am
+                  
+                  
+
+19
+              
+            
+            
+              
+
+
+
+ jay:
+
+
+Right - you can check that a sender’s balance of an ERC-1155 token is non-zero. My point is that there can be many owners of a single ERC-1155 token with a given token ID. How would you recommend handling account authorization given multiple token holders?
+
+
+
+
+@jay 's point is fair. You need to specify how you handle this issue.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                jay
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 1, 2023,  3:14pm
+                  
+                  
+
+20
+              
+            
+            
+              
+
+
+
+ hskang9:
+
+
+does not cover all ambiguity such as a case where an account being operated by the rules on smart contract
+
+
+
+
+I can definitely add some test cases to clarify how token bound accounts should function. The example account implementation in the proposal is intentionally simple.
+
+
+
+
+
+ hskang9:
+
+
+you haven’t covered the case on other previous references where the contract account can have other utilities
+
+
+
+
+Projects wishing to implement this proposal are welcome to create custom account implementations which add additional functionality to token bound accounts. This proposal defines a minimal interface in order to leave room for diverse implementations.
+
+
+
+
+
+ hskang9:
+
+
+Problem is you cover the proposal as if it covers all cases of account bound with NFT
+
+
+
+
+I’d love to hear more about some of the cases that couldn’t be supported by this proposal. EIP-1167 proxies were chosen to maximize the possible cases that can be supported, as they have wide ecosystem support and can support nearly all possible smart contract logic.
+
+
+
+
+
+ hskang9:
+
+
+it is currently neglecting the fact on who is reponsible on which and which on connecting account to NFT
+
+
+
+
+I can definitely attempt to make this clearer in the proposal. Anyone can create a token bound account for any NFT, but only the owner of the NFT will be able to utilize the account. This is enforced by checking that a given implementation supports the token bound account interface described in this proposal before deploying the account. Bad actors could deploy malicious account implementations, which is a potential concern. However, much like “spam” NFTs that are airdropped into people’s wallets, there is no risk to the end user so long as they do not interact with accounts whose implementations are untrusted.
+
+
+
+
+
+ hskang9:
+
+
+ERC-1155 with id can be made with setting asset key as an id (e.g. (“1”, 1), (“2”, 1)). This way one can handle account authorization as same as ERC721.
+
+
+
+
+This is correct. However, given an external ERC-1155 token contract with no knowledge of its token ID scheme, there is no way (according to the ERC-1155 standard interface) for an account implementation to determine that there is only one owner per token ID. As mentioned above, a custom account implementation could be created which implements the owner and executeCall functions such that they check balanceOf instead of ownerOf to allow usage with ERC-1155 tokens. I’m reluctant to specifically include this in the proposal to avoid bloating the specification, but if there is enough interest that can certainly be reconsidered.
+
+
+
+
+
+ hskang9:
+
+
+You need to specify how you handle this issue.
+
+
+
+
+This question was actually directed at you @hskang9 
+
+Would love to hear your thoughts on how you would like to see ERC-1155 tokens supported!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+        next page →
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

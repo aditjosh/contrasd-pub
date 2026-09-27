@@ -1,0 +1,589 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Documentation contribution workflow - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+	Documentation contribution workflow
+
+
+
+
+
+	Documentation contribution guidelines
+
+
+
+
+
+	Versioned documentation
+
+
+
+
+
+	Documentation archive
+
+
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Documentation contribution workflow
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Documentation contribution workflow
+
+	Felipe Faraggi
+
+
+
+	Alexandra Tran
+
+
+
+	Sally MacFarlane
+
+
+
+	+2
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Dec 20, 2023 by Alexandra Tran
+
+
+
+
+
+
+
+
+
+
+The following guidelines explain how to contribute to the Besu documentation repository.
+Your first contribution
+Start by looking for issues that have a Good First Issue label. Good First Issues might require only a few lines of documentation, or have enough information for a newcomer to easily document.
+When you’ve identified an issue you want to work on, assign it to yourself, or message us on the Besu Discord and we’ll assign it to you.
+Contribution workflow
+The Besu documentation uses a docs-as-code approach, meaning documentation is created using the same tools as code. The contribution workflow involves proposing changes to the docs by creating forks and pull requests (PRs) on the documentation GitHub repository. This facilitates open contributions, testing, and review.
+To contribute changes:
+	Fork the Besu documentation repository.
+
+	Clone your fork to your computer.
+	git clone <FORKED-REPO>
+	cd besu-docs
+
+
+	Add an upstream remote.
+	git remote add upstream <ORIGINAL-REPO>
+
+
+	Create and checkout a topic branch, naming it appropriately. We recommend using the issue number and short description, which is a reminder to fix only one issue in a PR. For example, 183-doc-cli-option.
+	git checkout -b <ISSUE-NUM>-<ISSUE-DESC>
+
+
+	Open the Besu documentation repository in a text editor of your choice (for example, VS Code) and make your changes to the documentation content located in the /docs  folder. Make sure to follow the style guidelines and format your Markdown correctly. If you delete, rename, or move a documentation file, make sure to add a redirect.
+
+	Preview your changes locally to check that the changes render correctly. Make sure you switch to the development version of the docs in the preview.
+
+	Add and commit your changes, using a clear commit message. Make sure to add a DCO message to each commit. Push your changes to your remote fork (usually named origin).
+	git add *
+	git commit -m "<COMMIT-MESSAGE>"
+	git push origin
+
+
+	Navigate to the original Besu documentation repository, and you’ll see a banner prompting you to create a PR with your recent changes. Create a PR, filling out the description according to the template. Remember to link the issue that the PR fixes in the description.
+	fixes #<ISSUE-NUM>
+
+
+	The bottom of the PR page displays a list of checks that verify links, Markdown syntax, and more. If you have any errors, make any required changes to your PR, repeating steps 5-7. If you want to include a new word that causes a spell check error, you can add that word to the project-words.txt file.
+
+	In the right sidebar of your PR, select the reviewer(s) who should review your PR (typically the original issue raiser). If you don’t know who to choose or can’t because you’re not a maintainer yet, select the reviewers listed by GitHub or keep the default value.
+
+	Make any required changes to your PR based on reviewer feedback, repeating steps 5-7.
+
+	After your PR is validated, all checks have passed, and your branch has no conflicts with the target branch, you can merge your PR. You can delete the topic branch after merging your PR.
+
+
+Tip: You can use a Git client such as Fork instead of the command line.
+Note: The Besu documentation repository default branch is now named main.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Documentation contribution guidelines
+Documentation contribution guidelines
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation
+Documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Suggest documentation enhancements
+Suggest documentation enhancements
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Versioned documentation
+Versioned documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Report bugs in the documentation
+Report bugs in the documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+How to Contribute
+How to Contribute
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 36, "requestCorrelationId": "7cd9c56f6ff84df8a1e41c4620151807"}

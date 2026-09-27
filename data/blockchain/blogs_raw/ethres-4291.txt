@@ -1,0 +1,324 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prevent patents by allowing crawlers - Administrivia - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Prevent patents by allowing crawlers
+    
+
+
+      
+          
+            
+              
+              
+                Administrivia
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                DennisPeterson
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2018,  2:41pm
+                  
+                  
+
+1
+              
+            
+            
+              One way to help protect against software patents is to make sure posts are stored in Internet Archive, thus giving a reliable publish date. I just attempted to do that with a post, and it didn’t work because they won’t save anything that has a robot.txt prohibiting web crawlers.
+
+Would it be possible to modify robot.txt?
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                dlubarov
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2018,  8:40pm
+                  
+                  
+
+2
+              
+            
+            
+              The robots.txt looks fine to me; IA’s crawler should be able to discover and archive any topic pages it likes. It looks like IA’s crawler just hasn’t decided to archive very many topic pages, for whatever reason, but there are some. Here’s an example.
+
+If someone representing the website could email info@archive.org, maybe they could adjust some configuration to make their crawler more likely to archive all the topics here.
+
+Edit: I tried requesting that IA archive a topic page through their web UI, and IA did archive it (link), but the server didn’t give it the actual content of the topic; instead it returned “Oops! That page doesn’t exist or is private.” Might be a bug in Discourse? Or it could be some intentional bot blocking code within Discourse, possibly with a rate limit that IA’s crawler sometimes exceeds.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                DennisPeterson
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2018, 10:05pm
+                  
+                  
+
+3
+              
+            
+            
+              Interesting. On one request I got a message about robots.txt but on several other attempts I got the same message you did.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                DZack
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 20, 2018,  5:47pm
+                  
+                  
+
+4
+              
+            
+            
+              I can think of another place to store posts for future “proof of publish date”
+
+(or hashes of posts, anyway)
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                DZack
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 21, 2018,  8:01pm
+                  
+                  
+
+5
+              
+            
+            
+              …but actually tho, if we can just get posts in a standard/ plaintext format, say once a week, hashing them, storing the hash on Eth, and hosting the content (IPFS, or even just have a few redundant copies hosted somewhere) could be a neat project, and a nice illustration of an easy use-case.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                virgil
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 21, 2018, 10:06pm
+                  
+                  
+
+6
+              
+            
+            
+              I will ask my colleagues at archive.org to look at this.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

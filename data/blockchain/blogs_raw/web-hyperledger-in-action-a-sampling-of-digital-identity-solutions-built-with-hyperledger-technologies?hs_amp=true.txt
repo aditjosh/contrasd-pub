@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger in Action: A Sampling of Digital Identity Solutions Built with Hyperledger Technologies
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger in Action: A Sampling of Digital Identity Solutions Built with Hyperledger Technologies
+
+        
+
+        
+           Written by Hyperledger Foundation | Sep 28, 2023 7:38:38 PM 
+        
+
+        
+          The drive to leverage new technologies, including distributed ledgers, verifiable credential and digital wallets, to streamline and secure how identities are managed and verified online continues to accelerate. In March, the White House included “Support Development of a Digital Identity Ecosystem” as a strategic objective in the National Cybersecurity Strategy. And the EU has mandated a European digital identity framework to enable citizens to use a digital ID to access key services. 
+
+The Hyperledger community has been at the forefront of developing and deploying these technologies. In the last year, our very active and innovative developer community  has expanded the project landscape with the addition of Hyperledger AnonCreds and a number of components in the Hyperledger Aries toolkit. And a number of businesses, governments and industry groups have introduced or advanced Hyperledger-powered digital identity solutions, including:
+
+BC Wallet
+
+In British Columbia, the BC Digital Trust is a group with the government that is focused on building confidence online by delivering easy-to-access digital solutions that are safe and secure. Digital Trust solutions are built using open source software, including a number of Hyperledger technologie. The BC Wallet, a smartphone app that was developed using tools from the Hyperledger Aries toolkit, lets users receive, store and present digital credentials such as permits, identities, and licenses. One early use case is enabling members of the Law Society of British Columbia to use digital credentials stored inside their BC Wallet to identify themselves, proving they are a lawyer in good standing, to gain access to court materials — swiftly and remotely.
+
+Instnt Access
+
+Instnt Access, part of an AI-managed customer acceptance platform from Instnt, leverages Hyperledger Aries, Hyperledger Indy and web3 decentralized identity standards to help businesses eliminate customer onboarding friction. With Instnt Access, a portable KYC SaaS solution, businesses can enable customers to sign-up and sign-on to any product or service with a single click, without having to go through multiple sign-ups, repeated personal data collection and re-authentication friction.
+
+Member Pass
+
+Bonifii was an early innovator in the digital identity space. Its Member Pass was one of the first identity verification solutions. Developed for credit unions, Member Pass, which is built on Hyperledger Indy, makes it easy and secure for credit union members to authenticate themselves across digital channels. This gives them easy access to their financial accounts while proactively preventing fraud and protecting their private personal information. 
+
+Bonifii is now also starting to trial the BonifiID identity credential verification. With this verifiable credential, banks and credit unions can onboard new customers without manual document inspection, speeding up processes and enabling them to better serve unbanked or underbanked consumers. 
+
+SITA’s Digital Travel Credential (DTC)
+
+SITA, the travel sector technology provider, and development partner Indicio have created a Digital Travel Credential (DTC) built using Hyperledger Aries and Hyperledger Indy. The Digital Travel Credential (DTC) eliminates the need for manual entry of information from paper travel documents, allowing passengers to share relevant data from their digital wallet on their mobile device. 
+
+The first implementation was an app-based travel pass created with the government of Aruba. Travelers visiting the island can use the Aruba Happy One Pass (Aruba HOP) to create a DTC from their passport that pre-populates their required Embarkation and Debarkation card (ED card). Even before boarding a flight, travelers can easily share the information needed to clear immigration. The solution translates the trustworthiness of a government-issued passport into a trustworthy digital credential without storing personal data outside the credential. 
+
+Indicio and SITA are now working on solutions to bring DTCs to the wider travel market.
+
+Join the conversation about Hyperledger-based identity technologies and solutions with #HyperledgerIdentity on social channels. To dive into this market, join the free, self-paced Getting Started with Self-Sovereign Identity (LFS178x) online course from Linux Foundation Training & Certification. 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

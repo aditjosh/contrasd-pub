@@ -1,0 +1,222 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+peer version — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts
+	Getting Started - Install
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides
+	Upgrading to the latest release
+	Commands Reference	peer
+	peer chaincode
+	peer lifecycle chaincode
+	peer channel
+	peer snapshot
+	peer version	Syntax
+	peer version
+
+
+
+	peer node
+	osnadmin channel
+	configtxgen
+	configtxlator
+	cryptogen
+	ledgerutil
+	Service Discovery CLI
+	Fabric-CA Commands
+
+
+
+	Architecture Reference
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Commands Reference
+	peer version
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+
+peer version¶
+
+The peer version command displays the version information of the peer. It
+displays version, Commit SHA, Go version, OS/architecture, and chaincode
+information. For example:
+
+ peer:
+   Version: 2.1.0
+   Commit SHA: b78d79b
+   Go version: go1.14.1
+   OS/Arch: linux/amd64
+   Chaincode:
+    Base Docker Label: org.hyperledger.fabric
+    Docker Namespace: hyperledger
+
+
+
+
+
+
+Syntax¶
+
+The peer version command takes no arguments.
+
+
+
+peer version¶
+
+Print current version of the fabric peer server.
+
+Usage:
+  peer version [flags]
+
+Flags:
+  -h, --help   help for version
+
+
+
+
+
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

@@ -1,0 +1,617 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feature Proposal Template - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Feature Proposal Template
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Feature Proposal Template
+
+	Tim Beiko
+
+
+
+
+
+Owned by Tim Beiko
+
+
+Feb 05, 2020
+
+
+
+
+
+
+
+
+
+
+This is a template that can be used by the community to propose a new feature for Hyperledger Besu.Â 
+If you have an idea for a feature that you would like to discuss with other contributors prior to formally proposing, the #besu-contributors channel of the Hyperledger Chat is the best place to start.
+Feature NameÂ 
+Feature Overview(2-3 sentences):Â 
+This feature is â€¦. provide a short, high-level description of the feature
+Rationale
+	Why do we want to build this feature?Â 
+	Who are the target users/customers?Â 
+	What use cases does this feature enable/facilitate?
+
+Potential Risks / Rabbit Holes:Â 
+	What are things that could go wrong when building this feature? What should we be cautious about?
+
+Out of scope:
+	What are things that are explicitlyÂ notÂ  in scope for the feature, or for its first version?
+
+Longer description:Â 
+Go crazy here! This section should thoroughly describe the feature in as much or little detail as is available. Feel free to link out to other resources, include screenshots, code snippets, etc.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Proposal Template for a Hyperledger Project
+Proposal Template for a Hyperledger Project
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Rough Draft - New Project Proposal
+Rough Draft - New Project Proposal
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan - Bevel Documentation redesign
+Project Plan - Bevel Documentation redesign
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Bevel: Documentation redesign
+Bevel: Documentation redesign
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Hyperledger Besu Proposal
+Hyperledger Besu Proposal
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022 02 17 TSC Meeting Record
+2022 02 17 TSC Meeting Record
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "2ee65868096a47cc8cd76e66dd8ce505"}

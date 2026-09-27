@@ -1,0 +1,211 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A Year of Milestones: Let’s Take a Look at 2024
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          A Year of Milestones: Let’s Take a Look at 2024
+
+        
+
+        
+           Written by Daniela Barbosa, General Manager of Decentralized Technologies at the Linux Foundation and Executive Director of LF Decentralized Trust | Dec 20, 2024 4:52:26 PM 
+        
+
+        
+          2024 was an eventful year around our global community filled with major project developments and introductions, member and deployments news, non-stop events, and high levels of innovation and energy around the world. And, of course, the launch of LF Decentralized Trust. 
+
+
+  
+    
+      
+    
+
+  
+
+
+
+
+The global pace of innovation and adoption for critical decentralized technologies was the driving force for the launch of LF Decentralized Trust. And our growing community is front and center in advancing these technologies and the applications and networks they power. 
+
+Here are just a few of the many, many milestones we collectively achieved in 2024:
+
+Welcoming new projects and communities
+
+New projects are the lifeblood of large umbrella open source foundations and communities, infusing fresh energy, ideas, and technologies into our ecosystem. They play a critical role in driving innovation, expanding our community, and addressing emerging challenges in the ever-evolving landscape of digital trust and blockchain.
+
+2024 has been a year of transformation and growth, and we’re thrilled to have welcomed industry leading projects to the LF Decentralized Trust umbrella. These projects represent the forefront of innovation in blockchain and digital trust, driving advancements in key areas like identity, governance, key management, and developer tools.
+
+Hyperledger Web3j (Jan 2024): A lightweight, modular Java library empowering developers to build blockchain-based applications with ease, with a seamless integration with the Ethereum ecosystem for smart contract interactions and decentralized application development.
+
+Hyperledger Identus (April 2024): Open source solutions for decentralized identity management, with initial focus areas including integration with the Cardano ecosystem to enable secure, interoperable identity frameworks.
+
+Lockness (Sept 2024): A robust audit trail framework for digital assets, ensuring compliance and transparency in blockchain ecosystems focused on key management and digital signature protocols, including technologies like Multi-Party Computation (MPC), Threshold Signature Schemes (TSS), and other state-of-the-art protocols in cryptography.
+
+Hiero (Sept 2024): Advancing decentralized governance with tools for trustless coordination and decision-making in distributed systems Hiero is Hedera’s core network software. Hiero is not just a single software component but a collection of key modules necessary to run and interact with a fully decentralized network.
+
+Trust Over IP: Since it was established at the Linux Foundation in 2020, Trust Over IP (ToIP) has been a pioneering force in creating open, interoperable frameworks for digital trust. ToIP focuses on developing standards and best practices for building trust frameworks that enable secure, privacy-preserving interactions across diverse ecosystems. In 2024, ToIP became the first Joint Development Fund (JDF) under LF Decentralized Trust, marking a significant milestone for both communities. This integration not only strengthens ToIP’s mission but also aligns it with LFDT’s broader vision of advancing open-source collaboration for decentralized trust technologies. (Read 2024 news.)
+
+Expansion and growth in existing projects
+
+Graduated projects like Besu and Hyperledger Fabric form the cornerstones of our ecosystem. This year they and others, including Hyperledger Cacti, Hyperledger FireFly and Hyperledger Iroha, had important milestones as highlighted on our blog (use drop down to view updates by project). These projects continue to mature, driving real-world adoption and proving their value as essential tools for blockchain-based solutions across industries.
+
+Major project releases in 2024 included:
+
+Fabric 3.0: This milestone release builds on the performance enhancements introduced in version 2.5, the current LTS release. It offers a powerful new consensus option, Byzantine Fault Tolerant (BFT) ordering service, which increases the resilience and reliability of Hyperledger Fabric networks. Specifically, Fabric 3.0 is the first blockchain platform to leverage the SmartBFT protocol, which is both easy to implement in existing networks and well suited to production enterprise deployments.
+
+Bevel 1.0: Hyperledger Bevel 1.0 introduces new features and refined deployment processes, elevating the efficiency and security of blockchain network setups. Hyperledger Bevel is designed not only to accelerate the deployment of blockchain networks but also to ensure their scalability and security, inherently making them production ready. The project currently boasts compatibility with R3 Corda OS and Enterprise, Hyperledger Besu, Hyperledger Fabric, Hyperledger Indy, Quorum, and Substrate on the cloud infrastructure of your choice.
+
+Continued innovation from LF Decentralized Trust Labs
+
+Labs within LF Decentralized Trust play a critical role in fostering innovation and experimentation. As incubators for early-stage ideas, labs provide a safe, collaborative environment to explore emerging technologies, validate concepts, and lay the groundwork for future advancements in decentralized trust. Here’s some lab highlights from 2024:
+
+	Private Data Objects is a lab that provides technology for confidentiality-preserving, off-chain smart contracts.
+	Splice is a set of reference applications designed to allow entities to operate, fund, and govern publicly available decentralized Canton synchronizers that provide connectivity and interoperability infrastructure for the Canton Network.
+	Signare is an enterprise grade digital signing solution for DLT related applications and Ethereum clients.
+	Zeto is a UTXO based privacy-preserving token toolkit for EVM using Zero Knowledge Proofs.
+	A number of HyperledgerFabric-related labs continue to enhance and improve the experience of using and building on Fabric.
+
+
+Visit our Labs page for details on additional labs and to learn more.
+
+Technical governance excellence 
+
+The Technical Advisory Council (TAC) of LF Decentralized Trust is the body responsible for guiding the technical direction, governance, and sustainability of the projects within the foundation’s ecosystem. The TAC plays a foundational role in ensuring the technical excellence and sustainability of LF Decentralized Trust’s ecosystem. It supports innovation, fosters collaboration, and helps create a cohesive framework where projects can thrive.
+
+Developing and updating policies for project lifecycle management, including onboarding, incubation, graduation, and archival of projects is a key deliverable of the TAC and ensures that projects adhere to LF Decentralized Trust’s principles of open development, transparency, and collaboration. Some of the TACs 2024 accomplishments as summarized by Tracy Kurt, TAC Chair included:
+
+	Reviewing ongoing Project Updates
+	New Governance Site
+	New Labs Site
+	New Project Proposals Repository
+	Implemented Project Annual Review Process
+	Approved Marcus Brandenburg, Alvaro Picazo, Esteban Garcia as Lab Stewards
+	Approved Labs Governance document
+	Automated Pipeline Best Practices
+	Maintainer Diversity Best Practices
+	2024 Maintainer Days event 
+	Ongoing work:
+	Security Artifact Signing task force
+	Badging task force
+
+
+
+
+
+We are grateful for our 2024 TAC representatives and chairs as, without their contributions, we could not accomplish this work. We also recently completed the TAC elections. Be on the lookout for a post on our new TAC leadership soon!
+
+Read: Staff Corner: The importance of maintainers and contributors at LF Decentralized Trust
+
+An inspiring lineup of new members 
+
+In 2024, we were thrilled to welcome an inspiring lineup of 25 new members to the community and to upgrade Hedera Foundation to Premier Membership and Stellar Development Foundation to General Membership. These organizations bring fresh perspectives, expertise, and energy to our mission.
+
+Driving Innovation Together
+
+New members enrich our ecosystem by contributing innovative ideas, technologies, and use cases across industries. Their participation fosters collaboration and accelerates the adoption of trust-based digital solutions. Companies like Applied Blockchain, Cheesecake Labs, Chainlink Labs, Dfns, and more are bringing real world code and implementations to an already industry leading community.
+
+“Chainlink Labs joining the Hyperledger Foundation is a positive step forward for both Chainlink and the larger Hyperledger community as it will allow a greater collection of high-quality oracle networks to appear around Hyperledger Foundation systems and projects, leading to more advanced smart contracts and greater value for end-users,” stated Todd Barr, CMO of Chainlink Labs. “Hyperledger has done a great job building a large community of top global enterprises that are committed to solving some of the most complex use cases in the world, and we’re excited to work with this community to bring those more advanced use cases to life within the Hyperledger model of collaboration.”
+
+Expanding Global Reach
+
+The addition of new members strengthens our global footprint, creating new opportunities for collaboration and adoption across key regions and sectors. Organizations like Tata Consultancy Services (TCS), Banco Central do Brasil, Hong Kong Monetary Authority, and more joined us to expand across the globe.
+
+“We are excited to join LF Decentralized Trust and look forward to contributing and learning from the experiences of this vibrant global community,” said R Vivekanand, President BFSI Products & Platforms, TCS. “We believe blockchain is a foundational technology that will see widespread adoption by governments, businesses, and society. This engagement will help us partner with our customers in the creation of innovative business ecosystems that can benefit from the trust and transparency this technology delivers.”
+
+A Unified Vision
+
+Every new member is a testament to the growing recognition of LF Decentralized Trust as a home for projects and organizations committed to building the future of decentralized trust. Organizations like Citi, Mastercard, Gala Games, and more joined our global community to help propel that vision.
+
+“Mastercard and the Linux Foundation share a common vision to drive innovation, set new standards for digital transactions, and foster a more inclusive and efficient digital economy,” said Raj Dhamodharan, executive vice president, Blockchain and Digital Assets at Mastercard. “As a founding member of the Linux Foundation Decentralized Trust, we’re excited to bring our expertise and Multi-Token Network (MTN) solution together to advance secure, scalable, and interoperable solutions that support the future of global financial applications and services."
+
+We’re excited to see how these new members, working with our existing members, will drive the next wave of advancements in blockchain, decentralized identity, governance, and beyond. 
+
+Worldwide community engagement and non-stop events
+
+I’ve had the privilege of seeing the power of collective development in action, spending much of my year on the road meeting with our communities across Asia, Europe, and Latin America as well as hosting members from around the world at our Member Summit. Our community brought its expertise to major global platforms, including Paris Blockchain, European Blockchain Convention (EBC), Blockchain Rio, TOKEN2049, Meridian 2024, NPCI Global Fintech Fest (India) and the Singapore Fintech Festival, showcasing the role of LF Decentralized Trust in the tokenization of digital assets and Web3 adoption.
+
+Across our community, leaders are working tirelessly to advance ideas, plan roadmaps, educate the market, and attract new participants. These efforts include:
+
+	A robust global Meetup community that held 63 virtual meetups and 31 in-person meetings, in six different languages (English, German, Portuguese, Japanese, Spanish, and Hungarian).
+	Helping to chart the course for Linux Foundation’s new LF India initiative as one of four founding members. 
+	Six hands-on workshops that provided technical deep dives into a range of projects and applications.
+	A new Besu for Financial Services working group with founding members like DTCC, Banco Central do Brasil, Citi, JSCC, Santander Bank, Vanguard, Visa and more focused on establishing non-functional requirements (NFRs) for blockchain in financial services.
+
+
+Onboarding the future community of builders and users
+
+To keep building the pipeline for technology expertise and community leadership, we hosted 19 mentorship projects in 2024. (Read about the work that comes from these projects here.) Year over year, our mentorship program fosters knowledge transfer, skill development, and community growth, empowering the next generation of contributors while strengthening collaboration and innovation across the ecosystem
+
+ 
+
+Training and certifications are vital to our ecosystem as they empower contributors with the skills and knowledge needed to effectively build, adopt, and advance decentralized trust technologies, ensuring a thriving and skilled global community. Working with the LF Education team and community contributor, we introduced a new Besu Certified Professional certification and Hyperledger Fabric: Design, Develop and Deploy training class.
+
+A preview of what’s to come
+
+As we stand on the precipice of 2025, the swirl of activity will only accelerate. Watch for more on the work across our community critical markets, including:
+
+	Capital mobility 
+	Cross border payments
+	CBDCs
+	RWA
+	Identity networks
+	Global trade
+	Climate action
+
+
+Additionally, we will see increasing benefits from the maturing of technologies, market dynamics, standards, and the regulatory environment in our industry. We look forward to navigating these changes and working with our global community to lead the market in 2025.
+
+Building a trusted, decentralized world together
+
+At the heart of everything we do stands a commitment to open source principles: open development, open governance, and global collaboration. These principles are not just ideals—they are the foundation for building the infrastructure of a trusted, decentralized world.
+
+That world unlocks:
+
+	New efficiencies with faster and more transparent systems; 
+	Increased liquidity from the seamless movement of value; 
+	Enhanced privacy that safeguards individual rights and data; and 
+	New levels of inclusiveness aimed at ensuring equitable access for all. 
+
+
+Through open collaboration, we are shaping technologies that drive innovation and solve complex, real-world challenges—together. Thanks to the contributions of our vibrant community, in 2024 and beyond, the decentralized future is closer than ever. 
+
+Let’s continue building it, one milestone at a time. 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

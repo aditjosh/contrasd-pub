@@ -1,0 +1,664 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2021-02-16 Office Hours - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+	2021-01-19 Office Hours
+
+
+
+
+
+	2021-02-02 Office Hours
+
+
+
+
+
+	2021-02-16 Office Hours
+
+
+
+
+
+	2021-03-02 Besu Contributor Call
+
+
+
+
+
+	2021-03-16 Besu Office Hours
+
+
+
+
+
+	2021-03-30 Besu Office Hours
+
+
+
+
+
+	2021-04-13 Besu Contributor Call
+
+
+
+
+
+	2021-04-26 Besu Office Hours
+
+
+
+
+
+	2021-05-11 Besu Office Hours
+
+
+
+
+
+	2021-05-24 Besu Contributor Call
+
+
+
+
+
+	2021-06-08 Besu Contributor Call
+
+
+
+
+
+	2021-06-21 Besu Contributor Call
+
+
+
+
+
+	2021-07-06 Besu Contributor Call
+
+
+
+
+
+	2021-07-19 Besu Contributor Call
+
+
+
+
+
+	2021-08-03 Besu Contributor Call
+
+
+
+
+
+	2021-08-16 Besu Contributor Call
+
+
+
+
+
+	2021-08-31 Besu Contributor Call
+
+
+
+
+
+	2021-09-13 Besu Contributor Call
+
+
+
+
+
+	2021-09-28 Besu Contributor Call
+
+
+
+
+
+	2021-10-11 Besu Contributor Call
+
+
+
+
+
+	2021-10-26 Besu Contributor Call
+
+
+
+
+
+	2021-11-09 Besu Contributor Call
+
+
+
+
+
+	2021-11-23 Besu Contributor Call
+
+
+
+
+
+	2021-12-07 Besu Contributor Call
+
+
+
+
+
+	2021-12-21 Besu Contributor Call
+
+
+
+
+
+	2021-12-30 Besu Contributor Call (off cycle)
+
+
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2021-02-16 Office Hours
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2021-02-16 Office Hours
+
+	Danno Ferrin
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Feb 16, 2021
+
+
+
+
+
+
+
+
+
+
+Meeting Link:Â https://consensys.zoom.us/j/199741148
+EMEA/AMER Friendly Time -Â Â 1500UTC (https://www.timeanddate.com/worldclock/converter.html?iso=20210216T150000&p1=224&p2=179&p3=195&p4=47&p5=1440)
+Agenda
+	Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Hyperledger Developer Newsletter -Â https://www.hyperledger.org/developer-newsletterÂ 
+	Hyperledger Global Forum (Virtual) - June 8 to 10	https://www.hyperledger.org/event/hyperledger-global-forum-2021
+	Call for Papers open until 12 March -Â https://events.linuxfoundation.org/hyperledger-global-forum/program/cfp/
+
+
+	Github Auto-Merge is Enabled
+
+
+	Release Process	21.1.0-RC2Â  last week - 10 Feb
+	21.1.0 FCS next week
+	Mainnet's Berlin Fork may prompt a RC-3 or some other schedule change.
+	Future releases
+
+
+	Work UpdatesÂ 	Bonsai Tries Presentation (Danno Ferrin)
+
+
+	Other Business
+	Open Forum
+	Future Topics
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 15, "requestCorrelationId": "96e67970d2bc4951a50e5e1e45966dd5"}

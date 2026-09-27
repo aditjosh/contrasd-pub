@@ -1,0 +1,729 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q4 2022 Stability and Performance Improvements - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+	2024 - Besu Performance Improvements since the Merge
+
+
+
+
+
+	Fast sync optimisation
+
+
+
+
+
+	Memory usage investigations on 23.7.3-RC
+
+
+
+
+
+	Permissioned chain performance testing
+
+
+
+
+
+	Q4 2022 Stability and Performance Improvements
+
+
+
+
+	Shanghai planning
+
+
+
+
+
+
+
+	Reduce Memory usage by choosing a different low level allocator
+
+
+
+
+
+	Testing Taskforce Brainstorming
+
+
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Q4 2022 Stability and Performance Improvements
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Q4 2022 Stability and Performance Improvements
+
+	Matt Nelson (Deactivated)
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Nov 04, 2022
+
+
+
+
+
+
+
+
+
+
+Stability
+Some solutions already implementedÂ 
+	Sync stallingÂ 
+
+	Rules about what is considered our best peer post-merge is not implemented
+	Trying the same peer over and over again (shuffling the peers)
+
+	Invalid block errorsÂ 
+
+	Consensus layer is on the fork with bad data
+	Besu has a storage exception to report the invalid block to the consensus layer, which sets us off to a wrong fork (potential fix by Justin; GH issue)
+	Potentially another Besu internal error could cause invalid blocks of which we donâ€™t know about yetÂ 
+
+Potential solution identified Â 
+	Worldstate root mismatch
+
+	Bonsai and snapshots
+	Solution: Confirmed working for many cases, needs more testing and handling of any corner cases
+
+Issues around peering
+	Need restart to find new peers sometimes during sync
+
+	Potentially because of the lack of evaluating of peers during sync and post syncÂ 
+	Solution: ??
+
+	Losing many peersÂ 
+
+	Because threads were blocked, we lost many peersÂ 
+	Vertx for example uses different approaches to threadingÂ Â 
+	Solution: ??
+
+Issues on user experienceÂ 
+	Difficulty in reliably communicating with new/inexperienced users
+
+	Docs & lack of educationÂ 
+	More complicated set up post-merge
+	Solution: Write up â€˜What to expect from staking at homeâ€™ and FAQ for Besu Docs
+
+	Out of Memory errors
+
+	Documentation on how kind of memory config is neededÂ 
+	No mechanism to detect memory leaksÂ 
+	Potential mitigation: make deploying Besu easier by providing default configsÂ 
+	Solution: ??
+
+	Users donâ€™t know how much syncing is done
+
+	Insufficient logging & bad log UXÂ Â 
+	Solution/plan: ??
+
+	Users hesitant to update or restart Besu with the latest version due to the impression of being unstableÂ 
+
+Issues with RPC calls 
+	Incompatibilities with RPC spec / not-same-as-geth causing crashesÂ 
+
+	Does not meet Chainlink and other orgs needs for RPC calls (accuracy, speed) Â 
+	Do we implement all of the RPC interfaces that Geth does? I.e. Logger, Trace (all the methods)Â 
+	Solution: ??
+
+	Some specific RPC calls (trace/debug) take a long time or OOMÂ 
+
+	Lack of testing of large RPC calls
+	Might need to understand the root cause betterÂ 
+	Solution: ?
+
+Performance
+Staking Performance
+	Poor execution performance leading to missed attestations
+
+	More investigation ongoing, and some user stories being createdÂ 
+
+	Poor block production
+
+	As we tweak the tx pool to build the best block for the user with valuable/DOS-resistant transactions, we need to ensure no performance hit to the client - uses a lot of CPU because we are repeating the block production until CL asks for it
+	Late blocks could also cause import challenges, would cause restart of the building of the blockÂ 
+	Snapshots could help with concurrency in this caseÂ 
+	4844 could alter this process and requires good performance as well
+
+I/O and Disk PerformanceÂ 
+	Besu has problems with slow IO/disks â†’ Besu is generating a lot of IOÂ 
+
+	We are not using the flat DB during block processing, so have to gather a lot of data from diskÂ 
+	Need caching in more areas - R/W cachingÂ 
+	Doing less work, persisting less to the disk, persisting trie logs but not the worldstate (Amez / Karim)Â 
+	The first hotspot in Besu is reading data from RocksDB using the RocksDB.get method. This is mainly caused by the fact that we have to get most of the WorldState nodes from the Patricia Merkle Trie
+	Need to identify more areas where IO contention is commonplaceÂ 
+
+Trace PerformanceÂ 
+	Poor performance of tracing of blocks / transactions
+
+	Not sure why we are slowÂ 
+	Many times Besu would crash when tracing a full blockÂ 
+	OOM errors
+	Short timeout can cause issuesÂ 
+	Is db tuned for tracing?
+	3786Â 
+	Will need good performance for any rollups use-cases
+	Solution?: Instead of replaying each time the traces for each user request why not saving this trace result in a separate database or a separate module instead of saving the block and the worldstate for each block
+
+
+
+	Solution?: Separate into a different microservice
+
+	Solution?: Separate the query part of Besu into a completely separate process. Queries that are asking Besu questions related to the chain do not need to slow down the main flow.
+
+
+
+Sync Performance
+	Poor syncing performance (still the case with 22.10.0?)
+
+	Do we need to verify the proof of work blocks on Mainnet?Â 
+	Useless conversion from byte to RLP and back during syncÂ 
+	Sometimes we are stuck for some time during a snap sync (need investigation)Â 
+
+	Full sync / forest performance (also snapsync for the block downloading part)
+
+	Persisted worldstate changes may be able to help with full sync on Bonsai
+	Forest we need to determine what the areas are for performance improvements - some of the recent bonsai improvements can be tweaked to suit forest use-case (unknown though)Â 
+
+EVM Performance - Pending Amez Availability and IMAPP TestingÂ 
+	We need analysis that will tell us Gas cost of each operation corresponds to the algorithmic complexity of Besu implementation. Bonsai might have consequences on algorithmic complexity for some operations.
+
+	IMAPP testing - we need an overall analysis (Matt has connected with this team for a profile)
+	Do not have a profile of Besuâ€™s EVM performance (work with Danno?)Â 
+	SLOAD, SSTORE - slowest vs gas cost?Â Â 
+	EVM performance improvements often appear without context and the broader team isÂ unsure of how the optimizations are created. Is there a standard playbook of optimizations that we are running through, or are there EVM specific performance observations that we are reacting to?
+
+
+
+Do we know how we can solve these problems?
+	Having automatic test on nightly/ci to detect regression asap
+	Having more modularity
+	Having a tracing solution on the JAVA level (improve observability)
+	Using torrent for downloading the block during the initial sync (archive)?
+	Separate the query part of Besu into a completely separate process. Queries that are asking Besu questions related to chain do not need to slow down the main flow.
+
+Process Improvements (Q1?)Â 
+Performance Testing
+	Lack of performance testing, especially on RPC methods
+
+	How do we get alerts and be aware that there is an actual performance regression?
+	Automated performance testing each release, nothing for the moment
+
+
+
+
+
+
+	Hive tests return the time the calls are taking, but small loadÂ 
+	Can we separate some RPC methods into separate microservices?
+
+Slow Release / Testing Process (CPU, test bounding, process)Â 
+	Manual release process with a lot of wasted time waiting for builds that could be avoided
+
+	Waiting for multiple full builds to complete because you are merging a PR or changing version number, doesnâ€™t need a full build
+	With code changes, then a full build should be requiredÂ 
+
+	Make it easier/faster to run all the tests locally, or avoid the need to create a draft PR for running tests remotely
+
+	Support for many features causes tests to be slow (ETC tests, Quorum tests, etc.) when they are not necessarily needed for certain modificationsÂ 
+
+Issues with the processÂ 
+	Late discovered regressions
+
+	Need a more comprehensive testing strategy across contributors
+	Solution: ??
+
+Establish better process on how to respond to the problem we discoverÂ 
+	Good case study: sepolia issue over the weekend on Oct 29/30
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Performance & Stability
+Performance & Stability
+
+Besu
+
+
+
+Read with this
+
+
+
+
+
+
+2024 - Besu Performance Improvements since the Merge
+2024 - Besu Performance Improvements since the Merge
+
+Besu
+
+
+
+Read with this
+
+
+
+
+
+
+Modular Consensus
+Modular Consensus
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu Roadmap & Planning
+Besu Roadmap & Planning
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "b42ddd2ccd65455d826c4aa694fad406"}

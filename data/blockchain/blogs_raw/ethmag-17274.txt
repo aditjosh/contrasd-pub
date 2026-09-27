@@ -1,0 +1,172 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-7575: Partial And Extended ERC-4626 Vaults - ERCs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      ERC-7575: Partial And Extended ERC-4626 Vaults
+    
+
+
+      
+          
+            
+              
+              
+                ERCs
+              
+            
+            
+
+
+
+        
+            erc
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                joeysantoro
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 12, 2023,  4:09pm
+                  
+                  
+
+1
+              
+            
+            
+              See ERC-7575: Partial and extended ERC-4626 implementations by Joeysantoro · Pull Request #157 · ethereum/ERCs · GitHub for the most up to date draft
+
+Abstract
+
+The following standard adapts ERC-4626 into several modular components which can be used in isolation or combination to unlock new use cases.
+
+New functionality includes multiple assets or entry points for the same share token, conversions between arbitrary tokens, and implementations which use partial entry/exit flows from ERC-4626.
+
+This standard adds nomenclature for the different components/interfaces of the base ERC-4626 standard including ERC7575MinimalVaultInterface and an interface for each entry/exit function.
+
+It adds a new share method to allow the ERC-20 dependency to be externalized.
+
+Lastly, it enforces ERC-165 support for Vaults.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

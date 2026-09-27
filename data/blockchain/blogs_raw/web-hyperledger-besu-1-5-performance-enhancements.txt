@@ -1,0 +1,890 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Besu 1.5 Performance Enhancements – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Besu
+                            
+                        
+                    
+
+                
+                Hyperledger Besu 1.5 Performance Enhancements
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Aug 6, 2020
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Overview
+ 
+Over the past quarter, the Hyperledger Besu team has been hard at work improving performance across many fronts, from adding support for native encryption libraries to tuning our EVM execution code, experimenting with different different JVMs and building more robust benchmarking infrastructure. This has resulted in performance improvements across sync times, transactions per second and requests per second.
+
+We are excited to share these results as well as the details of future work we have planned around stability and performance. 
+ 
+Native Encryption Libraries
+ 
+When writing Hyperledger Besu (back when it was called Pantheon), we had a principle that the code had to be correct first. If the execution of a block was wrong, it didn’t matter how fast it was because we would fall out of consensus. Combine this with the complexity and specificity of encryption software, and any attempts to optimize performance could have a destructive effect on the whole project if we got even one corner case wrong.  To avoid this, we used mostly pre-existing Java-based cryptography implementations.
+ 
+Starting in Besu 1.4.2, we shifted our model to use external non-Java or “native” encryption (specifically, external libraries called through native OS calling conventions). This opened us up to a large swath of optimized implementations. The first library we added was secp256k1(AKA the Bitcoin Elliptic Curve). This library is heavily used throughout Ethereum, often invoked multiple times in each transaction. The implementation we use is Bitcoin Core’s optimized library (https://github.com/bitcoin-core/secp256k1). It is mostly written in C but also features a handwritten assembly loop in the “hottest” parts of the calculation. The second library we use is for the altbn128 curve, a precompiled contract that has seen a significant uptick in use as Eth2 testnets have started popping up.  
+ 
+For now, Hyperledger Besu supports both the native versions and pure Java versions, so they are still usable if a native library isn’t compiled for your target device. We split these specific libraries out into a standalone package to simplify the process of building and packaging them for the various platforms on which they must run. They can be accessed on GitHub (https://github.com/hyperledger/besu-native).
+ 
+This change has led to a noticeable speedup in fast syncing times (and transactions per second, but more on that below!), especially for networks where secp256k1 verification takes a significant part of the sync time, such as testnets or networks with lots of empty blocks. For example, this change reduced our fast sync time on Goerli by 13%, from 92 minutes (Besu 1.4.0) to 80 minutes (Besu 1.5 RC2). The full sync speedup (processing every transaction and storing every block state) was even larger: a 1,571% improvement, from just over six days (Besu 1.4.0) to just over nine hours (Besu 1.5.0)!
+ 
+EVM Implementation Optimizations
+ 
+Another place we improved performance is in our pure Java implementation of the Ethereum Virtual Machine (EVM).  There are three significant improvements of note:
+ 
+	We simplified our exceptional halt detection with simpler language constructs, 
+	We flattened out a series of three calls into one call and removed a lot of duplicate calculations along the way, and 
+	We adopted some low-level optimizations that we upstreamed to Apache Tuweni 1.1.
+
+ 
+To determine where we needed to perform these optimizations, we used a combination of a handwritten tool and off-the-shelf profilers. The Besu community uses a mix of the VisualVM, Java Flight Recorder/Mission Control, and YourKit profilers (provided to Besu under their Open Source Licencing program – https://github.com/hyperledger/besu/blob/master/README.md#special-thanks).
+ 
+We then pointed those profilers at a tool we built called “EVMTool” https://github.com/hyperledger/besu/tree/master/ethereum/evmtool) that was initially written to support cross-client fuzz testing of EVM smart contracts. With very slight modifications, we were able to turn it into a repeated EVM executor. Setting the repetitions up to an absurdly high number, we could point our profiler of choice at the EVM and get some longer term performance numbers. This revealed a large amount of unneeded copying of byte arrays, duplicate calculations, and inefficient call structures.
+ 
+When compared to 1.4.2, our EVM evaluations (i.e., “gas per second”) have now improved from 78-220% depending on the specific contract structure and state size, with all but one benchmark showing over 100% improvement. While we don’t have raw measurements, we suspect this change is also partially responsible for the sync times improvements mentioned earlier.
+ 
+GraalVM
+ 
+Since Besu runs on top of Java, we have access to the full range of Java Virtual Machines.  Previously, we have recommended OpenJDK 11 as it is a known and stable version of the JVM with many downstream distributions (Corretto, AdoptOpenJDK, Zulu).
+ 
+Recently we’ve started testing with GraalVM (https://www.graalvm.org/), a JVM implementation that is Oracle’s successor to the HotSpot JVM that’s been at the core of Java for over two decades. It is also at the core of several new projects such as Micronaut and Quarkus. While it has lots of fancy features (such as Ruby support, experimental WASM support, native image generation, AOT compilation), it offers several significant performance advantages while remaining a drop in replacement for the JDK. 
+ 
+Just dropping in GraalVM Community Edition 20.1 without any additional JVM tuning resulted in a 14% increase in our TPS numbers, from roughly 350 to 400 smart contract calls per second.  All the other fancy features it will bring along in the future is just icing on the cake.
+ 
+Transactions Per Second (TPS)
+ 
+As mentioned in the prior section, we have seen great improvement to Hyperledger Besu’s TPS numbers in a private chain setting. All in all, our efforts have moved us from 300 TPS on Besu 1.4.0 to 350 for Besu 1.5 and 400 TPS when  using GraalVM. In order to get repeatable measurements for our TPS improvements, we worked with Hyperledger Caliper, another project under the Hyperledger umbrella to benchmark our numbers across various Besu versions. 
+ 
+The network we used was composed of five nodes. Four of these were validators, and the only non-validator node was used as an RPC node. One of the validator nodes was designated for use as a bootnode.
+ 
+The network used IBFT 2.0 as its consensus algorithm with a two second block time, an epoch length of 30,000, and a 10 second request timeout value. A very high block gas limit of 672,000,000 was set, and blocks were monitored to be sure that this gas limit was not saturated. The function called to benchmark TPS numbers was a “register” transaction from one of LACChain’s registry contracts. 
+ 
+All of this was set up using Ansible playbooks we had developed to launch Besu instances. 
+ 
+Requests Per Second (RPS) 
+ 
+Another area where we saw notable improvements was in Hyperledger Besu’s handling of JSON RPC requests. Using ethspam (https://github.com/shazow/ethspam), a library that generates realistic read-only JSON RPC queries to bombard a node with, we saw an 64% improvement in Besu’s request-per-second performance. On version 1.4.0, when sent 100,000 requests, Besu could answer on average 5242.39 per second. Using the 1.5.0 release, that number was up to 8632.75. Even better results were obtained using GraalVM on Besu 1.5.0, with RPS reaching 8988.59, an increase of 71% over the 1.4.0 release!
+
+For our RPS benchmarks, we used Versus (https://github.com/INFURA/versus), a tool developed by Infura, which can compare the RPS performance across various Ethereum node implementations and, of course, Infura itself. 
+ 
+Stay Tuned
+ 
+While the Hyperledger Besu team is pleased with the progress made, we are continuing to focus on performance and, over the coming months, will make it one of our main priorities for the codebase. Specifically, along with continuing to fine tune various parts of the codebase, we will begin major refactors of two areas of the codebase: the peer-to-peer (P2P) layer and the database.
+
+Besu’s P2P layer has grown and been extended significantly over the past few releases with the addition of privacy, permissioning and various other improvements. It is now time to take a step back to redesign it so that it is maximally stable and performs well. We’ll also be looking to add even more new functionality, such as enabling the new eth/65 version of the eth networking protocol.
+
+On the database side, the Ethereum mainnet’s growing state size has made database access reading and writing state  a major performance bottleneck. Over the next few months, the Besu team will be experimenting with a new database format that is designed to be more performant for networks with large state sizes. The first “feature” coming out of this work should enable users to more easily backup and restore their network’s state, providing an offline disaster recovery backup.
+
+Stay tuned!
+ 
+Download Hyperledger Besu
+Join the Conversation about Hyperledger Besu
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

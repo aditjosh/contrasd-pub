@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger Fabric Maintainers – David Enyeart, IBM
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Meet the Hyperledger Fabric Maintainers – David Enyeart, IBM
+
+        
+
+        
+           Written by Hyperledger Foundation | Apr 30, 2024 3:00:00 PM 
+        
+
+        
+          Hyperledger Fabric, which launched in 2016 as the first project within the Hyperledger ecosystem, is a widely adopted enterprise blockchain platform that offers performance at scale while preserving privacy. It has a robust open development track record and active community working to develop and deploy it worldwide. There are a number of technologies in the Hyperledger Fabric family. The maintainers of the Hyperledger Fabric core platform are leading development efforts as Hyperledger Fabric marches towards its 3.0 release. We have invited these community leaders to share their thoughts on why they are committing their time and effort to this project.   
+
+Below, we hear from David Enyeart of IBM about his work as a maintainer and what excites him about Hyperledger Fabric now and in the future.
+
+Q) Hyperledger Fabric is one of the most established DLT platforms in the industry. What differentiates Fabric relative to the broader DLT landscape?
+
+
+Hyperledger Fabric is fundamentally different from most other DLTs because it utilizes a unique execute-order-validate transaction model. Let me explain each of the transaction phases to set the context… 
+
+Execute
+Requests to run a smart contract to update the ledger are first executed by a subset of peers based on an “endorsement policy” that is dictated at either the contract level or the data level. Each required peer executes the smart contract and then signs and returns the results in what is known as an “endorsement.”
+
+Order
+After a client gathers the required number of endorsements, the endorsed transaction is submitted to the ordering service, which orders the transactions into blocks. The consensus algorithm for ordering transactions may be crash-fault tolerant or byzantine-fault tolerant depending on the use case.
+
+Validate
+The endorsed and ordered transactions are then propagated to all peers for validation and commit. Each peer validates that a sufficient number of required endorsements on matching results have been gathered. Peers also validate that there are no conflicts with other transactions by ensuring that the data read during the transaction execution has not been changed by any other transactions in the meantime. Validated transactions are then committed to update ledger state.
+
+Q) What are some of the use cases it is particularly well suited to support?
+
+Fabric’s execute-order-validate transaction model opens up a unique set of use cases that are not possible in other permissionless or permissioned DLTs.
+
+For starters, the endorsement policy allows for flexible consensus and trust models among participants in a blockchain network. While you likely don’t want to give a single organization the power to update the ledger unilaterally, you may also not require that every organization execute, or even see, the details of every transaction on the ledger. Perhaps it is sufficient for a majority of participating organizations to execute and endorse transactions. Or perhaps you’d like to attain consensus between the transactors involved in a specific transaction along with one or multiple key trust anchors (central bank, regulator, auditor, etc). Or perhaps the transactors would like to delegate trust to their preferred organizations (bank, custodian, etc). All these use cases and more can be supported by Fabric’s flexible endorsement policies due to the unique execute-order-validated model.
+
+Next, the ability to distribute execution to a defined set of endorsing peers at the contract level or data level enables confidential contract execution. The transaction inputs can be kept confidential among the endorsing peers, and even the ledger updates and state can be kept confidential when using Fabric’s private data features.Peers from authorized organizations store the confidential data while the rest of the participants only receive a hash. The hash can be used to prove assertions like asset ownership or provenance, either when querying the ledger or as a requirement for future transactions involving the asset.
+
+Finally, the execute-order-validate model allows Fabric smart contracts to be written in standard programming languages, such as Go, Java, and Typescript, rather than lesser-known domain-specific languages that many other DLTs require to ensure determinism. Any non-determinism introduced in a standard programming language by the smart contract developers (either accidentally or maliciously) will be identified at validation time, causing transactions endorsed with different results to be invalidated and not applied to the ledger.
+
+Based on the flexibility of smart contract content, and the trust model and privacy flexibility provided by the execute-order-validate endorsement model, Fabric can be used by an extremely diverse set of cross-organization use cases.
+
+Q) What is the role of the community in developing Hyperledger Fabric? Why is open development important?
+
+It is important for the community of potential users to be able to access and inspect Hyperledger Fabric code. It allows them to gain confidence in the code and in the fact that many others with different sets of expertise have already gained the same confidence.
+
+Additionally, potential users and existing users may themselves become contributors to the open source code. They may have a unique feature request or security requirement that they would like to contribute code to support. Or they may find a usability or documentation issue that can be resolved. Or they may want to contribute an automated test to prove that their use case continues to work across future releases. Contributors are empowered to make updates such as these by opening a pull request, which will be reviewed by a project maintainer.
+
+While individual contributors often act in their own self-interest, the entire ecosystem benefits regardless of how small or large each contribution is - imagine the net impact of thousands of such improvements building on each other as time goes on.
+
+Q) Why is contributor diversity important?
+
+Each user of Hyperledger Fabric may have different requirements, use cases, environments to support, etc. Having a diverse community of users and contributors ensures that the code continues to improve in ways that the initial project contributors could not have even foreseen.
+
+Similarly, each contributor and contributing organization likely has different skills and focus areas. When taken as an aggregate across all contributors, the community can have confidence that code has been developed, reviewed, and tested by experts in various domain areas.
+
+Q) How did you get involved in Hyperledger Fabric?
+
+I have spent my career working on enterprise software projects with a focus on data architecture, business process automation, and business-to-business integration. When I learned about blockchain, I was excited to combine these skills in new ways that could help transform industries. I started working on Fabric’s ledger component and eventually became a maintainer and then a release manager.
+
+In my various roles with Hyperledger Fabric, I’ve had the opportunity to interact with countless users and contributors from the community. I’ve seen firsthand that a community working together towards a common goal has been able to achieve things that I didn’t even consider possible in the early days of the project.
+
+Q) What challenges do you see in DLT adoption? How can they be overcome?
+
+Getting potentially competing organizations to cooperate on DLT solutions was never going to be quick or easy. Change is difficult enough within a single organization. The early days of blockchain saw a lot of prototypes and pilot projects that were trying to figure out the right use cases across the permissionless and permissioned DLT landscape. Much of that is now sorted out. And, while it is required to have a good fit between a deployment project and the chosen DLT, the non-technical aspects of organizing an effort across enterprises is just as challenging, if not more. Fortunately, I have many colleagues in IBM Consulting with deep industry expertise and DLT deployment experience who can help to apply the collective knowledge to make these large-scale projects successful.
+
+Additionally, the open source model ensures that the software can adapt to meet the evolving needs of different industries as they progress down the adoption path. For example, IBM continues to perform research with industry partners and contributes advances in the areas of consensus algorithms, cryptography, and performance.
+
+Deployment and management of the Hyperledger Fabric software itself in a cross-organization production network can also be challenging. We have an offering called IBM Support for Hyperledger Fabric that can help address this challenge. In addition to support for Hyperledger Fabric from the IBM developers, as the name implies, it also provides certified and scanned Fabric images, as well as a Kubernetes operator and operations console, to ease deployment and management of the software in production settings.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HyperledgerInterop: Delivering Cross-Chain Interoperability with Hyperledger Technologies – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          #HyperledgerInterop: Delivering Cross-Chain Interoperability with Hyperledger Technologies – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Feb 28, 2022 7:30:29 AM 
+        
+
+        
+          We kicked off #HyperledgerInterop month with Why is Interoperability Needed?, which explains the drivers for interoperating networks and then deep dives into the different Hyperledger technologies tackling the challenge. 
+ 
+Below, we continue the conversation with highlights of some leading-edge efforts to deliver cross-chain interoperability built using Hyperledger technologies:
+ 
+Cross-Ledger Interbank Settlement: As part of a series of wholesale CBDC trials, Banque de France, the French Central Bank, completed cross-ledger interbank settlement transactions in a multi-blockchain environment. Conducted in association with HSBC and IBM, this test case entailed the issuance and trading of digital bonds, settled instantly using CBDC. Transactions occurred across blockchain environments operated by HSBC for the custody of the assets and by the Banque de France for the securities settlement and the CBDC. In the trial, Hyperledger Fabric and R3’s Corda were able to transact with each other using Weaver, a Hyperledger Lab initially contributed by IBM. 
+ 
+Digital Green Bond Project: The Bank for International Settlements Innovation Hub (BIS) Innovation Hub and the Hong Kong Monetary Authority (HKMA) set out to improve efficiencies in the distribution of green bonds and more insightful reporting on the environmental impact of projects supported by the bonds through Project Genesis. The aim is to develop digital platforms that will allow investors to buy and sell bonds that support green projects with real time access to both the financial performance of the bond and such metrics as clean energy created and O2 reduced by the investment. The first prototype from Project Genesis was developed with Digital Asset in partnership with GFT and leveraged Daml smart contracts as well as Digital Assets interoperability protocol layered over Hyperledger Besu and Hyperledger Fabric blockchains. It achieved real-time synchronization across these two ledgers while preserving the level of privacy demanded by regulated bodies. The prototype drives market efficiency with a unified view of the entire trade lifecycle and a single source of truth that automates market rules and adheres to market regulations.
+ 
+Interoperable platform for international exchange of CBDCs: The BIS Innovation Hub, Hong Kong Monetary Authority, Bank of Thailand, People’s Bank of China, and Central Bank of the United Arab Emirates are working together on a prototype multi-CBDC platform for international payment that joins up national digital currencies on a common interoperable platform. During the Phase 2 and 3 explorations of the project, mBridge (formerly Inthanon-LionRock), they worked with ConsenSys on a Hyperledger Besu implementation that completed an international exchange of multiple CBDCs in seconds as opposed to several days and has the potential to reduce costs to users by up to half. 
+ 
+Multichain Trade Settlement: In January, 2022, Tokio Marine & Nichido, NTT DATA, STANDAGE and TradeWaltz jointly conducted a demonstration experiment for a new trade settlement system in which electronic B/Ls (bills of lading) and digital currencies were exchanged simultaneously using two different blockchain networks. The simultaneous transfer of digital assets and digital currencies was conducted by Datachain with the cooperation of NTT DATA, and leveraged YUI, a Hyperledger Lab that was initially contributed by Datachain, to interconnect Hyperledger Fabric and Ethereum. Datachain successfully confirmed that two assets can be exchanged simultaneously by DVP settlement between digital assets on services built with Hyperledger Fabric and digital currencies on Ethereum.
+ 
+Chime in on social to share other examples of #HyperlegerInterop.
+ 
+Cover photo by Wilhelm Gunkel on Unsplash
+ 
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

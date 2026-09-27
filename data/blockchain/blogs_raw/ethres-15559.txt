@@ -1,0 +1,909 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zkCasper: A SNARK based protocol for verifying Casper FFG Consensus - zk-s[nt]arks - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      zkCasper: A SNARK based protocol for verifying Casper FFG Consensus
+    
+
+
+      
+          
+            
+              
+              
+                zk-s[nt]arks
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    May 11, 2023, 12:27pm
+                  
+                  
+
+1
+              
+            
+            
+              In this research article I present a SNARK based protocol for verifying Ethereum’s Casper FFG consensus proofs.
+
+With this scheme on/offchain light clients can benefit from the crypto economic security provided by the ETH 17m ($34b) at stake.
+
+
+  
+      
+
+      research.polytope.technology
+  
+
+  
+    
+
+
+zkCasper
+
+
+  In this research article, I present a protocol for efficiently verifying the Ethereum Beacon chain's Casper FFG consensus proofs using a SNARK based scheme.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+8 Likes
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 7, 2023,  2:04pm
+                  
+                  
+
+2
+              
+            
+            
+              Hi @seunlanlege
+
+Can the ZK proof of the aggregate public key be generated in parallel to the time waiting for a block’s finality? I mean suppose we have a block B1, we need to wait till B65 (more precisely slots) for the finality of B1. During this time can we start generating the ZKP for the aggregate public key of B1?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 7, 2023,  2:25pm
+                  
+                  
+
+3
+              
+            
+            
+              Yes, we can incrementally generate proofs as we observe attestations from the various attestation committees
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 7, 2023,  3:21pm
+                  
+                  
+
+4
+              
+            
+            
+              It then means that basically you have at least 12 minutes for the ZK proof generation. That way the ZK proof generation is not exactly a bottle-neck
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    August 7, 2023,  3:40pm
+                  
+                  
+
+5
+              
+            
+            
+              Proof generation isn’t the bottleneck by any means, the original snark can prove apk committee sizes of  2^{20} - 1 in around 4mins. Admittedly this is also due to the use of bls12-377/761 curves for their high 2-adicity and the fact that the circuit itself performs no permutation checks.
+
+
+
+Screenshot 2023-08-07 at 4.35.44 PM1190×270 26.2 KB
+
+
+
+For zkCasper, we’ll be levergaing the bl12-381/767 curve pairing, which has no high 2-adicity, but has a somewhat highly composite group order that allows us leverage the cooley-tukey fft. It won’t be as fast as the classic radix-2 fft, but it’ll be faster than the naive dft.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 7, 2023,  3:54pm
+                  
+                  
+
+6
+              
+            
+            
+              Great. I see that they are not a bottleneck, but even these proof generation times, which are in the order of minutes can be hidden inside the finality waiting times.
+
+On a related note, in this blog you write that the sync-committee can collude to do eclipse or data withholding attack. Can you show me how this can be done a little more concretely?
+
+I understand the sync committee protocol has no slashings but looking at some of the posts here: Snowfork's Analysis of Sync Committee Security - Tech Talk - Polkadot Forum, How I Learned to Stop Worrying and Love the Sync Committee and Exploring Eth’s Altair Light Client Protocol: t3rn’s vision it looks like the probability of having a malicious sync committee is reasonably low.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 7, 2023,  4:31pm
+                  
+                  
+
+7
+              
+            
+            
+              
+On a related note, in this blog you write that the sync-committee can collude to do eclipse or data withholding attack. Can you show me how this can be done a little more concretely?
+
+
+
+MEV middleware can allow members of the sync committee to coordinate and launch all kinds of byzantine attacks. Especially after we saw recently that validators were exploiting flashbot bundles that were sent to them.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 23, 2023,  5:55am
+                  
+                  
+
+8
+              
+            
+            
+              
+
+
+
+ Raghavendra-PegaSys:
+
+
+Can the ZK proof of the aggregate public key be generated in parallel to the time waiting for a block’s finality? I mean suppose we have a block B1, we need to wait till B65 (more precisely slots) for the finality of B1. During this time can we start generating the ZKP for the aggregate public key of B1?
+
+
+
+
+Coming to think of it, I think such an overlapping approach is not possible. I believe the verifier node needs to preserve a buffer of at least 65 blocks. Meaning verifier verifies the snark proof for B1, and puts B1 in its buffer. Next it verifies the snark proof for B2, and puts B2 in its buffer. Likewise it continues till it verifies the snark proof for B65 and puts B65 in its buffer. Note that B65 being the checkpoint block finalises B1 to B32. So now we can act upon all the events that are generated in B1 to B32.
+
+So in order to verify an event that happened in the block B1, we need to wait 12.4 mins for it to be finalised (which happens because of B65) and then wait for the snark proof of B65 (which in addition is 4mins). So totally 16.4 mins. Am I correct?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 23, 2023,  7:48am
+                  
+                  
+
+9
+              
+            
+            
+              Not really, supermajority attestations can happen before B65. And we can prove attestations as they’re produced to the verifier
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 23, 2023,  8:09am
+                  
+                  
+
+10
+              
+            
+            
+              In my understanding the supermajority attestation of B65 justifies the epoch containing <B33, … B64> and finalises <B1, … B32>. Am I right?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 23, 2023, 11:27am
+                  
+                  
+
+11
+              
+            
+            
+              
+
+
+
+ Raghavendra-PegaSys:
+
+
+In my understanding the supermajority attestation of B65 justifies the epoch containing <B33, … B64> and finalises <B1, … B32>. Am I right?
+
+
+
+
+Yes this is correct. But small note, validators vote to justify the starting block of their current epoch. So they’re really justifying B33 and finalizing B1.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 23, 2023, 12:12pm
+                  
+                  
+
+12
+              
+            
+            
+              In that case looks like my understanding is correct: To use an event e in block B1, you need to wait for getting B65, which is 12.4 minutes away, and then we need to generate the snark proof for B65 which is 4 mins away in addition. So the finality time and the proof times gets added.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 23, 2023, 12:42pm
+                  
+                  
+
+13
+              
+            
+            
+              
+
+
+
+ Raghavendra-PegaSys:
+
+
+To use an event e in block B1, you need to wait for getting B65
+
+
+
+
+Since the signatures may overlap, we don’t need to wait. We start generating proofs for attestations as we see them.
+
+
+
+
+
+ seunlanlege:
+
+
+Not really, supermajority attestations can happen before B65. And we can prove attestations as they’re produced to the verifier
+
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 24, 2023,  7:05am
+                  
+                  
+
+14
+              
+            
+            
+              Yes, I know, the snark proof generation for B1 can be started as soon we have attestations for them. But to use them on the verifier side, verifier needs to know snark for B65. Otherwise, how can he trust that B1 was finalised?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 24, 2023, 11:24am
+                  
+                  
+
+15
+              
+            
+            
+              Validators are justifying B33, which implicitly finalizes B1. The verifier doesn’t care about B65.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 24, 2023, 12:30pm
+                  
+                  
+
+16
+              
+            
+            
+              If you give only B1 for the verifier, how does the verifier know the finality of B1. In other words, how does the verifier know the existence of B65? Basically how to prove that B1 is finalised? Equivalently how to prove to verifier that there is a justified descendant block at B33, which in turn means how to prove to verifer that there is an unjustified descendant block at the level of 65 which has achieved attestations?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 24, 2023,  2:07pm
+                  
+                  
+
+17
+              
+            
+            
+              You might be overthinking it, The only thing that matters are supermajority attestations that point to B1 as the source & B33 as the target. The verifier, after observing these attestations, confirms B1 is final and B33 is optimistically finalized, the next round of attestations point to B33 as the source and B65 as target.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 24, 2023,  3:44pm
+                  
+                  
+
+18
+              
+            
+            
+              I am genuinely trying to understand here.
+
+From this blog: What Happens After Finality in ETH2? - HackMD, I see that:
+
+
+	If > 2/3rds of validators vote correctly on the chain head during an epoch, we call the last epoch justified
+
+
+
+
+
+I understand here that when there is a supermajority attestation for B65, we get the epoch <B33,…B64> justified and the epoch <B1, … B32> finalised.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 24, 2023,  6:48pm
+                  
+                  
+
+19
+              
+            
+            
+              Yes but they’re voting to justify B65 in blocks <B65…96>
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Raghavendra-PegaSys
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 25, 2023,  4:37am
+                  
+                  
+
+20
+              
+            
+            
+              Okay. In that case let me rephrase my original thinking here:
+
+I believe the verifier node needs to preserve a buffer of at least 33 blocks. Meaning verifier verifies the snark proof for B1, and puts B1 in its buffer. Next it verifies the snark proof for B2, and puts B2 in its buffer. Likewise it continues till it verifies the snark proof for B33 and puts B33 in its buffer. Note that the supermajority of B33 finalises B1 to B32. So now we can act upon all the events that are generated in B1 to B32.
+
+So the total time to act on an event e in B1 is: time to get B33 (epoch time = 6.4 mins) + time to obtain supermajority attestation of B33 + snark proof construction time (4 mins). So > 10m. Do you agree?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+        next page →
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

@@ -1,0 +1,201 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fabric-CA Commands — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts
+	Getting Started - Install
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides
+	Upgrading to the latest release
+	Commands Reference	peer
+	peer chaincode
+	peer lifecycle chaincode
+	peer channel
+	peer snapshot
+	peer version
+	peer node
+	osnadmin channel
+	configtxgen
+	configtxlator
+	cryptogen
+	ledgerutil
+	Service Discovery CLI
+	Fabric-CA Commands	Fabric-CA Client
+	Fabric-CA Server
+
+
+
+
+
+
+	Architecture Reference
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Commands Reference
+	Fabric-CA Commands
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+Fabric-CA Commands¶
+
+The Hyperledger Fabric CA is a Certificate Authority (CA) for Hyperledger Fabric.
+The commands available for the fabric-ca client and fabric-ca server are described
+in the links below.
+
+
+Fabric-CA Client¶
+
+The fabric-ca-client command allows you to manage identities (including attribute management)
+and certificates (including renewal and revocation).
+
+More information on fabric-ca-client commands can be found here.
+
+
+
+Fabric-CA Server¶
+
+The fabric-ca-server command allows you to initialize and start a server process which may host
+one or more certificate authorities.
+
+More information on fabric-ca-server commands can be found here.
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

@@ -1,0 +1,860 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain Pioneers: Hyperledger Composer
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Governance
+                            |
+                        
+                            Hyperledger Composer
+                            |
+                        
+                            Blockchain Pioneers
+                            
+                        
+                    
+
+                
+                Blockchain Pioneers: Hyperledger Composer
+ 
+                
+                    Ry Jones and David Boswell, Community Architects
+                    |
+                    
+                        Oct 19, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                As we laid out in our Helping A Community Grow By Pruning Inactive Projects post, there is an important life cycle to well governed open source projects. Since our launch in 2015, Hyperledger Foundation has hosted a number of now retired projects that helped drive innovation and advanced the development of enterprise-grade blockchain technologies. This series will look back at the impact of these pioneering projects. Hyperledger Composer is the first in the series.
+
+
+Hyperledger Composer was a platform for accelerating the development process of business network applications based on blockchain technology. Donated by IBM UK in 2016, Hyperledger Composer aimed to simplify the creation and management of assets, participants, and transactions on a blockchain network. It provided a high-level abstraction layer that allowed developers to focus on the business logic rather than the technical details of the underlying blockchain platform. It also offered a set of tools for modeling, testing, deploying, and interacting with business networks.
+
+Hyperledger Composer was innovative in several ways. It introduced a domain-specific language called CTO (Composer Type Object) for defining the structure and validation rules of assets, participants, and transactions. It also used JavaScript for writing chaincode (smart contracts) that operated on these objects and for enabling developers to generate REST APIs and Angular applications from their business network definitions. Composer also integrated with existing identity management and access control systems, such as LDAP and OAuth.
+
+However, Hyperledger Composer also faced some challenges and limitations. One of the main problems was that it had two completely different programming models: the Hyperledger Fabric programming model (chaincode) and the Composer programming model (business networks). This caused confusion and inconsistency for users, who had to choose between the two models or switch between them at different stages of development. Another problem was that it was difficult for Composer to keep up with and expose the latest features of Fabric, such as private data collections and state-based endorsement policies. This meant that users who wanted to take advantage of these features had to stop using Composer and revert to developing with Fabric directly. A third problem was that Composer’s APIs were too simple and easy to use compared to Fabric’s APIs, which were low-level and complex. This created a gap between the expectations and realities of developing blockchain applications, and also prevented improvements from being made directly to Fabric’s APIs.
+
+Due to these reasons, Hyperledger Composer was moved to end-of-life in August 2019. The official announcement stated that "Composer has served its purpose as an entry point for many people into blockchain technology" but "it is time for us to move on." The announcement also suggested some alternatives for developing blockchain applications with Hyperledger Fabric, such as using the Fabric SDKs, the VS Code extension, or the IBM Blockchain Platform.
+
+There were many people who had been using Hyperledger Composer and we still hear people asking about it. This interest in using Hyperledger Composer has shown that there is a demand for tools that help make the complexities of setting up and running a blockchain network easier.  We see this legacy of Hyperledger Composer live on in the large number of projects and labs that are making different aspects of using Hyperledger Fabric easier.  Here are a few examples you may want to check out:
+
+	Hyperledger Bevel: An automation framework for rapidly and consistently deploying production-ready Distributed Ledger Technology (DLT) platforms.
+	CC-Tools: Provides a relational-like framework for programming Hyperledger Fabric chaincodes
+	Fabric-Ansible-Collection: Enables you to automate the building of Hyperledger Fabric networks
+	Fabric Smart Client: Simplifies the development of Fabric-based distributed application by hiding the complexity of Fabric 
+	Fablo: Tools to help you developer a Fabric network
+	FireFly-Fabconnect: Part of Hyperledger FireFly, a REST API to interact with a Fabric network and event streaming via websocket
+	Other Fabric related labs
+
+
+We would like to thank all of the people who contributed to Hyperledger Composer while it was an active project. The efforts of these community members helped drive innovation in the community around making Hyperledger Fabric easier for people to use in their solutions.
+
+	Simon Stone
+	Dave Kelsey
+	Nick Lincoln
+	Matthew B White
+	Caroline Fletcher
+	And the over 1,000 other people who made a contribution to the project
+
+
+If you'd like to learn more, the code for Hyperledger Composer is still available, and you're welcome to take a look at the repository. Please note that there are no maintainers for the project who are available to answer any questions you may have.
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

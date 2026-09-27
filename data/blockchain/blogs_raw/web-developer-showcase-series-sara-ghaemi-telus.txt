@@ -1,0 +1,858 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Sara Ghaemi, TELUS – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Developer Showcase
+                            
+                        
+                    
+
+                
+                Developer Showcase Series: Sara Ghaemi, TELUS
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Apr 1, 2021
+                    
+                
+
+            
+
+            
+            
+                In this edition of our Developer Showcase Series, where we learn what developers in the real world are doing with Hyperledger technologies, we are spotlighting a recent graduate of the Hyperledger Summer Mentorship Program. Today, we get an update from Sara Ghaemi, Technology Specialist at TELUS and a member of last summer’s cohort. Sara presented some of her recent work on interoperability at Hyperledger Global Forum 2021 in the session A Pub-Sub Architecture to Promote Blockchain Interoperability. 
+ 
+Give a bit of background on what you’re working on and how you got into blockchain.
+ 
+Currently, I’m a technology specialist at TELUS working on various projects. TELUS is very keen on the space of blockchain, and we are in the exploratory phase. Before joining TELUS, I was a master’s student and research assistant at the University of Alberta, working on blockchain research. When I started my master’s program, I had already been exposed to cryptocurrencies and how they work. When deciding on my research topic, I got interested in how this technology can be leveraged in use cases other than cryptocurrencies. I was also curious about the performance of distributed ledgers and the ways we can have blockchain features with higher throughput and lower latency than public blockchains such as Bitcoin.
+ 
+As a result of this interest, I worked on a blockchain-based serverless computing platform called ChainFaaS, which was implemented using Hyperledger Fabric. As part of our research group, we also worked on performance analysis of distributed ledgers. After about two years of researching this topic, I got into the Hyperledger Mentorship program, which introduced me to the world of blockchain interoperability. During this program, I worked on blockchain interoperability with a focus on Hyperledger technologies.
+ 
+What Hyperledger frameworks or tools are you using in your projects? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+Continuing my research as my side projects, I am currently using Hyperledger Fabric, Besu and Caliper. Given my interest in interoperability, I am also following Hyperledger Cactus closely. Very recently, I have also become interested in Hyperledger Indy for access management.
+ 
+I’ve had a lot of positive experiences with Hyperledger. First and foremost is the community. During my mentorship program, I had the opportunity to get involved with the Hyperledger community in different ways. The community is very welcoming, and everyone is always there to help. There have been many instances where I was stuck on something and was able to get help from the community through chat groups. Moreover, the variety of blockchain solutions that are available in Hyperledger’s greenhouse has been a great help for me.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+I believe blockchain interoperability is an important area to focus on. Given the momentum in the blockchain space, many different blockchain networks are introduced for various use cases. All of these networks are isolated from each other, resulting in silos of information. I believe it is crucial for the future of blockchain to have secure interoperability solutions so that even when new networks are introduced, they can work with currently running networks.
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain?
+ 
+Blockchain is a space that is changing fast. Don’t be overwhelmed by the amount of information that is on the internet. Understand the basics first and then focus on one specific blockchain technology that interests you the most. Spend some time to fully understand that technology. When you get a good understanding of one of the blockchain networks, it will be much easier to understand the rest.
+ 
+If you want to learn something in more detail, I recommend reading a few top research papers in that area. For example, I remember struggling with understanding how exactly Hyperledger Fabric works. Reading the “Hyperledger fabric: a distributed operating system for permissioned blockchains” paper gave me great insight into the details of Fabric.
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+I’m hoping that blockchain can allow users to be in charge of their own data on the internet. Instead of relying on third-parties and trusting them not to disclose their information to others, the users should be able to see and control who can access their data and information.
+ 
+Where do you hope to see Hyperledger and/or blockchain in five years?
+ 
+I hope to see blockchain and/or Hyperledger being used in production at a large scale.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+Don’t be afraid to ask questions. I used to spend a lot of time trying to fix the issues that I had with my code. One of my mentors once told me to reach out to experts in the area and ask my questions. Worst case scenario, they are not going to answer.
+ 
+What technology could you not live without?
+ 
+Internet!
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

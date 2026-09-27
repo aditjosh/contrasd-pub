@@ -1,0 +1,635 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Logging - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Logging
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Logging
+
+	Felipe Faraggi
+
+
+
+	Sally MacFarlane
+
+
+
+	Diego Lopez Leon
+
+
+
+	+2
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Oct 03, 2024 by Sally MacFarlane
+1 min read
+
+
+
+
+
+
+
+
+
+
+
+
+Logging
+This project employs the logging facadeÂ SLF4J, using Apache Log4j 2.x as its backend. Accordingly, levels of detail can be specified as follows:
+OFF:	The highest possible rank and is intended to turn off logging.
+ERROR:	Designates error events that might still allow the application to continue running.
+WARN:	Designates potentially harmful situations.
+INFO:	Designates informational messages that highlight the progress of the application at coarse-grained level.
+DEBUG:	Designates fine-grained informational events that are most useful to debug an application.
+TRACE:	Designates finer-grained informational events than the DEBUG.
+ALL:	All levels including custom levels.
+
+For more guidance on which level to use, see Coding Conventions#Logging
+For modifying the log output of a running client, you may use a custom log4j config file by setting a system property at startup.Â  Besu's logging docÂ provides good documentation on how to configure logging in Besu.
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Documentation
+Documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Issues
+Issues
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Versioned documentation
+Versioned documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Coding Conventions
+Coding Conventions
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+How to Contribute
+How to Contribute
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Debugging Besu in IntelliJ
+Debugging Besu in IntelliJ
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+Atlassian Intelligence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 34, "requestCorrelationId": "b1c9ceb9aaa543f38053661563784bdd"}

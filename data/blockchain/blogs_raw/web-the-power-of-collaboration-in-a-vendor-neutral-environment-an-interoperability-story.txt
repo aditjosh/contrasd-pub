@@ -1,0 +1,855 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Power of Collaboration in a Vendor-Neutral Environment: An Interoperability Story – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Interoperability
+                            
+                        
+                    
+
+                
+                The Power of Collaboration in a Vendor-Neutral Environment: An Interoperability Story
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        May 13, 2021
+                    
+                
+
+            
+
+            
+            
+                With the vast amount of data being shared today, and even more potential for data to be shared widely through distributed ledger technologies, the value of collaboration is becoming an imperative. As the saying goes, none of us is as smart as all of us.   
+
+
+Collaboration in the supply chain is accomplished in many ways, but where the exchange of data is concerned, it happens more efficiently within a standards-based framework. There are dozens of companies currently leveraging Hyperledger platforms in combination with GS1 Standards as a foundation for data consistency and accuracy. Together, innovative use cases come alive, including potentially life-saving advances in food and pharmaceutical supply chain safety, as well as applications of technology that make supply chains more visible to support product provenance and information transparency.   
+
+Collaboration in a vendor-neutral environment starts with having an organizational culture that first recognizes the value of having access to outside insights. Like the Hyperledger projects, collaboration often means joining together with peers, or even competitors, to better understand how to apply standards and technology to solve a collective problem. When industry leaders come together for a GS1 US initiative meeting, workgroup, discussion group, or virtual event, for example, they are making a commitment to problem-solving on pre-competitive issues and operating with the understanding that all participants are there to learn, contribute, and holistically support their respective industries.  
+
+To better understand the power of collaboration in a neutral environment, let’s examine a recent example—a pilot program convened by GS1 US to explore interoperable seafood traceability solutions. 
+
+Facilitating Innovation 
+
+GS1 US facilitates innovation in a few ways, often through a discussion group or to conduct a pilot that investigates a specific challenge or technology. First, the organization has a dedicated team of innovators who regularly explore the impact of emerging technology, such as DLT, artificial intelligence, robotics, emerging data carriers and more, on the supply chain. This is a proactive operation designed to stay ahead of what could be influencing the business landscape in the next few years.   
+
+Another way is as a response to an industry “ask.” Highly engaged industry executives leverage the organization’s neutrality to evaluate a technology that has industry communities buzzing and interested. In either case, GS1 US serves as a bridge between the technologists and those who can use their solutions to solve problems. 
+
+The seafood traceability pilot was born through industry’s request. Several stakeholders expressed concern for the lack of interoperability between solutions and a growing need to address visibility gaps in the seafood supply chain that leave it open to fraud and other food safety hazards. They foresaw a potentially inefficient future where end users would be forced to join multiple ecosystems, and the costs of each would create a burden to work with their many trading partners. GS1 US hypothesized that GS1 Standards could play a role to preserve solution choice while enabling multiple systems to interoperate. 
+
+Assembling the Participants 
+
+Building on our evolving and well-rounded understanding of the supply chain and the industries using GS1 Standards, GS1 US recruited participants of diverse sizes. 
+
+In early 2020 as part of the first phase of the pilot, the team selected traceability solutions from FoodLogiQ, IBM Food Trust (which leverages Hyperledger Fabric), ripe.io, and SAP to be evaluated. Simply put, the phase would create a prototype for how GS1 Standards can help each solution interoperate to transmit and exchange information about a product’s journey throughout the supply chain. The pilot’s focus was on the use case first, not necessarily the technology—hence the inclusion of FoodLogiQ, which does not have a DLT solution. Blockchain was considered a technology choice—each platform was required to have the ability to extract data to exchange with another platform.
+
+Just recently, GS1 US completed the second phase of this pilot, adding end user participants (well-known seafood industry stakeholders and solution providers) and real-world traceability data, building on the simulated data of the first phase. For this part of the study, GS1 US enlisted the help of the Global Dialogue on Seafood Traceability (GDST), a seafood industry forum dedicated to forming global application standards for seafood traceability. In this phase, the group tested the flow of existing standardized product data using the established prototype and the GDST application standards for the seafood supply chain. 
+
+Key Findings and Their Significance 
+
+In both phases of the pilot, GS1 US determined that interoperability between solutions was possible when leveraging the GS1 System of Standards for the unique identification of products and locations, as well as GS1 Electronic Product Code Information Services (EPCIS), as a standardized data model for physical event data. EPCIS provided a consistent format and exchange protocol for sharing event data and transmitting key information from production to sale by uniformly facilitating the transmission of critical tracking events, such as whether a product had been shipped, received, packed, or transformed.
+
+The interoperability of these systems supports the movement toward more widespread supply chain digitization and future requirements of the U.S. Food and Drug Administration (FDA) proposed Food Safety and Modernization Act (FSMA) section 204 food traceability rule. 
+
+Using real-world data, the pilot demonstrated how EPCIS effectively connected two or more traceability systems and provided a way for systems to “speak” to each other using standards. Equally important, industry collaboration was critical to define the systems’ “conversation.” With both key elements in place, participants were confident that they had moved a step closer to industry-wide traceability and transparency for seafood.  
+
+Ongoing Efforts 
+
+Moving forward, the GS1 US team will continue to work with industry to understand traceability data requirements, evaluate the need for new technical standards or protocols required for interoperability, and explore more advanced use cases. 
+
+Ultimately, the pilot story is just one story where the power of standards to bring unlikely collaborators together, united in a common goal. When industry leaders join together, advancement for all can be accomplished. 
+
+Cover image by Volker Glätsch from Pixabay
+
+ 
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

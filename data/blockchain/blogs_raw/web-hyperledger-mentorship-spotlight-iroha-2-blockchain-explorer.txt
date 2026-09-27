@@ -1,0 +1,880 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Iroha 2 Blockchain Explorer
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Mentorship Program
+                            |
+                        
+                            Hyperledger Iroha
+                            
+                        
+                    
+
+                
+                Hyperledger Mentorship Spotlight: Iroha 2 Blockchain Explorer
+ 
+                
+                    Kshitij Roodkee
+                    |
+                    
+                        Feb 20, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Engaging in the Iroha 2 Blockchain Explorer project through the Hyperledger Mentorship project has been an exhilarating journey marked by technical challenges, continuous learning, and a profound sense of contributing to the broader technical community. As a mentee in this project, I immersed myself in various facets that not only enhanced my technical skills but also offered valuable insights on becoming a more effective contributor to the open-source realm.
+
+
+WHAT I WORKED ON: 
+
+Project Overview: Iroha 2 Explorer
+
+Iroha 2 Explorer is a web-based UI that inspects the entire state of a Hyperledger Iroha 2 blockchain. It helps users understand the structure of the blockchain by providing easy navigation through blocks, accounts, transactions and their details.
+
+Project Goals:
+The main task was to update the Iroha 2 Explorer Backend from version rc.9 to rc.16. This update ensures that the explorer stays up to date with the latest improvements in Hyperledger Iroha 2. I also tackled some issues related to Rust and Iroha code architecture. The goal was to make sure the explorer works smoothly with the newest Iroha 2 release.
+
+Current Project Status:
+The implementation of the Iroha 2 Explorer Backend for RC16 was successfully completed. Notably, a significant change was observed in the logic for rejected transactions, which is now absent in Iroha rc16.
+
+However, during the transition from rc16 to rc19, the process of updating the backend encountered substantial challenges due to issues within Iroha itself.
+
+Progress on the frontend side included the partial implementation of the Block Details page in the Iroha 2 Explorer. As of now, this aspect of the project is still a work in progress.
+
+Significant Challenge Faced:
+
+During this project, one prominent challenge emerged - ensuring a smooth transition of the blockchain explorer to the latest releases. The continuous evolution in the logic of the main API for the Iroha 2 library necessitates synchronisation with the blockchain explorer backend. This synchronisation introduces complexities, particularly in managing discrepancies between frontend requirements and the data supplied by the backend during the development and update processes to ensure alignment with changes in Iroha logic. 
+
+Addressing this challenge required a proactive approach that included a thorough examination of merged Hyperledger Iroha 2 libraries pull requests and extensive discussions and research with the mentor. This collaborative effort proved essential in overcoming obstacles and maintaining alignment between the blockchain explorer and the evolving Iroha logic.
+
+WHAT I LEARNED AND ACCOMPLISHED:
+
+Proficiency in Rust:
+
+Embarking on this project with minimal familiarity with Rust, I dove into the world of this powerful and type-safe language. Throughout the project, I immersed myself in Rust, delving into its fundamentals. I honed my skills by studying professionally written code, running it, and collaborating with experienced Rust developers. This hands-on experience not only provided me with a solid understanding of Rust but also showcased its practical applications in real-world scenarios.
+
+Proficiency in Vue.js:
+
+Vue.js, a JavaScript framework prized for its simplicity and flexibility in building user interfaces, was an entirely new territory for me. Despite starting with zero knowledge, I successfully learned and implemented Vue.js for the Iroha 2 Explorer project. This learning journey involved grasping the basics of Vue.js, such as components and directives. Through active participation in the project, I not only gained proficiency in Vue.js but also cultivated the skills necessary to craft interactive user interfaces.
+
+Writing Good PRs and Collaboration: 
+
+The art of writing excellent pull requests was another significant learning opportunity for me. This encompassed fine-tuning everything from the formatting of a pull request to the meticulous design of commits, adhering to standardized practices for delivering high-quality contributions. My experience emphasized that success in the realm of blockchain technology not only relies on technical skills but also on effective communication, cooperation, and the dedication to surmount obstacles collectively.
+
+WHAT I GAINED FROM WORKING WITH MENTORS:
+
+Working closely with Dmitry Balashov as my mentor has been an invaluable experience, marked by comprehensive guidance and unwavering support. Through insightful meetings and meticulous pull request reviews, Dmitry's mentorship not only elucidated intricate concepts but also significantly expedited my learning journey. Their expertise not only honed my technical skills but also fostered a profound appreciation for collaborative endeavors within the Hyperledger community.
+
+Witnessing the dedicated spirit of the Hyperledger Iroha main core team further inspired me to strive for excellence, encouraging a deeper engagement with the open-source spirit.
+
+WHAT COMES NEXT:
+
+Career Development: 
+I am ready to take on more significant challenges in the Rust subspace, aiming to refine my web development skills further. I eagerly anticipate contributing to open-source solutions that not only revolutionize technology but also play a role in designing a better world.
+
+Advancing the Project:
+Given the dynamic nature of the Hyperledger Iroha 2 APIs, which is in a pre-release state with frequent updates and changes, the project remains an ongoing endeavor. Ensuring a seamless upgrade of the blockchain explorer to the latest releases presents a continuous and challenging task, including updating the backend API to align with the current state of Iroha 2.
+
+Moreover, the development of the backend needs to harmonize seamlessly with UI/UX designs. This entails creating and implementing screens for account details, asset details, transaction details, and other pertinent components. This ongoing development is crucial for maintaining synchronization with the evolving landscape of Hyperledger Iroha 2.
+
+In summary, my engagement with the Iroha 2 Blockchain Explorer project has been a pivotal and transformative chapter in my career. I eagerly anticipate sustaining my involvement in the Hyperledger community and contributing to the ongoing revolution in decentralized identity solutions.
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,667 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prague Planning - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+	Cancun Planning
+
+
+
+
+
+	Enterprise roadmap item detail
+
+
+
+
+
+	Prague Planning
+
+
+
+
+	The Prague Upgrade from Besu Maintainers - The Hot, Cold,  & Open-Ended
+
+
+
+
+
+
+
+	See Performance & Stability for Q4 Roadmap
+
+
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Prague Planning
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Prague Planning
+
+	Matt Nelson (Deactivated)
+
+
+
+	gabriel.trintinalia@gmail.com
+
+
+
+	Justin Florentine
+
+
+
+	+2
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Apr 11, 2024 by gabriel.trintinalia@gmail.com
+
+
+
+
+
+
+
+
+
+
+Prague Meta Thread
+
+
+	EIP
+	Status
+	T-shirt Size
+	PR
+	Besu POC or Champion?Â 
+	Notes
+
+	Driver? EOF
+EIP-3540
+EIP-3670
+EIP-4200
+EIP-4750
+	CFI	XL	
+	Danno Ferrin	Let's us ship faster and include more EIPs while giving Verkle more time to build and test.
+Shippable state in Besu right now. Mega EOF branch is nearly up to date. Engineering work mostly worked out.Â 
+Validation rules to be updated. Tests to be updated.Â 
+Testnets need implementations from Vyper/Solidity â†’ needs spec freeze. Need compiler support.
+
+
+Timing â†’ Q3 for testnet rolloutÂ 
+Fork gated on time for fuzzing finding nothing. Running week(s) without issue.Â 
+
+	Driver? Verkle Tries	CFI	XXL
+	
+	Karim Taam, Stefan Pingel, Gabriel Fukushima	The longer we delay the transition, the bigger the headache. Tons of value to users and devs, but more complexity.Â 
+	EIP-2537 - BLS Precompile	CFI	S	
+	Justin Florentine	Ship - updated to use Gnark? Signature aggregation for smart contract wallets
+	EIP-3068 - BN-256 HashToCurve	CFI	S	
+	Justin Florentine	Ship - updated to use Gnark?Â 
+	EIP-3074 - AUTH and AUTHCALL	CFI	M/L	
+	TBD	Should talk to wallet providersÂ 
+Danno - View unsafe as no revocation. No inclusion without it.
+Justin - Hesitations from MM team and Consensys
+
+	EIP-4444 - History Expiry	CFI	S/M	
+	Matt Nelson, Gary Schulte	Need to implement Portal proxy in Besu. Entirely optional!Â 
+https://notes.ethereum.org/@Kolby-ML/HJ-9D5aYp
+
+	EIP-6110 - In-Protocol Deposits	CFI	S	5055
+5295
+5752
+	Fabio Di Fabio, Simon Dudley	Ship - reference implementation ready
+	EIP-6913 - SETCODE OpCode	CFI	S	
+	Daniel Lehrner	Lukewarm - small improvement on status quoÂ Â 
+	EIP-7002 - Execution layer triggerable exits
+	CFI	M	6783, 6801,
+6883
+	Lucas Saldanha	Should talk to some staking providers first
+	EIP-7212 - Precompile for Secp256R1Â 
+	CFI	S	
+	Matt Nelson	
+
+	EIP-7251 - Maximum Effective Balance Increase
+	CFI	NA	
+	-	CL only
+	EIP-7377 - EOA Upgrade / Migration Transactions
+	CFI	??	
+	Gary Schulte	
+
+	EIP-7547 - Inclusion listsÂ 
+	CFI	L or XL	
+	Justin Florentine	
+
+	EIP-7549 - Move committee index outside Attestation
+	CFI	NA	
+	-	CL onlyÂ 
+
+
+Verkle vs. EOFÂ 
+EOF First, Verkle Second (Pros & Cons)
+Pros
+	Ready to ship this year. Verkle is notÂ 
+	Necessary step to safely increase the code limit sizesÂ 
+	EOF can be safely codesize uncappedÂ 	EOF storage and verkle tree â†’ Compatible by chunking into 32bytes and storing in sequenceÂ 
+	Jumpdest validation is what causes issues
+	31 byte in verkle may be overfitting to legacy EVM impl.
+
+
+	Good for zkÂ 	Dynamic jumpsÂ 
+	Only have static jumps in EOFÂ 
+	Static register reallocationÂ 
+	Stack height validation requirementsÂ 
+	Cross-compilation
+	No-code introspection in EOF
+
+
+	More time to work on Verkle
+
+Cons
+	"Small feature fork scope" might not allow for EOFÂ 
+	Â Consensus risk (long period of testing?)Â 
+	Layer 2 zk development will take time to adoptÂ 
+
+Verkle First, EOF secondÂ 
+Pros
+	Shorter migration and less state to migrate !!!
+	Less complexity of adding EOF EVM and adding risk
+	Verkle functionality improvements (getting the stuff faster)Â 
+	More time for L2s to adopt EOF	Verkle not mandatory for immediate fork coverageÂ 
+
+
+
+Cons
+	More time to work on Verkle if we ship secondÂ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2022-02-15 Contributor Call
+2022-02-15 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-08-16 Contributor Call - APAC Friendly Time
+2022-08-16 Contributor Call - APAC Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-10-31 Contributor Call
+2023-10-31 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-06-09 Besu Contributor Call Agenda
+2020-06-09 Besu Contributor Call Agenda
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-02-20 Contributor Call - US/EMEA Friendly Time
+2024-02-20 Contributor Call - US/EMEA Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-01-11 Besu Contributor Call - Off-Cycle
+2022-01-11 Besu Contributor Call - Off-Cycle
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "60c55989c02c45cf80cb900a9682be29"}

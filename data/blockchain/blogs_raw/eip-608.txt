@@ -1,0 +1,215 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-608: Hardfork Meta: Tangerine Whistle
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-608: Hardfork Meta: Tangerine Whistle
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Alex Beregszaszi (@axic)
+	Created	2017-04-23
+	Requires	
+
+  EIP-150, 
+
+  EIP-779
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	References
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This specifies the changes included in the hard fork named Tangerine Whistle (EIP 150).
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+	Codename: Tangerine Whistle
+	Aliases: EIP 150, Anti-DoS
+	Activation:
+    	Block >= 2,463,000 on Mainnet
+
+
+  
+	Included EIPs:
+    	EIP-150 (Gas cost changes for IO-heavy operations)
+
+
+  
+
+
+  
+    
+      
+      
+         References
+      
+      
+    
+
+
+	https://blog.ethereum.org/2016/10/13/announcement-imminent-hard-fork-eip150-gas-cost-changes/
+	https://blog.ethereum.org/2016/10/18/faq-upcoming-ethereum-hard-fork/
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), "EIP-608: Hardfork Meta: Tangerine Whistle," Ethereum Improvement Proposals, no. 608, April 2017. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-608.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

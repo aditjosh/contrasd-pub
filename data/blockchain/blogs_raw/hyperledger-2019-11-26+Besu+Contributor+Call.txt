@@ -1,0 +1,572 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-11-26 Besu Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+	2019-09-17 Besu Contributor Call
+
+
+
+
+
+	2019-10-01 Besu Contributor Call
+
+
+
+
+
+	2019-10-15 Besu Contributor Call
+
+
+
+
+
+	2019-10-29 Besu Contributor Call
+
+
+
+
+
+	2019-11-12 Besu Contributor Call
+
+
+
+
+
+	2019-11-26 Besu Contributor Call
+
+
+
+
+
+	2019-12-10 Besu Contributor Call
+
+
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2019-11-26 Besu Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2019-11-26 Besu Contributor Call
+
+	Danno Ferrin
+
+
+
+	Felipe Faraggi
+
+
+
+	Madeline Murray (Deactivated)
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Nov 26, 2019 by Felipe Faraggi
+
+
+
+
+
+
+
+
+
+
+Meeting Link:Â https://consensys.zoom.us/j/725448960
+EMEA/AMER Friendly Time -Â Â 1500UTC (https://www.timeanddate.com/worldclock/converter.html?iso=20191126T150000&p1=224&p2=179&p3=195&p4=47&p5=1440)
+	7am Tuesday (26 Nov) Los Angeles
+	10 am Tuesday (26 Nov) New York
+	3pmÂ  Tuesday (26 Nov) UTC
+	4 pm Tuesday (26 Nov) Paris/Berlin
+	1 am Wednesday (27 Nov) Brisbane
+
+Agenda
+	Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Eth DenverÂ is 15-17 Feb 2020 in Denver Colorado
+	EthCCÂ (Ethereum Community Conference) is 3-5 March 2020 in Paris France
+	Hyperledger Global ForumÂ is 3-6 March 2020 in Phoenix AZ
+
+
+	Release updates	1.3.5 released last week
+	1.3.6 or 1.3.7 will have a critical difficulty bomb update
+	1.4 aimed for RC on 13 Feb 2020, full release on 27 Feb 2020
+
+
+	Work Updates	Ethereum Classic Support
+	Proposed Changes to ChangelogÂ 
+	Caliper support
+
+
+	Other Business	Meeting Times.Â 	We will skip 24 Dec 2019 and resume on 7 Jan 2019, time TBD...
+	Should we rotate on two times (APAC asleep and EMEA asleep) or three times (add in AMER asleep)?
+
+
+	CI/CDÂ 
+	DCO instructions	https://kauri.io/article/f58190e5e3bc4b1a9ed902bfccfe58b9/v1/dco-sign-off:-commiting-code-to-hyperledger-besu
+
+
+	Grid Demo -Â Philipp Langhans, Ethereum Foundation
+
+
+	Open Forum
+	Future Topics
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "6e6aa4d6934d47ad9735dcf05575283c"}

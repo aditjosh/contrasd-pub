@@ -1,0 +1,142 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Citopia and the Integrated Trust Network (ITN): MOBI Zero Trust Approach to Web3 Multiparty Business Automation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Citopia and the Integrated Trust Network (ITN): MOBI Zero Trust Approach to Web3 Multiparty Business Automation 
+
+        
+
+        
+           Written by Tram Vo, CEO & Founder of MOBI, the Mobility Open Blockchain Initiative | Feb 23, 2023 9:00:00 AM 
+        
+
+        
+          The compelling network economics of centralized platforms prove an existential threat to traditional businesses. Companies that control the most powerful platforms are rewarded with exponential growth, insurmountable competitive advantage, high multiples, and access to cheap capital. Needing centralized platforms to validate counterparty identities and automate transactions, non-platform companies are often forced into business arrangements that see their business models commodified and their value chains held hostage.
+ 
+Corporate support for open source collaborative efforts are, in part, a response to the centralizing tendencies of Web2. Open source blockchain technologies such as those hosted by Hyperledger Foundation promise to leverage the existing trust within corporate transaction networks by automating traceability, settlement, and audit processes. Public and private Distributed Ledger Technologies, together with World Wide Web Consortium (W3C) open standards — Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) — enable the creation of decentralized Zero Trust Networks. These networks allow companies to avoid centralized platforms when digitizing extended value chains and automating multiparty transactions while lowering the cost of trust. 
+ 
+Zero trust is a security model that assumes all network traffic is untrusted until proven otherwise. Organizations do not automatically trust traffic, even if it originates from a seemingly trusted source. Instead, all traffic is validated before being allowed to pass. By implementing strict access controls and continuous authentication of all entities entering the network for all transactions, zero trust: 
+ 
+	Improves security by reducing the attack surface and minimizes the potential for data breaches
+	Strengthens compliance by helping organizations meet regulatory requirements and industry standards for data protection
+	Provides greater visibility into network traffic and activities, allowing organizations to identify and prevent potential threats
+
+ 
+ 
+
+  
+   
+ 
+
+ 
+To develop and implement zero trust Web3 technologies for multiparty business processes, 35 companies joined together in early 2018 to launch MOBI, the Mobility Open Blockchain Initiative, a global nonprofit smart mobility alliance of forward-thinking vehicle manufacturers (OEMs), NGOs, government agencies, financial institutions, smart city leaders, and technology companies. 
+ 
+Since its launch, MOBI has continued to grow its membership and to date has created and released 17 blockchain-based standards to enable a zero trust environment for multiparty applications. These standards include: 
+ 
+	MOBI VID (2019) was the first W3C DID-compliant vehicle identity based on the internationally accepted vehicle identification number (VIN) standard
+	MOBI Trusted Trip (2021) applied W3C VCs and DIDs guidelines to link trusted identity and location into a verifiable trip
+	Battery identification number (BIN) (2022) provided the necessary foundation for battery supply chain track-and-trace and the global Battery Passport
+
+ 
+In 2020, MOBI began building a two-layer, member-owned and operated zero trust Web3 infrastructure (Citopia and the Integrated Trust Network, or ITN) to demonstrate MOBI Standards, enable multiparty applications interoperability, and allow entities to perform privacy-preserving, tamper-evident transactions via Self-Sovereign Identities (Digital Twins).
+ 
+
+ 
+ 
+  Figure 1
+  : Citopia and the ITN are separated into two distinct organizations, each with its own legal structure, governance, network, and operators. 
+ 
+ 
+Citopia is a federated Web3 marketplace leveraging VCs (or transactions) and Zero-Knowledge (ZK) cryptography to enable any entity to verify that another entity was present at a location, completed a trip, and performed relevant activities. Citopia VCs are machine-readable, privacy-preserving verifications for business automation in a zero trust ecosystem. These transaction verifications can be performed by any ecosystem stakeholders and do not rely on centralized certificate authorities.
+ 
+The ITN is the first cross-industry permissioned network where participants agree to common identity standards and shared governance. As the first Zero Trust Certificate Authority for IoT, eCommerce, and business automation, the ITN acts as a global trust anchor for digital business. It is protocol, cloud, and technology agnostic. It’s currently built on Hyperledger Fabric with a Arbitrum One (EVM compatible optimistic layer 2 rollup on Ethereum) to anchor DIDs onto Ethereum as well. Plans call for this to be a multichain network.
+ 
+Using the ITN, organizations can create secure digital services that are locally highly performant while also decentralized. The ITN is backed by three global industry consortia (MOBI, MEF, AAIS).
+ 
+Together, Citopia and the ITN form the foundation for a community-owned and -operated Web3 infrastructure for connected ecosystems and IoT commerce. MOBI and its members are currently focusing on a selection of foundational use cases, including: 
+ 
+	Platform agnostic global battery passports 
+	Using in-vehicle telematics to provide real time accident data for reports and collision repair, using Web3 technology for data privacy
+	Multiparty supply chain track-and-trace
+	Zero-knowledge proof of vehicle location 
+	Multimodal trip planning, booking, and payment 
+	Maintenance and recall traceability 
+
+ 
+Figure 2: Working together to enable zero trust business automation, Citopia and the ITN offer end users and providers security, privacy, speed, and control.
+ 
+Although Citopia and the ITN have some similarities to other industry networks, there are important differences that will enhance the speed, privacy, security, and regulatory compliance of connected ecosystems. 
+ 
+First, any organization can use Citopia and the ITN services. However, membership is required to run nodes on Citopia and/or the ITN.
+ 
+Second, whereas most Web3 solutions combine DIDs registry (the ITN) and transactions processing (Citopia) on the same infrastructure/company, we choose to separate them into two distinct organizations, each with its own legal structure, governance, network, and operators. This increases decentralization by reducing the market power and information advantage of any single organization. Neither Citopia nor the ITN gets such dominant network effects that users can’t switch/leave, hence neither can abuse its position, rent seek, or meaningfully change the economics of the ecosystem. 
+ 
+
+ 
+ 
+  Figure 3
+  : A closer look at how Citopia and the ITN function together. 
+ 
+ 
+Third, the separation permits Citopia to use any DIDs registry network following W3C DIDs standard, meaning that Citopia users aren’t locked to the ITN (and vice versa) and can use other networks. 
+ 
+Fourth, both Citopia and the ITN are vendor, technology, and protocol-agnostic, allowing applications interoperability and scaling of complex, cross industry, multiparty value chains. 
+ 
+Finally, through using Citopia and the ITN, DIDs are the only things registered and stored on chains. All personal and competitive information resides in the Self-Sovereign Digital Twin (SSDT) stored locally on the owner’s device or provider’s server and remains under the control of the owner, making the scraping and collection of data impractical, eliminating honeypots, reducing attack vectors, and improving security for all users.
+ 
+
+ 
+ 
+  Figure 4
+  : Citopia SSDTs are designed to ensure the highest possible level of data privacy and security for users and providers while enabling seamless application interoperability. 
+ 
+ 
+Through Citopia and the ITN, companies have the opportunity to combine the best of both worlds — building and leveraging applications that meet enterprise security, privacy, and compliance requirements while avoiding vendor or technology lock-in. Companies can retain their brand, their business models, and their customers without paying significant economic rent to a centralized certificate authority, platform, or data monopolist. They can reap the full benefits of value chain automation and digital efficiency in a shared zero trust ecosystem where the network effects accrue to the community. More information on MOBI’s standards, Web3 infrastructure, and multiparty pilots can be found on our website.
+ 
+___
+ 
+For more on displacing centralized platforms with zero trust networks, join Mobi’s Tram Vo and leaders from across the insurance market for a discussion about proving the efficacy and value of enterprise-level blockchain. It will cover the technical and business challenges the insurance market, like other multiparty industries, must tackle in the move to Web3. 
+ 
+The webinar, Measuring and Proving Enterprise-scale Blockchain Technology in the Insurance Industry, will take place on Thursday, March 30, 2023, at 1pm ET / 10am PT. To register, go here.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

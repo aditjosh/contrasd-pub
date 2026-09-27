@@ -1,0 +1,219 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why is Interoperability Needed? – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Why is Interoperability Needed? – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger Cactus, Hyperledger FireFly, Weaver and YUI technical communities | Feb 2, 2022 9:00:00 AM 
+        
+
+        
+          Blockchain interoperability is one of the crucial features of blockchain technology, operating in three main vectors: enabling scalability, diminishing risks and eliminating silos¹. This blog post focuses on interoperability projects connecting data and value silos.
+ 
+Standardization bodies are pushing forward drafts to normalize operations across the different interoperability layers. Those working on standards includeOpen Digital Asset Protocol (ODAP) from IETF², the interoperability working group in Digital Currency Global Initiative (DCGI) at ITU³, the subgroup 7 (ISO/TC/SG7) from ISO TechnicalCommittee 307⁴, the Cross-Chain Interoperability working group at the Ethereum Enterprise Alliance⁵, and many others⁶. Interoperability solutions can follow guidelines from standardization bodies for seamless integration across their targets and other interoperability solutions.
+ 
+Several blockchain interoperability projects focusing on solutions for interoperability among public blockchains flourished in the last years⁶. However, enterprise-grade interoperability solutions have only recently emerged, and the necessary standardization effort is still in its infancy. Although many different categorizations exist⁶, we can broadly classify interoperability solutions into two categories with different philosophies and approaches. In the first, a common “settlement” chain (or hub) is created as a permanent infrastructure to which other chains (e.g., “sidechains”) can connect; the common chain serves as an interoperation medium, offering decentralized trust guarantees to the sidechains for the settlement of cross-chain transactions. Cosmos7 and Polkadot8 exemplify this approach, which is particularly suited to public blockchains and distributed ledgers. 
+ 
+
+ 
+In the second category of interoperability solutions, a blockchain network, be it public or private, is augmented with modules and capabilities that allow it to interoperate directly with another network without depending on third-party infrastructure. This second category, into which Hyperledger Cactus9 and the Hyperledger Lab Weaver10 fall, is useful in enterprise scenarios where privacy as well as performance are core concerns. Both these approaches have their pros and cons, which are scenario dependent. 
+ 
+The Hyperledger community has been involved in notable efforts to advance open source solutions that respond to modern interoperation needs, which can be wide-ranging, and provides a collection of solutions from which blockchain users and consortia can select as per their requirements. This post explores how four technologies (two projects and two labs) under the Hyperledger umbrella approach the interoperability problem (public blockchains – consortium blockchains – centralized systems), comparing them across multiple criteria. 
+ 
+Hyperledger Cactus
+ 
+Hyperledger Cactus is a pluggable enterprise-grade framework to transact on multiple distributed ledgers without introducing yet another competing blockchain. It’s an SDK of SDKs.
+ 
+Hyperledger Cactus aims to provide Decentralized, Adaptable and Secure Integration to and between Blockchain Networks. It aims to cover as many protocols as possible through an extensible plugin architecture where new protocols or functionality can be added by creating new plugins.
+ 
+Hyperledger FireFly
+ 
+Hyperledger FireFly provides an API orchestration layer over multiple blockchain ledgers, fostering interoperability in the application tier. Allowing common blockchain programming constructs like tokens, off-chain/on-chain data orchestration, and identity verification to be implemented in pluggable microservice code modules against multiple blockchains. Patterns already implemented that span multiple chains in a single business transaction, include using a Hyperledger Fabric DLT for private business agreement and document verification, orchestrated with tokenized value transfer on a separate Ethereum blockchain. FireFly also provides an API layer into which blockchain interoperability platforms can plug into in the future, for a simplified developer experience.
+ 
+Weaver
+ 
+Weaver, a Hyperledger Lab, is a framework with a family of protocols to enable interoperation for data sharing and asset movements between independent networks built on heterogeneous DLTs in a manner that preserves the core blockchain tenets of decentralization and security.
+ 
+Interoperation using Weaver does not rely on trusted mediators. Rules and requirements are framed using the networks’ internal governance mechanisms. Interoperation relies minimally on shared infrastructure, which may provide identity services but does not play a part in core protocols through which data and assets are shared. Interoperation occurs through protocols that derive their trust from the counterparty networks’ native consensus mechanisms.
+ 
+Currently, a protocol for data sharing across ledgers with proof of authenticity and provenance is supported (for Fabric and Corda). We are currently adding a new protocol that enables asset exchanges using the HTLC pattern.
+ 
+YUI
+ 
+YUI is a Hyperledger Lab that achieves interoperability between multiple heterogeneous ledgers. The lab provides modules and middleware for cross-chain communication as well as modules and tools for cross-chain application development.
+ 
+For cross-chain communication, YUI is based on Inter Blockchain Communication (IBC) protocol by Cosmos project, with extensions to support various Hyperledger projects. IBC provides the basis for ledgers’ interaction of arbitrary data transfer and computation without the assumption of the trusted third party. 
+ 
+Currently YUI supports cross-authentication between enterprise ledgers (Fabric, Besu and Corda). Each actor of ledgers has to interact with only a respective ledger of its interest to complete a cross-chain operation such as  an atomic swap of tokens.
+ 
+Feature Matrix of Projects
+ 
+Legend
+ 
+✅: Supported
+❌: Out of Scope or not in the current roadmap
+📝: Design/PoC but no official implementation
+🏗️: Not *yet* supported
+ 
+
+ 	Feature Name	YUI 	Hyperledger Cactus	Weaver 	Hyperledger FireFly
+	Remote API access	🏗️	✅	✅	✅
+	Standard Data Model	✅(a)	🏗️ 	❌	❌
+	Client Language bindings – NodeJS	❌(b)	🏗️	✅	✅ (d)
+	Client Language bindings – JVM	❌	🏗️	✅	✅ (d)
+	Client Language bindings – Rust	❌	🏗️	❌	✅ (d)
+	Client Language bindings – .NET	❌	🏗️	❌	✅ (d)
+	Client Contract Language bindings – Go	❌	🏗️	✅	✅ (e)
+	Contract Language bindings – NodeJS	❌	🏗️	✅	✅ (e)
+	Contract Language bindings – JVM	❌	🏗️	✅	✅ (e)
+	
+Contract Language bindings – Rust	❌	🏗️	❌	✅ (e)
+	
+Contract Language bindings – .NET	❌	🏗️	❌	✅ (e)
+	
+Trusted Relays	✅	✅	✅	✅
+	Trustless Relayer	✅	✅	✅	🏗️
+	Generic Data Exports	🏗️	🏗️	🏗️	❌
+	Ledger Data Backups	❌	🏗️	❌	❌
+	Blockchain of Blockchains – To Store Data (e.g. Transactions)	✅	❌	🏗️	🏗️
+	Blockchain of Blockchains – To Store Network Information	🏗️	❌	🏗️	🏗️
+	Cross-authentication – light client	✅	🏗️	❌	🏗️
+	Cross-authentication – Federated via other identity providers	✅	🏗️	📝	📝
+	Arbitrary data transfer and computation	✅	✅	✅	✅
+	Exactly-once operation	✅	🏗️	🏗️	❌
+	Handling misbehaviour	✅	🏗️	🏗️	🏗️
+	Does not incorporate interaction between new actor(s)	✅	🏗️	✅	✅
+	Generate state proofs for external consumption	✅	✅	✅	❌
+	Verify state proofs independently, without becoming a network insider	✅	✅	✅	❌
+	Move assets from one ledger to another	✅(c)	✅	✅	✅
+	Copy assets across ledgers while retaining provenance knowledge	✅(c)	🏗️	✅	✅
+	Atomically exchange assets in different ledgers	✅(c)	🏗️	✅	🏗️
+	Accountability (auditability) for data, assets, transactions that involved interoperation	✅	🏗️	🏗️	🏗️
+	Cross-network identity management (including authentication)	🏗️	🏗️	📝	🏗️
+	Ability to support complex queries	✅	✅	🏗️	✅
+	Ability to support cross-network smart contracts (ledger–>ledger invocations)	✅	🏗️	🏗️	✅
+	End-to-end confidentiality	🏗️	🏗️	📝	✅
+	Privacy-preserving queries	🏗️	🏗️	🏗️	🏗️
+	Support for network discovery and connection bootstrapping	🏗️	🏗️	🏗️	✅
+	Support for routing data and assets via intermediate networks	📝	🏗️	🏗️	✅
+
+
+ 
+Future Work for 2022 Q1 
+ 
+	Hyperledger Cactus
+  	Support for the Open Digital Asset Protocol (ODAP)
+	Improved documentation and more examples (similar to fabric-samples)
+	Increased number of maintainers
+	Public test deployment of a Cactus network
+	Cactus benchmarks that are reproducible by anyone the same way the functional test cases are as long as they have access to a cloud provider account or a k8s cluster
+
+
+
+ 
+	Hyperledger FireFly
+  	Multi-ledger support
+	Pluggable DID provider support
+	Pluggable API Security (e.g. OAuth 2.0)
+	Active-active clustering
+	NoSQL database support
+
+
+
+ 
+	Weaver
+  	Implementation of cross-network decentralized identity and credential exchanges as trust basis for interoperation (currently in design spec)
+	Relay driver and support data/state view and asset transfers in Hyperledger Besu (Hyperledger Fabric and Corda already supported)
+	Relay module: more robustness (fault tolerance), add message queueing features, distribution and load balancing, make compatible with ODAP
+	Cross-network transaction invocation and event publish/subscribe
+	End-to-end confidentiality support for state and asset sharing
+	Augmented data/state sharing protocol to use verifiable external observation features through which the freshness of state can be verified
+	Improved documentation, tutorials, and testing features
+	Added performance evaluation capabilities
+	Inter-compatibility with Hyperledger Cactus through merged and aggregated features 
+
+
+
+ 
+	YUI
+  	Other ledger support (possibly other Hyperledger projects)
+	Enhanced support for Solidity and Ethereum-based ledgers
+	Enhanced support for connecting the Cosmos ecosystem (such as Tendermint light client for Solidity)
+	Improved documentation and release samples 
+
+
+
+ 
+Notes:
+ 
+a) Based on the Inter Blockchain Communication Protocol (IBC) (i.e., the specifications define packet data structure and the interface of handler of packets)
+b) Developers only need to interact with the ledger and the framework does not incorporate another layer between them
+c) Supported by auxiliary modules such as Cross framework
+d) Hyperledger FireFly API is REST and JSON, so all language “bindings” are supported
+e) Access to contracts via Hyperledger FireFly is also fully REST-ified, so all language bindings are supported
+ 
+References:
+ 
+1 – https://web.ist.utl.pt/~ist180970/papers/phd_cat_rafael_belchior.pdf
+2 – https://datatracker.ietf.org/doc/draft-hargreaves-odap/02/
+3 – https://www.itu.int/en/ITU-T/extcoop/dcgi/Pages/default.aspx
+4 – https://www.iso.org/committee/6266604.html
+5 – https://entethalliance.org/participate/working_groups/
+6 – https://dl.acm.org/doi/10.1145/3471140
+7 – https://v1.cosmos.network/
+8 – https://polkadot.network/
+9 – https://www.hyperledger.org/use/cactus
+10 – https://github.com/hyperledger-labs/weaver-dlt-interoperability
+ 
+Authors: 
+ 
+Rafael Belchior (Hyperledger Cactus), Nicko Guyer (Hyperledger FireFly), Jun Kimura (YUI), Hart Montgomery (Hyperledger Cactus), Venkatraman Ramakrishna (Weaver), Peter Somogyvari (Hyperledger Cactus), Susumu Toriumi (YUI), Dhinakaran Vinayagamurthy (Weaver), and Jim Zhang (Hyperledger FireFly)
+ 
+
+
+
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

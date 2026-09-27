@@ -1,0 +1,872 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain Automation Framework – the journey – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Bevel
+                            
+                        
+                    
+
+                
+                Blockchain Automation Framework – the journey
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Dec 15, 2020
+                    
+                
+
+            
+
+            
+            
+                In the early days and excitement of blockchain, we saw the proverbial ‘hammer looking for nail’ application of the technology across nearly every use case.  With a few years behind us, we now see a maturity in the understanding of the technology and the use cases it can best address. The ecosystem has evolved, and we even see live production implementations with enhanced understanding of where blockchain is the best solution to the problem vs. where it is an overkill.
+ 
+However, it is not wrong to say that the adoption hasn’t been anywhere near to what was predicted. There are some clear barriers that have hindered the adoption of blockchain. Let’s bring the focus on our own technology journey and barriers in adoption from a technology lens that led us to conceptualize and then bring  Blockchain Automation Framework to Hyperledger Labs as an open source project.
+ 
+Situation in 2018
+ 
+In early 2018, we made a conscious decision to steer clear of the blockchain hype that filled news cycles and instead focus on development and architecture work. By this time, we had completed over 100 proof-of-concepts and pilots with customers, and the architecture challenges of security, scalability and performance had surfaced with these implementations. We had by then built a reference architecture that communicated the full suite of capabilities necessary for a full production scale implementation. We had also built deep knowledge in multiple platforms and implementing in mixed cloud and on-prem environments. But we knew we could do more to ensure consistency and speed for our customers. 
+ 
+Disruption, the need for a change
+ 
+The need was acutely apparent. Various teams across the globe pursued their own disparate ways of architecting and implementing, thus reinventing the wheel. Our team at Accenture had yet to become a collaborative ecosystem where we could learn from others’ mistakes or follow best practices uniformly.
+ 
+We also saw multiple projects (inside and outside of Accenture) attempt to automate DLT deployments. The complexity around setting up a network, deploying it successfully and ensuring that network is up and running with all nodes communicating to each other seemed to be a challenge for the developer community. 
+ 
+But each project within the blockchain ecosystem focused narrowly on their chosen DLT platform or cloud provider. Many focused only on quickly deploying development or proof-of-concept environments. Almost all wanted to commercialize their narrowly focused solution.
+ 
+Outcome
+ 
+We decided to start a project codenamed “Fulcrum” to simplify use of best practices and accelerate DLT deployments. Our vision was to bring down the technology barriers and thus drive adoption. From the very beginning we had open source in mind. 
+ 
+We decided on some principles:
+ 
+	Design for security: Keys and other credentials are not stored in source, configuration files, environment variables, or filesystems
+	Modular Design: In order to provide an “enterprise” version, we should ensure that we are providing interfaces for modules where we might want to plug in a different component 
+	Conform to DLT Reference Architecture: When making decisions, conform to Accenture’s DLT Reference Architecture non-functional requirements and principles
+	Open Source Components: Ensure that we are using open source licensed products in our solution so that it may be contributed to Hyperledger, favoring Apache 2.0 licensed components
+	Infrastructure Independent: Choose tools and components that do not limit lock-in to an infrastructure configuration or cloud provider 
+	Choose Tools with Internal Expertise: Choose tools where Accenture has internal expertise to support and maintain
+
+ 
+We then wrote down the problems we needed to solve while complying with the principles:
+ 
+	How do we abstract the network complexities to let a developer majorly focus on application development? 
+	How do we make it easy and consistent for the developers to deploy different blockchain networks? 
+	How do we make it easy for the architects working on their first blockchain projects to design something secure, scalable, performing and easy to maintain?  
+	How do we reduce the time taken in manual deployment from days to automated deployment in minutes?
+
+ 
+Our customer conversations and Hyperledger community engagements helped us understand that these questions need to be answered not only at an organizational level but also at an industry/ecosystem level. For those familiar with building consortiums, it will be no surprise to hear that intellectual property concerns and fears of vendor lock-in can present major roadblocks in collaboration. Hence, we designed a solution that would not just accelerate adoption of the technology for Accenture customers, but would also be open source and accessible to all, simplifying  the deployment of the technology and accelerating adoption for the entire market. It was renamed to “Blockchain Automation framework” from its earlier name “Fulcrum” before it was open sourced. 
+ 
+Now, as a Hyperledger Labs project, Blockchain Automation framework delivers automation for rapidly deploying production ready DLT platforms on a chosen cloud infrastructure. It consumes a single configuration file where we enlist all details such as the DLT platform of choice, cloud infra of choice, network details, the node details and application details etc. to deploy a working distributed network.
+ 
+The architecture is basically an implementation of DLT reference architecture, hence conforming to best practices and providing a consistent mean to deploy regardless of cloud provider chosen, type of vault chosen and even the underlying DLT platform. Thus, making it easy for developers to focus on the application development. 
+ 
+With multiple client implementations we have found out that it has on an average reduced 80% on the deployment time required through the automation. A single deployment that would take sometimes a couple of days can now be done in hours if not minutes, thus significantly accelerating the project implementation time.
+ 
+What next?
+ 
+There are many blockchain-as-a-service (BaaS) solutions available across the market, from the major cloud service providers, to well-known software companies, to a host of new startups. Many of the solutions have been limited to a single cloud provider and/or a single DLT platform, and we see many are crossing the bridge in supporting multiple DLT platforms and interoperating across many clouds. We share this vision of a thriving community of BaaS providers built upon standards and interoperable platforms. 
+ 
+Unfortunately, that vision is not quite a reality in all places today, and we see the Blockchain Automation Framework as an excellent complement to the existing BaaS solutions, providing more deployment options across a multi-cloud landscape. This is just the beginning of the evolution of a project within the Hyperledger greenhouse that simplifies the accessibility of many multiparty system technologies and allows organizations to select the best platform for their specific needs, with the ability to change over time. 
+ 
+We welcome all suggestions, contributions and collaborations to take Blockchain Automation Framework to the next level. To learn more about the lab, check out our previous blog for a tutorial overview. Ready to get started? Please visit our landing page on Wiki to get all the details on how to collaborate with us.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

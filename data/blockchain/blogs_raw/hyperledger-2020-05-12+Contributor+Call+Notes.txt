@@ -1,0 +1,720 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-05-12 Contributor Call Notes - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+
+	2020 Notes
+
+
+
+
+	2020-01-07 Contributor Call
+
+
+
+
+
+	2020-01-21 Contributor Call
+
+
+
+
+
+	2020-02-04 Besu Contributor Call Notes
+
+
+
+
+
+	2020-02-18 Besu Contributor Call Notes
+
+
+
+
+
+	2020-03-17 Contributor Call Notes
+
+
+
+
+
+	2020-04-14 Contributor Call
+
+
+
+
+
+	2020-04-28 Contributor Call Notes
+
+
+
+
+
+	2020-05-12 Contributor Call Notes
+
+
+
+
+
+	2020-05-26 Contributor Call Notes
+
+
+
+
+
+	2020-06-09 Contributor Call Notes
+
+
+
+
+
+	2020-06-23 Contributor Call Notes
+
+
+
+
+
+	2020-07-07 Contributor Call Notes
+
+
+
+
+
+	2020-07-21 Contributor Call Notes
+
+
+
+
+
+	2020-08-04 Contributor Call Nodes
+
+
+
+
+
+	2020-08-18 Besu Contrubutor Call Notes
+
+
+
+
+
+	2020-09-01 Besu Contributor Call Notes
+
+
+
+
+
+	2020-09-15 Contributor Call Notes
+
+
+
+
+
+	2020-09-29 Besu Contributor Call Notes
+
+
+
+
+
+	2020-10-27 Office Hours Notes
+
+
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2020-05-12 Contributor Call Notes
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2020-05-12 Contributor Call Notes
+
+	Danno Ferrin
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: May 12, 2020
+
+
+
+
+
+
+
+
+
+
+video of call:Â dummyfile.txt
+	Housekeeping
+	Conference roundup
+	releases	1.4.5	Not out yet
+
+
+	1.5 - 17 June RCÂ  1 Jul relese
+	Roadmap review	performance - good
+	privacy - good
+	beam - in process
+	mining - help wanted
+
+
+
+
+	Work Updates	Ethereum Classic Fork	Mordor and Kotti syncing with no issues
+	No issues to report
+
+
+	Mainnet	EIP-2315 - Subroutines	There may be some changes, may miss Berlin
+
+
+	EIP-2537 - BLS curves
+	EIP-1559 - Fee Markets	Working with Geth contributors
+	Small testnet interoperating between the two nodes
+	Demo video
+	Next Steps for Besu are edge cases around mining and transaction pool management
+	Next steps are setting a real testnet and a real fork target.
+
+
+
+
+
+
+	Other Business	But Triage process
+
+
+	Open Forum	Scrub release vs. delay releases.	If we don't release w/in a certain time frame we scrub the release and just move on to the next release
+	Reduces "multi-car pileup" to make sure it goes out.
+	Perhaps give us an option to scrub?
+	Default to scrub unless there is an emergency need?
+	RaiÂ will add a wiki page to propose changes.
+
+
+
+
+	Future Topics	Discuss scrub vs. delay
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-02-25 Indy Contributors Call
+2025-02-25 Indy Contributors Call
+
+Hyperledger Indy
+
+
+
+More like this
+
+
+
+
+
+
+2024-12-17 Indy Contributors Call
+2024-12-17 Indy Contributors Call
+
+Hyperledger Indy
+
+
+
+More like this
+
+
+
+
+
+
+2025-02-06 Weekly Meeting Agenda & Notes
+2025-02-06 Weekly Meeting Agenda & Notes
+
+Hyperledger India Regional Chapter
+
+
+
+More like this
+
+
+
+
+
+
+03/14/25
+03/14/25
+
+Developer Relations
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "4a7a21347b964b5b90ebbaee40035add"}

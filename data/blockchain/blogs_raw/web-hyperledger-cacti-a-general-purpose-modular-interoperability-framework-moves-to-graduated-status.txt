@@ -1,0 +1,862 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Cacti, Moves to Graduated Status
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Cacti
+                            |
+                        
+                            Governance
+                            
+                        
+                    
+
+                
+                Hyperledger Cacti, A General-Purpose Modular Interoperability Framework, Moves to Graduated Status
+ 
+                
+                    Hyperledger Cacti Maintainers
+                    |
+                    
+                        Oct 3, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Almost a year ago, we announced the creation of Hyperledger Cacti, which resulted from the merger of two pre-existing projects, Hyperledger Cactus and Weaver, a Hyperledger lab, both of which had similar missions and goals, and which offered complementary feature sets to handle a wide variety of cross-ledger interoperability scenarios. Since then, Cacti has been in an Incubation state, a status it inherited from Cactus. Now we are thrilled to announce that the Hyperledger TOC has approved Cacti’s exit from incubation to the Graduated state, which marks the highest status a Hyperledger project can achieve.
+
+
+Hyperledger Cacti addresses the crucial challenge of interoperability among blockchains and distributed ledgers, so that DApps in different networks running on the same or different DLT stacks can link their business workflows and share data and assets seamlessly. The various constituent parts of Cacti offer choices of modules and libraries; these can be configured and composed into cross-network transaction pipelines customized for users’ trust assumptions and usability requirements while ensuring transaction-safety. The ability to orchestrate transactions across networks in a decentralized manner, using a vendor-neutral framework like Cacti (with extensibility using DLT-specific adapters) allows distributed ledger networks to scale without depending on third-party chains and services. Cacti modules, libraries, and representative sample apps can be used to build complex cross-ledger workflows in a safe and controllable manner with minimal development and administrative overhead and no changes required to pre-existing DLT stacks.
+
+Since the announcement of Hyperledger Cacti’s creation, the maintainers, with the help of Hyperledger staff, have produced a common code base with software integrated from two pre-existing repositories, a merged commit history and issues list, and a common roadmap for deeper integration of the constituent parts. This merger was a Hyperledger first, and the lessons drawn from our experience were described in a Wiki as a suggested model for others. Subsequently, the CI/CD pipelines of the constituent pieces were integrated, and the packages released under a common Cacti namespace, making upgrades easy for new and legacy users.
+
+The graduation of Hyperledger Cacti into a mature enterprise-grade solution for blockchain and DLT interoperability is a testament to the spirit of open collaboration and commitment shown by the maintainers, contributors, and users in the Hyperledger community, not to mention the active support and encouragement of the Hyperledger staff and TOC. A vibrant community has grown around the project, which is shepherded by maintainers drawn from three of the Hyperledger Foundation’s oldest members, namely Accenture, Fujitsu, and IBM.
+
+"Hyperledger Cacti as a project has been the personification of interoperability and modularity," said Hart Montgomery, CTO of Hyperledger Foundation. "It reflects the innovation at the heart of open development and creates a foundation that can support the increasingly complex network of networks that will enable a decentralized future."
+
+Having multiple stakeholders in the project has proven to be a strength but has also posed challenges. Our system and toolkit inspires trust in the marketplace precisely because it has evolved through a cross-industry consensus, open source software, peer-reviewed research, and sound engineering principles. Hyperledger Cacti maintainers and contributors are actively participating in blockchain interoperability standardization efforts such as the IETF’s Secure Asset Transfer Protocol Working Group and the SODA Inter-Op Group. Cacti software has been validated through several instances of real-world usage:
+
+	  Fujitsu, together with ConsenSys, R3 and Soramitsu, delivered a PoC of a cross-border securities settlement system launched by Asian Development Bank (ADB) in which Delivery-vs-Payment (DvP) was demonstrated across permissioned Ethereum, Corda (via WebAPI) and Hyperledger Iroha ledgers. See here, here, and here for more info.
+	  IBM delivered a PoC CBDC application suite for Banque de France (BdF) and HSBC, built under the Digital Euro initiative, demonstrating data sharing and DvP across Hyperledger Fabric and Corda ledgers. See here and here for more info.
+	  IBM built an atomic swap demo between a CasperLabs network and a Hyperledger Fabric network. See here for more info.
+
+
+At the same time, any cross-company initiative is challenging. But Hyperledger Cacti’s maintainers have overcome the challenges, establishing a joint working arrangement, meeting regularly and resolving issues quickly and transparently in public, and continuously engaging with the community on Hyperledger forums.
+
+Hyperledger Cacti, as a general-purpose extensible family of interoperability solutions, is a flagship Hyperledger project, and has the potential to be a fulcrum of innovation, especially in the enterprise blockchain ecosystem. It can act as a reference point for other complementary interoperability tools and protocols, within and outside the Hyperledger ecosystem. It has the potential to fulfill key requirements of the emerging DeFi application areas, CBDC being an example, in a way that conforms to core blockchain tenets of decentralized trust. 
+
+We believe this project has a bright future, so please join us in our journey, using and adapting Hyperledger Cacti for your purposes, or earning brownie points by contributing to (or testing) the code.
+
+Below are links to appropriate resources for you to get involved with Hyperledger Cacti.
+
+	GitHub repository: for all project information and code.
+	Group Page: to subscribe to mailing lists and social media handles.
+	Meetings Calendar: to participate in regular public discussions.
+	Project Wiki: updates, meeting agendas and notes, and updates.
+	Discord Channels:
+	Subscription: subscribe to the Hyperledger organization.
+	Cacti Contributors: discussions among current and prospective contributors.
+	Cacti Users: discussions among users.
+
+
+
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,578 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-10-15 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+	2019-09-04 Onboarding call
+
+
+
+
+
+	2019-09-17 Contributor call
+
+
+
+
+
+	2019-10-01 Contributor call
+
+
+
+
+
+	2019-10-15 Contributor Call
+
+
+
+
+
+	2019-10-29 Contributor Call
+
+
+
+
+
+	2019-11-12 Contributor Call
+
+
+
+
+
+	2019-11-26 Contributor Call
+
+
+
+
+
+	2019-12-10 Contributor Call
+
+
+
+
+
+
+
+	2020 Notes
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2019-10-15 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2019-10-15 Contributor Call
+
+	Danno Ferrin
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Oct 18, 2019
+
+
+
+
+
+
+
+
+
+
+Recording
+
+
+
+Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+
+
+General Announcements
+	Reviewed Devcon / etc summit presence
+	promoted forum in March
+
+Release updates
+	1.3 released
+	1.3.1 this week	Arash says it will be an interim release for bugs.
+
+
+
+Work Updates
+	Ethereum Classic Support (Greg)	Greg was not on the call
+	Adrian talked about their fork in the chainsafeth org	They appear to be working on a fork,Â  Adrian would prefer to have smaller PRs
+
+
+
+
+
+
+
+Q from Cam asking for machine specs on clique nodes, 
+
+	Madeline will forward info to cam
+	Cam wanted to know if we had AWS minimums -Â https://besu.hyperledger.org/en/stable/HowTo/Get-Started/System-Requirements/
+
+
+
+Other Business
+	New Maintainer ProposalÂ - Ivaylo (Voting closes 18 Oct, Lucas)Â 	significant contributions to the privacy code
+	Discussed two week window and how it helps provide at least one call to discuss the new maintainer.
+
+
+	Active StatusÂ (Grace?)Â 	111 external contributions outside of PegaSys (6 week old number)
+	No TSC meeting this thursday, we will go next thursday or the week after depending on agenda.
+	TSC is already reviewing, has some comments already.
+
+
+	Discussion on Ethereum Foundation Grid integration (Felipe)	github.com/ethereum/grid
+	desktop software with one click interfae to choose client and download and install it.
+	There is a dev use case potential for local nodes.
+	Started as pantheon integration, went to besu integrations later
+	Artemis not integrated, we may want to start (out of scope, not a besu)
+	Perhaps they should demo in the next meeting. (Danno/Felipe)
+	This is not Hyperledger Grid, different project.
+
+
+
+Open Forum
+	Call for open questions.Â  No takers.
+
+Future Topics
+	Request for presentation topics	Ethereum Grid.
+	To make a requet add a comment to the wiki for a future agenda page or edit the future agendaÂ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "05a88d08d06440b891ada59810558476"}

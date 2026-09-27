@@ -1,0 +1,879 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Ian Costanzo, Anon Solutions Inc – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Developer Showcase
+                            |
+                        
+                            Hyperledger Composer
+                            
+                        
+                    
+
+                
+                Developer Showcase Series: Ian Costanzo, Anon Solutions Inc
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Aug 31, 2018
+                    
+                
+
+            
+
+            
+            
+                We return back to our Developer Showcase blog! This series serves to highlight the work and motivations of developers, users and researchers collaborating on Hyperledger’s projects. Next up is Ian Costanzo from Anon Solutions Inc. Let’s dig in!
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+Learn the fundamentals, and then get involved in an interesting open source project.
+ 
+Working with Bitcoin is one of the best ways to learn the fundamentals of blockchain. The original white paper lays the groundwork in a clear and concise way, and there is a significant amount of documentation and examples available. Once you have a good understanding of the basic cryptography, merkle trees, proof of work, etc, it is much easier to work with more complex frameworks, which tend to layer on additional functionality (and complexity).
+ 
+Then find an open source project and get involved. No matter what your interest there is probably a existing project in with a need for contributions in a number of areas. Documentation, introductory tutorials and testing are common needs. I’ve been involved in a few projects, and I’ve found there is always enthusiastic support (via slack, rocketchat, telegram, etc.) for new participants.
+ 
+Also check for local meetups – I’m fortunate that in Vancouver there are a lot of blockchain enthusiasts, many meetups, and I’ve met quite a few interesting characters.
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+I’m working with the BC Government on their Verifiable Organizations Network (VON) project (https://github.com/bcgov/von) using Hyperledger Indy.  I got involved in a roundabout kind of way.
+ 
+Originally I was working with a homeless shelter in Calgary (https://www.calgarydropin.ca/) – they had recently implemented a new CRM and were looking at ways they could improve service to their clients by (securely) collaborating with other service providers. Their primary concerns were security of personal information, and respect for the sovereignty of individuals to control their own information, where possible. I did a survey of the technology space, and found that the Sovrin network (and Hyperledger Indy) was a clear fit for their requirement. I was lucky enough to get in touch with the BC group who were working with the same technology, and then fortunate to be able to participate in their project.
+ 
+I’m interested in how blockchain can be used to help protect our personal information, and give us more autonomy and control over how our information is shared and used.
+ 
+What project in Hyperledger are you working on? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+I’m working with Hyperledger Indy, with the BC Government. My role has been to scale up the solution to handle enterprise requirements, including large data volumes and transaction throughputs.  It’s been a fascinating experience, because I get to work with a lot of very smart people in the BC Government, as well as at Sovrin, Evernym and the whole Indy community.  The technology is new, which is interesting, but we’re also exploring new ways in how the technology is being applied, which creates lots of challenges and opportunities.
+ 
+Specifically I’ve been working on an Enterprise Wallet for the central credential “holder.” I’ve updated the wallet to support multiple identities and millions of credentials, and to run in an enterprise micro-services deployment. I’m excited for the next round of SDK wallet development, which is going to introduce wallet meta-data, native encryption and improved search capabilities, which are all going to support functionality the team is planning to add in the coming months.
+ 
+I’d also like to mention that the BC team is working in partnership with the governments of Ontario and Canada. In Victoria we work out of the government’s “Innovation Center”, which is focussed on public/private partnerships and support for the open source community. All the work we are doing is open source, available for use, and we welcome new collaborators.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+Ease of use for new developers, as well as scalability. Ease of use is something that Ethereum (for example) has done a very good job with. Solidity is pretty simple to learn, and you can write very sophisticated blockchain applications without having to get too deep into the weeds. This is why Ethereum is one of the most widely used blockchain platforms. The downside of Ethereum is scalability (Crypto Kitties almost brought down the whole network) but that is something they are putting some resources into.
+ 
+I’ve worked with Hyperledger Fabric and Hyperledger Indy, and I think anyone will agree that these are very complex technologies!  In order to get more widespread adoption documentation, training and tooling are critical. Their strength is that they are more specialized networks, however they come with a very steep learning curve, and this is something that needs to be addressed.
+ 
+For Hyperledger Fabric, the introduction of Composer for application development was a huge step forward. Hyperledger Indy (what I am mostly working with now) could use similar tooling. There is work in progress on documentation and developer tools, but the more focus in this area the better!
+ 
+As a private network, Hyperledger Fabric may not suffer from the same scalability concerns as public networks, but Indy supports a public network (Sovrin) so scalability is definitely a concern.
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+I like to think that blockchain can be used for the benefit of humanity, rather than just providing a living for those of us fortunate enough to be working with the technology.
+ 
+Self sovereign identity has a lot of potential, putting information under the control of the individual rather than large corporations, allowing us to (selectively) share with our friends and colleagues, without having to worry about our information being mined and mis-used.  Also being able to benefit disadvantaged populations, like refugees and the homeless.
+ 
+Privacy is another potential benefit of blockchain, having the ability to secure personal information, as well as being able to communicate and transact anonymously.
+ 
+I’ve seen a lot of other really interesting applications proposed or prototyped, like using cryptocurrency to distribute aid directly to recipients (reducing the risk of graft), or using blockchain to track ethically captured tuna. I’m excited (and hopeful) for the future of this technology.
+ 
+What technology could you not live without?
+ 
+I resisted getting a smartphone for a long time, because I have a bit of a technology addiction. (I also don’t own a TV because I would just end up watching it all the time.) Now I have an Android phone, and I’m in constant communication. I always know the answer to every question (thanks Google) and where to go for lunch or the best route to get to the ferry. When I get involved in an interesting technology (like blockchain!) I become a bit of a workaholic and spend far too much time on the computer.
+ 
+So the best technology for me is sometimes no technology at all. Leave the phone behind and go for a walk, to clear my mind. Sit down with a pen and paper to solve some problems, rather than try to work it out at the computer (This forces me to do some actual programming for a change, rather than just cut and pasting from StackExchange.) Read the newspaper rather than my news feed online.
+ 
+Until the nervous twitching starts and I have to reach for my phone!
+ 
+ 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

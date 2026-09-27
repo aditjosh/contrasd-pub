@@ -1,0 +1,184 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tool for Solidity bytecode decompile and dataflow analysis - EVM - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Tool for Solidity bytecode decompile and dataflow analysis
+    
+
+
+      
+          
+            
+              
+              
+                EVM
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                jchen217
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 22, 2021,  6:41pm
+                  
+                  
+
+1
+              
+            
+            
+              I want to find the argument dependence in the solidity program through bytecode of solidity. Does anyone in community know any tools that can help me?
+
+Thanks a lot
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    May 8, 2021,  9:19am
+                  
+                  
+
+2
+              
+            
+            
+              The best debugging tool I am aware of is Tenderly. We use it all the time and it saved us lots of money.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

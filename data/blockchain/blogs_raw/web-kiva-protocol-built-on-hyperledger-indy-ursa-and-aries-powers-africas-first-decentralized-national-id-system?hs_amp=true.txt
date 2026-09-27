@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kiva Protocol, Built on Hyperledger Indy, Ursa and Aries, Powers Africa’s First Decentralized National ID system – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Kiva Protocol, Built on Hyperledger Indy, Ursa and Aries, Powers Africa’s First Decentralized National ID system – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Jan 20, 2021 6:00:00 AM 
+        
+
+        
+          For the 1.7 billion unbanked adults around the world, access to financial services is extremely limited. Without even a basic savings account, economic opportunity is often limited to informal offerings such as local shopkeepers who extend credit to their customers, microfinance institutions that work to serve the last mile, and community savings and credit associations that are setup by individuals living in the same village.
+ 
+In the unbanked world, individuals borrow a few hundred to a few thousand dollars at a time, paying back over a relatively short time frame of 12-18 months. But despite excellent credit records, they are unable to receive even similar credit facilities at local banks. This is because the data from their informal transactions is essentially invisible: the banks either do not trust the data sources, or are otherwise unable to verify the provenance of the data. 
+ 
+While this is the state of the world today, it does not have to be our future. Kiva, a US-based nonprofit organization focused on financial inclusion, has built Kiva Protocol to bridge the data disconnect and help enable universal financial access. In 2019, Sierra Leone, a West African nation of about 7 million, launched the National Digital Identity Platform (NDIP) that used Kiva Protocol to enable fast, cheap, and secure identity verification for its citizens. 
+ 
+Kiva Protocol is built using Hyperledger Indy, Aries, and Ursa, and as implemented in Sierra Leone, allows citizens to perform electronic Know Your Customer (eKYC) verifications in about 11 seconds, using just their national ID number and a fingerprint. With this verification, it is possible for the nation’s unbanked to open a savings account and move into the formally banked population.
+ 
+To find the right platform, Kiva assessed more than 20 software stacks, both centralized and decentralized. Blockchain and decentralized ledger technologies quickly emerged as good solutions for the developing world as they enable data provenance at the protocol level and stakeholders can act relatively independently to enable their various activities in the formal and informal sectors.
+ 
+After deep consideration, Kiva decided to use Hyperledger’s stack for identity: Indy, Aries, Ursa. While all three projects are closely related, each has a distinct mandate:
+ 
+	Hyperledger Indy is a distributed ledger purpose-built for decentralized ID with transferable, private, and secure credentials;
+	Hyperledger Aries is infrastructure that supports interactions between peers and between blockchains and other DLTs; and
+	Hyperledger Ursa is a modular, flexible library that enables developers to share time-tested and secure cryptography.
+
+ 
+In August 2019, Kiva launched the beta of Kiva Protocol with a public event opened by the president of Sierra Leone. Since that launch, global regulators have made significant progress in terms of how they are considering digital identity and eKYC verifications. There is a growing global movement towards user-owned and -controlled data, better privacy, and more universal access. 
+ 
+As of today, Kiva is focusing on building additional ecosystem applications and services to make it easier for all stakeholders to access and use Kiva Protocol. Much of this is being contributed upstream into the Hyperledger Indy and Aires projects, with the remaining components hosted in Kiva’s repository.
+ 
+Hyperledger teamed up with Kiva on a detailed case study covering the challenges of the unbanked, requirements for a solution that delivers fast, cheap and secure ID exchange, and plans for expanding Kiva Protocols’ use to other countries and other applications. 
+ 
+Read the full case study here.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

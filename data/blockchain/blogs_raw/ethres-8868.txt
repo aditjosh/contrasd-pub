@@ -1,0 +1,173 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Improving the EVM's memory model with paginated RAM and FP-relative access - EVM - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Improving the EVM's memory model with paginated RAM and FP-relative access
+    
+
+
+      
+          
+            
+              
+              
+                EVM
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                nickjohnson
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 9, 2021,  8:49pm
+                  
+                  
+
+1
+              
+            
+            
+              
+  
+      
+      Fellowship of Ethereum Magicians – 6 Mar 21
+  
+  
+    
+
+EIPs 3336 and 3337: Improving the EVM's memory model
+
+
+I’ve written up two EIP drafts, 3336 and 3337 that together permit a new efficient way to use EVM memory for storage of ephemeral data such as local variables, function arguments, and return values.  I believe that these changes represent a minimal...
+
+
+  Reading time: 1 mins 🕑
+    Likes: 2 ❤
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

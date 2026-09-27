@@ -1,0 +1,340 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-6466: SSZ Receipts Root
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+      ⚠️ Review
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-6466: SSZ Receipts Root
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Migration of receipts MPT commitment to SSZ
+
+  	Authors	Etan Kissling (@etan-status), Vitalik Buterin (@vbuterin)
+	Created	2023-02-08
+	Requires	
+
+  EIP-6404, 
+
+  EIP-6493
+
+
+
+
+  
+
+
+  
+    
+      
+      
+        This EIP is in the process of being peer-reviewed. If you are interested in this EIP, please participate using this discussion link.
+      
+
+    
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+    	Consensus ExecutionPayload changes
+	Consensus ExecutionPayloadHeader changes
+	Execution block header changes
+
+
+  
+	Rationale
+	Backwards Compatibility
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This EIP defines a migration process of existing Merkle-Patricia Trie (MPT) commitments for receipts to Simple Serialize (SSZ)
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+EIP-6404 introduces the more modern SSZ format to the transactions_root of the consensus ExecutionPayloadHeader and the execution block header. This EIP defines the equivalent transition for receipts_root to add support for EIP-6493 Receipt.
+
+
+Note that in contrast to the transactions_root which refers to a Merkle Patricia Trie (MPT) root in execution but to an SSZ root in consensus, the receipts_root is already consistent and refers to the same MPT root. With this EIP, it will be changed to consistently refer to the same SSZ root.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119 and RFC 8174.
+
+  
+    
+      
+      
+         Consensus ExecutionPayload changes
+      
+      
+    
+
+
+When building a consensus ExecutionPayload, the receipts_root is now based on the Receipt SSZ container. EIP-6493 defines how RLP receipts can be converted to SSZ.
+
+
+This changes the type of receipts_root from an MPT Hash32 to an SSZ Root.
+
+
+class ExecutionPayload(Container):
+    ...
+    receipts_root: Root
+    ...
+
+
+
+
+
+To compute the receipts_root, the list of individual Receipt containers is represented as an SSZ List.
+
+
+	Name	Value
+	MAX_TRANSACTIONS_PER_PAYLOAD	uint64(2**20) (= 1,048,576)
+
+
+
+receipts = List[Receipt, MAX_TRANSACTIONS_PER_PAYLOAD](
+    receipt_0, receipt_1, receipt_2, ...)
+
+payload.receipts_root = receipts.hash_tree_root()
+
+
+
+
+  
+    
+      
+      
+         Consensus ExecutionPayloadHeader changes
+      
+      
+    
+
+
+The consensus ExecutionPayloadHeader is updated to match the new ExecutionPayload.receipts_root definition.
+
+
+class ExecutionPayloadHeader(Container):
+    ...
+    receipts_root: Root
+    ...
+
+
+
+
+
+payload_header.receipts_root = payload.receipts_root
+
+
+
+
+  
+    
+      
+      
+         Execution block header changes
+      
+      
+    
+
+
+The execution block header’s receipts-root is updated to match the consensus ExecutionPayloadHeader.receipts_root.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+This change enables the use of SSZ transactions as defined in EIP-6493.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+Applications that rely on the replaced MPT receipts_root in the block header require migration to the SSZ receipts_root.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+None
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Etan Kissling (@etan-status), Vitalik Buterin (@vbuterin), "EIP-6466: SSZ Receipts Root [DRAFT]," Ethereum Improvement Proposals, no. 6466, February 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-6466.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

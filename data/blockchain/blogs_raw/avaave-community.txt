@@ -1,0 +1,328 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aave Community | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Governance GuidesAave Community
+beginner
+
+
+
+
+
+
+Introduction
+
+The Aave Community is a decentralised collective of token holders and contributors who collaboratively shape the protocol's future through a structured governance process. This community-driven approach empowers participants to propose, discuss, and vote on key changes, promoting that the protocol's evolution reflects the collective interests of its members.
+
+Governance Roles
+
+Delegates
+
+Delegates are community members who have received voting power from other members of the community or through self-delegation. They actively participate in governance by voting on proposals on behalf of those who have entrusted them with their voting power. Some delegates are compensated under the Orbit program.
+
+Delegators
+
+Delegators are community members who hold AAVE, stkAAVE, or aAAVE tokens but choose to delegate their voting power to another person. The person to whom they delegate their voting power is considered a delegate. This system allows delegators to have their interests represented in governance decisions without having to participate directly in every vote.
+
+Contributors
+
+Contributors are community members who participate in and dedicate their time to the Aave DAO. They contribute by joining working groups, fulfilling bounties, building on top of the Aave Protocol, or working for the DAO via grants.
+
+Service Providers
+
+Service providers are specialized entities or groups that offer essential services to maintain and enhance the Aave Protocol. The current service providers are:
+
+	Chaos Labs: Risk service provider
+	Llamarisk: Risk service provider
+	Karpatkey: Finance service provider
+	Certora: Security service provider
+	Tokenlogic: Finance service provider
+	BGD Labs: Development service provider
+	ACI: Growth and business development service provider
+
+
+Guardians
+
+The Aave Guardians are crucial for maintaining the protocol’s security and integrity. They are divided into two groups: Protocol Guardians, who handle emergency responses and can pause markets, and Governance Guardians, who can veto malicious governance proposals. The Guardians operate under a 5/9 multi-sig arrangement.
+
+For more information on the Guardians’ permissions, refer to this detailed view of permissions in Aave systems. For a general overview of their role, see the Medium post about Aave V2 Governance here.
+
+Protocol Emergency Guardian
+
+This Guardian holds the EMERGENCY_ADMIN role in Aave V3, as well as similar roles in V2 and other related systems. The primary function of the Protocol Emergency Guardian is to act swiftly in emergency situations to protect the protocol. It is composed of highly active entities within the Aave DAO, such as service providers and delegates. The multi-sig configuration for this Guardian is a 5-of-9 setup. The current Protocol Guardians are shown in the table below and were updated in this ARFC Addendum.
+
+	Protocol Emergency Guardian	Address
+	Chaos Labs	0x5d49dBcdd300aECc2C311cFB56593E71c445d60d
+	LlamaRisk	0xbA037E4746ff58c55dc8F27a328C428F258DDACb
+	Karpatkey	0x818C277dBE886b934e60aa047250A73529E26A99
+	Certora	0x4f96743057482a2E10253AFDacDA3fd9CF2C1DC9
+	TokenLogic	0xb647055A9915bF9c8021a684E175A353525b9890
+	BGD Labs	0xf71fc92e2949ccF6A5Fd369a0b402ba80Bc61E02
+	ACI	0x57ab7ee15cE5ECacB1aB84EE42D5A9d0d8112922
+	Ezr3al	0xC5bE5c0134857B4b96F45AA6f6B77DB96Ac1487e
+	Stable Lab	0xd4af2E86a27F8F77B0556E081F97B215C9cA8f2E
+
+
+
+Governance Emergency Guardian
+
+This Guardian is responsible for cancelling governance proposals if they are detected as malicious or contain errors, typically identified during the on-chain verification stage by Certora. Unlike the Protocol Emergency Guardian, speed is less critical for this role since governance proposals unfold over a period of five days, allowing adequate time for issues to be identified and addressed. The multi-sig configuration for this Guardian is also a 5-of-9 setup. The current Governance Guardians are shown in the table below and were updated in this ARFC Addendum.
+
+	Governance Emergency Guardian	Address
+	Seb (Zapper)	0xa1c9ceed5ff78f700dc4930514621843b5fac272
+	Mounir (Paraswap)	0xfd639f49Da6cadc98f01B60900C8BE30C38c4B27
+	Gavi Galloway (Standard Crypto)	0xbd4DCfA978c6D0d342cE36809AfFFa49d4B7f1F7
+	Nenad (Defi Saver)	0xDA5Ae43e179987a66B9831F92223567e1F38BE7D
+	Fernando (Balancer)	0x4C30E33758216aD0d676419c21CB8D014C68099f
+	Roger (Chainlink community)	0xA3103D0ED00d24795Faa2d641ACf6A320EeD7396
+	Mariano Conti (DeFi OG)	0x936CD9654271083cCF93A975919Da0aB3Bc99EF3
+	Marin (Lido)	0x0D2394C027602Dc4c3832Ffd849b5df45DBac0E9
+	Certora	0x4f96743057482a2E10253AFDacDA3fd9CF2C1DC9
+
+
+
+Stewards
+
+Stewards were introduced to allow the DAO to respond quickly to market changes in order to remain competitive and address risks. They are delegated responsibility over specific parameters within certain boundaries of magnitude and frequency of change. The benefit of this is that minor changes do not need to go through a full governance cycle, increasing speed and reducing governance burden on delegates and tokenholders. At time of writing there are stewards for managing: GHO, lending parameters, and treasury operations.
+
+GHO Stewards
+
+The GHO Stewards are a group of Contributors and Service Providers who manage critical parameters for the GHO stablecoin to promote its stability. This group has the authority to adjust the:
+
+	GHO Borrow Cap
+	Borrow Rate
+	various GSM parameters like Exposure Cap, Bucket Capacity, Price Strategy, Fee Strategy, and Price Range (Freeze, Unfreeze)
+
+
+The ranges for parameters which the GHO Stewards may adjust are shown in the below table and were proposed in the following ARFCs [ARFC] GHO Stewards, [ARFC] GHO Stewards + Borrow Rate Update.
+
+	Description	Value
+	GHO Aave Bucket Capacity	100% Increase
+	GSM Exposure Cap	100% Increase
+	GSM Bucket Capacity	100% Increase
+	GSM Fee Strategy	+ 0.5%
+	GSM Price Range	(Freeze, Unfreeze)
+	GHO Borrow Cap	100M
+	Max GHO Borrow Rate Adjustment	5%
+	Max GHO Borrow Rate	25%
+	Frequency of Change	2 days
+
+
+
+The creation of GHO Stewards aims to streamline governance, allowing quick adjustments to maintain the GHO peg, especially during market fluctuations. The GHO Stewards operate under a 3-of-4 multi-sig configuration and GHO Stewards at time of writing are:
+
+	Karpatkey
+	Tokenlogic
+	ACI
+	Chaos Labs
+
+
+Risk Stewards
+
+Risk Stewards are responsible for managing critical risk parameters within the Aave Protocol. They are able to make adjustments to supply and borrow caps, reducing the need for frequent community votes. This setup is designed to enable rapid responses to emerging risks while minimising governance overhead.
+
+The parameters that Risk Stewards can change are:
+
+	Supply and Borrow Caps: Increasing caps with constraints on frequency and maximum percentage increase to maintain protocol stability.
+	Collateral Risk Configurations: Adjusting parameters such as Loan-to-Value (LTV), liquidation thresholds, and liquidation bonuses.
+	Interest Rate Strategies: Fine-tuning base rates, slopes, and optimal points to align with market conditions.
+
+
+The parameters that the Risk Stewards can control are shown in the table below and were discussed in the following proposal: BGD. Risk Steward Phase 1: CapsPlusRiskSteward.
+
+	Description	Value
+	Frequency of change	5 days
+	Maximum supply cap increase	50%
+	Maximum borrow cap increase	50%
+
+
+
+Risk Stewards operate under strict on-chain validations and are managed by a 1-of-1 multisig. Risk Stewards at the time of writing are:
+
+	Chaos Labs
+
+
+Finance Stewards
+
+Please note the Finance Stewards system in not yet live and is for information purposes only at this point, it is planned that this will go live in the near future.
+
+Finance Stewards are responsible for executing pre-approved and budgeted financial operations on behalf of the Aave DAO. They manage the Aave DAO’s funds through a smart contract that acts as an admin of the collector, streamlining the management of treasury assets and reducing the need for frequent on-chain votes.
+
+The Finance Stewards have the authority to:
+
+	Migrate assets from v2 and deposit into v3
+	Use the Aave Swapper to exchange treasury assets
+	Withdraw and deposit into V3
+	Transfer and stream tokens to pre-approved addresses within set budgets such as ACI Frontier Program and ACI Merit Program
+
+
+Proposed Finance Stewards at the time of writing are:
+
+	Karpatkey
+	Tokenlogic
+
+
+
+
+Related
+Proposals
+beginner
+
+Aave Governance proposal lifecycle.
+7 min read
+Voting
+beginner
+
+Voting in Aave Governance.
+4 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

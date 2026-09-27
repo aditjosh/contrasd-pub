@@ -1,0 +1,151 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Collecting attestations with gossip protocols in a single slot - Consensus - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Collecting attestations with gossip protocols in a single slot
+    
+
+
+      
+          
+            
+              
+              
+                Consensus
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                jtapolcai
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 20, 2023,  1:24pm
+                  
+                  
+
+1
+              
+            
+            
+              The challenge is to collect cryptographic signatures from close to a million validators distributed worldwide on the network within 12 seconds without requiring high bandwidth internet connections from any of the validator nodes.
+
+We investigate alternative schemes that can achieve single-slot finality while reducing bandwidth consumption, enabling nodes with limited bandwidth to participate effectively. We evaluate how robust and scalable these approaches. We simulate our heuristics and demonstrate the efficiency of collecting attestations from hundreds of thousands of validators.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

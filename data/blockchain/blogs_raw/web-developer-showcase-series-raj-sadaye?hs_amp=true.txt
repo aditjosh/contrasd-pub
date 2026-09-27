@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer showcase series: Raj Sadaye, Arizona State University – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer showcase series: Raj Sadaye, Arizona State University – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Feb 6, 2019 9:00:53 AM 
+        
+
+        
+          Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is Raj Sadaye.
+ 
+ 
+ What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+One piece of advice I would offer someone interested in getting started with blockchain is to start working on a project or an application using the technology that they want to learn. It doesn’t have to be an elaborate or a complicated application, but could be something that has utility in the real world. While working on it, they might face difficulties or technical setbacks. The best way to tackle this is to reach out to the community of several other developers who are currently maintaining/ working on that technology. We can learn a lot by working on a project and reading the documentation thoroughly.
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+My interest in blockchains developed when I was searching for a method to secure IoT device communication as well as make it de-centralized to increase speed. Blockchain technology turned out to be the perfect solution for this. Over the past 8 months, I’ve worked on several projects at Arizona State University’s Blockchain research Lab. In March 2018, I worked on building a PoC for a Carbon credits trading ecosystem using blockchain for Lightworks at ASU. The system enables various players of the market to control carbon emissions while maintaining sustainable growth by incentivizing carbon capturing actors. A brief description of this project can be found here. Currently, we’re working with the Center for Negative Emission of Carbon to design a way to verify capture as well as emission of carbon with minimal human intervention. My current research focus is developing a data sharing protocol that enables edge to edge communication in IoT devices. I’ve also been working on building the CSE 598: Engineering Blockchain Applications course on Coursera for Arizona State University.
+
+What project in Hyperledger are you working on? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+ Primarily, I’ve been working with Hyperledger Fabric and Hyperledger Composer and overall, the experience has been really good. Hyperledger Fabric has a good set of tools to build the infrastructure for a distributed ledger solution. The certification authority is a high-quality tool that helps us with cryptographic validation and dynamically assigning certificates for actors being added to the network. Once a person is familiar with the documentation, it’s really simple to go about building applications. Hyperledger Composer is a tool that excited me the most over the last 8 month because it runs on top of Hyperledger Fabric and it can help a blockchain novice on how to build a distributed application. Both frameworks have really good tutorial sections that help developers get familiar with the technology.
+
+
+ 
+As Hyperledger’s incubated projects start maturing and hit 1.0s and beyond, what are the most interesting technologies, apps, or use cases coming out as a result from your perspective?
+ 
+In my opinion, supply chains and blockchain technology were always meant to go hand in hand. The most interesting app or use case that I’ve been recently come across is Everledger. Everledger rewires trust and confidence in a previously broken market by building consortiums of actors participating and maintaining provenance by supplementing blockchain technology with various other verification techniques. In the near future, I see other products also adopt such an architecture to avoid counterfeiting and adultery.
+ 
+
+What’s the one issue or problem you hope blockchain can solve?
+ 
+ One issue I’m hoping to be solved using blockchain technology is verification of identity through digitization of personal documents. Verification of documents using hash-based fingerprinting assigning ownership of this digital record to the person rather than a centralized authority can help a lot in maintaining the privacy of data as well as avoiding frauds through detection of counterfeit documents being used. 
+ 
+
+Where do you hope to see Hyperledger and/or blockchain in 5 years?
+ 
+In 5 years, I expect blockchain technology to move over the crypto-hype and focus on the real applications and use cases that it be integrated with. For Hyperledger, the most interesting upcoming project, in my opinion, is Hyperledger Quilt which aims to achieve interoperability in blockchains. I’d also like to see a solution within the Hyperledger project that enables seamless integration of blockchain application with the existing infrastructure.
+
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

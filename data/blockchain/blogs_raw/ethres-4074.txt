@@ -1,0 +1,339 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dark crystal slides from devcon (secret sharding utility ontop of SSB) - UI/UX - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Dark crystal slides from devcon (secret sharding utility ontop of SSB)
+    
+
+
+      
+          
+            
+              
+              
+                UI/UX
+              
+            
+            
+
+
+
+        
+            security
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                dan-mi-sun
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 2, 2018,  4:06am
+                  
+                  
+
+1
+              
+            
+            
+              https://blockades.github.io/dark_crystal_presentation/
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 3, 2018,  9:39am
+                  
+                  
+
+2
+              
+            
+            
+              Great work!
+
+The math behind this has obviously been settled for decades, but there are huge user experience and product development challenges in actually bringing something like this to people in such a way that people can use. The main challenge I see is that if people don’t use the application very much, then there is a high risk that >50% of a trust set will actually forget how to access their data; the main way to mitigate this that I can see is to tie the data they need to hold to something they need to care about for other reasons, possibly a cryptocurrency wallet. I definitely any efforts at trying to get past these obstacles; we need secret sharing utilities that are not just for hackers.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+                      
+                        Shamir secret sharing implementation in a non-custodial mobile Ethereum wallet
+                        
+
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 3, 2018,  9:44am
+                  
+                  
+
+3
+              
+            
+            
+              Great work!
+
+The math behind this has obviously been settled for decades, but there are huge user experience and product development challenges in actually bringing something like this to people in such a way that people can use. The main challenge I see is that if people don’t use the application very much, then there is a high risk that >50% of a trust set will actually forget how to access their data; the main way to mitigate this that I can see is to tie the data they need to hold to something they need to care about for other reasons, possibly a cryptocurrency wallet. I definitely any efforts at trying to get past these obstacles; we need secret sharing utilities that are not just for hackers.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                dan-mi-sun
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 4, 2018,  3:22am
+                  
+                  
+
+4
+              
+            
+            
+              @vbuterin hi! it’s been a while.
+
+
+
+
+
+ vbuterin:
+
+
+Great work!
+
+
+
+
+Thanks 
+
+
+
+
+
+ vbuterin:
+
+
+The math behind this has obviously been settled for decades, but there are huge user experience and product development challenges in actually bringing something like this to people in such a way that people can use.
+
+
+
+
+Agreed on this front. The math is nothing new. One of the challenges we have been facing when trialing with various communities is being able to trust the math. For all intents and purposes math and magic are almost inseperable to many laypeople. Quorums like covens and being able to hold something without it revealing anything in the absence of a quorum is quite a tricky proposition to convey and convince. We’re working on it though!
+
+
+
+
+
+ vbuterin:
+
+
+The main challenge I see is that if people don’t use the application very much, then there is a high risk that >50% of a trust set will actually forget how to access their data;
+
+
+
+
+We live in interesting times where the key issue we’re facing is ACCESS rather the loss of the data itself. This is one of the areas also of most potential, I think. By finding ways of binding capabilities to existing patterns of thought for most people, e.g. human relations. What I think we are aiming for is gradients of expertise. So - I may have a trust set of 7 people 2 of whome are more technically en-meshed - the others may not have the specifics in their memory but the relations to other participants (where this is disclosed) will more likely stay in mind as our relational memory is much more synaptically evolved than say, secure data management and tool useage.
+
+
+
+
+
+ vbuterin:
+
+
+the main way to mitigate this that I can see is to tie the data they need to hold to something they need to care about for other reasons, possibly a cryptocurrency wallet.
+
+
+
+
+We’re on the same page here. We’ve already started speaking with some consumer facing software and hadware wallets.
+
+
+
+
+
+ vbuterin:
+
+
+I definitely any efforts at trying to get past these obstacles; we need secret sharing utilities that are not just for hackers.
+
+
+
+
+Agreed. We’re really hoping to work with the likes of Pamela Morgan and thinkers around custody from that real world angle as they will have the most experience WRT the human relational scope of likely interpersonal and skill based entanglements.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

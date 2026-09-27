@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Hyperledger Besu is a Top Choice for Financial Use Cases
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Why Hyperledger Besu is a Top Choice for Financial Use Cases
+
+        
+
+        
+           Written by Matthew Whitehead, Hyperledger Besu Maintainer and Principal Engineer at Kaleido | Mar 19, 2024 5:00:00 PM 
+        
+
+        
+          Hyperledger Besu has emerged as a preferred runtime for EVM-based financial initiatives worldwide. For projects like tokenization, settlements, CBDCs (Central Bank Digital Currencies), and trade finance, Besu stands out for its robust security features, versatility in network construction, performance, pluggability, and enterprise-friendly licensing and programming language.
+
+
+This post explores why Hyperledger Besu is a compelling choice for financial applications where all of these characteristics are paramount for success.
+
+Robust Security Infrastructure
+
+Engineered with enterprise applications in mind, Hyperledger Besu seamlessly integrates into institutional-grade financial projects. Its adaptability is key in situations where the boundaries between public and private blockchains are blurry, which is the case in the financial sector.
+
+Besu facilitates the establishment of private networks with meticulously controlled access, ensuring that only authorized entities can participate. This permissioned framework, coupled with strong policy management, empowers enterprises to manage data access with precision.
+
+Key security features of Hyperledger Besu include:
+
+	Secure consensus protocols: Robust and proven implementations of Byzantine Fault Tolerant consensus mechanisms such as IBFT2 and QBFT enhances network integrity. 
+	Adherence to encryption and security standards: Besu adheres to stringent encryption standards and undergoes regular updates to align with evolving security protocols.
+	Node-level permissioning: The ability to control which node identities can participate in a chain, even if the node has network-level access to it.
+	Account-level permissioning: The ability to configure granular access to the transaction pool at the level of individual Ethereum accounts.
+
+
+Interoperability for Seamless Integration
+
+Hyperledger Besu's dual functionality, facilitating both private network construction and compatibility with the Ethereum network, renders it highly interoperable. Organizations can build discrete networks for managing digital assets and use that same tried and tested technology for architectures involving public chains.
+
+Besu is the right choice for projects that want to leverage the Ethereum Virtual Machine and offers full support for popular ERC token standards such as ERC20, ERC721, ERC1155, and ERC1400.
+
+Features contributing to Hyperledger Besu's interoperability include:
+
+	Cross-chain functionality: Layer-2 solutions such as Linea are already being built using Besu, demonstrating its suitability for a wide range of multi-chain architectures now and in the future.
+	Standards compliance: Adhering to standard protocols and interfaces like JSON RPC enhances compatibility with various blockchain technologies and tools.
+	Pluggable consensus algorithms: Besu's support for multiple consensus mechanisms enables integration with diverse networks, ensuring compliance with their governance and validation rules. 
+	Modular architecture: The modular design allows for easy integration of plug-and-play components for monitoring, logging, transaction validation & selection, metrics, and more, enhancing adaptability and scalability while customizing networks to meet use case demands.
+
+
+Enterprise-Friendly Open Source
+
+Previously, when companies wanted to work with Ethereum, they typically had to use Geth or Geth-based clients such as Quorum and accept the LGPL license that goes with it. Modifying the protocol for private chains required hacking the codebase and ongoing, expensive maintenance. There was also no vendor support and suggesting changes to the code was difficult. On top of operational challenges, the less permissive GPLv3 license proved challenging for enterprises.  
+
+Hyperledger Besu, on the other hand, is built for both public and private use cases and, with its Apache2 license, is an easier choice for both users and vendors alike. It is supported by a diverse community of backers governed by Hyperledger Foundation, and is keen to embrace contributions from maintainers with permissioned, enterprise use-cases as well as contributions oriented towards public chain scenarios. Its maintainers have an interest in pushing for innovations to meet enterprise requirements. Contributions from vendors such as Kaleido, where we have supported Besu since it was called “Pantheon,” are continuing to make Besu the best choice of EVM client for financial institutions.
+
+The software license is also enterprise friendly. An Apache 2.0 License is a permissive free license that allows enterprises to modify and distribute products they build atop the protocol and choose which modifications remain proprietary and which will be contributed back to the community.
+
+Key advantages of Hyperledger Besu's open-source framework include:
+
+	Hyperledger Foundation backing: Hyperledger Foundation operates as a worldwide, open-source ecosystem dedicated to enterprise-grade blockchain solutions. Underpinned by technical and business governance, it certifies service providers to help companies find experienced support.
+	Diverse and welcoming community that puts equal weight on public and enterprise, permissioned features.
+	Enterprise-friendly license: Unlike Geth, with its less permissive license, Hyperledger Besu is licensed with the business-friendly Apache 2.0 license.
+	Common programming language: Hyperledger Besu is written in Java, a well-established, widely used programming language that makes it easier for businesses to find and onboard developers for blockchain projects.
+
+
+Join the Hyperledger Besu Community!
+
+Hyperledger Besu stands as a robust, secure, and interoperable solution for financial applications, and the support of the Hyperledger community continues to drive innovations to meet the demands of enterprise use cases. 
+
+We encourage you to join the Hyperledger Besu community! Whether you want to contribute to a project or get involved so you can provide customers with best practices and insights along their development journey, this is the place to be.
+
+To join discussions and on-going collaborations, join us on the Besu channel on the Hyperledger Discord channel. Or you can attend one of the bi-weekly sprint planning calls we host for engineers. You can find those calls on the Hyperledger calendar.
+
+We look forward to welcoming you to the Hyperledger Besu community as we all work to revolutionize the way the next generation of blockchain, digital asset, and tokenization projects reach production with open source tools!
+
+ 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

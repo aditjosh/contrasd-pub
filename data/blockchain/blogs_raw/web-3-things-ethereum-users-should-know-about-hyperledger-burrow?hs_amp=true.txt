@@ -1,0 +1,104 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3 Things Ethereum Users Should Know about Hyperledger Burrow – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          3 Things Ethereum Users Should Know about Hyperledger Burrow – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Jul 25, 2018 9:00:55 AM 
+        
+
+        
+          Guest post: Casey Kuhlman, CEO, Monax
+ 
+An Introduction to Hyperledger Burrow for Ether-heads
+ 
+Over the years, there has been a lot of confusion within the Ethereum community about the various codebases which claim to be “Ethereum.” To us at Monax, the word Ethereum has meant a variety of things. It has meant a singular blockchain network and its attendant testnets. It has meant a series of software codebases. And it has also meant an “idea” about how smart contracting platforms operate; namely, that there should be a strongly-deterministic, smart contract native virtual machine that operates blockchain-based smart contracts. 
+ 
+Enter Hyperledger Burrow, one of the Hyperledger projects hosted by the Linux Foundation. Hyperledger Burrow provides a modular blockchain client with a permissioned smart contract interpreter partially developed to the specification of the Ethereum Virtual Machine (EVM). While it is certainly true that Hyperledger Burrow as a piece of software was not designed to be an active participant in the public Ethereum network and its testnets, in the other senses of “Ethereum”, Hyperledger Burrow has always been a member of the community. 
+ 
+This blog post is written to provide an overview of Hyperledger Burrow. It walks through three important things to note about the project and how those familiar with Ethereum could seek to implement proofs of concept, private or consortia blockchains.
+ 
+1. Hyperledger Burrow is more like the Redis of Smart Contract Blockchains
+ 
+Hyperledger Burrow maintainer, Silas Davis, often describes Burrow as the Redis of blockchains because Burrow was built to be a lightweight, efficient, and fast permissioned smart contract machine. By leveraging the hardened and speedy Tendermint protocol for consensus alongside Burrow’s Apache licensed Ethereum Virtual Machine, users have access to one of the fastest codebases available.
+ 
+Speed in blockchains comes in a number of dimensions. The first dimension is the amount of transactional throughput of the codebase. We have observed in preliminary testing that Hyperledger Burrow can steadily process upwards of 200 transactions per second. This speed dimension for smart contract focused blockchains is largely a misnomer, however, because the speed of processing is strongly linked to the complexity of smart contracts operating on any one blockchains. The second dimension is the speed at which blocks are propagated within the network. Hyperledger Burrow’s blocktime is tunable, but by default produces blocks every two seconds.
+ 
+The final dimension is less quantifiable but asks the question “when can my other systems rely upon the information within a given block as being final?’ Finality of blocks is a crucial issue — particularly when other business systems rely on information propagated by a blockchain network. Hyperledger Burrow was the first Ethereum style blockchain to offer its users strong finality. Relying upon the Tendermint protocol, Burrow produces a non-forking blockchain. This means that the instant that a block is added to the end of a chain that other business systems will be able to rely upon that information. Finality greatly increases the overall system speed by ensuring that upstream systems can rely on the information within a blockchain instantly.
+ 
+Not only is Hyperledger Burrow, speedy, but it is also extremely lightweight. We routinely run Burrow nodes on very small cloud instances and even on Raspberry Pi’s. Burrow’s proof of stake consensus protocol is fully byzantine fault tolerant without relying on specialized hardware.
+ 
+2. Hyperledger Burrow permissions without a VPN
+ 
+Many users when they are first exploring blockchain technology are taking blockchain clients built for a public chain and deploying them behind a VPN. With Hyperledger Burrow, it is not necessary to operate a permissioned chain behind a VPN in order to gain fast and secure validation. Burrow’s in built capabilities based permissioning system offers users easy access to a structured permissioning system.
+ 
+This means that operators of any network can establish which keys can do what things within the context of the blockchain network. Of course over time these permissions can be changed by sending a transaction signed by a key with permission to change other’s permissions within the network.
+ 
+In effect, this allows users to start small and grow their ecosystems and networks over time. Many users begin their blockchain exploration with only a single company operating a blockchain network and over time seek to expand the set of operators of that network. Hyperledger Burrow’s capabilities based permissioning system is built for this ever-evolving world. Burrow is even capable of growing into a permissioned, public chain should users so desire.
+ 
+3. Ethereum Virtual Machine all the Things with Hyperledger Burrow
+ 
+Burrow has kick started a wave of use of the Ethereum Virtual Machine (EVM) within the context of other Hyperledger blockchain designs. From the perspective of the Burrow team, this is an amazing use of open source modalities. By working with the Hyperledger Sawtooth team, we have identified areas of how to reimplement our EVM such that it can be more easily consumed by other codebases. The effects of the collaboration between Sawtooth and Burrow teams have been the SETH system which allows Sawtooth users to operate EVM contracts within a transaction processor.
+ 
+The Hyperledger Burrow team has also began working with the Hyperledger Fabric team, and the effect of that collaboration will hopefully be the ability for Fabric users to also deploy EVM contracts onto their networks to be operated by an EVM chaincode container. Such a deployment style will be a boon for Hyperledger Fabric users as it would greatly reduce any distribution challenges for smart contracts within the network. We are also collaborating actively with the Fabric team on a Web3 RPC framework that can be implemented easily and simply by multiple codebases.
+ 
+These collaboration across Hyperledger teams are one of the greatest benefits for us on the Burrow team being a part of the larger Hyperledger community. Not only do we receive great feedback from upstream teams that are using our EVM in their codebases, but we also receive contributions from there projects as well.
+ 
+Getting started
+ 
+For those seeking to get started with the exciting possibilities that Ethereum Virtual Machine capable blockchains offer, Hyperledger Burrow is a great choice for getting started. As noted above, it is a speedy and lightweight blockchain design. 
+ 
+Burrow’s high-level architecture is described (in diagrammatic form) below:
+ 
+
+ 
+Given the increased uptake in EVM usage across the Hyperledger blockchain frameworks, should the capabilities of Burrow not be suitable for production level deployments, there is an easy migration path to another of the more feature-filled blockchain platforms such as Hyperledger Fabric and Sawtooth. Since contracts written for an EVM run the same no matter the blockchain they are running on, users can easily start with Hyperledger Burrow and over time migrate their smart contract suites to the more feature-filled platforms.
+ 
+You can get started with Hyperledger Burrow today very simply. Read the documentation and/or download the code to kick the tires. You can also join the discussion on Rocket.Chat!
+ 
+ 
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

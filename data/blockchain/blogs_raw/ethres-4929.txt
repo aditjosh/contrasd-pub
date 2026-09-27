@@ -1,0 +1,283 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Historical Chart for the Minting of any ERC20 token - Data Science - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Historical Chart for the Minting of any ERC20 token
+    
+
+
+      
+          
+            
+              
+              
+                Data Science
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                adrien-be
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 2, 2019,  6:24pm
+                  
+                  
+
+1
+              
+            
+            
+              I’m trying to find out if there is any tool out there that can provide me a chart where I can see the minting of any ERC20 token over time.
+
+Thanks!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                d-ontmindme
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 9, 2019, 11:22am
+                  
+                  
+
+2
+              
+            
+            
+              This could be created using BigQuery by checking for contract creations of contracts with the ERC20 Function Signatures.
+
+
+  
+      
+      Google Cloud Blog
+  
+  
+    
+
+
+
+Ethereum in BigQuery: a Public Dataset for smart contract analytics | Google...
+
+
+Ethereum transactions, like some other cryptocurrencies, are stored in a public ledger. Learn how to analyze that ledger in BigQuery to better understand transaction and even contracts history.
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+
+Alternatively on eth.events: https://eth.events
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                admazzola
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 10, 2019,  8:31pm
+                  
+                  
+
+3
+              
+            
+            
+              This is an open source token minting tracker you can rip code from, just inspect source and steal the JS or go to the github page via the github icon link 
+
+https://0x1d00ffff.github.io/0xBTC-Stats/?page=stats&
+
+Its made for a token that is literally MINED but could work for any events that are logged such as those for normal MINTING by a centralized token monarch of course.  Usually ppl don’t build tools for that though because there is no reason to, for those projects.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                lane
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2019, 10:11am
+                  
+                  
+
+4
+              
+            
+            
+              This is something that I’m pretty sure could be accomplished using The Graph, cf. https://github.com/graphprotocol/graph-node/blob/876ecab190ca54c8b3ec8552334c2d358344caad/docs/getting-started.md. Probably better for ongoing, production-style uses cases than for a one-off query.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

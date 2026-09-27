@@ -1,0 +1,799 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Release Rotations 2023 - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+	Release Rotations 2024
+
+
+
+
+
+	Using CalVer for Besu Releases
+
+
+
+
+
+	How to do a Besu Release
+
+
+
+
+
+	Off-cycle release process
+
+
+
+
+
+	Release Process
+
+
+
+
+
+	Obsolete Proposals and Policies
+
+
+
+
+
+	Archive
+
+
+
+
+	Critical Issue for Privacy Users
+
+
+
+
+
+	Mainnet Consensus Bug Identified and Resolved in Hyperledger Besu
+
+
+
+
+
+	Release 22.1.0
+
+
+
+
+
+	Release Process Improvement
+
+
+
+
+
+	Release Remediation
+
+
+
+
+
+	Release Rotations 2021
+
+
+
+
+
+	Release Rotations 2022
+
+
+
+
+
+	Release Rotations 2023
+
+
+
+
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Release Rotations 2023
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Release Rotations 2023
+
+	Sally MacFarlane
+
+
+
+	Gary Schulte
+
+
+
+	Matt Nelson (Deactivated)
+
+
+
+	Simon Dudley
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Jun 13, 2023
+
+
+
+
+
+
+
+
+
+
+A page to keep track of engineers doing Besu releases, as well as roughly how long the release process is taking.Â 
+
+
+	Release Date	Cutoff Date	Release Version	Executor	Approver	Release Coordinator	Time Taken
+	Dec 28 (2022)	
+	23.1.0-beta
+	Gary	
+	
+	Beta - Not released as production ready. Will include EOFÂ 
+	Jan 11
+	
+	23.1.0-RCx1
+22.10.4 was not released
+	Gary	
+	
+	start from main, cherry pick until done on 25th
+	Jan 25 Feb 17	
+	23.1.0	Gary	
+	
+	Delayed due to instability. Cut from main from Feb 8, plus a few fixes
+	Feb 19
+	
+	23.1.1-RC1 (Sepolia Shanghai)	Simon	
+	
+	Cut from main, basically 23.1.0 plus Sepolia config
+	March 7	
+	23.1.1	Gary	Justin	Gary	90 minutes, cut from main.
+	March 22	March 17	23.1.2	
+	
+	
+	
+
+	April 5	
+	23.1.3 (Capella)
+23.4.0-RCx ?? (including RocksDB update)
+	
+	
+	
+	
+
+	April 19	
+	
+	
+	
+	
+	
+
+	May 3 May 5	
+	https://github.com/hyperledger/besu/releases/tag/23.4.0	Justin/Gary	
+	
+	
+
+	May 17	
+	
+	
+	
+	
+	
+
+	May 31?	May 25	23.4.1 https://github.com/hyperledger/besu/issues/5518	Simon	
+	
+	
+
+	Jun 21	Jun 16	23.4.2	Stefan	Gabriel T	Stefan	
+
+	Jul 12	Jul 7	23.4.3	
+	
+	
+	
+
+	Jul 26	Jul 21	23.7.0 ?	
+	
+	
+	
+
+
+
+Volunteers
+	Jiri
+	Karim
+	Danno
+	Justin
+	Gary
+	Sally
+	Stefan
+	Gabriel T
+	Lucas
+	Jason
+	Simon
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Release Rotations 2024
+Release Rotations 2024
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Using CalVer for Besu Releases
+Using CalVer for Besu Releases
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+10 - WG General Meeting | November 21/22 2024
+10 - WG General Meeting | November 21/22 2024
+
+Besu Financial Services WG
+
+
+
+More like this
+
+
+
+
+
+
+Versioned documentation
+Versioned documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "704f1b8c7e0b4267920fafd5e00403ae"}

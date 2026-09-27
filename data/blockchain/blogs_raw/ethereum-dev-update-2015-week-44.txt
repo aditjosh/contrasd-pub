@@ -1,0 +1,206 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ethereum Dev Update 2015 / Week 44 | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Ethereum Dev Update 2015 / Week 44
+Posted by Taylor Gerring on November 2, 2015
+Research & Development
+
+
+
+
+With DEVCON1 a mere week away, the teams are excited and preparing to share all the great tools and technology the ecosystem has to offer. There will be hundreds of developers and dozens of talks including Nick Szabo, Vitalik Buterin, and Marley Gray from Microsoft. Tickets are limited and we anticipate selling out, so if you haven't already registered, head on over to https://devcon.ethereum.org to secure your spot now!
+
+cpp-ethereum
+
+TurboEthereum released 1.0.0 of the C++ tools. Work has been done on state trie pruning and upgrading network protocols (PV 62 & 63). Several Mix bugs have been fixed and the team is working on improving on the build/release process.
+
+go-ethereum
+
+Geth preparing 1.3.0 release and continuing to build new features such as RPC with push support and Natural Language Specification (NatSpec), allowing users to be be prompted with friendlier confirmation messages. Filter search optimizations have been added, speeding up access to historical logs.
+
+pyethereum
+
+Pyethapp is continuing to move forward, with some upgrades to user services and RPC efficiency this week. 
+
+Swarm
+
+Work towards Swarm accounting & incentive mechanisms being finalized along with a whitepaper on results of research. Initial integration of Swarm with IPFS as data store are beginning in the clients.
+
+Light client/mobile
+
+New network protocols supporting fast sync are rapidly maturing and will be basis for future light clients, helping new users bootstrap into the network within just a few minutes.
+
+Mist
+
+Wallet Beta 3 available soon with contract deployment and custom token support. Both the Go and C++ clients are integrated, giving users a choice of consensus implementations.
+
+Solidity
+
+First proof-of-concept of formal verification for Solidity contracts now available with why3 tool. Additional attention has been given to internal types like tuples. Updated documentation online at https://ethereum.github.io/solidity/docs/home/
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

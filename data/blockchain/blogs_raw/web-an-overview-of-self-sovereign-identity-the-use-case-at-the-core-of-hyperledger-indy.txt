@@ -1,0 +1,857 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+An overview of Self-Sovereign Identity: the use case at the core of Hyperledger Indy – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Project: Hyperledger Indy
+                            
+                        
+                    
+
+                
+                An overview of Self-Sovereign Identity: the use case at the core of Hyperledger Indy
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        May 1, 2019
+                    
+                
+
+            
+
+            
+            
+                In the real world, most identity interactions are self-sovereign. We collect and hold various credentials that we keep in our possession and present at our discretion to prove things about ourselves. These could be collections of cards, certificates, or paperwork that prove various things about someone or something. Some credentials are obvious, like birth certificates, licenses to drive, employee ID cards, passports, university diplomas…the list goes on. We hold and present these to any anyone we want, without the permission of the organization who issued them. These credentials are kept and controlled by the holder, and only taken from her wallets and revealed with her expressed consent.
+
+ 
+This is not what happens on the internet. Like the famous cartoon says – “On the Internet, nobody knows you’re a dog,” illustrating the very real issue with the lack of an easy, secure, standardized system for a person to collect, hold, and ultimately present trustworthy, verifiable credentials online.
+
+ 
+Unfortunately, online identity is very clearly broken. This is due to the fact that the internet was created without any way to identify the people who used it. Initially, it was a fairly small network of machines. Internet protocols are designed to identify machines and services, not people. People used the Internet through some institution (usually their company or university) and were part of that institution’s administrative identity system. This can still be seen in the format of email addresses that identify both recipient and sender as someone@someplace. 
+
+ 
+As the internet grew to include people who weren’t formally associated with an institution, every website and service created its own administrative identity domain. The result is the fractured profusion of identifiers, policies, and user experiences that constitute digital identity in 2019. Where early internet users had a handful of credentials and logged in occasionally, modern internet users typically have dozens, even hundreds, of usernames and passwords. Security has made these harder to use by encouraging or even forcing users to use more cryptic passwords and not share them between sites. And now multi-factor authentication adds to the cognitive burden. And then there’s the inconvenience of supplying the same information to application after application, all the while suffering the dangers that they might lose it or expose it to hackers. 
+
+ 
+One attempt to solve this problem is single-source or ‘federated logins.’ Social login systems from Google, Facebook, and others expedite logging into various websites, but these systems are limited in the kinds of attributes they use and the trustworthiness of those attributes. As a result, they aren’t as widely used as one might hope. Many companies don’t or can’t use social login and so the system of fractured administrative identity systems remains. 
+
+ 
+Traditional, identity systems have a single identity provider (IdP) administering an identity system for their own purposes. The rights of the so-called “identity subject” are subordinate to those of the identity provider. These systems are siloed, meaning the attributes you’ve shared with one organization are difficult to use with another. Each company asks for the same information, like your name, credit card, address, and so on. Users are required to provide that information to use the service – whether they like it or not. This single entity determines what information will be collected, decides who can participate, and how their data is stored – and that data is only as secure as the company or organization that keeps it. 
+
+ 
+Consequently, until now, the internet has lacked a universally available digital identity system that lets individuals collect and hold trustworthy verifiable credentials and present them to whoever they want, whenever they want – without the reliance on a third-party managing access.
+ 
+What is SSI
+
+ 
+Self-sovereign identity (SSI) gives individuals or organizations agency to control their identity information. SSI acknowledges that identity is about much more than logging in. Identity can be expanded to other uses by using verifiable attestations, called credentials, to prove things about yourself. SSI uses verifiable, trustworthy credentials. Identity owners autonomously use those credentials wherever they want. Privacy is a critical feature of SSI because, without privacy, there is no control. In SSI, the identity owner must be in control of who sees what. This represents a monumental shift in how identity functions on the internet. 
+
+ 
+Credential issuers, holders, and verifiers are peers on an SSI network. Any person or organization can play any or all of the roles, creating a decentralized system for the exchange of trustworthy, digital credentials.
+
+ 
+	Credential issuers determine what credentials to issue, what the credential means, and how they’ll validate the information they put in the credential.
+	Credential holders determine what credentials they need and which they’ll employ in workflows to prove things about themselves.
+	Credential verifiers determine what credentials to accept, and which issuers to trust.
+
+ 
+
+In SSI, players independently determine the role they’ll play, who they trust, and what they will believe. While credentials can be revoked individually, the identity owner still controls her own identity wallet and all the other credentials she has collected. The result is an internet identity system that is more flexible, more secure, more private, less burdensome, and less costly. 
+ 
+About the author: Dr. Windley, an expert in decentralized digital identity and IoT and event-driven systems, is Chair of the Board of Trustees, Sovrin Foundation. The Sovrin Foundation open sourced the codebase used to create the Sovrin Network and contributed the initial code for Hyperledger Indy to Hyperledger, a project dedicated to blockchain hosted by the Linux Foundation. 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

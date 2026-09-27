@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Discussion: 2-hop Blockchain, Combining PoW and PoS Securely on ETH (EIPxxxx) - Consensus - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Discussion: 2-hop Blockchain, Combining PoW and PoS Securely on ETH (EIPxxxx)
+    
+
+
+      
+          
+            
+              
+              
+                Consensus
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                sam256
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 28, 2022,  7:43am
+                  
+                  
+
+1
+              
+            
+            
+              Instead of moving ETH entirely from PoW to PoS Consensus mechanism, would it be possible to merge both PoW and PoS in parallel on 2-hop Blockchain like the one theorized here https://eprint.iacr.org/2016/716.pdf (2-hop Blockchain: Combining Proof-of-Work and Proof-of-Stake Securely).
+
+“From 1-hop to 2-hop blockchain. Nakamoto’s system is powered by physical computing resources, and the blockchain is maintained by PoW-miners; there, each winning PoW-miner can extend the blockchain with a new block. In our design, as argued above, we (intend to) use both physical resources and virtual resources. That means, in addition to PoW-miners, a new type of players — PoS-holder (stakeholder) — is introduced in our system. Now a winning PoW-miner cannot extend the blockchain immediately. Instead, the winning PoW-miner provides a base which enables a PoS-holder to be “selected” to extend the blockchain. In short, in our system, a PoW-miner and then a PoS-holder jointly extend the blockchain with a new block. If Nakamoto’s consensus can be viewed as a 1-hop protocol, then ours is a 2-hop protocol.”
+
+Merging PoW and PoS would prevent possibility of another hardfork by PoW miners after ETH moves to PoS, also it supports the PoW miners who had been supporting the network since its infancy, instead of ditching miners entirely wouldn’t it be better to integrate them into a new system where PoS and PoW can work in parallel, supporting each other.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

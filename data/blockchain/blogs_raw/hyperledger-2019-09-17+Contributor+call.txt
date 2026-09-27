@@ -1,0 +1,673 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-09-17 Contributor call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+	2019-09-04 Onboarding call
+
+
+
+
+
+	2019-09-17 Contributor call
+
+
+
+
+
+	2019-10-01 Contributor call
+
+
+
+
+
+	2019-10-15 Contributor Call
+
+
+
+
+
+	2019-10-29 Contributor Call
+
+
+
+
+
+	2019-11-12 Contributor Call
+
+
+
+
+
+	2019-11-26 Contributor Call
+
+
+
+
+
+	2019-12-10 Contributor Call
+
+
+
+
+
+
+
+	2020 Notes
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2019-09-17 Contributor call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2019-09-17 Contributor call
+
+	Danno Ferrin
+
+
+
+	Gregory Markou
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Sept 30, 2019 by Gregory Markou
+
+
+
+
+
+
+
+
+
+
+APAC friendly time
+Recording
+
+Minutes
+	Antitrust notice presented
+	General Announcements	Devcon (Danno)
+
+
+	Releases (Madeline)	1.2.3 is the last one under the pantheon nameÂ 
+	1.3-rc1 next week (25/26 Sept), roadmap at the root
+	Off chance that there may be 1.2.4 because of CI/CD issues
+
+
+	Work Updates	ETC Proposal - Bob Summerwill	Background about Ethereum Classic
+	ETCCooperative is joining EEA and HLP
+	ETCCoop is committed toÂ  long term maintenence
+	Greg Markou from Chainsafe will be doing most of the work	looks to be straightforward to patch
+	Gas Pricing will be the biggest bump
+	DAO switch existing is nice.
+	hardforks are noted in the mailing list
+
+
+	Danno asked for some wiki docs for what changes are going in.Â  Noting too far in-depth	AR -Â Greg Markou to add wiki page
+
+
+	No questions from the audience
+
+
+
+
+	Other Business	Code Repo has been migrated	http://github.com/hyperledger/besu
+	http://github.com/hyperledger/besu-docs
+
+
+	DCOÂ Edward Evansdiscussed sign off	Github has checks in place to ensure
+	DCO is an affirmation that your copyright is usable under Apache 2
+	Just a tag in your commit message, not a GPG commit
+
+
+	CI/CD updateÂ Joshua Fernandes	Still on Jenkins, as hosted by PegaSys/ConsenSys
+	When we shift we will let everyone know
+	We've looked at other options such as Azure Pipelines, look on CI/CD channel in Rocket Chat
+
+
+	Initial MaintainersÂ Danno Ferrin	Went over what's coming into Maintainers
+	will go into the codebase as Maintainers.md
+	concern about too many maintainers
+	Discussed coding style standards of enforcement
+
+
+
+
+	No Future topics
+
+
+
+AR - Greg
+	ECIP / Fork Name	Description	Block Number
+	ECIP 1015	Gas repricing	3,000,000
+	ECIP 1010	Die Hard - Difficult bomb delay	3,000,000
+	ECIP 1039	Monetary policy rounding specification	5,000,001
+	ECIP 1041	Remove Difficulty Bomb	5,900,000
+	ECIP 1054	Atlantis hardfork - Includes Spurious Dragon and Byzantium changes	8,772,000
+
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2022-06-07 Contributor Call
+2022-06-07 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-05-10 Contributor Call
+2022-05-10 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-10-31 Contributor Call
+2023-10-31 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-06-23 Contributor Call Notes
+2020-06-23 Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-05-12 Contributor Call Notes
+2020-05-12 Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-09-03 Contributor Call - US/EMEA
+2024-09-03 Contributor Call - US/EMEA
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "02c6824bad6049869869af715f63c15f"}

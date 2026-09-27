@@ -1,0 +1,934 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Making Legal Contracts Smart – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Composer
+                            
+                        
+                    
+
+                
+                Making Legal Contracts Smart
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jan 11, 2018
+                    
+                
+
+            
+
+            
+            
+                Guest post: Dan Selman and Houman Shadab, Clause.io
+ 
+The potential to automate a wide variety of business transactions in a way that is secure, transparent, and flexible will likely be one of the most transformational benefits of blockchain. However, software applications that use distributed ledger technology to automate business processes are often confusingly referred to as “smart contracts” despite not being tied to any legally binding obligation or, worse still, not being enforceable in court. In contrast are smart legal contracts: legally binding agreements whose underlying logic is transformed through computation to enable automation, software connectivity, and dynamic business arrangements.  
+ 
+Automated transactions must be executed according to the terms of a legally binding agreement to provide companies with certainty and the ability to be compensated if something goes wrong. Smart contracts that are executed apart from a legal agreement cannot be fully integrated into an enterprise digital transformation strategy. Fundamental transformation requires consolidating systems end-to-end and involving a company’s legal agreements. And even if legally enforceable, smart contracts that operate without incorporating standards will likely be an isolated phenomenon without the full benefit of marketwide adoption. Worse still, smart contracts that are inaccessible to legal and business professionals are likely to remain more of a curiosity than transformational.
+ 
+The Accord Project was established, in part, to develop a community driven protocol for smart legal contracting. It is built on the fundamental notion that contracting is, and should be, blockchain agnostic. Users are therefore able to use Hyperledger Fabric, Ethereum, and others as warranted. The Accord Project is an Associate Member of Hyperledger and is a consortium of attorneys, technologists, and organizations collaborating to set techno-legal standards and develop open source technology. But it’s not just talk. The Accord Project has already operationalized its vision through the open source software called “Cicero.” 
+ 
+Cicero enables lawyers and business professionals to turn traditional, legally binding agreements into smart legal contracts. It accomplishes this through an easy-to-use system for enabling legal contracts to be executed in response to external data and be connected to a wide variety of software systems and platforms, including blockchain.
+ 
+
+ 
+ The “virtuous triangle” of functionality implemented by Cicero templates.
+
+
+ 
+The core of Cicero is a smart contract templating system made up of three components. The first is a template’s grammar, which consists of natural language contract text that identifies data-oriented variables such as price, date, etc. Second is the template’s data model that provides a framework for categorizing the variables and the components of the business context that operationalize smart contracts. Once the elements of a legal contract and the business context are categorized with a data-oriented modeling language, the contract can then be executed using the template’s operational logic — the third component of Cicero’s smart contract templating system.
+ 
+We chose the Hyperledger Composer modeling language because it is a great fit for smart legal contracts and is able to be put to use immediately. Composer is general enough to model any type of contract and make them executable in a variety of environments — a core requirement the Accord Project’s protocol agnosticism.
+ 
+Hyperledger Composer’s primary elements correspond to the basics of smart legal contracting. Composer’s participant element corresponds to the contracting parties and its asset element corresponds to the goods, services, and other subject matter of a contract. Composer’s transactions element causes assets to be exchanged and, importantly for smart legal contracts, are the means by which external data about assets trigger business logic. Examples of transactions include sending payment when data indicates assets have been delivered, or sending notice of breach when data indicates a temperature condition is violated. Other elements of Composer map well to contracting, including those that capture types of assets (e.g., red, medium), the state of contract (e.g., past due, in-process), and basic terms such as party addresses. 
+ 
+The Accord Project has created an open source repository for Cicero templates and is inviting all those interested in creating a smart legal contract ecosystem to contribute. The full documentation is located here. For more information about joining the Accord Project and the discussion on slack, please visit our website: www.accordproject.org.
+ 
+Perishable Goods Example
+ 
+To make things concrete, let’s take a look at an example Hyperledger Composer business network (executing on Hyperledger Fabric v1) which invokes Cicero running on an out-process standalone web server. Hyperledger Fabric stores the state of assets on the blockchain, while Cicero executes contract logic off-chain.
+ 
+Installation instructions for the demo are here: https://github.com/accordproject/cicero-perishable-network
+ 
+Hyperledger Composer is used to store the state of shipments, importers, growers, shippers on the blockchain, while the contract logic is invoked out-of-process using the Cicero Server.
+ 
+
+ 
+ High-level architecture for the cicero-perishable-network demo.
+
+
+ 
+Note: it is also possible to embed Cicero execution inside Hyperledger Fabric v1.1-preview, thanks to the support for executing Node.js chaincode.
+ 
+The Hyperledger Composer Playground can be used to visualize and interact with the data stored on the blockchain.
+ 
+
+ 
+ Shipments being tracked on the blockchain.
+
+
+ 
+The identities of the participants in the permissioned blockchain are managed by Hyperledger Fabric, and their metadata is managed by Hyperledger Composer and is visible in the Hyperledger Composer Playground.
+ 
+
+ 
+ Permissioned access enforced by Hyperledger Fabric, and business network Participant state stored on the blockchain.
+
+
+ 
+Hyperledger Composer playground can be used to interactively test the logic for the business network, submitting transactions that update the state of assets stored on the blockchain, based on the results of executing a Cicero contract.
+ 
+
+ 
+ Simulating submitting IoT transactions using Hyperledger Composer
+
+
+ 
+Behind the Scenes
+ 
+Both Hyperledger Composer and Cicero are fundamentally strongly-typed and model driven, so we start by defining the data model, and because both Hyperledger Composer and Cicero use the same modelling language, there is no need for complex model mapping when calling from one to the other.
+ 
+
+ 
+ The Composer data model, showing the Shipment asset that is being stored on the blockchain, as well as some of the transactions that update the state of the shipment.
+
+
+ 
+The Hyperledger Composer business network includes a transaction processor function (chaincode) that invokes the Cicero server.
+ 
+
+ 
+ A Composer transaction processor function for the ShipmentReceived transaction. On Line 32 you can see the call to the Cicero server, passing in data from the incoming transaction. After calling Cicero the function can update the state of assets on the blockchain.
+
+
+ 
+You can then create a new (or use an existing) Cicero template. Here we are using the perishable-goods template from the Cicero Template Library at https://github.com/accordproject/cicero-template-library.
+ 
+
+ 
+ The grammar for a Cicero template. The grammar is the natural language text for the clause with embedded variables.
+
+
+ 
+A Cicero template is strongly-typed and the type-information is captured in the template’s Template Model.
+ 
+
+ 
+ The Template Model for the perishable-goods Cicero template. The Template Model captures the names and types for variables referenced in the template grammar. Note that it can reference or include complex types, such as Shipment or Duration.
+
+
+ 
+Cicero combines the Template Grammar and Template Model and uses them to generate a parser for the template. The parser takes input source text and converts it to an instance of the Template Model.
+ 
+Finally Cicero templates include the executable business logic which implements a function that receives an incoming transaction and the clause data, and returns a response transaction.
+ 
+
+ 
+ Some of the business logic for the perishable-goods template, written in JavaScript. Note that the Accord Project is working on a Domain Specific Language for capturing contract logic.
+
+
+ 
+For more information, and the full source code, please refer to:
+ 
+	Cicero Perishable Goods Template: https://github.com/accordproject/cicero-template-library/tree/master/perishable-goods
+	Cicero Perishable Network (Composer Business Network): https://github.com/accordproject/cicero-perishable-network
+
+ 
+ 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

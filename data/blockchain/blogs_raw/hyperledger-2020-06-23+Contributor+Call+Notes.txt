@@ -1,0 +1,698 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-06-23 Contributor Call Notes - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+
+	2020 Notes
+
+
+
+
+	2020-01-07 Contributor Call
+
+
+
+
+
+	2020-01-21 Contributor Call
+
+
+
+
+
+	2020-02-04 Besu Contributor Call Notes
+
+
+
+
+
+	2020-02-18 Besu Contributor Call Notes
+
+
+
+
+
+	2020-03-17 Contributor Call Notes
+
+
+
+
+
+	2020-04-14 Contributor Call
+
+
+
+
+
+	2020-04-28 Contributor Call Notes
+
+
+
+
+
+	2020-05-12 Contributor Call Notes
+
+
+
+
+
+	2020-05-26 Contributor Call Notes
+
+
+
+
+
+	2020-06-09 Contributor Call Notes
+
+
+
+
+
+	2020-06-23 Contributor Call Notes
+
+
+
+
+
+	2020-07-07 Contributor Call Notes
+
+
+
+
+
+	2020-07-21 Contributor Call Notes
+
+
+
+
+
+	2020-08-04 Contributor Call Nodes
+
+
+
+
+
+	2020-08-18 Besu Contrubutor Call Notes
+
+
+
+
+
+	2020-09-01 Besu Contributor Call Notes
+
+
+
+
+
+	2020-09-15 Contributor Call Notes
+
+
+
+
+
+	2020-09-29 Besu Contributor Call Notes
+
+
+
+
+
+	2020-10-27 Office Hours Notes
+
+
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2020-06-23 Contributor Call Notes
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2020-06-23 Contributor Call Notes
+
+	Sally MacFarlane
+
+
+
+	Danno Ferrin
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Aug 07, 2020 by Danno Ferrin
+
+
+
+
+
+
+
+
+
+
+recording: https://consensys.zoom.us/rec/share/wJxMd6nr10ZLfY3u-nyFfvAtDrbreaa813Ue-PpfyUY07aSWF09L_IFMVuJ8iO3E?startTime=1592873988000 password 4J#sI18Y
+	 Releases	1.4.6 released
+	1.5 RC released	RC testing underway
+	we have increased size of boxes (t3 → i3) for Fast Sync and it completed in 2 days
+
+
+	1.5 planned for 17 July
+
+
+	Roadmapping	Besu Roadmap & Planning has been updated to include 1.6 and high level plans for 1.7
+
+
+	Work Updates	Ethereum Classic	Classic has no planned future forks.
+
+
+	mainnet	is working on Berlin
+	has Yolo1 as a testnet
+
+
+
+
+	Other Business
+	Open Forum
+
+
+
+
+
+
+
+
+, multiple selections available,meeting-notes
+
+
+
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2020-05-12 Contributor Call Notes
+2020-05-12 Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2019-09-17 Contributor call
+2019-09-17 Contributor call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-06-07 Contributor Call
+2022-06-07 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-05-10 Contributor Call
+2022-05-10 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-10-31 Contributor Call
+2023-10-31 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-07-19 Besu Contributor Call
+2021-07-19 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 15, "requestCorrelationId": "38edce21498d49d38e7bb3f6d320e29a"}

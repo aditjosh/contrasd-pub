@@ -1,0 +1,326 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Approaches to IBC light clients via SNARKs - zk-s[nt]arks - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Approaches to IBC light clients via SNARKs
+    
+
+
+      
+          
+            
+              
+              
+                zk-s[nt]arks
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                ZORK780
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 20, 2023,  3:31pm
+                  
+                  
+
+1
+              
+            
+            
+              Hey everyone,
+
+We at Panther published our SNARK paper earlier this year (https://eprint.iacr.org/2023/1255.pdf), as well as a follow-up paper (https://eprint.iacr.org/2023/1264.pdf). This scheme circumvents the overhead of non-native field arithmetic arising from Ed25519 signatures.
+
+Right now we survey some approaches to IBC light clients via Snarks. The implementation uses a 570-bit outer curve to Ed25519 constructed via the Cocks-Pinch algorithm.
+
+The prover time for a million gate circuit on a 64 vCPU AWS machine’s 32 seconds for the version optimized for the proof size and verification time, and 20 seconds for the version optimized for the Prover time.
+
+I am wondering if 100 blocks within ~ 90 seconds / 1 minute is efficient enough for the Snark to be useful within the given context outlined above, and if someone here has a use for this work.
+
+We are currently working on a piece describing an IBC scheme related to our earlier work.
+
+            
+
+
+            
+              
+10 Likes
+            
+
+            
+                
+
+            
+              
+                hoanngothanh
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 6, 2023,  8:44am
+                  
+                  
+
+2
+              
+            
+            
+              In your experience, what are the key advantages and potential drawbacks of using the Cocks-Pinch algorithm for constructing the outer curve in the implementation?
+
+            
+
+
+            
+              
+4 Likes
+            
+
+            
+                
+
+            
+              
+                xyzq-dev
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 8, 2023,  8:12am
+                  
+                  
+
+3
+              
+            
+            
+              In your SNARK paper, you’ve effectively reduced the overhead of non-native field arithmetic for Ed25519 signatures and optimized the prover time. Considering the specific use of a 570-bit outer curve and the prover times you’ve achieved, could you elaborate on how these optimizations impact the scalability and practical deployment of IBC light clients using SNARKs, especially in high-throughput blockchain environments?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                ZORK780
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 14, 2023,  4:43pm
+                  
+                  
+
+5
+              
+            
+            
+              We at Panther did look into other algorithms like Brezing-Weng for example however the curve won’t get much smaller with the more subtle techniques.
+
+We intend to look into more subtle constructions in the future.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                BorkBorked
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 15, 2023,  1:03am
+                  
+                  
+
+6
+              
+            
+            
+              What are the primary advantages and potential limitations of employing the Cocks-Pinch algorithm for constructing the 570-bit outer curve, especially in the context of IBC light clients?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                H1GPBDC
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 15, 2023,  8:26pm
+                  
+                  
+
+7
+              
+            
+            
+              Great initiative and paper. Do you think your algorithm can handle such a large amount of blocks in a small amount of time (ie 100 blocks in 90 seconds/ 1 minute). I would suggest having a slightly larger block time and keep tapering it down based on the performance metrics and see how it affects the client being operational and without it falling into breaks. Another suggestion would be to run multiple iterations of client with different presets and parameters and gauge the performance and make incremental upgrades.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

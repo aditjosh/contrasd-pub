@@ -1,0 +1,916 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Blockchain Explorer v2.0.0, a Hyperledger Lab
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Labs
+                            
+                        
+                    
+
+                
+                Introducing Blockchain Explorer v2.0.0, a Hyperledger Lab
+ 
+                
+                    Archana Arige and Udhayakumari P
+                    |
+                    
+                        Oct 5, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                 Unlocking the Power of Blockchain Visibility
+
+
+First and foremost, we would like to express our profound gratitude to the incredible Hyperledger Community and our devoted contributors, Ry Jones, Arigela Satyanarayana, Archana Arige, Ajin Sunny, Anusha Padmanabhan, Nadimpalli Varma, Udhayakumari P, Manish Das, Saksham, Viraj Shelar, Arun SM, Aditya Joshi, Vineeth Boppudi, Jayasimha Prasad, Ravi Pratap, Manoj Bhargav MV, Deepika SR, Harpreet Singh and Ankit Kokane. Many of these contributors work at companies supporting Blockchain Explorer, including Infosys, Walmart, KPMG, and ExaThought.
+
+With this group’s unwavering commitment and expertise, we have reached a significant milestone, Blockchain Explorer release v2.0.0. This release serves as a testament to the remarkable potential of collaboration and open-source development. Blockchain Explorer is a powerful tool that acts as a window into the intricate workings of Hyperledger Fabric, simplifying the complex world of blockchain for enterprises and developers. 
+
+Blockchain Explorer provides real-time insights into the blockchain activities, enabling users to monitor transactions, smart contracts, network health and other crucial data making it an invaluable tool for administrators, developers and organizations using Hyperledger Fabric technology. 
+
+In this blog post, we embark on a journey of exploration into the realm of Blockchain Explorer. We will unravel its purpose and delve into the features of v2.0.0 that make it an indispensable asset in the realm of blockchain.
+
+Hyperledger Explorer's Evolution into Blockchain Explorer, a Hyperledger Lab:
+
+The latest release of Blockchain Explorer builds upon the robust foundation of Hyperledger Explorer's codebase, infusing it with cutting-edge features and improvements. It is a new chapter for blockchain exploration, rooted in the reliability of its predecessor.
+
+New Features:
+
+The latest release of Blockchain Explorer v2.0.0 is packed with new features and improvements that make understanding Hyperledger Fabric blockchain easier and even more seamless. New features include:
+
+Monitoring the Health Status of Orderers & Peers:
+
+One of the new features of Blockchain Explorer v2.0.0 is the ability to monitor the health status of the peers and orderers in a Hyperledger Fabric network, which means now users can keep looking at the blockchain network’s peers and orderers condition whether they are online or offline. This real-time health status display allows us to be aware of the network’s stability, troubleshoot and maintenance. 
+
+	Frontend Enhancement - Updates to the frontend provides a user-friendly dashboard or interface where users can view the health status of the peers and orderers at a glance. It includes visual indicators such as green for healthy or online nodes and red for the nodes with issues or offline status. 
+
+
+	Backend Enhancement - The backend is responsible for collecting and processing the health data of peers and orderers. Enhancements ensure it continuously monitors the nodes, checks for abnormal activities or problems, and then updates the front end to reflect the current status. The benefit of this feature is that it allows developers, users, and operators to proactively identify and address issues within the network, ensuring its smooth operation and minimizing the downtime. 
+
+
+Enhanced Searching Capability:
+
+Blockchain Explorer’s search capabilities have been significantly improved in this release to make it easier for users to find information within the underlying blockchain. Now it offers improved search functionalities, allowing users to find specific transactions, blocks, and its details.  
+
+	Frontend Enhancement - Updates here include two key improvements. First, it introduces pagination that allows users to navigate through many blocks more easily. Secondly, it adds the block range search functionality to search for transactions or blocks within a specified block range.  
+
+
+	Backend Enhancement - A new backend feature enables users to fetch data based on various criteria including block number, block range and transaction hash that means if users want to retrieve data about a particular block or transaction, now they can do so more effectively. This feature enhances the user experience of Blockchain Explorer by making it simpler to access and explore specific blockchain data. 
+
+
+Chaincode Metadata Display:
+
+This release includes added support for displaying the metadata of the chaincodes. With the changes, anyone can easily access and analyze metadata of all chaincodes deployed. They can navigate to the Chaincode tab in UI (User Interface) to experience this feature. 
+
+	Changes to Chaincode Metadata Display - This enhancement adds support for displaying the chaincode metadata that contains information about the Smart Contracts or Chaincodes deployed on the blockchain network such as its version, description and parameters.
+
+
+	Frontend Display - To access this metadata, users can navigate to the chaincodes tab within the Blockchain Explorer’s frontend. Here, they can view key details about the chaincodes, which are useful for debugging, auditing and maintaining the blockchain. 
+
+
+Improved Infrastructure:
+
+	Move to GHCR Registry - In this release, Blockchain Explorer has also undergone infrastructure enhancements, including migrating container images from DockerHub to the GitHub Container Registry (GHCR).  Container images are used for deploying Blockchain Explorer instances. This move ensures better accessibility and reliability of images, making it easier for users to deploy and manage in their Blockchain Explorer environment.
+
+
+Streamlined with GitHub Actions:
+
+This enhancement is related to the development and testing process of Blockchain Explorer.
+
+	Migrate CI to GitHub Actions - The Continuous Integration (CI) pipeline responsible for automating the build and testing of Blockchain Explorer is now migrated to GitHub Actions. GitHub Actions is a powerful automation tool integrated with GitHub and this migration improves development workflow efficiency and ensures the quality of releases. Migrating the development and testing processes to GitHub Actions results in a more efficient and reliable development pipeline. 
+
+
+This overall list of new features collectively enhances the functionality, usability and reliability of Blockchain Explorer, making it a more robust tool for managing and monitoring the Blockchain network. 
+
+Future Scope:
+
+Looking ahead, the future of Blockchain Explorer is brimming with promises. Growing our  contributor community will enable us to develop new features and functionalities that would benefit developers and users, including:
+
+	Data Purge - A config driven data purge option based on the choice of block count (or) duration.
+
+
+	Remodeled User Management - Enhancements to the systems capabilities in terms of user accounts with advanced authentication and authorization.
+
+
+	Robust UI Design - Enhancements of both the user interface and overall user experience.
+
+
+	Support for the latest release version of Hyperledger Fabric - Continuous development to ensure that Blockchain Explorer remains compatible with the most up-to-date versions of Hyperledger Fabric.
+	Testing and Quality Assurance - Thorough testing and quality assurance for the enhancements ensures to meet design specifications and function correctly.
+
+
+	Research and Innovation - Ongoing Investment in research and innovation to stay at the forefront of the Hyperledger ecosystem. 
+
+
+	Exploring Metric Research and Potential Features - Identifying and delving into Metric Research to implement the possible potential features.
+
+
+Join Our Community and Stay Connected
+
+We aim to cultivate a thriving community around the project through active participation in Blockchain Explorer meetups and encouraging contributions.
+
+We cordially invite you to become a vital part of our collaborative community. Blockchain Explorer official GitHub can be accessed on hyperledger-labs/blockchain-explorer, where you can contribute, raise issues, and collaborate with fellow enthusiasts. Connect with us in real-time on Discord for discussions and networking. Attend our regular community and contributor meetings on Zoom to stay updated, share insights and discuss project developments. For the latest release and updates, visit our new release site here. 
+
+We eagerly await your input and feedback on our community channels. Join us today, contribute and help to shape the future of blockchain technology empowered with Blockchain Explorer, a Hyperledger Labs!
+
+ 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,243 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Defining capability requirements — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts
+	Getting Started - Install
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides
+	Upgrading to the latest release
+	Commands Reference
+	Architecture Reference	Hyperledger Fabric CA's User Guide
+	Transaction Flow
+	Fabric Gateway
+	Service Discovery
+	Defining capability requirements	Setting Capabilities	Capabilities in an Initial Configuration
+
+
+
+
+
+
+	Channels
+	CouchDB as the State Database
+	Peer channel-based event services
+	Private Data
+	Read-Write set semantics
+	Gossip data dissemination protocol
+	Performance considerations
+
+
+
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Architecture Reference
+	Defining capability requirements
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+Defining capability requirements¶
+
+
+Note
+
+This topic describes a network that does not use a “system channel”, a
+channel that the ordering service is bootstrapped with and the ordering
+service exclusively controls. Since the release of v2.3, using a system
+channel is now considered the legacy process as compared to the process
+to Create a channel. For a version of this topic that
+includes information about the system channel, check out
+Capability requirements from the v2.2 documentation.
+
+
+
+As discussed in Channel capabilities, capability requirements are defined
+per channel in the channel configuration (found in the channel’s most recent
+configuration block). The channel configuration contains three locations, each
+of which defines a capability of a different type.
+
+	Capability Type
+	Canonical Path
+	JSON Path
+
+	Channel
+	/Channel/Capabilities
+	.channel_group.values.Capabilities
+
+	Orderer
+	/Channel/Orderer/Capabilities
+	.channel_group.groups.Orderer.values.Capabilities
+
+	Application
+	/Channel/Application/Capabilities
+	.channel_group.groups.Application.values.
+Capabilities
+
+
+
+
+Setting Capabilities¶
+
+Capabilities are set as part of the channel configuration (either as part of the
+initial configuration – which we’ll talk about in a moment – or as part of a
+reconfiguration).
+
+
+Note
+
+For more information about how to update a channel configuration, check
+out Updating a channel configuration.
+
+
+
+
+Capabilities in an Initial Configuration¶
+
+In the configtx.yaml file distributed in the config directory of the release
+artifacts, there is a Capabilities section which enumerates the possible capabilities
+for each capability type (Channel, Orderer, and Application).
+
+Note that there is a Capabilities section defined at the root level (for the channel
+capabilities), and at the Orderer level (for orderer capabilities).
+
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

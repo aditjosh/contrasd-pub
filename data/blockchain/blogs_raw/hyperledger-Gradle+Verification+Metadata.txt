@@ -1,0 +1,652 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gradle Verification Metadata - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+	Code coverage
+
+
+
+
+
+	Gradle Verification Metadata
+
+
+
+
+
+	Usage of SonarQube
+
+
+
+
+
+	Usage of vulnerability scanners
+
+
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Gradle Verification Metadata
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Gradle Verification Metadata
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Jun 13, 2023
+
+
+
+
+
+
+
+
+
+
+TL;DR:
+if you get an error, use this command to fix:
+ ./gradlew --write-verification-metadata sha256 spotlessCheck
+
+
+Besu uses verification metadata of dependency artifacts. If you change versions or add new dependencies, you might get a build error like this: 
+> Could not create task ':spotlessGroovyGradleCheck'.
+   > Could not create task ':spotlessGroovyGradle'.
+      > Could not resolve all dependencies for configuration ':detachedConfiguration2'.
+         > Dependency verification failed for configuration ':detachedConfiguration2'
+           2 artifacts failed verification:
+             - org.eclipse.core.expressions-3.9.0.pom (org.eclipse.platform:org.eclipse.core.expressions:3.9.0) from repository MavenRepo
+             - org.eclipse.swt-3.124.0.pom (org.eclipse.platform:org.eclipse.swt:3.124.0) from repository MavenRepo
+           If the artifacts are trustworthy, you will need to update the gradle/verification-metadata.xml file by following the instructions at https://docs.gradle.org/7.6/userguide/dependency_verification.html#sec:troubleshooting-verification
+           
+           Open this report for more details: file:///data/actions-runner/_work/besu/besu/build/reports/dependency-verification/at-16866[40](https://github.com/hyperledger/besu/actions/runs/5252337172/jobs/9488598560?pr=5588#step:4:41)985973/dependency-verification-report.html
+use this to fix ./gradlew --write-verification-metadata sha256 spotlessCheck
+from the doc https://docs.gradle.org/7.6/userguide/dependency_verification.html#sub:enabling-verification
+
+
+Full context discussion in Discord -
+https://discord.com/channels/905194001349627914/1118092168389742673/1118131135180976152
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Versioned documentation
+Versioned documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation release process
+Documentation release process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Debugging Besu in IntelliJ
+Debugging Besu in IntelliJ
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Using CalVer for Besu Releases
+Using CalVer for Besu Releases
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Usage of vulnerability scanners
+Usage of vulnerability scanners
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Using Hive Test Suite
+Using Hive Test Suite
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 34, "requestCorrelationId": "87420a7ee06745979786fb8f1b736a1e"}

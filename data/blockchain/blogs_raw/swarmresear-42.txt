@@ -1,0 +1,188 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adjusting payment thresholds - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Adjusting payment thresholds
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            eknir
+            
+          
+
+          
+
+
+
+          
+              
+                August 26, 2019, 11:16am
+              
+              #1
+          
+        
+        
+          The paymentTreshhold is a variable, defined by SWAP which implies at which negative balance nodes will send a payment to their counterparty.
+
+Adjusting this level is needed on a network-wide basis to facilitate correct parametrization (the current value is randomly chosen) and to allow other payment modules, with different costs of sending a payment to change this value. Furthermore, nodes might want to negotiate with certain peers a higher (or lower) payment threshold when the node trusts the peer respectively more or less.
+
+For network-wide changes: updating this value in the source code through a new release is not possible, as there are no guarantees that nodes run the latest release–causing nodes to expect payments at different balances, potentially causing disconnects.
+
+A similar issue applies to the price of messages relative to each other (honey) and the absolute price of messages (Wei). There are two SWIPs in preparation for parametrization pf these variables through on-chain oracles (expected this week). An on-chain oracle could be a solution as well for the payment threshold, but before we preparing yet another SWIP, I would like to hear your opinions here:
+
+	Is updating the paymentTreshhold network-wide a necessary feature?
+	Is my thinking correct in that this is currently not possible?
+	What are your opinions about implementing this with an oracle?
+	Can we think about other solutions to implement such a change network-wide?
+
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            eknir
+            
+          
+
+          
+
+
+
+          
+              
+                August 30, 2019,  8:46am
+              
+              #2
+          
+        
+        
+          This question was discussed during the research office hours of 29/8/2019.
+
+Conclusion:
+
+	It is indeed desirable to be able to adjust this treshhold, mainly because the current value is complete bogus. Observing how the network behaves live, will allow us to set this parameter sensibly.
+	It is indeed not possible (or very hard) to update this parameter if we would leave it as is (hardcoded in the source-code).
+	The oracle seems to be the way-to-go. Initially it will be managed by swarm devs/stakeholders, but the end-goal is to give the users of Swarm the possibility to co-ordinate together on this value.
+	no alternative solutions were discussed.
+
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

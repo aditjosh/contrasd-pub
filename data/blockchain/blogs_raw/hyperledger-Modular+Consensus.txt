@@ -1,0 +1,687 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Modular Consensus - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+	Besu as a Modular Client for the Merge (OLD)
+
+
+
+
+
+	DRAFT - Besu Software Component Map
+
+
+
+
+
+	Modular Consensus
+
+
+
+
+
+	Modularity Implementation Approach
+
+
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Modular Consensus
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Modular Consensus
+
+	Justin Florentine
+
+
+
+	Matt Nelson (Deactivated)
+
+
+
+	Matthew Whitehead
+
+
+
+
+
+Owned by Justin Florentine
+
+
+Last updated: Mar 12, 2025 by Matthew Whitehead
+2 min read
+
+
+
+
+
+
+
+
+
+
+
+
+Context
+This document lays out a preliminary approach to modularizing the consensus mechanisms in Besu using the plug-in system and accompanying refactoring. The goals of this modularity are to remove friction in development of Besu and to ensure users can always take the latest updates, regardless of their consensus mechanism.Â 
+First Steps
+Establish a working group â†’ Awaiting contributor call July 11th, 2023.Â 
+Â 
+See Modularity Implementation Approach
+Â 
+Review potential plug-in architecture:
+Open 
+
+
+  
+ 
+
+
+
+
+
+
+Â 
+A possible approach to starting BFT modularity:
+Open 
+
+
+
+
+
+
+Â 
+Some suggested aims/ideals for BFT modularity. Not all of these may be possible, but starting with them in mind will help us identify when we have deviated from them, and make sure appropriate docs etc are written to help users migrate:
+	An existing Besu user can stop their Besu node, pull the new modular Besu image, and restart their Besu node without resyncing
+
+	The user experience of running a Besu QBFT chain is unchanged
+
+	A Besu QBFT node can be run in a single runtime
+
+	BFT-related metrics continue to be produced without name changes
+
+	Existing BFT-specific configuration is honoured (config or genesis file settings)
+
+	No additional ports are required to be opened to run a module Besu QBFT network
+	i.e. BFT validator peering logic continues to run over the standard P2P port
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Modularity Implementation Approach
+Modularity Implementation Approach
+
+Besu
+
+
+
+Read with this
+
+
+
+
+
+
+Project Plan - Support Clique Consensus for Besu on HL Labs Blockchain Automation Framework
+Project Plan - Support Clique Consensus for Besu on HL Labs Blockchain Automation Framework
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Modular Besu
+Modular Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+Support Clique for Besu on HL Labs BAF
+Support Clique for Besu on HL Labs BAF
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+2025-03-18 Contributor Call
+2025-03-18 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+Atlassian Intelligence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "cb16909fecc347629b59aa054c29ee87"}

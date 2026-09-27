@@ -1,0 +1,359 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Preliminary Ethereum 2.0 Client Metrics for Early Benchmarking - Data Science - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Preliminary Ethereum 2.0 Client Metrics for Early Benchmarking
+    
+
+
+      
+          
+            
+              
+              
+                Data Science
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                q
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    June 24, 2020,  5:33pm
+                  
+                  
+
+1
+              
+            
+            
+              Hallo!
+
+I’ve taken three ETH2 clients and synced them up with the Witti testnet while closely monitoring their performance metrics.
+
+
+cover1043×589 90.9 KB
+
+
+I’ve written a report that is available as PDF here:
+
+
+  
+      
+      GitHub
+  
+  
+    
+
+q9f/eth2-bench-2020-06
+
+
+preliminary, high-level eth2-client benchmarks. Contribute to q9f/eth2-bench-2020-06 development by creating an account on GitHub.
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+This repository also contains the raw data as well as scripts used to gather the data, and metadata necessary to potentially replay the test scenario.
+
+I hope that someone will find this useful.
+
+            
+
+
+            
+              
+13 Likes
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 27, 2020,  5:40pm
+                  
+                  
+
+2
+              
+            
+            
+              I am having trouble opening https://github.com/q9f/eth2-bench-2020-06/blob/0a4bf6f1f67d51f1c4978c2b6bbf7a5849a7f861/res/2020-06-eth2-bench.pdf . Anyone else have the same problem?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                sherif
+                
+              
+
+              
+
+
+
+              
+                  
+                    June 27, 2020,  8:26pm
+                  
+                  
+
+3
+              
+            
+            
+              i downloaded the pdf file because it is too large to be previewed.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    June 27, 2020,  9:31pm
+                  
+                  
+
+4
+              
+            
+            
+              Aaah, I just had to wait about a full minute for evince to open it up.
+
+In case anyone else is having the same problem, here’s the most important page in png form:
+2020-06-eth2-bench850×1100 164 KB
+
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                roninkaizen
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 4, 2020, 10:29am
+                  
+                  
+
+5
+              
+            
+            
+              https://github.com/q9f/eth2-bench-2020-06/raw/0a4bf6f1f67d51f1c4978c2b6bbf7a5849a7f861/res/2020-06-et  could also work as downloadlink 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                q
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 13, 2020, 11:18am
+                  
+                  
+
+6
+              
+            
+            
+              It renders all data points directly in the document. I didn’t want to reduce the details in the original document. Thanks for sharing a screenshot for preview.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

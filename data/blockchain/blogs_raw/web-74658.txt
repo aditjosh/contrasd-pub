@@ -1,0 +1,902 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Sawtooth Goes Mobile – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Hyperledger Sawtooth Goes Mobile
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Mar 13, 2019
+                    
+                
+
+            
+
+            
+            
+                As interest in Hyperledger Sawtooth grows, robust SDKs continue to be important for helping developers innovate on this blockchain platform. Since mobile is one of the most popular application platforms, it is crucial to extend Sawtooth to support native iOS and Android application development.
+ 
+Additionally, the introduction of Hyperledger Grid has expanded the possibility of supply chain products for the Sawtooth platform. Many of these uses are well suited to mobile clients, allowing on-site professionals at manufacturing or logistics facilities to interact with a Sawtooth application.
+ 
+This blog post describes the first native mobile client applications for Hyperledger Sawtooth, which we have developed using the Sawtooth Java SDK as well as a new Sawtooth Swift SDK. These first example applications showcase a client for the XO transaction processor that, although simple, opens up possibilities for Sawtooth mobile applications moving forward.
+ 
+Sawtooth Java and Swift SDKs
+ 
+The Sawtooth Java SDK is already familiar to many Hyperledger Sawtooth developers; no changes are needed to make it compatible with an Android project. The SDK works similarly in Java-native projects or in Android projects in Java or Kotlin. The Sawtooth Java SDK documentation describes how to import the SDK into an Android project and includes example code for writing a client application in Kotlin.
+ 
+The new Sawtooth Swift SDK supports iOS applications on the Hyperledger Sawtooth platform and provides a way for an application to sign transactions before submitting them to the blockchain. This SDK implements the same functionality present in other Sawtooth SDKs. Cocoa/Cocoa Touch projects can import the SawtoothSigning framework via Carthage, an iOS dependency manager. The Sawtooth Swift documentation includes instructions for using the SawtoothSigning framework.
+ 
+Example XO Mobile Apps
+ 
+Our example mobile applications use the XO transaction processor, which allows two users to play tic-tac-toe on the blockchain. (For the details of XO, see the XO CLI tutorial and transaction family specification.)
+ 
+Both applications implement most of the functionality from the XO transaction processor. The applications open to a landing screen with tabs to navigate between games to play, games to watch, and finished games.
+ 
+The Play tab lists the current games that a user is able to join. In the following figures, the iOS example (using Swift) is on the left, and the Android example (using Kotlin) is on the right.
+ 
+
+  .                        
+ 
+ 
+
+
+Figure 1. Play screen
+
+
+ 
+The Create Game screen lets the user enter a unique name for a new game. The new game will appear on the Play screen once this transaction has been successfully submitted.
+ 
+
+                          
+ 
+ 
+
+
+Figure 2. Create Game screen
+
+
+ 
+The Game Board screen allows the user to submit their moves, with Player 1 as ‘X’ and Player 2 as ‘O’.
+ 
+
+                          
+ 
+ 
+
+
+Figure 3. New game board (iOS) and finished game board (Android).
+
+
+ 
+Running the Sawtooth Mobile Apps
+ 
+If you want to try out these apps, you can find them in the Sawtooth Java SDK and Sawtooth Swift SDK repositories.
+ 
+	Check out the repositories and open the project on Android Studio or Xcode to run the apps on a simulator or on your device.
+	The application needs to communicate with a Sawtooth validator connected to an XO transaction processor. To start a local Docker network with the validator, XO transaction processor, and Sawtooth REST API, run docker-compose up in the examples/xo_ios folder in the Sawtooth Swift SDK project or examples/xo_android_client in the Sawtooth Java SDK. This will allow your application to send transactions to the validator.
+
+ 
+Further Development
+ 
+We have proposed a new Sawtooth Swift SDK, using the Hyperledger Sawtooth Request for Comments (RFC) process. Once that process is completed, a new GitHub Hyperledger repository will host the Sawtooth Swift SDK. We have already implemented part of that SDK and will contribute the code to the Hyperledger repository once the RFC has been approved. At this moment, the only framework available with the SDK is SawtoothSigning, which can be used to sign create private/public key pairs and sign transactions. In the future, we plan to implement a framework help generate Sawtooth protobuf messages.
+ 
+Summary
+ 
+Native mobile applications are a logical step for Hyperledger Sawtooth development. With projects such as Hyperledger Grid encouraging a larger suite of technologies to be used for supply chain solutions, flexibility in the interactions with the Hyperledger Sawtooth platform is critical. Native mobile applications make interactions with Hyperledger Sawtooth more convenient and comfortable.
+ 
+The Sawtooth Java and Swift SDKs, along with the example XO client application, provide a solid foundation for getting Sawtooth mobile. Using the Sawtooth Java SDK and a new Sawtooth Swift SDK, native mobile applications allow developers and users to unlock the full potential of Sawtooth applications wherever they go.
+ 
+Want to Learn More?
+ 
+To learn more about mobile development in Sawtooth, see the source code and the documentation in the Sawtooth Java SDK and Sawtooth Swift SDK git repositories. These repositories include the source code for the example XO client and documentation with details on how to import the modules and how to use the SDKs to write clients.
+ 
+You can also join the Sawtooth SDK development community in the #sawtooth-sdk-dev channel on chat.hyperledger.org.
+ 
+About the Authors
+ 
+
+ 
+ 
+ 
+ 
+Darian Plumb (Senior Software Engineer), Eloá Verona (Software Engineer) and Shannyn Telander (Software Engineer) work on Hyperledger Sawtooth projects at Bitwise IO. They recently worked together on the first venture into native mobile applications for Hyperledger Sawtooth.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

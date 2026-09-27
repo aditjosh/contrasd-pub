@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Signare, a Hyperledger Lab
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Introducing Signare, a Hyperledger Lab
+
+        
+
+        
+           Written by Peter Munnings (COO at Adhara), Marelize Kriel (Cryptographer at Adhara and Signare maintainer) and Coenie Beyers (Head of R&D at Adhara and Signare maintainer) | Sep 11, 2024 7:32:38 PM 
+        
+
+        
+          Contributors from Adhara and ioBuilders are teaming up to launch Signare, a Hyperledger lab, which is an enterprise-grade digital signing solution for Ethereum clients.
+
+
+Signare focuses on delivering an enterprise-grade digital signing solution for Ethereum clients. The application consists of a REST API server to manage resource configuration and an ETH-JSON 2.0 server to provide functionality for the use of generating, removing, listing and signing Ethereum transactions.
+
+The objective of Signare is to provide a FIPS 140-2 Level 2 compliant signing solution for enterprise applications. Signare is built from the ground up to provide signing solutions for organizations that need:
+
+	Enterprise grade software 
+	Can integrate into the organization’s Authentication Service
+	Can run in High Availability environments
+	Has mature Roles Based Access Control (RBAC)
+
+
+
+	Keys stored in Hardware Secure Modules (HSMs) or HSM backed cloud services
+	FIPS 140-2 Level 2 compliant
+	PKCS#11 protocol implementation
+
+
+Signare is intended to complement some of the existing Hyperledger projects and has been tested with the following:
+
+	Hyperledger Besu
+	Harmonia, a Hyperledger Lab
+
+
+The roadmap for Signare includes testing with
+
+	Hyperledger Firefly
+
+
+How to contribute
+
+Signare’s documentation includes
+
+	A getting started guide
+	Full Reference: Documentation 
+	An OpenAPI Specification
+	Role-based access control documentation.
+	Security model information.
+	User guides
+	Configuration guides
+
+
+Using the above documentation, you can get started with Signare, and you can deploy and test the software using the test suite that is provided in the repository.
+
+Once you are comfortable with the product, we would encourage you to contribute to the project and we’ve created the following in the repository
+
+	Guidelines for contributing.
+	Standards for writing code.
+	Guide of the standards of how to document the code.
+	Guide for integrating with a new HSM.
+	Guidelines for creating pull requests.
+
+
+We look forward to hearing from you.
+
+For detailed information and documentation on Signare visit the 
+
+Signare page on GitHub
+
+You can also learn more from this talk by the Signare developer community:
+
+
+
+ 
+
+ 
+
+ 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

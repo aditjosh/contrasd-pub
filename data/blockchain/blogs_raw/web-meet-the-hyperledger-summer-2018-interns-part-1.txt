@@ -1,0 +1,928 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger Summer 2018 Interns Part 1 – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Meet the Hyperledger Summer 2018 Interns Part 1
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jun 5, 2018
+                    
+                
+
+            
+
+            
+            
+                Back in March, we announced the return of Hyperledger’s Summer Internship Program. This year, we have 12 interns, which is more than double what we had last year! We’re very proud of this program, as it offers students one-on-one mentorship from some of the leading technologists in our community, as well as it builds their development portfolio of projects that will feed into the larger Hyperledger ecosystem. The students applied to work on an extensive line-up of internship projects proposed by our community mentors. 
+ 
+Today, we’d like to introduce six of the 12 interns, provide information on what they will work on and help you get to know them a bit better. We asked each intern a few questions including:
+ 
+	How did you first become interested in blockchain, and why are you excited to work on Hyperledger and your project in particular? 
+	How do you see blockchain technology evolving over the next five years?
+	If there’s one or issue you hope blockchain can solve, what is it and why?
+
+ 
+Let’s see what they had to say!
+ 
+Amar Singh
+ 
+Pursuing a Bachelor’s degree in Math and Computer Science at the University of Virginia
+ 
+Hyperledger intern project: Algorithmic Dispute Resolution in Construction
+ 
+
+ 
+	A few years ago, a good friend of mine told me that the next iteration of the internet was coming and it was going to be decentralized. At the time, we were both taking a class on internet protocols and had recently attended a lecture on the OSI model (a conceptual model for understanding the different layers for dot com internet protocols). A breakdown of the model revealed inefficiencies due to centralization (for example, the control of domain names), but we had been taught that these inefficiencies were necessary due to the economies of scale of technology companies. The possibility of a new system designed to solve these inefficiencies piqued my interest. After a few months of reading, I decided to fully commit myself to studying blockchain protocols. Since I went down the crypto rabbit hole, I have been impressed by the pace of progress in this space and the quality of output. After spending the past two semesters researching blockchain protocols at the University of Virginia, I was drawn to Hyperledger because of its emphasis on designing modular and interoperable blockchain solutions. Hyperledger’s architecture emphasizes a separation of the blockchain components, thereby enabling developers to build flexible blockchain applications that can easily interface between different consensus protocols, data storage modules, and communication patterns. For my project, I will construct an off-chain dispute resolution framework that leverages Hyperledger’s modular approach. I am especially excited to dive into Hyperledger’s architecture and explore the ways by which applications can optimize performance-security tradeoffs by incorporating a diverse set of tools/frameworks.
+	Over the next 3-5 years, I expect the internet’s current structure to be overhauled and replaced by blockchain protocols. As brilliant teams around the world continue to collaborate and develop at an impressive pace, I expect that many of the problems that prevent the viability of blockchain solutions will be solved (e.g.., scalability, privacy, custody, UX). I am optimistic about the future of this space and excited to start contributing.
+	Today, search engines like Google and social media giants like Facebook maintain an overwhelming amount of power and influence over the rest of the world. Even so, many people undervalue privacy as a basic human right, but I expect this to change over the next few years. There’s a Snowden quote that comes to mind: “Arguing that you don’t care about privacy because you have nothing to hide is like arguing that you don’t care about free speech because you have nothing to say.” I believe that advances in homomorphic encryption and multi-party computation coupled with blockchain innovation will provide liberation in the form of increased privacy.
+
+ 
+Arijit Sen
+ 
+Pursuing a Bachelor’s degree in Computer Science from the Apex Institute Of Technology in Bhubanshwar, India
+ 
+Hyperledger intern project: Python Library for Hyperledger – Iroha
+ 
+
+ 
+	 I came across the concept of blockchain in my college. I found myself attracted to the whole concept of a decentralized system that is void of any 3rd party interference. I am really excited to work on Hyperledger since it addresses some critical business issues regarding blockchain. Also compared to other blockchain ecosystem platforms, Hyperledger had a smaller learning curve.
+	Blockchain has already taken the technology world by storm. I am pretty sure that we will be seeing most of the current technology stacks shifted to blockchain. However, I am concerned regarding an uncontrolled blockchain system. Just imagine a scenario getting a perfect AI agent, powered to thrive over blockchain and letting him learn and work as much as he can. Maybe he will just develop himself as an unstoppable entity since there is no single server or database to hold him. Too much fiction? Well I doubt it. The growth on both AI and blockchain is exponential. I won’t be surprised if something like that happens. 
+	Blockchain can solve a lot of issues in the world. Just imagine a legal evidence system where all the legal documents and evidence can be put into a secure blockchain platform. Not even the wealthiest criminals could tamper with the evidence or forensic findings. It could power an unbiased law and order system. Or an unbiased voting system where no party can do any discrepancies during the election. Or it could secure payment transaction for overseas without any 3rd party interference. Blockchain opens up a thousand possibilities.
+
+ 
+Kuzma Leshakov
+ 
+Pursuing a Bachelor’s degree in Computer Science at Innopolis University
+ 
+Hyperledger intern project: Hyperledger Identity WG Onboarding and Auth 
+ 
+
+ 
+	The first time I became interested in blockchain was couple of years ago when I heard about the decentralization concept and its implementations in Bitcoin and Ethereum. I am excited to work on the Hyperledger because of the following opportunities:
+
+ 
+	to work closely with community experts and developers to learn the open-source culture and skills
+	to advance knowledge in the distributed ledger design and one of its form, the blockchain
+	to get a teamwork experience with distributed, international colleagues
+
+ 
+The project I chose is Hyperledger Indy, a distributed ledger purpose-built for decentralized identity. This project allows getting both practical and theoretical experience in blockchain development under the supervision of leading field experts. In particular:
+ 
+	to master skills in both Python and Rust programming languages, cryptography
+	to become familiar with the concept of Decentralized Identifiers (DID) and implement applications using it
+	to learn up-to-date software production techniques
+	to advance in creating and using tests as a professional developer
+	to get code reviews and advices on the best practices of documenting and structuring code
+
+ 
+Throughout the internship, I will be making important contributions to the Hyperledger community, the Indy codebase, and the entire decentralized identity ecosystem. It will be an important step for me on becoming a professional software engineer.
+ 
+2. I see blockchain technology becoming significantly used by public institutions (e.g., banks, universities). Also, I hope it will become more user-friendly and, as a result, more people will get involved in its development. Besides, some improvements should be made in blockchain-based systems (e.g., Bitcoin, Ethereum) with respect to its logs storage, which already takes a significant amount of memory.
+ 
+3. One issue I hope blockchain can solve is a decentralized identity. Today’s main identification method requires users to login into every application (e.g., Facebook, Amazon) they interact with. Therefore, each user has dozens of login/password sets to remember (which also should be changed periodically). It is important to have a single and decentralized identity, as it will increase user’s security and user’s experience.
+ 
+A V Lakshmy
+ 
+Pursuing a Bachelor’s degree in Computer Science and Engineering at IIT Madras in India
+ 
+Hyperledger intern project: Extended Support for EVM and and Tooling in Hyperledger Fabric 
+ 
+
+ 
+	I am an undergraduate student in the Department of Computer Science and Engineering at the Indian Institute of Technology Madras (IIT Madras), India. Being a Computer Science student, I like to keep learning about new technologies. I first learned about blockchains by reading about Bitcoin, and other blockchain platforms, in newspapers, magazines, and on the Internet. I was amazed at the way blockchains could utilize distributed ledgers to eliminate the need for trusting third-parties in transactions! More recently, my uncle told me about the Hyperledger Summer Internship Program. I viewed this as a great opportunity to work on a project relating to blockchain technology, the talk of the town these days! During this internship, I am going to be working on a small portion of the integration of EVM (Ethereum Virtual Machine) into Hyperledger Fabric. This project has really interested me because I will get to learn about two different blockchain platforms, Hyperledger Fabric and Ethereum, and understand their similarities and differences. Moreover, this is the first time I will be engaging in open source development, and I am pretty sure this will be a great learning experience for me!
+	Blockchains have the potential to completely change the way businesses, governments and societies function. I envisage a future where money-related transactions will be carried out in real time using blockchains. Tracking the movement of goods in the supply chain will become completely transparent. Each person will have a unique digital ID on the blockchain, which can be used not only for authentication on a global scale, but also to keep personal information safe and secure. But, in order to live up to its potential, blockchain technology will have to deal with challenges such as scalability, regulations, and so on. To incorporate blockchain technology into their current legacy framework, companies will have to do a complete revamp,  which will obviously be very expensive. For widespread acceptance of blockchains, a change in mindset of the public will also be required. If we are able to come up with ways to deal with these problems, blockchains will surely revolutionise the world!
+	In today’s world, there is a lot of corruption in business transactions. Bribing and under-the-table dealings have become very common. Many times, people who are supposed to receive money don’t actually receive it, as it is pocketed by some middle-man. Blockchains provide a distributed ledger to store information about transactions in a tamper-proof manner. So, blockchains can be incorporated into businesses, making all transactions completely transparent. Every transaction can be seen publicly, which will discourage people from taking bribes, or pocketing others’ money. And, wrongdoers cannot try to cover up their shady transactions by trying to change the contents of the ledger, as they will surely be caught by others on the blockchain during the verification process. Thus, I feel, blockchains may be an effective way to curb corruption!
+
+ 
+Ahmad Zafar
+ 
+Pursuing a Masters degree in Computer Science at Information Technology University in Pakistan
+ 
+Hyperledger Intern Project: Running Solidity Smart Contracts on Hyperledger Fabric or Vice Versa
+ 
+
+ 
+	After completing my Bachelor degree in computer science, I started working in the industry for almost two years. But my future plan was something else. I wanted to do research in different fields of computer science. I explored different things, which are exclusively demanding related to my field. The specific field that attracts me a lot is blockchain. After discussing with fellow teachers in Information Technology University, I learned about the opportunity to be a Research Associate, working on blockchain technology. It was a great pleasure for me to work on my desired direction. Here I started my research on Hyperledger Fabric, in which I explore many things. My aim is to learn to write smart contracts in an efficient way, so that I can deploy applications on Hyperledger Fabric. The project that I selected enabled me to enhance my skills related to it.
+	In my country, Pakistan, most of the people involved in the computer science field do not know about blockchain. Until a few months ago, most of the people considered Bitcoin as blockchain. Many think that blockchain is only used for cryptocurrencies. But the truth is, blockchain can deal with storing and transmitting information, automating the purchase process, improving transaction flow, securing the supply chain, etc. Nowadays people are well aware of blockchain through seminars conducted at universities and industry level. And many companies have started working on it. Furthermore, in my university, ITU, a lab is being set up only for blockchain research. 35 to 40 people will be hired including research associates, Phd Students and experts. Blockchain is providing enhanced transparency, greater scalability and better security. For these reasons, people are traversing to it to achieve various innovations to increase profits and strengthen relationships across the supplier. And in the next five years blockchain will be commonly known to IT people.
+	Nowadays banks are using some middle organizations for getting services from other companies for scalability such as payments of utility bills, loading mobile accounts, transactions among cross banking, etc. For example, banks uses a middle organization for telecom services to recharge the mobile account. Blockchain can eradicate the middle organization from the banking system. We can use Hyperledger Fabric channels, and shared ledger and smart contracts for this purpose. This leads to a decrease in time, extra charges and improves traceability of transactions.
+
+ 
+Sanchay Mittal
+ 
+Pursuing a Bachelor’s degree in Computer Science at BML Munjal University in India
+ 
+Hyperledger intern project: UTXO Transactions in Iroha
+ 
+
+ 
+	I first heard about blockchain from my brother Sachin Mittal. It’s astonishing features like distributed, decentralised, shared, authenticated, auditable, immutable and many more fascinated me and drove me to understand the very depth of this technology. Learning more about Bitcoin and other cryptocurrencies, I got to learn its limited implementation in the financial exchange. But, with the advent of Ethereum, things changed. Smart contracts showed the pathway of automating and regulating industries on DLTs. But many restrictions such as the principle of hierarchy of any organization were compromised and every network started its own cryptocurrency just to fabricate itself with the name ‘blockchain’. The problem was solved by Hyperledger Iroha, which is a permissioned blockchain with prebuilt commands hence easy to incorporate into infrastructural projects requiring DLTs. My project allows me to understand this very innovative technology and to add a new feature, a UTXO based transaction model that is currently used by bitcoin
+	We are witnessing the beginning of a new chapter in human history, just like when the internet came along and changed so many aspects to the way we used to live. Based on the current rate of evolution, I believe blockchain solutions could reach their full potential in the next five years. The maturity of blockchain has started to soar, its development is starting to have a material impact on every individual. The true nature of equality is here, which means of power is changing, thinking is changing. Blockchain and its development are starting to have a material impact on everyone’s life. Governments have already stated that they have much interest in blockchain technology and they want to learn more about its development for adapting it to their local financial systems. Unlike the dot-com bubble, I think blockchain technology is here to stay and it will be adopted by almost every field globally. The global leaders in government, finance, banking, IoT, supply chain, manufacturing, technology are acknowledging its potential.
+	The issue I hope blockchain can solve is our centralized internet and social networks. People, without even blinking an eye, sign and agree to privacy policies that give the mainstream companies the power to use their data in any way they see fit. Privacy and security of individuals depend on their behavioural data which can be hacked (Experian) or misused (Cambridge Analytica). With blockchain, users will be able to choose whom to show their  content to and be able to set their own restrictions while determining how and where it gets distributed. They’ll also have full control of their private data. No more storing it on centralized servers and losing it when these servers go down or when their security gets breached.
+
+ 
+We’re happy to welcome such a solid group of young people to the community and look forward to seeing all that they contribute. We hope you join them in the effort by contributing to Hyperledger projects. You can plug into the Hyperledger community at github, Rocket.Chat the wiki or our mailing list. As always, you can keep up with what’s new with Hyperledger on Twitter or email us with any questions: info@hyperledger.org.
+ 
+Be sure to check back for the second post in this series that will highlight the other six interns we will have this summer! 
+ 
+ 
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

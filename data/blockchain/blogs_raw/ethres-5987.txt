@@ -1,0 +1,317 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How many nodes need to collude to harm Casper or Sharded Eth? - Economics - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      How many nodes need to collude to harm Casper or Sharded Eth?
+    
+
+
+      
+          
+            
+              
+              
+                Proof-of-Stake
+              
+            
+            
+
+
+
+            
+              
+              
+                Economics
+              
+            
+            
+      
+
+        
+
+            
+
+            
+              
+                Equilibrium94
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 16, 2019,  9:36pm
+                  
+                  
+
+1
+              
+            
+            
+              How many and can you explain why? (I’m familiar with big O notation) Thanks!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                adlerjohn
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    August 17, 2019,  1:24am
+                  
+                  
+
+2
+              
+            
+            
+              2/3+1 of 128 i.e., 86 validators, of 32 ETH each.
+
+How committee size for shards is determined:
+
+
+  
+      
+      Medium – 15 Jul 19
+  
+  
+    
+
+
+Minimum Committee Size Explained
+
+
+How many validators sampled can make a committee safe?
+
+
+  Reading time: 4 min read
+    
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+How to bribe said committee:
+
+
+  
+      NEAR Protocol – 24 Oct 18
+  
+  
+    
+
+
+How Unrealistic is Bribing Frequently Rotated Validators? - NEAR Protocol
+
+
+Many proposed blockchain protocols today use some sorts of committees to propose and validate blocks. The committees are at the…
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Equilibrium94
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 17, 2019,  5:00pm
+                  
+                  
+
+3
+              
+            
+            
+              Thanks! And and are the validators chosen pusdo randomly? And how often are they rotated out?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 18, 2019,  5:16am
+                  
+                  
+
+4
+              
+            
+            
+              They are rotated once per epoch, with a lookahead period of one epoch.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

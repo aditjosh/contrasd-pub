@@ -1,0 +1,112 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Performance Analysis and Benchmarking of Besu using Caliper with Complex Workloads
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Mentorship Spotlight: Performance Analysis and Benchmarking of Besu using Caliper with Complex Workloads
+
+        
+
+        
+           Written by Suyash Nayan | Jan 11, 2024 5:00:00 PM 
+        
+
+        
+          Introduction
+
+
+My recent mentorship journey with Hyperledger Foundation has been an enlightening path of growth, learning and meaningful contributions to the Hyperledger ecosystem. Working with mentors from Web3 Labs, I had the opportunity to delve deep into the world of Blockchain Performance Analysis, focusing on Hyperledger Besu.
+
+What I worked on:
+
+Hyperledger Besu, a key project under the vast umbrella of Hyperledger Foundation, is known for its robustness in private blockchain networks. My primary goal was to perform an exhaustive performance and benchmarking analysis of Besu, particularly in private networks like QBFT, IBFT, and CLIQUE. Utilizing Hyperledger Caliper, a performance benchmarking tool, the project aimed to push the boundaries of Besu’s performance, measuring aspects such as transaction throughput, latency, and resource utilization.
+
+My Role and Responsibilities
+
+During my mentorship, I was immersed in coding and research, with a focus on:
+
+	Identifying strengths and weaknesses of Hyperledger Besu in various configurations.
+	Implementing support for more complex workloads like ERC20 and ERC721 tokens.
+	Analyzing the performance metrics and compiling them into a comprehensive report.
+
+
+Tools and Technologies
+
+The project primarily revolved around:
+
+	Hyperledger Besu: Understanding its core functionalities in private blockchain networks.
+	Hyperledger Caliper: Benchmarking the performance of Besu against various workloads.
+	Java and Javascript
+	Complex workloads starting from a basic ERC-20 token to a complex Uniswap functionality.
+
+
+Achievements & Learnings:
+
+	Benchmarking Expertise: Gained hands-on experience in the niche area of blockchain performance benchmarking.
+	Deep Dive into Hyperledger Besu and Caliper: Acquired in-depth knowledge and practical experience with these tools.
+	Programming Prowess: Enhanced my Java and JavaScript skills through real-world applications.
+	Technical Writing: Learned to articulate technical research and findings effectively.
+	My PRs to Besu and Caliper can be found here: Besu, Caliper
+
+
+The Impact
+
+This project not only provided valuable insights into Hyperledger Besu’s performance but also paved the way for future optimizations and enhancements to Besu. The benchmarks and analysis conducted will serve as a reference point for developers and researchers in the blockchain community.
+
+What I gained from working with my mentors:
+
+I extend my heartfelt gratitude to my mentors, Nischal Sharma, George Tebrean and Christian Felde, for their invaluable guidance, support, and expertise throughout this journey. They were always ready to clear even the smallest of my doubts and have helped me a lot throughout the internship.
+
+What comes next:
+
+With the knowledge and experience gained, I am eager to explore more challenges in the realm of blockchain technologies, contributing to innovative solutions in decentralized identity and digital trust.
+
+Conclusion
+
+My mentorship with Hyperledger Foundation has been a transformative experience, equipping me with skills, insights, and a deeper appreciation for the collaborative spirit of the open-source community. As I move forward, I carry with me the lessons learned and the excitement for future endeavors in this dynamic field.
+
+Connect with me:
+GitHub: github.com/7suyash7
+LinkedIn: Suyash Nayan
+
+
+ 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

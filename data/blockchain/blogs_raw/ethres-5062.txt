@@ -1,0 +1,184 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Threshold Encryption using BLS? - Security - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Threshold Encryption using BLS?
+    
+
+
+      
+          
+            
+              
+              
+                Security
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 26, 2019, 11:47am
+                  
+                  
+
+1
+              
+            
+            
+              At Skale, we need to do threshold encryption in our PoS chains in order to provide protections against front running (essentially a transaction is submitted to the chain in encrypted form, and then decrypted after it has been committed.
+
+We already have BLS signatures implemented in a way compatible to precompiles from ETH 1.0. I am looking for a spec to implement threshold encrypt/decrypt using the same primitives and pairing used in BLS signatures.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                lithp
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 24, 2022,  4:52am
+                  
+                  
+
+2
+              
+            
+            
+              Years have passed but for future travellers this scheme seems relevant to the question. Using something like this anyone can encrypt their transactions and a threshold of peers is required to decrypt those transactions and it all happens with the BLS machinery.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

@@ -1,0 +1,612 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Validator Nodes Recommendations for HL Besuâ€™s Incentive Program - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+	Besu Execution Client Incentive Program
+
+
+
+
+	[WIP] Proposal #4
+
+
+
+
+
+	Mainnet activity log H1 2022
+
+
+
+
+
+	Mainnet activity log H2 2022
+
+
+
+
+
+	Near-Term Besu Incentive Program proposal
+
+
+
+
+
+	Proposal #3
+
+
+
+
+
+	Proposal #3.5
+
+
+
+
+
+	Second Incentive Proposal
+
+
+
+
+
+	Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+
+
+
+
+
+
+
+	Grants
+
+
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+
+	Grace Hartley (Deactivated)
+
+
+
+
+
+Owned by Grace Hartley (Deactivated)
+
+
+Last updated: Jan 07, 2022
+
+
+
+
+
+
+
+
+
+
+
+
+Below are high-level recommendations around set up of validator nodes to participate in the Incentive Program.
+Security Best Practices
+Security needs to be the first priority when running validator nodes and funds need to be protected. A few recommended security best practices include:
+	Restrict management access only to authorized users with MFA authentication and access auditing
+	Alerting/Monitoring Nodes
+
+Hardware Recommendations
+	CPU and Memory requirements
+	Storage capacity requirements
+	iOps responsiveness
+	Network requirements
+
+Skills/People Recommendations
+Need at least one 24/7 on call resource who is dedicated to monitoring each validator node. There responsibilities include:
+	Monitoring the alerts
+	Ensuring the nodes are ready for the hard forks
+	Ensure proposals arenâ€™t missed
+
+This resource should have experience in DevOps, Ethereum hard forking, cloud networks.Â 
+Costs to Consider
+There are several costs to consider that are required upfront.
+	Hiring resourcesÂ 
+	Cloud provider costs
+	Commercial licenses for monitoring, logging, and other production grade licenses
+
+Sample Network DesignÂ 
+
+
+
+The above configuration in a cloud provider for prater/goerli for 2 validator nodes:
+	Bastion - t2.micro
+	Reporting/metrics - r5.large, 1gb EBS
+	2 Validator nodes
+t3a.large, storage: gp2, 500gb 1500 iops
+
+Roughly 30% of the cost being storage, 60% of the cost being compute, and 10% network transfer.
+
+Mainnet will require more compute resources, we currently use i3.xlarge for besu-only mainnet canary nodes.Â  Mainnet will also require more storage, recommended minimum 2Tb.Â  The monthly cost will increase over the goerli/prater configuration in accordance with the increased resource sizes (CPU and storage).
+Timeline
+The program has already started for the majority of the Ethereum clients participating. To adequately prepare for the Merge, validator nodes need to be ready and participating in the pre-Merge activities. Today, by delaying participation in the program, we are missing out on roughly 17 eth (~$65k) per month in rewards. If we miss The Merge deadline, we will be missing substantially more in additional transaction fees, projected toÂ  be initially as high as ~96 eth/month. The Merge is scheduled for mid-2022.Â 
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Besu Execution Client Incentive Program
+Besu Execution Client Incentive Program
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Near-Term Besu Incentive Program proposal
+Near-Term Besu Incentive Program proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Second Incentive Proposal
+Second Incentive Proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-12-30 Besu Contributor Call (off cycle)
+2021-12-30 Besu Contributor Call (off cycle)
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-12-21 Besu Contributor Call
+2021-12-21 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal #3.5
+Proposal #3.5
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 36, "requestCorrelationId": "e6b03d12ebb949e09a525406919a291b"}

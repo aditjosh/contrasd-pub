@@ -1,0 +1,873 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger identity community completes development of DID:Indy Method and advances toward a network of networks – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Decentralized Identity
+                            |
+                        
+                            Hyperledger Indy
+                            
+                        
+                    
+
+                
+                Hyperledger identity community completes development of DID:Indy Method and advances toward a network of networks
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        May 2, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                New Hyperledger Indy updates pave the way for verifiable credentials to be issued and read on different networks, affirming Hyperledger as the most advanced framework for interoperable, decentralized identity
+ 
+Earlier this year, the Government of British Columbia announced the “Indy DID Method Code With Us” challenge. The goals were to align the content that can be written in the DIDDocs published on Hyperledger Indy networks with the current World Wide Web Consortium (W3C) Decentralized Identifier (DID) Specification and to add a namespace element to DIDs (and other object identifiers) published on Hyperledger Indy networks, so users know on which of the many Hyperledger Indy networks the DID was created.
+ 
+Hyperledger Indy is an open source project housed at the Hyperledger Foundation providing the codebase to create distributed networks, purpose-built for SSI and verifiable credentials. Networks built on Indy are some of the most mature and tested networks with self-sovereign identity (SSI) capabilities; but since they were developed before the publication of the World Wide Web (W3C) DID Specification, they needed to be brought into alignment. 
+ 
+While the Indy DID Method began as a community development effort within Hyperledger Indy, it needed a push to completion; hence the Code With Us challenge from the government of British Columbia. Indicio was awarded the challenge and went on to develop and complete several of the remaining components.
+
+The result is that a credential issued using any Hyperledger Indy network (such as Indicio, Sovrin, Findy, Bedrock, IdUnion, etc.) can be processed by any verifier. This is because the objects in the verifiable presentation reference the Hyperledger Indy network used by the issuer. The Indy:DID Method lays the groundwork to make this possible.
+ 
+This advancement in interoperability is significant. While issuers still need to be anchored in the specific Indy ledger of their choice, holders can seamlessly receive verifiable credentials from issuers rooted in different Hyperledger Indy networks, and be able to create verifiable presentations from any combination of those credentials. Likewise, verifiers will be able to verify presentations that include claims derived from credentials rooted in multiple Indy networks. The Indy:DID Method paves the way for Hyperledger Indy credentials to scale by allowing Indy networks to seamlessly interoperate, creating a global “network of networks” effect.
+ 
+With the groundwork complete, networks and agent frameworks now need to incorporate the Indy:DID Method. This community adoption will increase the viability of the Indy and Aries project stack and position it to be the globally dominant way to issue and share verifiable credentials in a multi-ledger world.
+ 
+To learn more about did:indy and the next steps for implementation, you are welcome to join the leading contributors from Indicio and BCGov at the Hyperledger Identity Implementers Call taking place, Thursday, May 5, 8:00 AM US Pacific (3pm UTC)
+ 
+Note: 
+ 
+The Indicio team would like to thank BC Gov for funding this work and Dominic Wörner, another contributor to the Code With Us challenge, for his work on Indy VDR.
+ 
+	Where to find the work:
+  	PR to Indy Node: https://github.com/hyperledger/indy-node/pull/1740
+	PR to Indy VDR: https://github.com/hyperledger/indy-vdr/pull/84
+	Indy HIPE about did:indy: https://github.com/hyperledger/indy-hipe/tree/main/text/0164-did-indy-method
+	Demo: https://github.com/Indicio-tech/did-indy-demo
+
+
+	Where to ask questions:
+  	Daniel Bluhm (Indy Node questions)
+    	Discord: dbluhm#9676
+	GitHub: https://github.com/dbluhm
+
+
+	Dominic Wörner (Indy VDR questions)
+    	Discord: domwoe#9301
+	https://github.com/domwoe
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

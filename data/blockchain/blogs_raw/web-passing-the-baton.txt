@@ -1,0 +1,844 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Passing the Baton – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Passing the Baton
+ 
+                
+                    Brian Behlendorf
+                    |
+                    
+                        Oct 13, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                ___
+Related stories:
+– Writing the Next Chapter for Hyperledger by Daniela Barbosa, Executive Director at Hyperledger and General Manager, Blockchain, Healthcare and Identity for the Linux Foundation
+– Hyperledger is almost six years old, but who’s counting by Robert Palatnick, Managing Director and Global Head of Technology Research and Innovation, DTCC, and Chair of the Hyperledger Governing Board
+___
+ 
+Today, I’m very pleased to announce that I’m passing the Hyperledger baton to Daniela Barbosa. Daniela has co-led the project with me for four years, working closely with not only each of our sponsoring members but also the TSC and most core maintainers, all of the SIG chairs and volunteers, and pretty much everyone else in the enterprise blockchain world. She knows perhaps better than anyone else on the planet the potential in (and the challenges to) the use of blockchain and distributed ledger technologies in the enterprise. She is the perfect choice to take the executive director role and drive the next chapter of the Hyperledger story.
+ 
+I jumped into Hyperledger in early 2016, not long after its founding and first code releases. I’d been following the crypto and blockchain space for a few years with a profound sense that something was missing. I felt certain there had to be a way to achieve the vision of a shared system of record, governed by consensus and programmable logic, that enables parties who don’t totally trust each other to be able to trust in the system – without requiring massive energy consumption and financial speculation as the underlying driver. The crisis of trust in governance institutions was well underway in 2016 and has accelerated since. Meanwhile, the Internet has only become more centralized, so much so it’s sometimes hard for most technologists to even understand what a distributed system looks like or why it should exist. It is just too easy to have someone “trusted” run a big central database – ignoring the huge and inevitable business, political, and social costs that come from being required to trust a central system. These costs become clearer every day.
+ 
+In Hyperledger, I saw a community of developers taking new approaches that addressed many of these concerns, even while learning from – and eventually even connecting directly into – the innovation and good computer science taking place in the public ledger space. I saw developers passionate about using this technology to make markets more transparent and fair and auditable; to make supply chains more traceable (most of the Sustainable Development Goals can’t be achieved without that!); and soon after I joined, to pursue a very different approach to digital identity that is more distributed, human-rights-friendly, and relatable to end-users than the monstrous centralized-login approaches everywhere else. 
+ 
+I felt an edge to this not unlike the early days of Open Source software, even before the term was coined and defined in 1998. Early OSS developers and advocates were seen as loony idealists living a fantasy gift-economy world, when the conventional wisdom was that altruism didn’t scale and free-riders would destroy it. Strong personalities led to salacious headlines, lawsuits, and claims that OSS was a “cancer.” Meanwhile real companies were quietly using it. Then  many started to support it, and then to push updates back upstream. Soon they were leading new initiatives in all sorts of domains even us idealists didn’t imagine, like software for cars and the energy grid. Open Source software culture says: we’re all going to go further, and get there faster, if we work together in a fair and open manner, especially as peers. Distributed ledger technology is in so many ways the embodiment of that ideal implemented directly into database and network architecture, and no less ambitious in its desire to reconstruct how we build software to serve our own needs and serve society at the same time. 
+ 
+In these five years we’ve gone from having a couple of good ideas to having a set of DLT platforms that collectively represent the vast majority of enterprise blockchain deployments around the world. Enterprise blockchain is no longer a contradiction in terms; or an idea yet to be proven. The Forbes Blockchain 50, the Deloitte report on enterprise blockchains, and our own conversations with and surveys of members indicate a very wide footprint across so many industries. When the majority of Central Bank Digital Currency projects are being piloted on a Hyperledger ledger, that’s a remarkable signal. 
+ 
+We have also built an amazing community of communities across our projects, a whole far greater than the sum of its parts. The level of transparency and space for spirited debate can feel exhausting at times! But we know it leads to better software and better communities in the end.
+ 
+While I will be taking up the mantle of executive director of the Linux Foundation’s new OSSF project, I plan to stay involved with Hyperledger as a volunteer, advising Daniela and the staff and board and TSC and others on opportunities and threats I see out there. I’m enormously grateful to all of you for the opportunity to have served the community and its stakeholders these last five years. I know I’m leaving you all in terrific hands; I’m excited about the next five years and beyond! 
+ 
+— Brian Behlendorf, General Manager, Open Source Security Foundation, Linux Foundation
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,1076 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Specification for the Unchained Index Version 2.0 - Feedback welcome - #28 by quickBlocks - Execution Layer Research - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Specification for the Unchained Index Version 2.0 - Feedback welcome
+    
+
+
+      
+          
+            
+              
+              
+                Execution Layer Research
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023, 12:14am
+                  
+                  
+
+12
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+If my understanding is correct there is a small risk of correlational doxxing in this setup as someone could look at which shards a user downloaded, but someone who was concerned about this could simply download all of the shards presumably?
+
+
+
+
+Or they could build the index themselves from their own locally running node.
+
+I’m not sure how they would be doxxing themselves. There’s 2,000,000 appearance records in each chunk, so even if they downloaded 10 larger portions, there would be a massive number of addresses in all 10 making it impossible to identify exactly which one that particular user was. (I think…open to discussion here.)
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  6:09am
+                  
+                  
+
+13
+              
+            
+            
+              
+
+
+
+ quickBlocks:
+
+
+There’s 2,000,000 appearance records in each chunk, so even if they downloaded 10 larger portions, there would be a massive number of addresses in all 10 making it impossible to identify exactly which one that particular user was.
+
+
+
+
+How many chunks are generated per year (on average)?  My suspicion is that the number of accounts in a particular sub-set of chunks approaches 1 quite rapidly.  Keep in mind that any accounts that are in the same chunks as your account while also being in others can be removed from the set.  This could be partially mitigated by having the client download a bunch of random chunks along with the ones they actually want, but that is more bandwidth/time for the person building the local account history.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  6:09am
+                  
+                  
+
+14
+              
+            
+            
+              
+
+
+
+ quickBlocks:
+
+
+they can grab the IPFS of the manifest from the smart contract.
+
+
+
+
+I believe this step is trusted?  The user can choose who to trust, but in the current design they have to trust at least one of the publishers?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                Killari
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  8:14am
+                  
+                  
+
+15
+              
+            
+            
+              I understand this can be used to fetch users erc20/erc721 logs. How do you identify addresses in these logs? As the data in logs can be what ever, and if you dont have contracts ABI, you cannot be sure what is an address and what is something else.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  8:50am
+                  
+                  
+
+16
+              
+            
+            
+              
+
+
+
+ Killari:
+
+
+I understand this can be used to fetch users erc20/erc721 logs.
+
+
+
+
+For clarity, I believe this will just tell you that a user was part of that transaction, but it won’t tell you that it was an ERC20/ERC721 transfer.  Once the dapp has the transaction, it is up to it to decode the log to figure out what happened.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  1:39pm
+                  
+                  
+
+17
+              
+            
+            
+              This is such an excellent question and EXACTLY the one we answered in our work. Of course, theoretically, it’s impossible, but we do an “as best as we can” approach. Please read the sections of the document mentioned above called “Building the Index and Bloom Filters.” The process is described in excruciating detail there.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  1:43pm
+                  
+                  
+
+18
+              
+            
+            
+              The index itself is SUPER minimal on purpose, so it stays as small as possible. With the index, you can then use the node itself as a pretty good database. (We claim the only thing missing from the node to make it a passable database is an index.)
+
+To get the actual underlying details of any given transaction appearance, we have a tool called chifra export which has many options to pull out any particular portion of the node data given the list of appearances.
+
+For example, we have chifra export <address> --logs --relevant which gets any log in which the address appears. Another example is chifra export <address> --neighbors which shows all addresses that appear in any transaction that the given address appears (helps find Sybils for example).
+
+Upshot – the index is only for identifying appearances. Other tools can be used to get the actual underlying details for further processing.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  1:55pm
+                  
+                  
+
+19
+              
+            
+            
+              Of course, it depends on usage. We tried to target about 2 chunks per day, but to be honest, I’ve not looked at it for a while. The number of included appearances in a chunk is configurable, and to be honest, we’ve not spent much time on this. 2,000,000 was an arbitrary choice that balances the number of times a chunk was produced per day, the size of the chunks in bytes (we tried to target about 25MB – also arbitrary). There’s a lot of opportunity to adjust/optimism, but it’s not been our focus due to resource limitations.
+
+Concerning being able to doxx someone given which chunks they download. I tried to do some back of the envelope calcs, and it was a bit beyond my mathematical abilities. I too, however, started to think it might be easier than it seems.
+
+Currently, there are about 4,000 chunks for Eth mainnet.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 17, 2023,  2:11pm
+                  
+                  
+
+20
+              
+            
+            
+              
+
+
+
+ quickBlocks:
+
+
+Upshot – the index is only for identifying appearances. Other tools can be used to get the actual underlying details for further processing.
+
+
+
+
+Hmm, does this mean that to get at the appearances in traces you would need a full archive node?  Is there a way to say “don’t include traces in the index, because I can’t reasonably recover them later”?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 20, 2023, 11:20pm
+                  
+                  
+
+21
+              
+            
+            
+              If the user wants to access traces (or any data older than XXX blocks, for that matter), they will always need access to an archive node. We don’t pull any data from the chain other than appearances. This is by design in order to minimize the size of our extracted database. The node itself is a pretty good database if it has an index. But, all is not lost, with a good index, even a remote RPC endpoint is quite usable. In fact, the amount of queries one must make is greatly reduced. Plus, all of our other tools have a built-in, client-side cache, so one need never make a second query of the remote RPC making it even better. The single most important goal, from the start, was that things worked on small machines. Every byte counts.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  4:44am
+                  
+                  
+
+22
+              
+            
+            
+              
+
+
+
+ quickBlocks:
+
+
+If the user wants to access traces (or any data older than XXX blocks, for that matter), they will always need access to an archive node.
+
+
+
+
+Only traces require an archive node.  Everything else (block header, transactions, receipts) is available with a full node (block history, transaction history, receipt history).
+
+
+The single most important goal, from the start, was that things worked on small machines.
+
+
+
+If you require an archive node, then this doesn’t work on a small machine as archive nodes don’t work on small machines.
+
+I think your model is generally good, but I’m now quite concerned about the inability to disable the trace requirement.  You would catch probably 99% of appearances without traces (just by looking at headers, transactions and receipts), and the disk requirement of a full node is about an order of magnitude lower than the disk requirement of an archive node.  While I often complain about the size of Ethereum full nodes and the fact that most users cannot run them, requiring an archive node essentially forces you into having a dedicated server.
+
+The use case I’m most interested in is the ability for a user to get their transaction history (appearance history would be even better) without needing to outsource to a third party like Etherscan or run their own multi-terabyte servers with indexes.  I feel like your proposed solution here is really close to providing that, but only if traces can be either disabled or flagged in the index so they can be ignored by the vast majority of people who don’t have Ethereum archive nodes.
+
+Note: I am not a fan of the solution of “just use a third party hosted archive node” as that is a point of centralization that I think we should try to avoid, and I’m also not a fan of “just by a 4TB drive to store Ethereum state history on” as that puts the solution out of reach of essentially all consumers (even consumers with high end computers).
+
+The above is all doubly true if you want the index to be built and maintained within existing clients.  If it only works with an archive node, I think that is a non-starter as the assumption is that almost no-one runs an archive node, so the index wouldn’t be useful to all of those people.
+
+Do you have any data on what percentage of appearances would be missed if you dropped the transaction tracing?  I would be curious to see that data with “app” contracts filtered out (e.g., ignore Uniswap internal stuff).  It would be even cooler if we could somehow figure out how to filter out bots (e.g., MEV bots).  My guess is that once you filter out apps and bots, the number of addresses that appear only in traces and not in transaction body or events, is vanishingly small and not worth the archive node requirement.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:13pm
+                  
+                  
+
+23
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+Only traces require an archive node.
+
+
+
+
+Historical state as well, which is important to us as “reconciliation of historical state changes” is (one of) our “raison d’etre”.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:14pm
+                  
+                  
+
+24
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+If you require an archive node, then this doesn’t work on a small machine as archive nodes don’t work on small machines.
+
+
+
+
+This is definitional. By small machine, I mean a late-model iMac laptop (M1 or M2) with at least a four-TB hard drive (8TB preferred). Running either Reth or Erigon fits on either of these machines, as I demonstrated in the above-referenced video.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:16pm
+                  
+                  
+
+25
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+I think your model is generally good, but I’m now quite concerned about the inability to disable the trace requirement.
+
+
+
+
+Because at its base we only index “appearances,” the end user can determine for themselves if they need traces. We certainly need them to create the index in a way that is as complete as possible (because without them, one simply cannot reconcile state changes). But, the end user can choose to ignore appearances that don’t appear in “regular places” (for example, as part of a logged event). Also, our scraper can be very easily modified to run against a node that does not provide traces. It would be a much-reduced index, but it would work perfectly well.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:19pm
+                  
+                  
+
+26
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+You would catch probably 99% of appearances without traces (just by looking at headers, transactions and receipts)
+
+
+
+
+I’m not at all sure this is the case. (We should actually do a study of this, but we’ve not yet done that.) I suspect it’s much lower than that. In fact, the reason we had to “resort” to traces is because nothing reconciled without them. And, I think, this is exactly the reason why automated off-chain accounting (or tax reporting) is in such an abysmal state. People ignore traces and things don’t come into balance (off-chain).
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:21pm
+                  
+                  
+
+27
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+I feel like your proposed solution here is really close to providing that, but only if traces can be either disabled or flagged in the index so they can be ignored by the vast majority of people who don’t have Ethereum archive nodes.
+
+
+
+
+Totally agree here. In fact, so much so, that I made this: chifra scrape - should allow for building an index that ignore traces · Issue #3408 · TrueBlocks/trueblocks-core · GitHub.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:23pm
+                  
+                  
+
+28
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+Note: I am not a fan of the solution of “just use a third party hosted archive node” as that is a point of centralization that I think we should try to avoid, and I’m also not a fan of “just by a 4TB drive to store Ethereum state history on” as that puts the solution out of reach of essentially all consumers (even consumers with high end computers).
+
+
+
+
+Again, I couldn’t agree more. I think in the end what we will find is that the state needs to be sharded, so, in much the same way that we “shard and share” the Unchained Index via chunking and a manifest on IPFS, the state will be chunked, sharded, and shared on some sort of content-addressable store as well. (And, it can use the index to get to the right portion of the state.)
+
+There’s a recent, related post about that here: Trustless access to Ethereum State with Swarm
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:25pm
+                  
+                  
+
+29
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+The above is all doubly true if you want the index to be built and maintained within existing clients. If it only works with an archive node, I think that is a non-starter as the assumption is that almost no-one runs an archive node, so the index wouldn’t be useful to all of those people.
+
+
+
+
+Two things: (1) I agree, (2) the index can be used by people without an archive node, they would just have to ignore those “appearances” that we inserted from traces as not applicable if they couldn’t retrieve traces. It would still work, it would just be less effective.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  5:27pm
+                  
+                  
+
+30
+              
+            
+            
+              
+
+
+
+ MicahZoltu:
+
+
+Do you have any data on what percentage of appearances would be missed if you dropped the transaction tracing? I would be curious to see that data with “app” contracts filtered out (e.g., ignore Uniswap internal stuff). It would be even cooler if we could somehow figure out how to filter out bots (e.g., MEV bots). My guess is that once you filter out apps and bots, the number of addresses that appear only in traces and not in transaction body or events, is vanishingly small and not worth the archive node requirement.
+
+
+
+
+Two issues from one post. Nice!
+
+
+  
+
+      github.com/TrueBlocks/trueblocks-core
+  
+
+  
+    
+  
+	  
+  
+
+
+  
+    
+      unchained index - study the characteristics of the appearances
+    
+
+
+    
+      
+        opened 05:27PM - 21 Nov 23 UTC
+      
+
+
+
+      
+        
+          
+          tjayrush
+        
+      
+
+    
+
+
+    
+    
+
+  
+
+
+
+
+  
+    Quoting from this post: https://ethresear.ch/t/specification-for-the-unchained-i…ndex-version-2-0-feedback-welcome/17406/22
+
+```
+Do you have any data on what percentage of appearances
+would be missed if you dropped the transaction tracing?
+I would be curious to see that data with “app” contracts
+filtered out (e.g., ignore Uniswap internal stuff). It
+would be even cooler if we could somehow figure out how
+to filter out bots (e.g., MEV bots). My guess is that once
+you filter out apps and bots, the number of addresses that
+appear only in traces and not in transaction body or events,
+is vanishingly small and not worth the archive node requirement.
+```
+
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 21, 2023,  6:34pm
+                  
+                  
+
+31
+              
+            
+            
+              
+
+
+
+ quickBlocks:
+
+
+the index can be used by people without an archive node, they would just have to ignore those “appearances” that we inserted from traces as not applicable if they couldn’t retrieve traces
+
+
+
+
+Does the index indicate whether a given entry comes from a trace vs somewhere else?  Or would you have to attempt to look up the transaction and then assume that if the address wasn’t present it means it was in a trace you don’t have (and not a bug in the index)?
+
+If the index has that information then most of my complaints go away, other than the inability to initially build the index without an archive node, which can be solved by a “trusted syncing/trustless following” model.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+        ← previous page
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

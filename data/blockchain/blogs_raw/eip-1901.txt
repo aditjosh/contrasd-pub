@@ -1,0 +1,414 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-1901: Add OpenRPC Service Discovery To JSON-RPC Services
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Standards Track: Interface
+    
+  
+  
+    
+      EIP-1901: Add OpenRPC Service Discovery To JSON-RPC Services
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Shane Jonas (@shanejonas), Zachary Belford (@belfordz)
+	Created	2019-02-25
+	Discussion Link	https://github.com/ethereum/EIPs/issues/1902
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+    	What is this?
+
+
+  
+	Motivation
+	Specification
+    	What is OpenRPC?
+	Use Case
+
+
+  
+	Rationale
+    	Why would we do this?
+	Alternative
+
+
+  
+	Implementation
+    	Tooling
+
+
+  
+	Resources
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+  
+    
+      
+      
+         What is this?
+      
+      
+    
+
+
+This is a proposal to add OpenRPC support to existing and future JSON-RPC services by adding the method rpc.discover to the projects JSON-RPC APIs, enabling automation and tooling.
+
+
+The OpenRPC Document and generated Documentation that specifies all the methods an EVM-based blockchain should implement can be found here.
+
+
+This was first proposed here as an ECIP, but the benefits of this kind of tooling is apparent across Bitcoin, Ethereum Classic, Ethereum and other JSON-RPC accessible blockchains.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+Although EIP-1474 outlines a JSON-RPC specification. Ethereum still lacks a machine-readable JSON-RPC Specification that can be used as the industry standard for tooling. This proposal attempts to standardize such a specification in a way that is versionable, and both human and machine readable.
+
+
+Ethereum clients can expose RPC endpoints with different method signatures and cause compatibility issues between clients.
+
+
+Developers need a reliable developer experience, and an industry standard way to describe Ethereum JSON-RPC 2.0 APIs.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+  
+    
+      
+      
+         What is OpenRPC?
+      
+      
+    
+
+
+The OpenRPC Specification defines a standard, programming language-agnostic interface description for JSON-RPC 2.0 APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. When properly defined via OpenRPC, a consumer can understand and interact with the remote service with a minimal amount of implementation logic, and share these logic patterns across use cases. Similar to what interface descriptions have done for lower-level programming, the OpenRPC Specification removes guesswork in calling a service.
+
+  
+    
+      
+      
+         Structure
+      
+      
+    
+
+
+This is the structure of an OpenRPC Document:
+
+
+
+
+
+JSON-RPC APIs can support the OpenRPC specification by implementing a service discovery method that will return the OpenRPC document for the JSON-RPC API. The method MUST be named rpc.discover. The rpc. prefix is a reserved method prefix for JSON-RPC 2.0 Specification system extensions.
+
+  
+    
+      
+      
+         Use Case
+      
+      
+    
+
+
+This is the vision for the use case of OpenRPC and how it would relate to a client implementation like multi-geth:
+
+
+
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+  
+    
+      
+      
+         Why would we do this?
+      
+      
+    
+
+Services need to figure out how to talk to each other. If we really want to build the next generation of automation, then having up to date libraries, documented APIs, and modern tools are going to provide easy discovery, on-boarding, and enable end user and developer interaction.
+
+
+Use cases for machine-readable JSON-RPC 2.0 API definition documents include, but are not limited to:
+
+
+	A common vocabulary and document will keep developers, testers, architects, and technical writers all in sync.
+	Server stubs/skeletons generated in many languages
+	Clients generated in many languages
+	Mock Server generated in many languages
+	Tests generated in many languages
+	Documentation Generation
+
+
+  
+    
+      
+      
+         Alternative
+      
+      
+    
+
+
+OpenRPC documents just describe JSON-RPC APIs services, and are represented in JSON format. These documents may be produced and served statically OR generated dynamically from an application and returned via the rpc.discover method. This gives projects and communities the opportunity to adopt tools, documentation, and clients outlined in the etclabscore/ethereum-json-rpc-specification before the rpc.discover method is implemented for a particular client.
+
+  
+    
+      
+      
+         Implementation
+      
+      
+    
+
+
+	Multi-Geth OpenRPC Discovery
+
+
+  
+    
+      
+      
+         Tooling
+      
+      
+    
+
+  
+    
+      
+      
+         Interactive Documentation Playground
+      
+      
+    
+
+
+You can view the interactive documentation here.
+
+
+OR
+
+
+Using rpc.discover via multi-geth, the playground can discover and display the documentation for the Ethereum JSON-RPC API:
+
+
+
+
+  
+    
+      
+      
+         Generated Client
+      
+      
+    
+
+
+The clients are generated from the OpenRPC Document openrpc.json outlined in this EIP, and can be used as an alternative to web3.js or ethers.js but for various languages:
+
+
+
+
+  
+    
+      
+      
+         Mock Server
+      
+      
+    
+
+
+The OpenRPC mock server provides a mock server for any given OpenRPC Document which allows testing without booting up a real network.
+
+
+
+
+  
+    
+      
+      
+         Resources
+      
+      
+    
+
+
+	Multi-Geth OpenRPC Discovery
+	EDCON 2019 talk on OpenRPC and The Future of JSON-RPC Tooling
+	etclabscore/ethereum-json-rpc-specification
+	open-rpc.org
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Shane Jonas (@shanejonas), Zachary Belford (@belfordz), "EIP-1901: Add OpenRPC Service Discovery To JSON-RPC Services [DRAFT]," Ethereum Improvement Proposals, no. 1901, February 2019. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-1901.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

@@ -1,0 +1,855 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Fabric Security Threats: What to Look For – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Hyperledger Fabric Security Threats: What to Look For
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Nov 18, 2021
+                    
+                
+
+            
+
+            
+            
+                Hyperledger Fabric is designed to enable secure collaboration between multiple organizations operating with limited trust. Despite the security improvements Hyperledger Fabric provides, deployments still require careful configuration and monitoring to ensure that they are operating securely. In this post, we will examine different types of threats that Hyperledger Fabric operators should consider and discuss how to mitigate them.
+ 
+As a permissioned blockchain, Hyperledger Fabric’s network threats differ from popular permissionless chains. For example, 51% attacks and network partitioning attacks are not as significant of a threat on permissioned networks because users are known, their activities can be monitored, and access is managed by access control lists. Some of these attacks are common to all distributed systems like Denial of Service (DoS) or consensus manipulation. Other attacks target specific components in a Hyperledger Fabric network, such as the Membership Service Provider (MSP).
+ 
+	Denial of Service: DoS attacks disrupt the network’s availability and are a threat to any distributed system. Many different attacks can result in denial of service, which makes it difficult to proactively prevent. This risk can be mitigated by collecting performance metrics, such as transaction throughput and latency, to detect compromised availability early on.
+
+ 
+	Consensus Manipulation: Attacks on the network consensus include DoS and transaction reordering attacks. Hyperledger Fabric currently only utilizes Crash Fault Tolerant (CFT) consensus algorithms, meaning it cannot tolerate any malicious actors. There is ongoing work on Byzantine Fault Tolerant (BFT) algorithms, which will be able to tolerate up to ⅓ of the network being malicious. Regardless of the consensus algorithm used, early detection of malicious behavior can mitigate this threat. Logging threat indicators, such as leadership elections and transaction latencies, is critical for detection.
+
+ 
+	MSP Compromise: A compromised MSP can be a significant Fabric-specific threat. The MSP is able to modify access control to the network and, if malicious, could deny service and perform sybil attacks. The MSP may be compromised by a rogue insider or through private key theft, which may only be detectable after exploitation. To mitigate this risk, it is important to follow best practices with key management. Logging MSP actions, such as certificate creation and revocation, can help detect malicious behavior in case of compromise. Alerting based on that logging results in early identification and remediation. 
+
+ 
+	Smart Contract Exploitation: While the cost of smart contract attacks is easier to quantify in cryptocurrencies, where there is measurable monetary loss, such attacks in Hyperledger Fabric can compromise business logic and network performance. In addition to ordinary programming logic bugs, common errors can also stem from inappropriately handling concurrency or nondeterminism. To mitigate this risk, smart contracts should be designed with security in mind at the onset by following a secure software development life cycle framework. Before deploying, smart contract security should be assessed with smart contract analysis tools like the Hyperledger Lab Chaincode Analyzer to detect potential risks. For more sensitive applications, consider an external security audit or formal verification. Finally, the performance and usage of the smart contract should be monitored once deployed in order to detect anomalous behavior.
+
+ 
+Proactive measures to mitigate these security threats are only part of a secure deployment. It is just as important to continuously monitor the performance and security of the network. Many of these threats can only be detected by correlating data across the blockchain network, organization infrastructure, and threat intelligence providers. It can be a challenge to ingest and act on this large amount of diverse data, so be sure to account for scalability and analytic capabilities when securing your environment.
+ 
+For more details on how to collect and act on Hyperledger Fabric data to minimize downtime, reduce the meantime to detect and respond to incidents, tune into my webinar on Hyperledger Fabric security monitoring on Wednesday, December 1, 1:00 pm EST.
+ 
+
+ 
+Recorded video
+ 
+ 
+ 
+ 
+  
+  
+    
+     
+   
+
+   
+ 
+ 
+ 
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

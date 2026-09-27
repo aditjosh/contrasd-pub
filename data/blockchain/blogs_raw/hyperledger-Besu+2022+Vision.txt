@@ -1,0 +1,635 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu 2022 Vision - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Besu 2022 Vision
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Besu 2022 Vision
+
+	Danno Ferrin
+
+
+
+	Sorn Maksumic (Deactivated)
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Sept 14, 2022 by Sorn Maksumic (Deactivated)
+
+
+
+
+
+
+
+
+
+
+Hyperledger Besu is Hyperledger's Principal Ethereum project. It is focused around 3 key pillars: a fully functional client for public networks, a customizable client for private networks, and libraries to support the use of Ethereum technologies in Besu and other projects.
+	Fully Functional Client for Public Networks
+Besu explicitly and "out of the box" supports the following networks, including planned future upgrades
+	Ethereum Mainnet	Pre-Merge Ethash Proof-of-Work Client
+	Post-Merge Execution Client, pairablre with any fully-functional Consensus Client such as Lighthouse, Loadstar, Nimbus, Prysm, or Teku
+
+
+	Ethereum Mainnet Testnets
+	Ethereum Classic
+	Ethereum Classic Testnets
+
+
+	Customizable Client for Private Networks	Multiple Consensus Engines such as Clique, IBFT2, or QBFT.
+	Optional private transaction technology
+	Optional Integration with Privae Enclaves such as Tessera
+	OptionalÂ  Node Access
+
+
+	Libraries to support the use of Ethereum technologies	EVM Engine Library
+
+
+
+
+
+To support these 3 pillars are the following 6 systems.
+	EVM Engine
+	Consensus Protocols
+	Peer-to-peer communications
+	JSON-RPC Communications
+	Data Storage
+	Block Production
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Besu
+Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020 Q2 Hyperledger Besu
+2020 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2020 Q4 Hyperledger Besu
+2020 Q4 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2021 Q4 Hyperledger Besu
+2021 Q4 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Operate and Extend Hyperledger Besu Workshop
+Operate and Extend Hyperledger Besu Workshop
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan - Client Connector for Hyperledger Besu
+Project Plan - Client Connector for Hyperledger Besu
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "e0101185cf704fa1b980da69ab3c0ae0"}

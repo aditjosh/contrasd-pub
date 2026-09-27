@@ -1,0 +1,604 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-7529: DNS over HTTPS for Contract Discovery and eTLD+1 Association - EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      EIP-7529: DNS over HTTPS for Contract Discovery and eTLD+1 Association
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+        
+            erc
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                TtheBC01
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 4, 2023, 10:03pm
+                  
+                  
+
+1
+              
+            
+            
+              At Snickerdoodle Labs, we’ve had good success leveraging whats proposed in this draft EIP in our own protocol. We decided to write it up as a proposal and see if the Ethereum community would also find it useful.
+
+This proposal describes a simple standard to leverage TXT records to discover smart contracts and verify their association with a known DNS domain. This is enabled by the relatively recent support for DNS over HTTPS (DoH) by most major DNS providers.
+
+This is my first time attempting to contribute an EIP, I’ve tried my best to stick to the contributor instructions, so apologies if I’ve missed a step.
+
+Link to draft pr: https://github.com/ethereum/EIPs/pull/7815
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SamWilsn
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 30, 2023,  4:45pm
+                  
+                  
+
+2
+              
+            
+            
+              Hey! Haven’t had a chance to look at your EIP in depth yet, but Add EIP: Domain-contracts two-way binding by VenkatTeja · Pull Request #6807 · ethereum/EIPs · GitHub seems like it might be similar. Perhaps your team and @web3panther would like to coordinate?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                TtheBC01
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 30, 2023,  4:55pm
+                  
+                  
+
+3
+              
+            
+            
+              cool, we’ll check it out!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SamWilsn
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 30, 2023,  5:22pm
+                  
+                  
+
+4
+              
+            
+            
+              Why mention DNS-over-HTTPS and not DNSSEC? I was under the impression that they accomplish roughly similar goals.
+
+
+
+What benefits does including the TXT record have over simply serving the dapp over HTTPS? You can still check that the domain is in the contract for the “cross-checking” you mention.
+
+
+
+I’m not entirely sure what the benefit of checking the domain in the contract is. If the domain is compromised, can’t the attacker point to a different contract that’s malicious?
+
+If the “good” contract is used by an unapproved domain, is that bad?
+
+This part of the proposal just seems to hurt the modularity/lego bricks philosophy of Ethereum contracts, locking them to a single domain. Imagine if the Uniswap contracts charged a fee to be included in their approved domains list!
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                TtheBC01
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    October 30, 2023,  8:57pm
+                  
+                  
+
+5
+              
+            
+            
+              Thanks for the engagement @SamWilsn! So I wrote up some responses for you here:
+
+	
+DoH is just an interface specification to a DNS provider who then uses DNSSEC to securely fetch the requested record. It is our understanding based on their docs that Cloudflare actually uses DNSSEC upstream of their DoH API. DoH is just the standard that allows for direct querying of DNS records straight from the browser, so technically DoH isn’t what’s really important, is the TXT record, but DoH is the enabling RFC standard for dApps to access DNS records directly. If you think it makes sense, we could simply reference the use of TXT records rather that specifying DoH specifically, since that seems to be the way to access DNS records from the browser without a proprietary API.
+
+
+	
+One high-value use case here is if you are on a third-party dApp or regular webapp that allows for the exploration or use of smart contracts deployed by other companies/projects, this lets the user-client independently verify association of the smart contracts with the aledged domains they claim to be associated with. The other high-value use case is that I can directly ask a DNS domain if any smart contracts are associated with it on a given network, then quickly verify that by an on-chain lookup which could be an interesting capability for browser-extension based wallets or even traditional web-crawlers that want to add on-chain asset searchability.
+
+
+	
+So I agree, an attacker who has compromised your DNS security could point users to a malicious contract. Using DNS records to “discover” a contract is indeed susceptible to DNS poisoning. However, I argue that if the DNS records of your business domain are under attack, you’re already in serious trouble, IMO. Open to further discussion on this point for sure.
+
+
+	
+As far as a “good” contract being used by an unapproved domain, that is fine, we don’t intend for this ERC to prevent other sites from using an asset, but to allow other tools/libs to verify they are interacting with an asset from a known DNS domain. Example: I’m on uniswap and I want to be sure i’m actually swapping between authentic PYUSD, and USDC; this standard could be used to ensure that the assets in the pool are actually the ones associated w/ paypal.com and circle.com. Additionally, it could be useful for a google-like token search functionality within Uniswap where a user could just type in “Paypal” or “Circle” and find tokens issued from those businesses.
+
+
+	
+In regards to locking smart contracts to use by a single domain (as mentioned in some of the other points) this won’t lock down usability whatsoever (as discussed in point 4) unless that is what the client-side software using the ERC decides to do with it. For example, if Metamask used this ERC, they might pop up a warning if the user is about to make a transaction with a smart contract that is not associated with the domain the user is currently on. Additionally, a contract can be linked to more than one domain if the use case makes sense.
+
+
+
+
+Last thing here; if anyone comes across this ERC and is interested to try this in their own application, Snickerdoodle has published a helper package for fetching and cross-checking domains/contracts as specified in this proposal:
+
+
+  
+      
+
+      npm
+  
+
+  
+    
+
+
+@snickerdoodlelabs/erc7529
+
+
+  A library for interacting with ERC-7529 compliant contracts and domains for EVM based chains.. Latest version: 1.0.0, last published: 3 days ago. Start using @snickerdoodlelabs/erc7529 in your project by running `npm i @snickerdoodlelabs/erc7529`....
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SamWilsn
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 31, 2023,  5:26am
+                  
+                  
+
+6
+              
+            
+            
+              
+
+
+
+ TtheBC01:
+
+
+	DoH is just an interface specification to a DNS provider who then uses DNSSEC to securely fetch the requested record. It is our understanding based on their docs that Cloudflare actually uses DNSSEC upstream of their DoH API. DoH is just the standard that allows for direct querying of DNS records straight from the browser, so technically DoH isn’t what’s really important, is the TXT record, but DoH is the enabling RFC standard for dApps to access DNS records directly. If you think it makes sense, we could simply reference the use of TXT records rather that specifying DoH specifically, since that seems to be the way to access DNS records from the browser without a proprietary API.
+
+
+
+
+
+Ah, that’s interesting! I didn’t realize that browsers didn’t directly validate DNSSEC. So this whole proposal relies, for browser extension wallets anyway, on DoH? A native wallet could use DNSSEC directly, but those are a rare breed. Makes sense to keep it as DoH in the proposal then.
+
+
+
+
+
+ TtheBC01:
+
+
+	One high-value use case here is if you are on a third-party dApp or regular webapp that allows for the exploration or use of smart contracts deployed by other companies/projects, this lets the user-client independently verify association of the smart contracts with the aledged domains they claim to be associated with.
+
+
+
+
+
+I’m not sure I understand what kind of dApp you’re describing. Let me know if I’m completely off base here:
+
+I imagine I’m in an android app called MegaWeb3App that has built a uniform UI for several popular dApps. I can browse their collection of UIs, and pick Uniswap. So MegaWeb3App dutifully checks the contract it plans to interact with against the domain uniswap.org’s TXT record, and the domain against the contract’s on-chain allowlist.
+
+If the app is malicious, it can straight up lie and say it did the validation. If the domain is compromised, it prevents the user from interacting with the legitimate contract. If the contract is compromised, and the Uniswap team updated their TXT record, I suppose this would catch that. Just seems like a small win.
+
+
+
+
+
+ TtheBC01:
+
+
+The other high-value use case is that I can directly ask a DNS domain if any smart contracts are associated with it on a given network, then quickly verify that by an on-chain lookup which could be an interesting capability for browser-extension based wallets or even traditional web-crawlers that want to add on-chain asset searchability.
+
+
+
+
+Hm, that’s an interesting idea. Could also be done with some Open Graph-style tags.
+
+
+
+
+
+ TtheBC01:
+
+
+	So I agree, an attacker who has compromised your DNS security could point users to a malicious contract. Using DNS records to “discover” a contract is indeed susceptible to DNS poisoning. However, I argue that if the DNS records of your business domain are under attack, you’re already in serious trouble, IMO. Open to further discussion on this point for sure.
+
+
+
+
+
+For sure! I think I was looking at this proposal from a security perspective because I had just finished going over EIP-6807. I’m wondering if it’s possible to have an on-chain timelock, so that you have some time to react if your DNS is compromised. So it’d be (1) update DNS records (2) prove on-chain (3) timelock period (4) domain’s allowlist is updated.
+
+
+
+
+
+ TtheBC01:
+
+
+	As far as a “good” contract being used by an unapproved domain, that is fine, we don’t intend for this ERC to prevent other sites from using an asset, but to allow other tools/libs to verify they are interacting with an asset from a known DNS domain. Example: I’m on uniswap and I want to be sure i’m actually swapping between authentic PYUSD, and USDC; this standard could be used to ensure that the assets in the pool are actually the ones associated w/ paypal.com and circle.com. Additionally, it could be useful for a google-like token search functionality within Uniswap where a user could just type in “Paypal” or “Circle” and find tokens issued from those businesses.
+
+
+
+
+
+So it isn’t necessarily about the top-level contract. Neat. That clears up a lot of the use cases I think.
+
+
+
+
+
+ TtheBC01:
+
+
+	In regards to locking smart contracts to use by a single domain (as mentioned in some of the other points) this won’t lock down usability whatsoever (as discussed in point 4) unless that is what the client-side software using the ERC decides to do with it. For example, if Metamask used this ERC, they might pop up a warning if the user is about to make a transaction with a smart contract that is not associated with the domain the user is currently on. Additionally, a contract can be linked to more than one domain if the use case makes sense.
+
+
+
+
+
+Yeah, that makes a lot of sense. Thanks for clearing that up!
+
+
+
+Putting my editor hat back on, I think a lot of this content would go very well in your motivation section!
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                TtheBC01
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 12, 2023,  5:40pm
+                  
+                  
+
+7
+              
+            
+            
+              Adding a link to the latest write up for ERC-7529 in the new ERC repo:
+
+  
+
+      github.com/ethereum/ERCs
+  
+
+  
+    
+
+
+
+    
+      
+    
+
+
+  
+
+
+
+      
+        Add ERC: Contract Discovery and eTLD+1 Association
+      
+
+
+    
+      ethereum:master ← SnickerdoodleLabs:master
+    
+
+
+      
+        
+          opened 09:10PM - 26 Oct 23 UTC
+        
+
+
+        
+          
+            
+            TtheBC01
+          
+        
+
+
+        
+          
+            +166
+            -0
+          
+        
+
+      
+
+  
+
+
+
+
+  
+    Reopening the proposal in ethereum/ERCs from https://github.com/ethereum/EIPs/pu…ll/7815
+
+This proposal describes a simple standard to leverage TXT records to discover smart contracts and verify their association with a known DNS domain. This is enabled by the relatively recent support for DNS over HTTPS (DoH) by most major DNS providers.
+
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

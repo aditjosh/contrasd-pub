@@ -1,0 +1,232 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Upgrading to the latest release — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts
+	Getting Started - Install
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides
+	Upgrading to the latest release	Considerations for getting to v2.x
+	Upgrading your components
+	Updating the capability level of a channel
+	Enabling the new chaincode lifecycle
+
+
+
+	Commands Reference
+	Architecture Reference
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Upgrading to the latest release
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+Upgrading to the latest release¶
+
+If you’re familiar with previous releases of Hyperledger Fabric, you’re aware
+that upgrading the nodes and channels to the latest version of Fabric is, at a
+high level, a four step process.
+
+	Backup the ledger and MSPs.
+
+	Upgrade the orderer binaries in a rolling fashion to the latest Fabric version.
+
+	Upgrade the peer binaries in a rolling fashion to the latest Fabric version.
+
+	Update the orderer system channel and any application channels to the latest
+capability levels, where available. Note that some releases will have
+capabilities in all groups while other releases may have few or even no new
+capabilities at all.
+
+	If you want to migrate your network by removing the orderer system channel,
+check out Create a channel.
+
+
+
+For more information about capabilities, check out Channel capabilities.
+
+For a look at how these upgrade processes are accomplished, please consult these
+tutorials:
+
+	Considerations for getting to v2.x. This topic discusses the important considerations
+for getting to the latest release from the previous release as well as from
+the most recent long term support (LTS) release.
+
+	Upgrading your components. Components should be upgraded to the latest
+version before updating any capabilities.
+
+	Updating the capability level of a channel. Completed after updating the versions of all nodes.
+
+	Enabling the new chaincode lifecycle. Necessary to add organization specific endorsement
+policies central to the new chaincode lifecycle for Fabric v2.x.
+
+
+
+As the upgrading of nodes and increasing the capability levels of channels is by
+now considered a standard Fabric process, we will not show the specific commands
+for upgrading to the newest release. Similarly, there is no script in the fabric-samples
+repo that will upgrade a sample network from the previous release to this one,
+as there has been for previous releases.
+
+
+Note
+
+It is a best practice to upgrade your SDK to the latest version as a
+part of a general upgrade of your network. While the SDK will always
+be compatible with equivalent releases of Fabric and higher, it might
+be necessary to upgrade to the latest SDK to leverage the latest Fabric
+features. Consult the documentation of the Fabric SDK you are using
+for information about how to upgrade.
+
+
+
+
+Upgrading to the latest release
+
+	Considerations for getting to v2.x
+	Upgrading your components
+	Updating the capability level of a channel
+	Enabling the new chaincode lifecycle
+
+
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

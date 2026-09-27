@@ -1,0 +1,205 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Operations Guides — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts
+	Getting Started - Install
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides	Membership Service Providers (MSP)
+	Certificates Management Guide
+	Taking ledger snapshots and using them to join channels
+	Using a Hardware Security Module (HSM)
+	Channel Configuration (configtx)
+	Endorsement policies
+	Pluggable transaction endorsement and validation
+	Access Control Lists (ACL)
+	MSP Implementation with Identity Mixer
+	Identity Mixer MSP configuration generator (idemixgen)
+	The Operations Service
+	Metrics Reference
+	External Builders and Launchers
+	Running Chaincode as an External Service
+	Error handling
+	Logging Control
+	Securing Communication With Transport Layer Security (TLS)
+	Configuring and operating a Raft ordering service
+	Migrating from Kafka to Raft
+	Bringing up a Kafka-based Ordering Service
+
+
+
+	Upgrading to the latest release
+	Commands Reference
+	Architecture Reference
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Operations Guides
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+Operations Guides¶
+
+
+	Membership Service Providers (MSP)
+	Certificates Management Guide
+	Taking ledger snapshots and using them to join channels
+	Using a Hardware Security Module (HSM)
+	Channel Configuration (configtx)
+	Endorsement policies
+	Pluggable transaction endorsement and validation
+	Access Control Lists (ACL)
+	MSP Implementation with Identity Mixer
+	Identity Mixer MSP configuration generator (idemixgen)
+	The Operations Service
+	Metrics Reference
+	External Builders and Launchers
+	Running Chaincode as an External Service
+	Error handling
+	Logging Control
+	Securing Communication With Transport Layer Security (TLS)
+	Configuring and operating a Raft ordering service
+	Migrating from Kafka to Raft
+	Bringing up a Kafka-based Ordering Service
+
+
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

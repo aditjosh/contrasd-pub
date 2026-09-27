@@ -1,0 +1,114 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducing Splice, a New Hyperledger Lab for Canton Network Interoperability
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Introducing Splice, a New Hyperledger Lab for Canton Network Interoperability
+
+        
+
+        
+           Written by Wayne Collier, Principal Product Manager, Digital Asset | Jun 28, 2024 8:00:00 PM 
+        
+
+        
+          Hyperledger Labs
+
+
+Introducing Splice, a new Hyperledger Lab for creating decentralized interoperability infrastructure for use by the Canton Network - the public-permissioned blockchain network for regulated, real-world assets.
+
+This latest addition to Hyperledger Labs provides the code and reference applications developed and contributed by Digital Asset, to enable organizations to independently create decentralized synchronization infrastructure for the Canton Network. 
+
+Supporting the vision of synchronized finance 
+
+The Canton Network was launched by the industry to create a global, open network like the Internet, adding guarantees of consistency and synchronization to unlock the potential of synchronized finance - without compromising on threshold regulatory needs for privacy and control. Public blockchains showed us the power of interoperability, but with well publicized privacy and control trade-offs. Private blockchains claimed back some control but created walled garden networks and barriers to interoperability. Splice was designed to enable Canton Network participants to address these complex challenges and unlock the full value of blockchain and tokenization in regulated financial markets. 
+
+Today the Canton Network is a global ecosystem of independent smart contract applications built with Daml, and connected via the Canton blockchain synchronization protocol. As a Hyperledger Lab, Splice now provides open source code for operating a decentralized Canton synchronizer. 
+
+Each node in a decentralized synchronizer is operated by an entity known in Splice as a "Super Validator." This code enables Super Validators to build an organizationally neutral infrastructure for application interoperability across the Canton Network, while maintaining granular privacy and independent control for users and application operators.
+
+Available on an open source basis with an Apache 2.0 license and maintained by a community as part of Hyperledger Labs, this technology can now be independently implemented by any organization, opening up innovation and the continued development of technology that helps to deliver on the vision of the Canton Network. 
+
+Splice also includes an open source framework, called Amulet, for creating native utility tokens. Amulet is designed to pay for traffic over a decentralized synchronization domain, incentivize application providers to use those synchronizers to connect customers and interoperate with each other, and provide a native payment mechanism for exchange between applications and users. 
+
+Decentralized trust
+
+For this interoperability infrastructure to be successful and widely adopted, it needs to be openly available to any application in the ecosystem. Application developers need to know that they can trust the service to operate in a transparent and predictable way. And early adopters should be incentivized for providing critical utility to the network to create strong network effects.
+
+Splice aims to make this high level of trust possible by:
+
+	Making the operations and governance of decentralized Canton synchronizers transparent and trackable through built-in governance tooling
+	Keeping synchronizer transaction costs low via integrated payment, operations monitoring and governance automation
+	Managing these tools and applications via an Apache 2.0 license and an open source community within the Hyperledger ecosystem.
+
+
+
+
+This is combined with an interlocking system of incentives and fees including:
+
+	Tools for using Amulet-based tokens as a utility for payment and value transfer
+	Rewards denominated in Amulet-based tokens, to incentivize infrastructure providers, application providers and participants running Canton nodes connected to the infrastructure
+	Tools to purchase traffic over the synchronization infrastructure using Amulets
+	Handles and services for users to find and transact with known counterparties on chain 
+
+
+
+
+Contributing Splice to the Hyperledger community opens it up to the leading community for decentralized trust solutions. For detailed information, visit the page on Hyperledger Labs: https://labs.hyperledger.org/labs/splice.html. 
+
+The code is available on GitHub here: https://github.com/hyperledger-labs/splice 
+
+To get involved, come find us on Discord here. (New to the Hyperledger Discord community? Go here to get started.)
+
+Thanks goes to all those who have helped along the way, including the Hyperledger staff and community, especially Daniela Barbosa, Hart Montgomery, and Tracy Kuhrt.
+
+The Global Synchronizer - a Splice case study
+
+The first production implementation of Splice has been by the Super Validators (the operators of the decentralized infrastructure) that created the Global Synchronizer. Following more than a year of testing with financial market participants, this decentralized synchronization infrastructure is now available, providing interoperability with privacy and control, as demonstrated recently in the Canton Network pilot.
+
+In conjunction with the Global Synchronizer’s operational go-live, the Global Synchronizer community announced the formation of the Global Synchronizer Foundation (GSF). Supported by the Linux Foundation, the GSF will facilitate transparent and fair governance of the Global Synchronizer. 
+
+The GSF is an independent entity that provides transparency to governance actions carried out by Super Validators, and ensures openness and organizational neutrality in the development and deployment of the Global Synchronizer and its related applications. 
+
+Special thanks to the Super Validator community that has actively contributed and supported the development of Splice and its implementation for the Global Synchronizer. 
+
+For more information about the Super Validators and the GSF please visit: Global Synchronizer Foundation
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

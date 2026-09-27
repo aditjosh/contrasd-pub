@@ -1,0 +1,184 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Full nodes behind TOR and other proxies - Networking - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Full nodes behind TOR and other proxies
+    
+
+
+      
+          
+            
+              
+              
+                Networking
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                p_m
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 12, 2022,  6:58pm
+                  
+                  
+
+1
+              
+            
+            
+              Currently it’s impossible to run full node behind censorship-resistant proxies such as tor. This poses a problem for nodes; and even bigger trouble for stakers.
+
+As far as I understand, TOR doesn’t support UDP while it’s required for current gossip. What’s needed to be kept in mind while designing an alternative networking protocol? How feasible is this, at all?
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                Dormage1
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 13, 2022,  7:00am
+                  
+                  
+
+2
+              
+            
+            
+              LLARP (Low-Latency Anonymous Routing Protocol) and it’s reference implementation Lokinet supports UDP.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

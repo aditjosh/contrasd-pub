@@ -1,0 +1,263 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-6944: ERC-5219 Resolve Mode
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+      ⚠️ Draft
+    
+    
+    
+      Standards Track: ERC
+    
+  
+  
+    
+      ERC-6944: ERC-5219 Resolve Mode
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Adds an ERC-4804 resolveMode to support ERC-5219 requests
+
+  	Authors	Gavin John (@Pandapip1), Qi Zhou (@qizhou)
+	Created	2023-04-27
+	Discussion Link	https://ethereum-magicians.org/t/erc-5219-resolve-mode/14088
+	Requires	
+
+  EIP-4804, 
+
+  EIP-5219
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	Rationale
+	Backwards Compatibility
+	Reference Implementation
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This EIP adds a new ERC-4804 resolveMode to resolve ERC-5219 contract resource requests.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119 and RFC 8174.
+
+
+Contracts wishing to use ERC-5219 as their ERC-4804 resolve mode must implement the following interface:
+
+
+/// @dev IDecentralizedApp is the ERC-5219 interface
+interface IERC5219Resolver is IDecentralizedApp {
+    // @notice The ERC-4804 resolve mode
+    // @dev    This MUST return "5219" (0x3532313900000000000000000000000000000000000000000000000000000000) for ERC-5219 resolution (case-insensitive). The other options, as of writing this, are "auto" for automatic resolution, or "manual" for manual resolution.
+    function resolveMode() external pure returns (bytes32 mode);
+}
+
+
+
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+ERC-165 was not used because interoperability can be checked by calling resolveMode.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+No backward compatibility issues found.
+
+  
+    
+      
+      
+         Reference Implementation
+      
+      
+    
+
+
+abstract contract ERC5219Resolver is IDecentralizedApp {
+    function resolveMode() public pure returns (bytes32 mode) {
+      return "5219";
+    }
+}
+
+
+
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+The security considerations of ERC-4804 and ERC-5219 apply.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Gavin John (@Pandapip1), Qi Zhou (@qizhou), "ERC-6944: ERC-5219 Resolve Mode [DRAFT]," Ethereum Improvement Proposals, no. 6944, April 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-6944.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

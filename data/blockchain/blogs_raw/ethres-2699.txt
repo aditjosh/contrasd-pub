@@ -1,0 +1,366 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Go-ethereum network DoS, but main net is not vulnerable. Why? - Security - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Go-ethereum network DoS, but main net is not vulnerable. Why?
+    
+
+
+      
+          
+            
+              
+              
+                Security
+              
+            
+            
+
+
+
+        
+            security
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                fastchain
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 25, 2018,  9:02am
+                  
+                  
+
+1
+              
+            
+            
+              Hello,
+
+the full description of the problem is here
+
+
+  
+      github.com/ethereum/go-ethereum
+  
+  
+    
+  
+	  
+  
+
+
+  
+    
+      Pending block includes transactions by sum of transaction gas limit. Possible network DoS.
+    
+
+
+    
+      
+        opened 03:36AM - 11 Jul 18 UTC
+      
+
+
+        
+          closed 08:26AM - 11 Jul 18 UTC
+        
+
+
+      
+        
+          
+          fastchain
+        
+      
+
+    
+
+  
+
+
+
+
+
+  System information
+Geth version: v1.8.3-stable
+OS & Version: linux-amd64
+Commit hash : 329ac18
+Banner: Geth/v1.8.3-stable-329ac18e/linux-amd64/go1.10
+Expected behaviour
+Pending block should include transactions by sum of actual spent...
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+go-ethereum devs says, that it is safe behaviour (it’s quite strange statment).
+
+This behaviour could not be reproduced on the main net. So it seems that main net uses different pending block creation rules. Could you please explain this rules, or where I can read about it?
+
+Thank you.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 25, 2018, 12:42pm
+                  
+                  
+
+2
+              
+            
+            
+              This is the from the yellowpaper
+
+
+Note the final condition; the sum of the transaction’s
+
+gas limit, Tg, and the gas utilised in this block prior, given
+
+by `(BR)u, must be no greater than the block’s gasLimit,
+
+BHl
+
+
+
+So the security problem is in the yellow paper. On the other hand
+
+miners can enforce additional restrictions since it is in their interest
+
+to maximize gas earned.
+
+Thats what they probably do on the main net, the question is where is it implemented in the source code.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                fastchain
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 26, 2018,  2:56am
+                  
+                  
+
+3
+              
+            
+            
+              Dear @kladkogex
+
+Thank you for your reply.
+
+
+the question is where is it implemented in the source code.
+
+
+
+Could you please recommend the right place to ask about implementation of this kind of  software?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 26, 2018,  8:00am
+                  
+                  
+
+4
+              
+            
+            
+              I think you need to talk to miners of the main net. They create blocks.
+
+They may use special purpose software - not geth default, or geth with non-default parameters … Theoretically miners include whatever they deem good for themselves subject to the contstraint of block gas limit.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

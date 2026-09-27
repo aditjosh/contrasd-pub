@@ -1,0 +1,765 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2021-04-13 Besu Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+	2021-01-19 Office Hours
+
+
+
+
+
+	2021-02-02 Office Hours
+
+
+
+
+
+	2021-02-16 Office Hours
+
+
+
+
+
+	2021-03-02 Besu Contributor Call
+
+
+
+
+
+	2021-03-16 Besu Office Hours
+
+
+
+
+
+	2021-03-30 Besu Office Hours
+
+
+
+
+
+	2021-04-13 Besu Contributor Call
+
+
+
+
+
+	2021-04-26 Besu Office Hours
+
+
+
+
+
+	2021-05-11 Besu Office Hours
+
+
+
+
+
+	2021-05-24 Besu Contributor Call
+
+
+
+
+
+	2021-06-08 Besu Contributor Call
+
+
+
+
+
+	2021-06-21 Besu Contributor Call
+
+
+
+
+
+	2021-07-06 Besu Contributor Call
+
+
+
+
+
+	2021-07-19 Besu Contributor Call
+
+
+
+
+
+	2021-08-03 Besu Contributor Call
+
+
+
+
+
+	2021-08-16 Besu Contributor Call
+
+
+
+
+
+	2021-08-31 Besu Contributor Call
+
+
+
+
+
+	2021-09-13 Besu Contributor Call
+
+
+
+
+
+	2021-09-28 Besu Contributor Call
+
+
+
+
+
+	2021-10-11 Besu Contributor Call
+
+
+
+
+
+	2021-10-26 Besu Contributor Call
+
+
+
+
+
+	2021-11-09 Besu Contributor Call
+
+
+
+
+
+	2021-11-23 Besu Contributor Call
+
+
+
+
+
+	2021-12-07 Besu Contributor Call
+
+
+
+
+
+	2021-12-21 Besu Contributor Call
+
+
+
+
+
+	2021-12-30 Besu Contributor Call (off cycle)
+
+
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2021-04-13 Besu Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2021-04-13 Besu Contributor Call
+
+	Matthew Wright (Deactivated)
+
+
+
+
+
+Owned by Matthew Wright (Deactivated)
+
+
+Last updated: Apr 13, 2021
+
+
+
+
+
+
+
+
+
+
+(Meeting Link: â�¨https://consensys.zoom.us/j/95691099798)
+EMEA/AMER Friendly Time -  1500 UTC (https://www.timeanddate.com/worldclock/converter.html?iso=20201012T150000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	8 AM Tuesday San Francisco
+	11 AM Tuesday New York
+	3 PM Tuesday UTC
+	5 PM Tuesday Paris/Berlin
+	1 AM Tuesday Brisbane
+
+Agenda
+	 Housekeeping	Antitrust notice - https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements
+	Release updates	Berlin Fork	Hitting network upgrade block tomorrow for mainnet (~Approx. April 15 - 5 AM EST/ 11am UTC)	https://ethernodes.org/berlin
+
+
+	All team will be online if needed; most likely gas cost related (diff in receipt root)
+	Over the weekend team will be available (Sajid, Rai)
+	Interested in connecting hook that pushes block info with Rocketchat for easier debugging (Matt)
+
+
+
+
+	Work Updates	Contributor meeting pull request for contributors requires permissioning (Gary Schulte)
+
+
+	Other Business
+	Open Forum
+	Future Topics
+
+
+
+Recording: 
+https://consensys.zoom.us/rec/share/pFQhgPXPWdirAiPhZXC2ye7xlt7-js3uoz57LIHx7aQrYqmr3wswz3Q-KfAVyIjA.SAVMBEe8y7d_bkff 
+Passcode: km5PLp8?
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2021-07-19 Besu Contributor Call
+2021-07-19 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-09-28 Besu Contributor Call
+2021-09-28 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-09-15 Contributor Call
+2020-09-15 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-10-31 Contributor Call
+2023-10-31 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-06-07 Contributor Call
+2022-06-07 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-11-22 Contributor Call
+2022-11-22 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "a9483e19874e4260b11ebb1563a646d2"}

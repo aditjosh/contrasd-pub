@@ -1,0 +1,202 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security Alert – [Implementation bug in Go clients causing increase in difficulty – Fixed – Miners check and update Go clients] | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Security Alert – [Implementation bug in Go clients causing increase in difficulty – Fixed – Miners check and update Go clients]
+Posted by Jutta Steiner on September 3, 2015
+Security
+
+
+
+
+Implementation bug in the go client leads to steady increase of difficulty independent of hashing power.
+
+Affected configurations: All Go client versions v1.0.x, v1.1.x, release and develop branches. The bug was introduced in a recent update and release through commit https://github.com/ethereum/go-ethereum/commit/7324176f702a77fc331bf16a968d2eb4bccce021 which went into the affected client versions. All miners running earlier mentioned versions are affected and are advised to update as soon as possible. 
+
+Likelihood: High
+
+Severity: Medium
+
+Impact: Increase in block time will lead to an exponential increase in difficulty 
+
+Details: A bug in the go client leads to steady increase in difficulty in the following block, as timestamp in new block = timestamp + 1 of old block, regardless of the actual time, when mining. This leads to an increase in the difficulty independently of the hashing power
+
+Effects on expected chain reorganisation depth: None
+
+Proposed temporary workaround: None
+
+Remedial action taken by Ethereum: Provision of hotfixes as below:
+
+If using the PPA: sudo apt-get update then sudo apt-get upgrade
+
+If using brew: brew update then brew reinstall ethereum
+
+If using a windows binary: download the updated binary from the release page
+
+If you are building from source: git pull followed by make geth (please use the Master branch 587669215b878566c4a7b91fbf88a6fd2ec4f46a)
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

@@ -1,0 +1,224 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-607: Hardfork Meta: Spurious Dragon
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-607: Hardfork Meta: Spurious Dragon
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Alex Beregszaszi (@axic)
+	Created	2017-04-23
+	Requires	
+
+  EIP-155, 
+
+  EIP-160, 
+
+  EIP-161, 
+
+  EIP-170, 
+
+  EIP-608
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	References
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This specifies the changes included in the hard fork named Spurious Dragon.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+	Codename: Spurious Dragon
+	Aliases: State-clearing
+	Activation:
+    	Block >= 2,675,000 on Mainnet
+	Block >= 1,885,000 on Morden
+
+
+  
+	Included EIPs:
+    	EIP-155 (Simple replay attack protection)
+	EIP-160 (EXP cost increase)
+	EIP-161 (State trie clearing)
+	EIP-170 (Contract code size limit)
+
+
+  
+
+
+  
+    
+      
+      
+         References
+      
+      
+    
+
+
+	https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon/
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), "EIP-607: Hardfork Meta: Spurious Dragon," Ethereum Improvement Proposals, no. 607, April 2017. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-607.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

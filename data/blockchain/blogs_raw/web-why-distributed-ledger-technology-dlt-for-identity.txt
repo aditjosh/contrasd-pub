@@ -1,0 +1,949 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why Distributed Ledger Technology (DLT) for Identity? – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Project: Hyperledger Indy
+                            |
+                        
+                            Decentralized Identity
+                            
+                        
+                    
+
+                
+                Why Distributed Ledger Technology (DLT) for Identity?
+ 
+                
+                    Stephen Curran, Hyperledger Aries Maintainer, Cloud Compass Computing Inc.
+                    |
+                    
+                        Apr 21, 2021
+                    
+                
+
+            
+
+            
+            
+                As we continue our pandemic journey that is 2021, more and more people are getting vaccinated against COVID-19. Once vaccinated, people are (finally!) able to do more “in the real world.” However, in some cases such as international travel, there is a need to prove that you have been vaccinated before you can participate. In the past, that proof has been accomplished in the form of the paper World Health Organization Carte Jaune/Yellow Card. But in our 21st century pandemic, a handwritten paper document is not particularly trusted. It’s just too easy to buy or make your own. The sudden, urgent need to be able to prove health information in a safe, privacy-preserving and secure way has brought the spotlight on the concept of verifiable credentials and, for Hyperledger, on the three identity-focused projects in the community, Indy (a distributed ledger for identity), Aries (data exchange protocols and implementations of agents for people, organizations and things), and Ursa (a cryptographic library underlying Indy and Aries).
+ 
+While people understand that paper credentials are insufficient and that a trusted digital solution is needed, they don’t understand why verifiable credentials, or more generally, identity, works extremely well with distributed ledger technology (DLT)—a distributed database spread across multiple nodes, of which blockchain is an example. To be clear from the start, it is not to put the credentials on a public ledger so everyone can see them! We’ll reiterate that a lot in this post. No private data ever goes on the blockchain!!!
+ 
+To understand why DLT is useful for identity, we need to go back to the basics—paper credentials, how that model has worked for 1000s of years, and how the use of DLTs with verifiable credentials allows us to transition the great parts—security and privacy—of that model to the digital age.
+ 
+
+Since as far back as 450BC, people have used paper credentials to enable trusted identity. Legend has it that King Artixerxes of the Persian Empire signed and gave Nehemiah a paper “safe transit” authorization that he used in travels across the empire. People have been using such documents ever since. In technical terms, a credential is an attestation of qualification, competence, or authority issued to an entity (e.g., an individual or organization) by a third party with a relevant or de facto authority or assumed competence to do so. Examples of credentials issued to people include a driver’s license, a passport, an academic degree, proof-of-vaccination and so on. Credentials are also issued to companies, such as business registrations, building permits, and even health inspection certifications.
+ 
+ 
+ 
+
+  
+  
+  Examples of Paper Credentials
+By Peter Stokyo, peter.stoyko@elanica.com, Licensed under CC By 4.0
+ 
+  
+ A typical paper credential, say a driver’s license, is issued by a government authority (an 
+ issuer
+ ) after you prove to them who you are (usually in person using your passport or birth certificate) and that you are qualified to drive. You then hold this credential (usually in your wallet) and can use it elsewhere whenever you want—for example, to rent a car, to open a bank account or in a bar to show that you are old enough to drink. When you do that, you’re 
+ proving
+  (or 
+ presenting
+ ) the credential to the verifier
+ .
+  The verifier inspects the physical document to decide if it is valid for the business purpose at hand. Note that in verifying the paper credential, the verifier does not call the issuer of the document. The transaction is only between the holder and the verifier. Further, it is the holder’s choice whether they want to share the piece of paper. If they want, they can keep it to themselves.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Paper Credential Model
+By Peter Stokyo, peter.stoyko@elanica.com, Licensed under CC By 4.0
+ 
+Verification in the paper credential model (ideally) proves:
+ 
+ 
+ 
+	Who issued the credential. 
+	That the credential was issued to the entity presenting it.
+	That the claims have not been altered.
+
+ 
+ 
+ 
+The caveat “ideally” is included because of the real possibility of forgery in the use of paper credentials. Back to our “proof-of-vaccination” problem.
+ 
+Let’s see how the good parts of the paper credential model are retained in the verifiable credentials model. With verifiable credentials:
+ 
+ 
+ 
+ 
+ 
+	An authority decides you are eligible to receive a credential and issues you one.
+	You hold your credential in your (digital) wallet—it does not go on the distributed ledger!
+	At some point, a verifier asks you to prove the claims from one or more credentials.
+	If you decide to share your data with the verifier, you provide a verifiable presentation to the verifier, proving the same three things as with the paper credentials.
+	Plus: You may be able to prove one more thing—that the issued credentials have not been revoked.
+
+ 
+As we’ll see, verifiable credentials and presentations are not simple documents that anyone can create. They are cryptographically constructed so that a presentation of the claims within a credential proves four attributes:
+ 
+ 
+ 
+Who issued the credential–their identifier is part of the credential and they signed the credential. 
+ 
+	Who holds the credential–there is a cryptographic binding to the prover.
+	The claims have not been altered–they were signed at the time of issuance.
+	The credential has not been revoked.
+
+ 
+ 
+ 
+Unlike a paper credential, those four attributes are evaluated not based on the judgment and expertise of the person looking at the credential, but rather by machine using cryptographic algorithms that are extremely difficult to forge. Like the paper credential, the verifier does not go back to the issuer to ask about the credential being presented. Only the prover and verifier, the participants in the interaction, need to know about the presentation. So where do the prover and verifier get the information they need for their transaction? We’re just getting to that…
+ 
+ 
+ 
+
+The Verifiable Credentials Model
+By Peter Stokyo, peter.stoyko@elanica.com, Licensed under CC By 4.0 
+ 
+ 
+ 
+Compared to the paper credentials model, verifiable credentials are far more secure. When the cryptographic verification succeeds, the verifier can be certain of the validity of the data—those four attributes stemming from verifying the presentation. They are left only with the same question that paper credentials have—do I trust the issuer enough
+ 
+So where does the DLT fit in?
+ 
+Three of the four things that the verifier has to prove (listed above) involves published data from the issuer that has to be available in some trusted, public distributed place, a place that is not controlled by a central authority (hmm…sounds like a DLT!). In Indy and Aries, data published to a DLT is used to verify the credential without having to check with the issuer. In particular:
+ 
+	The verifier has to know who issued the credential based on an identifier and cryptographic signature. From the presentation, it gets an identifier for the issuer, looks it up on a DLT to get a public key associated with the issuer to verify the signature in the presentation. Thus, the identity of the issuer is known.
+	The verifier has to verify that the claims data has not been altered by verifying a cryptographic signature across the data. Based on an identifier for the type of credential, the verifier gets from a DLT a set of public keys and verifies the signatures. Thus, the verifier knows no one has tampered with the claims data.
+	The issuer periodically updates a revocation registry on a DLT indicating the credentials that have been revoked. If the holder’s credential is revoked, they are unable to create a proof of non-revocation (yes, that’s a double negative…). If the holder can generate that proof, the verifier can check it. Thus, the verifier knows the credential has not been revoked.
+
+ 
+ 
+ 
+The fourth attribute (the binding of the credential to the holder) in Indy is done using some privacy-preserving cryptographic magic (called a Zero Knowledge Proof) that prevents having a unique identifier for the holder or credential being given to the verifier. Thus, no PII is needed for sharing trusted data.
+ 
+So why DLT? First, we can get the good parts of paper credentials—private transactions between holders and verifiers and no callback to the issuer. Second, the issuer gets a trusted, open and transparent way to publish the cryptographic material needed for those private holder-verifier transactions. Third, there is no need to have a “Trusted Third Party” participating in the interactions.
+ 
+And did I mention, no private data goes on the DLT!!! 
+ 
+ 
+ 
+Hyperledger Indy, Aries and Ursa are enabling this approach to “self-sovereign identity” in a big way,  bringing about a new layer of trust on the Internet that will let us preserve our privacy and give us control over our identity and data—where it belongs. There is a lot to learn. If you’re curious, a great place to start is this Linux Foundation edX course.
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+Cover image by Nick Youngson CC BY-SA 3.0 Alpha Stock Images
+
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

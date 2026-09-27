@@ -1,0 +1,196 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Postage Payment Redistribution - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Postage Payment Redistribution
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            nagydani
+            
+          
+
+          
+
+
+
+          
+              
+                July 8, 2021, 11:42am
+              
+              #1
+          
+        
+        
+          In the currently implemented postage model, the potential (maximal) sizes of batches are known on-chain as is the storage rent paid in a given period of time. Here is a collection of ideas (hopefully eventually evolving into a proposal) about how to redistribute these payments between storer nodes in an incentive-aligned fashion:
+
+  
+      
+
+      hackmd.io
+  
+
+  
+    
+
+Storage Rewards - HackMD
+
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+In the most extreme version, there is no lottery component in the system, every participating storer node will get paid in every epoch. As they all need to claim their payment, this only allows for very long epochs. In the less extreme version, in each epoch, one neighborhood is selected randomly and all participating nodes in that neighborhood are getting paid, if they provide the necessary cryptographic evidence of storing everything they should.
+
+        
+
+
+        
+           
+1 Like
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            michelle_plur
+            
+              pinned 
+          
+
+          
+
+
+
+          
+              
+                July 9, 2021,  2:03pm
+              
+              #2
+          
+        
+        
+          
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

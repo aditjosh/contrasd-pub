@@ -1,0 +1,116 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Case for Open Development as the Foundation for Central Bank Digital Currencies
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          The Case for Open Development as the Foundation for Central Bank Digital Currencies
+
+        
+
+        
+           Written by Karen Ottoni, Senior Director of Ecosystem and Strategic Initiatives, Hyperledger Foundation | Nov 1, 2023 5:49:27 PM 
+        
+
+        
+          Introduction
+
+
+There are as many drivers for Central Bank Digital Currencies as there are countries actively exploring and implementing digital forms of their nation's currency. The Atlantic Council CBDC Tracker says that 130 countries, representing 98 percent of global GDP, are exploring a form of CBDC. The global upswell in interest in CBDCs stems from their potential to deliver systemic improvements that remove bottlenecks and reduce the cost of doing business and to support new ways to bolster financial inclusion, minimize fraud, support trusted and convenient digitized payments, increase security, protect privacy and more. The mix of reasons map to the economic and technical challenges and opportunities of each country. But there is one motivation that cuts across all the CBDC projects: the drive to innovate the existing financial infrastructure to support modernizing economies.
+
+Developing a new form of currency means, at a minimum, adding a layer to the payment ecosystem and often creating a whole new one. And, while it is a sovereign currency, it must work in a global economy as well. That’s no easy undertaking.
+
+As the BIS laid out initially in its “Central bank digital currencies: foundational principles and core features” report, “A CBDC could be an important instrument for central banks to continue to provide a safe means of payment in step with wider digitalisation of people’s day-to-day lives. Public trust in central banks is central to monetary and financial stability and the provision of the public good of a common unit of account and secure store of value. To maintain that trust and understand if a CBDC has value to a jurisdiction, a central bank should proceed cautiously, openly and collaboratively.”
+
+When a well-managed community comes together, they accelerate markets by developing software that is safe, secure and ready for mission critical systems. 
+
+With that guidance in mind, it’s no surprise that a growing list of governments and vendors are tapping the efficiency, security and scale of openly developed technologies to create common building blocks for CBDC implementations. Central banks from the Philippines to France and from Brazil to Norway are among the many that have embraced open development in their CBDC projects. However, the majority of countries have critical technology decisions ahead of them. So it’s important to clearly explain the value of open source, transparently developed software as the foundation for CBDCs.
+
+Too often, the choice to adopt open source software is perceived primarily as a cost cutting play. However, time and again, it has been proven to be a strategic choice that fuels innovation and collaboration. (Take, for example, the emergence of Kubernetes as the standard for automating processes in deploying and scaling containerized applications and its role in the rise of cloud native computing.) This is particularly the case when open source software is openly developed by a robust community with a diversity of perspectives, well-structured governance, security first mindset and transparent documentation. When a well-managed community comes together, they accelerate markets by developing software that is safe, secure and ready for mission critical systems. 
+
+Read on for how community-built software can drive innovation as well as trust, interoperability, scale and more in the development of CBDCs.
+
+Open development and innovation
+
+Countries are understandably moving judiciously as they research and trial their approaches to CBDCs. They are building a new financial infrastructure that will underpin their economies for decades to come. Much of the effort is around economic and regulatory policy. That is why the first principle in BIS’s CBDC foundations report is “‘do no harm’ to monetary and financial stability.” 
+
+To meet the drive for innovation, CBDC projects must chart new territory and that’s where the power of a community will always outperform the power of a single company. 
+
+However, CBDCs do create the opportunity to introduce new, more flexible and efficient ways to transfer value. And that is where the technology decisions are as important as the policy ones. And where open development’s value first comes into play. 
+
+A core premise of open development is meritocracy. Good ideas and hard work rise to the top, creating better software for all. When there is a diverse, global developer pool contributing to the code, that fuels a strong pipeline of new releases and features. Good governance ensures the work is paired with proper software development and security practices and solid documentation. 
+
+Proprietary software and even open source platforms that are largely managed by a single vendor often don’t have the same robust development behind them. And they aren’t developed with the same commitment to innovation that serves the market first. In addition, there is the risk of being dependent on a single vendor and its development priorities. 
+
+To meet the drive for innovation, CBDC projects must chart new territory and that’s where the power of a community will always outperform the power of a single company. 
+
+Open development and trust
+
+CBDCs are fiat currencies, or, put simply, money that is the liability of the central bank. They are the equivalent of reserves for a Central Bank so have a heavy burden to carry in terms of being trusted and secure. 
+
+Community-built software is critical for maximal transparency and openness, two key requirements for creating a trusted ecosystem.
+
+Community-built software is critical for maximal transparency and openness, two key requirements for creating a trusted ecosystem. The community is not only developing the software but is QAing it in real time. They are watching for bugs and vulnerabilities but also ensuring that the software delivers on what it promises (with no unexpected surprises). In many cases, companies are paying development teams to contribute to projects as they are strategic to their business and the industry as a whole. But open governance ensures neutrality, and open development rules and best practices guide the work.
+
+As demonstrated with the Linux Kernel’s track record as the core for operating systems powering everything from automobiles to mobile phones to supercomputers, this formula also enhances the security and stability of the code. Community standards, or governance guidelines, ensure clean, well-structured code that is widely reviewed by other developers. Clean code is also easier to audit and put through vulnerability scans. It’s also easier to troubleshoot if there is an issue. 
+
+Open development and interoperability
+
+Much of the current CBDC focus is on the upfront challenges of creating the frameworks for individual countries to introduce government-backed digital currencies and monetary systems. But the complexity will only mount when there begins to be widespread adoption of these new currencies and networks.
+
+In the case of CBDCs, it’s value that needs to move across systems, making a neutral technology infrastructure all the more important. 
+
+As the World Economic Forum points out in its report on Central Bank Digital Currency Global Interoperability Principles, “Achieving interoperability between CBDC systems and establishing global standards are important priorities. Collaboration among different regions to develop common protocols and frameworks can facilitate seamless integration between CBDCs.” Put differently, even though each country will have its own unique set of priorities and considerations for a CBDC, you cannot build payment ecosystems in a vacuum. 
+
+As the automotive, mobile phone and cloud computing industries, among others, demonstrate, open development is the most effective way to create a shared, secure, interoperable infrastructure that connects critical applications and moves data seamlessly. In the case of CBDCs, it’s value that needs to move across systems, making a neutral technology infrastructure all the more important. 
+
+Here, a diverse and well governed community ensures broad support for and integration with different technologies and standards are at the core of systems, creating a strong foundation for openness and interoperability. It also invites in new technologies, which challenges complacency and inspires collaboration.
+
+Open development and future proofing
+
+With CBDCs, central banks are building a public good infrastructure for generations to come. Given the pace of change and mandate for innovation, future proofing must be baked into the plan, making longevity, flexibility, extensibility, openness, performance, security and scale all core requirements. 
+
+The result is production-ready technology that is hardened to a level that supports mission critical, regulated systems that will be in service for decades to come.
+
+The good news is there are large developer ecosystems supporting a range of openly developed technologies needed to deliver CBDCs. These technologies are not dependent on any single vendor for new features or ongoing support. Instead, they encourage the growth of a diverse ecosystem of service providers, training, certifications and commercial support that continuously enhance the technology and reinforce the health and longevity of both the software and the community.  And, of course, the code is always available as building blocks to support growth and innovation, now and in the years to come. 
+
+When building for the future, there’s no substitute for having a deep, diverse, neutral and well governed community behind your technology. The result is production-ready technology that is hardened to a level that supports mission critical, regulated systems that will be in service for decades to come.
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

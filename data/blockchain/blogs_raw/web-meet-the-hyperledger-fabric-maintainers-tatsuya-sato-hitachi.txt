@@ -1,0 +1,908 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperleger Fabric Maintainers – Tatsuya Sato, Hitachi, Ltd
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Meet the Maintainers
+                            |
+                        
+                            Hyperledger Fabric
+                            
+                        
+                    
+
+                
+                Meet the Hyperleger Fabric Maintainers – Tatsuya Sato, Hitachi, Ltd
+ 
+                
+                    Hyperledger Foundation
+                    |
+                    
+                        May 2, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                 
+
+
+Hyperledger Fabric, which launched in 2016 as the first project within the Hyperledger ecosystem, is a widely adopted enterprise blockchain platform that offers performance at scale while preserving privacy. It has a robust open development track record and active community working to develop and deploy it worldwide. There are a number of technologies in the Hyperledger Fabric family. The maintainers of the Hyperledger Fabric core platform are leading development efforts as Hyperledger Fabric marches towards its 3.0 release. We have invited these community leaders to share their thoughts on why they are committing their time and effort to this project.   
+
+Below, we hear from Tatsuya Sato from Hitachi, Ltd., about his work as a maintainer and what excites him about Hyperledger Fabric now and in the future.
+
+Q) Hyperledger Fabric is one of the most established DLT platforms in the industry. How has it helped shape the market? What's its role in the fast evolving DLT landscape?
+
+Hyperledger Fabricは、エンタープライズ用途やパーミッション型ブロックチェーンとしての立場から、スケーラビリティ、セキュリティ、運用性といった課題を一つずつ解決してきました。これらの取り組みにより、DLT分野において、企業が直面する多くの課題を克服し、信頼性の高いブロックチェーンアプリケーションの実現を可能にしました。その結果、Hyperledger Fabricは長年にわたる進化を経て、現在では最も成熟したDLTプラットフォームとなりました。Hyperledger Fabricは、様々な業界でのB2Bユースケースにおいて実証実験や本番利用を通じて広く利用されており、その過程で、開発者、ユーザ、サービスプロバイダなどを含むエコシステムが形成されました。
+
+Hyperledger Fabricは、その進化を通じてDLTとブロックチェーン技術の未来に向けた道を切り開いてきました。これからも、Hyperledger FabricがDLTとブロックチェーンの発展と進化に大きく貢献していくと期待しています。
+
+From the standpoint of enterprise and permissioned blockchains, Hyperledger Fabric has solved the issues such as scalability, security, and operability one by one. By solving these issues, Hyperledger Fabric has overcome many of the challenges faced by enterprises in the DLT field and enabled the realization of highly-reliable blockchain applications. As a result, Hyperledger Fabric has evolved over the years to become one of the most mature DLT platforms available today, and has been widely used through proof of concept and production use in B2B use cases in a variety of industries. In the process Hyperledger Fabric has created an ecosystem that includes developers, users, and service providers.
+
+Through the evolution, Hyperledger Fabric has paved the way for the future of DLT and blockchain technology. I expect Hyperledger Fabric to continue to make significant contributions to the development and evolution of DLT and blockchain technology.
+
+Q) What are some of the use cases it is particularly well suited to support?
+
+Hyperledger Fabricの魅力は、そのエンタープライズ向けに特化した機能と非機能を提供する点にあります。Hyperledger Fabricは、幅広い業界やユースケースに適応可能な汎用性を持ちながら、性能の確保と向上のための独自のアーキテクチャ設計を採用しています。さらにコンソーシアム内でのデータアクセス制御機能を提供することにより、企業間での安全な情報共有と取引が可能としています。Hyperledger Fabricのスマートコントラクト（チェーンコード）の表現力の高さは、その汎用性のもう一つの証拠であり、潜在的に様々なユースケースに適用できるケイパビリティを提供します。
+
+コミュニティによって長期サポート（LTS: Long Term Support）版が提供されていることも、Hyperledger Fabricがエンタープライズ利用に適している理由の一つです。これにより、企業は長期にわたり安定したプラットフォームの上でアプリケーションを運用することができ、技術的な問題やアップデートに伴うリスクを最小限に抑えることができます。
+
+実証実験や本番運用を含む、様々な業種でのB2BユースケースにおいてHyperledger Fabricは広く活用されています。特に、複数企業を跨ぐサプライチェーンのトレーサビリティ管理や、サステナビリティやESG (環境・社会・ガバナンス) 関連の取り組みにおける応用は、Hyperledger Fabricが特に力を発揮するユースケースとして挙げられます。
+
+The appeal of Hyperledger Fabric is in specialized features and non-functional capabilities designed specifically for enterprise use. Hyperledger Fabric has a unique architectural design to ensure and improve performance while being versatile enough to adapt to a wide range of industries and use cases. It also provides data access control within the consortium to enable secure information sharing and transactions among organizations. The expressiveness of Hyperledger Fabric's smart contracts (chaincode) is another proof of its versatility, offering capabilities that can potentially be applied across various use cases.
+
+Community offerings of Long Term Support (LTS) versions are another reason why Hyperledger Fabric is well suited for enterprise use. This allows companies to run their DLT applications on a stable platform for the long term, minimizing the risks associated with technical issues and updates.
+
+Hyperledger Fabric has been widely used in B2B use cases across a variety of industries, including proof of concept and production use. In particular, applications in supply chain traceability management across multiple organizations, and applications related to sustainability and ESG (Environmental, Social, and Governance) are the most powerful use cases for Hyperledger Fabric. 
+
+Q) What is the role of the community in developing Hyperledger Fabric? Why is open development important?
+
+Hyperledger Fabricの継続と発展においてコミュニティは重要な役割を果たしています。コミュニティは多様な企業や団体のメンバーによって構成されており、オープンなガバナンスとストラテジーの下、新機能の提案や開発、さらにはコードやドキュメントの品質改善を継続的に実施しています。また、LTSサポート版のメンテナンスもコミュニティによって実行されています。これらの取り組みは、Fabricを常に技術的最前線で保ち、エンタープライズレベルでの厳しい要件を満たすために不可欠です。
+
+オープン開発により、コミュニティというリソースを最大限活用してイノベーションを加速させることが可能になります。ブロックチェーンやDLTの分野では相互接続性、継続性、コードの透明性は極めて重要な要素です。オープンな開発アプローチはこれらの要素を実現するための有効な手段でもあります。
+
+The community plays an important role in the continuation and development of Hyperledger Fabric. It is composed of diverse members from various companies and organizations that work together under an open governance and strategy to propose and develop new features, as well as to continuously improve the quality of the code and documentation. The community is also responsible for the maintenance of the Long Term Support (LTS) versions. These efforts are essential to keep Fabric at the forefront of technology and meet the strict requirements of the enterprise grade.
+
+Open development allows for the maximum use of the resources of the community to accelerate innovation. In the field of blockchain and DLT, interoperability, continuity, and code transparency are extremely important. An open development approach is also an effective means to achieve these elements.
+
+Q) Why is contributor diversity important?
+
+ブロックチェーンやDLTなどの新しい技術分野では、多様なアイデアがイノベーションを推進する上で非常に重要だと考えられます。異なるバックグラウンドを持つコントリビュータからの幅広い視点は、技術の発展に不可欠であり、創造的な解決策を生み出すと結果につながると信じています。
+
+また、技術やソフトウェアがユーザに広く受け入れられるためには、国や言語の壁を超える必要があるとも考えています。例えば、私のように英語のノンネイティブスピーカーにとって、英語で情報を取得することは一つの大きな壁となっています。この課題に対応するために、コミュニティでは、Hyperledger Fabricのドキュメントを翻訳するプロジェクトが立ち上がり、今日では様々な言語への翻訳が進んでいます。私が参加するJapanese Documentation Working Groupでは、ドキュメントの日本語への翻訳を通じて、日本での技術普及を促進し、日本語話者とグローバルコミュニティの橋渡しとなることを目指しています。このブログ記事が日本語と英語で記載されているのも、その目的の一環です。
+
+In new technology areas such as blockchain and DLT, diverse ideas will be critical to driving innovation. I believe that a wide range of perspectives from contributors with different backgrounds is essential to the development of technology and results in creative solutions.
+
+Furthermore, for technology and software to be widely accepted by users, it is necessary to transcend country and language barriers. For example, for non-native English speakers like me, accessing information in English is a significant barrier. To address this challenge, the community has launched a project to translate the Hyperledger Fabric documentation, which today is being translated into a variety of languages. The Japanese Documentation Working Group, of which I am a member, aims to promote the spread of technology in Japan and bridge the gap between Japanese speakers and the global community by translating the documentation into Japanese. This blog post is written in both Japanese and English, which is part of that goal.
+
+Q) What about the Hyperledger Fabric roadmap that really excites you?
+
+Hyperledger Fabricのロードマップにおいて、私が最も期待しているのは、バージョン3系で実装される予定のByzantine Fault Tolerant (BFT) Ordering Serviceです。この機能は、Ordering Serviceが単なるクラッシュ障害だけでなく、悪意を持つノードが引き起こすビザンチン障害にも耐えうるようにするものです。これは、Hyperledger Fabricベースのシステムで真の非中央集権化を実現するための欠かせない要素であり、その導入によってHyperledger Fabricの使用可能範囲が大幅に拡大されると確信しています。
+
+この新しいOrdering Serviceは、Hyperledger Fabricの安全性と信頼性を新たなレベルへと引き上げることに寄与します。私としては、このような革新的な仕組みを実際に活用するためには、その使い方を理解しやすくガイドすることや、その運用管理プロセスを洗練させていくことも非常に重要だと考えています。これらの側面においても、コミュニティ内での議論を促進し、サンプルコードや運用機能の拡充をすることで貢献していきたいと思っています。
+
+In the Hyperledger Fabric roadmap, I am most excited about the Byzantine Fault Tolerant (BFT) Ordering Service that will be implemented in version 3. This feature will allow the Ordering Service to tolerate not just crash failures, but also byzantine failures caused by malicious nodes. I believe that this is an essential component of true decentralization in Hyperledger Fabric-based systems, and its introduction will significantly broaden the scope of Fabric's applicability.
+
+This new Ordering Service will help take Hyperledger Fabric to a new level of security and trustworthiness. In my opinion, it is also very important to understandably guide the usage of such an innovative mechanism and refine its operational management process in order to actually take advantage of it. I would like to contribute to these aspects as well by facilitating discussions within the community and enhancing the sample code and operational functions.
+
+Q) How did you get involved in Hyperledger Fabric?
+
+日立は2016年のHyperledger Foundationの設立当初よりHyperledger Fabricの開発に参画し継続的なパッチ投稿を通じてそのユーザビリティとコード品質の維持/向上に寄与してきました。私自身は、その中で最初の数年はHyperledger Fabricの一ユーザとしてスタートしましたが、小さなバグ修正から徐々にコミュニティへの関与を深めていきました。私の関心は主に、ブロックチェーン技術やHyperledger Fabricの実利用に必要なシステム運用管理であり、これを改善するための活動も行ってきました。
+
+その取り組みの一つとして、2021年2月には、非中央集権型システム運用管理ツールであるOpsSC (Operations Smart Contract) for Hyperledger FabricをHyperledger Foundation内の実験的プロジェクトをホストするHyperledger Labs の一プロジェクトとして寄贈しました。このプロジェクトを通じて得た知見をフィードバックする形で、Hyperledger Fabricに対しては、チェーンコードライフサイクル管理やチャネル管理などのその運用管理の基本機能に関する様々な改善や拡張に貢献してきました。
+
+2023年5月にはfabric-samples（Hyperledger Fabricのサンプル集を管理するリポジトリ）のメンテナとしても任命されました。以上のような活動を通じて、2024年3月にコアメンテナとして就任に至り、今後も継続的にHyperledger Fabricとコミュニティの発展にも貢献していければと思います。
+
+Since the establishment of the Hyperledger Foundation in 2016, Hitachi has been involved in the development of Hyperledger Fabric, contributing to its usability and code quality through continuous patch submissions. I started as a user of Hyperledger Fabric in its first few years and gradually became more involved in the community, starting with small bug fixes. My main interest has been in the system operations and management required for production use of blockchain technology and Hyperledger Fabric, and I have been working to improve this as well.
+
+As part of this activity, in February 2021, I contributed OpsSC (Operations Smart Contract) for Hyperledger Fabric, a decentralized system operation tool, as a project to Hyperledger Labs, which hosts experimental projects within the Hyperledger Foundation. Feeding back on the knowledge gained through this project, we have contributed various improvements and enhancements to Hyperledger Fabric with respect to its basic operations management features, such as chaincode lifecycle and channel management.
+
+In May 2023, I was also appointed as a maintainer of fabric-samples, a repository that maintains a collection of samples for Hyperledger Fabric. Through such activities, I became a core maintainer in March 2024. I’m looking forward to continuing to contribute to the development of Hyperledger Fabric and its community.
+
+___
+
+Join Tatuysa Sato and Hyperledger Foundation Executive Director Daniela Barbosa at 6:30PM JST on May 16 at this Hyperledger Toko Meetup. (Go here for details and to register.)
+
+
+
+ 
+
+ 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

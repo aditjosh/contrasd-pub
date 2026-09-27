@@ -1,0 +1,584 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2021-01-19 Office Hours Notes - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+
+	2020 Notes
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2021-01-19 Office Hours Notes
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2021-01-19 Office Hours Notes
+
+	Danno Ferrin
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Jan 22, 2021
+
+
+
+
+
+
+
+
+
+
+Call recording -  passcode: ee3&gR!Y
+
+
+Agenda
+	Housekeeping	Antitrust notice - https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Hyperledger Developer Newsletter - https://www.hyperledger.org/developer-newsletter 
+	Hyperledger Maintainers Summit (Virtual) ~ March
+	Github Auto-Merge is Enabled
+
+
+	Release Process	20.10.4  last week - 13 January
+	Last Stable Release for 6 weeks barring urgent patches
+
+
+	21.2 RC cycle has begun
+	Future releases
+
+
+	Work Updates 	OpenTelemetry Overview (Antoine Toulme)
+	Berlin HF Status
+	Bonsai Tries Status
+
+
+	Other Business
+	Open Forum
+	Future Topics
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2021-01-19 Office Hours
+2021-01-19 Office Hours
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-02-16 Office Hours
+2021-02-16 Office Hours
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-11-24 Office Hours
+2020-11-24 Office Hours
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-09-05 Contributor Call - EMEA Friendly Time
+2023-09-05 Contributor Call - EMEA Friendly Time
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020 12 10 TSC Minutes
+2020 12 10 TSC Minutes
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022-09-27 Contributor Call
+2022-09-27 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 40, "requestCorrelationId": "750f6c79aab74dbd99834f7f93add8b0"}

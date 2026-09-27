@@ -1,0 +1,359 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-7546: Upgradeable Clone - EIPs - Fellowship of Ethereum Magicians
+
+
+    
+    
+  
+    Fellowship of Ethereum Magicians
+  
+
+
+    
+        
+    
+      EIP-7546: Upgradeable Clone
+    
+
+
+      
+          
+            
+              
+              
+                EIPs
+              
+            
+            
+
+
+
+        
+            erc, 
+            proxy-contract, 
+            upgradeable-contract
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                KaiHiroi
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 25, 2023,  8:52am
+                  
+                  
+
+1
+              
+            
+            
+              Discussion for
+
+  
+
+      github.com/ethereum/ERCs
+  
+
+  
+    
+
+
+
+    
+      
+    
+
+
+  
+
+
+
+      
+        Add ERC: Upgradeable Clone
+      
+
+
+    
+      ethereum:master ← KaiHiroi:ucs
+    
+
+
+      
+        
+          opened 03:03AM - 27 Oct 23 UTC
+        
+
+
+        
+          
+            
+            KaiHiroi
+          
+        
+
+
+        
+          
+            +626
+            -0
+          
+        
+
+      
+
+  
+
+
+
+
+  
+    Migrate from EIPs repository
+
+---
+
+When opening a pull request to submit a n…ew EIP, please use the suggested template: https://github.com/ethereum/EIPs/blob/master/eip-template.md
+
+We have a GitHub bot that automatically merges some PRs. It will merge yours immediately if certain criteria are met:
+
+ - The PR edits only existing draft PRs.
+ - The build passes.
+ - Your GitHub username or email address is listed in the 'author' header of all affected PRs, inside <triangular brackets>.
+ - If matching on email address, the email address is the one publicly listed on your GitHub profile.
+
+  
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SamWilsn
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 15, 2023,  7:04pm
+                  
+                  
+
+2
+              
+            
+            
+              How is this different from EIP-2535?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SamWilsn
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 15, 2023,  7:31pm
+                  
+                  
+
+3
+              
+            
+            
+              
+Furthermore, it is RECOMMENDED for each implementation contract to implement ERC-165’s supportsInterface(bytes4 interfaceID) to ensure that it correctly implements the function selector being registered when added to the Dictionary.
+
+
+
+Is there a risk of accidentally calling the implementation contract directly? Should that be addressed somewhere?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                SamWilsn
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 15, 2023,  7:33pm
+                  
+                  
+
+4
+              
+            
+            
+              
+It is RECOMMENDED to choose the storage management method that is considered most appropriate at the time.
+
+
+
+How does the external application determine which storage layout is in use?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

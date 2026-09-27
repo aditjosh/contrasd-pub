@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+New Releases from Hiero Community for Integrating Identity Frameworks - Your Feedback Requested
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          New Releases from Hiero Community for Integrating Identity Frameworks - Your Feedback Requested
+
+        
+
+        
+           Written by Diane Mueller, LF Decentralized Trust TAC member and Open Source Strategic Advisor, Hedera | Mar 20, 2025 6:59:26 PM 
+        
+
+        
+          We’re thrilled to announce the release of the Hedera Plugin for ACA-Py, an OpenWallet Foundation project, along with the Hiero DID SDK for Python, a subproject of LF Decentralized Trust’s Hiero! This marks a significant milestone in advancing decentralized identity solutions on the Hedera and other Hiero-based networks, integrating key open source identity frameworks to facilitate the development of privacy-preserving credentialing applications. This initiative also expands the Hiero ecosystem to embrace and better support Python Developers with a Native Python SDK.
+
+
+“ACA-Py’s strength has always been its adaptability, supporting a range of verifiable credential ecosystems. The addition of Hedera as a Verifiable Data Registry through this plugin further is a powerful addition to the options available for developers looking to build scalable, privacy-preserving identity solutions. We welcome contributions and feedback from the community about this important evolution to ACA-Py’s capabilities.” — Stephen Curran, ACA-Py Maintainer, OpenWallet Foundation
+
+ACA-Py is a comprehensive framework for building interoperable, self-sovereign identity agents. It supports various protocols and standards, including those for credential issuance, presentation, and DID communication. ACA-Py is designed to operate in diverse environments and can interact with multiple ledger technologies. It offers a robust platform for managing identity-related workflows and establishing secure peer-to-peer connections.
+
+Background – HIP-762 & Hyperledger AnonCreds
+
+The Hedera Plugin for ACA-Py stems from Hedera Improvement Proposal (HIP) 762, authored by Sumabala Nair (IBM) and Jack Hsu (Boeing). HIP-762 proposed integrating Hyperledger AnonCreds (Anonymous Credentials), another LF Decentralized Trust project, with Hedera, enabling users to prove credential attributes selectively without exposing unnecessary personal data. A key feature request of HIP-762 was the extension of ACA-Py to support Hedera as a Verifiable Data Registry (VDR), thereby enabling developers to build decentralized identity solutions that utilize Hedera's infrastructure.
+
+What is the Hedera Plugin for ACA-Py?
+
+This plugin enables ACA-Py to utilize the Hedera network as a Verifiable Data Registry (VDR), supporting AnonCreds-based identity solutions through the Hedera Consensus Service (HCS). Developers can now leverage Hedera’s low-cost, high-throughput, and enterprise-grade consensus mechanism for decentralized identity use cases. 
+
+This plugin utilizes the Hiero DID SDK for Python that is hosted by the Hiero project under LF Decentralized Trust. Hiero is the first Layer 1 platform to be openly governed by a trusted independent foundation. It is the open source, vendor-neutral distributed ledger technology that powers the Hedera public ledger.
+
+Key Features
+
+	Comprehensive Support for AnonCreds Objects on HCS:
+	Decentralized Identifier (DID) management using the Hedera DID method
+	Credential Schemas and Definitions
+	Revocation Registries and Deltas
+	Off-chain storage for Tails files utilizing the Indy Tails Server
+
+
+
+	Seamless Integration with ACA-Py Demos:
+	Facilitates easy testing and adoption through integration with existing ACA-Py demonstrations.
+
+
+
+	Open Source and Community Driven:
+	Released under the Apache 2.0 license, with the source code available in the ACA-Py Plugins open-source repository in OpenWallet and under the Hiero project at LF Decentralized Trust.
+	Includes unit tests and comprehensive documentation to assist developers in implementation.
+
+
+
+
+
+What is the Hiero DID SDK for Python? 
+
+The Hiero DID Python Software Development Kit (SDK) is tailored for developers aiming to manage Decentralized Identifiers (DIDs) and AnonCreds Verifiable Credentials on the Hedera network. It leverages the Hedera Consensus Service to enable operations such as creating, updating, and resolving DIDs and AnonCreds resources required for handling credential issuance and verification. Essentially, it provides the foundational tools necessary for integrating Hedera-based identity functionalities into applications.
+
+Developers can utilize the hiero-did-sdk-python to handle Hedera-specific DID and credential operations within their applications. For broader interoperability and to leverage established identity protocols, these functionalities can be integrated into an ACA-Py agent. This combination allows the agent to manage Hedera-based identities while benefiting from ACA-Py's extensive features and protocol support.
+
+Wait, There's More! There's Now Also an Official Hiero SDK for Python
+
+We are also excited to introduce the Hiero SDK for Python, a native Python SDK that empowers Python developers to integrate Hiero’s distributed ledger technology into their applications effortlessly. The Hiero SDK for Python is available for installation via PyPI. For more detailed information and access to the source code, visit the GitHub repository: Hiero SDK for Python on GitHub.
+
+What’s Next? Phase 2 – Hedera Plugin for OpenWallet’s Credo-ts
+
+Building upon the success of the ACA-Py plugin, we are initiating Phase 2: the development of the Hedera Plugin for the OpenWallet Foundation’s Credo project. Credo-ts is a framework written in TypeScript for building decentralized identity solutions that aims to be compliant and interoperable with identity standards across the world and further, to the OpenWallet Foundation’s React Native Bifold Wallet, that is based on Credo. This effort aims to further enhance support for AnonCreds on the Hedera network, promoting broader adoption across various decentralized identity ecosystems.
+
+Call to Action – We Need Your Feedback!
+
+With the ACA-Py plugin now live, we invite the developer community to test it and provide valuable feedback. Here's how you can contribute:
+
+	Explore the Plugin: Access the repository, integrate the plugin into your ACA-Py environment, and experiment with its features. Find the repository here: Hedera in the ACA-Py Plugins Repository.
+	Explore the Hiero DID SDK for Python: One of the essential tools for managing DIDs and Verifiable Credentials on Hedera. Leverage it alongside the ACA-Py plugin to enhance your decentralized identity solutions. Find the repository here: Hiero DID SDK for Python.
+	Take the Hiero Python SDK for a spin: We encourage Python developers to explore this new SDK, integrate it into their projects, and provide feedback to help us enhance its functionality and performance. Find the repository here: Hiero Python SDK.
+	Share Your Insights: If you encounter any issues or have suggestions for improvements, please open an issue in the related GitHub repositories.
+	Engage with the Community: Join our community meetings and community channels to help shape the future developments of this project. Find us on Discord in the LF Decentralized Trust or OpenWallet channels.
+
+
+Your input is invaluable in refining the plugin to meet the needs of developers building on the Hedera network.
+
+Get Started
+
+	Access the Plugin: Visit the repository here: Hedara ACA-Py Plugin
+	Documentation and Setup Instructions: Detailed guidelines are available in the repository and here.
+
+
+Kudos & Acknowledgments
+
+A huge thank you to DSR for their exceptional work in developing the plugin! Special thanks to Keith Kowal (Hashgraph) and ACA-Py maintainer Stephen Curran (BC Gov Digital Trust Team) for their insights. We also recognize Sumabala Nair (IBM) and Jack Hsu (Boeing) for their contributions in shaping this vision. 
+
+Together, let's build the future of decentralized identity. We look forward to your contributions and feedback!
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

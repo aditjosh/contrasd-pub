@@ -1,0 +1,579 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-1-31 Contributor Call notes - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+
+	Notes
+
+
+
+
+	2019 Notes
+
+
+
+
+
+	2020 Notes
+
+
+
+
+
+	2021-01-19 Office Hours Notes
+
+
+
+
+
+	2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2022-1-31 Contributor Call notes
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2022-1-31 Contributor Call notes
+
+	Grace Hartley (Deactivated)
+
+
+
+	Diego Lopez Leon
+
+
+
+
+
+Owned by Grace Hartley (Deactivated)
+
+
+Last updated: Feb 01, 2022 by Diego Lopez Leon
+
+
+
+
+
+
+
+
+
+
+Attendees:Â Gary SchulteÂ Frank LiÂ Sally MacFarlane Justin Florentine Danno Ferrin Diego Lopez Leon Ry Jones Daniela BarbosaÂ Lucas SaldanhaÂ Tim Beiko
+Incentive Program: Tim wasn't on call at first so had to delay agenda item until later.
+Metrics:Â Reviewed Analytics to LFX and Besu. Action: Review issues at next meeting to see if open issue count continues to increase.
+Roadmap: Sally update to include upgrading privacy feature to full feature. Sally's team is spending time on mainnet work such as tracing apis. Danno's team is adding new features into the roadmap as well. Action: Danno to add in work to Roadmap wiki page.
+Incentive Program:
+Team discussed the Proposal #3 and #3.5. Danno was concerned that proposal #3 doesn't account for new organizations well. Tim provided feedback that this agreement will be with ConsenSys, Hyperledger, and Ethereum Foundation. Other organizations can be considered to be added in the future, but not within this agreement. These guidelines will help provide organizations transparency around the futureÂ 
+Guiding Principles: Grace provided a high-level overview of the principles in proposal 3. There seemed to be general agreement once organizations in agreement were agreed upon (see bullet above).Â 
+Transaction Fees: Grace provided a high level overview of transaction fees. There seemed to be general agreement on distribution of transaction fees. Ask is for Hyperledger to confirm if they can provide staff to manage the maintainer list.Â 
+Withdrawal Keys: Grace provided a high level overview of withdrawal keys overview. Danno raised a concern that organizations won't be as incentivized to join later in the program. Tim shared that he is willing to consider maintainer status counted from when the maintainer begins receiving the transaction fees. With that suggestion, there did not seem to be any other objections to Withdrawal keys.
+Team discussed next steps outlined below. Target is to have these unanswered questions resolved by the next contributor call on Feb. 15th. Grace called out that this agreement will have to go through legal processes by the respective organizations.Â 
+Next Steps re Incentive Program:
+	Tim to write up the organization requirements for future organizations.
+	Hyperledger (Daniela) to come back on on these open questions:	Can Hyperledger hold the withdrawal keys and hold crypto
+	Can they hold the funds from the transaction fees and distribute them to participating maintainersâ€™ organizations
+	Can Hyperledger commit to using the funds solely for Besu mainnet work
+	Can Hyperledger assign someone on staff as a Besu community manager to help manage the maintainer list, scope out bounties, manage the program from their side
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2022-03-29 Contributor Call
+2022-03-29 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-03-15 Contributor Call
+2022-03-15 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-02-15 Contributor Call
+2022-02-15 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-12-20 Contributor Call
+2022-12-20 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-03-01 Contributor Call
+2022-03-01 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-04-12 Contributor Call
+2022-04-12 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "8e0c9f22df444fb59cf478e329103b81"}

@@ -1,0 +1,120 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Welcomes Project Indy
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Welcomes Project Indy
+
+        
+
+        
+           Written by Phillip J. Windley, Ph.D., Chair, Sovrin Foundation | May 2, 2017 6:55:00 PM 
+        
+
+        
+          Guest post: Phillip J. Windley, Ph.D., Chair, Sovrin Foundation
+
+We’re excited to announce Indy, a new Hyperledger project for supporting independent identity on distributed ledgers. Indy provides tools, libraries, and reusable components for providing digital identities rooted on blockchains or other distributed ledgers so that they are interoperable across administrative domains, applications, and any other silo.
+
+Why Indy?
+
+Internet identity is broken. There are too many anti-patterns and too many privacy breaches. Too many legitimate business cases are poorly served by current solutions. Many have proposed distributed ledger technology as a solution, however building decentralized identity on top of distributed ledgers that were designed to support something else (cryptocurrency or smart contracts, for example) leads to compromises and short-cuts. Indy provides Hyperledger projects and other distributed ledger systems with a first-class decentralized identity system.
+
+Indy’s Features
+
+The most important feature of a decentralized identity system is trust. As I wrote in A Universal Trust Framework, Indy “provides accessible provenance for trust transactions. Provenance is the foundation of accountability through recourse.” Not only can Indy support user-controlled exchange of verifiable claims about an identifier, it also has a rock-solid revocation model for cases where those claims are no longer true. Verifiable claims are a key component of Indy’s ability to serve as a universal platform for exchanging trustworthy claims about identifiers.
+
+Another vital feature of decentralized identity—especially for a public ledger—is privacy. Privacy by Design is baked deep into Indy architecture as reflected by three fundamental features:
+
+	First, identifiers on Indy are pairwise unique and pseudonymous by default to prevent correlation. Indy is the first Distributed Ledger Technology  to be designed around Decentralized Identifiers (DIDs) as the primary keys on the ledger. DIDs are a new type of digital identifier that were invented to enable long-term digital identities that don’t require centralized registry services. DIDs can be verified using cryptography, enabling a digital “web of trust.” DIDs on the ledger point to DID Descriptor Objects (DDOs), signed JSON objects that can contain public keys and service endpoints for a given identifier. DIDs are a critical component of Indy’s pairwise identifier architecture.
+	Second, personal data is never written to the ledger. Rather all private data is exchanged over peer-to-peer encrypted connections between off-ledger agents. The ledger is only used for anchoring rather than publishing encrypted data.
+	Third, Indy has built-in support for zero-knowledge proofs (ZKP) to avoid unnecessary disclosure of identity attributes—privacy preserving technology that has been long pursued by IBM Research (Idemix) and Microsoft (UProve), but which a public ledger for decentralized identity now makes possible at scale.
+
+
+Indy is all about giving identity owners independent control of their personal data and relationships. Indy is built so that the owner of the identity is structurally part of transactions made about that identity. Pairwise identifiers not only prevent correlation, but they stop third parties from transacting without the identity owner taking part since the identity owner is the only place pairwise identifiers can be correlated.
+
+
+
+Indy is based on open standards so that it can interoperate with other distributed ledgers. These start, of course, with public-key cryptography standards. Other important standards cover things like the format of the identifiers, what they point to, and how agents exchange verifiable claims. Indy also supports a system of attribute and claim schemas that are written to the ledger for dynamic discovery of previously unseen claim types. Relying parties can make their own entitlement decisions based on schemas with publicly known identifiers.
+
+The result is a new way of doing systems integration on the Internet that is much less costly while also being more trustworthy. As I wrote in When People Can Share Verifiable Attributes, Everything Changes, owner-provided attributes are a powerful driver that will push decentralized identity systems well beyond the current uses of federation and social login. Organizations can reduce, or even eliminate, costly manual verification processes and API integrations, and instead trust the identity claims presented to them, precisely because these claims can be verified. People and organizations become the source of what’s true about them.
+
+Indy Shares the Internet’s Virtues
+
+As I wrote in An Internet for Identity, Indy shares three important virtues with the Internet: No one owns it. Everyone can use it. Anyone can improve it. Launching Indy as a Hyperledger Project is a critical component of allowing anyone to improve how Indy works.
+
+These virtues are supported by Indy’s permissioned-validation ledger model and open-source code base. This has important consequences for scale and cost. But unlike other permissioned ledgers like R3’s Corda (http://www.r3cev.com/blog/2016/4/4/introducing-r3-corda-a-distributed-ledger-designed-for-financial-services) , CULedger (http://www.culedger.com/), or SecureKey (http://securekey.com/press-releases/ibm-securekey-technologies-deliver-blockchain-based-digital-identity-network-consumers/), Indy is designed for global public access. Even though Indy is permissioned, anyone can access Indy’s features.
+
+Validation is performed by a set of validator nodes running a modified, redundant Byzantine fault tolerant protocol called Plenum that is part of the Indy project. Plenum allows for the group of servers run by the validators to come to collective agreement about the validity and order of events.
+
+This diagram shows how these different dimensions of validation and access play across different distributed ledger systems.
+
+
+
+What is the Relationship of Indy and Sovrin?
+
+The Indy code base is being contributed to the Hyperledger Project by the Sovrin Foundation. Established in September 2016, the Sovrin Foundation is an international non-profit foundation created to govern a global public utility for decentralized identity. The trustees of the Sovrin Foundation believe the public, permissioned quadrant above is the only one that can achieve both high trust and global adoption for a decentralized identity system.
+
+The Sovrin Foundation developed the Sovrin Trust Framework to govern how trusted institutions, called stewards, will operate validator nodes of the Sovrin Network. All stewards will run an instance of Project Indy. However the Sovrin Network is only one network designed to run Indy; any number of other networks may be created to run their own instances.
+
+How Will Hyperledger Enhance Indy?
+
+The Indy code base, originally developed by Evernym, was donated to the Sovrin Foundation to establish a strong open source foundation for the Sovrin Network. The Sovrin Foundation has been building a global community of developers who are passionate about Independent Identity and the economic and social benefits it brings to both individuals and enterprises.
+
+Now the contribution of Indy to Hyperledger takes the next step in that process, opening up Project Indy to the entire Hyperledger family of developers. Our hope is to attract even more developers who want to unleash the transformative power of digital identity that is truly decentralized, self-sovereign, and independent of any silo. We would also like to explore direct synergies with the identity management goals and requirements of the other Hyperledger projects.
+
+Learn More about Indy
+
+To learn more or contribute to the Indy project:
+
+	Sovrin and Indy FAQs
+	Sign up for the Indy Project Email List
+	Join the Indy Rocketchat
+
+
+And for those who want to learn more about the Sovrin Foundation:
+
+	Join the Sovrin Forum.. This is a great place to ask questions and engage with the Sovrin community.
+	Join the Sovrin Slack. It has a number of channels for discussion of ongoing issues.
+
+
+For those interested in additional information about Indy or any of the other technical projects under Hyperledger, please reach out to: info@hyperledger.org. You can also plug into the Hyperledger community at github, Rocket.Chat the wiki or our mailing list.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

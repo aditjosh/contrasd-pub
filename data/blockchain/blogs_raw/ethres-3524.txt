@@ -1,0 +1,211 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Network Overhead for Ethereum Nodes - Networking - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Network Overhead for Ethereum Nodes
+    
+
+
+      
+          
+            
+              
+              
+                Networking
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                Levalicious
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 24, 2018,  9:00pm
+                  
+                  
+
+1
+              
+            
+            
+              Hey Everyone,
+
+I was looking for some statistics on the network overhead for individual nodes on the Ethereum network and couldn’t find any info outside of the latency info on ethstats.net. By that, I mean any information on how many individual messages and or how many megabytes a node on the network receives/sends/relays on average per day. Are there any existing metrics for this, and are there any predictions/estimations for such metrics under PoS/Sharding?
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                EthBytes
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 25, 2018,  6:04am
+                  
+                  
+
+2
+              
+            
+            
+              You could try using metrics with Geth?  This would be “subjective” to the monitored node though.
+
+I am unsure how you capture the data for further use sorry.
+
+
+  
+      
+      GitHub
+  
+  
+    
+
+ethereum/go-ethereum
+
+
+Official Go implementation of the Ethereum protocol - ethereum/go-ethereum
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

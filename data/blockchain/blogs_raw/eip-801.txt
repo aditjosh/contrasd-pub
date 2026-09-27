@@ -1,0 +1,327 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERC-801: Canary Standard
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Standards Track: ERC
+    
+  
+  
+    
+      ERC-801: Canary Standard
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	ligi <ligi@ligi.de>
+	Created	2017-12-16
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Simple Summary
+	Abstract
+	Motivation
+	Specification
+    	Methods
+	Events
+
+
+  
+	Implementation
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Simple Summary
+      
+      
+    
+
+
+A standard interface for canary contracts.
+
+  
+    
+      
+      
+         Abstract
+      
+      
+    
+
+
+The following standard allows the implementation of canaries within contracts.
+This standard provides basic functionality to check if a canary is alive, keeping the canary alive and optionally manage feeders.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+The canary can e.g. be used as a warrant canary.
+A standard interface allows other applications to easily interface with canaries on Ethereum - e.g. for visualizing the state, automated alarms, applications to feed the canary or contracts (e.g. insurance) that use the state.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+  
+    
+      
+      
+         Methods
+      
+      
+    
+
+  
+    
+      
+      
+         isAlive()
+      
+      
+    
+
+
+Returns if the canary was fed properly to signal e.g. that no warrant was received.
+
+
+function isAlive() constant returns (bool alive)
+
+
+
+
+  
+    
+      
+      
+         getBlockOfDeath()
+      
+      
+    
+
+
+Returns the block the canary died.
+Throws if the canary is alive.
+
+
+function getBlockOfDeath() constant returns (uint256 block)
+
+
+
+
+  
+    
+      
+      
+         getType()
+      
+      
+    
+
+
+Returns the type of the canary:
+
+
+	1 = Simple (just the pure interface as defined in this ERC)
+	2 = Single feeder (as defined in ERC-TBD)
+	3 = Single feeder with bad food (as defined in ERC-TBD)
+	4 = Multiple feeders (as defined in ERC-TBD)
+	5 = Multiple mandatory feeders (as defined in ERC-TBD)
+	6 = IOT (as defined in ERC-TBD)
+
+
+
+1 might also be used for a special purpose contract that does not need a special type but still wants to expose the functions and provide events as defined in this ERC.
+
+
+function getType() constant returns (uint8 type)
+
+
+
+
+  
+    
+      
+      
+         Events
+      
+      
+    
+
+  
+    
+      
+      
+         RIP
+      
+      
+    
+
+
+MUST trigger when the contract is called the first time after the canary died.
+
+
+event RIP()
+
+
+
+
+  
+    
+      
+      
+         Implementation
+      
+      
+    
+
+
+TODO
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  ligi <ligi@ligi.de>, "ERC-801: Canary Standard [DRAFT]," Ethereum Improvement Proposals, no. 801, December 2017. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-801.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

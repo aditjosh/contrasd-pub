@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet Aries Agent Controller, a New Hyperledger Lab
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Meet Aries Agent Controller, a New Hyperledger Lab
+
+        
+
+        
+           Written by Superlogic, maintainers of Aries Agent Controller | Feb 29, 2024 3:55:42 PM 
+        
+
+        
+          A code base developed and contributed by Superlogic that facilitates deploying Hyperledger Aries agents in cloud environments is the latest Hyperledger lab. The new lab, Aries Agent Controller, is now officially a part of the Hyperledger ecosystem, and we are excited to work with the broader community to grow it.  
+
+
+Intro: Navigating the Complexities of Agent Deployment
+
+The deployment of agents, particularly for decentralized identity systems like Hyperledger Aries, presents a unique set of challenges. These complexities range from managing scalable infrastructure to ensuring secure and efficient operation in diverse environments. 
+
+The Aries Agent Controller lab addresses these issues through Kubernetes charts that the Superlogic team developed to deploy agents in cloud environments. By leveraging the power of Kubernetes, this lab simplifies the deployment process, making it more robust and manageable for organizations and developers alike. This achievement is largely thanks to the efforts of two specific team members: Correy Schultz (Head of DevOps) and Nathan Randall (Senior Engineer). 
+
+The lab is specifically tailored for the deployment of Hyperledger Aries agents using Kubernetes, with a specific focus on Amazon Web Services (AWS) through Amazon EKS. The charts and templates can be further modified to deploy onto other cloud providers. The charts themselves are located in Hyperledger Bevel. 
+
+What is included in the Aries Agent Controller lab?
+
+First, we added deployment scripts to Hyperledger Bevel. This release offers Kubernetes charts and Helm packages, enabling easy, scalable, and efficient deployment of Aries agents. The deployment, leveraging Kubernetes, is not only robust but also cloud-native and scalable.
+
+The core components include:
+
+	Customizable Kubernetes Charts: Designed for flexibility to cater to different deployment needs.
+	Helm Package Integration: Ensuring simple and consistent deployments.
+	Dedicated Charts for Each Major Agent Actor in the VC Model: These include issuer, verifier, and holder agents, following best practices for secrets management.
+
+
+Once deployed, these agents can interact with distributed ledgers, ensuring that verifiable credentials are anchored in a tamper-evident way. This not only enhances trust in the system but also leverages the inherent security and transparency features of blockchain technology. 
+
+Agent Controller
+
+Along with the deployment charts for the agents, the lab also includes Agent Controller code. Developed by the Superlogic team using Django Python, this controller acts as the key facilitator for interactions among the three types of agents in the system: the issuer, the multitenant holder, and the verifier. Notably, in both the charts and overall architecture, the holder agent operates in a multitenant mode. Additionally, we've included example configurations for environment variables necessary for running these agents.
+
+The Agent Controller is the main focus of the lab, with the charts serving as an adjacent contribution to Hyperledger Bevel. The lab therefore can be developed and worked with locally, with the agent deployment scripts being leveraged deployments to higher level coding environments. 
+
+The execution of this project has been skillfully led by Superlogic’s identity technical lead: Mona Rassouli. Her insights on self-sovereign identity and this overall solution architecture can be accessed through her informative talk available on the Hyperledger Foundation Youtube channel.
+
+How Does This Lab Contribute to Hyperledger Foundation's Mission?
+
+The lab is specifically designed for deploying Hyperledger Aries agents using Kubernetes, with a particular emphasis on Amazon Web Services (AWS) via Amazon EKS. The provided charts and templates are also adaptable for deployment on other cloud platforms.
+
+The ability to connect seamlessly with existing ledgers and handle credential requests effectively is what makes this deployment step so valuable. It paves the way for practical applications in identity verification, supply chain management, and more, harnessing the full potential of decentralized identity frameworks.
+
+The Superlogic team has been an active part of the Hyperledger development community on a number of fronts. In addition to this lab, Superlogic contributed the Hyperledger Firefly Tezos connector, thanks to Dzianis Andreyenka. Dzianis shares his implementation and demo in his talk alongside Eddie Satterly on the Hyperledger Foundation Youtube channel. 
+
+Hossein Namazian will also be sharing details on another contribution, a secure multi-party computation (MPC) implementation that offers secure cryptography for a wide variety of use cases, at a Meetup on March 4 at 9:00 am PT.    
+
+Acknowledgements
+
+A special thanks to the team at Superlogic and the broader Hyperledger community whose invaluable input and support have been pivotal in bringing this project to fruition. 
+
+Three other key individuals to the success of the Superlogic platform are Volodymyr Petrushkevych (VP Engineering), Serhii Romaniv (Senior Engineer & Crystal Logic CTO/Co-Founder), and Carter Razink (Director of Product - Web3/Blockchain).
+
+Contributions and Future Timeline 
+
+As we celebrate this move, we hope this lab benefits others. We encourage everyone to check out the code and to contribute further. Our Hyperledger Bevel contribution can be found here. The agent controller code is here. 
+
+Instructions are present in the respective repositories. Bevel in particular would be a strong area for contributions to help develop towards cloud agnostic solutions. 
+
+
+For more information, visit the Aries Agent Controller lab on the official Hyperledger Labs page.
+
+
+
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

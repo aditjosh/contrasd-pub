@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain Pioneers: Hyperledger Avalon
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Blockchain Pioneers: Hyperledger Avalon
+
+        
+
+        
+           Written by Ry Jones and David Boswell, Community Architects | Dec 16, 2024 6:00:00 PM 
+        
+
+        
+          As Hyperledger Foundation laid out in the Helping a Community Grow by Pruning Inactive Projects post, there is an important life cycle to well governed open source projects. Through the evolution of the market, Hyperledger Foundation and, now, LF Decentralized Trust has been the home to a growing ecosystem of blockchain, identity and related projects. 
+
+
+A number of projects that helped drive innovation and advanced the development of enterprise-grade decentralized technologies have cycled through the life cycle to the archived stage. This series will look back at the impact of these pioneering projects.
+
+Hyperledger Avalon, a project focused on enabling privacy in blockchain transactions by advancing secure data handling through trusted computing, is next up in the series. 
+
+History
+
+Hyperledger Avalon (originally called the Trusted Compute Framework) was proposed as a new Hyperledger project in 2019 and started with a large number of sponsoring organizations, including Intel, Chainlink, Baidu, IBM, and more.
+
+The project’s goal was to build a ledger independent implementation of the Trusted Compute Specifications published by the Enterprise Ethereum Alliance. By extending computational trust to off-chain execution, the community planned to improve blockchain throughput, scalability, and transaction privacy.
+
+Innovation in Hyperledger Avalon
+
+Hyperledger Avalon aimed at addressing two major technological needs: secure computation and privacy-preserving transactions. These factors are critical in environments requiring high data confidentiality, such as healthcare, finance, and government. Avalon delivered on this by providing a framework for enabling secure off-chain computation by utilizing trusted execution environments (TEEs), such as Intel SGX, to perform computations on encrypted data without exposing the raw data to unauthorized parties.
+
+Enabling workloads to be processed in isolated hardware environments outside the blockchain reduces network computational load on the blockchain and enhances transaction throughput. By leveraging TEEs, Avalon could execute code in a tamper-proof environment, preserving confidentiality even during processing.
+
+Avalon also introduced secure oracles, which act as trustworthy intermediaries to fetch and process external data for blockchain applications. This allowed Avalon to connect secure, off-chain data to smart contracts, expanding the use cases for blockchain technology in regulated industries where data privacy is paramount.
+
+Avalon’s contributors were also instrumental in developing standardized protocols for managing and verifying computation within TEEs. This approach allowed Avalon to create a modular framework adaptable across various trusted hardware, making it interoperable and flexible for integration into different enterprise solutions.
+
+While it ultimately wasn’t destined for long-term adoption, Avalon laid the groundwork for more sophisticated confidential computing initiatives. 
+
+Challenges and Move from Hyperledger Community
+
+Hyperledger Avalon contributors eventually decided to halt the project for several reasons, including limited adoption, market shifts, resource allocation, and community realignment.
+
+Avalon faced slow adoption in the broader blockchain and enterprise communities. As confidential computing evolved, the industry gravitated toward solutions offering more extensive hardware support and simplified integration into existing infrastructure. Avalon’s dependency on specific TEEs, like Intel SGX, limited its reach and practical adoption as organizations required solutions compatible with a broader range of hardware environments.
+
+The project also lacked the resources to fully scale and maintain the high standards required for production environments. There were other people working on similar problems at the Confidential Computing Consortium (CCC) and the decision was made to consolidate efforts under the CCC. By doing this, Avalon’s contributors saw an opportunity to realign with and strengthen a community that shares their commitment to developing practical, scalable, and collaborative solutions for confidential computing.
+
+Legacy
+
+The technology and knowledge cultivated within the Avalon project are not lost but, instead, are being channeled into the Confidential Computing Consortium. The CCC brings together major technology players such as Intel, Microsoft, and IBM to establish a robust, multi-vendor ecosystem for secure data computation. Check out that community to learn more about what they are working on.
+
+Hyperledger Avalon also helped establish that privacy, security, and trust are foundational to digital innovation and opened the door for other projects focused on these principles. Other projects have started at LF Decentralized Trust that are looking to innovate in this space, including Lockness, a new project focused on key management and digital signature protocols, and new efforts around privacy, such as the Zeto lab. Check those out to learn about what else is happening in the community around security and privacy.  
+
+We would like to thank all of the people who contributed to Hyperledger Avalon while it was an active project in the Hyperledger community. This includes the top five contributors: Dan Anderson, Manoj Gopalakrishnan, Manjunath A C, Rajeev Ranjan, Ramakrishna Srinivasamurthy, and more than a dozen other community members.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

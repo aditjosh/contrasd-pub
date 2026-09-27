@@ -1,0 +1,155 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Serverless: Off-chain EWASM without the on-chain risk - Execution Layer Research - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Serverless: Off-chain EWASM without the on-chain risk
+    
+
+
+      
+          
+            
+              
+              
+                Execution Layer Research
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                zdanl
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 5, 2023, 12:27pm
+                  
+                  
+
+1
+              
+            
+            
+              Would like to suggest Off-Chain XMLHTTPRequest capable [1] support to EWASM, seperate from Smartcontract execution, calling it Serverless or so
+
+Should cost gas to deploy, but not to call. If that is too much computational tax, should be offloaded to WebWorkers, in part at least.
+
+That’s all I think.
+
+[1] GitHub - deislabs/wasi-experimental-http: Experimental outbound HTTP support for WebAssembly and WASI
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

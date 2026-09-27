@@ -1,0 +1,529 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+
+
+More actions
+
+
+
+
+
+Besu
+
+
+
+Â 
+
+Â 
+	Project
+	
+
+
+	Status
+	GRADUATED 
+
+	CII Badge
+	
+
+
+
+	Community
+	Discord
+
+	Working group
+
+
+	Besu Financial Services Working Group
+
+	Description
+	BesuÂ is an Ethereum client designed to be enterprise-friendly for both public and private permissioned network use cases, with an extractable EVM implementation. It can also be run on test networks such as Holesky and Sepolia.Â Besu includes several consensus algorithms including Proof of Stake and Proof of Authority (IBFT 2.0, QBFT, and Clique). Its comprehensive plugin scheme is designed for modularity.
+
+
+
+
+Â 
+
+
+
+
+
+
+Key Characteristics
+What is Besu?
+Besu is an open source Ethereum client developed under the Apache 2.0 license and written in Java. It can be run on the Ethereum public network or on private permissioned networks, as well as test networks such as Holesky and Sepolia. Besu includes several consensus algorithms including PoS, PoA, and IBFT, and has a plugin scheme designed for modularity.
+What are Besuâ€™s Features?
+Besuâ€™s features include:Â 
+	Â 
+	The Ethereum Virtual Machine (EVM) : The EVM is the Turing complete virtual machine that allows the deployment and execution of smart contracts via transactions within an Ethereum blockchain. It is used in conjunction with the rest of the Besu client or as a standalone library.Â 
+
+	Consensus Algorithms:Â Besu implements various consensus algorithms which are involved in transaction validation, block validation, and block production (i.e., mining in Proof of Work). They include:
+	Proof of Stake:Â Alongside a consensus client, Besu can be used to connect to and participate in Ethereum Mainnet proof-of-stake.Â 
+
+	 Proof of Authority:Â Besu implements several Proof of Authority protocols. Proof of Authority consensus protocols are used when participants are known to each other and there is a level of trust between themâ€“â€“in a permissioned consortium network, for example.
+	QBFT: QBFT is the recommended enterprise-grade consensus protocol for private networks. In QBFT networks, approved accounts, known as validators, validate transactions and blocks. Validators take turns to create the next block. Before inserting the block onto the chain, a super-majority (greater than or equal to â…”) of validators must first sign the block.Â 
+
+	IBFT 2.0:   In IBFT 2.0 networks, transactions and blocks are validated by approved accounts, known as validators.Â  Validators take turns creating the next block. Existing validators propose and vote to add or remove validators. IBFT 2.0 has immediate finality. When using IBFT 2.0, there are no forks and all valid blocks are included in the main chain.
+
+	 Clique:   Clique is more fault-tolerant than IBFT 2.0. Clique tolerates up to half of the validators failing. IBFT 2.0 networks require greater than or equal to â…” of validators to be operating to create blocks. Clique does not have immediate finality. Implementations using Clique must be aware of forks and chain reorganizations occurring.
+
+
+
+	(Deprecated) Proof of Work (Ethash):  Proof of Work is used for mining activities on Ethereum Classic.
+
+
+
+	Storage:Â Besu uses a RocksDB key-value database to persist chain data locally.Â  This data is divided into a few sub-categories:
+	Blockchain:  Blockchain data is composed of block headers that form the â€œchainâ€� of data that is used to cryptographically verify blockchain state; block bodies that contain the list of ordered transactions included in each block; and transaction receipts that contain metadata related to transaction execution including transaction logs.Â 
+
+	World State:  Every block header references a world state via a stateRoot hash.Â  The world state is a mapping from addresses to accounts. Externally owned accounts contain an ether balance, while smart contract accounts additionally contain executable code and storage.
+	Bonsai:Â Bonsai storage is a novel paradigm for storing Ethereum state, built specifically for keeping Ethereum Mainnet storage requirements low. Bonsai organizes states into a new structure, to provide implicit pruning and low requirements. More details here.
+
+	Forest:Â A traditional trie structure, suitable for private networks and archival nodes.
+
+
+
+
+
+	P2P networking:Â Besu implements Ethereumâ€™s devp2p network protocols for inter-client communication and an additional sub-protocol for IBFT2:
+	Discovery:  A UDP-based protocol for finding peers on the network
+
+	RLPx:  A TCP-based protocol for communication between peers via various â€œsub-protocolsâ€�:
+	ETH Sub-protocol (Ethereum Wire Protocol): Used to synchronize blockchain state across the network and propagate new transactions.
+
+	IBF Sub-protocol: Used by IBFT2 consensus protocol to facilitate consensus decisions.
+
+
+
+
+
+	User-facing APIs:Â Besu provides mainnet Ethereum and EEA JSON-RPC APIs over HTTP and WebSocket protocols as well as a GraphQL API.Â Â 
+	JSON-RPC
+
+
+
+
+
+
+	Â 
+	Â 
+	Â 
+	HTTP JSON-RPC Service
+
+	WebSocket JSON-RPC Service
+
+
+
+	GraphQL
+
+
+
+	Monitoring:Â Besu allows you to monitor node and network performance.
+	Node performance is monitored using Prometheus or the debug_metrics JSON-RPC API method. It can be visually monitored through Grafana.Â 
+
+	Network Performance is monitored with Grafana or the Quorum Explorer (part of the Developer Quickstart).
+
+
+
+	(Deprecated) Privacy: Privacy in Besu refers to the ability to keep transactions private between the involved parties. Other parties cannot access the transaction content, sending party, or list of participating parties. Besu uses a Private Transaction Manager to implement privacy.Â 
+
+	(Deprecated) Permissioning:  A permissioned network allows only specified nodes and accounts to participate by enabling node permissioning and/or account permissioning on the network.
+
+
+
+
+Besu implements the   Enterprise Ethereum Alliance   (EEA) specification. The EEA specification was established to create common interfaces amongst the various open and closed source projects within Ethereum, to ensure users do not have vendor lock-in, and to create standard interfaces for teams building applications. Besu implements enterprise features in alignment with the EEA client specification.Â 
+
+Documentation
+Documentation on Besu can be found here: https://besu.hyperledger.org/
+Repositories
+https://github.com/hyperledger/besu/
+https://github.com/hyperledger/besu-docs
+Get Started
+Public Ethereum: Connect to a testnet
+Private networks: Developer Quickstart
+Want to contribute?Â 
+Have Java skills and/or a knack for Ethereum development? Reach out to us in our Discord! The #besu-contributors channel is a great way to speak with devs and find some good first issues!
+More info at this page -Â Start Here
+
+Check out the "good first issue" label on our Github!
+Communication
+Mailing List
+
+	besu@lists.hyperledger.org
+	subscribe
+
+	messages
+
+
+
+
+Chat (for questions and ephemeral discussions)
+
+Besu uses Discord for chat channel discussions.Â 
+	Go to https://discord.com/invite/hyperledger
+
+	Click Accept Invite!
+
+	Youâ€™re In! Find the Besu team at #besu and #besu-contributors
+
+
+Meetings
+
+
+
+History
+
+Â 
+Â 
+
+
+Recent space activity
+
+
+
+
+
+
+Space contributors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 32, "requestCorrelationId": "da609dcd0e5b41b0b8fa132f8491545e"}

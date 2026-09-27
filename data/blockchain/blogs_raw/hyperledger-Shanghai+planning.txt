@@ -1,0 +1,622 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shanghai planning - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+	2024 - Besu Performance Improvements since the Merge
+
+
+
+
+
+	Fast sync optimisation
+
+
+
+
+
+	Memory usage investigations on 23.7.3-RC
+
+
+
+
+
+	Permissioned chain performance testing
+
+
+
+
+
+	Q4 2022 Stability and Performance Improvements
+
+
+
+
+	Shanghai planning
+
+
+
+
+
+
+
+	Reduce Memory usage by choosing a different low level allocator
+
+
+
+
+
+	Testing Taskforce Brainstorming
+
+
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Shanghai planning
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Shanghai planning
+
+	Sally MacFarlane
+
+
+
+	Simon Dudley
+
+
+
+	Danno Ferrin
+
+
+
+	Jason Frame
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Dec 08, 2022 by Simon Dudley
+
+
+
+
+
+
+
+
+
+
+https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md
+Short list
+	EIPs	T-shirt size	Status	PR	Champion	Understudy	Accepted?	Needed for Devnet?
+	3540 - EVM Object Format (EOF)	XL	in main	https://github.com/hyperledger/besu/pull/4644
+
+Under discussion: https://notes.ethereum.org/@ipsilon/eof1-unified-specification
+
+	Danno	
+	Likely (EOF)	N
+	3651 - Warm Coinbase
+	S	in main	https://github.com/hyperledger/besu/pull/4620	Danno	
+	Yes	Y
+	3670 - EOF - Code Validation	L	in main	https://github.com/hyperledger/besu/pull/4644	Danno	
+	Likely (EOF)	y
+	3855 - PUSH0 Instruction	S	in main	https://github.com/hyperledger/besu/pull/4660	Danno	
+	Yes	Y
+	3860 - Limit & Meter Initcode	M	in main	https://github.com/hyperledger/besu/pull/4726	Diego	
+	Yes	Y
+	4200 - Relative Jump Instructions	M	Draft	https://github.com/hyperledger/besu/pull/4760	Diego	
+	Likely (EOF)	Y
+	4750 - EOF Functions	XL	Draft	https://github.com/hyperledger/besu/pull/4781	Danno	
+	Likely (EOF)	y
+	4844 - Shard Blob Tx	XL	
+	https://github.com/hyperledger/besu/issues/4631	Jiri	
+	Likely (Blobs)	Likely
+	4895 - Withdrawals	M	
+	https://github.com/hyperledger/besu/issues/4746	Simon	
+	Yes	Y
+	5450 - EOF Stack Validation	M	
+	
+	Danno	
+	Likely (EOF)	y
+
+
+Laundry list
+	EIPs	T-shirt size	Status	PR	Champion	Accepted?
+	1153 - Transient Storage 	M	testing	#4118	
+	Likely
+	2537 - BLS Precompile	S	complete	in main	Gary	Likely
+	3074 - AUTH and AUTHCALL	L	
+	
+	
+	Unlikely
+	EIP-4758: Deactivate SELFDESTRUCT
+
+(note there's also now an alternative EIP
+https://eips.ethereum.org/EIPS/eip-6046)	S	
+	
+	
+	Likely
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2022 Q2 Hyperledger Besu
+2022 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q1 Hyperledger Besu
+2022 Q1 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022-12-20 Contributor Call
+2022-12-20 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2023-07-11 Contributor Call
+2023-07-11 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021 Q4 Hyperledger Besu
+2021 Q4 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2020-06-09 Besu Contributor Call Agenda
+2020-06-09 Besu Contributor Call Agenda
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "64029bf7f92f471ca50fb7ed99aef16d"}

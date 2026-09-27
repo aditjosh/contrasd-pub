@@ -1,0 +1,167 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cross rollup censorship resistance - Layer 2 - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Cross rollup censorship resistance
+    
+
+
+      
+          
+            
+              
+              
+                Layer 2
+              
+            
+            
+
+
+
+        
+            zk-roll-up, 
+            cross-shard
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                kelemeno
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 13, 2023, 11:56pm
+                  
+                  
+
+1
+              
+            
+            
+              Hello, has anyone thought about/solved cross rollup censorship resistance, i.e. cross rollup forced transactions? These would be like L1->L2 forced txs, except L2->L2, without going through L1, (i.e. they should also be cheap).
+
+It seems these would be great, as it would make trust in the ecosystem larger, make it easier to start a rollup, and be a better ux for users.
+
+I have some thoughts, but they would require a major overhaul of the system, so I guess it’s worth checking with the big brains if there are current simple solutions   Thank you.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

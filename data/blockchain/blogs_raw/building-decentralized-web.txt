@@ -1,0 +1,237 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+building the decentralized web 3.0 | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+building the decentralized web 3.0
+Posted by Taylor Gerring on August 18, 2014
+Research & Development
+
+
+
+
+how ethereum could shard the web
+
+Given the state of our 25-year old web and all the problems inherited from legacy 1970's systems design, we should pause and take inventory of those components which are fundamentally broken and would offer a substantial return on development investment. Intersecting this concern with security, privacy, and censorship resistance, it should be painfully obvious that an all-out attack on Internet infrastructure is already underway. As netizens, a shared duty falls on us to explore, exploit, and implement new technologies that benefits creators, not oppressors.
+And while cryptography first allowed us to secure our messages from prying eyes, it is increasingly being used in more abstract ways like the secure movement of digital value via cryptocurrencies. If PGP was the first major iteration of applied crypto and Bitcoin the second, then I anticipate that the interaction and integration of crypto into the very fabric of a decentralized web will be the refined third implementation, taking root and blossoming in popularity.
+
+
+the explosion of web services
+
+Taking a look back at the brief history of the web, most would agree that Web 1.0 was epitomized by CGI scripts generating templated content on a server and delivering it to the client in a final form. This was a clear model of monolithic centralization, however, this basic form of interactivity was a huge improvement over the basic post-and-read format that comprised much of internet content at that time. Imagine having to reload the entire front page of Digg every time you wanted to click something:
+ Digg in 2006, a prolific example of “Web 2.0” interactivity not afforded by traditional CGI scripts
+
+As browser technology advanced, experimentation with AJAX calls began, allowing us to asynchronously perform actions without having to reload the whole page. Finally, you could upvote without submitting an HTML form and reloading everything. This movement to separate content from presentation—aided by CSS—pushed the web forward.
+
+Today we have technologies like AngularJS and EmberJS which ask the designer to generate a client template with specific data holes to be filled in by some backend. Although these frameworks facilitate some of the programming glue for seamless and live updates, they also nudge the developer to work in a specific way. But this is only a moderate step towards Web 2.5.
+
+amuse-bouche
+
+The real Web 3.0 has yet to begin, but it could obliterate the notion of separating content from presentation by removing the need to have servers at all. Let's take a look at some of the underlying technologies the Ethereum Project aims to deliver:
+
+	Contracts: decentralized logic
+	Swarm: decentralized storage
+	Whisper: decentralized messaging
+
+
+ Interaction including Ethereum contracts, Swarm storage, Whisper comms
+Technologies like Swarm could serve as the underlying static hosting infrastructure, removing the need to highly distribute and cache specific content. Because “decentralized dropbox” has been discussed with such frequency, expect HTTP-like bindings or services to be built atop this type of blob storage, making integration with the decentralized web 3.0 even simpler. This effort will also allow replacement of typical content delivery networks (CDN) with a distributed hash table (DHT) pointing to file blobs, much how BitTorrent works. Because of the flexibility offered by ethereum contracts, the model of content access could be creator pays, reader pays, or some hybrid system.
+
+So we've just replaced the need to have caches, reverse proxies, CDNs, load balancers, and the like to serve static content to users. Another way in which Etheruem could impact this traditional infrastructure is by replacing business logic application tiers with on-blockchain contracts. Traditionally developed in a variety of web-friendly languages like Perl, PHP, Python, ASP, C#, and Ruby, ethereum contracts run in a fully-inspectable virtual machine that encourage simplicity and reuse. Business analysts and project managers might find this code transparency refreshing, especially since the same code can be written in Serpent (a Python-like language), LLL (a Lisp-like language), XML (a nightmare), or even in visual block form!
+
+ Ethereum contract code visual editor
+
+How could all this be possible? Taking a look at the latest ethereum proof-of-concept 6 JavaScript bindings, we see that a sprinkling of JavaScript is all that’s required to monitor an account balance on the decentralized web:
+
+
+<div>You have <span id="ether">?</span>.</div>
+<script>
+eth.watch({altered: eth.secretToAddress(eth.key)}).changed(function() {
+document.getElementById("ether").innerText = eth.toDecimal(eth.balanceAt(eth.secretToAddress(eth.key)))
+});
+</script>
+
+
+Because the ethereum protocol also acts as a large distributed key-store (a happy note for fans of NoSQL), eventually user accounts, credentials, and reputation can be migrated on-blockchain with the help of the Whisper communication protocol. In this way, ethereum sets the stage for an total sharding of traditional infrastructure as we know it. No more complex high-availability infrastructure diagrams. In the ethereum ecosystem, even decentralized DNS is free.
+
+
+  
+  
+  Your browser does not support the video tag.
+
+Evaluating this context in a larger diagram of any systems infrastructure, it’s obvious that our current web isn't as privacy secure or censorship resistant as we desire. Economies of scale have allowed single institutions to offer a vast amount of processing power and storage on the internet for very low prices, thereby increasing their market share to a point where they individually control large segments of internet activity, often under the supervision of less-than-savvy governments. In a post-borders era where the Internet knows no bounds, such jurisdiction has little or no meaning.
+
+As economics of the ethereum ecosystem mature such that open contracts for lowest-rate storage develop, a free market of content hosting could evolve. Given the nature and dynamics of P2P applications, popular content will readily scale as the swarm shares, rather than suffering from the buckling load of siloed servers. The net result is that popular content is delivered faster, not slower.
+
+We’ve spent decades optimizing the protocols that the internet was first founded on, but it’s time to recognize opportunities lost by continually patching the old system instead of curating a new, optimized one. The future will likely bring with it a transition period between traditional and decentralized technologies, where applications live in a hybrid universe and users are unaware of the turbulent undercurrent. But they should be.
+
+This metamorphosis will offer developers an opportunity to build the next-generation of decentralized, private, secure, censorship-resistant platforms that return control to creators and consumers of the next best idea. Anyone with a dream is free to build on this new class of next-generation decentralized web services without owning a credit card or signing up for any accounts.
+
+Although we are not told to or expected to, we have an imperative to cherish and improve the very shared resources that some wish to disturb, manipulate, and control. Just as no single person fully understands the emerging internet collective intelligence, we should not expect any single entity to fully understand or maintain perfectly aligned motives. Rather, we should rely on the internet to solve the problems of the internet.
+
+Because of this, blockchain technologies like Ethereum will allow for simplification and lowering of cost not seen since the introduction of infrastructure-as-a-service (IaaS). Extending the idea to beyond a simple web project, Ethereum hopes to demonstrate how fully decentralized autonomous organizations (DAOs) can live wholly within cyberspace, negating not only the need for centralized servers, but also trusted third-parties, realizing the dreams of early internet pioneers that envisioned an independent new home of the mind.
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

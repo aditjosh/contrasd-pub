@@ -1,0 +1,865 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A Look at Hyperledger-Powered Financial Services Solutions in Action – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Finance
+                            
+                        
+                    
+
+                
+                A Look at Hyperledger-Powered Financial Services Solutions in Action
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Oct 28, 2021
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                It is #HyperledgerFinTech month, so we are spotlighting solutions where Hyperledger is at work across the finance service market. Read on for details on applications and solutions leveraging a mix of Hyperledger technologies to invent and reinvent a range of services, including eKYC, insurance claims processing, accounts reconciliation, specialty trades and more:
+ 
+AnaMeen
+ 
+AnaMeen is a multi-organizational eKYC solution from Ahli Fintech involving Jordan Ahli Bank and Zain Jordan, a mobile telecom provider. This eKYC-as-a-Service, built on the Oracle Blockchain Platform (OBP), aims to remove the friction in the current KYC and onboarding process challenges faced by all banks and financial institutions and to provide greater financial inclusion for all Jordanians. It delivers an enhanced and secure customer experience, with a 10-day account opening process now made instantaneous. Ahli Fintech leverages augmented intelligence and deep learning technologies to verify the identity of the AnaMeen users’ government-issued identity documents. It collects the four-signature specimens of the users and verifies the client signature on file during a verification video-call with an AnaMeen agent. Customers verify their information and their identity is matched based on their facial biometrics during the video-call. Each customer’s identity is uploaded to a smart contract on OBP to verify and endorse it, storing it in the “Meen World” immutable ledger distributed across the permissioned blockchain network. The solution, which is powered Hyperledger Fabric, enables self-sovereign instant KYC data sharing, with full control in the users’ hands in full compliance with international data protection and data privacy standards. It is accessible via the “Meen World” eKYC-as-a-Service partner portal, where entities can request access and users can grant access in order to use the services provided by these entities, including instant digital onboarding with subscribed banks.
+ 
+The Institutes RiskStream Collaborative
+ 
+The Institutes RiskStream Collaborative is the risk management and insurance industry’s first enterprise-level blockchain consortium that brings together experts and developers to advance insurance-specific use cases via Canopy 3.0, a custom blockchain architecture running on Kaleido that leverages Hyperledger FireFly.
+ 
+A major source of inefficiency in the life & annuity insurance industry is that life insurers lack a single source of truth for processing death benefits and claims. For all participants, the multiple handoffs between systems and people increase time, cost, and risk.
+ 
+The Mortality Monitor project, a blockchain-based technology solution led by RiskStream Collaborative, offers a single source of digital decedent information required to process a claim. Instant notification helps carriers proactively identify potential deaths more quickly, reducing the burden on the beneficiary, and shortening the cycle time.
+ 
+NPLUS 
+ 
+Sydema has implemented NPLUS, a digital and independent platform that makes the exchange of non-performing loans (NPLs) simple, reliable and secure. This transaction platform provides an exchange where banks and investors can trade NPLs based on standardized data templates, which helps to increase transparency and liquidity in this process. It also reduces the wide bid-ask spreads on NPLs, thus contributing to a faster clean-up of bank balance sheets. NPLUS uses an independent blockchain solution developed by Mangrovia on the Hyperledger Fabric-based Oracle Blockchain Platform so that the tracking and storage of loan portfolio and collateral data is referenceable on the marketplace and NPL trading operations are transparent and persistent. 
+ 
+Public Mint
+ 
+Public Mint is the first fiat-native public blockchain that allows people, companies, applications and banks to interact in frictionless new ways around money. Prior to Public Mint, transactions required banking and exchange off-ramps, meaning there was no such solution offered by payment providers that was blockchain compatible or that enabled instant settlement in fiat. Public Mint, which is built on Hyperledger Besu, is an open blockchain blended with an API platform that allows fiat money to get all the benefits of a cryptocurrency, minus the volatility and complexity. People and businesses from all over the world are free to build all kinds of fiat-based applications and services on top of Public Mint, fueled by money as we know it – without the limitations of traditional banking rails.
+ 
+SECURUS
+ 
+Supermoney has introduced SECURUS, a specialist insurance product that addresses key issues in insurance accounts reconciliation between the customers, brokers, insurer, and re-insurers. It is an end-to-end finance and accounts reconciliation solution incorporating underwriting and claims functions. Using tokenization to create and manage accounting of real-world payment flows across multiple siloed systems, the Oracle Blockchain Platform-based network covers MGAs, brokers, and underwriters. It enables ingestion of data from multiple systems, provides Bordereau reports on money flows related to premiums paid or claims with real-time updates, and partner contracts, including commission rates. Built with Hyperledger Fabric at its core, SECURUS significantly reduces the effort and cost of manual reconciliation and avoids human errors or fraud impacting regulatory compliance, reinsurance accounting and profitability.
+ 
+Symbridge
+ 
+Symbridge is a blockchain-based digital asset exchange for institutional and accredited investors. Built on Hyperledger Fabric’s open-source protocol, Symbridge’s advanced technology leverages the enhanced security, immutability, and externally-verifiable state integrity of blockchain and combines it with a high-performance trading environment.  The core advantages are better transparency, tighter security, greater accuracy, reduced cost and more efficient trading. Building on Hyperledger Fabric allows Symbridge to have a decentralized validation network without sacrificing performance. Learn more about our validation network powered by Hyperledger Fabric. 
+ 
+TradeAssets
+ 
+TradeAssets is a digital platform for banks that automates the process of trade finance risk origination and distribution. It enables institutions to buy and sell bank risk assets while retaining some of the bilateral aspects of their current process. KrypC has helped TradeAssets implement a Hyperledger Fabric-based blockchain in its online portal for securing assets. The portal is now live and provides a single point of access for the sale and purchase of assets. Banks can communicate to a large ecosystem of connected institutions to efficiently match the appetite of sellers with buyers. The entire process is quick and convenient, and all communications are secured through the portal.
+ 
+TradeAssets provides robust security, complete transparency, and immutable trust and consensus between all parties.
+ 
+Join the conversation about solutions and applications in the financial service market with #HyperledgerFinTech this month on social channels. Or get involved with the Capital Markets or Trade Finance Special Interest Groups.
+ 
+Cover image by Bicanski on Pixnio
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

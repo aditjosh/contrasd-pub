@@ -1,0 +1,155 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Batch transactions settlement embedded in EVM - EVM - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Batch transactions settlement embedded in EVM
+    
+
+
+      
+          
+            
+              
+              
+                EVM
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                szhygulin
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 6, 2019,  6:29pm
+                  
+                  
+
+1
+              
+            
+            
+              Hello, community,
+
+It is quite clear that the discrete nature of transaction processing in EVM makes it harder to design “fair” continuous-time paradigm DeFi tools, as thoroughly studied here. Batch settlement market design sounds like a solution
+
+Is there any research/work on implementing batch smart contracts calls natively embedded in EVM?
+
+By batch smart contract calls I mean the following: all SC calls within a block are considered to be the inputs to a single SC execution process, which treats all inputs as equal regardless of their position in the block.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

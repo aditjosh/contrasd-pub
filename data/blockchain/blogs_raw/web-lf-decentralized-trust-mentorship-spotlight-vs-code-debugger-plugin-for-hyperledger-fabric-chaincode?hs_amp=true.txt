@@ -1,0 +1,114 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust Mentorship Spotlight: VS Code Debugger Plugin for Hyperledger Fabric Chaincode
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          LF Decentralized Trust Mentorship Spotlight: VS Code Debugger Plugin for Hyperledger Fabric Chaincode
+
+        
+
+        
+           Written by Claudia Emmanuel | Mar 24, 2025 3:32:03 PM 
+        
+
+        
+          Introduction
+
+Embarking on the VS Code Debugger Plugin for Hyperledger Fabric Chaincode project as part of the LF Decentralized Trust Mentorship program has been an exciting and deeply rewarding experience. This journey challenged me technically, refined my problem-solving skills, and strengthened my ability to contribute to open source development. Throughout the mentorship, I had the opportunity to work on a tool that enhances the debugging experience for Hyperledger Fabric developers, making it easier to inspect chaincode execution in real time. I got to collaborate with an amazing community, learned from real-world challenges, and contributed to a tool that makes Fabric development more efficient. It’s been a journey of growth, innovation, and hands-on learning.
+
+What I Worked On
+
+During this mentorship, I focused on building a Hyperledger Fabric chaincode debugger, a tool designed to help developers debug chaincode running in a live Fabric network. The primary goal was to streamline the development and troubleshooting process by enabling real-time inspection of chaincode execution, reducing debugging complexity, and improving developer productivity. 
+
+Key aspects of my contribution included:
+
+	Developing a VSCode extension that allows developers to debug external chaincode in Fabric.
+	Implementing functionality to upload a connection profile and wallet, as well as generating a wallet from PK and PEM certificates when a wallet was unavailable.
+	Querying blockchain data, including retrieving block metadata, using QSCC (Query System Chaincode).
+	Enabling debugging capabilities for Hyperledger Fabric’s external chaincode architecture, where chaincode runs as an external service instead of inside the peer container.
+	Utilizing Hyperledger Fabric, Docker, VSCode, and Delve (Go debugger) to allow developers to set breakpoints, step through chaincode execution, and inspect transactions before committing them to the ledger.
+
+
+By combining these elements, we built a tool that significantly enhances the debugging workflow for Hyperledger Fabric developers, making it easier to identify and resolve issues in smart contracts. This project not only deepened my understanding of Fabric’s architecture but also reinforced best practices in blockchain development and debugging.
+
+What I Learned or Accomplished
+
+Throughout this project, I gained a deeper understanding of Fabric’s chaincode execution model and how chaincode interacts with peers and orderers. Some key takeaways include:
+
+	Setting up Delve to attach to an external chaincode container was a challenge, but it allowed for real time inspection of chaincode behaviour.
+	Learning how peer lifecycle commands, such as installing, approving and committing chaincode, work.
+	Interacting with QSCC and querying Block Data, I explored how the QSCC can retrieve blockchain metadata such as current block hash and data hash to verify transaction integrity. 
+	Encountering and resolving issues like error sending: chaincode stream terminated (caused by peer losing connection to external chaincode).
+	Managing endorsement failure during invoke (caused by chaincode crashing mid-transaction)
+	Ensuring proper chaincode registration with peer chaincode.
+	Executing proper chaincode registration using peer chaincode queryinstalled  and peer lifecycle chaincode querycommitted.
+
+
+One of the most exciting moments was successfully running an invoke command and stepping through chaincode execution inside the debugger—a milestone that proved the extension was working as intended.
+
+What I Gained from Working with a Mentor
+
+Having a mentor made a huge difference in my learning experience. Arun S M provided:
+
+	Deep technical insights into Fabric’s inner workings.
+	Best practices for debugging and logging in a distributed system.
+	Encouragement and troubleshooting guidance when hitting roadblocks.
+
+
+Beyond technical learning, I also gained valuable soft skills like explaining technical problems clearly, breaking down complex issues into manageable tasks, and writing cleaner, maintainable code.
+
+Arun is an experienced Fabric developer from the LF Decentralized Trust community, and their guidance was instrumental in navigating the complexities of Fabric’s chaincode lifecycle, endorsement policies, and transaction flow.
+
+What comes next
+
+Moving forward, I aim to continue contributing to open source projects, especially in the LF Decentralized Trust ecosystem. The Fabric debugger is a powerful tool that will benefit many developers, and I hope to see the Fabric community actively contribute to its continued improvement. Some potential future enhancements include:
+
+	Automating Install, Approve, Commit commands.
+	Expanding the debugger to debug in different programming languages -currently only supports Golang.
+	Extending to include debug on a remote Fabric network.
+	Implementing state reader.
+	Using the same DAP protocol and extending to additional IDE as it currently only works for VSCode.
+
+
+___
+
+For a deeper dive into this project, watch the presentation from the VS Code Debugger Plugin for Hyperledger Fabric Chaincode Meetup.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

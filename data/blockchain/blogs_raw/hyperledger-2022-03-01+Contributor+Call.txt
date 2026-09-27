@@ -1,0 +1,859 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-03-01 Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+	2022-01-04 Besu Contributor Call
+
+
+
+
+
+	2022-01-11 Besu Contributor Call - Off-Cycle
+
+
+
+
+
+	2022-01-20 Besu Contributor Call
+
+
+
+
+
+	2022-01-31 Besu Contributor Call
+
+
+
+
+
+	2022-02-15 Contributor Call
+
+
+
+
+
+	2022-03-01 Contributor Call
+
+
+
+
+
+	2022-03-15 Contributor Call
+
+
+
+
+
+	2022-03-29 Contributor Call
+
+
+
+
+
+	2022-04-12 Contributor Call
+
+
+
+
+
+	2022-04-26 Contributor Call
+
+
+
+
+
+	2022-05-10 Contributor Call
+
+
+
+
+
+	2022-06-07 Contributor Call
+
+
+
+
+
+	2022-05-24 Contributor Call
+
+
+
+
+
+	2022-06-21 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-07-05 Contributor Call
+
+
+
+
+
+	2022-07-19 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-08-02 Contributor Call
+
+
+
+
+
+	2022-08-16 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-08-30 Contributor Call
+
+
+
+
+
+	2022-09-13 Contributor Call - APAC
+
+
+
+
+
+	2022-09-27 Contributor Call
+
+
+
+
+
+	2022-10-11 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-10-25 Contributor Call
+
+
+
+
+
+	2022-11-08 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-11-22 Contributor Call
+
+
+
+
+
+	2022-12-06 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-12-20 Contributor Call
+
+
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2022-03-01 Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2022-03-01 Contributor Call
+
+	Sally MacFarlane
+
+
+
+	Danno Ferrin
+
+
+
+	Grace Hartley (Deactivated)
+
+
+
+	Ry Jones
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Mar 27, 2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOTE this meeting was cancelled due to a flood event in Brisbane Australia meaning significant numbers of APAC timezone folks were offline.
+(Meeting Link:Â â�¨https://zoom.us/j/91405289771?pwd=QzA3a0ozTjVSZ0hsYzgwTm9lVDRPQT09)
+APAC Friendly TimeÂ (https://www.timeanddate.com/worldclock/converter.html?iso=20201012T150000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	5 pm Monday Los Angeles
+	8 pm Monday New York
+	1 amÂ  Tuesday UTC
+	3 am Tuesday Paris/Berlin
+	11 am Tuesday Brisbane
+
+Agenda
+	Â Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Incentive Program Update:Â [WIP] Proposal #4Â is considered the final proposal. EF, HLF, and CSI are currently working with their respective legal teams.Â 
+
+
+	Action Items Review from prior call	From Grace - We agreed on Option 2 for how to resolve who are mainnet maintainers in the Incentive program.
+	Release updates and Improvements: Generally agreed we need to improve this process. Sajida was going to act as PoC from CSI side.Â 
+	Have we scheduled an off week Discord voice chat meeting yet?
+
+
+	Roadmap Review -Â Roadmap
+	Release updates	22.1.0 done
+	22.1.1 scheduled for Feb 25 (should be done by the time of this meeting!)
+	Tracking who is doing each releaseÂ Release Rotations 2022	Add your name here to volunteer for release rotationÂ 
+	Note quarterly release is a larger coordination roleÂ 
+
+
+	Team is working toward several Release Process ImprovementsÂ here
+
+
+	Work Updates	trace APIs - ongoing
+	Merge Update
+
+
+	Other BusinessÂ 	Automated Security Bot Requests
+LinuxFoundation as a part of the insights process is creating an automated "security bot" that will analyze LF (and hence Hyperledger project).Â  Feature set is very low at the moment, but they are actively soliciting feature requests.Â  What would Besu want to see?
+
+
+	Metrics Review -Â https://insights.lfx.linuxfoundation.org/projects/hyperledger%2Fbesu/dashboard;quicktime=time_filter_3Y
+	Open Forum	We are officially on Discord! Should we add maintainer's Discord handle on Maintainer list?Â 
+	Proposal - "Off Week" Discord voice chat meetup. When?
+	Deprecating log42j - from Diego see Contributor channel
+
+
+	Future Topics
+
+
+
+    
+    
+
+
+
+    
+        
+            
+            
+            
+                                                    
+        
+
+                
+
+
+
+
+
+
+    
+
+
+	Â 	
+            File
+        	
+            Modified
+        
+
+
+
+
+    
+
+    
+                    
+                No files shared here yet.
+            
+
+            
+
+
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 36, "requestCorrelationId": "f793d58151f64c968e524fd30892a68e"}

@@ -1,0 +1,201 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Could GIP-31 also happen on Ethereum? - Security - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Could GIP-31 also happen on Ethereum?
+    
+
+
+      
+          
+            
+              
+              
+                Security
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                pcaversaccio
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 16, 2023, 11:01am
+                  
+                  
+
+1
+              
+            
+            
+              GIP-31 was a hard fork on Gnosis Chain that changed an existing, “should-be-immutable” contract code with a new bytecode to fix a reentrancy issue (517 tokens were impacted). I haven’t seen any broader discussion about this incident, nor have I seen many callouts. I think it’s time to change that (and by that, I mean having a productive discussion). Could such an incident also happen on Ethereum? Do we need further governance mechanisms to prevent such an incident completely (e.g. disallowing such EIP proposals etc.). Please drop your thoughts here.
+
+Two similar incidents:
+
+	Polygon:
+	Polygon Lack Of Balance Check Bugfix Review — $2.2m Bounty | by Immunefi | Immunefi | Medium
+	https://polygon.technology/blog/all-you-need-to-know-about-the-recent-network-upgrade
+
+
+
+	Binance
+	Release v1.1.16 · bnb-chain/bsc · GitHub
+
+
+
+
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                pcaversaccio
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 20, 2023,  9:52am
+                  
+                  
+
+2
+              
+            
+            
+              Two scenarios where I deem such a scenario plausible:
+
+	The Beacon Deposit Contract has a (maybe compiler) bug that a black hat exploits and withdraws all staked ETH (at the time of this writing 18,833,884 ETH).
+	The EF Multisig contract gets exploited (maybe due to a compiler bug) (in that scenario the overall stolen funds of course matter; currently the multisig holds around 1bn of dollar value).
+
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

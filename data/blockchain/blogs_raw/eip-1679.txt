@@ -1,0 +1,252 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-1679: Hardfork Meta: Istanbul
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-1679: Hardfork Meta: Istanbul
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Alex Beregszaszi (@axic), Afri Schoedon (@5chdn)
+	Created	2019-01-04
+	Requires	
+
+  EIP-152, 
+
+  EIP-1108, 
+
+  EIP-1344, 
+
+  EIP-1716, 
+
+  EIP-1884, 
+
+  EIP-2028, 
+
+  EIP-2200
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+    	Activation
+	Included EIPs
+
+
+  
+	References
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This meta-EIP specifies the changes included in the Ethereum hardfork named Istanbul.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+	Codename: Istanbul
+
+
+  
+    
+      
+      
+         Activation
+      
+      
+    
+
+	Block >= 9,069,000 on the Ethereum Mainnet
+	Block >= 6,485,846 on the Ropsten testnet
+	Block >= 14,111,141 on the Kovan testnet
+	Block >= 5,435,345 on the Rinkeby testnet
+	Block >= 1,561,651 on the Görli testnet
+
+
+  
+    
+      
+      
+         Included EIPs
+      
+      
+    
+
+	EIP-152: Add Blake2 compression function F precompile
+	EIP-1108: Reduce alt_bn128 precompile gas costs
+	EIP-1344: Add ChainID opcode
+	EIP-1884: Repricing for trie-size-dependent opcodes
+	EIP-2028: Calldata gas cost reduction
+	EIP-2200: Rebalance net-metered SSTORE gas cost with consideration of SLOAD gas cost change
+
+
+  
+    
+      
+      
+         References
+      
+      
+    
+
+
+	Included EIPs were finalized in All Core Devs Call #68
+	https://medium.com/ethereum-cat-herders/istanbul-testnets-are-coming-53973bcea7df
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), Afri Schoedon (@5chdn), "EIP-1679: Hardfork Meta: Istanbul," Ethereum Improvement Proposals, no. 1679, January 2019. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-1679.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

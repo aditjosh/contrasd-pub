@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain Pioneers: Hyperledger Ursa
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Blockchain Pioneers: Hyperledger Ursa
+
+        
+
+        
+           Written by Ry Jones and David Boswell, Community Architects | Dec 18, 2023 5:00:00 PM 
+        
+
+        
+          As we laid out in our Helping a Community Grow by Pruning Inactive Projects post, there is an important life cycle to well governed open source projects. Since our launch in 2015, Hyperledger Foundation has hosted a number of now retired projects that helped drive innovation and advanced the development of enterprise-grade blockchain technologies. This series will look back at the impact of these pioneering projects. 
+
+
+Hyperledger Ursa, a shared cryptographic library that was created to enable people and projects to avoid duplicating other cryptographic work and hopefully increase security in the process, is next up in the series.
+
+History
+
+Hyperledger Ursa was first proposed by Hart Montgomery of Fujitsu and was approved in November 2018; the proposal was supported by Dave Huseby, Nathan George, Dan Middleton, Mic Bowman, Manu Drijvers, Jan Camenisch, Binh Nguyen, Angelo De Caro, Amit Kumar Gupta, Vipin Bharathan and Shawn Amundson.
+
+The motivation behind the creation of Hyperledger Ursa was to avoid duplication of cryptographic implementations, which are notoriously difficult to get correct, particularly when side channels are taken into account. By having most or all of the cryptographic code in a single location, it would substantially simplify doing a security analysis of the cryptographic portion of Hyperledger.
+
+In addition, having a shared library would mean that maintenance would be easier, and security bugs would be less numerous. It would also allow for expert review of all cryptographic code, which should increase security. Furthermore, if two projects use the same cryptographic libraries, it would simplify cross-platform interoperability since cryptographic verification would involve the same protocols on both sides.
+
+Hyperledger Ursa has since moved to end-of-life (EOL) status, with the components of Ursa still in use moved to their relevant Hyperledger projects (AnonCreds, Aries, Indy, and Iroha).  Ursa was deprecated because there were no major updates for almost two years, and there were two major security vulnerabilities against Ursa that the maintainers did not have time to fix. Additionally, contributions to the project had slowed down. As a result, Hyperledger Ursa was considered EOL.
+
+Innovation
+
+Hyperledger Ursa was an innovative project because it aimed to enable the cryptography code to be shared by Hyperledger blockchain projects and others. Cryptography is core to blockchain.  It is used to prove that a block is part of a chain and for many other purposes. While many Hyperledger projects used the same low-level cryptographic algorithms and common core libraries, at the blockchain software level, they each rolled their own implementations. The goal of Ursa was to create a shared modular signature library so that blockchain developers could easily change signature schemes or use more than one.
+
+The library was intended to be modular and flexible with the aim of reducing code duplication and enhancing security through expert review of all cryptographic code. By having most or all of the cryptographic code in a single location, it would substantially simplify doing a security analysis of the cryptographic portion of Hyperledger. Additionally, having a shared library would mean that maintenance would be easier, and security bugs would be less numerous. Furthermore, if two projects use the same crypto libraries, it would simplify cross-platform interoperability since cryptographic verification would involve the same protocols on both sides.
+
+Overall, Hyperledger Ursa was an innovative project that aimed to simplify the use of cryptography in blockchain projects and increase security through shared code and expert review. It promoted the concept of modularity and aimed to make cross-platform interoperability simpler.
+
+We would like to thank all of the people who contributed to Hyperledger Ursa while it was an active project. 
+
+	The top five contributors: Mike Lodder, Artem Ivanov, Lovesh Harchandani, Sergey Minaev, and Brent Zundel
+	And the more than 30 other people who made a contribution to the project
+
+
+Getting Involved
+
+If you’re interested in cryptography there is still a lot of activity going on in the community since it  is a core part of blockchain technology. The code for Hyperledger Ursa is still available, although it is not actively being developed. We recommend taking a look at Hyperledger AnonCreds, Aries, Indy, and Iroha to see how those projects have adapted and are evolving the Ursa code.
+
+Mike Lodder, one of the main developers of Hyperledger Ursa, has also started a new Lab called Agora that functions as a secure and collaborative environment for the implementation and advancement of cryptography libraries and software. Agora isn’t aiming to be a common library for all of Hyperledger; Agora is meant to be a collaborative effort to develop cryptography, of which a lot of it can be used in blockchains. 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

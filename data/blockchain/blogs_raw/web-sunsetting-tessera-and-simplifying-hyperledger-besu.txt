@@ -1,0 +1,906 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sunsetting Tessera and Simplifying Besu
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Besu
+                            
+                        
+                    
+
+                
+                Sunsetting Tessera and Simplifying Besu
+ 
+                
+                    the Besu Maintainers
+                    |
+                    
+                        Sep 24, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Many great use cases are served by Besu in the blockchain space. We are proud of this engagement with public Ethereum, private networks, enterprise, L2s, and more. However, the Besu code base has become a monolithic swiss-army knife. 
+
+
+From the beginning, Besu, an LF Decentralized Trust project, has always believed in growing the pie by serving a variety of users with Ethereum Smart Contracts and standards. This initially included enterprise-focused features in the base ledger. Some features, like Tessera, are not performant enough for their intended use cases. Other features, like Fast-Sync, have since been superseded by more performant approaches. 
+
+Streamlining the Besu code base
+
+The Besu Maintainers are committed to continuously enhancing the client to ensure it remains performant, reliable, and future ready. As part of this effort, we are announcing changes to several features:
+
+	Tessera privacy, 
+	Smart-contract-based permissioning, 
+	Proof of Work consensus,
+	and Fast-Sync.
+
+
+The above are targeted for streamlining and deprecation. To minimize disruption, we are recommending specific approaches based on the feature:
+
+	Fast-Sync: Since there is a direct migration path to Snap-Sync, Fast-Sync will be deprecated and removed.
+	Proof of Work consensus: For features that require client modifications, like Proof of Work, we recommend creating a plug-in via our API to maintain them. The Maintainers are not committing to creating these plug-ins at this time. 
+	Tessera privacy and smart-contract-based permissioning: These features have existing and novel app-layer solutions. We will deprecate and remove them, while offering alternatives as this timeline project progresses. For instance, a new open source project providing programmable privacy for EVM is slated to be proposed to LF Decentralized Trust Labs.
+
+
+Forest mode is also being considered for deprecation and simplification. We ideally would like everyone running the lighter-on-disk, more-performant Bonsai data storage format. We are still building out a robust migration path to Bonsai for private networks and must ship a Bonsai Archive node solution before we officially signal Forest mode deprecation. It is considered out of scope for this announcement. 
+
+The Besu project is a community effort. Besu is open-source, and any contributor is free to maintain a fork via our permissive licensing or to create a plug-in via our API. We encourage contribution to maintain these features outside of the main-line code base, and we want your feedback and participation in this process. Read through the sections below on timelines and how to get involved with the Maintainers to shape this process.Why deprecation and why now? 
+
+Some of these features, specifically those related to privacy and permissioning, have not kept pace with advancements in the Ethereum ecosystem. Many app layer privacy solutions are robust and performant, without us needing to maintain solutions in Besu that are incompatible with the rest of the Ethereum ecosystem. By deprecating these underperforming and less-maintained features, we aim to:
+
+	Improve Performance: Removing outdated features will streamline the code base, reducing complexity and enhancing the performance of Besu by bringing our most performant features like Bonsai to everyone, regardless of use-case. 
+	Reduce Bugs: A leaner code base means fewer potential points of failure, leading to a more stable and reliable client for all and more predictable upgrade cycles for enterprise. 
+	Increase Modularity: By moving certain features to plug-ins, we can maintain a modular approach, making it easier to manage and update Besu for maintainers and node operators.
+	Build Velocity: Maintaining the code base in its current form prevents our maintainers from focusing on the best challenges in Ethereum and keeps them patching tech debt. We want to serve our users the best possible experience. 
+	Bring in more users and maintainers: By simplifying the code paths underpinning Besu, we aim to make it more accessible to new contributors and users alike, with less confusing options, better UX, and a more readable code base.
+
+
+We do not take these decisions lightly, and we view these actions as a necessary next step to ensure Besu stays at the cutting edge. 
+
+Timelines & Logistics
+
+Below is a timeline of the deprecation process to ensure a smooth transition for our users and an ample feedback and collaboration period:
+
+Announcement Phase (Month 0-1)
+
+	Public Announcement: We officially announce the deprecation plan (this blog).
+	Documentation Updates: We update all relevant documentation with deprecation warnings.
+	Stakeholder Engagement: We want to hear from you! More on this in a later section.
+
+
+Deprecation Warning Phase (Month 2-3)
+
+	Code base Warnings: We will implement deprecation warnings in the code base.
+	Migration Support: Migration guides and alternative solutions will be provided in the documentation and via direct support where applicable, like Discord.
+
+
+Feature Freeze Phase (Month 4-5)
+
+	Development Freeze: Fully freeze development on the deprecated features, halting any new updates or bug fixes. PRs will not be reviewed.
+	User Support: Continue supporting users with migration efforts, monitoring usage, and gathering feedback.
+
+
+Sunset Phase (Month 6-7)
+
+	Feature Removal: Remove the deprecated features from the main code base and prepare PRs.
+	Archive Documentation: Archive relevant code and documentation for historical reference.
+	Final Announcement: We will officially announce the removal in release notes and on social media and provide a final summary of the transition process.
+
+
+This timeline is subject to change based on feedback from the community. Our goal is to collaborate with impacted networks to ensure a seamless transition. We want to ensure we have robust resources in place. 
+
+Support and Feedback
+
+To support our users through this transition, we will provide:
+
+	Migration Guides: Detailed guides to help users transition to alternative solutions or newer features. As requested, these will be shared in the documentation, on the Wiki, in relevant social channels, and through direct outreach. 
+	Dedicated Support Channels: Support through Discord, social media, and email for users facing issues during the transition. We will generate a Discord channel specifically for this process, as well as a set of community calls on this topic. 
+	Proactive Outreach: Direct support for highly impacted users.
+
+
+We want this to be a dialogue, as we value the input and feedback from our community. If you are using any of the features slated for deprecation and will be impacted by these changes, please contact us in a new Discord Channel and in email (besu-deprecation@lfdecentralizedtrust.org) to share your use cases and concerns. Your feedback will be crucial in refining our approach, documentation, and migration guides.
+
+Stay Informed and Engaged
+
+We will continue to provide updates and status reports on this deprecation plan during our monthly contributor calls. We encourage all stakeholders to participate in these calls to stay informed and engaged.
+
+Thank you for your continued support as we work to make Besu a more efficient and performant Ethereum client. For more details, please visit our Wiki page and join the discussion on Discord.
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,125 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer showcase series: John Greenhow, Peloton Blockchain – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer showcase series: John Greenhow, Peloton Blockchain – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Jan 17, 2019 9:00:14 AM 
+        
+
+        
+          Back to our Developer Showcase Series to learn what developers in the real world are doing with Hyperledger technologies. Next up is John Greenhow of Peloton Blockchain.
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+To anyone that wants to get started working on blockchain, my advice is to just start. As we set out, our team had to go through a headspace change similar to moving from assembly to object-oriented. 
+ 
+We picked a platform, picked a simple goal and ran through the installation and a test. More than once if necessary (I installed and setup Fabric twice). As soon as you physically can, look at the files on disk or in the database to see how they change – it will demystify things much more quickly.
+ 
+We started off with Hyperledger Composer. This was a fantastic way in for us. It allowed us to model the business network we had envisioned and to write and test the necessary logic very quickly, all while going back to check bytes-on-disk to see how things worked under the hood.
+ 
+My other piece of advice starts with an old saying, “when you’re holding a hammer, everything looks like a nail”. There will be use cases out there to which blockchain is not well suited as a solution, and that’s OK.  Spend time looking thinking about eco-systems and business networks and where the cost of a decentralized solution is really going to make a difference to everyone in the network.  It will pay off in the long run.
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+Peloton Blockchain has developed software and a network for the tokenisation, issuance, discovery, listing, secondary trading and redemption of financial instruments and non-financial assets – in a way that is compliant with regulatory jurisdictions around the world.   
+ 
+We can offer efficiencies in primary markets, new distribution channels for issuers and a whole new class of products for exchanges. We have 1 patent pending with 2 further patents in the pipe. Exciting times!
+ 
+We’ve developed 3 products:
+ 
+	Issuer/Arranger System – this SaaS supports the tokenisation of products and publishing of new tokens or securities to a blockchain network; no development or scripting is required for new securities.
+	Blockchain Network – based on Hyperledger Fabric, this is a private, secure and scalable network designed to provide unparalleled breadth of distribution to issuers and lead arrangers; chain-code manages compliance and the full security lifecycle – we’ve built RESTful APIs to facilitate connectivity into crypto-exchanges and secure “nodes” for deployment.
+	Exchange System – an exchange trading platform designed for primary and secondary market trading of tokens and securities; we don’t (and won’t!) run a market ourselves, but we do provide the software and expertise if it’s needed to setup secondary markets.
+
+ 
+Blockchain in general, and specifically Hyperledger Fabric, provided the best platform upon which we could build. The ability to deploy software to many different organizations and yet retain a trusted view of a ledger of security transactions and ownership opens a utopian vision for many in the capital markets. Blockchain is simply the perfect tool for this job.
+ 
+What project in Hyperledger are you working on? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+We initially started on Composer and then moved to Fabric as we moved towards a production deployment model. We were sorry to leave Composer behind as it has so many great features – the modeling language and API generation chief among them.
+ 
+Moving to Fabric involved a re-write into Golang, and we were really surprised by just how much code was needed to port what had been a fairly small project in Composer. I don’t say this to denigrate Fabric but to accentuate the power of Composer.
+ 
+Our focus now is building out a production network. As well as deploying nodes to participating market operators, issuers and arrangers, we are hosting several nodes around the world to form a reliable back-bone to the network. To do this, we’ve utilized the AWS Elastic Kubernetes Service (EKS) and this has been a powerful tool in ensuring scalability.
+ 
+We’re also looking ahead to production operations, and building web services and management consoles to automate and coordinate everything from upgrades to onboarding new network participants.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+There are several routes available by which Hyperledger can continue to lower barriers to entry for new teams and projects. These include:
+ 
+	A move to commoditization – installation, configuration and operation of databases, message buses, caches and many other complex software packages is out-of-the-box today. Experience in the field will contribute to incremental releases that continually shorten the time taken to be productive.
+	Best of breed flagship – rolling together the (stable) killer features of different Hyperledger projects into a commodity enterprise project could reduce the risk stemming from dependency upon a single project and provide a single point of entry into the Hyperledger world for teams focused on solutions rather than platform evaluation. An example might include Fabric support for Composer models (or perhaps better, Composer cross-compilation to Fabric-ready Golang) packaged with Cello features pre-configured for particular use-cases.
+
+ 
+Ongoing community out-reach, profile pieces and education remain invaluable and the more the better!
+ 
+What’s the one issue or problem you hope blockchain can solve?
+ 
+What really fascinates me about blockchain is that it rarely seems to be the most efficient or low-cost solution available. I’ve had endless conversations with technologists who see a simple, centralized solution as faster…easier…cheaper! 
+ 
+From the perspective of a single organization, this is true. Where the technology comes into its own is in making whole eco-systems of organizations more effective. Blockchain isn’t growing the one slice, it’s growing the whole damn pie.
+ 
+How successful blockchain projects (in terms of adoption) are seems to depend on the benefits brought to all participants, rather than to a central orchestrator. To the central orchestrator, data is the new oil. Is that still the case if everyone has a copy of that data?
+ 
+Seen through this filter, there is an implication of more broadly available efficiencies to many industries. This can only be good for economic growth in both developed and high potential markets. 
+ 
+Our project at Peloton Blockchain focuses directly on this, building highly connected networks of issuers, arrangers and exchanges to the benefit of all.
+ 
+Where do you hope to see Hyperledger and/or blockchain in 5 years?
+ 
+Ultimately blockchain is an application infrastructure layer, much like an RDBMS or messaging bus. 
+ 
+While there is (quite rightly) a lot of research and energy going into blockchain today, the hope is that the layer will become commoditized and that the focus will shift to the solutions that this enables for business networks.
+ 
+Hyperledger already has projects that are well on the way to making this a reality and we’re really excited to see this continue.
+ 
+What is the best piece of developer advice you’ve ever received?
+ 
+Test your code!
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

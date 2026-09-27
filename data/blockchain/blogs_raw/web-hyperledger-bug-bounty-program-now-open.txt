@@ -1,0 +1,838 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Bug Bounty Program Now Open – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Composer
+                            
+                        
+                    
+
+                
+                Hyperledger Bug Bounty Program Now Open
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Apr 17, 2018
+                    
+                
+
+            
+
+            
+            
+                Dave Huseby, Hyperledger Security Maven
+ 
+When I started as the Hyperledger Security Maven just over a year ago, I set out to make sure that Hyperledger’s community of contributors were doing everything possible to make good on the promise of better software and better security from the open source process. As of right now, we have in place a public bug tracker, continuous integration builds, core infrastructure initiative compliance, and a full responsible disclosure security bug policy and process. Today, I am happy to announce the next piece of our security process: the Hyperledger Bug Bounty.  
+ 
+For the last six months we have been running a private bug bounty with HackerOne. Today we are opening up the Hyperledger Bug Bounty for public participation. Currently only Hyperledger Fabric is in the scope of the bounty program but we hope to add Hyperledger Sawtooth and other Hyperledger projects soon. HackerOne will continue to administer the bug bounty for us with close cooperation between their team and our community. We chose HackerOne because we think it is the best use of our resources and they share a similar commit to open source software as Hyperledger and The Linux Foundation.
+ 
+At Hyperledger we have a broad base of committed developers and it is their professionalism that makes our security process solid and straightforward. When I first started, we already had in place our public bug tracking system and most teams had set up continuous integration build systems for monitoring build health. In the last year we formalized the process by which projects can move from development status to their first 1.0 release, including a number of security requirements.
+ 
+The first security requirement is to meet the requirements of the Core Infrastructure Initiative (CII). The Core Infrastructure Initiative is a set of best practices for open source software security. Earning the CII badge requires open source projects to set up services and processes and key positions that all serve the goal of producing more secure and trustworthy software. At the time of this writing, Hyperledger Fabric, Sawtooth, Iroha, and Composer have all earned their CII badge.
+ 
+The second security requirement is to nominate one to three members of a project’s community to participate on the Hyperledger security team. The Hyperledger security team manages and executes our policy of responsible disclosure of security bugs. Security bugs are confidentially reported to Hyperledger through security@hyperledger.org or by filing a security bug in our JIRA. It is the job of the volunteer security team to triage, respond to, fix, and disclose the security bugs that are reported. As of right now, the security team consists of 16 members from five of our project communities.
+ 
+The third security requirement is for a project to undergo a security audit from an outside auditor to establish a baseline for the codebase. We hired the auditing firm Nettitude to do security audits of Hyperledger Fabric, Sawtooth, Iroha and Composer.  So far Hyperledger Fabric, Sawtooth and Iroha have been completed and are in various stages of resolution and publication. Currently only the Hyperledger Fabric security audit report has been fully resolved and published. The rest will be published soon.
+ 
+Looking ahead into the future, I plan on getting more involved with the Software Package Data Exchange (SPDX) to see if we can use Hyperledger blockchain platforms to better track the provenance of open source software, including our own. I hope to one day use verifiable claims to automatically check for vulnerabilities in dependencies from our continuous integration build system. If open source software packages were to issue a verifiable claim stating that a specific version of their software has no known security vulnerabilities, then when one is reported, the claim can be revoked. The revocation of the claim could then function as an automatic signal to all users of that software that they need to update. Continuous integration systems could check the claims of all dependencies and stop the build if one or more are found to have vulnerabilities.  This represents the next generation of reproducible builds and would leverage blockchains for provenance tracking of software from construction all the way through deprecation.
+ 
+Security is always an ongoing process of improvement. Thanks to the commitment and professionalism and general good cheer of the Hyperledger community, we have made great strides in the last year. Now with our public bug bounty, we hope to further make good on the open source promise and to deserve the trust our users have in us.
+ 
+We encourage developers to join our efforts on the bug bounty program and also start contributing to Hyperledger projects. You can plug into the Hyperledger community at github, Rocket.Chat the wiki or our mailing list. You can also follow Hyperledger on Twitter or email us with any questions: info@hyperledger.org.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

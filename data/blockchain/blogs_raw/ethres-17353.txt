@@ -1,0 +1,658 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Based preconfirmations - Layer 2 - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Based preconfirmations
+    
+
+
+      
+          
+            
+              
+              
+                Layer 2
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    November 8, 2023,  6:12pm
+                  
+                  
+
+1
+              
+            
+            
+              Special thanks to Dan Robinson, Mike Neuder, Brecht Devos for detailed design discussions.
+
+TLDR: We show how based rollups (and based validiums) can offer users preconfirmations (“preconfs” for short) on transaction execution. Based preconfs offer a competitive user experience for based sequencing, with latencies on the order of 100ms.
+
+construction
+
+Based preconfs require two pieces of onchain infrastructure:
+
+	
+proposer slashing: A proposer must have the ability to opt in to additional slashing conditions. This write-up assumes slashing is achieved with EigenLayer-style restaking.
+	
+proposer forced inclusions: A proposer must have the ability to forcefully include transactions onchain, even with PBS when self-building is non-economical. This write-up assumes forced inclusions are achieved with inclusion lists.
+
+
+A L1 proposer may become a preconfer by opting in to two preconf slashing conditions described below. Preconfers issue signed preconf promises to users and get paid preconf tips by users for honouring promises.
+
+Preconfers are given precedence over other preconfers based on their slot position in the proposer lookahead—higher precedence for smaller slot numbers.
+
+A transaction with a preconf promise from the next preconfer can be immediately included and executed onchain by any proposer ahead of that preconfer. The preconfer is then expected to honour any remaining promises on their slot using the inclusion list.
+
+There are two types of promise faults, both slashable:
+
+	
+liveness faults: A promise liveness fault occurs when the preconfer’s slot was missed and the preconfed transaction was not previously included onchain.
+	
+safety faults: A promise safety fault occurs when the preconfer’s slot was not missed and the promise is inconsistent with preconfed transactions included onchain.
+
+
+Safety faults are fully slashable since honest preconfers should never trigger safety faults. The preconf liveness slashing amount, mutually agreed by the user and preconfer, can be priced based on the risk of an accidental liveness fault as well as the preconf tip amount.
+
+Non-preconfed transactions included onchain by non-preconfers will not execute immediately. Instead, to give execution precedence to preconfed transactions over non-preconfed transactions, an execution queue for non-preconfed transactions is introduced. Non-preconfed transactions included onchain are queued until the first preconfer slot is not missed. At that point all transactions execute, with preconfed transactions executed prior to queued non-preconfed transactions.
+
+promise acquisition
+
+A user that wants their transaction preconfed should aim to acquire a promise from, at minimum, the next preconfer in the proposer lookahead. This process starts with the user sending a promise request to the next preconfer.
+
+
+
+2110×1184 141 KB
+
+
+
+The offchain mechanisms by which users acquire promises are not dictated by the onchain preconf infrastructure. There is an open design space with several considerations relevant to any preconf infrastructure, not just based preconfs.
+
+	
+endpoints: Preconfers can publicly advertise point-to-point API endpoints to receive promise requests and return promises. At the cost of latency, p2p gossip channels can be used instead of point-to-point endpoints.
+	
+latency: When a point-to-point connection is used between a user and preconfer, preconf latencies can happen on the order of 100ms.
+	
+bootstrapping: Sufficient L1 validators must be preconfers to have at least one preconfer in the lookahead with high probability. The beacon chain has at least 32 proposers in the lookahead so if 20% of validators are preconfers there will be a preconfer with probability at least 1 - (1 - 20%)32 ≈ 99.92%.
+	
+liveness fallback: To achieve resilience against promise liveness faults a user can acquire promises in parallel from more than one of the next preconfers. If the first preconfer triggers a liveness fault a user can fallback to a promise from the second preconfer.
+	
+parallelisation: Different types of promises can have different preconf conditions. The strictest type of promise commits to the post-execution state root of the L2 chain, creating a sequential bottleneck for promise issuance. A weaker form of promise only commits to the execution state diff, unlocking parallel promise issuance across users. Even weaker intent-based promises (e.g. “this swap should receive at least X tokens”) are possible. The weakest form of promise, which only commits to transaction inclusion by a preconfer slot, may be relevant for some simple transfers.
+	
+replay protection: To avoid replay attacks by preconfers such as sandwiching via transaction reordering, transaction validity is recommended to be tied to the preconf condition. This can be achieved with a new L2 transaction type, either with account abstraction or a native transaction type.
+	
+SSLE: Preconfer discovery in the lookahead remains possible with Single Secret Leader Election (SSLE). Indeed, preconfers can advertise (offchain and onchain) zero-knowledge proofs they are preconfers at their respective slots without revealing further information about their validator pubkey. Preconf relays intermediating users and preconfers can shield IP addresses on either side.
+	
+delegated preconf: If the bandwidth or computational overhead of issuing promises is too high for a L1 proposer (e.g. a home operator), preconf duties can be delegated (fully or partially) to a separate preconfer. The preconfer can trustlessly front collateral for promise safety faults. Liveness faults are the dual responsibility of the L1 proposer and the preconfer, and can be arbitrated by a preconf relay.
+	
+fair exchange: There is a fair exchange problem with promise requests and promises. Given a promise request, a preconfer may collect the preconf tip without sharing the promise to the user. A simple mitigation is for users to enforce that promises be made public (e.g. streamed in real time) before making new promise requests. This mitigation solves the fair exchange problem for all but the latest preconf promises. A relay mutually trusted by the user and the proposer can also solve the fair exchange problem. Finally, a purely cryptographic tit-for-tat signature fair exchange protocol can be used.
+	
+tip pricing: We expect that for many transactions a fixed preconf gas price can be mutually agreed. Some transactions may have to pay a correspondingly larger tip to compensate for any reduction to the expected MEV the proposer could otherwise extract. For example, a DEX transaction preconfed several seconds before the preconfer’s slot may reduce the expected arbitrage opportunity for the preconfer. Mutually trusted relays may help users and preconfers negotiate appropriate preconfirmation tips.
+	
+negative tips: Negative tips may be accepted by preconfers, e.g. for DEX transactions that move the onchain price away from the offchain price, thereby increasing the expected arbitrage opportunity for the preconfer.
+
+
+            
+
+
+            
+              
+16 Likes
+            
+
+            
+                
+
+            
+              
+                ben-a-fisch
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 9, 2023,  6:26am
+                  
+                  
+
+2
+              
+            
+            
+              Nice idea! This seems to offer a different (weaker) type of “preconfirmation” guarantee than finality, which is what a consensus protocol like Espresso’s Hotshot protocol provides. What happens to these preconfs when there is a reorg on Ethereum’s LMD Ghost protocol? Also, how much stake would be slashed for invalid preconfirmations in this proposal versus a protocol like the Espresso Sequencer (e.g., assuming the same amount of L1 validator stake is participating in each via Eigenlayer)? For the Espresso Sequencer the amount slashed would be 1/3 of the entire stake. Am I also understanding correctly that, unless every single L1 validator is also participating as a preconfer, a user can’t get any promise on precisely where in the order its tx will be included until the next preconfer’s turn? E.g., if 20% of L1 validators participate as preconfers this would be every minute? Lastly, this construction seems to be orthogonal/complementary because the Espresso proposers (leaders) can also offer this weaker flavor of preconf with the same claimed 100ms latency etc. In fact, with Hotshot or any protocol that has single-slot finality, the proposer/preconfer has arguably lower risk when providing a user with a preconf of this form than with LMD Ghost as there isn’t the same risk of reorg (only the risk of missing/failing to complete the slot). With Espresso there would also be no delay that depends on the fraction of L1 validators participating.
+
+            
+
+
+            
+              
+4 Likes
+            
+
+            
+                
+
+            
+              
+                The-CTra1n
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 9, 2023,  7:35am
+                  
+                  
+
+3
+              
+            
+            
+              I think this discussion highlights the blurred lines that define what it means to be based. From Justin’s og post on based rollups, the “sequencing is driven by the base L1”. Both proposals discussed by Justin and Ben aren’t technically being driven by the base L1 anymore, but rather by some form of off-chain consensus, albeit with the L2 proposers explicitly now some subset of the L1 proposers in Justin’s proposal.
+
+
+
+
+
+ JustinDrake:
+
+
+Non-preconfed transactions included onchain by non-preconfers will not execute immediately. Instead, to give execution precedence to preconfed transactions over non-preconfed transactions, an execution queue for non-preconfed transactions is introduced. Non-preconfed transactions included onchain are queued until the first preconfer slot is not missed. At that point all transactions execute, with preconfed transactions executed prior to queued non-preconfed transactions.
+
+
+
+
+This sounds like removing the basedness of the rollup. Based sequencing using the standard non-preconf entry point becomes an elaborate forced inclusion list, which will have no guarantee of execution as preconfs can always front-run the non-preconfs. Sequencing is effectively moved off-chain using both this protocol and the Espresso suggestion, which is a contradiction to based sequencing imo.
+
+Maybe it’s not? Interested to hear your thoughts.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                gets
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 13, 2023,  7:34pm
+                  
+                  
+
+4
+              
+            
+            
+              
+
+
+
+ JustinDrake:
+
+
+replay protection: To avoid replay attacks by preconfers such as sandwiching via transaction reordering, transaction validity is recommended to be tied to the preconf condition. This can be achieved with a new L2 transaction type, either with account abstraction or a native transaction type.
+
+
+
+
+Why does transaction validity prevent sandwiching?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                bruno_f
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 16, 2023,  2:03am
+                  
+                  
+
+5
+              
+            
+            
+              Why couldn’t I just do the same without restaking? I can create a rollup with a token, have people stake my token on some L1 contract and then have this kind of round-robin consensus that is being used here. Except that now my rollup has more sovereignty (doesn’t rely in EigenLayer) and more importantly can capture more value (especially MEV). Outsourcing the consensus to EigenLayer isn’t any better than having my own consensus. At least the original based rollup was truly codeless.
+
+Any L2 sequencing that outsources its validator selection to a L1 contract, already inherits the liveness and decentralization of Ethereum. The main differentiators of based rollups still seem to be only two: that it doesn’t require any code and that MEV flows to L1.
+
+MEV flowing to L1 is not desirable for a rollup. If I’m a rollup and I capture more value than my competitors then my token is worth more and I have more resources to hire developers, do marketing, provide ecosystem grants, etc.
+
+It’s also not desirable for Ethereum to capture that much value. If all that value goes to L1, then there won’t be any companies willing to spend billions on rollup projects. Then it would have to be the EF to do all of the work on developing those rollups. An Ethereum where the EF does all the R&D for the ecosystem is not decentralized or neutral.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kartik1507
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 16, 2023,  3:51am
+                  
+                  
+
+6
+              
+            
+            
+              Interesting idea. But I have a question about the design. Typically, builders need to know the system’s state to build the next set of blocks, e.g., to determine whether a set of transactions is valid. This also plays into figuring out how much MEV they get and what they bid.
+
+Now imagine a situation where one entity X is a validator, builder, and client simultaneously. Let’s assume that this validator is the earliest preconfer, and its slot is 5 blocks away. It creates a preconfed transaction that is not publicly known until it is X’s turn to be the proposer at which point it includes the transaction. All preconf conditions are satisfied, so there are no issues there. But for the last 5 blocks, builders other than X do not have the latest state of the system, making them unable to guarantee that the transactions they include will be executed. This gives X an unfair advantage since it is the only one to know the state of the system. Can this result in builder centralization?
+
+In fact, one can do this attack adaptively. Wait until it is X’s turn to be a preconfer. Observe the last 5 blocks and create and preconf transactions such that it imparts maximum harm to other builders (and consequently clients). This would also provide an easy means to frontrunning after multiple blocks have been proposed, correct?
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                The-CTra1n
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 16, 2023,  8:54am
+                  
+                  
+
+8
+              
+            
+            
+              
+
+
+
+ The-CTra1n:
+
+
+Based sequencing using the standard non-preconf entry point becomes an elaborate forced inclusion list, which will have no guarantee of execution as preconfs can always front-run the non-preconfs.
+
+
+
+
+I made the same point here. Feels like the proposed design can’t get around this issue.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                JustinDrake
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 24, 2023, 11:14am
+                  
+                  
+
+9
+              
+            
+            
+              
+
+
+
+ ben-a-fisch:
+
+
+This seems to offer a different (weaker) type of “preconfirmation” guarantee than finality, which is what a consensus protocol like Espresso’s Hotshot protocol provides. What happens to these preconfs when there is a reorg on Ethereum’s LMD Ghost protocol?
+
+
+
+
+Agreed!
+
+
+
+
+
+ ben-a-fisch:
+
+
+how much stake would be slashed for invalid preconfirmations in this proposal
+
+
+
+
+The amount slashed for safety faults is fully programmable and not limited to 32 ETH. For example, one could delegate preconfs to a dedicated preconfer (e.g. a relay) which can pledge an arbitrarily-large amount of collateral, including non-ETH collateral. Another strategy to boost collateral may be for  an operator to combine the stake from k validators to get k * 32 ETH of collateral.
+
+
+
+
+
+ ben-a-fisch:
+
+
+Am I also understanding correctly that, unless every single L1 validator is also participating as a preconfer, a user can’t get any promise on precisely where in the order its tx will be included until the next preconfer’s turn?
+
+
+
+
+Nope, that’s a misunderstanding  A user can get a promise (within ~100ms, by communicating with the next preconfer) on the execution of their transaction (down to the post-state root, if desired—see the section titled “parallelisation”).
+
+
+
+
+
+ ben-a-fisch:
+
+
+this construction seems to be orthogonal/complementary because the Espresso proposers (leaders) can also offer this weaker flavour of preconf with the same claimed 100ms latency
+
+
+
+
+Agreed—I removed the sentence “This is roughly an order of magnitude faster than running an external consensus, e.g. as done by Espresso.”
+
+
+
+
+
+
+
+ The-CTra1n:
+
+
+This sounds like removing the basedness of the rollup.
+
+
+
+
+Based sequencing with preconfirmations remains a tokenless, hatch-free, credibly neutral, decentralised, shared sequencer which reuses L1 sequencing and inherits its censorship resistance.
+
+I think the point you are making is that when preconfirmers don’t preconfirm (e.g. are offline) transactions execution is delayed. If X% of proposers are preconfirmers then transaction execution can be delayed by 1/X% on average. The good news (as discussed on our call, as well as in the response to @kartik1507  is that rational proposers are incentivised to become preconfirmers so I expect X% to be relatively close to 100%. There may also be an opportunity to somehow enshrine preconfirmations and mandate that every proposer be a preconfirmer.
+
+
+
+
+
+ The-CTra1n:
+
+
+preconfs can always front-run the non-preconfs
+
+
+
+
+I expect the vast majority of transactions will be preconfed and that non-preconfed user transactions will be a thing of the past. There’s no execution latency overhead to preconfirmation (preconfed transactions can be immediately executed onchain by any proposer ahead of the next preconfer) and the section titled “replay protection” explains how to protect preconfed transactions from frontrunning.
+
+Now let’s assume that for some reason a significant portion of transactions are not preconfirmed. Then any transaction that is frontrunnable (e.g. a swap) can be protected by encryption similarly to encrypted mempools. That is, frontrunnable transactions would go onchain encrypted and would only decrypt and execute after the preconfirmed transactions. Again, such protection is unnecessary if preconfirmations are used in the first place.
+
+
+
+
+
+ kartik1507:
+
+
+for the last 5 blocks, builders other than X do not have the latest state of the system, making them unable to guarantee that the transactions they include will be executed. This gives X an unfair advantage since it is the only one to know the state of the system. Can this result in builder centralization?
+
+
+
+
+In your scenario the preconfirmer has monopoly power to execute transactions (and extract certain types of MEV like CEX-DEX arbitrage) for 5 slots. It’s as if their slot duration was a whole 1 minute instead of the usual 12 seconds. Longer effective slot durations definitely favour preconfirmers but are largely orthogonal to builder centralisation. (As a side note, building is already extremely centralised.)
+
+This monopoly power to execute transactions is an incentive for proposers to opt in to becoming preconfers. You can think of it as a bootstrapping mechanism which temporarily rewards early preconfirmers and incentivises most proposers to become preconfers.
+
+
+
+
+
+ gets:
+
+
+Why does transaction validity prevent sandwiching?
+
+
+
+
+If the transaction is only valid if executed as preconfirmed, and the preconfirmed execution does not sandwich, then the transaction cannot be replayed to sandwich the user.
+
+
+
+
+
+ bruno_f:
+
+
+Why couldn’t I just do the same without restaking?
+
+
+
+
+You can!
+
+
+
+
+
+ bruno_f:
+
+
+I can create a rollup with a token
+
+
+
+
+One of the value propositions of based sequencing is neutrality and tokenlessness. The based sequencer is a credibly neutral sequencer for L2s and their competitors to enjoy the network effects of shared sequencing. Moreover, using a non-ETH token will almost certainly reduce economic security. (Today Ethereum has $60B of economic security).
+
+
+
+
+
+ bruno_f:
+
+
+more sovereignty (doesn’t rely in EigenLayer)
+
+
+
+
+EigenLayer is not required—any restaking infrastructure (e.g. home-grown, or an EigenLayer fork with governance removed) could work.
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

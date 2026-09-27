@@ -1,0 +1,1692 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hedera Technical Insights: A hybrid DLT architecture… | Hedera
+
+
+    
+  
+    
+      
+        
+          
+          
+        
+      
+
+    
+
+  
+
+
+  
+
+  
+      
+            
+
+
+  
+    
+      
+  
+  
+
+
+
+      Hedera
+    
+    
+            
+      
+              
+              
+      	
+          
+                                                            Network
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Services
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Token Service
+Mint and configure tokens and accounts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consensus Service
+Verifiable timestamps and ordering of events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Smart Contracts
+Run Solidity smart contracts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                HBAR
+The Hedera network's native cryptocurrency.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Insights
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                How It Works
+Learn about Hedera from end to end.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Explorers
+View live and historical data on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Dashboards
+Analyze network activity and metrics.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Nodes
+Understand networks and node types.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Devs
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Start Building
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Get Started
+Learn core concepts and build the future.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Documentation
+Review the API and build using your favorite language.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Developer Resources
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Integrations
+Plugins and microservices for Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Fee Estimator
+Understand and estimate transaction costs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Open Source
+Hedera is committed to open, transparent code.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Learning Center
+Learn about web3 and blockchain technologies.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants
+Grants & accelerators for your project.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Bounties
+Find bugs. Submit a report. Earn rewards.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Ecosystem
+                                                                          
+          
+            	
+
+                  
+                    
+                                        ECOSYSTEM
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Ecosystem
+Applications, developer tools, network explorers, and more.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFT Ecosystem Metrics
+Analyze on-chain and market NFT ecosystem metrics.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        CATEGORIES
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Web3 Applications
+Connect into the innovative startups decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Enterprise Applications
+Learn about the Fortune 500 companies decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Wallets & Custodians
+Create a Hedera account to manage HBAR, fungible tokens, and NFTs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Explorers
+Hedera mainnet and testnet graphical network explorers.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Developer Tooling
+Third-party APIs, integrations, and plugins to build apps on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants & Accelerators
+Boost your project with support from the Hedera ecosystem.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Partner Program
+Explore our partners to bring your vision into reality.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+Over 30 highly diversified organizations govern Hedera.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Use Cases
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Hedera Solutions
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Asset Tokenization Studio
+Open source toolkit for tokenizing assets securely.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Stablecoin Studio
+All-in-one toolkit for stablecoin solutions.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Guardian
+Auditable carbon markets and traceability.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Functional Use Cases
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Data Integrity & AI
+Reliable, secure, and ethically governed insights.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Sustainability
+Enabling fair carbon markets with trust.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Real-World Asset Tokenization
+Seamless tokenization of real-world assets and digital at scale.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consumer Engagement & Loyalty
+Mint, distribute, and redeem loyalty rewards.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Identity
+Maintain the lifecycle of credentials.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Logs
+Scalable, real-time timestamped events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                DeFi
+Dapps built for the next-generation of finance.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFTs
+Low, fixed fees. Immutable royalties.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Payments
+Scalable, real-time, and affordable crypto-payments.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            HBAR
+                                                                          
+          
+            	
+
+                  
+                    
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Overview
+Learn about Hedera's token, HBAR.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Treasury Management
+Hedera’s report of the HBAR supply.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Governance
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Decentralized Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+See the world's leading organizations that own Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                About
+Meet Hedera's Board of Directors and team.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Journey
+Watch Hedera's journey to build an empowered digital future for all.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Transparent Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Public Policy
+Hedera's mission is to inform policy and regulation that impact the industry.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Meeting Minutes
+Immutably recorded on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Roadmap
+Follow Hedera's roadmap in its journey to build the future.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Resources
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Company
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                What's New
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Partners
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Papers
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Careers
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Media
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Blog
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Technical
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Press
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Podcast
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Community
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Events
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Meetups
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Store
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Brand
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+
+
+
+
+  
+    
+
+    
+
+
+
+
+Navigation
+
+  
+    
+
+    
+
+        
+            QUICKSTART
+        
+
+      
+
+
+      
+        
+            
+        
+
+      
+
+
+      
+      
+                  
+
+          
+          
+              
+
+
+    
+    
+      
+        
+          Hedera Technical Insights: A hybrid DLT architecture for gaming
+        
+
+        technical
+
+        
+          
+            
+              
+                                                                      
+                              
+
+            
+
+            Jan 11, 2019
+by Paul Madsen
+Head of Identity, The HBAR Foundation
+
+
+          
+
+
+        
+                        
+
+              Online gaming architectures have historically relied on an intermediary to facilitate the game play — running centralized servers to which users would connect in order to find opponents and then managing the game state (e.g. where all characters are in a Massively Multiplayer Online (MMO) game, or how much gold each has, or where the pieces are in chess). This centralized model has been able to deliver the performance necessary for supporting smooth and seamless fast game play amongst many players and across a network.
+
+However, game players must trust that the centralized platform will not act inappropriately, such as influence game play, censor certain players, or steal in-game assets. Additionally, the centralized server acts as a single point of failure — if it can be attacked with a Distributed Denial of Service (DDoS) attack, then the game can be taken down. Also, the game platform will charge fees to pay for the costs of running the servers.
+
+Decentralized gaming platforms remove the intermediary. Instead of game state being tracked on a single gaming server, the location of characters, and even the game logic is stored on a Distributed Ledger Technology (DLT). There is no longer a single entity that can be shut down, or corrupt the game, or steal assets.
+
+Beyond the advantages of disintermediation, a key feature of public DLTs are cryptocurrencies that can enable new game economics. Even in current centralized game platforms, virtual asset ownership is an important feature — gamers expect their experience and progression through a particular game to be reflected in status and assets. But in centralized platforms, a player owns those assets only at the discretion of the platform. A DLT-based gaming platform can allow for such in-game status and wealth to be converted into comparable virtual items in another game, or even the real world — and for the player to truly own those assets.
+
+In addition to allowing gamers to monetize their game skill and experience more broadly, a crypto layer in a game can allow gamers to purchase in-game items and capabilities, such as to level up or to buy health. More prosaically, a crypto currency could allow gamers to pay per play, as opposed to a subscription model — enabling gamers to be more willing to try new games without the fear of wasted investment.
+
+Notwithstanding the value that DLTs can offer games, there are significant technical challenges to be confronted.
+
+The throughput of a DLT refers to how many transactions per second can be processed into consensus, and then applied to the shared state. Different DLTs can support different throughputs.
+
+Latency is how long it takes from when a transaction is submitted to the DLT network, to when it is applied to the shared state.
+
+Games require that players have a consistent view of the current state of the game at a given moment in time. Latency and throughput limitations of DLTs complicate this.
+
+If a given DLT supports a maximum throughput of T tps, then if there are n players, each submitting t game transactions (e.g. a chess move, or a character movement) every second to the ledger, then clearly T ≥ n * t, or game play won’t be possible. If T is fixed, then you can either reduce n (restrict play to fewer players in a given ‘world’) or reduce t (focus on games with less frequent moves).
+
+Latency effects will also serve to constrain game play. To illustrate this, consider the following scenario.
+
+Suppose Alice and Bob see a valuable object on the ground in an MMO, and both try to pick it up at the same time. Alice’s computer immediately shows Alice that she has the object, and Bob’s computer immediately shows Bob that he has the object. If the DLT then reaches consensus that Alice picked it up before Bob did, then Alice will keep the object, and Bob’s computer will show him failing to have it. Bob actually sees himself pick it up successfully for a brief time, before the consensus history gives it to Alice.
+
+This effect of latency is referred to as ‘desync’ and the consequent jerky game play is referred to as ‘rubberbanding’ in the gaming world.
+
+Alternatively, the game could be designed so that when Alice and Bob try to pick up the object, their screen shows nothing happening until consensus is reached on whose action was first. Then both computers would show the gamers that Alice picked it up, and both gamers would see that Bob never had it. History doesn’t change, but actions are visibly delayed. This would be a less than optimal for a fast-paced game, but might be a better solution for a slow, real-time strategy game.
+
+So the game can either show actions reversing themselves, or show delayed actions. Either way, the game play will only be enjoyable to the gamers if the time required for the network to reach consensus on the relative order of the two moves is small relative to the speed of play.
+
+This latency for a move will be a combination of the time it took for the move to be sent over the network, plus the time it takes for the network to reach consensus on the order, plus the time for the consequence of the move to be sent back to the gamers. We should try to minimize both network and consensus latency.
+
+Different games will have different acceptable latency. For instance, a latency of 5 seconds might be acceptable for a turn-based strategy game or checkers, but likely not for the MMO described above. In some games like Words With Friends, there can be hours or days between turns.
+
+Different DLTs will have different achievable latency. The latency of a ledger architecture is affected by its consensus algorithm and deployment model, such as the number of nodes and distances between them. For instance, some public blockchains have block times of 10 minutes or more, with multiple blocks required to minimize the chance of a transaction being rolled back. On the other hand, permissioned DLTs, or a public DLT like Hedera Hashgraph, can deliver latency in the order of seconds.
+
+Decentralization would suggest that all aspects of a game be tracked on a public ledger operated by thousands of nodes. Latency and throughput considerations of game play, on the other hand, argue for smaller networks in smaller regions.
+
+One way to reconcile these two drivers is to recognize that decentralization helps some aspects of a game more than others. Decentralization is ultimately a protection against bad behaviour of one or a few actors. And the risk of bad behaviour is higher in certain aspects of the game than others.
+
+A hybrid model for a DLT gaming architecture reserves for the public ledger those aspects most at risk of cheating. In a hybrid model, we can track ownership of scarce resources (the value of which will motivate cheating) on a public ledger, but use a faster private and smaller ledger for actual game play.
+
+In this way, we gain the best of both worlds. We gain the security of the public ledger for keeping track of a player’s assets, such as which weapons they have, or their ranking within the game, or their CryptoKitty skin, but are not hampered by the higher latencies of those public ledgers. Instead, game play is tracked on a smaller private network. 
+
+Consider the following scenario as an example of this hybrid model:
+
+Several players of a First Person Shooter (FPS) game are traveling on the same airline flight, and are connected to the WiFi. They can communicate quickly with each other, but have a slow connection to the internet. The game has a reputation system where, whenever Alice shoots Bob, her reputation increases slightly, and his decreases by an equal amount. The players do not know each other, but their computers discover each other through the public ledger, and establish their own ad hoc private ledger between their laptops on the plane. The public ledger gives each of them the public keys and addresses of the others.
+
+To start with, the players jointly create a random number to be the ID for the game, and jointly create an expiration time for the game to end. During the game, the private ledger keeps track of the score of how many times each player has shot each of the other players. Each time the score changes, Alice digitally signs a record consisting of the new score, the ID for the game, and a sequence number (which starts at 0, and counts up each time the score changes). Alice sends her signature out to all the other players, and they do the same.
+
+At the end of the game, any player (or more than one) sends the last signed record to a smart contract on the public ledger, along with the signatures of all the participants. If every participant gave a valid signature, then it waits until the expiration time, then updates all the reputations. If it receives multiple records for the same game ID before the expiration time, then it ignores all but the one with the highest sequence number.
+
+This can potentially be much faster than just using the public ledger directly. Each score update reaches consensus on the private ledger very quickly, because there are few nodes, and they are near each other. The scores of different players may be updated on the private ledger a thousand times during the game, but the public ledger only has to perform a single update at the end to reflect the final tally. The model reduces traffic on the public ledger and uses it only for transactions that are insensitive to latency.
+
+The trust model works well, too. If Alice tries to cheat by submitting an earlier record from the middle of the game, then the public ledger will ignore it, because its sequence number is lower than the final record. If Alice gets mad and quits halfway through the game, then it is possible that the last score update will be lost, but the score just before that will still be valid, because Alice signed all the records before that last one. If one player manages to create many fake sock puppet accounts on the public ledger, and then manages to dominate the private ledger on the plane, then the honest players can still quit as soon as they start to feel that the game is not playing out fairly, before they have lost many reputation points.
+
+This hybrid model is ideal when two things are true. First, the game must be such that there are many small actions and results on the private ledger, and a short summary of them can then be sent to the public ledger as a single transaction. That keeps the traffic on the public ledger low, and helps latency during the game.
+
+Second, the game must consist of many small wins and losses, with many small transfers of value. If a one-hour game resulted purely in a single, large transfer of points from the loser to the winner, like in a game of chess, then there would be a motivation for the loser to quit without signing the single record that would be created at the end. But if the game consists of many small wins and losses, with many small transfers of points, then a losing player can only erase the very last transfer by quitting. All the previous transfers are already signed and so the quitter can’t refute those.
+
+This hybrid model is similar to the Layer 2 architectures such as Bitcoin’s Lightning Network in which the bulk of transactions are not sent to the main ledger, but tracked locally amongst a smaller set of participants — with only aggregate settlement transactions sent to the main chain.
+
+A hybrid model tracks game play on a small private ledger, but relies on a public ledger for recording ownership of scarce game assets or other valuable resources. This can provide a powerful combination of decentralization and performance that may not yet be achievable on either a fully private or fully public ledger. Additionally, the public ledger opens up the possibility of portability and exchange of those scarce resources across other games and the real world.
+
+            
+
+          
+          
+            Share This
+          
+
+          
+
+          
+
+
+
+
+
+            Back to blog
+          
+
+         
+
+        
+      
+    
+    
+      
+      
+        
+                    	
+              
+                
+                                    
+                                                            
+                  
+
+                  What is gRPC, gRPC-Web, and Proxies?
+                  Ed Marquez
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Pragmatic Blockchain Design Patterns – Integrating Blockchain into Business Processes
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Zero Cost EthereumTransaction on Success: Hedera's New Fee Model for Relay Operators
+                  Oliver Thorn
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Adopts Chainlink Standard for Cross-Chain Interoperability To Accelerate Ecosystem Adoption
+                  Hedera Team
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Developer Highlights March 2025
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Release Cycle Overview
+                  Ed Marquez
+                
+
+              
+            
+
+
+          View All Posts
+        
+
+              
+
+    
+
+  
+  
+  
+    
+    
+  
+
+  
+            
+
+    
+        
+            
+        
+
+        
+            Sign up for the newsletter
+
+            
+                
+            
+
+        
+
+        
+            CONNECT WITH US
+
+            
+
+
+
+
+        	
+                Transparency
+            
+	
+                Open Source
+            
+	
+                Audits & Standards
+            
+	
+                Sustainability Commitment
+            
+	
+                Carbon Offsets
+            
+
+	
+                Governance
+            
+	
+                Hedera Council
+            
+	
+                Public Policy
+            
+	
+                Treasury Management
+            
+	
+                Meeting Minutes
+            
+	
+                LLC Agreement
+            
+	
+                Node Requirements
+            
+
+	
+                Community
+            
+	
+                Events
+            
+	
+                Meetups
+            
+	
+                HBAR Telegram
+            
+	
+                Developer Discord
+            
+	
+                Twitter Community
+            
+
+	
+                Support
+            
+	
+                FAQ
+            
+	
+                Network Status
+            
+	
+                Developer Discord
+            
+	
+                StackOverflow
+            
+
+	
+                Brand
+            
+	
+                Brand Guidelines
+            
+	
+                Built on Hedera Logo
+            
+	
+                Hedera Store
+            
+
+	
+                About
+            
+	
+                Team
+            
+	
+                Partners
+            
+	
+                Journey
+            
+	
+                Roadmap
+            
+	
+                Careers
+            
+
+	
+                Contact
+            
+	
+                General Inquiry
+            
+	
+                Public Relations
+            
+
+
+
+    
+        © 2018-2025 Hedera Hashgraph, LLC. All trademarks and company names are the property of their respective owners. All rights in the Deutsche Telekom mark are protected by Deutsche Telekom AG. All rights reserved. Hedera uses the third party marks with permission.
+Terms of Use  |  Privacy Policy
+
+    
+
+
+
+
+    
+
+      
+
+  
+  

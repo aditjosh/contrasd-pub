@@ -1,0 +1,2502 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How to Create a Smart Contract App on Hedera Using Solidity,… | Hedera
+
+
+    
+  
+    
+      
+        
+          
+          
+        
+      
+
+    
+
+  
+
+
+  
+
+  
+      
+            
+
+
+  
+    
+      
+  
+  
+
+
+
+      Hedera
+    
+    
+            
+      
+              
+              
+      	
+          
+                                                            Network
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Services
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Token Service
+Mint and configure tokens and accounts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consensus Service
+Verifiable timestamps and ordering of events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Smart Contracts
+Run Solidity smart contracts.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                HBAR
+The Hedera network's native cryptocurrency.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Insights
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                How It Works
+Learn about Hedera from end to end.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Explorers
+View live and historical data on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Dashboards
+Analyze network activity and metrics.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Nodes
+Understand networks and node types.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Devs
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Start Building
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Get Started
+Learn core concepts and build the future.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Documentation
+Review the API and build using your favorite language.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Developer Resources
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Integrations
+Plugins and microservices for Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Fee Estimator
+Understand and estimate transaction costs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Open Source
+Hedera is committed to open, transparent code.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Learning Center
+Learn about web3 and blockchain technologies.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants
+Grants & accelerators for your project.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Bounties
+Find bugs. Submit a report. Earn rewards.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Ecosystem
+                                                                          
+          
+            	
+
+                  
+                    
+                                        ECOSYSTEM
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Ecosystem
+Applications, developer tools, network explorers, and more.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFT Ecosystem Metrics
+Analyze on-chain and market NFT ecosystem metrics.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        CATEGORIES
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Web3 Applications
+Connect into the innovative startups decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Enterprise Applications
+Learn about the Fortune 500 companies decentralizing the web on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Wallets & Custodians
+Create a Hedera account to manage HBAR, fungible tokens, and NFTs.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Network Explorers
+Hedera mainnet and testnet graphical network explorers.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Developer Tooling
+Third-party APIs, integrations, and plugins to build apps on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Grants & Accelerators
+Boost your project with support from the Hedera ecosystem.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Partner Program
+Explore our partners to bring your vision into reality.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+Over 30 highly diversified organizations govern Hedera.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Use Cases
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Hedera Solutions
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Asset Tokenization Studio
+Open source toolkit for tokenizing assets securely.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Stablecoin Studio
+All-in-one toolkit for stablecoin solutions.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Guardian
+Auditable carbon markets and traceability.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Functional Use Cases
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Data Integrity & AI
+Reliable, secure, and ethically governed insights.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Sustainability
+Enabling fair carbon markets with trust.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Real-World Asset Tokenization
+Seamless tokenization of real-world assets and digital at scale.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Consumer Engagement & Loyalty
+Mint, distribute, and redeem loyalty rewards.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Identity
+Maintain the lifecycle of credentials.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Decentralized Logs
+Scalable, real-time timestamped events.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                DeFi
+Dapps built for the next-generation of finance.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                NFTs
+Low, fixed fees. Immutable royalties.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Payments
+Scalable, real-time, and affordable crypto-payments.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            HBAR
+                                                                          
+          
+            	
+
+                  
+                    
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Overview
+Learn about Hedera's token, HBAR.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Treasury Management
+Hedera’s report of the HBAR supply.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Governance
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Decentralized Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Hedera Council
+See the world's leading organizations that own Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                About
+Meet Hedera's Board of Directors and team.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Journey
+Watch Hedera's journey to build an empowered digital future for all.
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Transparent Governance
+
+                    
+                                        	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Public Policy
+Hedera's mission is to inform policy and regulation that impact the industry.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Meeting Minutes
+Immutably recorded on Hedera.
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                                
+                                                                    
+                                  
+                                   
+                                                                                                                   
+                                                                  
+
+                                                              
+                              
+                                Roadmap
+Follow Hedera's roadmap in its journey to build the future.
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+	
+          
+                                                            Resources
+                                                                          
+          
+            	
+
+                  
+                    
+                                        Company
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                What's New
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Partners
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Papers
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Careers
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Media
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Blog
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Technical
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Press
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Podcast
+
+
+                                                  
+                          
+
+
+                  
+                                                  
+                
+                
+	
+
+                  
+                    
+                                        Community
+
+                    
+                                        	
+                            
+                              
+                                                              
+                              
+                                Events
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Meetups
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Store
+
+
+                                                  
+                          
+	
+                            
+                              
+                                                              
+                              
+                                Brand
+
+
+                                                  
+                          
+
+
+                  
+
+            
+
+
+          
+
+
+
+
+
+
+  
+    
+
+    
+
+
+
+
+Navigation
+
+  
+    
+
+    
+
+        
+            QUICKSTART
+        
+
+      
+
+
+      
+        
+            
+        
+
+      
+
+
+      
+      
+                  
+
+          
+          
+              
+
+
+    
+    
+      
+        
+          How to Create a Smart Contract App on Hedera Using Solidity, React JS, MetaMask, and Ethers JS – A Simple Counter
+        
+
+        technical
+
+        
+          
+            
+              
+                                                                      
+                              
+
+            
+
+            May 02, 2023
+by Ed Marquez
+Head of Developer Relations
+
+
+          
+
+
+        
+                        
+
+              In this step-by-step tutorial, you will create a simple counter dApp on the Hedera network using Solidity, React JS, MetaMask, and Ethers JS. The goal with this example is to help you understand the fundamentals of dApp development, making it easier for you to create more complex dApps in the future. 
+
+Let's dive in and start building our counter dApp on Hedera!
+
+
+Try It Yourself
+
+	Get a Hedera Testnet account: 	This portal acts like a faucet, giving you 10,000 test HBAR every 24 hours.
+
+	If you’re new to Hedera, check out these steps to set up your development environment.
+
+
+
+	Try the example quickly using this Gitpod:	Continue with your GitHub account.
+
+	In the lower right corner, click the prompt “Open Browser.”
+
+
+
+	Get the example code from GitHub.
+
+
+
+Tools You Will Use
+
+	React JS (Documentation)
+
+	MetaMask (Documentation)
+
+	Ethers JS (Documentation)
+
+	Solidity (Documentation)
+
+	Hedera JSON-RPC Relay (Hashio)
+
+	Mirror node REST API (Learn More)
+
+	Mirror node explorer (HashScan)
+
+	Axios (npm package)
+
+
+
+Goals
+
+	Understand the fundamentals of integrating an ethers provider for communication between a React JS application, MetaMask, and a smart contract on Hedera.
+
+	Learn how to deploy and interact with a Solidity smart contract on Hedera using Ethers JS.
+
+	Use the Hedera mirror nodes to obtain on-chain information and query transaction data.
+
+	Explore the Hedera network and smart contract transactions using HashScan, a Hedera Network Explorer.
+
+
+
+Application Architecture at a High Level
+
+The counter dApp uses a simple yet robust architecture that ensures seamless interactions between various components.
+
+
+            
+
+                            
+
+              Here's a brief explanation of each part and its role in the overall architecture:
+
+	Browser: The user's web browser serves as the environment in which the dApp runs. It provides the interface for users to interact with the dApp and MetaMask.
+
+	Signer (MetaMask wallet): MetaMask is a browser extension that acts as a wallet and a signer for transactions created by the dApp. It securely stores the user's private keys, manages accounts, and signs transactions when required.
+
+	React JS Frontend: The dApp’s user interface (UI) is built with React components, which handle user interactions and display relevant information. It communicates with MetaMask and the JSON-RPC Provider to facilitate transactions and fetch data.
+
+	JSON-RPC Provider (Hashio): The JSON-RPC Provider, Hashio in this case, connects the dApp to the Hedera network. It provides an API for sending transactions and querying data from the network.
+
+	Hedera Network (Consensus and Mirror Nodes): The Hedera network consists of consensus nodes that process and process transactions, and mirror nodes that store transaction data. Note that the Hedera network has the Consensus Service, the Token Service, and the Smart Contract Service – the JSON-RPC interface only exposes the Token and Smart Contract Services.
+
+	Mirror Node Queries: The dApp communicates with mirror nodes to obtain on-chain information and query transaction data. This allows the dApp to display the latest state of the smart contract and other relevant information to the user.
+
+
+
+By understanding the architecture and connections between these components, you can appreciate the flow of data and interactions that make the counter dApp function smoothly on the Hedera network.
+
+1. Cloning the Example Repository
+
+To get started with the project, the first thing you will do is clone an example repository. The repository is specifically tailored for our counter dApp. 
+
+Clone the Repo
+
+To clone the repository, open your terminal and navigate to the directory where you want to place the project. Then, run the following command:
+
+
+            
+  
+
+  
+  
+                 
+    ﻿﻿﻿git clone ﻿https://github.com/ed-marquez/hedera-example-metamask-counter-dapp.git﻿
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              Navigate to Directory
+
+This command clones the hedera-example-metamask-counter-dapp repository into your desired directory. Once the cloning process is complete, navigate to the project folder using:
+
+            
+  
+
+  
+  
+                 
+    cd hedera-example-metamask-counter-dapp
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              The folder structure should look something like the following.
+
+
+            
+
+                            
+
+              Install Project Dependencies and Start the Application
+
+After cloning the repo and navigating to the right folder, be sure to install all project dependencies. Dependencies are listed in the package.json file, so you can just use:
+
+            
+  
+
+  
+  
+                 
+    npm install
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              To start the application, use:
+
+
+            
+  
+
+  
+  
+                 
+    npm start
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              2. Getting Familiar with the dApp Structure and UI
+
+Now that you have cloned the example repository, let's explore the project files and functions, and get a feel for how the counter dApp looks and functions! Familiarizing yourself with the project's organization and UI elements will make it easier to follow along as you dive into the technical aspects of building the dApp. 
+
+Overall dApp Structure
+
+The example application has three buttons, which complete a different task when pressed.
+
+	The first button connects the application to MetaMask.
+
+	The second button deploys the Counter smart contract.
+
+	The third button executes a contract function to increase the count.
+
+
+
+            
+
+                            
+
+              Now let’s look at the App.jsx file (inside the src folder) behind this UI. You can think of the code as three main sections (in addition to the imports): 
+
+	The state management is the part that uses the useState() React Hook.
+
+	The functions that are executed with each button press; we’ll look at these in the next few sections.
+
+	The return statement groups the elements we see on the page.
+
+
+
+            
+
+                            
+
+              The useState() hook helps store information about the state of the application. In this case, we store information like the wallet data, the account that is connected, the network, and the contract that we’re interacting with, along with text and links that are presented in the UI. Remember that the first output of useState() is the variable of interest (e.g., walletData) and the second output is a function to set a new value for that variable (e.g., setWalletData).
+
+Understanding the React Components
+
+The buttons and text in the UI are part of a group of React components (MyGroup in the return statement). By grouping components, we take advantage of React's composability for better organization and readability. Notice that MyGroup is reused three times and properties are customized for each instance (see React props) – like the function that each button executes, the label of the button, the text above the button, and the link for that text.
+
+
+MyGroup
+
+            
+  
+
+  
+  
+                 
+    import React from "react";
+import MyButton from "./MyButton.jsx";
+import MyText from "./MyText.jsx";
+
+
+function MyGroup(props) {
+    return (
+        <div>
+            <MyText text={props.text} link={props.link} />
+            <MyButton fcn={props.fcn} buttonLabel={props.buttonLabel} />
+        </div>
+    );
+}
+
+export default MyGroup;
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              MyGroup is a functional component that combines a text element with a button and receives props as an argument. These properties include:
+
+	text: The text to be displayed by the MyText component.
+
+	link: An optional link to be associated with the MyText component. If provided, the text will become clickable and redirect to the specified link.
+
+	fcn: A function to be executed when the button within the MyButton component is clicked.
+
+	buttonLabel: The label for the button in the MyButton component.
+
+
+
+Inside the component, we return a div element that contains both the MyText and MyButton components. We pass the corresponding props down to these child components, allowing them to render the text, link, button label, and assign the click event handler. Finally, by exporting the MyGroup, we make it available for use in other parts of the application, enabling us to quickly create reusable groups of text and button elements throughout the dApp.
+
+
+MyButton
+
+            
+  
+
+  
+  
+                 
+    import React from "react";
+
+function MyButton(props) {
+    return (
+        <div>
+            <button onClick={props.fcn} className="cta-button">
+                {props.buttonLabel}
+            </button>
+        </div>
+    );
+}
+export default MyButton;
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              MyButton accepts the following props:
+
+	fcn: A function to be executed when the button is clicked.
+
+	buttonLabel: The label for the button, which will be displayed as the button's text.
+
+
+
+Inside the component, we return a div element that wraps a button element. The button element is assigned the onClick event handler with the function props.fcn. This allows us to execute a specified function when the button is clicked. The className attribute is set to "cta-button," which is used for styling the button with CSS. Finally, we display the props.buttonLabel as the button's text.
+
+Lastly, by exporting MyButton, we make it available for use in other groups or parts of the application, allowing us to easily create consistent and reusable buttons throughout the DApp with customized functionality and labels.
+
+
+
+MyText
+
+            
+  
+
+  
+  
+                 
+    import React from "react";
+
+function MyText(props) {
+    if (props.link !== "") {
+        return (
+            <div>
+                <a href={props.link} target={"_blank"} rel="noreferrer">
+                    <p className="sub-text">{props.text}</p>
+                </a>
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <p className="sub-text">{props.text}</p>
+            </div>
+        );
+    }
+}
+
+export default MyText;
+
+
+    Copy
+  
+
+  
+  
+    
+    
+    
+
+
+
+              MyText displays text and optionally wraps it in a link. It takes props as an argument, including:
+
+	text: The text to be displayed.
+
+	link: An optional link to be associated with the text.
+
+
+
+Inside the component, we use a conditional statement to check if props.link is provided. If it is, we wrap the text within an <a> element, making it clickable and redirecting to the specified link. If no link is provided, we simply display the text within a <p> element. Both elements have the className "sub-text" for consistent styling. Finally, we export the MyText component so it can be used in other parts of the application, allowing for easy creation of text elements with optional links.
+
+You can find the JSX files for the MyGroup, MyButton, and MyText functional components under the folder src -> components.
+
+3. Connecting MetaMask to the dApp: Switch to Hedera Testnet and Pair Account
+
+Now that we are familiar with the structure and UI of our application, it’s time to connect MetaMask to our dApp, switch to the Hedera Testnet, and pair an account. 
+
+In App.jsx, we use the connectWallet() function (code tab 1), which in turn calls the walletConnectFcn() function (code tab 2) that is imported from the file src -> components -> hedera -> walletConnect.js.
+
+
+            
+
+
+
+
+  
+    
+        
+      
+      connectWallet
+      	connectWallet
+	walletConnectFcn
+
+
+    
+
+        
+    
+    
+                           
+        
+              async function connectWallet() {
+        if (account !== undefined) {
+            setConnectTextSt(`Account ${account} already connected `);
+        } else {
+            const wData = await walletConnectFcn();
+
+
+            let newAccount = wData[0];
+            let newNetwork = wData[2];
+            if (newAccount !== undefined) {
+                setConnectTextSt(`Account ${newAccount} connected `);
+                setConnectLinkSt(`https://hashscan.io/${newNetwork}/account/${newAccount}`);
+
+
+                setWalletData(wData);
+                setAccount(newAccount);
+                setNetwork(newNetwork);
+                setContractTextSt();
+            }
+        }
+    }
+
+
+        
+
+                
+          import { ethers } from "ethers";
+const network = "testnet";
+
+
+async function walletConnectFcn() {
+    console.log(`\n=======================================`);
+
+
+    // ETHERS PROVIDER
+    const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+
+
+    // SWITCH TO HEDERA TEST NETWORK
+    console.log(`- Switching network to the Hedera ${network}...`);
+    let chainId;
+    if (network === "testnet") {
+        chainId = "0x128";
+    } else if (network === "previewnet") {
+        chainId = "0x129";
+    } else {
+        chainId = "0x127";
+    }
+
+
+    await window.ethereum.request({
+        method: "wallet_addEthereumChain",
+        params: [
+            {
+                chainName: `Hedera ${network}`,
+                chainId: chainId,
+                nativeCurrency: { name: "HBAR", symbol: "ℏℏ", decimals: 18 },
+                rpcUrls: [`https://${network}.hashio.io/api`],
+                blockExplorerUrls: [`https://hashscan.io/${network}/`],
+            },
+        ],
+    });
+    console.log("- Switched ");
+
+
+    // // CONNECT TO ACCOUNT
+    console.log("- Connecting wallet...");
+    let selectedAccount;
+    await provider
+        .send("eth_requestAccounts", [])
+        .then((accounts) => {
+            selectedAccount = accounts[0];
+            console.log(`- Selected account: ${selectedAccount} `);
+        })
+        .catch((connectError) => {
+            console.log(`- ${connectError.message.toString()}`);
+            return;
+        });
+
+
+    return [selectedAccount, provider, network];
+}
+
+
+export default walletConnectFcn;
+
+
+        
+
+                            
+
+
+  
+
+
+
+
+
+
+              Connecting MetaMask
+
+When the “Connect Wallet” button is pressed in the dApp, the connectWallet() function is executed. This function checks if an account is already connected. If it is, a message displaying the connected account is shown. If no account is connected, the walletConnectFcn() is called to establish a connection.
+
+Switching to Hedera Testnet and Pairing Account
+
+The walletConnectFcn() function performs the following steps:
+
+	Create an ethers provider: It initializes an ethers provider using the Web3Provider from the ethers library, which connects to MetaMask. An Ethers provider serves as a bridge between your application and the Hedera network.  It allows you to send transactions, query data, and perform various interactions with smart contracts. 
+
+	Switch to Hedera Testnet: It determines the chainId based on the chosen Hedera network (testnet, previewnet, or mainnet) and sends a wallet_addEthereumChain request to MetaMask to add the corresponding Hedera network. A chain ID is a unique identifier that represents a blockchain network. This is an important step that includes setting the native currency (HBAR) and providing the JSON-RPC and network explorer URLs. For JSON-RPC provider, this example uses Hashio, which is a JSON-RPC relay community service provided by Swirlds Labs (note that anyone can host their own relay and/or use other commercial providers, like Arkhia). For network explorer, HashScan is used. (Keep in mind that HashScan supports EIP-3091, which makes it easy to explore historical information about things like blocks, transactions, accounts, contracts, and tokens from wallets like MetaMask.) 
+
+	Connect and Pair Account: The function sends an eth_requestAccounts request to MetaMask to access the user's Hedera account. Upon successful connection, the selected account is returned.
+
+
+
+Finally, the connectWallet() function updates the React state with the connected testnet account, network, and other wallet data, allowing the dApp to display the connected testnet account information and interact with the smart contract.
+
+This is what you would see when clicking the “Connect Wallet” button for the first time.
+
+
+            
+
+                            
+
+              Once the network switching and the account pairing are complete, you should see something like the following in the dApp UI and in HashScan (if you click on the hyperlinked text showing the account address).
+
+
+            
+
+                            
+
+                            
+
+              4. Deploying the Smart Contract – The Counter
+
+Now it’s time to deploy the Counter smart contract on the Hedera network using the contractDeploy() function (code tab 1) in App.jsx and the contractDeployFcn() function (code tab 2) in src -> components -> hedera -> contractDeploy.js.
+
+The Counter smart contract in Solidity (code tab 3) is simple, with a count variable and an increment() function that increases the count and emits an event. Events in Solidity provide a way to log things and actions that take place in your smart contracts. When an event is emitted, it stores the arguments in a special on-chain data structure called the transaction log.
+
+            
+
+
+
+
+  
+    
+        
+      
+      contractDeploy
+      	contractDeploy
+	contractDeployFcn
+	Counter.sol
+
+
+    
+
+        
+    
+    
+                           
+        
+             async function contractDeploy() {
+        if (account === undefined) {
+            setContractTextSt(" Connect a wallet first! ");
+        } else {
+            const cAddress = await contractDeployFcn(walletData);
+
+
+            if (cAddress === undefined) {
+            } else {
+                setContractAddress(cAddress);
+                setContractTextSt(`Contract ${cAddress} deployed `);
+                setExecuteTextSt(``);
+                setContractLinkSt(`https://hashscan.io/${network}/address/${cAddress}`);
+            }
+        }
+    }
+
+
+
+        
+
+                
+          import abi from "../../contracts/abi.js";
+import bytecode from "../../contracts/bytecode.js";
+import { ContractFactory } from "ethers";
+
+
+async function contractDeployFcn(walletData) {
+    console.log(`\n=======================================`);
+    console.log(`- Deploying smart contract on Hedera...`);
+
+
+    // ETHERS PROVIDER AND SIGNER
+    const provider = walletData[1];
+    const signer = provider.getSigner();
+
+
+    // DEPLOY SMART CONTRACT
+    let contractAddress;
+    try {
+        const gasLimit = 4000000;
+
+
+        const myContract = new ContractFactory(abi, bytecode, signer);
+        const contractDeployTx = await myContract.deploy({ gasLimit: gasLimit });
+        const contractDeployRx = await contractDeployTx.deployTransaction.wait();
+        contractAddress = contractDeployRx.contractAddress;
+        console.log(`- Contract deployed to address: \n${contractAddress} `);
+    } catch (deployError) {
+        console.log(`- ${deployError.message.toString()}`);
+    }
+    return contractAddress;
+}
+export default contractDeployFcn;
+
+
+        
+
+                        
+          // SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.9.0;
+
+
+contract Counter {
+    uint public count;
+    
+    event CountIncrement(address indexed _from, uint count);
+
+
+    function increment() external {
+        count += 1;
+        emit CountIncrement(msg.sender, count);
+    }
+}
+
+
+
+        
+
+                    
+
+
+  
+
+
+
+
+
+
+              When the "Deploy Contract" button is pressed in the dApp, the contractDeploy() function is executed. This function first checks if a wallet is connected. If not, it prompts the user to connect one. If a wallet is connected, the contractDeployFcn() function is called with walletData as its argument.
+
+The contractDeployFcn() function performs the following steps:
+
+	Get ethers provider and signer: It extracts the ethers provider and signer from the walletData. A signer is a crucial component in blockchain-based applications, responsible for signing transactions and messages using a private key. 
+
+	Deploy the smart contract: It initializes a ContractFactory with the contract's ABI and bytecode, and the signer. It then deploys the contract with a specified gas limit. In Ethers.js, a ContractFactory is an object that helps you deploy a new smart contract, whereas the Contract class is used to interact with already deployed contracts. Once the deployment transaction is confirmed, the contract address is extracted.
+
+
+
+Finally, the contractDeploy() function updates the React state with the contract address, allowing the dApp to display the contract's deployment status and interact with the contract.
+
+Below are a few images of what you would see when clicking the “Deploy Contract” button for the first time (remember to click on the hyperlinked text showing the contract address to view information on HashScan).
+
+
+            
+
+                            
+
+                            
+
+                            
+
+              5. Interacting with the Smart Contract – Increase the Count Value
+
+Finally, let’s execute the contract function to increase the count by 1. For this part, we’ll focus on the contractExecute() function (code tab 1) in App.jsx and the contractExecuteFcn() function (code tab 2) in src -> components -> hedera -> contractExecute.js.
+
+            
+
+
+
+
+  
+    
+        
+      
+      contractExecute
+      	contractExecute
+	contractExecuteFcn
+
+
+    
+
+        
+    
+    
+                           
+        
+            async function contractExecute() {
+        if (contractAddress === undefined) {
+            setExecuteTextSt("Deploy a contract first! ");
+        } else {
+            const [txHash, finalCount] = await contractExecuteFcn(walletData, contractAddress);
+
+
+            if (txHash === undefined || finalCount === undefined) {
+            } else {
+                setExecuteTextSt(`Count is: ${finalCount} | Transaction hash: ${txHash} `);
+                setExecuteLinkSt(`https://hashscan.io/${network}/tx/${txHash}`);
+            }
+        }
+    }
+
+
+
+        
+
+                
+          import abi from "../../contracts/abi.js";
+import axios from "axios";
+import { ethers } from "ethers";
+
+
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
+
+async function contractExecuteFcn(walletData, contractAddress) {
+    console.log(`\n=======================================`);
+    console.log(`- Executing the smart contract...`);
+
+
+    // ETHERS PROVIDER AND SIGNER
+    const provider = walletData[1];
+    const signer = provider.getSigner();
+
+
+    // EXECUTE THE SMART CONTRACT
+    let txHash;
+    let finalCount;
+    try {
+        // CHECK SMART CONTRACT STATE
+        const initialCount = await getCountState();
+        console.log(`- Initial count: ${initialCount}`);
+
+
+        // EXECUTE CONTRACT FUNCTION
+        const myContract = new ethers.Contract(contractAddress, abi, signer);
+        const incrementTx = await myContract.increment();
+        const incrementRx = await incrementTx.wait();
+        txHash = incrementRx.transactionHash;
+
+
+        // CHECK SMART CONTRACT STATE AGAIN
+        await delay(5000); // DELAY TO ALLOW MIRROR NODES TO UPDATE BEFORE QUERYING
+        finalCount = await getCountState();
+        console.log(`- Final count: ${finalCount}`);
+        console.log(`- Contract executed. Transaction hash: \n${txHash} `);
+    } catch (executeError) {
+        console.log(`- ${executeError.message.toString()}`);
+    }
+
+
+    return [txHash, finalCount];
+
+
+    async function getCountState() {
+        let countDec;
+        const countInfo = await axios.get(`https://${walletData[2]}.mirrornode.hedera.com/api/v1/contracts/${contractAddress}/state`);
+
+
+        if (countInfo.data.state[0] !== undefined) {
+            const countHex = countInfo.data.state[0].value;
+            countDec = parseInt(countHex, 16);
+        } else {
+            countDec = 0;
+        }
+        return countDec;
+    }
+}
+
+
+export default contractExecuteFcn;
+
+
+        
+
+                            
+
+
+  
+
+
+
+
+
+
+              When the "Execute Contract (+1)" button is pressed in the dApp, the contractExecute() function is executed. This function first checks if a contract is deployed. If not, it prompts the user to deploy one. If a Counter contract is deployed, the contractExecuteFcn() function is called with walletData and contractAddress as its arguments.
+
+The contractExecuteFcn() function performs the following steps:
+
+	Get ethers provider and signer: It extracts the ethers provider and signer from the walletData.
+
+	Check the initial count: The function getCountState() uses the Hedera Mirror Node REST API and Axios to check the state of the count variable. The first time the contract is executed, that initial count should be zero.
+
+	Execute the contract function to increase count: Ethers JS is used along with the contractAddress, abi, and signer to execute the increment() function of the contract. 
+
+	Check the final count: The function getCountState() is used again to check the value of count after executing the contract. Note that there is a 5-second delay to allow for the propagation of information from the consensus nodes to the mirror nodes. The transaction hash and the final value of count are returned.
+
+
+
+Finally, the contractExecute() function updates the React UI with the new final count, the transaction hash, and the relevant HashScan hyperlink.
+
+Below are a few images of what you would see after clicking the “Execute Contract” button (remember to click on the hyperlinked text showing the final count and transaction hash to view information on HashScan).
+
+
+            
+
+                            
+
+                            
+
+                            
+
+              As a last note, you can also see the console messages from different functions and files in the browser inspector.
+
+
+            
+
+                            
+
+              Summary
+
+In this article, you went through the process of creating a counter dApp on the Hedera network using Solidity, React JS, MetaMask, and Ethers JS. The article covered these key concepts:
+
+	Cloning the example repository: You started by cloning the example repository that contains the necessary code and files for building the counter dApp
+
+	Understanding the dApp structure and UI: You delved into the custom React components used in the project, including MyGroup, MyButton, and MyText, and saw their roles and reusability
+
+	Connecting MetaMask to the dApp: You connected MetaMask to the dApp, switched to the Hedera Testnet, and paired an account using the connectWallet() and walletConnectFcn() functions
+
+	Deploying the smart contract: You deployed the Counter smart contract to the Hedera network using the contractDeploy() and contractDeployFcn() functions
+
+	Interacting with the smart contract: You increased the count state variable by executing the increment() contract function 
+
+
+
+By following this tutorial, you've learned how to integrate a React JS application with MetaMask, deploy and interact with a Solidity smart contract on the Hedera network, and gain insights into the structure and components of a dApp. Additionally, you've explored using Ethers JS for smart contract interaction, obtained on-chain information from Hedera mirror nodes, and viewed transaction details on HashScan (a Hedera Network Explorer).
+
+
+
+Continue Learning
+
+	Open a Testnet Account
+
+	Try Examples and Tutorials
+
+	Join the Developer Discord
+
+	Read the Learning Center
+
+	Read the Hedera Blog
+
+
+
+            
+
+          
+          
+            Share This
+          
+
+          
+
+          
+
+
+
+
+
+            Back to blog
+          
+
+         
+
+        
+      
+    
+    
+      
+      
+        
+                    	
+              
+                
+                                    
+                                                            
+                  
+
+                  What is gRPC, gRPC-Web, and Proxies?
+                  Ed Marquez
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Pragmatic Blockchain Design Patterns – Integrating Blockchain into Business Processes
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Zero Cost EthereumTransaction on Success: Hedera's New Fee Model for Relay Operators
+                  Oliver Thorn
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Adopts Chainlink Standard for Cross-Chain Interoperability To Accelerate Ecosystem Adoption
+                  Hedera Team
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Developer Highlights March 2025
+                  Michiel Mulders
+                
+
+              
+            
+	
+              
+                
+                                    
+                                                            
+                  
+
+                  Hedera Release Cycle Overview
+                  Ed Marquez
+                
+
+              
+            
+
+
+          View All Posts
+        
+
+              
+
+    
+
+  
+  
+  
+    
+    
+  
+
+  
+            
+
+    
+        
+            
+        
+
+        
+            Sign up for the newsletter
+
+            
+                
+            
+
+        
+
+        
+            CONNECT WITH US
+
+            
+
+
+
+
+        	
+                Transparency
+            
+	
+                Open Source
+            
+	
+                Audits & Standards
+            
+	
+                Sustainability Commitment
+            
+	
+                Carbon Offsets
+            
+
+	
+                Governance
+            
+	
+                Hedera Council
+            
+	
+                Public Policy
+            
+	
+                Treasury Management
+            
+	
+                Meeting Minutes
+            
+	
+                LLC Agreement
+            
+	
+                Node Requirements
+            
+
+	
+                Community
+            
+	
+                Events
+            
+	
+                Meetups
+            
+	
+                HBAR Telegram
+            
+	
+                Developer Discord
+            
+	
+                Twitter Community
+            
+
+	
+                Support
+            
+	
+                FAQ
+            
+	
+                Network Status
+            
+	
+                Developer Discord
+            
+	
+                StackOverflow
+            
+
+	
+                Brand
+            
+	
+                Brand Guidelines
+            
+	
+                Built on Hedera Logo
+            
+	
+                Hedera Store
+            
+
+	
+                About
+            
+	
+                Team
+            
+	
+                Partners
+            
+	
+                Journey
+            
+	
+                Roadmap
+            
+	
+                Careers
+            
+
+	
+                Contact
+            
+	
+                General Inquiry
+            
+	
+                Public Relations
+            
+
+
+
+    
+        © 2018-2025 Hedera Hashgraph, LLC. All trademarks and company names are the property of their respective owners. All rights in the Deutsche Telekom mark are protected by Deutsche Telekom AG. All rights reserved. Hedera uses the third party marks with permission.
+Terms of Use  |  Privacy Policy
+
+    
+
+
+
+
+    
+
+      
+
+  
+  

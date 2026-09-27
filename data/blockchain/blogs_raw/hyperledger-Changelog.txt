@@ -1,0 +1,626 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Changelog - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Changelog
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Changelog
+
+	Felipe Faraggi
+
+
+
+	Nicolas Massart
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Felipe Faraggi
+
+
+Last updated: Aug 24, 2021 by Nicolas MassartVersion comment
+
+
+
+
+
+
+
+
+
+
+As agreed at the 2019-12-10 Contributor Call, we are going to include the following in the release changelog:Â 
+	Communication of future breaking changes or deprecated functionalityÂ 
+	New features with a short description of the functionalityÂ 
+	Fixed bugs with a description of the user impact
+
+The following will no longer be included:Â 
+	Every PR contributing to a larger feature
+	Internal technical improvements with no user impactÂ 
+	Bugs fixed in unreleased featuresÂ 
+
+For changes that are to be included in the changelog, the PR author (or feature developer where a number of PRs contribute to the same feature) 
+also commits changes on CHANGELOG.md in the same PR as part of the development process.Â 
+A documentation team member will review and finalize CHANGELOG.md for the release.Â 
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Changelog Improvement Proposal
+Changelog Improvement Proposal
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-01-04 Besu Contributor Call
+2022-01-04 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2019-11-26 Contributor Call
+2019-11-26 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2019-12-10 Contributor Call
+2019-12-10 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-09-29 Besu Contributor Call Notes
+2020-09-29 Besu Contributor Call Notes
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2019-10-29 Contributor Call
+2019-10-29 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 15, "requestCorrelationId": "16edc048c37147be8e0e8357be0fadaa"}

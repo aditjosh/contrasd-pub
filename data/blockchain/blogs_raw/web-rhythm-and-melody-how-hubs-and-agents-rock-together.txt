@@ -1,0 +1,903 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rhythm and Melody: How Hubs and Agents Rock Together – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Project: Hyperledger Indy
+                            
+                        
+                    
+
+                
+                Rhythm and Melody: How Hubs and Agents Rock Together
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jul 23, 2019
+                    
+                
+
+            
+
+            
+            
+                Those who study decentralized or self-sovereign identity technologies quickly run into two important mental models. The Decentralized Identity Foundation promotes the notion of hubs—services that help an identity owner manage data and interact through it. Hyperledger Indy and the Sovrin Foundation talk about agents—pieces of software that hold delegated keys, exchange digital credentials, and otherwise do an identity owner’s bidding.
+
+ 
+Overlapping descriptions of hubs and agents have fostered a perception that they’re competing technologies. This is unfortunate, because the truth is quite different. Hubs and agents are actually synergistic, as explored below. Like a drummer and a guitarist, they contribute in vital and complementary ways to the music of identity.
+
+ 
+
+ 
+ 
+
+ 
+image from ArtsyBee / Pixabay license. http://bit.ly/2YYiGUP
+ 
+What Decentralized Identity Needs
+ 
+Identity that doesn’t depend on centralized silos is an emerging phenomenon. Instead of rooting digital selfhood in government-granted identifiers or in accounts owned by online behemoths, it uses primitives such as decentralized identifiers (DIDs) and verifiable credentials (VCs) to derive trust from cryptographic protocols. This has the potential to unlock many benefits, including cost savings, cross-silo authentication, improved cybersecurity, identity for the unbanked and digitally disenfranchised, enhanced privacy and autonomy, and satisfying solutions to regulatory pressures from GDPR, HIPAA, and the like. Impressive proofs of concepts and pilots are underway all over the globe.
+
+ 
+But if we want cryptographic primitives to yield practical benefits, we have to package decentralized identity so it’s easy for a child or a grandparent who thinks of tech in terms of clicks on a cell phone. That’s where hubs and agents come in.
+
+ 
+Hubs are the data managers of decentralized identity. Like DropBox or Google Drive or iCloud, they let you put data into the cloud with confidence that it will be secure, available, and shareable anytime, anywhere. Unlike those familiar services, hub interfaces are vendor- and platform-agnostic. If you migrate from Apple to Android, your data is unaffected. If you close an account with Google, your data survives, because the data is tied to you, not to an email account or a piece of hardware. If a hacker or a malicious sysadmin or the machine learning algorithm of a data miner peers into your storage, they see data encrypted by keys that only you hold. 
+
+ 
+Agents are the personal assistants of decentralized identity. Remember how Iron Man delegates work to Jarvis? Agents are connected and digitally empowered like Jarvis. They are the mechanism for sophisticated delegation that gets work done—work like giving and retracting consent, buying and selling, scheduling and reminding, auditing, monitoring, proving things with credentials, enacting and fulfilling contracts, issuing receipts, and so forth. They speak bits and bytes, keys and crypto, and protocols and transports, so their masters don’t have to. Unlike Alexa and Siri, they are trustworthy fiduciaries, because they work exclusively for their owners. They don’t stream data about their masters back to a corporate data lake to be analyzed and mined.
+ 
+Better Together
+ 
+Rock music often begins with a percussion groove to set tempo and mood, with the guitar joining a few bars in, as storytelling begins. The opposite sequence is also used, where a guitar or voice leads out, and drums appear later to rev up the energy. Either way, the full power and synergy of a band manifests when each component is actively playing its part.
+
+ 
+Similarly, agents and hubs make more powerful music when they work together. Most work that agents need to do is rooted in and informed by data; an agent that has a hub to work with is likely to be far more useful to its master. And data is an asset, but cultivating it for security and usefulness can drown us in details without powerful tools, as anyone who’s cataloged years of cat videos can attest. Having an agent to enact decisions and reference the data in appropriate, automated ways in interactions is a no-brainer.
+
+ 
+The straightforward ability to dovetail is part of what differentiates the hub+agent combination from more specialized SSI technologies like Solid, which have a more standalone vision. Solid’s features are similar to hubs. An integration path between it and the identity, credential, and protocol features of agents undoubtedly exists, but is not a design goal.
+
+ 
+We expect that the most useful decentralized identities will use both hubs and agents.
+ 
+Harmony
+ 
+How, exactly, are duties divided between hubs and agents?
+
+ 
+To answer that question, it’s important to understand that both agents and hubs are intangible software constructs that interact over the network through APIs or messages–and that the DID communication mechanisms they use are common. In other words, they share large amounts of DNA. What separates a hub from an agent is which high-level protocols it is assigned. The division of work is manifest in which messages are sent to which component. This division used to be muddy, but it is now clarifying nicely and should become even crisper. We advocate dialog around remaining questions, and in the meantime, we suggest the rules of thumb that follow.
+
+ 
+
+ 
+ 
+Hubs and agents focus on different things. Overlap is shrinking.
+ 
+Hub protocols are data-oriented. They model operations as commits to a data object, or as reads of an object state. Several datatype interfaces can be read, written, or queried in similar ways: Profile, Permissions, Actions, Stores, Collections, and Services. Collections is the most foundational to the hub’s role as a data manager; it is where chunks of data of almost any type can be accessed, both by the data owner and (if the owner wishes) by others. Permissions control access to data. Profile describes the identity owner (think a universal, self-hosted gravatar). Services is the basis of a hub’s extensibility mechanism. Stores and Actions are for advanced use cases that we’ll gloss over in this high-level discussion.
+
+ 
+One identity owner may use many hubs. Hubs make the physical topology transparent; to the owner, it just feels like data is always available on whatever device and whatever network is convenient. In keeping with the hub’s focus on data management, hubs are not deeply trusted or deeply informed about their owner’s behavior. They don’t take actions on the owner’s behalf, and they don’t hold keys. However, hubs can relay messages to other components, like agents, for processing. They are superb data managers.
+
+ 
+Agents are flow-oriented. Their job is to get work done, and the unit of work management is a protocol. Agents might support protocols for issuing credentials, negotiating payment, or dozens of other personal and business processes. The messages that arrive at agents are routed to a protocol handler that looks up the persisted state of the flow and takes the next step, based on what the message says. Agents do take actions on the owner’s behalf; for example, when Alice digitally signs a lease with her mobile phone, an agent has to do the underlying crypto because Alice can’t handle modular exponentiation in her head, and she can’t speak bits and bytes over Wifi.
+
+ 
+A component diagram that shows how hubs and agents deploy and interact in a credential-oriented interaction may help to provide a tangible example:
+
+ 
+
+ 
+ 
+Hubs and agents work together to connect Alice to other parties on the digital landscape.
+
+ 
+Agents should generally defer storage management tasks to hubs. The persisted state that an agent adds to, when taking the next step in an incomplete workflow, should be read from and written to a hub’s sophisticated storage layers–and by viewing messages as data, hubs can add reliable delivery guarantees to route or relay functions that propagate messages to all of Alice’s agents. When Alice wants to share her cat videos with Bob, she should point him to a URI backed by her hub(s). It is possible that some agents will operate without hubs (e.g., IoT devices that emit sensor data but that don’t store much); however, most sophisticated agents will have hub storage available to them.
+
+ 
+Hubs should generally defer complex, non-data-management work to agents. When Bob wants to buy a car that Alice is selling, he engages in a buy~sell protocol that begins as Alice receives a message from him. This message arrives at the boundary of Alice’s world at an endpoint she designates. That endpoint might be hosted on a hub, where the message can be persisted and replicated—or it might flow directly to one of Alice’s agents. Either way, it is the agent’s interface that Bob interacts with and that provides interoperable workflow. It is possible that some hubs will operate without agents (e.g., doing nothing complex beyond sharing data); however, most hubs will collaborate with agents nearby.
+ 
+Conclusion
+ 
+Hubs and agents are complementary technologies. Hubs are the data relays and data managers of decentralized identity; agents are the personal assistants. Each solves complex problems for identity owners, and each gets more powerful when paired with the other. We expect flexible and powerful decentralized identities to use both.
+
+ 
+The Decentralized Identity Foundation (DIF: https://identity.foundation/) and Hyperledger Aries (https://github.com/hyperledger/aries-rfcs) are actively working to make these technologies converge in useful ways for the benefit of the whole decentralized identity community. If you’d like to be involved, contribute to the DIF Identity Hub project at: https://github.com/decentralized-identity/hub, or reach out to Aries developers at https://chat.hyperledger.org/channel/aries.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

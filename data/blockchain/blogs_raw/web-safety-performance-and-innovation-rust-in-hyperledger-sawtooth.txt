@@ -1,0 +1,854 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Safety, Performance and Innovation: Rust in Hyperledger Sawtooth – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                Safety, Performance and Innovation: Rust in Hyperledger Sawtooth
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jan 18, 2019
+                    
+                
+
+            
+
+            
+            
+                Hello, fellow Rustaceans and those curious about Rust. The Hyperledger Sawtooth team is using Rust for new development, so these are exciting times for both Rust and Hyperledger Sawtooth. Rust is a new language that is quickly growing in popularity. The Hyperledger Sawtooth community is using Rust to build components to give application developers and administrators more control, more flexibility, and greater security for their blockchain networks. This blog post will give an overview of some of the new components being built in Rust.
+
+ 
+Hyperledger Sawtooth was originally written in Python, which was a good choice for initial research and design. In 2018, the Sawtooth team chose the Rust language for new development. A key benefit is that Rust supports concurrency while also emphasizing memory safety. Several new core components, transaction processors, and consensus engines have already been written in Rust.
+ 
+Compared to Python, Rust’s most noticeable feature is the expressive type system, along with its compile-time checks. Rust has ownership and borrowing rules to guarantee at compile time that an object has either only one mutable reference of an object or an unlimited number of immutable references. This feature of Rust forces the developer to account for all possible error and edgecases, making our interfaces more robust as we design them.
+ 
+The validator’s block validation and publishing components are a good example of our recent interface changes. Before release 1.1, these components were heavily tied to PoET, the original consensus in Hyperledger Sawtooth. In addition, they were largely synchronous, where committing a block started the process of building a new block to publish. As we implemented the consensus engine interface, we took the opportunity to rewrite these components in Rust, which helped us to separate them more cleanly. Now there are three separate asynchronous tasks—block validation, block commit, and block publishing—that share a small amount of information. For example, the block publishing component is informed when batches are committed so that it can take them out of a pending queue, but none of the tasks starts either of the other tasks. For more information, see the block validation and block publishing components in the sawtooth-core repository.
+ 
+This clean separation of tasks allows the new consensus interface to function correctly and makes it easier to develop new consensus engines. The Sawtooth team has already written two new engines in Rust:  Sawtooth PBFT and Sawtooth Raft (which uses the PingCap raft library, raft-rs). The Sawtooth team is proud of the work we have done on these consensus engines, and the flexibility it provides Sawtooth community members who are building a blockchain application.
+ 
+Rust also excels in its support for compiling to WASM, which can be used as a smart contract. Hyperledger Sawtooth already had Seth, which supports running Ethereum Solidity smart contracts using a transaction processor, but now has Sawtooth Sabre, a transaction processor that runs a WASM smart contract that is compiled from Rust to the WASM target. Sawtooth Sabre includes an innovative feature: using registries for namespaces and contracts. The namespace registry lets administrators control what information a contract can access. The contract registry lists versions of the contract, along with a SHA-512 hash of the contract, giving application developers confidence that the correct contract is registered. Sabre supports API compatibility with the Sawtooth Rust SDK, so developers can write a smart contract that can run either within Sabre or natively as a transaction processor, depending on the deployment methodology.
+ 
+Rust has also influenced how changes to Hyperledger Sawtooth are handled. Our new RFC process is modeled after Rust’s RFC process, which provides a community-oriented forum for proposing and designing large changes. The Hyperledger Sawtooth team has put effort into a community-oriented design process at sawtooth-rfcs. The consensus API RFC is a good example: The guide-level explanation clearly lays out the purpose and reasoning behind the new component, then has a reference-level explanation of the technical details needed to guide implementation. The Sawtooth RFC process has been a good way to involve the larger Sawtooth community in driving the design and implementation of Sawtooth.
+ 
+What’s next for Rust in Sawtooth? In 2019, the Sawtooth team is rewriting the remaining Sawtooth validator components in Rust. That means the networking and transaction processing components will be getting an overhaul. Expect that the networking components will be redesigned. The transaction processing components will have minor changes internally, while keeping a stable API. In both cases, there will be an increase in performance and stability thanks to Rust.
+ 
+Come join the Hyperledger Sawtooth community in 2019 by writing your own transaction processor in Rust or even a consensus engine. Get in touch on the #sawtooth channel on RocketChat.
+ 
+To learn more about Rust in Hyperledger Sawtooth, check out our recent changes:
+ 
+	The block validation and block publishing components in sawtooth-core.
+	The new consensus interface and consensus engines: 
+  	Sawtooth PBFT 
+	Sawtooth RAFT 
+
+ 
+	Sawtooth Sabre
+	The RFC repository at sawtooth-rfcs
+
+ 
+ 
+ 
+About the Author:
+ 
+
+ 
+Boyd Johnson is a Software Engineer at Bitwise IO who has worked on many core components of Hyperledger Sawtooth, including transaction processing components in Python and block validation and block publishing components in Rust. While originally a committed Pythonista, he has oxidized into a Rustacean. 
+ 
+ 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

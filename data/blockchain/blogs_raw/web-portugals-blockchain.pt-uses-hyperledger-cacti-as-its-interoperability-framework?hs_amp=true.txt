@@ -1,0 +1,120 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Portugal’s Blockchain.PT Uses Hyperledger Cacti as its Interoperability Framework
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Portugal’s Blockchain.PT Uses Hyperledger Cacti as its Interoperability Framework
+
+        
+
+        
+           Written by Rafael Belchior and Pedro Roseiro | May 9, 2024 3:21:45 PM 
+        
+
+        
+          Research suggests that the market for applications using DLTs will grow, with many organizations stating that blockchain is a critical priority due to, for example, cost reduction. A recent report from Yahoo Finance predicts that from 2022 to 2030, “the market for blockchain technology estimated at US$2.5 Billion in the year 2022, is projected to reach a revised size of US$77 Billion by 2030, growing at a CAGR of 53.5% over the analysis period 2022-2030.”
+
+
+In Portugal, Blockchain.PT has been established as a nationwide coalition to use blockchain technology to foster innovation and seize international business opportunities. The aim is to facilitate the development and consolidation of an innovation ecosystem composed of technology companies, research and technologies organizations, public administration, and as well as companies from various sectors that can benefit from the use of DLT/Blockchain in Portugal and beyond. 
+
+The ambitious agenda for Blockchain.PT, “Descentralizar Portugal com Blockchain” (Decentralize Portugal with Blockchain), is being supported by a consortium that includes 20 companies - 15 RTOs, four Public Entities of Local and Regional Administration and a Competitiveness Cluster (TICE.PT). The total investment volume is around 59 million Euros with funding of around 44 million Euros from the RRP, the Government of Portugal, and the European Union's NextGenerationEU instrument. The agenda has the ambition to achieve a Gross Value Added of around 215 M€, corresponding to a level of added value of around 58%, 111 M€ of sales, of which 40% to the foreign market, in 2027. In total, more than 360 jobs will be created in the total of the entities involved, of which 313 will be highly qualified. 
+
+The products resulting from Blockchain.PT will serve companies in the food and retail sector, municipalities, intermunicipal communities, public entities in the area of agriculture, hospitals, financial entities, banks, the Order of Notaries, investment funds, credit intermediaries, and realtors.
+
+Blockchain.PT has many components, including six industry-led vertical Work Packages and four transversal Work Packages. One of them, Work Package 7, focuses explicitly on the development of interoperability mechanisms between DLTs, both at the technical and semantic level, allowing different networks to communicate and exchange assets with each other. Efforts are also underway to improve organizational and legal interoperability through an EU-regulatory-compliant sandbox. This initiative guarantees that our interoperability endeavors adhere closely to established regulatory frameworks.
+
+By making DLT interoperability core to its agenda, Blockchain.PT is removing a barrier to widespread adoption of the infrastructure it is so carefully developing. 
+
+Connecting blockchains and making them cooperate has practical utility and importance [1, 2]. It enables communication between systems, enabling the transfer and exchange of data/assets, resulting in a broader array of solutions in the market, fostering synergies between projects, and providing increased liquidity to end-users. Consequently, this approach aims to prevent any single blockchain from becoming a sole point of failure. Various sectors, including digital identity, supply chain, healthcare, voting, and central bank digital currencies, are a few use cases benefiting from a multiple blockchain approach. An essential factor for achieving widespread blockchain adoption is the ability to interact with other systems in a unified manner. Learn more about blockchain interoperability efforts within Hyperledger here: Introducing Hyperledger Cacti, a multi-faceted pluggable interoperability framework 
+
+Enter Hyperledger Cacti
+
+Hyperledger Cacti is a multi-faceted interoperability platform that connects legacy infrastructure with heterogeneous blockchains. Cacti is a pluggable interoperability framework that provides enterprise-grade infrastructure that hosts cross-chain business logic modules that, in turn, transact against multiple networks. Learn more about Cacti at our online workshop:
+
+
+
+
+
+
+
+
+Hyperledger Cacti currently supports a variety of utilities to spawn test ledgers, multiple cross-chain examples, utilities to deploy hash-time lock contracts, ledger connectors, and others. Some of the connectors include: 
+
+	Hyperledger Besu
+	Hyperledger Fabric
+	Hyperledger Indy
+	Hyperledger Iroha
+	Hyperledger Sawtooth
+	R3 Corda
+	Go-Ethereum
+	Quorum
+	Xdai
+	Polkadot
+
+
+The modular and secure architecture that Cacti was designed to expose allows practitioners and researchers to develop cutting-edge interoperability protocols and applications. This makes Cacti a proper sandbox for experimenting and testing, providing essential support for interoperability initiatives such as Blockchain.PT.
+
+Hyperledger Cacti is the home for interoperability efforts for Blockchain.PT
+
+Hyperledger Cacti has been chosen by Blockchain.PT as the home for its interoperability efforts. Cacti is currently incubating the development of the Secure Asset Transfer Protocol (SATP), being standardized by the Internet Engineering Task Force (IETF). The goal of SATP is to develop a standard protocol that operates between two peer gateways for the purpose of transferring digital assets between an originator in the origin network to a beneficiary in a destination network. Learn more about SATP on the IETF data tracker page. 
+
+SATP is supported by institutions such as MIT, Blockdaemon, IBM, Quant Network, Instituto Superior Técnico, and INESC-ID, among others. Blockdaemon, INESC-ID, and Instituto Superior Técnico contribute to the Typescript open-source implementation of SATP. Anyone can contribute to SATP drafts via Github: https://github.com/ietf-satp.
+
+In the next year and a half, Blockchain.PT plans to advance the state of enterprise-grade blockchain interoperability via Cacti in collaboration with the Hyperledger community. Out of these contributions, expect open-source code that connects legacy infrastructure to public and private blockchains and is modular, secure, and scalable.
+
+To get involved, please join us on Discord at https://discord.gg/hyperledger (channel #cacti). 
+
+___
+
+If you’re interested in exploring more about the latest developments in blockchain interoperability and implementing Hyperledger Cacti, there is in- depth technical workshop on Hyperledger Cacti on Thursday, May 23, at 8AM Pacific.
+
+
+
+
+___
+
+References
+
+1 - https://www.techrxiv.org/users/679023/articles/682079-a-brief-history-of-blockchain-interoperability
+2 - https://dl.acm.org/doi/10.1145/3564532
+
+ 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

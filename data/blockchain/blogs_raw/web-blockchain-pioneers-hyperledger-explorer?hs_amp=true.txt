@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blockchain Pioneers: Hyperledger Explorer
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Blockchain Pioneers: Hyperledger Explorer
+
+        
+
+        
+           Written by Ry Jones and David Boswell, Community Architects | Mar 5, 2025 3:32:05 PM 
+        
+
+        
+          As Hyperledger Foundation laid out in the Helping a Community Grow by Pruning Inactive Projects post, there is an important life cycle to well governed open source projects. Through the evolution of the market, Hyperledger Foundation and, now, LF Decentralized Trust has been the home to a growing ecosystem of blockchain, identity, and related projects. 
+
+A number of projects that helped drive innovation and advanced the development of enterprise-grade decentralized technologies have cycled through the life cycle to the archived stage. This series looks back at the impact of these pioneering projects.
+
+Hyperledger Explorer, a project focused on providing an intuitive and easy-to-navigate interface for users to view blockchain data, is next up in the series.
+
+History
+
+Hyperledger Explorer was proposed as a new project in 2016 and started with dedicated engineers from DTCC, IBM, and Intel.
+
+The project’s goal was to create a user-friendly web application for DLT platforms being developed by the Hyperledger community that would allow people to view/query blocks, transactions and associated data, network information (name, status, list of nodes), chain codes/transaction families (view/invoke/deploy/query), and any other relevant information stored in the ledger.
+
+Innovations in Hyperledger Explorer
+
+Hyperledger Explorer aimed to simplify the visualization and interaction with blockchain networks and its user-friendly interface provided an intuitive and easy-to-navigate way for users to view data. This made it possible for both technical and non-technical users to interact with complex blockchain systems effortlessly.
+
+This easy access to detailed logs and metadata for blockchain operations increased transparency and enabled organizations to conduct audits efficiently. The level of auditability was particularly valuable for enterprises in regulated industries like finance, supply chain, and healthcare. The data also allowed people to have real-time visibility into the operation of blocks, transactions, network components, and smart contracts on a network.
+
+The design of Hyperledger Explorer also allowed for it to operate on any number of different blockchain frameworks. The initial development was primarily focused on Hyperledger Fabric, but the early maintainers chose to create a tool that could be adapted to other frameworks and the code was used later by Hyperledger Iroha. This flexibility showcased its potential to support a variety of use cases and deployment scenarios.
+
+Challenges and Lack of Adoption
+
+Despite these innovative features, Hyperledger Explorer did not gain the expected level of adoption. One reason was the lack of active maintainers. Open source projects rely heavily on their community for development and maintenance and, if the project contributors are not active or large enough, the project can stagnate.
+
+The demand for standalone general-purpose visualization tools like Hyperledger Explorer also declined. Instead, many enterprises began integrating blockchain monitoring and analytics directly into their broader technology stacks or developed custom monitoring solutions tailored to their specific needs.
+
+Finally, shifts in the strategic focus of the contributing organizations also played a role. The focus of the original maintainers changed as organizations decided to allocate their resources elsewhere and that led to a decrease in the development and promotion of Hyperledger Explorer, affecting its adoption.
+
+Legacy
+
+Hyperledger Explorer was an important tool in the early days of enterprise blockchain adoption and did have many users that wanted a user-friendly way to visualize and interact with Hyperledger Fabric networks. While it has been archived, its innovations can be seen in other LF Decentralized Trust technologies that provide similar functionality, such as Hyperledger FireFly and the Fabric Operations Console, as well as tools from others in the market.
+
+The lifecycle of Hyperledger Explorer also provides valuable insights into the dynamic nature of open-source projects. After the project was archived, there were people who had been using it that wanted to do further development. Community members restarted the project as the Blockchain Explorer lab and issued a new release with a number of features needed by those organizations. 
+
+The code for the lab is available for anyone who is interested in seeing what has happened to it since the project was archived. However, note that this may not be maintained and questions about it may not be answered.
+
+Conclusion
+
+In conclusion, while Hyperledger Explorer brought several innovations to the blockchain space, it faced challenges that hindered its adoption. Understanding these challenges can provide valuable insights for future projects in this rapidly evolving field.
+
+We would like to thank all of the people who contributed to Hyperledger Explorer while it was an active project. This includes: 
+
+	The top five contributors: Atsushi Neki, Nik Frunza, Jeeva Sankarapandian, Pranay Sandela, and Akshay Reddy; as well as the more than 40 other developers who made a contribution to the project.
+
+
+"Hyperledger Explorer is a part of the legacy of Hyperledger Foundation, now LF Decentralized Trust. It played a crucial role in presenting clients with insights into these permissioned networks and taught us the challenges of staying relevant in a rapidly evolving environment. Thank you, Hyperledger Explorer." - Angelo De Caro, Senior Technical Staff Member at IBM Research - Zurich
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

@@ -1,0 +1,121 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019 Summer Mentee Project Update: Git signing with DIDs Hyperledger Indy – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          2019 Summer Mentee Project Update: Git signing with DIDs Hyperledger Indy – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Dec 12, 2019 7:54:52 AM 
+        
+
+        
+          This year, I had the opportunity to contribute to the open source Hyperledger Indy community as part of the 2019 Hyperledger Summer Mentorship program. This experience also helped me collaborate with other open source communities, mainly the git community.
+ 
+Project presentation
+ 
+Currently git supports signing/verifying commits and tags using GPG only. The goal of this project is to make the git signing interface compatible with external signing tools and with DIDs (Distributed Identities) using programs such as bettersign, for example.
+ 
+This project is the continuation of the work already done by David Huseby on the subject. His previous work is here:
+ 
+	https://github.com/dhuseby/did-git-spec
+	https://github.com/dhuseby/did-git-impl
+
+ 
+This project’s working fork:
+ 
+	https://github.com/ibrahimel/did-git-impl
+
+ 
+The main sections of the project are updating the user configuration and the command handling when a signing or verifying operation occur. 
+ 
+Another aspect of the project is getting the changes accepted in the git community:
+ 
+	The request for proposal has been sent to the git mailing list and can be tracked here.
+
+ 
+	The commits that will be submitted as a patch can be found here.
+
+ 
+What was accomplished
+ 
+Milestones
+ 
+The project had many steps involved:
+ 
+	Updating the git code base with a new generic signing interface
+	Sending the first RFC to the git mailing list and receiving feedback
+	Incorporating the changes depending on the received feedback
+	Sending a second RFC to the mailing list
+	… Still waiting for feedback
+	Creating wrapper tools for signing (Indy signing tool and a template script)
+
+ 
+Challenges
+ 
+Getting to know the git code base from scratch and figure out which parts needed changing was a challenge at first. But the primary challenge we faced was getting the proposal pushed upstream in the git community. We have sent two RFCs and are still waiting for additional feedback.
+ 
+Technical Overview
+ 
+The following figure illustrate modification of git and the expected outcome of the project:
+ 
+
+ 
+ 
+What comes next
+ 
+This project can open the door to future signing tools integrations and maybe extended to projects other than git.
+ 
+The mentorship project can be extended in many ways:
+ 
+	Create wrappers for additional signing tools like signify for example
+	Write a wrapper for the Assuan protocol to add support for tools that use the Assuan library (like GPG & GPGSM for example)
+	Broaden the project idea to tools other than git (Docker image signing for example)
+
+ 
+David Huseby will be creating a Hyperledger Lab for the continuity of the project. It will be used to track future milestones and help other persons contribute and broaden the project perspective. 
+ 
+ For more details, please see my complete project report here. 
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

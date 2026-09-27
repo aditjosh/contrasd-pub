@@ -1,0 +1,518 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dealing with NAT - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Dealing with NAT
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 18, 2019,  4:09pm
+              
+              #1
+          
+        
+        
+          This article IPFS, Again - macwright.com
+
+being discussed here: IPFS, Again | Hacker News
+
+lead to this comment:
+
+whyrusleeping
+
+
+We actually find NAT to be a pretty big problem still. Even using NAT-PMP, upnp, and hole punching, we still see a roughly 70% (sometimes much higher) undialable rate. Especially for people running ipfs in China (though high failure rates are also observed in other countries).
+
+We’re pushing hard on getting libp2p relays up and running to help get through this. The idea is that we can use a relay to make the initial connection, then ask the remote peer to try dialing back (assuming that both peers involved arent undialable).`
+
+
+
+I fear we like to ignore questions of dialability. However, if there is such a huge imbalance between nodes that can be connected to and ones that cannot, then certain assumptions about our connection topology do not hold. For example we always assume that most proximate nodes are fully (well enough) connected.
+
+If this cannot be guaranteed, this has important implications for both syncing/retrieving as well as PSS message routing.
+
+The only workaround I can think of right away is increasing the size of the ‘most proximate bin’ until you get a set of connected peers, but this seems clunky, inefficient, and fragile.
+
+I open this topic so that we can discuss below.
+
+        
+
+
+        
+           
+1 Like
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+
+          
+              
+                June 18, 2019,  9:46pm
+              
+              #2
+          
+        
+        
+          I think this is an important topic, and it seems that some of the tools provided by swarm itself can help alleviating them.
+
+It all starts with the boot nodes. Where to get them from? One idea is to piggyback from an eth 2.0 client’s connection and read them from the blockchain. I can imagine having a curated list of nodes (either by Kleros, or any other curation mechanism), such that an eth light client can read such information from a smart contract or ENS registry. Eth’s discovery v5 aims to improve this bootstrapping process by using traditional DNS to get a dynamic, initial list of nodes - however it seems that this only shifts the burden of keeping boot nodes instead of hardcoded at the client, to be in some DNS server. It gets more dynamic, but with the cost of an additional layer that needs to be trusted (DNS).
+
+But then, if one wants to download eth blockchain data from swarm itself (the original vision), swarm is seems to be the one that should be providing the initial connections & data instead.
+
+So another idea is to do it all off-chain, for example relying directly on the existing DNS infra-structure similarly as discv5 does: here no eth client is involved, and swarm’s initial connection looks for initial peers from  servers pointed to by DNS addresses (the dns domain name itself is then hardcoded in the swarm client) - here it would be nice to see a commitment from the EF to provide such nodes with good uptime (expanding on this a bit, EF servers could even push the result of on-chain peer curated lists to  swarm feeds at a certain topic, such that both running an eth light-client or DNS for bootstrapping becomes non-mandatory). Since all data in swarm is temper-proof, as long as a single honest peer is available, that could be enough to kickstart the process -> through such initial peer(s), swarm can then lookup for the latest version of such swarm feed to know where to look for the next best for connection (the feed would contain the latest IP address and the port from which said peers are available).
+
+This last point is important because nowadays most home connections have IP’s that are dynamically changing from time to time, and swarm could provide a great alternative to the “freemium” services such as “no-ip”, “dyndns”, etc -> but for this to work well, swarm must already be a rather reliable/robust/healthy network (i.e., requires the incentive systems to be functional).
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 19, 2019, 10:43am
+              
+              #3
+          
+        
+        
+          but is it really a discovery issue?
+
+I feel that even if all nodes know about all other nodes, it still doesn’t solve the problem that many of them cannot connect to each other because they are not dialable.
+
+Discovery can help locate dialable nodes perhaps, but what do we do if 70% of the network is not dialable?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+
+          
+              
+                June 19, 2019, 11:34am
+              
+              #4
+          
+        
+        
+          I think it is part of the problem, because once the node establish enough good connections to other peers, given that such peers remain available and behave well, it will probably stick to those for longer periods of time.
+
+That’s where a kind of a “living” curated list would help maybe, to alleviate the problem of recommended boot nodes not able to be connected to. However that wouldn’t solve the issue if peers are unstable enough that the list cannot “keep up” with the changes.
+
+That said, I admit I’m not deep in the details of the devp2p protocol -> I wonder if it the case that a node can recommend another node, even if that node is not considered “a good node” in terms of connectivity - probably I need to read some code before coming to further conclusions.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 19, 2019, 11:40am
+              
+              #5
+          
+        
+        
+          The issue I am most concerned about, is that the Kademlia routing topology requires specific nodes to be connected with each other.
+
+It is not like in eth where you can connect to anyone and get the relevant blocks and headers (as long as the entire network isn’t split in two).
+
+In Swarm you are required to be connected to the N (where N ~= 5) nodes that are closest to you (by address - in terms of the xor metric).  If none of these 5 nodes are dialable, then they cannot connect to each other. If only one of them is, then they are connected in a hub-and-spoke pattern which is very fragile as it has a single point of failure.
+
+That is to say: I agree with all of your concerns but I would like to add yet another that applies specifically to the ‘most-proximate’ Kademlia bin.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+
+          
+              
+                June 19, 2019, 11:59am
+              
+              #6
+          
+        
+        
+          I understand now, thanks for the clarification. I’ll give it some more thought.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            voronkovventures
+            
+          
+
+          
+
+
+
+          
+              
+                September 23, 2019,  7:30am
+              
+              #7
+          
+        
+        
+          What do you think about https://sonm.com/blog/how-double-nat-penetration-works/?
+
+Is this double NAT helpful?
+
+I am sorry if it doesn t fit, I am not a very technical person.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+
+          
+              
+                January 7, 2020,  9:07pm
+              
+              #8
+          
+        
+        
+          And… it looks like a connectivity problem manifested at the devcon 5 workshop. I think having a hub-and-spoke topology as you mentioned, with at least a few nodes connecting to the “outside network”, is still better than having nodes not having anyone to connect to at all:
+
+Even if a local network (with multiple swarm nodes) is isolated from the internet, nodes in such LAN can still locally sync with each other, and once they eventually become dial-able again to the outside (internet access is restored), they should be able to sync without too much loss of information, right? (as long as the period ‘offline’ isn’t too long).
+
+I think such use case can be quite interesting of organisations of people working in the same LAN: i.e., chat dapps would still work and they would still be able to communicate with each other in the event of internet connection down-time.
+
+Therefore, I think swarm would benefit in having also some local network discovery protocol, using i.e. multicast DNS (mdns).
+
+Another thing that could improve connectivity of nodes in some cases is have swarm port listen at the SSL port, so that other peers behind a firewall would have less chance of getting their outbound traffic being blocked by ISP or company firewalls.
+
+I think generally the initial users of swarm will also able to setup their home router to do port-forwarding for inbound traffic. Better connectivity than this might require some external relay service on top of everything else, as an extra source of dial-able peers.
+
+Thoughts?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            racnela-ft
+            
+          
+
+          
+
+
+            
+
+
+          
+              
+                August 24, 2021,  4:34pm
+              
+              #9
+          
+        
+        
+          IPFS recently wrote a post tackling this issue; they took an interesting approach of having two separate DHT. For anyone interested:
+
+
+  
+      
+
+      IPFS Blog & News – 20 Jul 20
+  
+
+  
+    
+
+
+IPFS 0.5 Content Routing Improvements: Deep Dive
+
+
+  All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

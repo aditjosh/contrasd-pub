@@ -1,0 +1,465 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A FROST Library Called "Givre"
+
+
+
+
+
+
+Dfns Secures $16M Series A Funding – See the Full Announcement
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+
+
+
+
+Resources
+	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+
+
+
+PricingGet started
+
+Talk to sales
+
+Get started
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+
+	Blog
+
+	Research
+
+	A FROST Library Called "Givre"
+
+ResearchA FROST Library Called "Givre"
+Denis Varlakov
+
+
+
+
+October 10, 2024
+
+Read time: 
+
+
+
+
+Dfns is launching Givre, our new open-source implementation of the FROST (Flexible Round-Optimal Schnorr Threshold) protocol for threshold signatures. This advanced MPC library provides secure and fast signing and key generation protocols for Schnorr and EdDSA, used by blockchains including Bitcoin, Solana, Stellar, Tezos, and more.
+We’re excited to announce our implementation of the FROST (Flexible Round-Optimal Schnorr Threshold) protocol for Threshold Schnorr Signatures, named givre, based on the FROST IETF Draft. This protocol, authored by Chelsea Komlo (a former Dfns Labs contributor) and Ian Goldberg, allows for efficient one-round signing in Schnorr/EdDSA, with identifiable aborts, positioning it as a state-of-the-art technique for distributed cryptographic systems.
+“Givre” means “frost” in French, and I’m based in Paris with my colleague Nikita Sorokovikov, who helped implement this library. But the name isn't just for show. Our implementation is highly optimized, supports BIP340 Schnorr signatures for Bitcoin (among other supported schemes), and integrates smoothly with BIP 32 standard without needing extra tools. It also simplifies key export and import, improving key management and avoiding problems with third-party solutions.
+In line with our commitment to transparency and collaboration, we’ve open-sourced this implementation. The project has been transferred to Lockness, an initiative by the Linux Foundation Decentralized Trust, to support ongoing development and encourage community involvement. Last but not least, Dfns is proud to contribute to the standardization of FROST at NIST (National Institute of Standards and Technology).
+Givre: from Paris with love
+This crate includes several essential features designed to enhance both usability and performance:
+	Distributed Key Generation (DKG): we provide implementation of UC-secure DKG based on the CGGMP21. However, you are free to opt for any other UC-secure DKG protocol.
+	FROST Signing: We offer APIs for both manual and interactive signing. The manual signing process allows for greater flexibility and efficiency, while the interactive protocol is designed for ease of use and reliability.
+	Trusted Dealer Support: The implementation includes functionality for importing keys into Threshold Signature Schemes (TSS).
+	Secret Key Reconstruction: Users can export keys from TSS, facilitating easy key management.
+
+Currently, our library does not support identifiable aborts, but this feature will be incorporated in the future.
+How to use the library
+Distributed Key Generation (DKG)
+First, you need to generate a key using a secure DKG protocol. While the FROST IETF Draft does not specify any particular DKG protocol or its requirements, you can choose any protocol, preferably UC-secure. Our library re-exports the CGGMP21 DKG from the cggmp21-keygen crate (when the cggmp21-keygen feature is enabled), which is proven to be UC-secure and is a reasonable default.
+CGGMP21 DKG is an interactive protocol that operates using the `round_based` framework. To run it, you need to define the transport layer for communication between the signers. This transport layer consists of a stream and a sink, such as:
+let incoming: impl Stream<Item = Result<Incoming<Msg>>>;
+let outgoing: impl Sink<Outgoing<Msg>>;
+Here:
+	Msg represents a protocol message (e.g., keygen::msg::threshold::Msg).
+	round_based::Incoming and round_based::Outgoing wrap around Msg and add extra data (e.g., sender/recipient).
+	futures::Stream and futures::Sink are common asynchronous primitives.
+
+The transport layer must meet these requirements:
+	Authenticated messages: Each message must be cryptographically verified that it comes from the claimed sender.
+	Encrypted P2P messages: Only the designated recipient should be able to read the message.
+
+Next, construct an MpcParty for the DKG protocol:
+let delivery = (incoming, outgoing);
+let party = round_based::MpcParty::connected(delivery);
+Finally, you can execute the DKG protocol with all signers sharing the key. Signers must agree on parameters like the participant indices, the execution ID, and the threshold value.
+use givre::ciphersuite::{Ciphersuite, Secp256k1};
+let eid = givre::keygen::ExecutionId::new(b"unique execution id");
+let i = /* signer index (0 <= i < n) */;
+let n = /* number of signers */;
+let t = /* threshold value */;
+let key_share = givre::keygen::<<Secp256k1 as Ciphersuite>::Curve>(eid, i, n)
+    .set_threshold(t)
+    .start(&mut OsRng, party)
+    .await?;
+This generates a shared key among the signers based on the specified parameters.
+Signing
+FROST signing can be done either interactively using the round_based framework or manually.
+Manual Signing
+In manual signing, you handle all the steps of the protocol yourself. This gives you more control and can lead to better performance (such as enabling 1-round signing). However, it also increases the risk of making mistakes that could affect security. If you choose manual signing, make sure you're familiar with the FROST IETF Draft and follow the signing module documentation for guidance.
+Interactive Signing
+Interactive signing offers a more user-friendly approach with fewer chances to misuse the protocol. It builds on the round_based framework, similar to DKG (Distributed Key Generation) above. You'll need to set up a secure transport layer and create an MpcParty, just like in DKG. Each signer is assigned a unique index, ranging from 0 to t-1, and all signers must know the index each had during key generation.
+use givre::ciphersuite::Secp256k1;
+let i = /* signer index (0 <= i < min_signers) */;
+let parties_indexes_at_keygen: [u16; MIN_SIGNERS] =    
+    /* parties_indexes_at_keygen[i] is the index the i-th party had at keygen */;
+let key_share = /* key share */;
+let data_to_sign = b"data to be signed";
+let signature = givre::signing::<Secp256k1>(i, &key_share, &parties_indexes_at_keygen, data_to_sign)    
+    .sign(&mut OsRng, party)    
+    .await?;
+‍Signer Indices
+Each signer is assigned an index, represented as an unsigned 16-bit integer (u16), where 0 ≤ i < n (n being the total number of participants). All signers must agree on the indices to ensure consistency. 
+Using a PKI (Public Key Infrastructure), which would typically be needed for secure communication, each signer has a public key that uniquely identifies them. You can assign signers indicies by lexicographically sorting the list of their public keys, and letting the index of a signer be their public key position in the sorted list.
+WebAssembly and `no_std` support
+This crate works with the wasm32-unknown-unknown target and supports no_std.
+Performance improvements with FROST
+After extensive optimizations, we are proud to announce that our implementation is the fastest Threshold EdDSA protocol in Rust, outperforming previous implementations like the one done by ZCash. See the comparison below related to signing and aggregation for ed25519:
+
+
+And secp256k1:
+
+
+Our FROST implementation marks a major step forward in distributed cryptographic threshold protocols. By open-sourcing it and placing it under Lockness governance, we’re creating a collaborative space to drive innovation and enhance security in digital assets on blockchains such as Bitcoin, Solana, Stellar, Tezos and many others. We encourage the community to explore this tool and contribute to its growth.
+For more information and code examples, visit our Lockness repository under LF Decentralized Trust.
+
+
+Authors
+
+Denis Varlakov
+Lead MPC Engineer
+
+Denis Varlakov is the Lead MPC Engineer at Dfns in charge of protocol engineering and library design. Prior to joining Dfns, Denis worked for ZenGo as a cryptographer engineer where he led most of the open-source implementations under Omer Shlomovits, namely multi-party-ecdsa and other libs of ZenGo X. Denis holds a BSc in computer science from Tomsk University.
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+Related articles
+ResearchDfns Steps Into MPCA Presidency
+Christopher Grilhault des Fontaines
+
+
+
+
+February 19, 2025
+
+
+
+
+ResearchKU23: High-Performance Threshold ECDSA
+Jonathan Katz
+
+
+
+
+November 5, 2024
+
+
+
+
+ResearchLockness Is Alive
+Christopher Grilhault des Fontaines
+
+Clarisse Hagège
+
+Denis Varlakov
+
+Nikita Sorokovikov
+
+Jonathan Katz
+
+
+
+
+September 16, 2024
+
+
+
+
+
+
+
+
+Audited and pentested
+
+
+
+
+
+
+
+
+
+Certified and licensed
+
+
+
+
+
+
+
+Follow us
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+Product
+	
+Wallets-as-a-Service Platform (WaaS)
+
+	
+Wallet Entitlement Management (WEM)
+
+	
+Key Deployment Service (KDS)
+
+	
+Integrations
+
+
+
+
+Developers
+	
+Docs
+
+	
+Github
+
+	
+Changelog
+
+	
+Status
+
+
+
+SLA
+
+
+Resources
+Pricing	
+Security
+
+	
+Labs
+
+	
+Blog
+
+	
+FAQ
+
+
+
+Dfns vs Fireblocks
+
+
+Company
+	
+Careers
+
+	
+Newsroom
+
+	
+About
+
+
+
+Brand
+
+
+
+
+
+© Dfns.co 2024
+Protected by reCaptcha
+
+and
+
+
+
+	Terms and Conditions
+
+	Privacy Policy
+
+
+
+
+
+
+
+Request a demo
+One of our security experts will get in touch as soon as possible.
+
+
+
+  
+  
+  
+  
+    First name*
+    
+  
+
+  
+  
+    Last name*
+    
+  
+
+  
+  
+    Work email*
+    
+  
+
+  
+  
+    Company*
+    
+  
+
+  
+  
+    Comments
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+
+
+
+Thanks for your interest.
+Please, check your inbox.
+Close
+
+
+
+
+
+
+

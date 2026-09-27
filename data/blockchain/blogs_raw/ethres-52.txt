@@ -1,0 +1,995 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Geographical Decentralisation - #52 by simbro - Economics - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Geographical Decentralisation
+    
+
+
+      
+          
+            
+              
+              
+                Economics
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                MaverickChow
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 25, 2022,  5:58pm
+                  
+                  
+
+33
+              
+            
+            
+              A limit to everyone being able to participate as validator (beside for personal financial interest) to increase decentralization of authority, is the affordability. With 32 ETH hard-coded as the minimum requirement, as the price continues to increase (with economic applicability) over time (never mind short-term volatility), we will see increasing centralization of participating validators, i.e. you will only see old validators staying (some may cash out and leave for retirement) and no new validator coming in. Therefore, unless the problem of affordability is resolved, we will see the need for 3rd-party custody services. Of course we can also see further need for tighter regulation to prevent fraud and misappropriation from such 3rd parties.
+
+One solution to solving affordability that I can think of is to make the requirement affordable at least to 80% to 90% of those in working class, say, maybe a minimum requirement of 1 ETH, or even 0.5 ETH. Now we may think that’s illogical, but say that again if/when the price of ETH reaches $1 mil.
+
+Privilege to validate transactions should scale with the amount of ETH staked. For example, if a major validator staked 1 mil of ETH (not USD), then he/she can validate transactions up to, say, 50% of its staked ETH amount, that is 500k ETH. If everything goes well, he/she earns a small “commission” of that 500k ETH. If he/she tries anything fanciful, he/she loses 1 mil of ETH.
+
+The poor average Joe that get to stake 0.5 ETH and becomes a validator also gets to validate transactions, but so far as long as they are up to 50% of the staked ETH, or 0.25 ETH in this example.
+
+In this situation where the minimum requirement is not hard-coded, almost everyone, including the poor, gets to be validators and enforces network decentralization.
+
+And the protocol be such that everyday menial transactions (such as buying a cup of coffee) be relayed to validators with small stakes. In USD, say a tx to buy a cup of coffee that costs USD5 should be relayed to validators with stakes of USD10 or more. Smaller staked validators should be given top priority over gargantuan stakers. Gargantuan stakers with over 1 mil ETH, for example, can validate tx that involves 500k ETH or lower, for example.
+
+In such structure, we can see being a smaller validator gets to benefit far more because most daily tx involves small priced items. Such tx have way much higher velocity of money. Gargantuan stakers can have institutional-level tx instead. Everyone gets a fair share of the pie, the number of validators will grow, and the network will be healthily decentralized.
+
+As for the return of being a validator, we will leave that to the balance of economics. If the return is 4.1%/year, then validators will naturally be inclined to move out to alternative investment options that offer higher return. With lower validators, the return will readjust upward, eventually to match the returns of alternative investments, risk-adjusted. The balance of economics will resolve all imbalances by itself, naturally. There is no need to worry about the return from staking for being too low or too high. It is low/high for economic reasons.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                pdsilva2000
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 25, 2022, 11:01pm
+                  
+                  
+
+34
+              
+            
+            
+              I sent them an email too. I will let you know if they reply. Also, searching for personnel works at miga through my discord/telegram connections.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                pdsilva2000
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 25, 2022, 11:18pm
+                  
+                  
+
+35
+              
+            
+            
+              
+
+
+
+ simbro:
+
+
+Is this actually possible?
+
+
+
+
+thanks for your reply here Micah. I personally think if the most validators reside in a one or few jurisdictions and they are known, its very much easier for regulator to force the law, regulators can hold entities directly liable for not complying with law. at this point they will adhere to them over going to jail. It is hard to think that slashing will work on this point.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pdsilva2000
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 25, 2022, 11:44pm
+                  
+                  
+
+36
+              
+            
+            
+              
+
+
+
+ randomishwalk:
+
+
+Given collateral d
+
+
+
+
+if we play out UASF/UAHF penalty impact:
+
+Validator comply with sanctions laws and remove transactions submitted to certain wallet address => Ethereum users penalize validators for breaking rules => Validators loose economic incentives => Validators then have to assess risk vs return => Validators opt out being one=> validator count reduce (over 30%)
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                barra
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 26, 2022,  1:00am
+                  
+                  
+
+37
+              
+            
+            
+              If everyone is staking from home the POS will be much more censorship resistant even if a super majority is in the same jurisdiction (although I still feel more comfortable having validators spread out if regulations are harsh enough).
+
+But I’m also not sure if you are saying that even if a super majority of validators are controlled by only a few regulated entities residing in the same jurisdiction POS should still be censorship resistant because of the possibility of slashing them through a hard fork.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 26, 2022,  4:33am
+                  
+                  
+
+38
+              
+            
+            
+              
+
+
+
+ barra:
+
+
+But I’m also not sure if you are saying that even if a super majority of validators are controlled by only a few regulated entities residing in the same jurisdiction POS should still be censorship resistant because of the possibility of slashing them through a hard fork.
+
+
+
+
+This is exactly what I’m saying.  While not having all of the validators in one jurisdiction is better than having them all in one jurisdiction, it isn’t critical that the validators are spread out across jurisdictions.
+
+
+
+
+
+ MaverickChow:
+
+
+One solution to solving affordability that I can think of is to make the requirement affordable at least to 80% to 90% of those in working class, say, maybe a minimum requirement of 1 ETH, or even 0.5 ETH. Now we may think that’s illogical, but say that again if/when the price of ETH reaches $1 mil.
+
+
+
+
+The 32 ETH is set largely for technical reasons because if there are too many validators we start to run into bloat problems.  It wasn’t set to 32 ETH because anyone wanted to keep small validators out.
+
+
+
+
+
+ pdsilva2000:
+
+
+Validator comply with sanctions laws and remove transactions submitted to certain wallet address => Ethereum users penalize validators for breaking rules => Validators loose economic incentives => Validators then have to assess risk vs return => Validators opt out being one=> validator count reduce (over 30%)
+
+
+
+
+We have way more validators than we need right now.  Having 30% exit would not be problematic.  Even if 90% exited, we would still be fine.  Total validator count would slowly decline over time (it takes a long time to drain 90%) and the yield would increase over time incentivizing new validators to come in.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MaverickChow
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 26, 2022,  1:33pm
+                  
+                  
+
+39
+              
+            
+            
+              	I believe whatever the bloat problem is by having too many validator, is an imaginary problem. Understand that people stake for investment return. If there are too many validators to the point where the return from staking is, say, 1%/year vs an alternative investment that return, say, 7%/year, risk-adjusted, then existing validators would unstake and leave the network for better options elsewhere, thus solving the bloat problem. The return from staking vs the return from elsewhere will cap the number of validators, optimally. The reason why you see too many validators now is mainly because everyone wants to get a piece of the pie while nobody can get out. Once everyone can unstake and get out, you should not see the problem of having too many validators.
+	Assuming if ETH reaches USD1 mil with total validator count that is extremely low to the point where the return (or yield) is super attractive relative to everything else, with ETH being priced at USD1 mil, it will only incentivize rich validators to come in. New and poor validators will never afford to join. Over time, the number of validators will shrink, or centralized.
+	With 32 ETH hard-coded, we can never avoid the small guys from seeking out the services of 3rd-party custodians.
+
+
+Edit:
+
+4. And like I said it before, if 32 ETH being the minimum is unavoidable, then having 3rd-party custodial service providers will also be unavoidable, and thus the only way out is to have stricter regulation that oversee the conducts of such 3rd-party providers from fraud and misappropriation. And unfortunately, such providers may also comply to centralization, including the need to sanction transactions as required by the government.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                MicahZoltu
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 26, 2022,  2:53pm
+                  
+                  
+
+40
+              
+            
+            
+              
+
+
+
+ MaverickChow:
+
+
+With 32 ETH hard-coded, we can never avoid the small guys from seeking out the services of 3rd-party custodians.
+
+
+
+
+The purpose of staking is not to create wealth equality, it is to secure Ethereum.  I think everyone would like to lower the amount, but we first would need to solve the bloat problem caused by having too many validators.  Until such time as it can be lowered, the value unfortunately needs to be high.  I’m not an expert on this area so I can’t speak to the exact constraints but I am confident in the people working on PoS are doing what they can to set the value as low as is sustainable.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                randomishwalk
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 30, 2022,  5:45am
+                  
+                  
+
+41
+              
+            
+            
+              Miga Labs was kind enough to respond! Please see below for their feedback:
+
+
+The set of nodes that we display in that graph corresponds to the total number of Ethereum CL Beacon-Nodes that we can discover and connect from the p2p network. There is no way to know whether a Beacon-Node hosts consensus validators or not, so we just get stick to the Beacon-Nodes. About how do we get the geographical distribution, yes, you are right! We identify the countries and cities based on the public IPs that nodes advertise.
+
+
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                randomishwalk
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 30, 2022,  5:52am
+                  
+                  
+
+42
+              
+            
+            
+              Is it actually true that there’s no way to know if a Beacon chain node is hosting a validator or not?
+
+Setting aside that question, wonder if it’s a fair assumption that stake (aka validators) roughly track the distribution shown in this dataset?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pdsilva2000
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 30, 2022,  6:02am
+                  
+                  
+
+43
+              
+            
+            
+              Yea, i am thinking the same. I will suss out in few forums that i am in.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                cortze
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 30, 2022, 12:46pm
+                  
+                  
+
+44
+              
+            
+            
+              Hey there,
+
+This is @cortze from MigaLabs, sorry guys for the late reply but the team took some days off and we missed the mails.
+
+
+Is it actually true that there’s no way to know if a Beacon chain node is hosting a validator or not?
+
+
+
+Splitting the Beacon Nodes from Beacon Validators is a security measure that protects validators in the network. The fact that validator duties are public in each slot opens a window of a possible attack if we explicitly know where the validator is hosted.
+
+
+Setting aside that question, wonder if it’s a fair assumption that stake (aka validators) roughly track the distribution shown in this dataset?
+
+
+
+This is a bit more trivial to reply, having a Beacon Node doesn’t really imply hosting a validator. We actually host a few Beacon Nodes just to have direct access to the beacon chain, and Vouch can support multiple Beacon Nodes for a single set of validators. However, this is something worth looking at and we do have it in mind for future studies.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                simbro
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 31, 2022,  9:32am
+                  
+                  
+
+45
+              
+            
+            
+              
+
+
+
+ randomishwalk:
+
+
+Setting aside that question, wonder if it’s a fair assumption that stake (aka validators) roughly track the distribution shown in this dataset?
+
+
+
+
+I’m fairly sure that Infura, Alchemy etc. will be running a large number of nodes that aren’t validators, I’m sure there are others besides them.
+
+w.r.t geographical distribution of validators, @JustinDrake talked about this on Bankless where he referred to both “jurisdictional diversity” and “geographical diversity”, which is an interesting distinction.  If a node is deployed in the AWS datacentre in Beijing, is it in China’s jurisdiction or US jurisdiction or both?
+
+Anyway, I’d like to know what this thread thinks of the idea of self reporting using the grafitti field.  This would obviously only be an indicative measure, but perhaps it could be incentivized in some way?   Do you think there’s merit in exploring it?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                randomishwalk
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 31, 2022,  1:59pm
+                  
+                  
+
+46
+              
+            
+            
+              
+
+
+
+ simbro:
+
+
+If a node is deployed in the AWS datacentre in Beijing, is it in China’s jurisdiction or US jurisdiction or both?
+
+
+
+
+My hunch is node in that AWS dc would be subject to both risks.
+
+
+
+
+
+ simbro:
+
+
+Anyway, I’d like to know what this thread thinks of the idea of self reporting using the grafitti field. This would obviously only be an indicative measure, but perhaps it could be incentivized in some way? Do you think there’s merit in exploring it?
+
+
+
+
+Think that’s a great idea, especially for collecting data on at-home stakers (could start with POAPs maybe?). I wonder if the large staking providers (CEXs, professional node runners, etc) might be willing to share and pool this data even without this measure–would obviously require someone to coordinate and run this project / do some degree of outreach to those entities.
+
+Do you think this potentially introduces incremental censorship risk via ability to map validators pubkeys (as well as depositor addresses) to geography?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                simbro
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    August 31, 2022,  4:43pm
+                  
+                  
+
+47
+              
+            
+            
+              I don’t think there is a danger of mapping validator pubkeys to to geography if there is sufficiently low granularity (e.g. resolving to country).
+
+I reached out to Lido to ask their advice, and they responded by saying that this is something they’ve put a lot of thought into it, and have a policy around, and is also something that they actively track.
+
+This is a map of where their node opertors are based, from their Q2’22 report:
+
+
+
+lido_nodes_by_country1012×459 176 KB
+
+
+
+I think that apart from Lido, it doesn’t really matter where the node operators of other large staking pools reside, as the node operators are bound to the jurisdiction of the company that contracts them.
+
+I still think that it would be useful to cross reference the various datasets with self reported data though. I really feel that have strong jurisdictional diversity is a crucial aspect of a credibly neutral network.  I’ll try put some thoughts together on on self-reporting could work in the meantime.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                pdsilva2000
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 1, 2022,  1:45am
+                  
+                  
+
+48
+              
+            
+            
+              100% Agree with your thoughts. mapping at country level is more than enough.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                simbro
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 5, 2022,  9:05am
+                  
+                  
+
+49
+              
+            
+            
+              I reached to the POAP devs on Discord, and they said that it should be possible to do a POAP drop with validators who self-report using the graffiti field, using the delivery feature.
+
+I found this tool by Raul Jordan at Prysmatic Labs that can help us grab the graffiti.
+
+I looked at some examples of graffiti, and it mostly looks like client versions, e.g.:
+
+“Lighthouse/v3.0.0-18c61a5”, or “teku/v22.8.0”
+
+So I was thinking that we could include a parse-able tag somewhere in the graffiti field using ISO-3166 codes, e.g.:  “GEO-BR” for Brazil, “GEO-IE” for Ireland etc.
+
+In terms of how often validators propose blocks, I did some quick sums (assumes all validators have an equal 32 ETH stake):
+
+	seconds per year: 31,557,600
+	31,557,600 / 12 secs per block = 2,629,800 blocks per year
+	2,629,800 / 418,538 active validators = 6.28 blocks per year per validator
+
+
+Anyway, I’m happy to take this conversation offline and work on this on Discord or whatever.  I’ll be at DevCon, and I’m happy to grab a few hours to put together a plan, some docs, and the bones of a webpage - anyone who is interested, just DM me to carry on the conversation.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                pdsilva2000
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 13, 2022,  6:30am
+                  
+                  
+
+50
+              
+            
+            
+              happy to contribute anyway that i can. where would you like to move this convo to ? notion i.e.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                simbro
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 14, 2022, 10:32am
+                  
+                  
+
+51
+              
+            
+            
+              I’ll DM you and we can find a suitable platform for collaborating on it. Ideally whatever allows anyone to contribute.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                simbro
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 26, 2023,  8:50am
+                  
+                  
+
+52
+              
+            
+            
+              better late than never! https://borderless-ethereum.xyz
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+                      
+                        Edinburgh Decentralization Index - Invitation to Contribute
+                        
+
+
+        ← previous page
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

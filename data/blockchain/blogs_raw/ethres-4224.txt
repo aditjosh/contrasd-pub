@@ -1,0 +1,322 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What are your thoughts on Python ETL? What are your preferred methods of aggregating data from Ethereum chain? - Data Science - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      What are your thoughts on Python ETL? What are your preferred methods of aggregating data from Ethereum chain?
+    
+
+
+      
+          
+            
+              
+              
+                Data Science
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                tucker-chambers
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 12, 2018,  7:15pm
+                  
+                  
+
+1
+              
+            
+            
+              Hi there,
+
+I have used the Python Ethereum ETL to do some network analyses and other data projects. It is a great project, but I wanted to know if anyone has different preferred methods. Python ETL does not  (currently) support internal transactions and some other features, so I have interacted directly with the JSON RPC package via a geth node.
+
+https://github.com/blockchain-etl/ethereum-etl
+
+Thanks.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                quickBlocks
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 12, 2018,  8:44pm
+                  
+                  
+
+2
+              
+            
+            
+              You can check out QuickBlocks.  It’s C++ code, but it extracts all the data (including internal transactions) and has a built in cache, So the second time you query, it’s way faster.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                tucker-chambers
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 13, 2018,  8:56pm
+                  
+                  
+
+3
+              
+            
+            
+              Nice, thank you. Appreciate the tip.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                medvedev1088
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 15, 2018, 11:16am
+                  
+                  
+
+4
+              
+            
+            
+              Hi there. I’m the author of Ethereum ETL. You can export internal transactions with the export_traces command https://github.com/blockchain-etl/ethereum-etl#export_traces. Only works with Parity. For geth traces use https://github.com/blockchain-etl/ethereum-etl#export_geth_traces
+
+You can also query all internal transactions in the public BigQuery dataset. Here is how you can retrieve balances for all addresses https://medium.com/google-cloud/how-to-query-balances-for-all-ethereum-addresses-in-bigquery-fb594e4034a7.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                tucker-chambers
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 15, 2018,  3:22pm
+                  
+                  
+
+5
+              
+            
+            
+              @medvedev1088 Thank you for the response. I really love the python ETL package and will look into those commands.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                ChristopherLey
+                
+              
+
+              
+
+
+
+              
+                  
+                    February 9, 2023,  9:46am
+                  
+                  
+
+6
+              
+            
+            
+              If your interested I wrote a python package for access block data through etherscan (you just need an api key) heres the github its call pyetherscan
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

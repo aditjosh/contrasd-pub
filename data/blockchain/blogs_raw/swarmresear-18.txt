@@ -1,0 +1,285 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pinned Content in Swarm - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Pinned Content in Swarm
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 3, 2019,  4:41pm
+              
+              #1
+          
+        
+        
+          Importing discussion from github Pinned Content in Swarm · Issue #1274 · ethersphere/swarm · GitHub
+
+
+Introduction
+
+Nodes in Swarm may wish to retain certain chunks for various reasons.
+
+For example, they might want to keep certain content available in Swarm
+
+either because their operator owns it or because they have been paid to
+
+do so. This ticket is for the design of an extension to Swarm’s local database
+
+that would facilitate the management of such content.
+
+The problem with the naive implementation of simply flagging pinned content
+
+is that it is not clear under what conditions can the flag be removed.
+
+Instead of flags, we can use reference counters, whereby chunks with a
+
+non-zero reference count can be considered pinned/flagged. Fortunately,
+
+Swarm references, both encrypted and unencrypted are guaranteed to be
+
+cycle-free. Thus, reference counters can be initialized by resetting all
+
+to zero and then simply traversing references from a given root while
+
+increasing the reference counter for each encountered chunk. Similarly,
+
+dereferencing requires a decrement at each chunk encountered during a
+
+traversal.
+
+For practical reasons, I suggest that stickiness (the property of being pinned)
+
+is defined by accessibility from a single root, stored locally. Thus, we can
+
+effectively reuse already existing tools for managing sticky content.
+
+
+Consistency
+
+Unfinished traversals can leave the database in an inconsistent state.
+
+However, since concurrent traversals do not result in race conditions,
+
+if the state of all unfinished traversal is available, they can simply
+
+be finished, thus restoring consistency. The state of a traversal is
+
+described by a root reference and a path descriptor. In the path
+
+descriptor we find ordinal numbers for references found in intermediate
+
+chunks as well as those found in manifests. In both cases, in addition
+
+to unambiguously marking the location of the reference, we need to
+
+indicate whether or not that particular reference is encrypted or not.
+
+While optimizations are obviously possible, the simplest way of updating
+
+reference counters in case of change of root reference is increasing
+
+counters in a tranversal from the new root and then dereferencing the
+
+old root.
+
+If the states of ongoing traversals is lost, consistency can be restored
+
+by setting all reference counters to zero and traversing from the root.
+
+In order not to require a full scan of all chunks, reference counters
+
+can have a label identifying the consistency epoch. If a new epoch is
+
+started, reference counters with the old label should be treated as zero.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            jmozah
+            
+          
+
+          
+
+
+
+          
+              
+                June 24, 2019,  6:03pm
+              
+              #2
+          
+        
+        
+          If a manifest with many files is pinned, and later if a new file is added/removed from the manifest, should we unpin the old manifest and repin the new one? or should we just leave this as it is?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 26, 2019, 12:39pm
+              
+              #3
+          
+        
+        
+          I think @nagydani’s suggestion is that you should not unpin the old manifest automatically.
+
+When the new manifest is pinned, all the chunks belonging to both the old and new manifests will now have a  pin reference counter of 2.
+
+        
+
+
+        
+           
+2 Likes
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

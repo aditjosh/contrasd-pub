@@ -1,0 +1,625 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bonsai Tries Design Overview - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Bonsai Tries Design Overview
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Bonsai Tries Design Overview
+
+	Danno Ferrin
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Sept 14, 2020
+
+
+
+
+
+
+
+
+
+
+This design overview is currently speculative, the actual implementation may vary.
+Bonsai Tries is the new storage methodology for Besu, storing both account and storage values.Â  It is a philosophical shift from the former "Forest of Tries" storage format of the initial versions of Besu.
+Bonsai Tries consist of 4 major parts
+	Leaf Piles
+	Trie Logs
+	One Manicured Trie
+	Compost Bins
+
+Leaf Piles
+Leaf piles and Trie Logs represent the major departure from the forest model.Â  Instead of storing trie branches and leaves in a content addressable means (the hash of the node) the leaf pile stores a single point in time key addressable.Â  This removes the need for "trie climbing" for loading values.Â  To load a value for SLOAD or for account information under the forest model you start loading the trie root hash for the particular point in time and then travers the branch and extension nodes until you find the leaf node.Â 
+Leaf piles skips the trie climbing and indexes the leaves by address.Â  Leaf piles aloneÂ presents two complications: chain reorganizations and trie hash generation from writing to storage.Â  To address this the two other tables are added.
+Trie Logs
+Trie logs is a per block representation of the diffs needed to go from the parent block to the state represented by the new block. This includes both the old and new values, if present.Â  From this diff we can roll forwards or backwards to the block as recoded.Â  These logs are closely related to block witnesses but have some notable differences
+	Trie Logs do not contain merkle proofs.Â  Only the leaf data is stored in the log, as it is presumed we have a complete set of non-leaf trie data for the diff.Â (this may change as performance is evaluated).
+	Trie Logs contain output values.Â  Block witnesses (as envisioned at the time of the writing of this post) include only the input data and do not include the "output" witness.Â  Some manifestations include the needed trie branches to create new output data.Â 
+	Trie Logs only contain changes.Â  Block witnesses also include any values read from the trie state that are not also written.Â  For roll forwards and roll backwards only the changes are required, which is a subset of the data needed to execute some blocks. (this may be configurable as an option in future revisions).
+
+Manicured Trie
+As the leaf data of trie is kept as a single point in time, so too are the relevant branch and extension nodes needed to generate a merkle proof for a particular node.
+When data is written to the manicured trie all of the branches and extension nodes directly in the path of the written leaf are removed and replaced with the new values.
+Compost BinsÂ 
+Compost bins is the final piece of the Bonsai Trie methodology.Â  Some RPC calls rely on having state accessible at states not directly at the chain head.Â  Most clients keep some limited amount of data and prune the rest.Â  To accommodate these RPCs as a trie node is deleted in the Manicured Trie the cuttings are placed in one of two compost bins.Â  One bin is the current bin and the other is the expired bin.Â 
+When a data value is read via the trie climbing technique and the content addressed lookup is a "miss" then the query turns to the two compost bins.Â  If the trie node existed during the lifecycle of that bin it should exist as these are write only bins.Â  The trie climbing will continue as needed first looking on the manicured trie and then in the compost bins.
+The reason for the two bins is for efficient pruning of data.Â  The bins have a "block horizon" during which the expired bin is emptied and the current and expired bins are swapped.Â  This value will be user configurable, and the initial default is envisioned to be 90k.Â  This results in a back-state of 90k-180k through which older "recent head" data is maintained, providing 2 to 4 weeks of backing data.Â  End users can adjust this value, but they need to be careful that the horizon does not "trap" them in the event of a large reorg (such as a 51% attack).Â  Ropsten and Ethereum Classic has observed reorgs up to 20K blocks.
+More advanced strategies may emerge for Eth 2 integrations, where the are more compost bins correspond to epochs and they are disposed of once consensus finalizes.
+If a user wishes to keep a complete history they can set the compost bin horizon to an absurdly large number (such as 2 billion) to ensure the bins never empty.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Bonsai archive feature
+Bonsai archive feature
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Limit Trie Logs for Bonsai
+Limit Trie Logs for Bonsai
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+QBFT, Bonsai, and Snap-Sync testing
+QBFT, Bonsai, and Snap-Sync testing
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu Roadmap & Planning
+Besu Roadmap & Planning
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Merkle Tree
+Merkle Tree
+
+Hyperledger Iroha
+
+
+
+More like this
+
+
+
+
+
+
+Modular Consensus
+Modular Consensus
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 14, "requestCorrelationId": "d6b824e6f61f42c88d38fa19ddb52f92"}

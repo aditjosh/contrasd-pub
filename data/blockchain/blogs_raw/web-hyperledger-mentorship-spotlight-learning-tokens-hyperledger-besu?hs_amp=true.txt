@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Learning Tokens in Hyperledger Besu
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Mentorship Spotlight: Learning Tokens in Hyperledger Besu
+
+        
+
+        
+           Written by Md Tanjin Alam | Dec 27, 2023 5:00:00 PM 
+        
+
+        
+          My Hyperledger Mentorship project has been a thrilling journey, filled with challenges, learnings, and a deep sense of contribution to a broader technical community. As a mentee of this project, I delved into various aspects that not only expanded my technical skills but also provided insights about tokenization that can help to solve many real word applications. 
+
+
+As part of my responsibilities, I'm pleased to share the successful completion of a complex and collaborative pilot project. With the collaboration of the World Calisthenics Organization, we designed a Minimum Viable Product (MVP) custom-designed to enable their seamless interaction with a learning token ecosystem. Essentially, it was developed to collect feedback and gather suggestions on how to enhance the user experience. This application of the technology added an extra layer of excitement to the project. The comprehensive deployment of the project onto cloud infrastructure was a key aspect, with a specific focus on implementing the Learning Token smart contract on the Polygon TestNet. Additionally, I utilized Amazon Web Services for both the backend and frontend, ensuring accessibility for the World Calisthenics Organization on the platform.  
+
+Journey to Mentorship 
+
+I've always sought to do new things apart from my daily activity. When I found out about the Hyperledger Mentorship program, I saw there were several projects but found learning tokens to be the most interesting. The project's description perfectly matched my existing skills and experience working in the blockchain industry. So, I applied for this project, leading to an interview with my mentor,Alfonso Govela. He was completely supportive and kept inspiring me throughout the entire journey. 
+
+WHAT I WORKED ON:
+
+My mentorship project is Learning Tokens in Hyperledger Besu. The primary goal of Learning Tokens is to document the exchange and acquisition of gaining and transferring knowledge in a granular way as a token. These tokens meticulously keep the record of an individual's learning journey, capturing both the knowledge someone either acquired or gained by helping someone else. Through personalized education profiles, Learning Tokens aim to reshape educational experiences based on individual learning histories. Additionally, these tokens serve as metrics for engagement in knowledge gained, transfer, contributing to effective educational administration. 
+
+Besides that, I focused on designing Learning Tokens for MOOCs and SPOCs using the Token Taxonomy Framework (TTF). Utilizing TTF tools, I generated artifacts that serve as a blueprint for the tokenization process. Subsequently, I translated these artifacts into smart contracts using Solidity. 
+
+To streamline the development process, I leveraged Hardhat, a comprehensive Ethereum blockchain development environment. With Hardhat, I could efficiently compile, edit, debug, and deploy smart contracts, enabling the creation of a robust Learning Token system. This involved writing test cases and deploying scripts for local testing and deployment on the TestNet, ensuring the reliability and functionality of the system in different environments. 
+
+Potential Impact: Introducing Learning Tokens in education could have a big impact. These tokens recognize what individuals learn in a detailed way, like a special kind of money for knowledge. They use scoring guides to make it easier for different people involved in learning to share and own these tokens, creating a more organized learning system. Learning Tokens might change the usual roles in education, making institutions, teachers, and learners more actively involved. Also, they could fit well into how education is usually managed. In summary, Learning Tokens could change how we see expertise, organization, and certification in education. 
+
+WHAT I LEARNED AND ACCOMPLISHED: 
+
+There were a number of learning aspects to this project. Here are keys ones: 
+
+Learning about Hyperledger Besu: Hyperledger Besu comes with lots of features since it’s a robust Ethereum client. After making a deep dive into it, I have learned about its pluggable consensus mechanism and its advanced parameters, which helped me to create a local blockchain environment using it. 
+
+Learning about Token Taxonomy Framework: This project led me to explore the Token Taxonomy Framework, an open-source resource library that acts as a bridge between developers, businesses, and regulators. In the process, I acquired knowledge on how TTF simplifies communication by establishing a common language to describe tokenization attributes, behaviors, and data properties. This understanding is crucial for navigating and implementing token-based systems with clarity and coherence. 
+
+Gaining in-depth understanding in Solidity & ReactJS: I successfully converted the Token Taxonomy Framework (TTF)-generated artifact into Solidity. It was complex too since the implementation of the entire artifact into Solidity was making the code large so later I had to optimize it.  
+
+Completing Pilot Project with World Calisthenic Organization: Conducting the pilot as part of my Hyperledger journey included tackling a number of non-technical aspects. I focused on document work, reviewed the Learning-Token Life Cycle, and redefined Learning Tokens using Token Taxonomy Framework (TTF). From the technical perspective, I implemented Hyperledger Learning Tokens using Hardhat, Solidity, Hyperledger Besu, and ReactJS for creating the frontend user interface, NestJS for creating the API and designing backend functionalities, and Postgres as the database. 
+
+Throughout my Hyperledger Mentorship project, I embraced a thrilling journey marked by challenges and continuous learning. This experience not only enhanced my technical skills but also provided profound insights into tokenization, offering solutions for real-world applications using blockchain. The successful pilot project with the World Calisthenics Organization stands as a testament to the practical application of my knowledge and skills in the Hyperledger ecosystem. 
+
+Deliverables and Overcoming Challenges: At every phase of the projects, there were challenges as well. 
+
+Redefining Learning Token Using Token Taxonomy Framework (TTF). 
+
+	In this phase, we aimed to redefine the concept of Learning Tokens by utilizing the Token Taxonomy Framework (TTF). 
+	Challenge: Integrating unique Learning Token features with TTF in a manner that ensures compatibility.
+
+
+Implementing Learning Token Artifact using Hyperledger Besu.  
+
+	In this step, we utilized Hyperledger Besu for a secure and scalable Learning Token implementation. 
+	Challenges: While implementing a Learning Token artifact using Hyperledger Besu, I faced lots of difficulty setting up Hyperledger Besu for a local environment and comprehending its functionalities. 
+
+
+Designing learning token tokenization that can enhance how we can facilitate massive open MOOCs or small private SPOCs with the learning tokens.  
+
+	The design phase focused on creating a tokenization system that caters to the diverse needs of both Massive Open Online Courses (MOOCs) and Small Private Online Courses (SPOCs). The goal is to enhance the learning experience through the effective use of Learning Tokens in various educational settings. 
+	Challenges: Designing a unified tokenization system for MOOCs and SPOCs requires simplifying underlying logics for both and apart from that using token taxonomy framework to ensure compatibility and streamlined processes. 
+
+
+Writing, deploying, and testing the smart contracts on local and live test-net. 
+
+	The implementation of smart contracts is a critical step in bringing the Learning Token system to life. This involves coding the logic, deploying it on a local environment for testing, and eventually deploying it on a live test-net to validate its functionality in a real-world setting. 
+	Challenges: Ensuring the smart contracts are error-free, secure, and performant is significant. I had to optimize the smart contract and write down the test cases to check its functionality is working fine.  
+
+
+Creating a basic user interface to interact with them.  
+
+	This step involved the critical work of developing a user-friendly interface for seamless Learning Token interactions.   
+	Challenge: Designing an intuitive, responsive interface that integrates well with blockchain technology. 
+
+
+WHAT I GAINED FROM WORKING WITH MY MENTOR: 
+
+I extend my gratitude to my mentor for consistently guiding me during our regular meetings. These sessions played a crucial role in making advancements, establishing objectives, and addressing coding challenges. My mentor not only aided me in comprehending the problem at hand but also shared valuable resources that helped me a lot.  
+
+He also helped me realize that every problem, no matter how complex, has a straightforward solution. The key lies in breaking down the problem into manageable parts and systematically working through them. 
+
+WHAT COMES NEXT: 
+
+The journey with Hyperledger Learning Tokens is just beginning, promising further advancements in the gradual integration of Learning Tokens within the current education system. Beyond institutions, instructors, and learners, there is a significant opportunity for engagement from diverse sectors. Active participation from various entities, facilitated by self-sovereign identity, will be pivotal in validating and providing accurate information, contributing to a unified and trustworthy source of truth.  
+
+The next steps involve expanding collaboration, refining the Learning Token ecosystem, and embracing the potential for widespread involvement across different sectors. Additionally, envisioning the future, we can create an SDK for the Hyperledger Learning Token lab. This SDK will simplify the adoption of our technology on various platforms, allowing them to seamlessly join. This initiative aims to broaden the reach and impact of our innovative educational ecosystem. 
+
+In addition, we are actively working on incorporating a governance framework into the Learning Token. This strategic move aims to facilitate the adoption of this technology by governments, establishing it as a reliable source of truth for educational data. The ultimate goal is to position our solution as a global standard in the realm of educational technology.
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

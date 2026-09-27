@@ -1,0 +1,252 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+View-merge algorithm - Consensus - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      View-merge algorithm
+    
+
+
+      
+          
+            
+              
+              
+                Consensus
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                anand
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 12, 2022,  5:09pm
+                  
+                  
+
+1
+              
+            
+            
+              In Vitalik’s recent talk at the Stanford Blockchain Conference (51% attack recovery), he mentions the view-merge algorithm (47:08), by which online nodes can tell which other nodes are online. This, of course, has implications for a censorship / exclusion attack.
+
+Where is this research at? I wasn’t able to find a paper describing the view-merge algorithm or any adjacent research (besides of course the classic Vitalik ethresear.ch post on 51% attack responses in Casper FFG).
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                adompeldorius
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 12, 2022,  7:15pm
+                  
+                  
+
+2
+              
+            
+            
+              Could it be this?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                fradamt
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 19, 2022,  2:26pm
+                  
+                  
+
+3
+              
+            
+            
+              Other than that, there’s this: Change fork choice rule to mitigate balancing and reorging attacks
+
+More to come soon
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                anand
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 3, 2022,  3:25pm
+                  
+                  
+
+4
+              
+            
+            
+              Thanks, that mentions it. It also links explicitly to this, which was helpful: View-merge as a replacement for proposer boost.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

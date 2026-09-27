@@ -1,0 +1,391 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RACE: positive incentivization of chunk storage - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      RACE: positive incentivization of chunk storage
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            eknir
+            
+          
+
+          
+
+
+            
+
+
+          
+              
+                March 25, 2020,  1:35pm
+              
+              #1
+          
+        
+        
+          
+RACE:
+
+	provides positive incentives for storage
+	disincentivizes churn
+	makes reasoning about a garbage-collection strategy easy for the nodes
+	is likely the stepping-stone for negative incentives/ insurance of chunks
+
+
+
+TLDR
+
+RACE (Register, Apply, Challenge, Earn) is a scheme, to distribute the profits from the postage batches to storer nodes. It can do this, as all evidence on how much a node should earn (his advertised price and the postage batches) are on-chain. However, pointing to all on-chain evidence is expected to be prohibitively expensive. That is why a RACE introduces an apply transaction which can be challenged if incorrect. The challenge flow is responsible for bringing staked entities in the game, which allows for uploading all invoices which then can be proven to be incorrect by pointing to price of the node, the price of his neighbouring nodes and/or the price of the postage batches.
+
+
+Phases
+
+Phases:
+
+	Register
+	(…)
+	Apply
+	Challenge
+	Earn
+
+
+In what follows, I describe all five phases of RACE and show how the protocol crypto-economically ticks.
+
+
+Register
+
+The node registers on-chain to become a storer node in Swarm. He also lists his price (per chunk per period). Registration implicitely means that the registrant is storing the chunks to which he has the right of income (see Calculating income). Hence, the registrant needs to de-register when he goes offline. A registrant can change his price at all times, which immediately affects which chunks he is supposed to store. The registry ensures that there are no two registrants with the same overlay prefix of a certain length (based on the current depth of the registry). Without this restriction, prefix colissions of stamped chunks might not be detected. The depth of the registry would be equal to the depth of Swarm when all prefix collision slots are filled. However, to enable nodes to be able to join the Swarm without mining too long for an overlay address, the registry increases the depth when there is only a certain percentage ( P ) of free slots (say 20%).
+
+All registration is done in the NodeRegistry smart contract.
+
+Research How to set P?
+
+
+Registring other nodes
+
+In order to facilitate zero-eth entry into Swarm, we allow other nodes to register their peers. For zero-eth entry, it is expected that the node already accumulated a positive SWAP balance, which can be used to register the node in the registry, instead of sending him a cheque (or cashing out a cheque for him).
+
+
+Staked regisration
+
+It is possible to send some money during registration. This money is usefull when the node wants the possibility to apply for a cashout at all times (see What is sufficient income).
+
+
+(…)
+
+This phase is called (…) because there are so many things happening in this phase. Primarily, in the (…) phase, nodes are storing the chunks, which is the basis of their income during this scheme. The income which a node earns is based on the information which is available on the blockchain. Specifically: the address of the node and the addresses of registered nodes in his neighborhood, his price, the price of nodes in his neighborhood, the purchase of postage batches and the earning from other nodes cashing out.
+
+During this phase, nodes also buy batches. Buying batches is done in the PostOffice smart-contract (see PostOffice).
+
+research A node earns income during this phase and it is assumed that he is indeed storing the chunks. How do we verify this?
+
+
+PostOfice
+
+A node (Uploader) can buy batches and top up the balance in the PostOffice smart-contract. He also has the authority of changing the maximumPrice of postage batches.
+
+
+Updating Batch price
+
+As the Swarm is constantly changing, we might expect that the price for storage also fluctuates. Practically: it might happen that a batch’ maximum price is sufficient during upload, but that it is not anymore later. A batch price is not sufficient when there exists a neighborhood in Swarm where there is no single node within 2 times the batch redundancy (R) that has a  price lower or equal to the maximum price of the batch. If this is the case, the uploader should expect this chunk to be garbage-collected. To prevent this from happening, the uploader can update the price of the batch at all times. He can also authorize another address (Updater) to do so for him. Authorizing an updater is done to make it more likely that chunks stay in the network, even after the uploader is offline or because the updater can update prices more efficiently than the uploader can. Updaters are never guaranteed to update the price when needed, but they are staked with a reputation on-chain, making it feasible to expect that they will indeed update the price when needed. The updater’s reputation is based on the percentage correct price increases (price increase of batch happened before a price increase in a neighborhood), where a price increase is more correct, the closer it happened to the actual price increase of the neighborhood, and the percentage of missed price increases (causing garbage collection of chunks). As an updater is staked with this reputation and the profit that he earns with this reputation, missing an increase for a batch means his future profit decreases.
+
+
+Price boost
+
+To prevent chunks from becoming deleted when there is a sudden price increase in one neighborhood, a batch can set a boost price. A boost price is a price that is only paid for a limited number of adjoining blocks. Setting such a boost price prevents the chunk from becoming garbage-collected during the period that is needed for other nodes to join the neighborhood and drive the price down. It can also give the uploader the needed time to resque his chunks before they are garbage-collected. Price boost is optional and set by the uploader. The uploader also chooses the maximum duration of the price boost.
+
+
+Calculating income: when do I have the right?
+
+A node needs to keep track of the income he earns (always) and how much other nodes earned (upon applying). There a specific rules which decide wether a node has the right on income. The rules are chosen to facilitate optimal price competition between nodes and are enforcable by the smart-contract during the challenge-phase. In order to earn income for a chunk, which is part of a batch, a node must:
+
+	have a lower or equal price that the maximum price of the batch
+	be within the R cheapest nodes of the R*N closest nodes around the chunk. If there are multiple cheapest nodes, the node that has registered the particular price earliest has the right of earning. If a registration happened during the same block, the node whos address is closest to the Batch identifier has the right of income
+
+
+The income to which the node has right equals his minimumPrice
+
+research how to set N?
+
+
+Apply
+
+After a node has a sufficient amount of income earned, a registrant can apply to have his income paid-out. A registrant wants to pay out in order to spend his income (elsewhere) and because keeping the earned money in a pool is risky. We expect registrants to want to cash out whenever they go offline and whenever their income reaches a certain threshold. Applying is done by sending an on-chain transaction to the ACE contract. Such a transaction contains the request amount to pay out and a hash of all uncashed Invoices.
+
+
+Risk of not applying (in time)
+
+The risk of keeping earned income in the pool stems from other nodes cashing out more than they should cash out: if this happens, the money in the pool is less than the outstanding payments, which introduces the risk that a node doesn’t get paid-out fully. If a node is online, he can assure himself that this situation doesn’t happen: he just needs to keep track of all pending payments and challenge those which are faulty (see Challenge phase). If it nevertheless happens that a faulty cashout transaction happens, the loss is best evenly distributed to all online nodes. Without even distribution, a bank run might happen as no single node wants to prevent being the node to carry the burden. We can incentivize any node to retrospectively point to a faulty cashout transaction, by omitting this node from carrying the loss of the faulty cashout. It is possible to point to multiple faulty cashout transactions to prevent accounting dust (small faulty transactions, not worth to point to) to accumulate.
+
+
+Cost of applying
+
+By applying, you incur a cost to all other nodes in the Swarm, as they need to verify your calculation. This is why we attach a cost to applying (margin). The cost of applying is deducted from the registrants’ earned income upon application for cashout. All nodes have a right to a share of this income, just as they are having a right to earn income from postage batches. If all nodes cash out with the same frequency, this should be a zero-sum game. If some nodes cash out more frequently than others, there is a transfer of value from those nodes who cash out often to those who cash out less often. The cost of applying is set at least above the costs it takes to challenge an application. The rationale is that, with such a high cost, nodes are not expected to cash out if they don’t expect to earn at least the cost it takes to cash-out. If that is the case, a “stake” worth minimally the cashout costs is expected at the moment of cashout.
+
+
+Applying for other nodes
+
+It is possible to send an apply transaction for another node, to facilitate zero-eth entry into Swarm. In order to incentivize this, the node who sends the transaction can claim part of the income of the registrant without ether.
+
+
+What is sufficient income
+
+Nodes (applicants) can apply for cashout at all times, but they are not expected to cash out when the income earned is less than the transaction costs it takes to process cashing out. The transaction cost consists of two parts: the costs for the Ethereum network (gas fee) and a margin, charged by the smart-contract. This margin has two purposes:
+
+	It covers the costs of calculating the income of the applicant by all other online nodes
+	It incentivizes the applicant to apply for cashout only when they have at least earned this margin above the “normal” transaction costs. If this margin is set in such a way that it covers the transaction costs of a potential challenge, we can incentivize challengees to submit a challenge with this amount.
+
+
+The first part of the margin is income that will be available to all nodes who were online in the network at the moment of cashout. The second part is held in an escrow and becomes available to the applicant if the application is not succesfully challenged during the challenge period.
+
+
+Application duration
+
+An application always takes some time to be processed. This time is needed, in order to ensure that no faulty applications are going to the Earn phase. The duration of this application should be long enough for challengers to submit their challenge, but not too long, to prevent unnecesary lockup of capital. An application can take longer than the normal application duration if there are challenges open: with an open challenge, an application cannot go to the Earn phase. However, to prevent infinite delay of the application duration, there is a deadline to which new challenges can be submitted: this cannot be done after the application duration should have normally ended.
+
+research: how long should an application last? => long enough for any entity to purchase honey tokens, to stake in the challenge phase.
+
+
+Challenge
+
+In the challenge phase, any node can submit a suggested alternative cashout transaction. Such an alternative is a challenge to the correctness of the original cashout transaction. To proof that the original cashout was wrong, however, we need the invoices on-chain which before this point were only refered by means of a hash. We could not assume that the original applicant in the system is staked, but for a challenger, we may assume this as there only needs to be one honest challenger for the whole system and doing such challenges can be done for-profit. The challenger proposes an alternative set of Invoices (different hash) and commits by means of a stake worth challenge_margin and the proof_cost which he knows it takes to bring all Invoices on-chain. A challenge can be refuted, which is done by bringing as many correct invoices on chain as is needed to reach proof_cost, as mentioned by the challenger. If this amount of Invoices doesn’t exist, all known invoices should be brought on-chain.
+
+Once a challenge is refuted, any party can proof incorrectness of the on-chain Invoices (see below). Incompleteness can be proposed by bringing one additional Invoice on chain. Any party can then proof that this invoice is incorrect or was already included before.
+
+Below, we further detail how incorrectness can be proven and how incompleteness can be suggested.
+
+
+Proving incorrectness correctness
+
+If the Invoice that was uploaded during refute a challenge refute can be cancelled immediately. There are two cases which proof incorrectness:
+
+
+Proving incorrectness: no price match
+
+A challenger can proof incorrectness due to no price match by pointing to a price in the PostageOffice history, that is within the period of the Invoice where the maximum price of the batch was higher than the price of the node.
+
+
+Proving incorrectness: not cheapest
+
+A challenger can proof incorrectness due to no cheapest by pointing to R nodes within R*N which were cheaper or equally expensive (if there are not R node cheaper). When nodes are equaly expensive, the node must have registered his price earlier than the applicant. When the price was set at the same time, the node must have an address closer to the batchID.
+
+
+Proposing incompleteness
+
+Contrary to incorrectness, incompleteness can only be proposed. This is done by uploading an Invoice which was not included in the set of Invoices which were uploaded before. An incompleteness proposal is assumed to be true, after a time period has passed. Any incopleteness proposal can be proven to be incorrect by all incorrectness proofs listed above or by proving that the Invoice was already included.
+
+
+Incentivizing challenging
+
+It is important to correctly incentivize challenging and refutation of this challenge. Correct incentivization means that, in order to submit a correct challenge or refute an incorrect challenge, the expected profit is higher than zero. There are costs involved in the whole challenge flow:
+
+	The cost of a challenge transaction
+	The cost of uploading all invoices on chain
+	The cost of uploading a single invoice (suggest incompleteness)
+	The cost of proving incorrectness
+	The cost of locking up capital in the smart-contract during the challenge-flow. Namely:
+	Risk of bug in smart-contract and losing this money
+	Time-value of money
+	Risk of exchange rate
+
+
+
+
+
+To make sure that all participants are at all times incentivized to point out that a previously committed transaction is incorrect or incomplete we work with stakes, which should offset all costs for correct a correct challenge/refute.
+
+
+Staking in the challenge-flow
+
+
+Apply
+
+An apply transaction is staked for the amount it costs to send a challenge transaction and a margin. The margin should cover the costs of locking up capital by a potential challengee and leave a small profit for the challenger. If no challenge, the applicant get’s paid-out his requested amount and the margin after some time has passed.
+
+
+Challenge
+
+A challenge transaction is staked by the amount which he claims it takes to upload all uncashed Invoices from the applicant. On top of this, there is a margin which covers the costs of locking up capital by a potential refuter and leave a small profit for the refuter. If not refuted, the challenger get’s back his stake, the margin from the applicant and he may claim all uncashed Invoices from the applicant.
+
+
+Refute
+
+A refute transaction is costly, as all Invoices need to be uploaded here. This cost is like a stake: it will be paid-back from the stake of the challenger if refute transaction is not proven to be incorrect/incomplete. On top of this, there is also another small stake needed, worth the cost to upload one additional invoice (covers incompleteness/incorrectness proof), the costs of capital to upload one additional invoice and a small profit for the refuteChallenger. If not challenged, the refuter earns the stake of the challenger. The stake covers the transaction costs and leaves a small profit. The applicant earns his requested income (assume no other challenges) and the challenger loses his stake and the costs of sending the challenge transaction.
+
+
+RefuteChallenge incorrect
+
+A refuteChallenge_incorrect resolves directly if indeed incorrect. The refuter loses the money he paid to upload the invoices and his stake. The stake of the refutor is paid out to the refute-challenger. After a wait period (assume no other refutes). The original challenge transaction may still be refuted by other people.
+
+
+RefuteChallenge: incomplete
+
+A refuteChallenge_incomplete is costly, as an invoice needs to be uploaded here. This cost is like a stake: it will be paid back from the stake of the refuter if the refuteChallenge_incomplete transaction is proven to be incorrect. On top of this, there is also another small stake needed, worth the cost to proof the incorrectness of the uploaded invoice. If not challenged, the refuter-challenger earns the stake of the refuter. The original challenge transaction may still be refuted by other people.
+
+
+challengeRefuteChallenge
+
+This is the very last possible challenge. It works the same as the refuteChallenge_incorrect: it resolves directly if indeed correct. The refuteChallenger loses his stake. The original refute may still be challenged by other people.
+
+
+Diagrams about the challenge-flow
+
+
+
+489×861 14.3 KB
+
+
+
+
+We see that a honest node will cash out when he has sufficient balance. He may be challenged, but when he is online, or when another refuter is online and incentivized to refute, the challenge will be refuted and can cash-out.
+
+
+
+
+486×581 12.6 KB
+
+
+
+
+We see that when a honest node is online and is incentivized to refute or challenge, he will do so.
+
+
+
+
+1281×811 27.2 KB
+
+
+
+
+We see that a malicious node has three points where he can do harm: a malicious apply, a malicious challenge or a malicious refute. If there are entities online and incentivized to refute these transactions, a malicious transaction is only costly.
+
+
+
+
+888×1399 35.6 KB
+
+
+
+
+Two diagrams (one with a honest applicant and a malicious challenger and one with a malicious applicant and a honest challenger) which show how different entities may interact with each other, how they are staked and what their profit is in the end.
+
+
+
+
+491×809 45.3 KB
+
+
+
+
+This diagram shows the maximum time windows for each phase, and hence, the maximum duration it may take to cash out.
+
+Earn
+
+In the Earn phase, the node get’s paid out his earned income on-chain! The margin deposit is paid back and if the earn apply and earn transactions were submitted by another node, they are paid out as well.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

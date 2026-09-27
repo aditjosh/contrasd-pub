@@ -1,0 +1,250 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proposals | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+ Governance GuidesProposals
+beginner
+
+
+
+
+
+
+Introduction
+
+Aave Governance allows the community to make decisions on the protocol's future through a structured proposal lifecycle. Proposals can introduce new features, modify parameters, or make other changes to the Aave Protocol. Below is an outline of the proposal lifecycle, from initial idea to execution.
+
+Governance Forum
+
+The first step in the proposal process is to introduce your idea to the community. The Aave Governance Forum and Discord are the primary platforms for discussing proposals. Here, community members can provide feedback, technical support, and gauge the initial sentiment towards their idea. Engaging with the community early on helps refine the proposal and gather the necessary support before moving to the next stages.
+
+Snapshot Voting
+
+TEMP CHECK
+
+Once your proposal has been discussed in the forum, the next step is to gauge community sentiment through a TEMP CHECK vote on the Aave Snapshot Space. TEMP CHECKs serve as informal polls to measure the community’s interest in the proposal. These votes are non-binding and do not require high technical detail or the involvement of DAO service providers. They are a valuable tool for determining whether there is enough interest to proceed with the proposal.
+
+ARFC (Aave Request for Final Comments)
+
+If the TEMP CHECK indicates sufficient interest, the proposal can move to the ARFC stage. The ARFC is a more detailed version of the proposal, where relevant service providers are formally invited to provide feedback. This stage includes a thorough specification section that outlines how the proposal will impact Aave Protocol smart contracts. The ARFC serves as a precursor to the formal Aave Improvement Proposal (AIP) and allows for final refinements before moving on-chain.
+
+Creating the On-Chain Payload
+
+AIP (Aave Improvement Proposal)
+
+After passing the Snapshot phase, a proposal that requires on-chain execution moves to the AIP phase. The AIP is the formal proposal payload submitted on-chain and consists of two parts: the proposal metadata (stored as an IPFS hash) and the contract payload. These components are submitted to the Aave Governance contracts on the Ethereum Mainnet, where they will be voted on by the community. Detailed information on creating an AIP can be found in the Aave Developer Documentation.
+
+Voting and Execution Timeline
+
+Voting
+
+When the AIP is submitted, the voting process begins. The proposal will initially be in a PENDING status, and will move to ACTIVE once the voting delay period has elapsed. Voting tokens and delegations are held on Ethereum Mainnet, and the voting occurs through governance contracts on the specified network.
+
+The snapshot for voting balances is taken at the block before the proposal becomes ACTIVE. For a proposal to SUCCEED, it must meet two criteria:
+
+	The voting power in favor of the proposal must reach the quorum set by the minimum quorum parameter for the proposal executor.
+	The difference between for-votes and against-votes must exceed the vote differential threshold set by the vote differential parameter for the proposal executor.
+
+
+If these conditions are not met, the proposal will be marked as FAILED.
+
+Execution
+
+A SUCCEEDED proposal can be executed on Ethereum Mainnet. The execution process involves relaying the vote information through Aave's governance cross-chain infrastructure. If the proposal includes a cross-chain payload, it will be queued on the timelock executor contract on the relevant network.
+
+The timelock delay for execution depends on the proposal's executor. A short executor proposal, typically involving protocol updates, has a 1-day timelock delay. A long executor proposal, which involves changes to core governance permissions, has a 7-day timelock delay. Cross-chain proposals use Aave Delivery Infrastructure (a.DI) to verify messages from designated bridges and execute the payloads.
+
+Proposal Frameworks
+
+The Aave DAO has established frameworks for common proposal types, which streamline the proposal process. These frameworks are adopted and amended through community Snapshot votes.
+
+Caps Update Framework
+
+Proposals that only involve changing a cap or freezing a reserve can qualify for the direct-to-AIP process under the caps update framework. To qualify:
+
+	The proposal must be provided by a risk service provider or have feedback from at least one risk service provider team.
+	The change must involve a new cap implementation, a decrease in the cap, or a change not exceeding a 100% increase in the current cap.
+
+
+Asset Onboarding Framework
+
+For proposals that involve onboarding new tokens, the asset onboarding framework provides a standardized template and lifecycle. This framework promotes that new tokens are added to the Aave Protocol in a consistent and secure manner.
+
+Asset Onboarding Framework
+
+New Chain Deployment Framework
+
+The New Chain Deployment Framework is a standardized process for deploying the Aave Protocol on new blockchains. This framework aims to create a transparent approach for evaluating and deploying new Aave v3 instances.
+
+New Chain Deployment Framework Link
+
+Emission Manager Framework
+
+To allow quick addition of new emissions admins to Aave pool reserves, the process of adding new emissions admins follows a direct-to-AIP framework. This framework also allows pre-authorized inclusion of an emission admin as part of either an ad-hoc steward or current risk steward role to facilitate a more efficient and streamlined onboarding process.
+
+Emission Manager Framework Link
+
+
+
+Related
+Aave Community
+beginner
+
+Learn about Aave community governance.
+10 min read
+Voting
+beginner
+
+Voting in Aave Governance.
+4 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchains, such as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not control or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+	Documentation
+	Technical Paper
+	Security
+	Bug Bounty
+
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

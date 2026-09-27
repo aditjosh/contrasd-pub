@@ -1,0 +1,903 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Fabric v3: Delivering Smart Byzantine Fault Tolerant consensus
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Fabric
+                            
+                        
+                    
+
+                
+                Hyperledger Fabric v3: Delivering Smart Byzantine Fault Tolerant consensus
+ 
+                
+                    Yacov Manevich, Yoav Tock, and Hagar Meir
+                    |
+                    
+                        Sep 16, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Introducing Byzantine Fault Tolerant for Hyperledger Fabric
+
+
+Hyperledger Fabric v3.0 comes with a brand-new ordering service type, which can be deployed in a Byzantine setting, thus giving higher resilience and reliability to Hyperledger Fabric networks.
+
+What problem does consensus solve for Hyperledger Fabric?
+
+A distributed transaction processing system like Hyperledger Fabric, an LF Decentralized Trust project, needs a mechanism to safely replicate transactions among the parties in a way that preserves the integrity and consistency of the system. Consensus protocols emit a total order of transactions, that is, all parties process the transactions in the same order. 
+
+Replicating the transactions in the same order is essential to any system that performs post consensus processing, be it re-execution of the transactions or applying transactions to the current state with multi-version concurrency control checks like Fabric does.
+
+The safety and liveness features of consensus protocols mean that even if some nodes fail, the integrity, consistency, and liveness of the entire system is not compromised. The nature of the failures differentiates between two categories of systems. In a crash fault tolerant (CFT) system, the assumption is that a node can only crash and is otherwise following the protocol. In a byzantine fault tolerant (BFT) system, the assumption is that a faulty node can arbitrarily deviate from the protocol, either by crashing, due to bugs, hardware malfunctions, or - more sinisterly - by staging sophisticated attacks on other nodes. These are also called “byzantine failures.”
+
+What aspect of consensus has improved in Hyperledger Fabric V3.0?
+
+The ordering service of Hyperledger Fabric is responsible for providing a total order of transactions. The ordering service in all previous versions of Fabric was only crash fault tolerant. In a CFT system, if a node does not follow the protocol due to its party being malicious, or if it is taken over by a malicious party, the integrity, consistency, and liveness of the system may be compromised.
+
+In more simple terms, a node that does not follow the protocol in a consensus protocol that is only CFT can cause other nodes to see a different order of transactions. When different parties in the system see a different order of transactions, malicious actors can double spend funds by sending the same funds to different parties, which may not be detected due to each party observing a different order of transactions.
+
+Starting from Fabric v3.0, ordering service nodes can run the SmartBFT consensus protocol, which, as the name suggests, is byzantine fault tolerant. SmartBFT can withstand (up to and not including) a third of its parties exhibiting byzantine behavior. In addition, the peers were augmented to safely pull blocks from an ordering service that may exhibit byzantine failures, and the peer gateway service was augmented to submit transactions to a BFT enabled ordering service.
+
+What is the SmartBFT protocol?
+
+The SmartBFT protocol is heavily based on the BFT-SMaRT paper, which itself is a simplification of the seminal PBFT paper. It was chosen because its protocol is not only easy to implement, but also makes integrating it into Fabric straight forward. 
+
+In the protocol, transactions from clients are sent to all ordering service nodes and are then bundled into blocks by a designated node called the leader node. The leader node broadcasts the blocks to all other ordering service nodes, and for each such block, two additional rounds of all-to-all broadcast are required for the block to be considered as finalized. In case the remaining non-leader nodes detect the leader is malfunctioning, they initiate a sub-protocol in which they designate a different node to be the leader. Nodes that join the protocol at a later time must replicate past blocks and protocol state from existing nodes before they participate in the consensus protocol.
+
+The SmartBFT protocol differentiates itself from BFT-SMaRT by having augmentations that make it fit for a production enterprise deployment: The most important aspect in its production readiness is its dynamic reconfigurability. Nodes can be added to the protocol or removed from it without any downtime required. Another improvement that was put in place to guarantee smooth end user experience, is that non-leader nodes detect a leader crash early on thanks to periodical heartbeats sent by the leader, without relying on client-initiated transactions timing out, as done in SmartBFT’s predecessor.
+
+Furthermore, SmartBFT includes improvements that make it especially useful for blockchain applications: Its block finalization also collects signatures on blocks from a majority of nodes. This way, the blocks’ authenticity can be verified by other parts of the system, not only by nodes that participate in the consensus protocol. This fact is important for minimizing the required bandwidth for peer nodes to synchronize the blockchain from the ordering service, as there is only a need to replicate the blocks from a single ordering service node. 
+
+The downside of the protocol compared to other derivatives of PBFT is that it has no pipelining - the leader node can only propose a block once the previous block was finalized. By sacrificing some performance, SmartBFT reduces complexity and makes it easier to implement and integrate into Fabric. The performance of SmartBFT integrated into Fabric has been measured at 2,000 transactions per second for a 4 nodes deployment, but it can vary depending on the node hardware resources, and the bandwidth and latency of the network.
+
+Why build SmartBFT and not incorporate an existing consensus library into Hyperledger Fabric?
+
+As mentioned earlier, SmartBFT is based on BFT-SMaRT, which is a peer reviewed and established algorithm in the scientific community. Its distinguishing features do not influence any algorithmic aspect, but make its deployment in a production setting feasible.
+
+Building a consensus library is more than implementing its algorithm according to a paper. It is also designing how its lifecycle, storage and networking integrates into the application that consumes it (in our case, Fabric).
+
+Using a third party consensus library often forces the application to adapt to the lifecycle of the consensus library in the best case, and in the worst case may even conflict with rules and invariants that the application possesses. 
+
+A simple example of that is block pipelining and dynamic reconfiguration. In Fabric, reconfiguration may influence verification rules of blocks, and these blocks therefore need to be verified by rules that are encoded in blocks which are themselves not yet finalized. It is very uncommon for a consensus library to expose such fine grained control over itself to the application that consumes it, but if it does, then incorporating that consensus library requires intimate familiarity with it, which is often only available to its developers.
+
+Another aspect is long term compatibility: a consensus library is a vital dependency of an application. Should the developers of the library decide one day to change the API or semantics of the library in a way that breaks integration with the application, the developers of the application would be left with two bad choices: To either fork the library and maintain an unfamiliar codebase themselves, or to freeze the dependency version and not benefit from vulnerability fixes and bug fixes. On the other hand, developing an in-house consensus library ensures it would always fit Fabric.
+
+The development of the SmartBFT library and its gradual integration began in mid 2019 and a preliminary version of it (as an open source fork of Fabric) was available as early as 2020. 
+
+Eventually in 2022, after the project matured and was deployed in production by early adopters, Fabric open source community decided to incorporate its integration into the official Fabric project.
+
+Where can one find more information about SmartBFT?
+
+A paper introducing SmartBFT appeared in “IEEE International Conference on Blockchain and Cryptocurrency” 2021, and is available online. The SmartBFT library was an open source project from the get-go, is licensed under the Apache-2.0 licence and is available on GitHub as a Hyperledger labs project. So far, two webinars have been recorded - one that presents the architecture and design of SmartBFT, and another that shows a live deployment of it on Kubernetes.
+
+What can Hyperledger Fabric network administrators expect when operating a SmartBFT ordering service? Is it more complex than operating a Raft-based ordering service? Are there more resources needed?
+
+Thankfully, operating a SmartBFT ordering service is very similar to operating a Raft-based ordering service. In fact, the lifecycle of adding and removing nodes, and configuring them is identical to the Raft-based ordering service. 
+
+The only difference are the fields in the channel configuration that correspond to the consensus protocol. A tutorial on how to administer a SmartBFT ordering service is available online as part of the official Fabric documentation.
+
+In the Raft protocol, one must run 2F+1 nodes in order to withstand F (CFT) failures. The minimal fault tolerant deployment is 3 nodes, whereas the recommendation for production is at least 5 nodes, in order to be able to tolerate one failure while one node is down for maintenance. In SmartBFT, one must run 3F+1 nodes in order to withstand F (BFT) failures. This means that the minimal fault tolerant deployment is 4 nodes, whereas the recommendation for production is at least 7 nodes. In addition, SmartBFT consumes more network bandwidth and has larger latency. For more details see the SmartBFT paper.
+
+For those who wish to try out the SmartBFT ordering service themselves in a toy environment, be sure to check out the nano-bash sample tutorial which now supports SmartBFT, as well as go through the BFT section in the test network tutorial. 
+
+Community Quotes
+
+“Since 2018, Circulor has pioneered the use of Hyperledger Fabric to build decentralised trust in complex industrial supply chains. To make the energy transition possible, this type of approach and technology is particularly needed in the areas of critical mineral extraction, processing, recycling, and production. Hyperledger Fabric continues to be regarded as the enterprise standard blockchain, and advancements such as these help industrial collaboration, especially in building more resilient, responsible, and sustainable supply chains.” - Douglas Johnson-Poensgen, CEO of Circulor
+
+“Hyperledger Fabric v3.0 marks a significant leap forward in enterprise blockchain technology. With the introduction of the Byzantine Fault Tolerant (BFT) ordering service, Espeo Software expects an enhancement in the resilience and security of our DLT solutions. The release reflects the growing maturity and evolution of Hyperledger Fabric and the project ecosystem hosted by LF Decentralized Trust. Here at Espeo Software, we are eager to leverage these advancements to deliver more robust blockchain projects for our clients.” - Dominik Zyskowski, Consulting Director, Espeo Software
+
+“At Fujitsu, by operating from several centers of excellence in regions such as Iberia, India, and Japan, we gain a global perspective that allows us to better understand both local businesses and those with international structures. This enables us to offer more accurate and tailored solutions and now we are better equipped than ever to help clients embrace blockchain as a core part of their enterprise strategy. The release of Hyperledger Fabric 3.0 enhances our ability to address the challenges of our clients with cutting-edge blockchain technology, while also allowing us to securely and efficiently integrate blockchain with other technologies such as AI, ML, and IoT, solidifying our role as the ideal partner for their digital transformation on a global scale. Hyperledger Fabric’s new features support our mission to deliver scalable, secure, and robust decentralized solutions, making us the ideal partner for organizations looking to integrate blockchain seamlessly into their operations. Together, we are moving toward a future where blockchain enhances every aspect of enterprise systems.” - Marcos Carrera, Head of Blockchain & Web3, Fujitsu 
+
+"At Hitachi, we've been hands-on in the development and deployment of Hyperledger Fabric since day one. With each new release, Hyperledger Fabric has helped advance the enterprise blockchain market. It is already the backbone for highly-reliable blockchain applications around the world. Now, version 3.0 adds a new, highly anticipated level of resilience that will fuel more applications and wider adoption." - Kei Fukuta, Director of Blockchain Planning Department at Hitachi and LF Decentralized Trust Governing Board Member
+
+“Data integrity and transparency are critical to AI’s true scale and adoption. Hyperledger Fabric 3.0 brings robust industrialization for organizations to use blockchain as a data integrity and data trust layer for their AI initiatives. IBM’s contribution to the Fabric 3.0 release continues with its commitment to supporting clients to deploy at scale.” - Shyam Nagarajan, Global Partner, Responsible AI, IBM Consulting
+
+Oracle customers have been using Hyperledger Fabric as part of the Oracle Blockchain Platform since 2018. Hyperledger Fabric 3.0 is a significant advancement for permissioned enterprise blockchains. As our customers focus on high-value decentralized applications in central bank digital currencies, real-world assets, deposit tokens, and other forms of digital assets, there’s greater desire for Byzantine Fault Tolerant consensus support. SmartBFT consensus option enables greater resilience against fraud and malicious attacks, and it couldn’t be timelier. This enhanced level of resilience and security will be welcomed in financial services and other industries and will hasten their adoption of tokenization solutions in permissioned blockchain networks.” - Mark Rakhmilevich, vice president, Product Management, Mission-Critical Systems, Oracle
+
+"Hyperledger Fabric 2.x has been instrumental in supporting multi-tenant enterprise Blockchain-as-a-Service platforms. These platforms underpin critical use cases such as item traceability, invoice reconciliation, and rewards management, among others. The upgrade to Fabric 3.0 is poised to be a game-changer for blockchain platforms. With the introduction of Byzantine Fault Tolerance (BFT), the resilience and security of blockchain networks will be further enhanced." - Som Roy, Blockchain Engineering Leader
+
+ 
+
+ 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

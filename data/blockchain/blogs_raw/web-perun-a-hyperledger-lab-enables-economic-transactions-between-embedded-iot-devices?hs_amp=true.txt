@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Perun, a Hyperledger Lab, enables economic transactions between embedded IoT devices
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Perun, a Hyperledger Lab, enables economic transactions between embedded IoT devices
+
+        
+
+        
+           Written by the Perun community | Jun 5, 2024 2:42:36 PM 
+        
+
+        
+          Introduction
+
+In recent years, blockchain technology has gained significant attention across various industries. One of the long-promoted use cases for blockchain and for the beginning of the machine economy are machine-to-machine (M2M) payments. Here, machines can autonomously transact with each other using digital goods and information. However, scaling and enabling this vision to a realistic and practical level has been a challenge so far. 
+
+This is where the Perun IoT concept, which was developed as part of the work at the core of Perun, a Hyperledger Lab, comes into the picture. This concept is a groundbreaking solution that aims to enable M2M payments on any blockchain supported by Perun. Essentially, light-weight embedded devices will be able to operate state-channels. With its unique features and capabilities, the Perun framework paves the way for a new era of scalable and efficient machine-based transactions.
+
+Traditionally, machines have been viewed as passive entities that serve specific functions within larger systems. However, with the current state of the Perun framework, embedded machines or their economic agents and profit centers can actively participate in a digital economy by an integration that enables economic transactions between them. This concept has been extensively discussed and highlighted in numerous articles, emphasizing the potential benefits and opportunities it brings.
+
+The Perun IoT architecture consists of several concepts, namely IoT Adoption, IoT Adoption Watcher and Wire encoding abstraction. The goal of these concepts is to make the architecture and needed components more flexible and able to distribute them among hardware borders. At the end, the framework enables alternative library implementations for state-channel handling as realized in the described Perun-embedded library, which is implemented in Rust. A more detailed overview and explanation including a first showcase can be found in this Hyperledger talk. A demo video showcasing the embedded functionality can be found here.
+
+Perun now addresses a critical need for a lightweight, scalable, and secure solution that empowers machines to engage in autonomous financial transactions. By leveraging the Perun IoT concept, businesses and organizations can unlock new possibilities in different sectors, including supply-chain management, logistics, embedded IoT, and more. The vision of machine-to-machine payments becoming a reality opens up exciting opportunities for streamlining processes, reducing costs, and creating new business models. With the Perun IoT concept, economic interactions between machines are going beyond theory and becoming an actionable solution with tangible benefits.
+
+In this article, we will delve deeper into the functionality and features of the Perun-embedded library as part of the overall IoT concept, exploring its potential applications, technical aspects, and the benefits it brings to the table. By understanding the significance of Perun-embedded in the context of M2M payments, we can grasp the transformative potential it holds for various industries and the future of autonomous machine transactions. 
+
+Overview of Perun-embedded
+
+In order to demonstrate the practicality of Perun-embedded in real-world applications, a scenario has been created in which an electric car goes to a charging station for recharging. This scenario showcases its seamless interaction with other devices
+
+In the honest case of the car charging scenario, the focus is on demonstrating the transparency and reliability of transactions facilitated by Perun-embedded. Let's delve into each step of this case:
+
+	Channel proposal from go-side: The electric car initiates a channel proposal, representing its intention to purchase electric power from the charging station at a certain price. It is important to note that in this demo, the proposal is automatically accepted for the purpose of showcasing the process. This does not have to be given in real-world practice. The charging station might reject the request.
+
+
+	Status and balances are checked for both participants.
+
+
+	Channel update from the charging station: The charging station initiates a channel update by requesting a micropayment after sending a small unit of energy. This payment request is accepted by the electric car and the latest state of the channel is updated to reflect the money transfer. The charging station provides another unit of electric energy, followed by a payment request and the cycle continues. The demo highlights that the application has the freedom to customize the payment request based on the specific requirements and the ability of the electric car to make micropayments directly to the charging station in real-time.
+ 
+	Normal close from go-side: The electric car charging scenario concludes with a normal close from the electric car side, signifying the completion of the transactions. The demo highlights the final change in the current status, confirming the successful closure of the channels.
+
+
+In the malicious case of the electric car charging scenario, the focus shifts to highlighting the resilience and security features of Perun-embedded in the face of potential adversarial actions. Let's explore the steps involved in this case:
+
+	Channel proposal, as above
+
+
+	Status and balances check, as above
+
+
+	Channel update from the electric car side and payment request from the side of the service, as above.
+
+
+	Force-close from the device-side: To simulate a potentially malicious action (for example the electric car does not accept a payment request), the charging station triggers a force-close of the channel. This force-close serves as a mechanism to protect the interests of participants in the event of adversarial behavior.
+
+
+	Change in current status: The demo captures the change in the current status following the force-close. This reflects the updated state of the channel and reinforces the resilience of Perun-embedded in handling such scenarios.
+
+
+	Waiting for force-close/dispute resolution: Following the force-close, a dispute resolution process (on-chain) takes place.
+
+
+	If an agreement is found on-chain, then the transaction can take place, otherwise, the interaction is entirely aborted, and the balances are settled as per the state finalized in the dispute resolution process.
+
+
+The malicious case within the electric car charging scenario effectively demonstrates the robustness and security measures implemented by Perun-embedded. It showcases its ability to handle potentially malicious actions while maintaining the integrity and reliability of the channel-based transactions.
+
+For a closer look at user interaction in the EV charging use case, explore the Perun Volt demo app. It demonstrates the potential of Perun Channels in making micropayments for electric vehicle charging both seamless and secure focusing on the benefits of offline payments, machine-to-machine communication, and efficient transactions.
+
+Conclusion
+
+In conclusion, the Perun IoT concept including the embedded library represents a significant advancement in the field of machine-to-machine transactions, offering features which have the potential to revolutionize the machine-based economy.
+
+By enabling machine-to-machine payments on any blockchain it supports, Perun provides a scalable solution for long-promoted use-cases in the blockchain space. Allowing machines to participate as economic agents and profit centers by integrating Perun, it opens up new opportunities for innovation and efficiency.
+
+This article highlighted the Electric Car Charging scenario, showcasing how the Perun-embedded library, which facilitates transparent and reliable transactions in both honest and malicious scenarios. The demo illustrates the seamless channel proposals, updates, and closures, emphasizing the robustness and security of the Perun-embedded library in various use cases.
+
+Get Involved with Perun 
+
+Perun, a Hyperledger Lab, is a joint DLT Layer-2 interoperability and scaling project contributed by Robert Bosch GmbH’s project “Economy of Things” and PolyCrypt. PolyCrypt is a spin-off of the Technical University of Darmstadt, Germany (TUDa).
+
+If you want to learn more about the framework, please join our Hyperledger Meetup “Exploring Machine to Machine Payments with the Perun IoT Framework” on June 26 at 6:00 PM CEST/9:00 am PDT. Please also refer to the white paper and our last Hyperledger labs post or the Hyperledger Global Forum presentation on Perun or reach out via our Discord channel. (New to Discord? Go here for more and to get signed up.)
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

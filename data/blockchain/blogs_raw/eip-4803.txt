@@ -1,0 +1,278 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-4803: Limit transaction gas to a maximum of 2^63-1
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+      🚧 Stagnant
+    
+    
+    
+    
+    
+      Standards Track: Core
+    
+  
+  
+    
+      EIP-4803: Limit transaction gas to a maximum of 2^63-1
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  Valid transactions must have a reasonable gas limit
+
+  	Authors	Alex Beregszaszi (@axic)
+	Created	2022-02-02
+	Discussion Link	https://ethereum-magicians.org/t/eip-4803-limit-transaction-gas-to-a-maximum-of-2-63-1/8296
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Motivation
+	Specification
+	Rationale
+    	2^63-1 vs 2^64-1
+	Current limit
+
+
+  
+	Backwards Compatibility
+	Security Considerations
+	Test Cases
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+Limit transaction gas to be between 0 and 2^63-1.
+
+  
+    
+      
+      
+         Motivation
+      
+      
+    
+
+
+The gas limit field in the transaction is specified to be an arbitrary long unsigned integer, but various clients put limits on this value. This EIP brings a reasonable limit into consensus.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+Introduce one new restrictions retroactively from genesis: any transaction is invalid and not includeable in a block, where the gas limit exceeds 2^63-1.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+  
+    
+      
+      
+         2^63-1 vs 2^64-1
+      
+      
+    
+
+
+2^63-1 is chosen because it allows representing the gas value as a signed integer, and so the out of gas check can be done as a simple “less than zero” check after subtraction.
+
+  
+    
+      
+      
+         Current limit
+      
+      
+    
+
+
+Due to the nature of RLP encoding, there is no fixed upper bound for the value, but most implementations limit it to 256-bits. Furthermore, most client implementations (such as geth) internally handle gas as a 64-bit value.
+
+  
+    
+      
+      
+         Backwards Compatibility
+      
+      
+    
+
+
+While this is a breaking change, no actual effect should be visible.
+
+
+Before EIP-1559 it was possible to include transactions with gasPrice = 0 and thus the gasLimit * gasPrice <= accountBalance calculation could have allowed for arbitrarily large values of gasLimit. However, the rule that the transaction list cannot exceed the block gas limit, and the strict rules about how the block gas limit can change, prevented arbitrarily large values of gasLimit to be in the historical state.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+None.
+
+  
+    
+      
+      
+         Test Cases
+      
+      
+    
+
+
+TBA
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Alex Beregszaszi (@axic), "EIP-4803: Limit transaction gas to a maximum of 2^63-1 [DRAFT]," Ethereum Improvement Proposals, no. 4803, February 2022. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-4803.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

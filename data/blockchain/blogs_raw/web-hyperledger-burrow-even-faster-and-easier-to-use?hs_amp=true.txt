@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Burrow - Even faster and Easier to Use! – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Burrow - Even faster and Easier to Use! – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Aug 29, 2018 9:00:00 AM 
+        
+
+        
+          We’ve just released a new Burrow, and it’s a good one! 
+ 
+Hyperledger Burrow is built to be a unitary binary, and a fast, lightweight and easy to get to grips blockchain framework. Over the past year Hyperledger Burrow has been refactoring itself into an even lighter and more agile network platform – and with the new v.0.21.0 it’s starting to really fire on all four cylinders. The latest version can be downloaded from here.  
+ 
+We have integrated a number of abstractions with the goal of making it even easier for developers looking to leverage the Ethereum Virtual Machine in a permissioned context to get started with the actually important aspect of building any business-for blockchain use case: namely the business logic encoded in the smart contract layer. 
+ 
+This release and the others preceding it make some landmark improvements to the Burrow architecture, both in its tool and the node itself. Most notable amongst these refinements are: 
+ 
+ 
+	Rewiring with protobuf types and GRPC interfaces across the board to facilitate robust integration points and RPC layers (replacing previous multiple RPCs)
+	Addition of a powerful ETL / execution event service to drive downstream services from smart contract events and to populate queriable datasets from smart contract objects
+ 
+	An integrated and harmonized key-signing daemon that can perform as a key-holding delegate for other services 
+ 
+	Massively improved burrow helm charts for Kubernetes which increase the flexibility and ease of booting complex networks within the popular container orchestration system.
+	Bos (Monax’s deployment tool) has now been integrated as part of Burrow Deploy. Significantly, this includes an Apache2 licenced ABI which we architected from scratch to the Ethereum community’s specification. This enables various Hyperledger projects to build Ethereum smart contract aware systems.
+	Monax’s burrow.js library has been refactored to utilize Burrow’s new GRPC interface, bringing noticeable improvements to the overall developer experience (not to mention better documentation).
+
+ 
+One of the most important changes for Burrow is a completely reworked governance transactions framework (or, as we call it, govTx). govTx allows network operators to modify validator sets, native tokens, permissions and more all within the context of a live network. While the work provides the foundation for further on-chain governance policies including committee votes and DPOS-style decision-making (which could be elegantly operated in combination with Tendermint’s upcoming multi-signature validation optionality), what is more important for developers to understand is that govTx allows them to evolve their networks over time from POC to Pilot to Alpha to Beta to Production without needing to change their chain (unless they want to). In upcoming releases we will be continuing to work towards more flexible on-chain governance primitives, namely smart contract upgrades by popular vote, validator set control of permissions and token distribution
+ 
+The Burrow maintainers have also worked hard on how Burrow signs transactions in the context of advanced applications. Part of this work included the ability to implement address-based signing via Burrow Deploy and transaction server either server- or client-side. Another part of this work involved improving safety in the circumstances where Burrow had multiple authorized tenants seeking to sign transactions on its behalf.
+ 
+These developments set the bar high and give the Burrow community a strong base on which to build future releases. What we have in store next for Burrow is just as significant and will be in the following areas:
+ 
+	A continued focus on chain stability and operability; including hardening, testing, quality assurance, and security of the codebase as the systems that are built on it continue to iterate toward production status.
+	We will also be focusing on how Hyperledger Burrow’s permissioned EVM runtime can continue to be leveraged by and complement a variety of other complex networks from both the public blockchain sector as well as the enterprise blockchain world. 
+
+ 
+As multiple systems, including the Agreements Network whose development is initially being led by Monax, built on Hyperledger Burrow continue to iterate towards production capacity the maintainers look forward to continuing to work with the community to ensure that Burrow remains the easiest and quickest way to run Ethereum smart contracts in a permissioned context.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

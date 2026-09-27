@@ -1,0 +1,556 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-09-17 Besu Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+	2019-09-17 Besu Contributor Call
+
+
+
+
+
+	2019-10-01 Besu Contributor Call
+
+
+
+
+
+	2019-10-15 Besu Contributor Call
+
+
+
+
+
+	2019-10-29 Besu Contributor Call
+
+
+
+
+
+	2019-11-12 Besu Contributor Call
+
+
+
+
+
+	2019-11-26 Besu Contributor Call
+
+
+
+
+
+	2019-12-10 Besu Contributor Call
+
+
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2019-09-17 Besu Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2019-09-17 Besu Contributor Call
+
+	Danno Ferrin
+
+
+
+	Brett Henderson
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Sept 15, 2019 by Brett Henderson
+
+
+
+
+
+
+
+
+
+
+Link to meeting:Â https://consensys.zoom.us/j/199741148
+TimesÂ 
+	6pm Monday (16 Sep) Los Angeles
+	9pm MondayÂ (16 Sep) New York
+	1am Tuesday (17 Sep) UTC
+	3am Tuesday (17 Sep) Paris/Berlin
+	11am Tuesday (17 Sep) Brisbane
+
+Agenda
+	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	General Announcements	Devcon V 8-11 Oct 2019 - Osaka Japan
+
+
+	Release updates	1.2.3 released
+	1.3.0-RC is up next
+
+
+	Work Updates	ETC Cooperative proposal to add ETC support (Bob Summerwill?)
+
+
+	Other Business	Code repo has been migrated (https://github.com/hyperledger/besu)	DCO (Developer Certificate of Origination Checks) will be mandatory.
+
+
+	CI/CD update
+	Initial Maintainers
+	How to become a maintainer
+
+
+	Future Topics	TBD
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 33, "requestCorrelationId": "1030bd2c280a4dd6b29b40f3c121d8ed"}

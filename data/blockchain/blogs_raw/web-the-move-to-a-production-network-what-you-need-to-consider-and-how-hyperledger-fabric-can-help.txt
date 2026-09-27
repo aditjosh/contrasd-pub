@@ -1,0 +1,854 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The move to a production network: What you need to consider and how Hyperledger Fabric can help – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            
+                        
+                    
+
+                
+                The move to a production network: What you need to consider and how Hyperledger Fabric can help
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Nov 2, 2020
+                    
+                
+
+            
+
+            
+            
+                Blockchain is a distributed ledger technology that provides a shared, immutable, and transparent history to the participants in the network of all the actions that have happened. Currently, different types of blockchain technologies exist, including private permissioned implementations that allow governance of the network participants and secure management of sensitive data. 
+ 
+Blockchain has already demonstrated its potential in numerous POCs and implementations in production in Switzerland and abroad. Deployments are live in various business areas such as supply-chain management, finance (e.g., payments in crypto-currencies, tokenization), healthcare data management, ticketing services, eVoting, cars and planes configuration and maintenance, among others. Increasingly, companies are moving past the initial stage of  testing whether  blockchain is a good solution to a specific business problem (i.e., developing a POC) and are starting the work of adopting this technology in production networks. 
+ 
+The move from a successful POC implementation to a production deployment brings many added challenges such as ongoing management, integration (on both the technology and business process fronts), security and budgeting. Here are some key areas where advanced consideration and preparation can smooth a production implementation:
+ 
+	Deployment options for running and maintaining the blockchain nodes and other components of the blockchain network.
+
+ 
+Blockchain technology is often employed to ensure transparent and secure transactions executed between parties without fully aligned interests. Instead of relying on a centralized “trusted” party, which can become a target for the internal and external cyber-attacks, parties opt to set up a distributed network. This blockchain network consists of replicated nodes that execute smart contracts – programs defined by the business logic of the application. Depending on the business requirements, a specific type of blockchain implementation (i.e., permissionless/permissioned, private/public, or hybrid) shall be chosen. This choice also impacts the network configuration and maintenance. When the nodes are located on premises, execution of smart contracts can be verified by the parties directly. However, infrastructure maintenance costs and shortage of specialists “in house” can complicate such an approach. The nodes can also be deployed in the cloud; multiple companies provide such services. Working with service providers simplifys management. However, it also requires careful selection of the provider(s) based on the sensitivity level of data that are being processed by the smart contracts, regulations, and physical location of the hosting data centers.
+ 
+	Set up or integration of identity management approach.
+
+ 
+For the permissioned blockchain technology implementation, identity management service plays a crucial role. Often, even as a part of distributed ledger frameworks, identity management services are implemented in a centralized manner, which poses serious security threats and can become a single point of failure. Setting up a distributed identity management service, using blockchain-based approach for identity management (such as self-sovereign identity solutions) and implementing privacy-preserving approaches (using advance cryptographic primitives such as zero-knowledge proofs) are the approaches that must be considered for the real-world implementation. 
+ 
+	Transformation of  business processes into chaincode (smart contracts) 
+
+ 
+Transforming paper-based contracts and business processes into computer programs can be challenging and may require compliance with domain-specific regulations (i.e., Drug Supply Chain Security Act in US, Falsified Medicines Directive of the European Union in the pharmaceutical sector). Making sure the business processes are properly transferred and are available for  verification and audits are cornerstone requirements for the successful integration of the blockchain. To understand and translate specifics of a company’s business area into smart contracts, collaboration between the company and blockchain specialists with the specific domain knowledge and legal expertise is required.
+ 
+	Data management approach.
+
+ 
+Replication of the code execution between multiple parties brings transparency into blockchain implementations. At the same time, more parties may access the sensitive data that is required for the execution of the smart contracts deployed on the nodes. In the course of development of the blockchain, a number of approaches for hybrid data management have been proposed. These approaches assume that only part of the data is managed within the blockchain network, and most of the data, especially of a sensitive nature, is stored and processed locally. Private data collections, hardware security modules, data encryption are examples of approaches that aim to ensure data security and user privacy.
+ 
+	Estimation of the infrastructure and maintenance costs.
+
+ 
+Once the above points are considered, and preliminary choices are made, it’s easier to estimate the effort and costs of implementing and maintaining a system. It is important to ensure integration and interoperability with other non-blockchain-based components. Detailed specifications of SLAs and timelines in the dynamic blockchain environment must not be overlooked.
+ 
+Working with customers, we have found that Hyperledger Fabric, one of the most mature permissioned blockchain technology platforms implementations, is well architectured to help companies to make the leap from POC to a successful production deployment.
+ 
+Hyperledger Fabric networks can be set up on the customer premises and in the cloud, including multi-vendor cloud environments. Deployment and maintenance of the robust and secure blockchain-based POCs and real-world systems can be achieved in close collaboration between the company and a vetted service provider that has deep experience helping enterprises successfully adopt Fabric.
+ 
+With Hyperledger Fabric, business logic can be “translated” into the chaincode using one of the following general-purpose languages: Go, node.js, or Java. Fabric also provides a set of built-in tools for sensitive data management, such as private data collections and channels, as well as flexibility in the choice of identity management approach, such decentralized identity management and anonymous credentials. 
+ 
+Being aware of the challenges, knowing how to address them, and working together with a Hyperledger Certified Service Provider, like Swisscom, are key components to the successful deployment of a blockchain-based project in production.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

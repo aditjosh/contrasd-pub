@@ -1,0 +1,186 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SoftSwap implementation questions - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      SoftSwap implementation questions
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            eknir
+            
+          
+
+          
+
+
+
+          
+              
+                July 22, 2019,  3:47pm
+              
+              #1
+          
+        
+        
+          Tron and Fischer (Generalised swap swear and swindle games, 2019) introduce the chequebook with ‘soft’ guarantees. Currently, the chequebook repository (see: GitHub - ethersphere/swap-swear-and-swindle: Contracts for Swap, Swear and Swindle. Swap is a protocol for p2p accounting. This is the basis for Swarm’s incentivization model.) implements hard-deposits, but attempts were made to implement soft-deposits.
+
+These attempts raised the following questions:
+
+	What happens if A publishes an allocation table for the current epoch which doesn’t contain B’s most recent claim?
+	Why doesn’t B lose everything secured by soft deposits? According to the paper only the increased amount is at risk, but what makes the “older” table more valid than the new one which doesn’t have B at all?
+	What happens if A signed off multiple allocation tables for the same epoch?
+	What prevents A from simply making an alternative table with just one peer (himself) that gets the whole allocation?
+	How is the instant payout described in 2.4.3 supposed to be secure? Surely without an ability to contest a table A can just take the money himself?
+	How would a peer “claim” their part of the soft deposit? Which steps are involved?
+
+
+While an answer to the questions above is not directly needed for implementation, a guideline on how we will tackle the questions above is desirable, as a chequebook with off-chain solvency guarantees (soft-deposits) is very desirable (if not necessary) for a successful usage of the chequebook smart-contracts in the context of SWARM.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                July 22, 2019,  4:26pm
+              
+              #2
+          
+        
+        
+          I think the whole ‘soft deposit’ scheme is unworkable in practice as it requires its own consensus algorithm among the participants.
+
+I had no idea anyone was trying to implement it. I would not recommend working on it until a real need for sth like that is demonstrated.
+
+It is a not fully spec-ed optimisation to an optimisation of a not-yet-deployed system. It is, in my view, entriely premature.
+
+…
+
+        
+
+
+        
+           
+1 Like
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

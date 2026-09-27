@@ -1,0 +1,565 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Permissioned chain performance testing - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+	2024 - Besu Performance Improvements since the Merge
+
+
+
+
+
+	Fast sync optimisation
+
+
+
+
+
+	Memory usage investigations on 23.7.3-RC
+
+
+
+
+
+	Permissioned chain performance testing
+
+
+
+
+	QBFT, Bonsai, and Snap-Sync testing
+
+
+
+
+
+	QBFT Performance
+
+
+
+
+
+
+
+	Q4 2022 Stability and Performance Improvements
+
+
+
+
+
+	Reduce Memory usage by choosing a different low level allocator
+
+
+
+
+
+	Testing Taskforce Brainstorming
+
+
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Permissioned chain performance testing
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Permissioned chain performance testing
+
+	Matthew Whitehead
+
+
+
+
+
+Owned by Matthew Whitehead
+
+
+Last updated: Apr 18, 2024
+
+
+
+
+
+
+
+
+
+
+This section includes various setup and testing results for different permissioned chain scenarios. See sub-pages for the different scenarios currently being exercised.
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Testing Distributed Systems
+Testing Distributed Systems
+
+BootCamp Russia (archived)
+
+
+
+More like this
+
+
+
+
+
+
+Hyperledger Caliper testability and robustness improvement
+Hyperledger Caliper testability and robustness improvement
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan - Hyperledger Caliper testability and robustness improvement.
+Project Plan - Hyperledger Caliper testability and robustness improvement.
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+One-stop-shop Hyperledger Fabric performance analysis with Hyperledger Caliper
+One-stop-shop Hyperledger Fabric performance analysis with Hyperledger Caliper
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Project plan - One-stop-shop Hyperledger Fabric performance analysis with Hyperledger Caliper (2023)
+Project plan - One-stop-shop Hyperledger Fabric performance analysis with Hyperledger Caliper (2023)
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Performance analysis and Benchmarking of Besu using Caliper with complex workloads
+Performance analysis and Benchmarking of Besu using Caliper with complex workloads
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "2f27cf05bb3b4b51a589c2e1f88b8b89"}

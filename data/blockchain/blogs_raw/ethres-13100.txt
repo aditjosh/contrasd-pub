@@ -1,0 +1,217 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Implementing native rollups with precompiled contracts - Layer 2 - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Implementing native rollups with precompiled contracts
+    
+
+
+      
+          
+            
+              
+              
+                Layer 2
+              
+            
+            
+
+
+
+        
+            zk-roll-up
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                nanfengpo
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    July 20, 2022,  7:10am
+                  
+                  
+
+1
+              
+            
+            
+              The definition of enshrined rollups suggests to ZK-SNARK everything, including the execution layer. Here we propose an alternative design that launches a specific number (like 64) of rollups on the execution layer by using precompiled contracts. We call it native rollups, which will bear part of the advantages of enshrined rollups.
+
+
+Precompiled Contracts & Rollup Slots
+
+There are 64 pre-deployed contracts as “rollup slots,” which will be called directly by batch & proof transactions from rollups. These slots will call a precompiled contract for proof verification and update local state roots if successful. The precompiled contract can accelerate the verification of zero-knowledge proofs with optimizations in binary codes.
+
+
+
+流程图1167×649 54.5 KB
+
+
+
+
+Settlement Priority & Batch Reward
+
+Batch & proof transactions successfully updating the state roots in rollup slots will be rewarded (to the block producer) with coins so that they will have a higher priority in the mempool and settle immediately. If not successful, they will be charged with gas, which is relatively low due to using the precompiled contract.
+
+            
+
+
+            
+              
+5 Likes
+            
+
+            
+                
+
+                      
+                        Native Rollup: a new paradigm of zk-Rollup
+                        
+
+
+            
+              
+                shakeib98
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 13, 2022,  5:41pm
+                  
+                  
+
+2
+              
+            
+            
+              Is this a kind of setllement rollup? And does your design also supports arbitrary code execution through any SC language?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

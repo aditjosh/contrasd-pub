@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Helping A Community Grow By Pruning Inactive Projects – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Helping A Community Grow By Pruning Inactive Projects – Hyperledger Foundation
+
+        
+
+        
+           Written by Ry Jones and David Boswell, Community Architects | Mar 15, 2023 9:00:00 AM 
+        
+
+        
+          It may sound counterintuitive, but removing projects from an open source community is a critical part of helping that community grow. All projects have a life cycle, and it is natural, even for highly successful projects, to have development slow down or for user adoption to peak and then decline. Life cycle planning happens inside of companies that produce proprietary software and should be part of open source community management plans as well.
+ 
+There are advantages that come from monitoring the status of projects and taking steps to wind down a project when projects become inactive. For example, it lowers the barrier to entry for people with innovative ideas. These ideas may or may not work out, and there should be no stigma around trying something that might fail. The alternative is to only accept new ideas that you feel are guaranteed to work out and that have enough resources dedicated to keep a project going indefinitely. That approach  will limit what new projects can get started in your community. As Linux Foundation Executive Director Jim Zemlin has said about  projects becoming inactive: “It’s a good reminder, though, that if we are not losing sometimes, we are not making enough bets and pushing hard enough.”
+ 
+Removing inactive projects also helps create clear pathways to connect potential users and contributors to the projects that are active. In the early days of open source, people coming into a community had an easier time navigating their way to projects where they can add value. 
+ 
+ As open source development has become accepted in more and more industries, the landscape has become more complex. The Octoverse 2022 report states that there were a staggering 52 million new open source projects started by developers on GitHub last year alone. Sorting through this amount of code can be an overwhelming experience that can be eased by archiving those projects that are no longer under development.
+ 
+There is also little downside to winding down a project because the code is still available and can be reactivated if people choose to do so. Ending a project can even prompt people who were using a project to become contributors. For people using open source code, it may seem like your contribution isn’t needed when maintainers are doing development and creating regular releases. However, if development stops on a project you rely on, it can be a good reminder that open source communities are driven by people with an interest in and a need for a project. We’ve seen this happen with Hyperledger Explorer. When the original maintainers had a shift in priorities that took them away from the project, it was archived because no one else stepped in to keep it going.  As soon as it was wound down, we heard several people say “Hey, I was using that,” which gave us a chance to talk with them about how they could restart and contribute to the project.
+ 
+How Pruning Happens At The Hyperledger Foundation
+ 
+Hyperledger Foundation is hosted by the Linux Foundation where pruning inactive projects is considered a best practice. For instance, CNCF has archived projects before, stating that the process of reviewing project activity and winding down inactive projects is a sign of a healthy open source community. In this post, we will look in more detail about how the process happens in the Hyperledger community, but the process will be fairly similar with small differences for other communities.
+ 
+ 
+ 
+  
+ 
+
+ 
+Hyperledger’s Technical Oversight Committee is in charge of making decisions about each step of the lifecycle of a project – including starting a new project as well as deciding to end of life projects. 
+ 
+TOC members need data to make their decisions so they ask all projects to submit quarterly reports about the status of their work. In cases where maintainers mention plans to end development in their report, it can lead to a straightforward discussion between TOC members and project maintainers where they decide to wind down a project. If a project becomes inactive and there is no one to submit a report, that is also a clear signal that a project may be inactive. TOC members have tools to investigate project status, including LFX Insights, Orbit and a tool to show the last commit on the default branch.
+ 
+Before 2022, the TOC had decided just once to end-of-life a project when they archived Hyperledger Composer in April 2020. As the Hyperledger Foundation has matured and more new projects have been started, we’ve also seen an increase in archiving projects. In 2022, Hyperledger moved four projects to end-of-life status: Hyperledger Avalon, Hyperledger Burrow, Hyperledger Explorer and Hyperledger Quilt.
+ 
+If you have been using any of these projects or are interested in the code, please feel free to take a look and reach out to us (email to: community-architects@) if you’re interested in restarting development. For instance, Hyperledger Explorer has been restarted as the blockchain-explorer lab, and people are looking into how to restart development to shape the direction of the code to meet their needs. If you’re interested in connecting with people to discuss next steps with blockchain-explorer feel free to join the #blockchain-explorer channel on Hyperledger’s Discord server.
+ 
+When we archive a project, it gets much less attention than when a new project launches, so we hope this post has given more attention to the projects that have been moved to end-of-life status and explains the decision making process behind these changes.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

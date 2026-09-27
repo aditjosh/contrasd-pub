@@ -1,0 +1,863 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Strengthening Hyperledger Indy and Self-Sovereign Identity – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Aries
+                            |
+                        
+                            Hyperledger Indy
+                            
+                        
+                    
+
+                
+                Strengthening Hyperledger Indy and Self-Sovereign Identity
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Jul 18, 2019
+                    
+                
+
+            
+
+            
+            
+                After working on the problem of identity online for more years than we care to admit, it is heartening to see that we are not alone: The identity community we’ve longed to see is here, and it’s transforming the world. In the months since Hyperledger Indy graduated to ‘production ready’ active status, we’ve seen an outpouring of digital identity business solutions come to market. 
+
+ 
+These accomplishments are due, in part, to the growth and maturity of the Hyperledger Indy code; but, equally, they wouldn’t have happened without a collaborative community of dedicated contributors passionate about changing the way identity works online. And their outstanding  work is not going unnoticed by the wider technology community: self-sovereign identity (SSI) has gone from “interesting idea” to “this looks promising” to “we need to implement this now.” 
+
+ 
+The Time for SSI Has Come
+ 
+Forrester’s recent “Top Recommendations for Your Security Program, 2019,” testifies to this, describing SSI as a “win” for customers and businesses, and urged chief information security officers  (CISO) to “Empower your customers to control their own identities via self-sovereign identity.” 
+
+They can do this because exchanging verifiable digital credentials is at the heart of SSI. This ends the need for massive data silos, honeypots, and unsecured data repositories housed at countless corporations and organizations. Instead, anyone can hold secure and verifiable information about themselves, and through Zero-Knowledge Proofs (ZKP), minimize the information they  decide to share with others. (ZKPs are an important type of advanced privacy-preserving cryptography now available in the open source community within the recently announced Hyperledger Aries project).
+ 
+This doesn’t just benefit consumers in terms of information sharing, businesses also get to avoid GDPR and regulatory compliance issues and benefit from much better security. Moreover, we’re finally starting to see the big tech companies come to the realization that the status quo isn’t working when it comes to data collection, and sooner or later, it will affect their bottom line. SSI is the disruptive technology that the industry has been waiting for.
+
+The Indy and Aries communities are driving this disruption in privacy and personal data by designing and building the protocols, technologies, and code that makes SSI possible. But moving beyond the code and building real solutions will require new companies. Like the Web 20 years ago, most of these will be startups who have a vision for this new way of interacting online.
+
+Nurturing the Digital Identity Community
+ 
+This is why we’re excited to be supporting the valuable work of the SSI community with the launch of the Self-Sovereign Identity Incubator. 
+ 
+
+ 
+  
+ 
+
+ 
+Designed to help organizations and companies learn how to use code from Hyperledger Indy to create verifiable credential exchange products and SSI solutions, this intensive 12-week program based in San Francisco will be a bootcamp for identity entrepreneurs and start-ups. It also gives participating companies $180,000 in investment and the comprehensive hands-on technical support and mentoring they need to realize their business ideas and bring their products to market. 
+
+ 
+At a point where SSI is reaching critical mass, we want to see the identity community grow bigger and stronger and build the products that take SSI to the masses. As Sovrin Foundation Executive Director and CEO Heather Dahl recently noted  at the New Context Conference in Tokyo, an event founded in 2005 by Digital Garage co-founder and Director of MIT Media Lab, Joi Ito,  “Self-sovereign identity is the next disruptive innovation; it changes the very nature of how people connect with the companies and services that they rely upon online.” 
+ 
+It’s great to see the SSI Incubator already receiving its first batch of applications, with many from the same Hyperledger community Sovrin first worked with to donate the source code to Hyperledger Indy. These are the same members who we see contributing and maintaining the code repositories for Hyperledger Indy and Aries today, 
+
+ 
+These products are poised to transform the fundamental way the Internet runs and the way we will use it to the benefit of everyone. With our years of experience and depth of knowledge about digital identity, supporting this community and these projects is not just something interesting for us to do in our spare time. It is our job as leaders in technology and identity to support, educate, and most importantly, fund the projects, that will change the future of identity forever. 
+
+About the authors
+ 
+Greg Kidd is the Founding Partner of Hard Yaka, a fund investing in portable identity, payments and marketplaces necessary for digital transformation. He has invested in more than 100 startups, including Twitter, Square and Ripple.
+
+ 
+Dr. Phil Windley is chair of the Sovrin Foundation and the co-founder and organizer of the Internet Identity Workshop. He is a passionate technology educator and is the author of the books The Live Web and Digital Identity. 
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

@@ -1,0 +1,872 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Best Practices and Lessons Learned from Hyperledger Besu Establishing a Maintainer Process – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Besu
+                            
+                        
+                    
+
+                
+                Best Practices and Lessons Learned from Hyperledger Besu Establishing a Maintainer Process
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Nov 7, 2019
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                As an open source project, the Hyperledger Besu team is continuing to focus on building our community. One reason we submitted Hyperledger Besu to Hyperledger was to improve the project’s open source governance using Hyperledger’s best practices and recommendations. The Linux Foundation and Hyperledger have been leaders in establishing open source governance processes for years. Hyperledger uses best practices across its projects, including open communication, tool consistencies, and cross-project technical leadership. The Hyperledger Besu team wanted to take these open source governance learnings a step further to create a process for managing its maintainers. 
+
+ 
+Why Maintainer Governance is Important
+
+ 
+Maintainers of open source projects are the leaders and direction-setters for the projects. They are oftentimes the ones contributing the most code to the project, talking to the community on chat channels, and dedicating time to other community activities, such as working groups or writing documentation. We wanted our process around maintainer governance to reflect the significance of the role within the project. The Besu team researched how other projects and open source foundations performed the maintainer governance. 
+
+ 
+We found the following examples from other organizations to help inform our decision:
+
+ 
+The Apache Foundation: The Apache Foundation has Project Management Committee (PMC) Members, which is their alternative for maintainers. PMC Members are elected due to their commitment to the codebase. The PMC has control over the codebase and are the ones who vote on major releases.  
+
+ 
+OpenJDK: OpenJDK has a more formal process for adding maintainers, including taking formal nominations for the new maintainer. They hold a one-week nomination period, select a candidate amongst the nominees, and then use a Lazy Consensus vote to vote on the nominee.
+
+ 
+Other Hyperledger projects: Currently the Hyperledger projects have different approaches for managing their maintainers. Hyperledger Fabric requires a majority vote of maintainers to add a new maintainer, for example. Hyperledger Indy encourages maintainers to be highly collaborative with other contributors and maintainers.
+ 
+The Besu Team’s Decision
+
+ 
+The Besu team investigated these proven practices with the aim of determining the best option for managing the project’s maintainers. We wanted the process for adding and maintaining maintainers to be as objective and transparent as possible. With this in mind, the team decided to model its maintainer process most closely after the OpenJDK foundation with some additions. 
+
+ 
+A few key tenants of Besu’s management maintainers include:
+ 
+	A proposed maintainer must have 5 significant changes committed to the codebase
+	A proposed maintainer must be sponsored by a current maintainer
+	A proposed maintainer can be vetoed by a current maintainer but a public explanation is required when such vote occurs. 
+	There is a two week window for voting on a proposed maintainer. Voting can end early if an absolute majority is reached. 
+	A current maintainer can also be removed if warranted. The Hyperledger Code of Conduct can be found here.
+
+ 
+These requirements help provide clear and direct expectations for the community on how to become a maintainer. We wanted members of the community to know exactly the steps required if becoming a maintainer interested them. We also tried to make the process be conducted in an open and community-friendly manner. It is important to us to make our project approachable with anyone feeling welcome and encouraged to try it out.
+
+ 
+Contribute to Hyperledger Besu Now!
+
+ 
+It is easy to begin your journey using and contributing to Hyperledger Besu. Check out these resources to help you get started:
+ 
+	Use this QuickStart Tutorial to help you set up a private network on Hyperledger Besu.
+	Review the Contributor Guidelines to begin contributing today.
+	Talk with the community in the #besu or #besu-contributors channels in RocketChat.
+
+ 
+
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

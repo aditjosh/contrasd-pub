@@ -1,0 +1,679 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Repositories and other projects - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Repositories and other projects
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Repositories and other projects
+
+	Danno Ferrin
+
+
+
+	Sally MacFarlane
+
+
+
+	Felipe Faraggi
+
+
+
+	Alexandra Tran
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Oct 24, 2024 by Sally MacFarlane
+
+
+
+
+
+
+
+
+
+
+Main Besu repos
+	Main client repo	https://github.com/hyperledger/besu
+
+
+	Main documentation repo	https://github.com/hyperledger/besu-docs
+
+
+	MacOS 'Homebrew' install support	https://github.com/hyperledger/homebrew-besu
+
+
+	EVM Smart Contracts for EEA permissioning (archived, example only)	https://github.com/ConsenSys/permissioning-smart-contracts
+
+
+
+Community projects
+The following projects are built on top of Besu or use it in one way or another.
+	OP-Besu	https://github.com/optimism-java/op-besu
+
+
+	Ethers.js for Hyperledger Besu	https://github.com/ConsenSys/hyperledger-besu-ethers
+
+
+	Besu Appsody stacks	https://github.com/ericglau/HyperledgerBesuGenerators/tree/master/besu-appsody-stacks
+
+
+	besu-clique-config
+	https://www.npmjs.com/package/besu-clique-config
+
+
+	Grid Project	https://grid.ethereum.org/
+
+
+	Besu Developer Quickstart	https://github.com/ConsenSys/quorum-dev-quickstart
+
+
+	Besu Kubernetes	https://github.com/ConsenSys/quorum-kubernetes
+
+
+
+Plugins
+	Linea sequencer plugins	https://github.com/Consensys/linea-sequencer
+
+
+	Linea tracer plugins	https://github.com/Consensys/linea-tracer
+
+
+	version of besu that does not propagate transactions	https://github.com/antonydenyer/no-pending-transactions-plugin
+
+
+	kafka pluginÂ 	https://github.com/Consensys/besu-plugins
+
+
+
+RSS Feeds
+	Besu main client repo master branch commits as an RSS feed
+	https://github.com/hyperledger/besu/commits/main.atom
+
+
+	Docker container updates as an RSS feed	https://docker-hub-rss.now.sh/hyperledger/besu.atom
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+Operate and Extend Hyperledger Besu Workshop Prerequisites
+Operate and Extend Hyperledger Besu Workshop Prerequisites
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+Operate and Extend Hyperledger Besu Workshop
+Operate and Extend Hyperledger Besu Workshop
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+Besu - Community Support
+Besu - Community Support
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020 Q2 Hyperledger Besu
+2020 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Besu 2022 Vision
+Besu 2022 Vision
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 13, "requestCorrelationId": "e944bb26f877496691a7e806de15efea"}

@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger Besu Maintainers - Conor Svensson, Web3 Labs
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Meet the Hyperledger Besu Maintainers - Conor Svensson, Web3 Labs 
+
+        
+
+        
+           Written by Hyperledger | Jul 17, 2023 7:30:00 AM 
+        
+
+        
+          As interest in enterprise Ethereum has grown, so too has the community driving development of Hyperledger Besu. Purpose-built to serve as either a public or private execution client for Ethereum, Besu offers flexibility for organizations that want to mix, match or keep their options open when it comes to private and public chains. 
+ 
+The growing Hyperledger Besu project and community is led by a committed group of maintainers. This group, too, has grown recently, bringing new diversity and bandwidth to Hyperledger Besu. We have invited these community leaders to share their thoughts on why they are committing their time and effort to this project. 
+ 
+Below, we hear from Conor Svensson from Web3 Labs about why he and his team have joined the maintainer ranks and what excites them about Hyperledger Besu now and in the future.
+ 
+Q) Why does Hyperledger Besu matter? What’s its role in the evolving DLT landscape?
+ 
+In the past few years, enterprise-focused blockchain technology has shifted towards Ethereum Virtual Machine (EVM) capabilities. This has been driven in part by the surge in interest seen in public blockchain innovations such as DeFi, NFTs and DAOs that were primarily on Ethereum. Additionally, the sheer number of developers working on the EVM also ensures that the barriers to entry are lower to work with it than other blockchain technologies.
+ 
+As a result, we’re seeing increasingly more enterprise blockchain projects being launched on Hyperledger Besu. This is something we wrote about more recently in depth at Web3 Labs.
+ 
+Q) What are some of the use cases it is particularly well suited to support?
+ 
+Initiatives within the regulated wholesale financial sector. The wholesale financial markets are very heavily regulated, with strict criteria that any participant must abide by. This is because they are of systematic importance to the financial stability of nations.
+ 
+As such, there is a clear segregation that exists between networks that service wholesale initiatives versus retail. We envisage that private permissioned blockchains using Hyperledger Besu will remain appropriate for wholesale networks due to their ring-fenced nature, which aligns with regulatory constraints. Whereas public networks will serve retail-focused opportunities, such as bank-issued stablecoins, and also where a neutral public network is required between jurisdictions in order to provide interoperability between them.
+ 
+Q) What is the role of the community in developing Hyperledger Besu? Why is open development important?
+ 
+Blockchain networks, by their decentralized nature, require collaboration between a number of different participants. Achieving trust between participants is very important in order to ensure a well-functioning blockchain network. Open source development for blockchain node infrastructure is hence one of the important ways in which this is achieved.
+ 
+Without open source development, a software vendor needs to provide a trust model for the whole network. This is not scalable, nor collaborative and skews the incentives for participants, as they don’t have equal opportunities to contribute to the network. With an open development model, participants can contribute as much or as little as they want.
+ 
+This isn’t to say that vendors don’t have their place. For instance, Web3 Labs works with a number of organizations to provide Hyperledger Besu support for their production environments. However, with the open development model,  Besu organizations can choose whether they want to enroll the services of a provider or not for their network.
+ 
+Q) Why is contributor diversity important?
+ 
+For the open source software model to truly work, you need a diversity of contributors. This helps ensure that instead of Hyperledger Besu being aligned closely with the needs of a single organization, instead, it evolves to serve the needs of its users.
+ 
+Having an effective governance model (which the Hyperledger Foundation provides) is important as it provides structure to manage contributions from a variety of different organizations, ensuring a level of neutrality.
+ 
+Additionally, the fact that anyone can contribute to Besu and other Hyperledger projects means that absolutely any ideas that have real merit can be contributed to the project. This casts the net for potential contributors incredibly wide and ensures contributions can appear from anyone, anywhere, which is great for ensuring a truly diverse range of contributors.
+ 
+Q) What about the Hyperledger Besu roadmap really excites you?
+ 
+The Web3 Labs team is very excited about the upcoming modularity of consensus mechanisms in Hyperledger Besu. This will make it easier to separate out changes to Besu that are driven by the Ethereum mainnet at its consensus layer (as Besu is a mainnet client as well as a permissioned network client) and those that are relevant for permission network deployments, which are separate from the Ethereum mainnet.
+ 
+This sort of modularity is great as it will ensure Besu can serve its user bases even better than it already does. (For more details, read this epic on the topic.)
+ 
+Q) How did you get involved in Hyperledger Besu?
+ 
+Web3 Labs first got involved in the pre-Hyperledger days when Besu was called Pantheon. We worked alongside Consensys on the original privacy implementation.
+ 
+As Web3 Labs continues to support Web3j, the leading JVM integration library for Ethereum, there’s always been a natural affinity with Hyperledger Besu given it also uses the JVM. Hence Besu uses features from Web3j, and Web3j uses features from Besu.
+ 
+More recently, the team have made a number of contributions to Besu addressing bugs and implementing features for permissioned networks. They’re also focusing on the consensus modularity mentioned above.
+ 
+This summer, we also kicked off a mentorship project on Performance analysis and Benchmarking of Besu that we’ve found a great intern for! Besu performance comes up a lot, and, through this project, we want to ensure there are clearly defined performance metrics for Besu.
+ 
+Q) Why is it important to Web3 Labs to contribute to the development of Hyperledger Besu?
+ 
+We believe that Hyperledger Besu is the leading blockchain client for permissioned blockchain networks. Whilst we are confident that the amount of activity on public blockchain networks will continue to grow, we know that there will remain a need for private networks too.
+ 
+Web3 Labs provides commercial support services for Hyperledger Besu networks, hence being very active in the project is of paramount importance to the team. In addition, our blockchain explorer, Chainlens, is closely integrated with Besu and other Ethereum clients, so having a very good understanding of this technology is vital to us. We want to lead by example contributing to OSS, not simply consuming it as a large number of oranizations do.
+ 
+__
+Want to be part of this growing Hyperledger Besu community? Join the Hyperledger Besu channel on Discord or the regular contributor calls. Or check out this guide to contributing and dive right in.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

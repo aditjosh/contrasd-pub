@@ -1,0 +1,867 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Cactus: Release V1 on the Road to General Blockchain Integration – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Hyperledger Cacti
+                            
+                        
+                    
+
+                
+                Hyperledger Cactus: Release V1 on the Road to General Blockchain Integration
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Mar 17, 2022
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Since its inception as a Hyperledger project almost two years ago, Hyperledger Cactus has come a long way. Today, the maintainers are excited to announce a version 1 release that supports many exciting integration applications and moves us in the direction of our “dream” modular architecture.
+ 
+For creating a new token economy beyond financial and non-financial areas, blockchain interoperability has an essential role in interacting with multiple blockchains in various industries. But it is challenging to develop codes integrating with multiple blockchains because the SDKs provided by each blockchain for posting transactions or getting block data are entirely different. So, this community published a blockchain interoperability tool called “Hyperledger Cactus” to help engineers integrate multiple blockchains easily.
+ 
+Hyperledger Cactus is a pluggable enterprise-grade framework for transacting multiple blockchains. This project aims to provide a decentralized, adaptable and secure integration between blockchains and various platforms. Cactus codes are composed of three types of parts.  “Cactus Servers” provide abstracted APIs that can be uniformly called independent of each blockchain SDK’s format, and APIs that can use each blockchain SDK wrapped with the typescript-axios API format using Cactus API Server. “Business Logic Plugins” coordinate cross-blockchain business logic applications. “Ledger Connectors” facilitate connections to various blockchains, including all the blockchains of Graduated Hyperledger projects.
+ 
+The Hyperledger Cactus v1 release includes the following modules:
+ 
+	Ledger Connectors – connectors to communicate with various blockchain platforms using multiple programming languages: (TypeScript and Python)
+  	Hyperledger Besu
+	Hyperledger Fabric
+	Hyperledger Indy
+	Hyperledger Iroha
+	Hyperledger Sawtooth
+	Corda
+	Go-Ethereum
+	Quorum
+	Xdai
+
+
+	Business Logic Plugin samples – the application integrates multiple blockchains:
+  	supply-chain-app: management application of supply chains process using Hyperledger Besu, Fabric, and Quorum
+	carbon-accounting: carbon accounting application using Ethereum and Hyperledger Fabric
+	discounted-cartrade: car ownership trading application using Ethereum currency, tokens on Hyperledger Fabric, and digital identity certification using Hyperledger Indy
+	electricity-trade: automatic electricity payment application using Ethereum currency, whose events are triggered by electricity metering transactions on Hyperledger Sawtooth.
+
+
+	Keychain Plugins – A set of plugins for storing sensitive information in storage engines outside of Cactus.  Currently, these plugins support AWS, GCP, Azure, and Hashicorp Vault
+	Support Libraries – Various utility libraries that simplify programming business logic plugins. These are great for setting up your applications and can even help your test automation, where the simulation of a new blockchain is required with the lowest possible resource usage.
+
+ 
+As part of the continual effort to mitigate risks, the current 1.0.0 release is undergoing a a third-party security audit at the time of this writing.The process will take about 6 to 8 weeks to complete, but we are planning to keep the 1.0.0 API stability in place as dictated by the semantic versioning rules.
+ 
+It’s effortless to try out Hyperledger Cactus today. We provide instructions for running a sample implementation of the Business Logic Plugins (service applications in Hyperledger Cactus architecture) that takes advantage of various blockchain platform features so you can evaluate Hyperledger Cactus on your PC.
+ 
+It is even possible to set up a container with a supply chain example using a single command-line command! Here is a link to this example. We encourage you to see for yourself how easy it can be to get started with blockchain integration using Hyperledger Cactus.
+ 
+Our long-term architectural goals for Hyperledger Cactus are to offer a flexible, modular system that allows users to configure blockchain integration systems to fit their needs exactly. We want users to reuse code as much as possible while still avoiding code bloat and duplication in the features. In future releases, we will actively cooperate with other Interoperability infrastructures besides Cactus, and we hope to provide more user-friendly tools by incorporating more features.
+ 
+(Note: for more on the Hyperledger interoperability ecosystem, read Why is Interoperability Needed?)
+ 
+We would love to welcome you into the Hyperledger Cactus community.  Unlike our project namesake, we are not prickly!  Whether you want to contribute or are just interested in using Cactus, we would love to connect.
+ 
+It’s easy to get in touch with us!  The simplest way is to reach out on the Hyperledger Cactus Discord channel. (New to Discord? Go here for more and to get signed up.) We have pair programming sessions set up for new contributors and users almost daily (please check the Hyperledger calendar), so we would be more than happy to help if you would like to contribute or want help getting up and running. We look forward to hearing from you!
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

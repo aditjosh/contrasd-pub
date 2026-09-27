@@ -1,0 +1,255 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Garbage Collection - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Garbage Collection
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                May 31, 2019,  2:21pm
+              
+              #1
+          
+        
+        
+          the text below is imported from Garbage Collection and Syncing and Proof of Burn - HackMD
+
+please also look at localstore/db how to insert items in GC index · Issue #1031 · ethersphere/swarm · GitHub and
+
+Garbage Collection and Syncing and Proof of Burn · Issue #1017 · ethersphere/swarm · GitHub
+
+
+Syncing, Retrieval, and the GC queue
+
+
+The Process of Syncing
+
+Syncing is the process by which the chunks of data in Swarm are delivered to those nodes at which retrieval requests for the chunks will terminate - i.e. the process of moving data to where it can later be found and retrieved from. It is in the interests of the entire network that syncing happens reliably.
+
+
+The Retrieval Process
+
+“Retrieval” is the process in which a chunk is requested from the Swarm and served to the requesting node. Nodes serving a retrieval get paid via SWAP and such have an incentive to be able to serve as many retrieval requests as possible. However this is not simply a question of storing ‘as many chunks as possible’ but also a question of ‘which chunks’. The Kademlia routing topology deermines which nodes will be asked first to serve which retrieval request and so nodes are incentivised to store more of those chunks for which they are ‘closer’ in address because these are the ones they are likely to get asked to serve.
+
+
+The Garbage Collection Queue
+
+This section presents a simple method for prioritising chunks based on expected profitablity.
+
+
+The Queue
+
+
+All chunks are stored in an ordered list (technically we have several orderings, but only one of them concerns us here). The idea is that profitable chunks are at the head of the queue and garbage collection happens at the tail end.
+
+
+Retrieved chunks
+
+This section deals with chunks that were requested by a peer. This does not concern local requests.
+
+Serving a retrieval request puts chunk at top of queue
+
+Whenever a chunk is served to another peer in response to a retrieval request, that chunk is moved to the top of the queue.
+
+This is the only way chunks enter the top of the queue. In order to avoid a flood of spam chunks flushing out these popular chunks from the queue, newly arriving chunks in the syncing process, are inserted in the queue lower down. Garbage collection happens at the tail end of the queue.
+
+Ranking the head of the queue by popularity (alternative)
+
+There is an alternative to the process of inserting any chunk served to a retrieval request at the top of the queue. This alternative seeks to remember how frequently a chunk has been recently requested and give very popular chunks precedence in the queue.
+
+The outline of this idea is the following:
+
+	When a chunk is requested, store the current unix timestamp along with the chunk.
+	When a chunk is requested again add a fixed amount of time to the timestamp T → T+X.
+	Set the timestamp to max(now, T+X).
+	Move the chunk towards the top of the queue, but keep them ordered by timestamp.
+
+
+Frequently requested chunks will have a timestamp that is far in the future. A chunk that is requested for the first time will be inserted at the ‘now’ mark instead of at the very top of the queue.
+
+
+Synced chunks
+
+This section deals with how to insert chunks into the database that are fisrt encountered due to the syncing protocol and have not been subject to any retrieval request.
+
+Most Proximate Chunks
+
+When a node receives a chunk that falls within its radius of responsibiity, this chunk is inserted into the queue 1/3 of the way down (meaning 1/3 of the way down the maximum queue length).
+
+[Note: 1/3 is an arbitrary choice here. It leaves sufficient room above for popular chunks to be cached independent of any syncing, while leaving sufficient room afterwards for proximate synced chunks to be stored for quite a while before being flushed out.]
+
+More Distant Chunks
+
+During the syncing process, a node will encounter chunks to which it is not the most proximate node, but rather it is a facilitator in routing the chunk from the uploader to those most proximate. The question of whether this chunk should be cached depends on its expected profitability, and this in turn (for a new chunk) is based only on its distance.
+
+Chose a formula such that closer chunks should be inserted higher up than more distant ones.
+
+Example1: if a chunk falls N Kademlia bins above the most proximate, then it could be inserted into the queue at N/(N+1). So the bin before the most proximate is insterted at 1/2, the row above that at  3/4, then at 4/5 and so on.
+
+Example2: Or you might choose an exponential dropoff in which the first bin is inserted at 1/2, the next at 3/4 the next at 7/8 and so on.
+
+Vik comment:  it is not obvious to me how you insert into an index at quantiles. This is totally impractical if we need to count.
+
+Dan response: You just track the quantile and update with each change. No counting is necessary. For example, if you want to point to the 1/2 of the queue, with each two items added above it, you move one element up, with each two items added below it, you move one element down. Similarly for deletions. More generally, you keep track of elements above and below the specified quantile, and if the fraction prescribed by the quantile differs by one whole element, you move in the direction to keep the difference below 1.
+
+It is important that newly synced chunks never enter the top of the queue. This is a form of spam protection. Further protections against a flood of bad data could be given by proof-of-burn requirements (see below).
+
+
+Garbage Collection
+
+Garbage collection happens at the bottom of the chunk queue. Although the ordering in the queue is meant only as a heuristic on which chunks to delete, in the absence of proof-of-burn or a payment lottery, it is the best data to go on. As such, the tail end of the queue should be garbage collected as is.
+
+
+
+
+Locally requested Data
+
+In all of the above, we are talking about chunks that arrive due to syncing and chunks that arrive due to retrieval requests originating at another node. We have not at all talked about chunks that are retrieved locally. This section now is about local retrieval requests - i.e. data that you request through localhost:8500.
+
+
+No caching of local retrievals
+
+The chunk store is designed to maximise profitability of chunks sold through SWAP. Locally requested chunks do not need to be cached at all*. We can insert them at the end of the queue and they may be garbage collected next. Consider for example:
+
+Dapp data: If a user loads a particular dapp frequently, it is up to the browser to do the caching and not the Swarm node.
+
+Streaming data: If a user consumes a lot of streaming data through Swarm, this should not “flush out” other data from the Swarm database.
+
+A Swarm node that is run as a ‘server’ only and is never used for local consumption should not differ in its functionality from a node that is being run on a desktop computer at home that consumes a lot of data.
+
+
+A separate local cache?
+
+There is an argument to be made for local caching if Swarm is to be used as a private dropbox, with a Swarm manifest mounted locally. This is not a measure of increasing profitability of chunks, but a measure of reducing costs to retreive.
+
+The local cache
+
+We feel that in this case there should be a whole separate DB/cache dedicated to this local data and should not interfere with the rest which is organised by profitablitiy.
+
+If this is to be instituted, there must be a separate chunk queue of local data, and every time a retrieval request is served, we must keep track of whether the request originated locally or on the network and act accordingly. These chunks are not subject to syncing.
+
+Vik’s comment: which chunks are not subject to syncing?
+
+in fact i dont see a point in this extra cache at all. Just pin  content with whitelisted proof of burn address and that will pin it.
+
+Dan’s response: Pinned data also needs to be removed from the GC queue. I believe that they are not subject to GC, but still subject to syncing, as that is what makes them retrievable.
+
+Pinning data?
+
+Often we get asked if a node can ‘pin’ data to be kept locally. This is terminology that comes from IPFS. It is true that we could tweak this local cache in such a way that it does not contain all (most recent) locally retrieved chunks, but instead only chunks belonging to datasets that the user has explicitly ‘pinned’. This would however still be functionally different from IPFS in that pinning does not guarantee that the data remains retrievable by the rest of the Swarm, it only guarantees that there is a local copy.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

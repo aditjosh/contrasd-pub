@@ -1,0 +1,245 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proof of Burn (for spam protection) - #3 by cobordism - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Proof of Burn (for spam protection)
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                May 31, 2019,  1:44pm
+              
+              #1
+          
+        
+        
+          This thread is to discuss how we can implement proof-of-burn.
+
+the notes below are imported from  Garbage Collection and Syncing and Proof of Burn - HackMD
+
+
+What is Proof-of-Burn
+
+How does proof-of-burn work?
+
+We describe here a basic prototype of proof-of-burn. It requires uploaders to have registered on-chain and it has important privacy concerns that future revisions might seek to address.
+
+Every uploader must register on-chain and deposit a stake that is locked forever / burned. The registration also contains a date range indicating when this stake is set to expire.
+
+When uploading new chunks to the Swarm, each chunk is given a signed receipt indicating which registered deposit this chunk belongs to.
+
+Nodes want to compare the rate of burn (wei / second) for each chunk that they encounter.
+
+Since it is not feasible to burn a deposit for every chunk, we proceed probabilistically. Upon receiving a chunk, a node checks how many other chunks it knows about that have the same signature (Q: and maybe what the radius of that set is?) and thereby estimate the total number of chunks in the Swarm that are signed by that key. This is possible under the assumption that chunks are evenly distributed by hash. (This is not attackable, because generating chunks which cluster in a particular hash range only make the resulting calculation less favourable to the uploader ).
+
+Knowing the approximate total number of chunks signed by a given key and the total deposit and timeframe registered on chain allows the node to calculate the wei/s burned on this chunk.
+
+[Note: there could be multiple signatures for each chunk. In this case we add the wei/s].
+
+What does proof-of-burn achieve?
+
+spam protection: During syncing nodes only accept chunks above some minimum of wei/s, starting at 0, but rising as chunks are encountered…
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            nagydani
+            
+          
+
+          
+
+
+
+          
+              
+                June 13, 2019,  4:31pm
+              
+              #2
+          
+        
+        
+          Although I know that I am the one who introduced this term, I suggest that we call it “postage” henceforth.
+
+I also believe this description to be slightly inaccurate. Should I edit it or write a new one?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+                  
+                    
+                      
+
+Proof of Burn - paying for sync?
+                    
+                    
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 13, 2019,  4:39pm
+              
+              #3
+          
+        
+        
+          maybe you can just add to this thread instead of starting a new one?
+
+Feel free to edit my post above too - it all started from your notes anyway.
+
+
+
+OK, we continue here: Postage (ex Proof of Burn)
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

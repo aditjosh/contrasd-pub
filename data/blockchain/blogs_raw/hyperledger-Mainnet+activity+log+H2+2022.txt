@@ -1,0 +1,659 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mainnet activity log H2 2022 - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+	Besu Execution Client Incentive Program
+
+
+
+
+	[WIP] Proposal #4
+
+
+
+
+
+	Mainnet activity log H1 2022
+
+
+
+
+
+	Mainnet activity log H2 2022
+
+
+
+
+
+	Near-Term Besu Incentive Program proposal
+
+
+
+
+
+	Proposal #3
+
+
+
+
+
+	Proposal #3.5
+
+
+
+
+
+	Second Incentive Proposal
+
+
+
+
+
+	Validator Nodes Recommendations for HL Besuâ€™s Incentive Program
+
+
+
+
+
+
+
+	Grants
+
+
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Mainnet activity log H2 2022
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Mainnet activity log H2 2022
+
+	Sally MacFarlane
+
+
+
+	Mark Terry (Deactivated)
+
+
+
+	gabriel.trintinalia@gmail.com
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: May 04, 2023
+
+
+
+
+
+
+
+
+
+
+In-Progress Reports
+	Add your contributions under your maintainer organization. If your org is not listed, please add it.
+	GitHub query that may help `is:pr author:xyz label:mainnet closed:>2022-07-01`
+
+Maintainer org: Hedera
+Contact name -
+Contact email -
+Maintainer github handle: shemnon
+Is Besu Maintainer? Yes
+Query for mainnet label onÂ merged PRs:Â 
+Details on mainnet contributions
+...
+Maintainer org: Ethereum Classic Cooperative
+Contact name -
+Contact email -
+Maintainer github handle: diega
+Is Besu Maintainer? Yes
+Query for mainnet label onÂ merged PRs:Â 
+Details on mainnet contributions
+...
+Maintainer org: ConsenSys
+Contact name - Grace Hartley
+Contact email - grace.hartley@consensys.net
+Maintainer github handle: gezero
+Is Besu Maintainer? Yes
+Query for mainnet label on merged PRs:
+Details on mainnet contributions
+Maintainer github handle: macfarla
+Is Besu Maintainer? Yes
+Query for mainnet label on merged PRs:Â https://github.com/hyperledger/besu/pulls?q=is%3Apr+author%3Amacfarla+label%3Amainnet+closed%3A%3E2022-07-01+
+Details on mainnet contributions:
+Peering improvements
+	Peering logging
+	lower bound peer limit
+	Remove connections if they are already disconnected
+	P2P: Connect to maintained connections at startup
+	Remove duplicate registration of peers connect/disconnect
+	Logging: peer table refresh
+
+Block processing
+	Ensure invalid new payload is logged at DEBUG level
+
+Maintainer github handle: mark-terry
+Is Besu Maintainer? Yes
+Query for mainnet label on merged PRs: https://github.com/hyperledger/besu/pulls?q=is%3Apr+author%3Amark-terry+label%3Amainnet+closed%3A%3E2022-07-01
+Details on mainnet contributions:
+RPC improvements
+	Corrected eth_getLogs default fromBlock value
+	Remove 'publicKey' and 'raw' from Transaction RPC API response
+	Added max range CLI option for eth_getLogs
+	RPC parameter error improvements. Test updates
+
+Logging improvements
+	Changed chain download error log level from error to debug
+	Reduced logging level on Subscriber error callback
+
+Bugfixes
+	RLP zero encoding fix
+
+Maintainer github handle: Gabriel-Trintinalia
+Is Besu Maintainer? Yes
+Query for mainnet label on merged PRs: https://github.com/hyperledger/besu/pulls?q=+is%3Apr+author%3AGabriel-Trintinalia+closed%3A%3E2022-07-01+label%3Amainnet
+Details on mainnet contributions:
+Withdrawals:
+	Initial implementation of EngineGetPayloadV2
+
+RPC improvements:
+	Add accessList field to Transaction Call Object
+	Add type field to eth_getTransactionReceipt
+	Fix storage key format for eth_getProof
+
+Eth Protocol
+	Implement eth/68 (EIP-5793)
+	Implement eth/67 sub protocol (EIP-4938)
+
+Bug fixes
+	Fix attempt to send unsupported message (13) via cap eth/67
+	Fix ConcurrentModificationException on ReattemptPendingPeerRequests
+	Improve pending blocks retrieval mechanism
+
+...
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Mainnet activity log H1 2022
+Mainnet activity log H1 2022
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q2 Hyperledger Besu
+2022 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022 Q1 Hyperledger Besu
+2022 Q1 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2022-06-07 Contributor Call
+2022-06-07 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021 Q2 Hyperledger Besu
+2021 Q2 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+2023-03-14 Contributor Call
+2023-03-14 Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 11, "requestCorrelationId": "204502b020f6499a8570d0ace63a104e"}

@@ -1,0 +1,201 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Efficiency Mode (E-mode) | Aave
+
+
+ProductsResourcesDevelopersApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+Report responsibly and get rewarded.
+
+
+
+
+
+
+
+
+Open AppApp
+Interact with Aave easily.
+GHO
+The Aave-native stablecoin.
+
+Resources
+Brand
+Assets, examples and guides.
+
+
+FAQ
+Answers to common questions.
+
+Help & Support
+Guides, articles and more.
+
+Governance
+The Aave Governance forum.
+
+
+
+Developers
+Documentation
+Technical guides for developers.
+
+
+Security
+Audit reports and information.
+
+Bug Bounty
+
+
+
+
+
+
+
+ Borrowing GuidesEfficiency Mode (E-mode)
+intermediate
+
+
+
+
+
+
+Introduction
+
+High Efficiency Mode (E-mode) in Aave Protocol V3 allows users to maximize their borrowing power by selecting optimized asset categories. With the recent addition of liquid E-modes, assets may belong to multiple E-mode categories, providing greater flexibility in choosing the most efficient borrowing strategy based on category-specific parameters and asset availability.
+
+Each E-mode category specific its own Loan-to-Value (LTV), Liquidation Threshold (LT), Liquidation Bonus, and borrowing permissions for each asset in the category. When an E-mode is activated, borrowing is restricted to assets within the chosen category. Therefore, it’s essential to review the available assets, collateral, and borrowing parameters within the category before enabling E-mode.
+
+Enabling or disabling E-mode can be done directly on the Aave Protocol smart contracts or via interfaces like the Aave Labs interface.
+
+Step 1: Connect Wallet
+
+Press ‘Connect Wallet’ to select your preferred wallet provider and confirm it holds the collateral assets you plan to use.
+
+Step 2: Navigate to E-mode Options
+
+After connecting, go to the ‘Dashboard’ and locate the E-mode option near your account summary row. The availability of E-mode options depends on the assets in your wallet and their category eligibility.
+
+Step 3: Select E-mode Category
+
+Click the ‘E-mode’ button to open the selection modal. You can then enable, switch, or disable an E-mode category that aligns with your collateral strategy. Take note of the collateral and borrowing availability and parameters to determine which E-mode aligns with the intended borrowing strategy. Confirm the transaction in your wallet to apply or disable the selected E-mode, which will affect the asset availability and parameters for borrowing.
+
+Step 4: Supply / Borrow
+
+Once E-mode is active, the steps for supplying and borrowing follow standard protocol procedures. However, remember that your collateral parameters and borrowing options are now tailor"borrow-tokens.html"y, dictating available assets and adjusted risk parameters.
+
+
+
+Related
+Borrow Tokens
+beginner
+
+Maintain overcollateralised borrow positions.
+3 min read
+Repay Tokens
+beginner
+
+Repay active borrow positions.
+3 min read
+Health Factor"https://aave.com/"mp; Liquidations
+advanced
+
+Mechanics of Aave Protocol liquidations.
+4 min read
+
+
+ Aave.com provides information and resources about the fundamentals of the decentralised non-custodial liquidity protocol called the Aave Protocol, comprised of open-source self-executing smart contracts that are deployed on various permissionless public blockchain"https://aave.com/brand"as Ethereum (the "Aave Protocol" or the "Protocol"). Aave Labs does not"https://aave.com/faq"ol or operate any version of the Aave Protocol on any blockchain network.
+
+	Resources
+	Brand
+	FAQ
+	Help & Support
+	Governance
+
+
+	Developers
+"https://aave.com/security"styles_navList__2u0oo">
+	Documentation
+	Technical Pa"https://aave.com/privacy-policy"lass="styles_navListItem__7RBIL">S"https://aave.com/terms-of-service" class="styles_navListItem__7RBIL">Bug Bounty
+
+	Company
+	Privacy Policy
+	Terms of Use
+	Contact
+
+
+
+
+
+
+
+
+
+
+
+

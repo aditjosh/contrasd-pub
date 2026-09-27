@@ -1,0 +1,726 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Process change proposal: burn-in - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+	Release Rotations 2024
+
+
+
+
+
+	Using CalVer for Besu Releases
+
+
+
+
+
+	How to do a Besu Release
+
+
+
+
+
+	Off-cycle release process
+
+
+
+
+
+	Release Process
+
+
+
+
+
+	Obsolete Proposals and Policies
+
+
+
+
+	Bi-Weekly & Quarterly Release Process
+
+
+
+
+
+	Process change proposal: burn-in
+
+
+
+
+
+	Proposal for Off-Cycle, Delayed, and Scuttled Releases
+
+
+
+
+
+	Proposal: Avoid Cherry Picked Releases
+
+
+
+
+
+	Proposal: Create a Release Candidate for every release
+
+
+
+
+
+	Proposal: Increasing 1.4 RC/Beta window
+
+
+
+
+
+	Proposal: Quarterly releases from main by default
+
+
+
+
+
+	Release Philosophy
+
+
+
+
+
+
+
+	Archive
+
+
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Process change proposal: burn-in
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Process change proposal: burn-in
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Dec 06, 2022
+
+
+
+
+
+
+
+
+
+
+Draft process based on discussions from discord - edits welcome
+Burn-in
+
+Start the pre-release process on Friday (n-5) instead of Wednesday, to allow time for the burn in process.
+All PRs for the release need to be merged by Friday.
+Vote
+While the burn-in is happening, maintainers and community have 3-4 days (2 business days) to find a reason to object.
+Start a thread in besu-release channel
+If any one party formally objects then a formal vote is required. At least 24 hours is required for a vote to close, and a scheduled release can be delayed for the vote.
+Who can object?
+Currently - besu maintainers
+besu-release channel is public so any community member can comment
+How to object?
+in besu-release channel or 'the agreed communication channels'
+
+
+Itâ€™s already the case that if burn-in testing fails, the release can be delayed or skipped.
+The final stage of the release is making it public, applying tags etc and announcing it.
+
+
+Technical details to be worked out
+Â re:branching, tagging - Friday we update the version in gradle.properties to the release version, briefly, then update to snapshot. We would have to do something about the docker latest tag, but we would not introduce additional processes like tagging. Wednesday "releases" would be limited to publishing a github release and official docker images for the version
+
+
+I think ideally we would not publish docker version numbers until the official release date. latest seems to be the highest risk for unintentional upgrades. Having a separate action to publish docker images seems error prone - I suspect we can find a way to automatically gate that.
+Because there are keys needed to move docker tags and publish, GHA seems the best place to put it for "on demand" use. Plus it comes with a who/when audit trail.
+
+
+GHA - could implement this via a draft release, i believe there is an event type emitted for that. the application of release tags could be isolated to a workflow that just promotes from draft, using those tags
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Release Process Improvement
+Release Process Improvement
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Release Process
+Release Process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+CI/CD Tooling and Process
+CI/CD Tooling and Process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Off-cycle release process
+Off-cycle release process
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal: Avoid Cherry Picked Releases
+Proposal: Avoid Cherry Picked Releases
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2022-01-04 Besu Contributor Call
+2022-01-04 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "8412e29db68b48feb9ac7c93f7bb888f"}

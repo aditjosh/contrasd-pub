@@ -1,0 +1,652 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-06-23 Besu Contributor Call Agenda - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+	2020-01-07 Besu Contributor Call
+
+
+
+
+
+	2020-01-21 Besu Contributor Call
+
+
+
+
+
+	2020-02-04 Besu Contributor Call
+
+
+
+
+
+	2020-02-18 Besu Contributor Call
+
+
+
+
+
+	2020-03-17 Besu Contributor Call
+
+
+
+
+
+	2020-03-31 Besu Contributor Call
+
+
+
+
+
+	2020-04-14 Besu Contributor Call
+
+
+
+
+
+	2020-04-28 Contributor call
+
+
+
+
+
+	2020-05-12 Contributor Call
+
+
+
+
+
+	2020-05-26 Contributor Call
+
+
+
+
+
+	2020-06-09 Besu Contributor Call Agenda
+
+
+
+
+
+	2020-06-23 Besu Contributor Call Agenda
+
+
+
+
+
+	2020-07-07 Contributor Call
+
+
+
+
+
+	2020-07-21 Contributor Call Agenda
+
+
+
+
+
+	2020-08-04 Contributor Call Agenda
+
+
+
+
+
+	2020-08-18 Contributor Call Agenda
+
+
+
+
+
+	2020-09-01 Contributor Call
+
+
+
+
+
+	2020-09-15 Contributor Call
+
+
+
+
+
+	2020-09-29 Besu Contributor Call
+
+
+
+
+
+	2020-10-13 Hyperledger Besu Contributor Call
+
+
+
+
+
+	2020-10-27 Office Hours
+
+
+
+
+
+	2020-11-24 Office Hours
+
+
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2020-06-23 Besu Contributor Call Agenda
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2020-06-23 Besu Contributor Call Agenda
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Sally MacFarlane
+
+
+Last updated: Jun 22, 2020
+
+
+
+
+
+
+
+
+
+
+Contributor Calls
+(Meeting Link:Â https://consensys.zoom.us/j/524697595)
+APAC/AMER Friendly Time -Â  0100UTC (https://www.timeanddate.com/worldclock/converter.html?iso=20200526T010000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	6 pm Monday (25 May) Los Angeles
+	9 pm Monday (25 May) New York
+	1 amÂ  Tuesday (26 May) UTC
+	3 am Tuesday (26 May) Paris/Berlin
+	11 am Tuesday (26 May) Brisbane
+
+Agenda
+	Housekeepting	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements
+	Release updates	1.4.6 is out
+	1.5 RC is done. Undergoing RC testing.
+	1.5 planned for 17 July
+
+
+	Roadmapping	discuss what we plan to include in 1.6
+	any asks from the community?
+
+
+	Work Updates
+	Mainnet is working on Berlin and has Yolo1 as a testnet.
+	Classic has no planned future forks.
+
+
+	Other Business
+	Open Forum
+	Open contributor questions
+
+
+	Future Topics	Request Welcome
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 42, "requestCorrelationId": "5d4c4ac8aacf4416a66aee6977f726d0"}

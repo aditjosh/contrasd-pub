@@ -1,0 +1,639 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feature Flags - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Feature Flags
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Feature Flags
+
+	Danno Ferrin
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Oct 27, 2020
+
+
+
+
+
+
+
+
+
+
+Feature Flags
+Feature Overview(2-3 sentences):Â 
+All significant new features should have a feature flag of some sort that can disable the feature.Â  Acceptable flags are genesis file configurations and cli flags.Â  A centralized feature flag file will be shared for command line flags
+Rationale
+Usually major features added tot he Ethereum chain are tied to various hard forks, such as Berlin, Phoenix, and Istanbul.Â  There are other features that are not tied to hard forks that can impact system stability and usability, such as devp2p upgrades and use of native libraries.Â  While a hard fork can be disabled via configuration other major features cannot be.Â  To keep the codebase stable these new features should be disabled for at least one quarterly release, defaulting to off on their first release, on when deemed stable, and when it has been defaulted on between two quarterly releases the flag should be removed.
+Potential Risks / Rabbit Holes:Â 
+	We could feature flag too much stuff, we need to exercise judgement in what gets flagged.
+
+Out of scope:
+	testing all possible feature flag combinations.Â  The current default set and individual features should still get coverage in acceptance and unit tests.
+
+Longer description:Â 
+What doesÂ notÂ  get feature flagged?
+	Network Hard Forks where the fork is known and stable.Â 
+(these are already flagged by the genesis config)
+	Features that are meant to be turned on and off via CLI
+Example: GraphQL.Â  The flag to turn it on is already a feature flag.
+	Every little bug.Â  What gets flagged needs to be big enough to be called a feature
+
+What must get a feature flag?
+	New devp2p sub protocols such as ETH/64 and Eth/65
+	Changing existing code to non-java implementations via JNI, such as secp256k1 encryption.
+	Speculative EIPs, such as EIP-1559 or eWASM, that may show up in future forks.
+
+Feature Flag file
+To support this a new feature flag file will be added into the `:config` project.
+	Fields and methods will be static
+	Access will be via getters
+
+BesuCommand will responsible for setting the the values from CLI flags
+	Flags names will be of the form `--X<foo>-enabled`
+	Setting via BesuCommand may be enforced in future releases via error prone
+	Future releases may make the setting the flags only accessible to BesuCommand via Java 9 module system
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Defect Prioritisation Policy
+Defect Prioritisation Policy
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Testing Taskforce Brainstorming
+Testing Taskforce Brainstorming
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Proposal: Avoid Cherry Picked Releases
+Proposal: Avoid Cherry Picked Releases
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Issue 2: What are the criteria for a "First Major Release"?
+Issue 2: What are the criteria for a "First Major Release"?
+
+Task Forces
+
+
+
+More like this
+
+
+
+
+
+
+Release Exit Criteria
+Release Exit Criteria
+
+Hyperledger Fabric
+
+
+
+More like this
+
+
+
+
+
+
+2020 04 03 DWG Agenda
+2020 04 03 DWG Agenda
+
+Hyperledger Fabric
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 15, "requestCorrelationId": "0aad733567e24a049fbb633b849f4ed4"}

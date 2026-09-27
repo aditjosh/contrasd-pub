@@ -1,0 +1,117 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interoperability and Integration Developments in the Hyperledger Community – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Interoperability and Integration Developments in the Hyperledger Community – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | May 28, 2020 12:16:11 PM 
+        
+
+        
+          Interoperability and integration are top of mind issues across the blockchain space right now. From new projects to new solutions, the Hyperledger community is taking on the challenges of cross-chain and cross application communication and data flow. 
+ 
+Here are some of the most recent #HyperledgerInterop developments from across the community.
+ 
+New Project – Hyperledger Cactus
+ 
+The newly announced Hyperledger Cactus is a blockchain integration tool designed to allow users to securely integrate different blockchains. This pluggable architecture helps enable the execution of ledger operations across multiple blockchain ledgers, including Hyperledger Besu, Hyperledger Fabric, Corda, and Quorum available today, with the aim of developers continually adding support for new blockchains in the future. 
+ 
+ Cactus started as a Hyperledger Labs project six months ago and has attracted significant attention and become a locus of collaboration between developers from teams at Accenture and Fujitsu, and dozens of others working on DLT platforms both inside and outside Hyperledger.
+ 
+Member applications
+ 
+	DAML, the open source smart contract language created by Digital Asset, enables application portability across three major Hyperledger frameworks: Besu, Fabric and Sawtooth. Blockchain Technology Partner’s Sextant for DAML supports both Hyperledger Besu and Sawtooth, as well as Amazon QLDB and Aurora cloud databases, allowing the same distributed application to be easily deployed across all four platforms. Hear more about the “Write Once, Interoperate Anywhere” approach in this presentation on how DAML smart contracts connect networks, especially Hyperledger Besu, Fabric and Sawtooth.
+
+ 
+	Hyperchain Labs created an oil and gas ticketing blockchain network to help companies reduce costs, improve performance and maintain compliance. The network is built using the Hyperledger Fabric framework and is run on the IBM Blockchain Platform. BlocWatch software is used to ensure the Hyperchain Labs network is running optimally and securely. As a monitoring and security tool, BlocWatch seamlessly integrates with Hyperchain Labs and IBM, empowering users to easily manage all platforms in one place. Explore how Hyperchain Labs uses BlocWatch in conjunction with the IBM Blockchain Platform in this short video.
+
+ 
+
+  
+  
+    
+    	 Smart Block Laboratory built the Hyperledger Fabric-powered distributed register Cryptoenter, blockchain infrastructure for digital banking that unites banks into a single digital space for transmitting financial messages and brings a new level of interaction to the financial market. The platform is designed for p2p interaction between consumers of financial services, safe execution of payment transactions with cryptocurrencies, fiat currencies and cryptocurrencies, user interaction within a social network for investors / distributed crowdfunding platform. 
+The basis of the platform is the Rubicon Blockchain, a cloud platform for the blockchain economy, built on Hyperledger Fabric. Cryptoenter has a dual security system: at the Hyperledger blockchain network level and at the Rubicon Blockchain (also based on Hyperledger Fabric) network level. The solution uses an SRP authentication system. TLS (transport layer security) protocol based on SSL (Secure Sockets Layer) protocol is also included. This dual security system allows Cryptoenter to authenticate the person who signed the message, control message integrity, protect the message from fakes and prove the authorship of the person who signed the message.
+ 
+
+ 
+   
+
+  
+ 
+ 
+
+
+ 
+Technical talks from Hyperledger Global Forum
+ 
+Nathan George from the Sovrin Foundation offers his take on “Standards and Interoperability for Identity”
+ 
+ Identity platforms have made significant advances leveraging blockchain technology and standards developed at Hyperledger. In his talk, Nathan covers the latest in trusted information flows and the standards being incubated to promote interoperability and create network effects across multiple blockchains and identity platforms.
+ 
+Key topics include the advancements incubated in Hyperledger Indy, Hyperledger Aries, the W3C Credentials Community Group and at the Decentralized Identity Foundation for Verifiable Credentials, Decentralized Identifiers (DIDs), DID Communications, Identity Hubs, Authentication, and the data models that power them.
+ 
+
+  
+   
+ 
+
+ 
+Panelists Rich Meszaros and Sarah Banks from Accenture, Melanie Nuce from GS1 US, David Cecchi for Cargill and Patrick Erichsen from Target discuss “Business Interoperability – The Key to Supply Chain Traceability”
+ 
+Technology such as blockchain has the power to solve complex challenges and achieve improved supply chain traceability. In order to tap into this powerful technology, interoperability, enabled by robust data and transaction standards, are a must! Segments of the supply chain, such as the food industry, have made significant progress leveraging data standards to support food safety and product transparency use cases. The panelists discuss their companies’ work on improved supply chain traceability, the importance of standards and the role business interoperability plays in accelerating the success of new technologies like blockchain. 
+ 
+
+  
+   
+ 
+
+ 
+Join the conversation about blockchain-based identity technologies and solutions with #HyperledgerInterop this month on social channels.
+ 
+Cover image by Clker-Free-Vector-Images from Pixabay
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

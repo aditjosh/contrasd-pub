@@ -1,0 +1,526 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question of bls signature - Miscellaneous - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Question of bls signature
+    
+
+
+      
+          
+            
+              
+              
+                Miscellaneous
+              
+            
+            
+
+
+
+        
+            signature-aggregation
+        
+
+      
+
+  
+
+  
+
+    
+      
+
+        
+
+            
+
+            
+              
+                yyyyyp
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 23, 2019,  8:23am
+                  
+                  
+
+1
+              
+            
+            
+              Can you tell me the progress of BLS signature.Such as the specifics of the BLS’s integration with consensus, the efficiency of the validation of signature aggregation.
+
+As far as I know, using the BLS signature also requires additional public key transfers，will this influence the efficiency？
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yyyyyp
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 25, 2019,  2:24am
+                  
+                  
+
+2
+              
+            
+            
+              can anyone answer it？
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yyyyyp
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 6, 2019,  6:35am
+                  
+                  
+
+3
+              
+            
+            
+              bls is a big problem
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 13, 2019, 12:17pm
+                  
+                  
+
+4
+              
+            
+            
+              At SKALE we are developing a BLS library for general use.
+
+It also includes threshold encryption.  It is in process of getting improved and documented.
+
+Your are welcome to use it. It is licensed under  AGPL 3.0
+
+
+  
+      
+      GitHub
+  
+  
+    
+
+skalenetwork/libBLS
+
+
+Top-performance BLS threshold signatures, threshold encryption, distributed key generation library in modern C++. Actively maintained and used by SKALE for consensus, distributed random number gen,...
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yyyyyp
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 14, 2019,  3:31am
+                  
+                  
+
+5
+              
+            
+            
+              thanks for your reply,Can you provide some benchmark data，and do your library support the go language
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 14, 2019,  4:10pm
+                  
+                  
+
+6
+              
+            
+            
+              It does around a 1000 signings per sec on my PC.
+
+We will be adding a command line for it soon. Then you will be able to call this from go easily.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yyyyyp
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 15, 2019,  2:13am
+                  
+                  
+
+7
+              
+            
+            
+              1000signings means 1000 individual signatures or aggregate signatures ？
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 15, 2019,  9:47pm
+                  
+                  
+
+8
+              
+            
+            
+              1000 individual signings for a BLS share.  Actually a signing involves a single exponentiation in a field, so it is not so expensive …
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                yyyyyp
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 16, 2019,  2:45am
+                  
+                  
+
+9
+              
+            
+            
+              Validation time may be more important than signature time because it involves pairing. How long does it take you to verify the signature? One more thing, I find that you are using a bn128 curve, but as far as I know it can only achieve 110bit security. What do you think about this? Have you considered bls12-381
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                kladkogex
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 16, 2019,  9:05pm
+                  
+                  
+
+10
+              
+            
+            
+              yyyyp - I am going to ETH Berlin but I will have Sveta Rogova who is our BLS tsar get measure this and get back to you
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                p_m
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 29, 2019,  1:28am
+                  
+                  
+
+11
+              
+            
+            
+              Check out our pure JS implementation: https://github.com/paulmillr/noble-bls12-381
+
+Works in node and browsers.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

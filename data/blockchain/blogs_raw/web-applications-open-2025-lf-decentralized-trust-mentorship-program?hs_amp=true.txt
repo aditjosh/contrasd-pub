@@ -1,0 +1,109 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Applications Open: 2025 LF Decentralized Trust Mentorship Program
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Applications Open: 2025 LF Decentralized Trust Mentorship Program
+
+        
+
+        
+           Written by LF Decentralized Trust | Apr 15, 2025 2:38:35 PM 
+        
+
+        
+          According to the Harvard Review, 96 percent of commercial programs include open source software, translating to $8.8 trillion of value to businesses worldwide. And the decentralized technology market, per Fortune Business Insights, is set to grow from $86.53 billion in 2025 to $457.35 billion by 2032.
+
+
+So, for those looking for the next step on their developer career path, open source decentralized technologies are ripe with opportunities. Working in this field also puts you in the center of the action for reshaping financial services, global trade, healthcare systems, government services, supply chain, and so much more. 
+
+Sold yet? Then you should apply for the LF Decentralized Trust Mentorship Program. This is a structured, hands-on opportunity to work directly with open source professionals on projects that will advance leading-edge open source ledger, identity, interoperability, and cryptographic code bases and communities.
+
+A continuation of the Mentorship Program started under Hyperledger Foundation, this well-established initiative matches aspiring contributors to the community, at any stage in their career, with experienced mentors to work on real-world projects in the LF Decentralized Trust ecosystem. Mentors design their projects to match their expertise and help meet critical development milestones. Mentees are introduced to real-world open source development tools, practices, and community collaboration—and they leave with tangible contributions, new confidence, and a growing professional network. Upon completing their project, mentees will have added opportunities to present their work to the community in virtual and in-person events, opening additional doors for career growth. 
+
+Mentees can tackle their projects from anywhere in the world. Mentors are active members of the very global LF Decentralized Trust community and, likewise, will work on these projects from locations around the world. Many of this year’s mentors, including André Augusto, Raju Owk, Xichen Pan, Salaheldin Solima, and Shankar Subramanian, started their work in this community as mentees in previous years. They are now leading development on key technologies and working for innovative companies or doing advanced research. 
+
+This year, there will be 20 projects. Here are overviews of just a few:
+
+Extensible Library of DLT Connectors for Hyperledger Cacti
+
+Primary Focus: Coding
+
+In this project, we will create an extensible library of pluggable connectors that can be selected and deployed based on DLT type. We will design a common development template and gRPC-based client API for connectors by inspecting existing connector implementations. Connecters will support the vendor-neutral IETF SATP standard and trigger ledger operations through the Common Operators Module (COPM). We will also integrate Cactus and Weaver further according to the Cacti architecture by merging Cactus connectors and Weaver drivers for Fabric and Corda into canonical Cacti connectors for those two DLTs.
+
+Fabric Private Chaincode and CC-Tools for privacy-sensitive applications
+
+Primary Focus: Coding
+
+Fabric Private Chaincode (FPC) leverages modern Confidential Computing technology, such as Intel SGX, to enhance the protection of chaincode and their data while executed at the endorsing peers. Client applications interact with their private chaincode via the FPC Client SDK, which is responsible to encrypt and authenticate the invocation arguments before being sent to the endorsing peers. Currently chaincodes can be developed in C++ or Golang.
+
+The LF Decentralized Trust Labs CC-Tools library offers several features that facilitate the journey of learning, development, and deployment of chaincode for Hyperledger Fabric in Golang.
+
+These technologies were integrated successfully during the mentorship program 2024, allowing for the development of chaincodes leveraging the privacy aspects of FPC and the fast and easy development of CC-Tools. This mentorship proposal builds on top of the previous project.
+
+Web3j: Enhancing JVM Android Support with generation of Kotlin Wrappers for Solidity Smart Contracts
+
+Primary Focus: Coding
+
+The Web3j-Android library is pivotal for developers integrating Android applications with the Ethereum blockchain, enabling them to leverage Web3j's robust capabilities within a mobile environment. Following the success of the previous mentorship program in 2024, the Web3j-Android library was significantly upgraded from version 4.8.8 to version 4.12.3-android, effectively resolving challenges related to coherence, functionality, and alignment with modern Android development practices.
+
+This project proposes to build upon the accomplishments of the prior mentorship by further enhancing and expanding the functionalities of the Web3j-Android library. Given Kotlin's prominence as the preferred programming language for Android development, this initiative aims specifically to facilitate the generation of Kotlin-based smart contract wrappers. Achieving this objective will ensure the library fully aligns with contemporary development standards for both Android applications and Ethereum blockchain technologies.
+
+After this is achieved, the mentee will continue with improving the release process and the keep up to date procedure of web3j-android with the main Web3j library.
+
+Designing and Implementing Trust Tasks
+
+Primary Focus: Coding
+
+The Trust over IP (ToIP) project has developed a new trust architecture centered around the Trust Spanning Protocol (TSP). TSP is an interoperability layer for highly assured trust relationships between endpoints in a similar way like IP is for connectivity. Many trust tasks (or reusable patterns for trusted exchanges) can be developed in a modular fashion and with minimal development cost. In this project, prospective interns can develop 1 or 2 of such trust tasks using one of the supported languages (Rust (first preference), or Typescript, Python, Go, or C) and produces pre-specification documentation of the methods. There are a long list of tasks to choose from, for example: authentic time services, authentic location services, messaging services, TRQP over TSP, credential exchange (multiple variations) over TSP, additional DID methods. We can also factor in the mentee's research or career interests in selecting such trust tasks to develop.
+
+Help Beginners Deploy A DLT Platform Using Hyperledger Bevel
+
+Primary Focus: Coding
+
+Since many newcomers to the technology are learning how to get started, and frequently ask questions on the Bevel Discord channel about deploying a blockchain network, primarily in a local environment, I believe it would be valuable to create a mentoring program. This program would help these individuals understand how to leverage the power of Hyperledger Bevel to deploy a private blockchain network with the DLT platform of choice on their Kubernetes cluster.
+
+Become Part of the Future of Open Source
+
+Mentorship is a core value across the Linux Foundation. It introduces the newest generation of talent to the important work of open source development, drives innovation across projects and communities, and opens doors for those who might not otherwise have a way into this development community and career path. The application process is being managed through  LFX Mentorship, a platform created by the Linux Foundations to train future open source leaders. 
+
+The application deadline for the annual LF Decentralized Trust Mentorship Program is May 12, 2025. Check out the full list of mentorship projects and start your application today. We encourage applications from diverse communities. All are welcome! 
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

@@ -1,0 +1,102 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Bevel Release 1.0: Paving the Way for Seamless and Secure Blockchain Deployments
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Hyperledger Bevel Release 1.0: Paving the Way for Seamless and Secure Blockchain Deployments
+
+        
+
+        
+           Written by Sownak Roy, Tech Strategy Manager at Accenture and Suvajit Sarkar, Tech Research Principal at Accenture, Hyperledger Bevel Maintainers | Jan 9, 2024 5:00:00 PM 
+        
+
+        
+          We are delighted to unveil the highly anticipated release of Hyperledger Bevel version 1.0, marking a pivotal moment in our journey toward creating an advanced blockchain automation tool. Originating as a labs project in late 2018, Hyperledger Bevel has evolved significantly, gaining acceptance as a Hyperledger project nearly two years ago. This release is a testament to our commitment to excellence and innovation in the realm of distributed ledger technologies (DLT). 
+
+
+Hyperledger Bevel v1.0 introduces new features and refined deployment processes, elevating the efficiency and security of blockchain network setups. We have recognized that many of the developers just want to explore blockchain deployment. We have taken onboard that feedback: starting with Hyperledger Besu in this release, Hashicorp Vault and GitOps is optional for local deployments, and you can use just helm commands to deploy a DLT network.
+
+Hyperledger Bevel is designed not only to accelerate the deployment of blockchain networks but also to ensure their scalability and security, inherently making them production ready. The project currently boasts compatibility with R3 Corda OS and Enterprise, Hyperledger Besu, Hyperledger Fabric, Hyperledger Indy, Quorum, and Substrate on the cloud infrastructure of your choice. 
+
+Key highlights of the release include:
+
+	Support for Hyperledger Fabric v2.5: Seamless network deployment and operations for Fabric v2.5.
+	GitHub Actions Workflows: Simplified network deployment and operations through intuitive GitHub Actions workflows that you can tweak as per your cloud infrastructure.
+	Redesigned Documentation: A comprehensive overhaul of our documentation to enhance user experience and accessibility.
+	Standalone Helm Charts: Increased ease of deployment with standalone Helm charts which are also available via Helm repo.
+	Hyperledger Cacti Connectors: Additional interoperability capabilities with Cacti connectors.
+
+
+Road Ahead
+
+We will keep actively working towards making deployment easier and seamless. In our future releases we plan to add exciting new features. Some of key items on our roadmap include:
+
+	Support for Corda 5 introduced as a new platform.
+	Deployments with only Helm, making Ansible optional.
+	Using Helm repo as GitOps source for charts.
+	Deployment using Kubernetes Operator.
+	Grafana and Prometheus integration for Flux GitOps and ingress.
+
+
+Our long-term architectural goals for Hyperledger Bevel are to offer modularity, extensibility, better usability, and scalability. We want users to reuse code as much as possible while still avoiding code bloat and duplication in the features. In future releases, we will 
+
+	Enhance interoperability with other Hyperledger projects, fostering a seamless integration experience. 
+	Introduce advanced customization options, allowing users to tailor Bevel to their specific blockchain deployment needs. 
+	Prioritize performance optimization, ensuring that Bevel remains a high-performing and efficient tool for deploying and managing blockchain networks.
+
+
+Join the Hyperledger Bevel Community!
+
+We extend a warm invitation to join the vibrant Hyperledger Bevel community. Whether you are eager to contribute to our project or simply curious to explore the vast possibilities Bevel offers, we are excited to connect with you.
+
+Getting in touch is a breeze! You can find us on the Hyperledger Bevel Discord channel, where discussions and collaborations thrive. Additionally, we host bi-weekly sprint planning calls (please refer to the Hyperledger calendar), providing ample opportunities for you to engage, contribute, or seek assistance to kickstart your journey with Bevel.
+
+We look forward to welcoming you to the Hyperledger Bevel community and ushering in a new era of automated and secure blockchain deployments!
+
+__
+
+Learn more about all the new features at a virtual Hyperledger Meetup about the Hyperledger Bevel 1.0 release on Monday, January 15, at 9 AM Pacific.
+
+
+
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

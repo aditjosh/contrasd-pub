@@ -1,0 +1,195 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Key Concepts — Hyperledger Fabric Docs main documentation
+
+ 
+  
+    
+      
+        
+
+
+          
+          
+          
+            Hyperledger Fabric Docs
+          
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+        
+
+              	Introduction
+	What’s new in Hyperledger Fabric v2.x
+	Release notes
+	Key Concepts	Introduction
+	Hyperledger Fabric Model
+	How Fabric networks are structured
+	Identity
+	Membership Service Provider (MSP)
+	Policies
+	Peers
+	Ledger
+	The Ordering Service
+	Smart Contracts and Chaincode
+	Fabric chaincode lifecycle
+	Private data
+	Channel capabilities
+	Security Model
+	Use Cases
+
+
+
+	Getting Started - Install
+	Getting Started - Run Fabric
+	Tutorials
+	Deploying a production network
+	Operations Guides
+	Upgrading to the latest release
+	Commands Reference
+	Architecture Reference
+	Frequently Asked Questions
+	Contributions Welcome!
+	Glossary
+	Releases
+	Still Have Questions?
+	Status
+
+
+
+        
+
+      
+
+    
+
+    
+          
+          Hyperledger Fabric Docs
+      
+
+      
+        
+          
+  	
+	Key Concepts
+	
+             View page source
+      
+
+
+  
+
+
+
+          
+           
+             
+  
+Key Concepts¶
+
+
+	Introduction
+	Hyperledger Fabric Model
+	How Fabric networks are structured
+	Identity
+	Membership Service Provider (MSP)
+	Policies
+	Peers
+	Ledger
+	The Ordering Service
+	Smart Contracts and Chaincode
+	Fabric chaincode lifecycle
+	Private data
+	Channel capabilities
+	Security Model
+	Use Cases
+
+
+
+
+
+
+
+           
+
+          
+
+          
+  
+    
+      
+        Next 
+      
+      
+         Previous
+      
+    
+
+  
+
+  
+
+
+  
+    
+        © Copyright Hyperledger 2020-2023.
+    
+
+      
+This work is licensed under a Creative Commons Attribution 4.0 International License
+      
+        
+
+    
+
+  
+
+  Built with Sphinx using a theme provided by Read the Docs. 
+
+
+        
+
+      
+
+    
+  
+
+   
+

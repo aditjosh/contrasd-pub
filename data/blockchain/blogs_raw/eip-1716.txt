@@ -1,0 +1,225 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-1716: Hardfork Meta: Petersburg
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-1716: Hardfork Meta: Petersburg
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  
+
+  	Authors	Afri Schoedon (@5chdn), Marius van der Wijden (@MariusVanDerWijden)
+	Created	2019-01-21
+	Requires	
+
+  EIP-1013, 
+
+  EIP-1283
+
+
+
+
+  
+
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+	References
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This meta-EIP specifies the changes included in the Ethereum hardfork that removes EIP-1283 from Constantinople.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+
+	Codename: Petersburg
+	Aliases: St. Petersfork, Peter’s Fork, Constantinople Fix
+	Activation:
+    	Block >= 7_280_000 on the Ethereum Mainnet
+	Block >= 4_939_394 on the Ropsten testnet
+	Block >= 10_255_201 on the Kovan testnet
+	Block >= 4_321_234 on the Rinkeby testnet
+	Block >= 0 on the Görli testnet
+
+
+  
+	Removed EIPs:
+    	EIP-1283: Net gas metering for SSTORE without dirty maps
+
+
+  
+
+
+
+If Petersburg and Constantinople are applied at the same block, Petersburg takes precedence: with the net effect of EIP-1283 being disabled.
+
+
+If Petersburg is defined with an earlier block number than Constantinople, then there is no immediate effect from the Petersburg fork. However, when Constantinople is later activated, EIP-1283 should be disabled.
+
+  
+    
+      
+      
+         References
+      
+      
+    
+
+
+	The list above includes the EIPs that had to be removed from Constantinople due to a potential reentrancy attack vector. Removing this was agreed upon at the All-Core-Devs call #53 in January 2019.
+	https://blog.ethereum.org/2019/02/22/ethereum-constantinople-st-petersburg-upgrade-announcement/
+
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Afri Schoedon (@5chdn), Marius van der Wijden (@MariusVanDerWijden), "EIP-1716: Hardfork Meta: Petersburg," Ethereum Improvement Proposals, no. 1716, January 2019. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-1716.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

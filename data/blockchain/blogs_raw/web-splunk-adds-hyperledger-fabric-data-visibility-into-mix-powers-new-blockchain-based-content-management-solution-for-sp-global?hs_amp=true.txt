@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Splunk Adds Hyperledger Fabric Data Visibility into Mix, Powers New Blockchain-Based Content Management Solution for S&P Global – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Splunk Adds Hyperledger Fabric Data Visibility into Mix, Powers New Blockchain-Based Content Management Solution for S&P Global – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Nov 11, 2021 9:02:00 AM 
+        
+
+        
+          Read the full case study here.
+ 
+Large organizations have always struggled to get visibility into their data. Frequently, data comes in many sources and formats while also being siloed across the organization. DLTs add ledger data and metadata to the mix.
+ 
+Similarly, consortiums need to interoperate with each other. Yet organizations often use disparate tools for logs, metrics and tracing. All these are deployed on different clouds or on-prem. Then they build their own tools to take data from the ledgers and put it into a SQL database. Consortiums may include competitors who don’t trust one another, so they don’t want to share data. But, if no one shares data, it can be challenging to determine if an organization has a problem or if it lies in the network.
+ 
+Splunk, a company focused on removing barriers between data and action, took on this challenge by creating open source solutions that allow the ingestion of ledger data and corresponding metadata while correlating with other data sources. 
+ 
+Splunk’s customers include 92 Fortune 100 companies. Meeting their needs was critical so Splunk asked a lot of questions. They learned that many customers used Hyperledger Fabric, and it was fairly straightforward to ingest that DLT data. Splunk pulls in data without caring about structure, schema, or form so there was no need to format Hyperledger Fabric data before ingestion.
+ 
+The next questions were about what they could do with the Hyperledger Fabric data. Users could analyze and correlate blocks and transaction data with other data they had in Splunk. But conversations with customers revealed they wanted more, including chaincode events, metrics, and, most recently, private data collections.
+ 
+Initially, Splunk focused on uses from an IT perspective. Then the focus shifted to security. Customers wanted to know what else they could do to secure their infrastructure. Keeping it up and running was important, but so was making sure nothing would compromise their Hyperledger Fabric environment
+ 
+One of those interested customers was S&P Global, which delivers data, research, and credit ratings, among other things, to governments, companies, and individuals. In 2019, it was entering a new region. S&P took this opportunity to explore modern technologies and new ways of doing business. It decided to build a content management solution from scratch with innovative technology and security.
+ 
+Splunk’s Hyperledger Fabric-based applications caught S&P’s attention. Leveraging the Fabric data in Splunk meant S&P could now get user interactions and metadata—like who uploaded documents or modified documents and when. S&P developed applications to retrieve that metadata and present it to the user for document searches. This opened up possibilities for providing an audit trail.
+ 
+The resulting solution, S&P Global Secure Vault, is multi-cloud, multi-tenant, and secure, and it is ready to scale to multiple regions and multiple participants. In the solution, S&P uses Splunk for three primary areas. The first is infrastructure monitoring on the operations of different components. The company wants to make sure the system stays healthy and the right teams are alerted if there’s an issue. The second is visibility into the events happening within the blockchain network. And third is business activity monitoring, which includes searching for document metadata.
+ 
+Hyperledger worked with Splunk and S&P Global on a case study that details this blockchain-based secure content management system and how the companies partnered to add visibility into business transactions, making them indexable and searchable. It also delves into Splunk’s commitment to open source software and plans for helping customers that use Hyperledger Fabric get even more from their data.
+ 
+Read the full case study here. For more details on security monitoring of Hyperledger Fabric data, tune into the Wednesday, December 1, webinar with Christoper Cord of Splunk.
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

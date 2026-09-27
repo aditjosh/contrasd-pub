@@ -1,0 +1,175 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Privatizing the Volume and Timing of Blockchain Transactions - Privacy - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Privatizing the Volume and Timing of Blockchain Transactions
+    
+
+
+      
+          
+            
+              
+              
+                Privacy
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                trevormil
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    June 1, 2023, 12:27pm
+                  
+                  
+
+1
+              
+            
+            
+              In this post, I share my paper VTBC on privatizing the volume and timing of blockchain transactions. Full paper can be found here. It has been accepted to ICCCN 2023 in July.
+
+Problem: Even though existing privacy-preserving blockchain solutions like ZCash can hide the contents of blockchain transactions and maintain anonymity, they still leak volume and timing metadata (when transactions are added and how many transactions are added to the blockchain). This metadata is a core part of blockchains and distributed consensus.
+
+However, the dilemma is that this volume and timing metadata may need to be privatized in some situations. Through our research, blockchains can now support applications with volume-based or time-based outcomes in a privacy-preserving manner.
+
+One example is student exams. Students do not want to leak when or how many times they submit an exam because that can have direct correlation to their final grade. However, if implemented via a blockchain, the number and timing of submissions would be leaked through metadata. Or in certain auctions like Dutch auctions, you may not want to leak the volume and timing of bids to other users because that indirectly leaks information.
+
+
+
+image2146×574 47.2 KB
+
+
+
+Solution: The solution proposed in this paper is to build on top of existing privacy-preserving solutions (zkSNARKs) and create applications which support decoy transactions. Decoy transactions are simply no-op transactions that do not contribute to the outcome of the application but are used to obfuscate the overall volume and timing dataset. All transactions (real and decoy) are then inputted to the application’s target or decision function, F.
+
+For example, if we have a student exam deadline where exams can be late or on-time, students can obfuscate the volume and timing of their submission by submitting one real and one decoy submission on either side of the deadline. The grading function will take in both submissions but never leak which one was real and which was fake.
+
+For enforcing adequate obfuscation of the volume and timing metadata, we show that applications can define K time periods that correspond to all possible outcomes and enforce that all users must submit >1 transaction during each of the K time periods, or else, they are disqualified. If transactions are submitted outside the time period, those transactions are ignored.
+
+In the paper, we propose a solution based on the Hawk multi-party privacy-preserving blockchain application model which uses a minimally trusted manager to help facilitate the application. The manager is responsible for setting up the application, receiving everyone’s secret inputs, executing the application’s target function F, and sending the secret outputs back to the users. The manager is trusted for privacy; however, they are not trusted for correctness of execution. The correctness of execution can be publicly verified by anyone to be fair and honest (due to the properties of zkSNARKs and using the blockchain as the trusted timekeeper).
+
+Results: We evaluated our method via an Ethereum private blockchain and tested with up to N=128 inputs / transactions. We found that our proposed method is implementable and deployable on a blockchain such as Ethereum but can add significant overhead (especially as N or the number of decoy transactions increases). We believe that, over time, our approach will continue to become more scalable and reasonable for a public blockchain like Ethereum (as zkSNARKs and blockchain scalability continue to improve). For now, our solution is suitable to private or permissioned blockchain environments, where resources are not as scarce.
+
+Feel free to ask any questions below!
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

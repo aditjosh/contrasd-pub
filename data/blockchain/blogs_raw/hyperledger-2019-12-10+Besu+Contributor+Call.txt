@@ -1,0 +1,661 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-12-10 Besu Contributor Call - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+	2019-09-17 Besu Contributor Call
+
+
+
+
+
+	2019-10-01 Besu Contributor Call
+
+
+
+
+
+	2019-10-15 Besu Contributor Call
+
+
+
+
+
+	2019-10-29 Besu Contributor Call
+
+
+
+
+
+	2019-11-12 Besu Contributor Call
+
+
+
+
+
+	2019-11-26 Besu Contributor Call
+
+
+
+
+
+	2019-12-10 Besu Contributor Call
+
+
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2019-12-10 Besu Contributor Call
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2019-12-10 Besu Contributor Call
+
+	Danno Ferrin
+
+
+
+	Felipe Faraggi
+
+
+
+	Edward Evans
+
+
+
+	Madeline Murray (Deactivated)
+
+
+
+
+
+Owned by Danno Ferrin
+
+
+Last updated: Jan 07, 2020 by Felipe Faraggi
+
+
+
+
+
+
+
+
+
+
+Meeting Link:Â https://consensys.zoom.us/j/199741148
+APAC/AMER Friendly Time -Â  0100UTC (https://www.timeanddate.com/worldclock/converter.html?iso=20191210T010000&p1=224&p2=179&p3=195&p4=47&p5=1440)
+	5pm Monday (9 Dec) Los Angeles
+	8pm Monday (9 Dec) New York
+	1 amÂ  Tuesday (10 Dec) UTC
+	2 am Tuesday (10 Dec) Paris/Berlin
+	11 am Tuesday (10 Dec) Brisbane
+
+Agenda
+	Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	Eth DenverÂ is 15-17 Feb 2020 in Denver Colorado
+	EthCCÂ (Ethereum Community Conference) is 3-5 March 2020 in Paris France
+	Hyperledger Global ForumÂ is 3-6 March 2020 in Phoenix AZ
+
+
+	Release updates	1.3.6 - releasedÂ 
+	Proposal to lengthen RC/Beta window for 1.4
+	1.4
+
+
+	Work Updates	Proposed Changes to Changelog
+	RPC Endpoint Service for Plugins (Danno)
+
+
+	Other Business	New Maintainer proposal: Edward MackÂ 
+	CI/CDÂ 
+
+
+	Open Forum
+	Future Topics
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+2019-10-15 Besu Contributor Call
+2019-10-15 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2019-10-01 Besu Contributor Call
+2019-10-01 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2019-11-26 Besu Contributor Call
+2019-11-26 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-09-29 Besu Contributor Call
+2020-09-29 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-02-18 Besu Contributor Call
+2020-02-18 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020-01-07 Besu Contributor Call
+2020-01-07 Besu Contributor Call
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "5ae4aa1093d3443fbbfe8cd49ca56dd1"}

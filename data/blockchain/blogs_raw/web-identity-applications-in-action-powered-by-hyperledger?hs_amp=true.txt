@@ -1,0 +1,96 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Identity Applications in Action & Powered by Hyperledger – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Identity Applications in Action & Powered by Hyperledger – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Apr 30, 2020 9:12:54 AM 
+        
+
+        
+          Digital identity is gaining a lot of traction as a driver for blockchain adoption. There is growing recognition across many markets that reshaping how digital information is managed and verified can simultaneously increase online trust and privacy. The Hyperledger community is working hard to develop and deploy blockchain-enabled identity technologies and solutions with an eye towards decentralizing control of information and creating new models for verifying identities. 
+ 
+To illustrate where this technology can take us, we are showcasing some applications where it’s already being put into action:
+ 
+Known Traveller Digital Identity
+ 
+Known Traveller Digital Identity, or KTDI, is a World Economic Forum initiative with Accenture that brings together a global consortium of individuals, governments, authorities and the travel industry to enhance security in world travel. The pilot leverages cryptography, blockchain technology and biometrics and aims to allow cross-border travel without presenting physical documents, accelerating the flow of passengers through airports, improving passenger experience, and enabling authorities to better focus limited resources on security improvements.
+ 
+QDX™ HealthID platform 
+ 
+QDX™ HealthID platform is a service from Quantum Materials Corp that leverages self-sovereign identity technology to provide end-to-end visibility to support testing and immunization for infectious diseases, including COVID-19, at scale. The platform enables multiple methods of authenticating the individuals being tested, those who are administering the test, as well as the test kits themselves, whether to detect the presence of the virus itself or associated antibodies. 
+ 
+The QDX™ HealthID platform uses Hyperledger Sawtooth as the backing distributed ledger technology, which is deployed and managed using Blockchain Technology Partner’s platform Sextant for Sawtooth. The platform is also readied for integration with other distributed ledger applications via DAML, the smart contract language open sourced by Hyperledger member, Digital Asset.
+ 
+MemberPass™
+ 
+Provided by CULedger, MemberPassTM is a digital credential held by credit union members that protects credit unions and their members from identity theft and fraud in all banking interactions, from call center authentication to lending to new account opening. MemberPass is a simple, secure replacement for user IDs and passwords, and supplants the traditional knowledge-based interrogation contact centers employ today to authenticate members calling for telephone banking services. MemberPass seamlessly authenticates both, the member and the credit union to each other, in any call-in, log-in or walk-in exchange, providing a consistent, frictionless experience across all channels. 
+ 
+Sovrin Network
+ 
+Operated by independent Stewards, the Sovrin Network uses the power of a distributed ledger to give every person, organization, and thing the ability to own and control their own permanent digital identity. With recent advancements in digital identity standards, Sovrin provides a secure and private network for identity holders to collect, manage and share their own verifiable digital credentials.
+ 
+The Sovrin Network is governed by The Sovrin Foundation, a nonprofit organization established to administer the Governance Framework for this open source decentralized global public network enabling self-sovereign identity on the internet. 
+ 
+Trust Your Supplier
+ 
+Trust Your Supplier is a production Hyperledger Fabric blockchain network, running on the IBM Blockchain Platform, that provides suppliers with a trusted digital passport to streamline on-boarding with their customers.
+ 
+The Trust Your Supplier network is a cross-industry source of supplier information and identity helping to simplify and accelerate the on-boarding and lifecycle management process. TYS was built to be a cross-industry blockchain network to facilitate procurement functions within an organization. The network’s first use case is focused on supplier onboarding and validation.
+ 
+VerifiedMe
+ 
+Verified.Me is a service offered by SecureKey Technologies Inc., in conjunction with a consortium of seven of Canada’s major financial institutions – BMO, CIBC, Desjardins, National Bank of Canada, RBC, Scotiabank and TD. Verified.Me is a privacy-respecting digital identity and attribute sharing network. The service simplifies identity verification processes by allowing individuals (subjects) to share identity and attribute information from trusted sources (including financial institutions, mobile operators, credit bureau, and government) with the services that they wish to access.
+ 
+The network is based on permissioned distributed ledgers operated by the consortium. It is built using the IBM Blockchain Platform which is based on Linux Foundation’s open source Hyperledger Fabric  and is aligning with W3C decentralized identity standards, to enable interoperability with other networks. SecureKey’s Triple Blind® approach means that no network participant alone, including SecureKey, can have a complete view of the user journey – the subject can’t be tracked.
+ 
+The service is free for consumers to use, either using their web browser, or by downloading the mobile app through the App Store (iOS) or Google Play (Android).
+ 
+Join the conversation about blockchain-based identity technologies and solutions with #HyperledgerIdentity this month on social channels. Also, Hyperledger has an Identity Working Group that is open to all. Learn how to get involved via this video.
+ 
+Coverage image by PublicDomainPictures from Pixabay
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

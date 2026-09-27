@@ -1,0 +1,98 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Developer Showcase Series: Rohit Aneja, Bristlecone Labs – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Developer Showcase Series: Rohit Aneja, Bristlecone Labs – Hyperledger Foundation
+
+        
+
+        
+           Written by Hyperledger | Feb 6, 2018 9:00:46 AM 
+        
+
+        
+          We’re back to our Developer Showcase blog series, which serves to highlight the work and motivations of developers, users and researchers collaborating on Hyperledger’s incubated projects. Next up is Rohit Aneja from Bristlecone Labs. Let’s see what he has to say!
+ 
+What advice would you offer other technologists or developers interested in getting started working on blockchain? 
+ 
+One needs to be open minded – It is very new technology and many are interested in it due to its popularity. Many don’t know what it does. Also, there are many platforms claiming to be blockchain frameworks, but real frameworks that offer end to end blockchain needs ranging from membership service to smart contracts are rare, so developer needs to be well versed with knowledge and open minded for selecting a technology and implementing it.
+ 
+Platform – Permissionless or permissioned – It is very important to identify which type of network is suitable for your needs. Like enterprise level networks where each member has some role and is known can leverage a permissioned network, also known as a private network.
+ 
+Identify use case and problem solution – Identifying use case and finding a value prop for each participant on network is significant before making a solution. It may work for one party, but since the network needs participation from all members who are required on network, it is important to have use case which serve purpose to everyone.
+ 
+Give back – contribute to open source – This is very important for every developer, consuming open source platforms or making solutions around it. Open source platforms rely on contributions and an active community. Answering questions, being active on forums is a must if you really want to explore, learn and master a framework.
+ 
+
+ 
+ Rohit Aneja, blockchain engineer, Bristlecone Labs
+
+
+ 
+Give a bit of background on what you’re working on, and let us know what was it that made you want to get into blockchain?
+ 
+At my organisation, Bristlecone Labs, I work as a blockchain engineer and prosper innovative solutions to serve supply chain specific use-cases. We have developed IOE + Blockchain solution based on Hyperledger Fabric 0.6 while 1.0 was still in its alpha phase. The solution is aimed at logging real time sensors data in its immutable ledgers and executing smart contracts on sensor data.
+ 
+One of the use cases being smart contracts which execute on every sensor reading and checks if sensor crossed specific threshold, which may mean perishables are exposed to unsuitable conditions and have spoiled due to this. The system can help not only record such breach of contracts in immutable ledgers but can also identify responsible shipper and take corrective actions in real time. There is avoidance of any conflict with system in place and real time sensory data, optimisation and efficiency can be achieved by identifying rough routes and avoiding them, by having shock detecting sensors on shipping trucks transporting delicate or fragile shipments.
+ 
+As blockchain is key to achieving the above scenarios where distributed participants can agree upon consensus, and benefit on big picture out of this system.
+ 
+As there is a high interest from various big players as well as small players, plus the nature of blockchain platforms (being distributed, open source) also makes it available to everyone, by everyone, there is no “single owner” of these platforms and this technology but all of us working on blockchain are. This is one important fact which motivated me to jump into blockchain engineering and learn, contribute and innovate passionately for the better of the world.
+ 
+What project in Hyperledger are you working on? Any new developments to share? Can you sum up your experience with Hyperledger?
+ 
+Currently, I am developing a business network on Hyperledger Composer, although it’s in early stage of its development, it will be mostly a network of networks that will have suppliers identify an optimised supply path as well as have competitive advantage for being on a network than suppliers playing alone.
+ 
+Hyperledger has been constantly evolving and has a very active community. Availability of production ready system that has high security and scalability in such early stages of blockchain technology is a bliss for developers. Availability of high quality documents and tutorials makes it easy for developers to jump into complex world of blockchain. As I started my Blockchain journey with Hyperlegder, after making some solutions, I have never felt short changed of features and possibilities that the framework offers. Having an active community with regular meetups and weekly updates keeps us flowing with recent changes and recommended coding guidelines.
+ 
+What do you think is most important for Hyperledger to focus on in the next year?
+ 
+I think, tools that make achieving end to end solutions faster and easier will definitely attract lots of audience and developers around the globe. Blockchain can be a complex topic for people from different backgrounds and giving tools for rapid development like Hyperledger Composer is a great value prop for people to adopt a simple and fast solution.
+ 
+Keeping focus in improving such tools will really drive a large base towards Hyperledger framework. It is incredible what Hyperledger is doing and especially keeping it open source and public driven complements technology like blockchain, which at a core is – “there is no central authority.” Offering a framework which is contributed by the developer community around the globe, there is no way it can go wrong with great mediators and helpful, passionate organisers.
+ 
+Blockchain is really going to have a big impact on how things function as of now (hence disruptive), and when business realizes true potentials of it, that’s when early adopters are going to really benefit.
+ 
+ 
+ 
+
+
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

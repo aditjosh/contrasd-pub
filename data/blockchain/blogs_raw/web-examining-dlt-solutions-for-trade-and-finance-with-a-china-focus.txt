@@ -1,0 +1,856 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Examining DLT Solutions for Trade and Finance, with a China Focus – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Finance
+                            
+                        
+                    
+
+                
+                Examining DLT Solutions for Trade and Finance, with a China Focus
+ 
+                
+                    Jessica Rampen
+                    |
+                    
+                        Dec 16, 2020
+                    
+                
+
+            
+
+            
+            
+                2020 will be remembered as the year the world was impacted by the Covid-19 pandemic, with severe health, economic and societal consequences for many. The lockdown experience many nations faced was a chance for some to rethink and reflect on the events that were changing the lives of billions of people. 
+ 
+As a volunteer with both the Hyperledger Capital Markets and Trade Finance Special Interest Groups, I took this opportunity to research developments in Distributed Ledger Technology in China. After the turmoil of this pandemic, I believe a large-scale adoption of Distributed Ledger Technology is indeed possible and could lead to the development of ecosystems that will contribute to a better future for our society. 
+ 
+I captured my research in a paper that highlights the efforts at the national level in China to embrace the integration of DLT into a comprehensive ecosystem that could potentially bring value for the world, focusing particularly on finance industry applications. Read on for some of the highlights from the paper:
+ 
+China is building the first DLT interoperability project within a cross-cloud, cross-framework, cross-chain architecture over a number of smart cities in China and in strategic locations internationally. This project, called the Blockchain Service Network or BSN, aims to connect the different DLTs of public entities, private corporations and permissionless-permissioned chains.
+ 
+The vision is to create a cross-industry DLT ecosystem that could be integrated by IoT and AI-powered smart cities to totally reshape data management practices and society.
+ 
+Focusing on finance applications, China aims to complete the digitalization of assets and transactions for the digital transformation of financial markets. The People’s Bank of China is taking the lead by issuing technical and operational standards for the industry. It is currently running national pilot projects based on assets digitalization by the Central Bank Digital Currency (CBDC), the so-called Digital Currency Electronic Payment (DCEP), a solution that could potentially replace M0 “cash” in 10-15 years as a ground layer for financial operations.
+ 
+The aim of the Hyperledger Capital Markets Special Interest Group (CMSIG) is to focus on the transformation of capital markets through the use of blockchain technologies, specifically the DLTs in the Hyperledger greenhouse. Hyperledger Fabric and its derivatives are core components of BSN. Capital markets are a way to connect investors and borrowers to facilitate the production of goods and services. Such markets are venues where creation of tradeable representations of assets of various duration and the safe exchange of these assets through the medium of a fungible, legal, safe asset like a currency takes place. Provenance and durable claims on the assets are important and so is interoperability between the assets through the medium of a safe currency. 
+ 
+BSN and DCEP, by integrating a national digital marketplace, tackle friction inherent in these processes. The effects will be felt far beyond China. Non-China markets will have to use BSN and DCEP to engage with China markets. Reverberations from such a vast socio-technical transformation will reach even those who are not directly engaged with China. The Hyperledger CMSIG is following these developments and has hosted several presentations on BSN and DCEP. The paper on DLTs focusing on China is an important addition to the corpus, contributing to our understanding of China’s blockchain stack and its strategic implications for Trade Finance and Capital Markets. 
+ 
+The People’s Bank of China is also leading a national project involving Distributed Ledger Technology for trade and supply chain finance, the national harmonization of account receivables, financial bill rediscount, tax filing and international trade information collection. The pilot project is working in strategic locations supported by special regulations and sandboxes applications. Key municipalities, such as Beijing, Shanghai and Shenzhen, are developing long-term DLT strategic plans, integrating free trade areas with the goal to support a national pilot project application at a larger scale.
+ 
+Trade and supply chain finance, especially in cross border operations, represents a perfect case scenario where BSN and DCEP, despite them being separate projects, could potentially find common ground for integration based on the high level of internationalization and the large number of players involved in transactions. International trade is a fragmented environment made up of banks, insurers, logistics and transportation operators, buyers and sellers: it may greatly benefit from inclusive projects like BSN and DCEP.
+ 
+One of the areas the Hyperledger Trade Finance Special Interest Group (TFSIG) focuses on is technical and business operational practices for achieving interoperability and the creation of a comprehensive ecosystem between networks. Hyperledger Project Cactus could help achieve this higher purpose, standing as a turnkey solution for a new approach to “DLT-based ecosystem projects.”
+ 
+To conclude, BSN could be seen as an institutional marketplace for DLT applications in different areas, where each solution will find its place and challenge each other for a new “network” of DLT cloud, framework and applications. In the long run, BSN can be considered a pivotal strategic architecture, capable of reaching businesses stretching from China to overseas strategic locations, under a secure and distributed network. Financial DLT national projects therefore represent a way to safely drive overseas investments in terms of political orientation and economic accountability over the Digital Silk Road.
+ 
+For more details and updates, please see the full DLT solutions for trade and finance – China focus paper on the TFSIG and CMSIG wikis.
+ 
+Trade Finance SIG: https://wiki.hyperledger.org/display/TFSIG/DLT+solutions+for+trade+and+finance+-+China+Focus
+ 
+Capital Market SIG: https://wiki.hyperledger.org/display/CMSIG/DLT+solutions+for+trade+and+finance+-+China+focus 
+ 
+Written by:
+Eugenio Reggianini, Business Development Manager, CarbonBlue Innovations Limited; Member, Hyperledger Trade Finance & Capital Market Special Interest Groups
+ 
+Curated  by:
+Andrea Frosinini, freelance trade finance consultant; Chair, Hyperledger Trade Finance Special Interest Group    
+ 
+Vipin Bharathan, Technical Strategist and Founder, dlt.nyc; Chair, Hyperledger Capital Markets SIG
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

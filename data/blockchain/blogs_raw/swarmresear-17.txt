@@ -1,0 +1,398 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Light client connection strategy - Research - Swarm Community
+
+
+    
+    
+      
+          
+      
+    
+    
+        
+    
+      Light client connection strategy
+    
+
+
+      
+          
+            
+              
+              
+                Research
+              
+            
+            
+
+
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 3, 2019,  3:30pm
+              
+              #1
+          
+        
+        
+          
+Light client connection strategy
+
+When talking about a light client, we must consider what services the light client wants to consume.
+
+Specifically, we should probably talk about a light-client-for-data and light-client-for-pss etc.
+
+
+Light client for data
+
+
+What is a light client for data?
+
+A client that wants to access data from Swarm (via retrieval requests) and pay for it accordingly.
+
+It does not want to sync data, it does not want to serve retrieval requests to other nodes, nor participate in message routing in any way.
+
+
+How should such a client connect to the swarm?
+
+simplest: connect at random. or even simpler, connect to one node and use it as a gateway,
+
+more structured: The client wants to get data as fast as possible. Thus it wants to spread its connections evenly throughout the address space.
+
+For example, if a light client has the capacity to make 8 connections, then it is advisable to make one connection to a peer whose address begins with 000, one with 001, and so on up to 111.
+
+In future further metrics for connection quality - bandwidth, latency, (price?) etc should come into play.
+
+The client’s own address does not play a role in the connection strategy.
+
+
+Light Client for PSS
+
+
+What is a light client for PSS?
+
+A client that wants to be able to send and receive PSS messages, but does not want to take part in routing messages for other peers.
+
+
+How should such a client connect to the swarm?
+
+At the very least, such a client has to connect to the Swarm node whose address is closest to its own. Otherwise PSS messages addressed to the light client will not find it.
+
+More practically it should attempt to connect to several closest nodes - similar in size to a most-proximate-neighbourhood for full nodes.
+
+
+How should full nodes serve such light clients?
+
+Most importantly, full nodes should not count connections to light clients as fulfilling any of its Kademlia or mostProximate connection obligations.
+
+Beyond this syncing and message forwarding should be disabled for these connections.
+
+For light data clients only incoming retrieval requests from the client (and uploads?) need to be responded to.
+
+For light PSS clients, all messages addressed to the light client should be forwarded to the light client, and any PSS message originating from the light client should be forwarded in the Kademlia as if the full node itself had originated the message.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 6, 2019,  2:00pm
+              
+              #2
+          
+        
+        
+          The next thing I want to write about is “light” connections between full nodes. I will post it here as soon as I have the time.
+
+        
+
+
+        
+           
+1 Like
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 18, 2019,  3:56pm
+              
+              #3
+          
+        
+        
+          Light data connections between full nodes.
+
+What is a light connection?
+
+Morally, a light connection is a connection that is only used when one of the two connected nodes initiates an action. That is to say it does not participate in the ‘background’ process of syncing and processing uploads. In short: a peer connection that participates in retrieval requests, but not in syncing.
+
+Why would full nodes want to make light connections to each other?
+
+Tl;DR I want to open more light connections across the entire address range so that I can download faster.
+
+A full node that is being run as a pure ‘server’ has no interest in initiating a light connection with anyone.
+
+Any node has an interest in responding to light connection requests as this is the same as allowing light nodes to connect - it is a Swap earning opportunity.
+
+A full node that is being run for personal use however - eg. I run swarm on my dappnode at home and I want to use it to access data from Swarm - might well have an interest in opening light connections to other nodes.
+
+The connection strategy for a ‘server’ node wishing to maximise its Swap earning potential is to be well connected ‘close’ to its own address and sparsely connected further away. For this reason it will maintain a Kademlia connection table with roughly equal sizes of all proximity bins (say 3 connections in each bin, 5 in most proximate bin).
+
+The 3 peers in bin 0 are your representatives for the ‘other half’ of the address space and, when you want to download data locally, you depend on them for half of the data.
+
+Therefore the connection strategy for a pure ‘client’ node wishing to quickly access data from the Swarm is the same as described above in “light client for data”.
+
+The case of the home node, being both ‘server’ and ‘client’ is therefore a hybrid.
+
+Why can’t we just open more full connections?
+
+There is a cost to opening full connections in the form of sync data. This is not negligible. When you connect to random nodes, half of them will be in bin 0 and whenever you upload a file to your local node, you would have to sync half of all that data to each end every one of those nodes. These in turn would sync that data along their full peer connections. This can degrade the performance of the entire Swarm.
+
+[Note: When you first make a full connection to any peer (for example in bin 0), you must go through the syncing protocol, offering them all the chunks that fall within their address range relative to yours. While even for bin 0 it is unlikely to be half of all data (since local chunk storage hash distribution is likely to be skewed towards the node’s own address), it is still a sizable amount of data to process].
+
+So what should the connection strategy be for server+client nodes that wish to consume data locally?
+
+Fill up a complete Kademlia table with full connection (retrieval + sync), keeping all bins roughly even in size (say 3 peers per bin).
+
+Additionally make light connections to other full nodes so that on the whole, your peer connections are more evenly distributed across the address range. In particular you would all light connections to bin 0 so that you are not reliant on just 3 peers for half your data.
+
+In every Kademlia bin there should thus be a small number of ‘syncing’ peers (full connections) and any number of light connections.
+
+Or to put it another way - you can have 20 connections in bin 0, but you should only be syncing with 3 of them.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            lash
+            
+          
+
+          
+
+
+
+          
+              
+                June 18, 2019,  4:07pm
+              
+              #4
+          
+        
+        
+          
+
+
+
+ cobordism:
+
+
+Additionally make light connections to other full nodes so that on the whole, your peer connections are more evenly distributed across the address range. In particular you would all light connections to bin 0 so that you are not reliant on just 3 peers for half your data.
+
+
+
+
+This paragraph is not so clear. Is it the same as merely saying:
+
+
+Then make several mode light connections to nodes in bin 0.
+
+
+
+?
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+
+        
+          
+            
+
+
+
+                
+
+            cobordism
+            
+          
+
+          
+
+
+
+          
+              
+                June 18, 2019,  4:14pm
+              
+              #5
+          
+        
+        
+          You would make most extra light connections to bin 0, but certainly not all.
+
+Remember that peers in bin 1 are still responsible for a quarter of your requested downloads.
+
+A fully even distribution would have half of all conncetions in bin 0, a quarter in bin 1, an eigth in bin 2,  … and 1/2^n in most proximate bin (where n is the… is it called prox-limit?)
+
+I deliberately left out hard numbers, because that would suggest that I know a precise best answer.
+
+I give bin 0 as the example because it is the most critical - half of all download data coming from the peers in this bin.
+
+        
+
+
+        
+           
+
+         
+
+         
+            
+	
+          
+            Home 
+          
+        
+	
+          
+            Categories 
+          
+        
+	
+          
+            FAQ/Guidelines 
+          
+        
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+      
+      Powered by Discourse, best viewed with JavaScript enabled
+
+    
+    
+    
+  

@@ -1,0 +1,852 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Business Process Modeling: The Missing Link Between Legal Know-how and Blockchain-based Legal Products – Hyperledger Foundation
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Blog
+                            |
+                        
+                            Hyperledger Burrow
+                            
+                        
+                    
+
+                
+                Business Process Modeling: The Missing Link Between Legal Know-how and Blockchain-based Legal Products
+ 
+                
+                    Hyperledger
+                    |
+                    
+                        Aug 16, 2018
+                    
+                
+
+            
+
+            
+            
+                Guest post: Jan Hendrik Scheufen Chief Product Officer & Nina Gunther Kilbride, Chief Commercial Officer, Monax
+ 
+For the past two decades, tools for Business Process Management (BPM) have found their way into many domains to model and reliably execute business logic. However, benefits are still largely confined to single organizations while end-to-end value chains that stretch across organizations are a patchwork of individual participants storing and processing data in their own silos. Inter-organizational processes today require expensive intermediaries (lawyers, financial services, etc.) to deliver intended results and manage obligations in contractual, legal agreements and deliver intended results. Opportunities for efficiency gains and lower transaction costs remain largely untapped.
+ 
+Blockchain technology, by creating a reliable source of provable data, is a tool to tackle these inefficiencies. Blockchain enables the expansion of BPM and automated decision-making to operations between companies. Monax and others have propounded the concept of blockchains integrating BPM methodologies and standards as a means for capturing and operating  cross-organizational business processes while providing data certainty between parties. The combination of blockchain technology, smart contracts, and BPM provide us with the ability to create new, more effective commercial vehicles for getting jobs done in networked commerce: legal products.
+ 
+Legal products will deliver end-to-end legal solutions in order to support efficient, reliable processes across value chains, systems and borders, transforming commerce and scaling global networks. Legal products incorporate the coordination of legally significant actions (signing a contract, paying a bill, recording a document, transferring possession) into software, thus providing better visibility on contract status as well as the ability to automate execution of some of those actions. Before the rise of distributed ledger technology, legal products were not broadly feasible for commercial application, resulting in a lack of access to simple legal functions for most businesses and individuals. 
+ 
+Currently, legal know-how is mostly encoded in the heads of lawyers who lack the means to transform their knowledge into instructions that can run on a distributed computer system. Industry-proven standards such as BPMN (Business Process Model & Notation) provide a usable toolset that can be learned easily by a broad portion of the legal community.
+ 
+The BPMN standard defines generic symbols to describe the interaction of participants and data in a flow diagram that can be persisted into an XML representation (fig. 1). The XML schema is extensible with custom vocabulary to support features for specific execution engines available in the market. Therefore, it can also be enhanced with instructions for an execution engine that consists of a number of smart contracts and runs on a blockchain.
+ 
+
+ 
+ Fig.1. Example created using an open-source BPMN 2.0 modeler
+
+
+ 
+From a modeling perspective, any legal contract can be expressed as two sequential processes, one governing the Formation, the other the Execution phase of the agreement. Contract formation includes the negotiation of terms until the point when the agreement is signed by all parties. Execution of an agreement is the performance of its contractual promises.
+ 
+Figure 1 shows on the left a BPMN diagram for a very simple Formation process with swimlanes representing the parties (Buyer and Seller) and “tasks” for signing. The right side shows the resulting XML file containing standard BPMN elements as well as extension properties linking the swimlanes to the appropriate agreement fields. The above example left out a few more blockchain-relevant BPMN elements, (e.g., service tasks {to call other smart contracts}, receive tasks {to block the process for outside input from sources like Oracle}, gateways for routing decisions, etc.) for simplicity reasons. However, even such a simple example contains enough information to be executed by a smart contract-based process engine, particularly:
+ 
+	The order of activities as defined in the flow diagram
+	The signatures required to complete a task, assuming that the specified fields on the agreement contain the public addresses of the parties
+
+ 
+Hyperledger member Monax has produced such a process engine written in Solidity that can be fed with instructions from external files, such as BPMN. This process engine runs on Hyperledger Burrow, one of the Hyperledger projects hosted by the Linux Foundation. Burrow provides a modular blockchain client with a permissioned smart contract interpreter partially developed to the specification of the Ethereum Virtual Machine (EVM).
+ 
+Leveraging a standardized approach like BPMN captures the data requirements and procedural intent of legal agreements. Packaging it into deployable units for a shared blockchain infrastructure holds the promise of expanding access to legal tools for everyone.
+ 
+Legal products built this way can transform the delivery of legal services and promote productization of law. As the networked economy grows, the proliferation of devices and digital commerce means a need for legal functions to be embedded within the software driving transactions. The open-source nature of blockchains and standards like BPMN naturally support the development of a framework for building broad access to legal tools, products and services to achieve business goals. 
+ 
+Most lawyers will not have the training to construct a process model containing all the necessary technical information all by themselves. In fact, the BPM discipline is inherently a collaborative effort between domain experts and IT professionals. Input from both sides is required to capture and implement a business process that connects human resources as well as computer systems. This makes one thing clear: building blockchain-based legal products with and for lawyers presents a giant opportunity for developers to enter a domain of a market that has been thus far not very accessible. Software-based legal products are distinct from and complementary to legal advice and will enable lawyers to serve more clients, more efficiently, all while generating new revenue streams and broader access to justice.
+ 
+
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

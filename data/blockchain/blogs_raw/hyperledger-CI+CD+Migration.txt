@@ -1,0 +1,673 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CI/CD Migration - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+CI/CD Migration
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+CI/CD Migration
+
+	Justin Florentine
+
+
+
+
+
+Owned by Justin Florentine
+
+
+Last updated: Jan 18, 2024
+
+
+
+
+
+
+
+
+
+
+Moving from CircleCI to GitHub Actions (GHA)
+TBD:Â  HL to provide background on the motive and strategy
+GHA Impressions
+Porting over the functionality from CircleCI was tedious, but fairly straightforward. Current progress can be seen in this fork. The design of small components combined with access to the runners via self-hosting (seldom necessary), made the development process pretty accessible. Being able to tie into the GitHub event stream allows for improved and simplified release processes that can be adopted incrementally.
+Secrets management was simple and straightforward. Secrets are defined in the repo settings, and are injected for use by the action definition. Logging output was properly obfuscated whenever a secret was used.Â Â 
+Minimal changes were required to Gradle based build tasks, though the delegation to gradle for publishing and tagging complicates things.Â  Suggest removing those concerns from gradle. It makes sense for gradle to know how to produce artifacts like tarballs and docker images, but release related metadata should be managed externally.
+The use of self-hosted runners should likely be avoided due to cost and security concerns.
+Challenges
+File Permissions: File ownership and permissions get pretty convoluted when using any docker based action. Since they have no notion of the UID to run as, their output ends up being owned by root. This action was used to work around the problem, and it can be avoided all together by using Github hosted runners instead of self-hosted ones.
+Test Splitting: A large portion of the time spent was to re-implement test splitting so many hosts can all run the tests in parallel. This is a feature supported by CircleCI, but the only GHA support for this function to be found is still in alpha. We are currently only dividing the number of tests evenly across runners, however there is another means of test splitting that warrants investigation: one based on the test timings available via a previous runs junit results.
+Cost: While an in-depth cost analysis has not been done yet, suspect it will be nearly free.Â  Full CI/CD pipeline was runnable on free tier Github hosted runners.
+Planned CI/CD Design
+Subdivide CI process into reusable phases, and defer long-running and expensive phases till as late and infrequently as possible, while still ensuring maximum potential quality checks.
+On new PR open, draft or otherwise, the following actions would happen.
+	check for repo compliance via repolinter
+	check for source code formatting via spotless
+	check gradle tooling validation.
+	compile all code	then validate javadocs- this depends on bytecode output.
+
+
+	run unitTests	any test failures will be annotated on the PR.
+	tests will be sharded to run in parallel.
+
+
+
+This is referred to as the pre-review workflow, feel free to take a look at it in this fork, but overall it looks like this:
+
+
+
+It takes about 20 minutes, end to end, but if we can be smarter about splitting the unit tests we could easily cut that in half.Â 
+Once the PR is approved, the following can be run in parallel.
+	run integrationTests
+	run acceptanceTests
+	run referenceTests
+
+Test results can then be posted back to the PR, and any failures would prevent merging into main.Â  You'll notice that the acceptanceTest phase no longer requires us to separate out private network tests. Â We divide all these tests across 16 runners in parallel, and it completes in 17 minutes. You'll also find test results attached to the workflow run, and a summary of how each test shard performed. This is also the case for integration and reference tests as well.
+Merging to Main
+Merging to main or any release-* named branch should be denied until:
+	pre-review checks have passed on the merge result, and the PR has a pre-reviewÂ  status.
+	PR has an approval from at least one project maintainer.
+	acceptance test checks have passed on the merge result, and the PR has an acceptance-tests status.
+	integration test checks have passed on the merge result, and the PR has an integration-tests status.
+	reference test checks have passed on the merge result, and the PR has a reference-tests status.
+
+Once all these are confirmed, the PR may be merged, and all statuses should be transferred to the corresponding commit on the target branch. That commit would now be considered releasable.Â 
+
+
+Planned Release Process Design
+Current release process supports (and encourages) releasing directly from main, but does allow for the creation of release specific branches for hotfixes or interim releases which must not include what is currently on main.
+When a github release is created (pre-release or otherwise) then the following artifacts are built, and attached to the release:
+	tarball - release description has the sha256 sum for this file appended to it.
+	zipfile - release description has the sha256 sum for this file appended to it.
+	docker images created and tagged.
+
+All artifacts will have the version number specified in the created github release.
+Example release can be seen here.
+
+
+Outstanding issues, Suggested improvements
+	Since we can now execute a release fully from Github, we need to secure and establish policy around how releases are created.
+	HL has expressed an interest in using Github Packages for the storage and distribution of artifacts. This has not been implemented yet but poses no technical challenge.
+	Building multi-arch docker images without requiring an arm based self-hosted runner.
+	More optimal splitting of tests based on prior runtimes.
+	Factoring out of tagging/version numbering. Things are way easier when we force the version number to be used to always be provided.
+	TODO: Tivy scans/tests are not implemented yet
+	TODO: Java jar publication to artifactory. Holding for feedback from users who require maven artifact resolution.
+	TODO: how to recover stdout from various tests
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Project Plan - Hyperledger Fabric CC-Tools Support for Fabric Private Chaincode
+Project Plan - Hyperledger Fabric CC-Tools Support for Fabric Private Chaincode
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Hyperledger Fabric CC-Tools Support for Fabric Private Chaincode
+Hyperledger Fabric CC-Tools Support for Fabric Private Chaincode
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+2024 - 07 - 23
+2024 - 07 - 23
+
+Hyperledger Identus
+
+
+
+More like this
+
+
+
+
+
+
+Implementing DIDMan-Based Openwallet for Hyperledger Indy Ecosystem
+Implementing DIDMan-Based Openwallet for Hyperledger Indy Ecosystem
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Contributor Meetings 2025
+Contributor Meetings 2025
+
+Hyperledger Fabric
+
+
+
+More like this
+
+
+
+
+
+
+2025-01-13 AnonCreds Working Group Meeting
+2025-01-13 AnonCreds Working Group Meeting
+
+Hyperledger AnonCreds
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 10, "requestCorrelationId": "ebbc222cb68b4eae9430199f8c1fe9df"}

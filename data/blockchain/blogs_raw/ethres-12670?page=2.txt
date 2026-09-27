@@ -1,0 +1,1078 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Faucet Link Directory - Miscellaneous - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Faucet Link Directory
+    
+
+
+      
+          
+            
+              
+              
+                Miscellaneous
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                pk910
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 5, 2022, 12:18am
+                  
+                  
+
+22
+              
+            
+            
+              Hmm, that would require constant monitoring of the page for captchas that ‘randomly’ pop up…
+
+I think that’s too much for any user 
+
+And I actually don’t think it’s all mined by a few people with heavy machines.
+
+There are thousands of sessions every day, most residential IP ranges (hosting & proxy IPs don’t get anything). I think it’s real demand as there are many people migrating their stuff from the deprecated testnets (rinkeby & ropsten).
+
+There are also “Incentivized Testnets” of various projects that introduce additional load on goerli as they offer being included on a mainnet airdrop for testing their stuff…
+
+It was decided a few days ago that there won’t be any technical change to fix the funding situation on goerli.
+
+developers should head over to the sepolia testnet instead.
+
+I think goerli will slowly die in the next year and that’s unfortunately very bullish for fund sellers in the meantime 
+
+Especially because of that steady growing financial benefit for collecting goerli funds, the rewards of my faucet won’t be higher again anytime in future - it’ll rather be even lower.
+
+There are currently ongoing efforts to launch a new ephemeral testnet for stakers to test validators without relying on goerli. Let’s see how this goes 
+
+Btw: faucetlink shows the alchemy faucet as not working, but it is working 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                desy
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 24, 2022,  5:06pm
+                  
+                  
+
+24
+              
+            
+            
+              It’s getting really difficult to acquire goerli eth these days… lowest hanging fruit would be to bring back some of the broken faucets. Hope they see this and find the time to repair 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                abcoathup
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 25, 2022,  3:59am
+                  
+                  
+
+25
+              
+            
+            
+              App devs should use Sepolia testnet rather than Goerli testnet due to Goerli supply issues
+
+  
+
+      twitter.com
+  
+
+  
+    
+
+
+@
+
+
+
+  https://t.co/Dztpk7yuue
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+Stakers wanting to test their validator setups can use the EthStaker launchpad on Goerli
+
+https://goerli.launchpad.ethstaker.cc/en/
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                desy
+                
+              
+
+              
+
+
+
+              
+                  
+                    November 26, 2022,  3:24pm
+                  
+                  
+
+26
+              
+            
+            
+              yea, but supply isn’t the only issue. We still need solid faucet infrastructure for distribution, or we may run into bigger problems (e.g. spam attacks)
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pk910
+                
+              
+
+              
+
+
+
+              
+                  
+                    December 9, 2022,  6:40am
+                  
+                  
+
+27
+              
+            
+            
+              I think there is a quite solid faucet infrastructure at the moment.
+
+It was much worse about a year ago, where no working faucet was left on goerli.
+
+(That was the reason why I even started developing one)
+
+The biggest problem is the funding situation.
+
+Goerli whales have almost no GoETH left, so they cannot just continue sending these to faucets or there is really nothing left very soon.
+
+As said all proposals to fix this situation by creating more funds failed (no consensus in ACD meetings), so there is nothing we can do to fix goerli.
+
+There are some great projects that try to get alternatives up.
+
+	
+The Back to the Genesis / Ephemery project, where a new ephemeral testnet is about to be set up especially for validator testing. The testnet will be reset at a fixed schedule (Monthly), so no such funding issues will happen again there.
+	For Goerli/Sepolia, there is a new Airdrop like faucet for developers: https://collect-test-eth.org/
+
+If you have deployed anything on goerli/mainnnet before you can claim 10ETH from that site. It’s a one time claim and the last possibility to get funds on goerli (as the most remaining balance of the last goerli whale goes into this)
+
+
+Apart of this goerli is kind of deprecated now. It will still be there for about a year, but don’t expect any growth or any further funding-fixing attempts there.
+
+Head over to Sepolia for anything related to dApp testing. It’s also much easier to get funds on sepolia.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                pk910
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 19, 2023,  9:58am
+                  
+                  
+
+29
+              
+            
+            
+              @sicobra00
+
+Looks like you don’t plan to reply to my comments on discord (where you’ve spam posted your faucet link across various channels), so I’ll rewrite here:
+
+My first thought was: “Nice work!”.
+
+But then I saw that you’ve bot attacked the “All That Node” faucet to fund your faucet…
+
+That’s not really helping anyone.
+
+Besides of that, I can see in the html code of your faucet that you plan to add “premium options” and a way to pay for testnet coins.
+
+That’s not what a testnet is intended for - especially not with funds you’ve stolen from other faucets.
+
+Testnets are meant to be free so everyone can test without investing real money.
+
+Edit: Silently deleting posts when being challenged says everything…
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                blacktexto
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 23, 2023,  1:25am
+                  
+                  
+
+30
+              
+            
+            
+              There is two new Goerli faucet. One is giving 0.2 gETH daily and the other one is giving 0.1 gETH daily.
+
+Goerli faucet: 0.2 gETH daily
+
+  
+      
+
+      goerlifaucet.org
+  
+
+  
+    
+
+GoerliFaucet.org - FREE Goerli ETH faucet.
+
+
+  GoerliFaucet.org is a free, fast and reliable Goerli ETH testnet faucet for blockchain developers.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+Goerli faucet: 0.1 gETH daily
+
+  
+      
+
+      goerli-faucet.com
+  
+
+  
+    
+
+goerli-faucet.com - FREE Goerli Faucet.
+
+
+  Free 0.1 gETH/daily for the Goerli testnet. This goerli faucet is for developers and users who want to explore the Ethereum blockchain without spending real money.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+User need to validate with a telegram account to claim goerli eth daily for free.
+
+As there is no submit form on your website I am sending here. Congrats for the website. 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                desy
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 25, 2023, 11:37pm
+                  
+                  
+
+31
+              
+            
+            
+              @blacktexto: Thanks, but I’ve decided to only list the most reputable faucets from now on. The amount isn’t really a bottleneck anymore, so the risks linking to all outweighs the benefits imo. Kinda sad delisting some great (and surely well intentioned) ones, but I think it’s for the best to minimize risk for users and not list more than necessary.
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                blacktexto
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 25, 2023, 11:51pm
+                  
+                  
+
+32
+              
+            
+            
+              I understand your point. Your website was a good source of traffic. I wish you the best. 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pk910
+                
+              
+
+              
+
+
+
+              
+                  
+                    January 26, 2023,  6:18am
+                  
+                  
+
+33
+              
+            
+            
+              @desy I strongly advocate your decision.
+
+Not because of reputation and security, rather because both faucets are selling goerli funds.
+
+Whenever using one of these faucets (which are completely similar code base), you get an ad for their premium services telling you you can get xx more for only x$ or stuff like that…
+
+The whole concept of these sites is to attract users by a small free drop, just to offer them the paid options afterwards.
+
+Besides of that, again both sites are funded by abusing the good will of a goerli whale who tried to give  users the ability to spin up validators…  I’m in contact with him, and he’s actually quite mad of this abusive behavior and will take additional steps to prevent such patterns in future.
+
+That’s again a drawback for many users as it’s getting harder to gather goerli funds again, just because some guys need to make money with a free network 
+
+(Lol, I just saw, that I’ve been proposing that faucet earlier here too… They’ve started as a free faucet and were properly funded by q9f earlier…  No Idea when they decided to sell funds and steal from others for profit… What a shame)
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                cb-jake
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 7, 2023,  6:48pm
+                  
+                  
+
+34
+              
+            
+            
+              Hello @desy. Thanks for aggregating the reputable faucets.
+
+I work on the team that runs the Coinbase Wallet faucet (https://coinbase.com/faucets). We would welcome adding our faucet to the faucetlink directory. Our faucet drips various amounts per network per 24 hours. We require users to hold a minimal mainnet ETH balance to use the faucet to stop/slow the bots/spammers from draining the faucet. Please let us know if anything is needed from us to add the faucet to the directory, assuming you’re taking new submissions. Thanks again!
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                pk910
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 8, 2023,  2:46am
+                  
+                  
+
+35
+              
+            
+            
+              Do you really need to force users to download your product to use your faucet?
+
+I totally understand that you don’t have any obligations against community or anything, and you’re running the faucet for marketing reasons, which is totally fine.
+
+But others like alchemy are doing the same, without forcing users to use their products for it…
+
+Its full with ads  and you can even get more when using their stuff,  but at the end it’s still optional.
+
+I don’t really like the way to enforce product placements for a faucet.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                desy
+                
+              
+
+              
+
+
+
+              
+                  
+                    March 14, 2023,  4:56pm
+                  
+                  
+
+36
+              
+            
+            
+              Imo advertisement is ok, but fully agree on the importance of enabling standard sign in. Especially with the mainnet balance requirement it’s extra risk for many users that need to move around their seed phrases.
+
+In any case to get listed @cb-jake let me know the 0x address from which coins are sent.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                lsheva
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    March 30, 2023, 10:26am
+                  
+                  
+
+37
+              
+            
+            
+              Infura announced its faucet, you can add it:
+
+  
+      
+
+      Infura
+  
+
+  
+    
+
+
+Ethereum API | IPFS API & Gateway | ETH Nodes as a Service | Infura
+
+
+  Infura's development suite provides instant, scalable API access to the Ethereum and IPFS networks. Connect your app to Ethereum and IPFS now, for free!
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                JoGetBlock
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 19, 2023,  4:08pm
+                  
+                  
+
+38
+              
+            
+            
+              Hi! I am Joan from GetBlock, a leading blockchain RPC node provider that supports 50+ blockchains. I see that you write that you know a goerly whale, would it be possible to connect us with him?
+
+I’d really like to discuss an opportunity to support the web3 community of developers.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pk910
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 20, 2023,  6:14pm
+                  
+                  
+
+39
+              
+            
+            
+              Heya,
+
+Goerli is in a very bad state, is already marked as deprecated and will be shut down at the end of the year.
+
+Unfortunately all the goerli whales I knew decided to sell or give away their funds, so they don’t have much left.
+
+I’d suggest focusing on a newer testnet like sepolia - or wait for holesky that starts in september.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                JoGetBlock
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 26, 2023, 10:25am
+                  
+                  
+
+40
+              
+            
+            
+              Thank you for sharing this, Sepolia is something we also are in search of, so if you have contacts in this field also, we would appreciate your help with connections.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                croll83
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023,  9:55am
+                  
+                  
+
+41
+              
+            
+            
+              hey @desy there’s a goerli faucet from a partner that I would love you to consider it:
+
+
+  
+      
+
+      ChainEye Tools
+  
+
+  
+    
+
+ChainEye Tools
+
+
+  Chaineye is committed to build free and open-source omni-chain analytical tools for retail investors.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+it’s based on social auth (twitter)
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                pk910
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 28, 2023,  7:44pm
+                  
+                  
+
+42
+              
+            
+            
+              @JoGetBlock:
+
+I’ve tried to get some kind of clarity of how the fund distribution on sepolia is managed and who to ask for bigger amounts of funds.
+
+Unfortunately I didn’t really get a useable reply again. It seems to be the “normal way” to just randomly ping various EF guys until someone decides to give out some funds.
+
+I’d suggest taking a look into the ETH R&D discord. Most EF guys & Devs sit there 
+
+I know this is annoying, and I promise it’ll be even more annoying once you face the reaction times for such requests from EF guys 
+
+It sounds funny and ironic, but I’m actually quite mad about that stuff… There is really no need to make that process that unintuitive and hard. But it’s not on me to decide on this. I tried to help Unitap with their initial funding, and it literally took weeks to get something - and the person I told unitap to write to is now mad at me because of telling them to ask him…
+
+Btw, @desy:
+
+Unitap now provides their faucet services for sepolia, too.
+
+Might be worth being added as they’re quite reliable for goerli too 
+
+They’re dropping 1 SepETH per request, with BrightID as protection method.
+
+Wallet behind is  0xb3A97684Eb67182BAa7994b226e6315196D8b364
+
+@croll83:
+
+I’ve tried your faucet. It works,  but I don’t think your protection mechanism is really protective.
+
+I have easily been able to use a random twitter handle to request funds with.
+
+Twitter luckily displays who retweeted your post, so It’s not even hard to find a handle that works 
+
+I guess if I’d just try through all the handles that retweeted your post (~3600) I’d easily get a few hundred drops 
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                croll83
+                
+              
+
+              
+
+
+
+              
+                  
+                    April 29, 2023,  5:46pm
+                  
+                  
+
+43
+              
+            
+            
+              Thanks @pk910 for the feedback, will fw it to our partner that built this…
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+        ← previous page
+        next page →
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

@@ -1,0 +1,638 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Configure and format Markdown - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+	Documentation contribution workflow
+
+
+
+
+
+	Documentation contribution guidelines
+
+
+
+
+
+	Versioned documentation
+
+
+
+
+
+	Documentation archive
+
+
+
+
+	Documentation release process
+
+
+
+
+
+	Documentation style guide
+
+
+
+
+
+	Future Release Dates
+
+
+
+
+
+	MkDocs and Markdown guide
+
+
+
+
+	Configure and format Markdown
+
+
+
+
+
+	Preview the documentation
+
+
+
+
+
+	Extensions
+
+
+
+
+
+
+
+	Proposal - Besu maintainers become docs maintainers
+
+
+
+
+
+	Raise issues
+
+
+
+
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Configure and format Markdown
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Configure and format Markdown
+
+	alexandra.tran
+
+
+
+
+
+Owned by alexandra.tran
+
+
+Last updated: Apr 08, 2022
+
+
+
+
+
+
+
+
+
+
+MkDocsÂ is a Python tool that generates the static HTML documentation site that is published.
+Besu documentation uses theÂ Material for MkDocsÂ theme to render the HTML pages. It also comes with usefulÂ extensions.
+MkDocs configuration
+For sites using theÂ old documentation system, MkDocs is configured in theÂ mdkocs.ymlÂ file at the root of the repository. This file configures:
+	Site metadata and variables.
+	Theme.
+	Page navigation.
+	Extensions.
+	Plugins.
+	Page redirects.
+
+If you add pages to the documentation (rather than updating existing pages), add your new pages to theÂ navÂ section ofÂ mkdocs.yml.
+If you move an existing page to another location or rename it, the public path changes. Create a redirect in theÂ redirectsÂ section ofÂ mkdocs.yml.
+Format Markdown for documentation
+Having a standard for formatting Markdown helps writers and reviewers navigate the code and review changes. The following are rules for formatting Markdown in Besu documentation:
+	Each Markdown file must contain a header composed ofÂ metadataÂ and limited by three dashes (-).
+Example:
+
+
+---
+title: Installation overview
+description: Overview and requirements to install the software
+---
+	For the rest of the Markdown code, each line should be (roughly)Â limited to 100 columns longÂ to be readable on any editor. Youâ€™ll receive a warning, not an error, if you exceed 100 columns. Lines must be wrapped without cutting the line in the middle of a word. One line break displays as a space.
+Example:
+
+
+In this example, this first sentence exceeds 100 characters, so we recommend wrapping it into
+multiple lines. One line break displays as a space, so this Markdown renders as one paragraph without line breaks.
+We also recommend starting each new sentence on a new line, even if the previous line didn't reach
+100 columns, for easy reviewing.
+You can set a column marker in your text editor as a heuristic.
+	Use only one first level title (prefixed with a singleÂ #) on a page.
+
+	No HTML markup can be used inside a Markdown document. There are manyÂ extensionsÂ you can use that have similar capabilities without HTML.
+Thereâ€™s one exception where HTML is tolerated: tables that are too complex and already exist. If possible, keep the table simple without any elements other thanÂ table,Â tr, andÂ td.
+
+	If using Markdown tables, format them so theyâ€™re also readable in the source code. For example, add an appropriate number of spaces to align the columns in the source code.
+Example:
+
+
+| SyntaxÂ  Â  | Description |
+| --------- | ----------- |
+| NameÂ  Â  Â  | TitleÂ  Â  Â  Â |
+| Paragraph | TextÂ  Â  Â  Â  |
+Â  Â You can quickly formate tables by usingÂ Markdown Table FormatterÂ or create tables from scratch usingÂ Tables Generator.
+	Code samplesÂ should be written so that users can copy and paste them with minimal editing and have them work as expected.
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Besu CLI Style Guide
+Besu CLI Style Guide
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation
+Documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Documentation contribution guidelines
+Documentation contribution guidelines
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Versioned documentation
+Versioned documentation
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Bevel: Documentation redesign
+Bevel: Documentation redesign
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+Project Plan - Bevel Documentation redesign
+Project Plan - Bevel Documentation redesign
+
+Hyperledger Mentorship Program
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 12, "requestCorrelationId": "61262ed2ad6a41ba87e614387119088f"}

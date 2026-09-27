@@ -1,0 +1,904 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meet the Hyperledger Fabric Maintainers – Yacov Manevich, IBM
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Meet the Maintainers
+                            |
+                        
+                            Hyperledger Fabric
+                            
+                        
+                    
+
+                
+                Meet the Hyperledger Fabric Maintainers – Yacov Manevich, IBM
+ 
+                
+                    Hyperledger Foundation
+                    |
+                    
+                        Apr 30, 2024
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                Hyperledger Fabric, which launched in 2016 as the first project within the Hyperledger ecosystem, is a widely adopted enterprise blockchain platform that offers performance at scale while preserving privacy. It has a robust open development track record and active community working to develop and deploy it worldwide. There are a number of technologies in the Hyperledger Fabric family. The maintainers of the Hyperledger Fabric core platform are leading development efforts as Hyperledger Fabric marches towards its 3.0 release. We have invited these community leaders to share their thoughts on why they are committing their time and effort to this project.   
+
+Below, we hear from Yacov Manevich of IBM about his work as a maintainer and what excites him about Hyperledger Fabric now and in the future.
+
+Q) Hyperledger Fabric is one of the most established DLT platforms in the industry. How has it helped shape the market? What's its role in the fast evolving DLT landscape?
+
+
+I think the market is still in its infancy and therefore still in the process of being shaped. I am sure we’re going to see more adoption of DLTs as the commercial and government sectors become more educated on the technology, and regulation on how business can be conducted will be put in place. Right now, future adopters are still in the exploration or pilot phase, and it would be interesting to see where the future leads us.
+
+Market adoption wise, I think that Fabric has both a blessing and a curse, and that the curse may be partially lifted with enough effort and investment: Fabric gives its participants extremely strong governance capabilities, as its governance mechanisms are practically part of how it operates. However, this makes onboarding members into a so-called Fabric network and also running and maintaining it a cumbersome process. This may cause some adopters of DLTs to gravitate towards the permissionless blockchain world where onboarding to the network is simple. They don’t need to bother themselves with running and maintaining the nodes, as there is an inherent economic incentive for community members to do that for them, and they can focus on building their product instead. 
+
+Critics of permissioned blockchains like to point to the above and say that this is why they have failed. However, I think that there are some use cases where, if a DLT is to be used, it can only be a permissioned DLT. 
+
+No matter what your personal opinion of Central Bank Digital Currency (CBDC) is, I’m sure you’d agree that you will never want to run one on a permissionless blockchain, and instead you’d probably want to use a permissioned DLT that operates similarly to Fabric. The reason is that the governance model of a CBDC can be facilitated best with a permissioned blockchain.
+
+Q) What are some of the use cases it is particularly well suited to support?
+
+Hyperledger Fabric’s architecture is unique even among other permissioned DLTs. It speculatively executes the transaction before totally ordering it among other transactions. Afterwards, it checks if the data the transaction depended on during its execution was stale in retrospect or not. In contrast, other DLTs first totally order transactions and then execute them. This fundamental difference lets Fabric smart contracts interact with external systems, while other DLTs require you to import off-chain data on chain, which is not always practical. 
+
+I think that Fabric is particularly well suited for any use case that requires privileged parties to be able to audit transactions in real time. For example, consider a money transfer setting where a privileged party is doing Anti Money Laundering (AML) checks. An illicit transaction not only gets aborted, but the participants may then be secretly flagged as suspicious. In other DLTs, you can’t have a single party influence the transaction’s execution in real time like in Fabric. This is thanks to the fact that, in Fabric, transactions can be executed by a small subset of the nodes in the network and invoke off-chain APIs.
+
+Q) What is the role of the community in developing Hyperledger Fabric? Why is open development important?
+
+Open development is important for several reasons. The first one is that organizations that evaluate whether to incorporate the product as part of their platform need to know whether the product is secure or not. 
+
+If the code is open source, the scientific community, white hat hackers, and other blockchain hackers can look into the code and try to find vulnerabilities and even get rewarded through bug bounty programs. 
+
+In contrast to that, closed source projects do what is called “security by obscurity.” If a vulnerability exists, it’s considerably harder to find it by a malicious actor, but, at the same time, it is harder to find by a benevolent one. So, these products that are closed source market themselves as secure, but, in today’s world, you are only as secure as the number and proficiency level of people who looked at your codebase.
+
+Another reason why open development is important is that it enables you to gauge the health of a project. Incorporating an open source technology, especially a DLT like Fabric, makes you dependent on it.
+
+Therefore, you would want to know the likelihood of the project to exist and be maintained a few years in the future. In an open source project, as an observer evaluating whether to be invested in the project, everything is transparent. You can see things such as the key developers leaving the project, pull requests not being reviewed or code contributions not being made, and so on and so forth.
+
+The community plays an important part in the development of Fabric. 
+
+First, people from the community use Fabric in ways we did not expect. They sometimes fail, which makes these people complain either in public chat or on GitHub or the mailing list. The problems are then fixed, making the product into a better one. One of the most fulfilling things for me has always been helping more capable users fix the problem and then make a pull request on their own. 
+
+Q) Why is contributor diversity important?
+
+The obvious reason that comes to mind is that people have different expertise, viewpoints and experiences.  One person may be more suitable than another to work on some part of the system or to spot problems that others did not notice before.
+
+However, we should acknowledge that, counter-intuitively, diversity in skill level is important for an open source project. In fact, new contributors are an important part of the ecosystem. Unlike the maintainers who mostly focus on implementing new features, those with less project knowledge are usually the ones who will contribute something that helps to consume a feature, such as scripts, or enhance the documentation or refactor an area of the code to make it better. 
+
+Shortly after the release of the preview version of Hyperledger Fabric v3.0, a community member did a webinar where he showed how to deploy the new BFT orderer on Kubernetes. I was both excited and proud that a feature that I led the development of was simply picked up by a member of the community without any help from me or anyone else from the core developers. Thanks to the webinar, he even took the step of sharing with the rest of the community how to consume this feature.
+
+Another important aspect of contributor diversity is heterogenous organizational association. In short, a project with contributors that are all from a single organization has an inherent risk of the organization terminating its investment in the project, which may effectively be a death sentence to the maintenance of the project. In contrast, a project with key contributors from a diverse set of organizations is much more resilient because even if one of the organizations changes its strategy and divests from the project, the other contributors are not affected and the project lives on.
+
+Q) What about the Hyperledger Fabric roadmap that really excites you?
+
+Without doubt, the Byzantine Fault Tolerant (BFT) consensus is the main new feature of the upcoming Hyperledger Fabric v3.0 release. Without BFT consensus, Fabric is not decentralized but only distributed. The intention was to have BFT consensus for Hyperledger Fabric from day one, but unfortunately it kept being delayed. I’m happy to be able to say “better late than never.”  Since I have a fixation on special historical dates, I made sure the preview version of Fabric v3.0 that already included BFT was released on the 1st of September, which is the new year according to the Byzantine calendar. 
+
+Fabric’s BFT consensus is a library that was initially developed at IBM Research by a team I led. Later on, other non-IBM community members joined the development and contributed massively to its stability and production readiness. In fact, most bug fixes to it in the last few years were made by non-IBM community members. Very recently, the github repository was made a Hyperledger lab. 
+
+Now, the BFT protocol that Fabric’s BFT library implements is unfortunately not a very performant one, as it has no pipelining, and only agrees on a block at a time. The reason behind this decision is that it made implementation simpler. An entire family of corner cases related to reconfiguring the system dynamically are eliminated when you only agree on a block at a time. 
+
+Despite the obvious shortcoming of having a low throughput, not all hope is lost. In fact, in the last year I have been working on a framework that amplifies the throughput of a consensus protocol using sharding. 
+
+As a matter of fact, in a whitepaper I published not long ago, I describe a PoC implementation of that framework integrated into Hyperledger Fabric that re-uses the same BFT consensus library found in Hyperledger Fabric. In a nutshell, transaction batches are disseminated in parallel by different shards, and their relative order is determined by having the digests of these batches being totally ordered via BFT consensus. There is currently work being done to make it production ready, and I also hope to open source the code and develop it as an open source project. So, I would definitely like to see a general-purpose framework that amplifies throughput for consensus protocols and integrates quite easily with Fabric as part of a future roadmap.
+
+Q) How did you get involved in Hyperledger Fabric?
+
+My team at IBM Research joined the project early on when it was still being shaped. I ended up designing and implementing most of the peer-to-peer communication, membership and data dissemination layer, infamously known in the project as “gossip,” and became a maintainer of the Fabric core in early 2017. I later on designed and implemented the “service discovery” feature that makes the membership information that gossip maintains accessible to clients. Afterwards, I worked on the Raft orderer, which we released as part of Fabric 1.4.1 in 2019. Then I led an effort to create the SmartBFT consensus library and integrate it into a fork of Hyperledger Fabric. Sadly, at that time, even though Fabric did not have Byzantine Fault Tolerant consensus, there was no concrete action plan on how to fill that gap. A year later, towards the end of 2021, I re-ignited the discussion and drafted three RFCs that detailed how BFT should be incorporated into Fabric. Two years later, the first version of Fabric 3.0 with BFT support was released. 
+
+Q) Lastly, what advice can you give open source projects to succeed and make an impact?
+
+I would like to give three pieces of advice. Two of them are not mine but deeply resonate with me.
+
+When I was in my first semester of university, the lecturer who taught “Digital Systems” was a guy who was not an academic but worked in industry. I remember that, in one lecture, he showed us a circuit, and then one student asked whether the circuit can be further minimized to fewer logic gates. To this, the lecturer asked the classroom what in our opinion is the most important quality of an engineer. After hearing some answers such as “being smart,” or “being well educated,” he replied with “being fast.” He then went on and explained that, if a company is too slow to deliver, someone else beats them to it, and that it is far more important to be the first to innovate than to do it better than anyone else.
+
+At that time, I did not have enough experience to evaluate this advice. Looking back now, I totally agree with it and would like to give my own piece of advice that is somewhat related. 
+
+The second piece of advice, this time my own, is: 
+
+In too many occasions, incorporation of new ideas or features does not happen just because, in retrospect, there was a more efficient or correct way of manifesting the new ideas or features. And I say in retrospect because, in some cases, an idea or a feature has already been fully or partially implemented and sometimes is even ready to be shipped as part of a future release or incorporated into a system. However, it doesn’t happen because someone comes along and says that there is a better way of doing it. My point is that, even if the critics are correct, there is probably more business value in proceeding with what we have than ending up with not having anything. The reason is that, in most cases, your product is not the only product of its kind, and, even if it is, it won’t stay that way for long. If you don’t consistently deliver what the market needs, your users will vote with their feet and go elsewhere to have their needs met. 
+
+The third piece of advice is something I heard at a guest lecture from a former politician who was a founder and CEO of a startup before he went into politics. 
+
+The advice was: The really important thing in an organization is not the idea, the product or the mission, but rather the people executing those. As long as the people are collaborating well with each other and can execute, even if your product or idea is a bad one, you can always change course and do something else.
+
+But, if the people cannot execute or cannot get along, even if the idea is a revolutionary one, you are not going to get anywhere and eventually will fail. I sometimes wonder whether he got this insight after leaving the tech industry and jumping into politics, which is an environment where people usually don’t get along and mostly fail to get anything done… 
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    

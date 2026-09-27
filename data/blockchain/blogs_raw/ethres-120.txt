@@ -1,0 +1,1048 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proposal: Change Ether currency symbol from Ξ to ⧫ - Miscellaneous - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Proposal: Change Ether currency symbol from Ξ to ⧫
+    
+
+
+      
+          
+            
+              
+              
+                Miscellaneous
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                virgil
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    October 5, 2017,  9:27am
+                  
+                  
+
+1
+              
+            
+            
+              I know this isn’t research, but I wasn’t sure where else to put it.
+
+I’ve never liked the Ξ symbol for the Ether currency—basically because no one uses it.
+
+I have a future symbol, as well as a stop-gap symbol while we wait for our new symbol to be included in Unicode.
+
+The new symbol is the .svg below:
+
+
+  
+      
+      Dropbox
+  
+  
+    
+
+
+eth-symbol-virgil.svg
+
+
+Shared with Dropbox
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+Unfortunately, it takes 1-2 years to get a new symbol added to Unicode.  So until we get into Unicode, I propose we use this symbol below:
+
+
+⧫ or ⧫ (depending on your chosen font)
+
+
+
+
+  
+      fileformat.info
+  
+  
+    
+
+
+BLACK LOZENGE (U+29EB)
+
+
+Get the complete details on Unicode character U+29EB on FileFormat.Info
+
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+So in practice this will look:
+
+
+“Hello my crypto-comrade. I’m going to send you ⧫5.”
+
+
+
+or, if you prefer a bigger lozenge, you can put it in teletext, which yields the result,
+
+
+“Hello my crypto-comrade. I’m going to send you ⧫5.”
+
+
+
+I personally like the larger lozenge.  But I suppose if someone prefers the smaller lozenge, that’s okay too and users will just figure it out from context.
+
+With the final version, once it’s included in Unicode, will be a more polished version of:
+
+
+“Hello my crypto-comrade.  I’m going to send you 5.”
+
+
+
+            
+
+
+            
+              
+7 Likes
+            
+
+            
+                
+
+            
+              
+                djrtwo
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 5, 2017,  1:52pm
+                  
+                  
+
+2
+              
+            
+            
+              How would we implement this change? EF and/or active community members saying so and using it?
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                virgil
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 5, 2017,  2:37pm
+                  
+                  
+
+3
+              
+            
+            
+              I presume this would be an announcement from the Ethereum Foundation.  Probably at DEVCON.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                Lars
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 5, 2017,  2:46pm
+                  
+                  
+
+4
+              
+            
+            
+              Is this something that is “decided”? Or is it also consensus driven?
+
+That is, I wonder if anyone really is in control of it.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                virgil
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 5, 2017,  2:48pm
+                  
+                  
+
+5
+              
+            
+            
+              Technically speaking, I suppose it is consensus driven.
+
+But on the other hand, there is the official symbol listed on Wikipedia.
+
+
+  
+      en.wikipedia.org
+  
+  
+    
+
+
+Ethereum | Ether
+
+
+Ether is a fundamental token for operation of Ethereum, which thereby provides a public distributed ledger for transactions. It is used to pay for gas, a unit of computation used in transactions and other state transitions. Mistakenly, this currency is also referred to as Ethereum.
+ It is listed under the ticker symbol ETH and traded on cryptocurrency exchanges, and the Greek uppercase Xi character (Ξ) is generally used for its currency symbol. It is also used to pay for transaction fees and comp...
+
+
+  
+  
+    
+    
+  
+
+  
+
+
+
+And I suppose the listed symbol there is “decided” by the Ethereum Foundation.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                djrtwo
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 17, 2017,  5:51pm
+                  
+                  
+
+6
+              
+            
+            
+              @karl suggested using the white lozenge on the old discourse board. I agree. More natural to write that way.
+
+See here.
+
+This is the copied text from the old discourse site:
+
+
+
+Looking at
+
+
+“Hello my crypto-comrade. I’m going to send you ⧫5.”
+
+
+
+Makes me think it might be nice to use the white lozenge. Somehow this looks more natural:
+
+
+“Hello my crypto-comrade. I’m going to send you ⬨5 / ⬫5.”
+
+
+
+Maybe it’s because if someone were to write it down by hand, it wouldn’t make sense for them to fill in the diamond. It also almost feels more natural to do something like “ϵ5” though clearly that’s less Ethereum-y.
+
+Agreed on the social consensus bit–wouldn’t be surprised if people just continue writing “5 ETH” 
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                vbuterin
+                
+              
+
+              
+
+
+
+              
+                  
+                    October 18, 2017,  3:48pm
+                  
+                  
+
+7
+              
+            
+            
+              I’d say this should be decided bottom-up first and foremost. If there’s wide community support, then I personally am totally cool with it.
+
+            
+
+
+            
+              
+8 Likes
+            
+
+            
+                
+
+            
+              
+                drhus
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 30, 2018,  2:48pm
+                  
+                  
+
+8
+              
+            
+            
+              
+
+
+
+ virgil:
+
+
+Unfortunately, it takes 1-2 years to get a new symbol added to Unicode. So until we get into Unicode, I propose we use this symbol below:
+
+
+
+
+I believe ₿ symbol has been added to Unicode in 2016/2017 and there were proposals for it since 2011
+
+I couldn’t find any proposal regarding Ether in Unicode mailing list, and while preparing to submit one two things come to my attention:
+
+	IMO Ethereum logo to be used as currency symbol would look odd among other currency symbols attachedhttps://unicode.org/charts/PDF/Unicode-10.0/U100-20A0.pdf
+	For a long time, we market ETHER as ‘fuel’, crypto-fuel etc, and NOT as currency the old/new let’s-not-upset bitcoiner language and it is a complement rather than a competitor // Ethereum foundation ether page was right for its time, but things changed,
+
+
+Today I -and the vast majority on their day to day- use Ether as a Currency(that can be used as fuel) rather than Fuel(that can be used as currency), and keeping it under ‘fuel’ umbrella has no significant benefit.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                clesaege
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 30, 2018, 10:47pm
+                  
+                  
+
+9
+              
+            
+            
+              The lozenge symbol makes me feel like we are in a video game. I love it  .
+
+As pointed by @djrtwo it is important for it be easy to handwrite.
+
+I looked at my handwriting speed for different symbols:
+
+€: 64 symbol/min
+
+$: 49 symbol/min
+
+Ξ: 50 symbol/min
+
+⬨: 42 symbol/min
+
+⧫: 19 symbol/min
+
+The ⬨ is slightly slower to draw than the Ξ, but the ⧫ is impractical.
+
+So why not ⬨, but I would not go for ⧫.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                virgil
+                
+              
+
+              
+
+
+
+              
+                  
+                    July 31, 2018,  7:17am
+                  
+                  
+
+10
+              
+            
+            
+              It’s unclear to me that it needs to be an easily writeable symbol.  Sure, some people will want to write it, but the vast majority will be typing it and looking at it on a screen.  Ergo, if there’s a substantially more pleasant design that is harder to write, I personally would still favour it.
+
+The most obvious designs are something like:
+
+	https://thenounproject.com/term/ethereum/1247320/
+	https://thenounproject.com/term/ethereum/1223864/
+	https://thenounproject.com/term/ethereum/1362105/
+
+
+Of these, I vote for (1) or (2).  I downvote (3) because it looks jumbled when rendered small.
+
+Between (1) and (2), I vote for (2) simply for being more distinctive and more closely resembling the actual logo, but I’m open to changing my mind.  I would suggest rendering each one within text and just see how it looks.
+
+If we decide on one we like, I am open to doing the work with the Unicode consortium to get the glyph added.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                drhus
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    August 1, 2018,  3:30pm
+                  
+                  
+
+11
+              
+            
+            
+              To move this forward aiming to include ETHER as currency symbol added to Unicode Standard:
+
+	We need to decide on ETHER symbol 
+0%20(1)168×933 63.3 KB
+
+
+
+
+
+
+IMO, Ethereum logo, looks nothing like a currency symbol, we could have ETHER Symbol as separate something from Ethereum Logo, currently we’re using Ξ Greek uppercase Xi character apparently didn’t get traction, why? I guess because it doesn’t look like a currency symbol!
+
+If I had the required designed skills -which I don’t-, I would create/propose a new symbol for Ether that does look like Currency Symbol and ideally incorporating the current symbol Ξ someway how and upgrade Ξ rebranding …
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                virgil
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 1, 2018,  3:45pm
+                  
+                  
+
+12
+              
+            
+            
+              I suspect there are numerous causes behind Ξ not being adopted.  My personal guess is that it’s not obvious that Ξ means Ethereum.  So I wanted to use the straight-up ethereum logo to make it super obvious.  This may be overkill, but given how simple the Ethereum logo is, and without any other obvious contenders, the current logo is what I suggest.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                ChainSafe
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    August 1, 2018,  4:07pm
+                  
+                  
+
+13
+              
+            
+            
+              How about making the current symbol like a more traditional currency symbol? I think making the symbol easy to write is important.
+
+
+
+Potential%20Eth%20Symbol%20(1)2975×1660 25.1 KB
+
+
+
+Potential%20Eth%20Symbol%20(2)2975×1660 26.6 KB
+
+
+
+edit: third option could be a straight line through the middle?
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+
+            
+              
+                drhus
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 1, 2018,  4:29pm
+                  
+                  
+
+14
+              
+            
+            
+              Right, Etherum logo super obvious to us, …
+
+If we stop 100 people and ask what this __ symbol stands for:
+
+£ , ¥ ,  ֏ ,  ฿ ,  ₡ ,  ₤ ,  ₺ ,  ₮ ,  ₱ or ₿
+
+They may know or may not know what this symbol stands for, but don’t you agree a decent % would assume it’s some sort of Currency?
+
+doing the same exercise about these symbols Ξ , ⬨ ,  ⧫
+
+it’s a binary answer they know it (as Ether) or not, and if they don’t they wouldn’t assume it’s a currency even telling someone for the first time this is a currency called Ether, I can see many saying sort “a currency really”?
+
+What I wish for: a currency symbol for Ether that intuitively would let people assume it’s a currency (even if never heard of Ethereum before) then adding it to Unicode and eventually with adoption and use, enforcing the currency aspect of Ether
+
+            
+
+
+            
+              
+3 Likes
+            
+
+            
+                
+
+            
+              
+                drhus
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 1, 2018,  4:30pm
+                  
+                  
+
+15
+              
+            
+            
+              I like where you’re going with this… @ChainSafe
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+            
+              
+                ChainSafe
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 1, 2018,  6:01pm
+                  
+                  
+
+16
+              
+            
+            
+              Thanks @drhus  . Which one do you like more? I personally like the first one (one line).
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                3esmit
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 3, 2018,  2:31pm
+                  
+                  
+
+17
+              
+            
+            
+              I am cool with this ⧫, and I also prefer without that currency stripes.
+
+Ether is more then a currency, is the gas of the global computer.
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                jpitts
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 3, 2018,  4:47pm
+                  
+                  
+
+18
+              
+            
+            
+              This conversation is very specific. There will be thousands of currencies and tokens for users to keep track of, to write on paper, to type in, to read about. How about solving the general problem of reading, typing, and writing what cryptocurrecy or cryptotoken a number is denominated in?
+
+I would argue that Ξ , ⬨ , ⧫ are all cute but inappropriate for business use. Difficult to type, difficult to read.
+
+Difficult for new people to understand.
+
+Easy to mess up. We don’t want someone to read ⬨5 when they were supposed to read ⬫5.
+
+Capitalizing readable, but short words for the currencies and tokens is a better way. Much like airports, the context conveys to the reader what is going on and the flow is better reading and reading aloud.
+
+“Please send me 5 ETH, I’ll need it before I fly out of JFK.”
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                jpitts
+                
+              
+
+              
+
+
+
+              
+                  
+                    August 3, 2018,  5:09pm
+                  
+                  
+
+19
+              
+            
+            
+              Thinking about this a bit more, I may have gone too far from convention.
+
+People do like to write and type $5. Perhaps there can be a universal symbol for cryptocurrencies, prefixed with the capital letters. I will use a # in the example below, but it would be nice if there were a symbol that could be universally recognized, and would end up on keyboards.
+
+US $5.00
+
+ETH #5.00
+
+BTC #0.05
+
+ETH 5.00
+
+            
+
+
+            
+              
+
+            
+
+            
+                
+
+            
+              
+                axic
+                
+              
+
+              
+
+
+
+              
+                  
+                    September 4, 2018,  4:18pm
+                  
+                  
+
+20
+              
+            
+            
+              I think specifying the symbol, abbreviation, preferred way of displaying amounts and the units (wei, finney, etc.) would qualify for a proper ERC.
+
+It could also propose this new symbol.
+
+            
+
+
+            
+              
+1 Like
+            
+
+            
+                
+
+        next page →
+    
+
+
+
+
+
+
+    
+    
+  
+    	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

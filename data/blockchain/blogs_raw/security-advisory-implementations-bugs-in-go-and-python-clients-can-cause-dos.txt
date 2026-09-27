@@ -1,0 +1,220 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security Advisory [Implementation bugs in Go and Python clients can cause DoS – Fixed – Please update clients] | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Security Advisory [Implementation bugs in Go and Python clients can cause DoS – Fixed – Please update clients]
+Posted by Jutta Steiner on September 2, 2015
+Security
+
+
+
+
+State transition and consensus issue in geth client causes panic (crash) when processing a (valid) block with a specific combination of transactions, which may cause overall network instability if block is accepted and relayed by unaffected clients thus causing a DoS. This may happen in a block that contains transactions which suicide to the block reward address. 
+
+Affected configurations: Issue reported for Geth.While investigating the issue, related issues were discovered and corrected in pyethereum, hence pyethapp is also affected. C++ clients are unaffected.
+
+Likelihood: Low
+
+Severity: High
+
+Complexity: High
+
+Impact: Network Instability and DoS
+
+Details: A block containing a specific combination of transactions which include one or more SUICIDE calls, while valid, causes panic crash in go-ethereum client and crash in pyethereum. Additional details may be posted when available.
+
+Effects on expected chain reorganisation depth: None.
+
+Remedial action taken by Ethereum: Provision of fixes as below.
+
+Proposed temporary workaround: Switch to unaffected client such as eth (C++).
+
+Fix:Upgrade geth and pyethereum client software.
+
+go-ethereum (geth):
+
+Please note that the current stable version of geth is now 1.1.1; if you are running 1.0 and using a package manager such as apt-get or homebrew the client will be upgraded.
+
+If using the PPA: sudo apt-get update then sudo apt-get upgrade
+
+If using brew: brew update then brew reinstall ethereum
+
+If using a windows binary: download the updated binary.
+
+If you are building from source: git pull followed by make geth (please use the Master branch commit 8f09242d7f527972acb1a8b2a61c9f55000e955d)
+
+ 
+
+The correct version for this update on Ubuntu AND OSX is Geth/v1.1.1-8f09242d
+
+pyethereum:
+
+Users of pyethapp should reinstall 
+
+> pip install pyethapp --force-reinstall
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

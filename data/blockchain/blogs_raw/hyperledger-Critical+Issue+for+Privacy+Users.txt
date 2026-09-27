@@ -1,0 +1,709 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Critical Issue for Privacy Users - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+	Besu CLI Style Guide
+
+
+
+
+
+	Coding Conventions
+
+
+
+
+
+	Changelog
+
+
+
+
+
+	Testing
+
+
+
+
+
+	Debugging Besu in IntelliJ
+
+
+
+
+
+	Releasing
+
+
+
+
+	Release Rotations 2024
+
+
+
+
+
+	Using CalVer for Besu Releases
+
+
+
+
+
+	How to do a Besu Release
+
+
+
+
+
+	Off-cycle release process
+
+
+
+
+
+	Release Process
+
+
+
+
+
+	Obsolete Proposals and Policies
+
+
+
+
+
+	Archive
+
+
+
+
+	Critical Issue for Privacy Users
+
+
+
+
+
+	Mainnet Consensus Bug Identified and Resolved in Hyperledger Besu
+
+
+
+
+
+	Release 22.1.0
+
+
+
+
+
+	Release Process Improvement
+
+
+
+
+
+	Release Remediation
+
+
+
+
+
+	Release Rotations 2021
+
+
+
+
+
+	Release Rotations 2022
+
+
+
+
+
+	Release Rotations 2023
+
+
+
+
+
+
+
+
+
+	Bug Triage Process
+
+
+
+
+
+	Policies
+
+
+
+
+
+	Plugin Services
+
+
+
+
+
+	Tools we use
+
+
+
+
+
+	Advanced
+
+
+
+
+
+	Repositories and other projects
+
+
+
+
+
+	Archive (Dev)
+
+
+
+
+
+	Changelog Improvement Proposal
+
+
+
+
+
+	Logging
+
+
+
+
+
+	Building from source
+
+
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Critical Issue for Privacy Users
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Critical Issue for Privacy Users
+
+	Madeline Murray (Deactivated)
+
+
+
+	Sally MacFarlane
+
+
+
+
+
+Owned by Madeline Murray (Deactivated)
+
+
+Last updated: Jan 19, 2021 by Sally MacFarlane
+
+
+
+
+
+
+
+
+
+
+Note: If your network does not have any private transactions created using Hyperledger Besu 1.3.4 or earlier, you are not affected by this issue.
+Between version 1.3.4 and 1.3.5 there was a change in the way that the private database metadata was maintained. Unfortunately, users upgrading from 1.3.4 or earlier to 1.3.5 or later with existing private transactions in their chain will lose any private transaction execution data for private transactions created using 1.3.4 or earlier. The execution data is created when executing the private transaction and includes logs, output, status, and revert reason. The execution data is not the private transaction itself and can be recreated by re-executing the private transaction.Â Â 
+No public or private transactions are lost. The public chain still contains all the privacy marker transactions and Orion still contains all the private transaction payloads so resynchronising your Besu node from other peers recreates the private transaction execution data. 
+
+To recover: 
+1. Start a new Hyperledger Besu node runningÂ  v1.3.5 or higher (preferably 1.4.0 or higher) using the same Orion nodes. 
+2. Resync the chain from another Hyperledger Besu node.
+As always, the PegaSys team is happy to answer any questions or help you with any issue you may have.Â  Contact us on RocketChat!
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Checklist for reporting privacy issues
+Checklist for reporting privacy issues
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Security
+Security
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2021-08-04 Value transfer public transactions being rejected by Besu
+2021-08-04 Value transfer public transactions being rejected by Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2024-01-06 Mainnet Halting Event
+2024-01-06 Mainnet Halting Event
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+2020 Q3 Hyperledger Besu
+2020 Q3 Hyperledger Besu
+
+Technical Oversight Committee
+
+
+
+More like this
+
+
+
+
+
+
+Mainnet Consensus Bug Identified and Resolved in Hyperledger Besu
+Mainnet Consensus Bug Identified and Resolved in Hyperledger Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 37, "requestCorrelationId": "1855f13d671b4bc897a66b012ed6269d"}

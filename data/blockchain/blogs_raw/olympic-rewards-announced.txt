@@ -1,0 +1,236 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Olympic Rewards Announced | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Olympic Rewards Announced
+Posted by Vitalik Buterin on August 26, 2015
+Protocol Announcements
+
+
+
+
+ETH DEV would like to thank everyone for their participation in the Olympic test network, which helped us greatly in stress testing, optimization, and finding bugs in the Ethereum clients, as well as determining what the limits of the current Ethereum system are. To that end, we are pleased to announce the Olympic reward recipients. On top of the rewards announced below, every miner who mined a block in the Olympic chain with block number in the range [310000, 589999] is entitled to receive 0.5 ETH per block, and every miner who mined a block in the Olympic chain with block number in the range [590000, 999999] is entitled to receive 0.05 ETH per block.
+
+Top miners for blocks 300000-1000000
+
+To claim these rewards, send a transaction on Olympic from the address that earned the reward to your desired address.
+
+
+	753f49fb35f0f6f8a7bff0413e376af88f7ff684 (57744 blocks) - 2500 ETH
+	891f82ee3e031c5dd85e63b23521b4b9f10c67ff (39526 blocks) - 1250 ETH
+	24365bc872e4166081611bb0b5483526742c6616 (39358 blocks) - 625 ETH
+	8ef297b17b65ded8142dbdb106818cd09899a8f5 (34142 blocks) - 375 ETH
+	027b1495165fec8cfc49bdb8450ded4cbce4b12e (33305 blocks) - 250 ETH
+
+Top senders for blocks 300000-1000000
+
+	b4e64290541cbf36159e727dfd8d873f77b42149 (5429042 txs) - 2500 ETH
+	00fc572550f3bdfe84f72e3eaa99d02a43f69733 (1912815 txs) - 1250 ETH
+	8464ba8c33260c70c9ab03487bee8a0dda35d383 (947176 txs) - 625 ETH
+	082d4cdf07f386ffa9258f52a5c49db4ac321ec6 (837307 txs) - 375 ETH
+	970f4f9eb29e8831514a3ff9b8eb2bb860d4731c (831275 txs) - 250 ETH
+
+
+Lowest address at block 848081
+
+Only addresses with nonzero nonce (ie. that sent at least one transaction) were included.
+
+	0000000000912d1d5757aa9df23dd770b0195a45 - 750 ETH
+	00000000097cd8a7d004985ab03af70fe77aa8c2 - 500 ETH
+	0000000103026f36d9f2ba6468d2816cd5dce83a - 250 ETH
+
+
+CONTRACT REWARDS
+
+To claim these, please send a transaction in Olympic specifying your new address to send funds to with the account that created the contract. Please place the nonce which the account had when it created the contract in the transaction data (eg. if the nonce is 46, put one byte 0x2e as the data).
+
+Most storage keys at block 848081:
+
+	332b656504f4eabb44c8617a42af37461a34e9dc (1727960 slots) - 2500 ETH
+	f558470e1ed9e33f2ebf994938722d7f287221f2 (685670 slots) - 1250 ETH
+	728d902f5b805a3f49707f36957d876dd6d40e53 (657813 slots) - 625 ETH
+	2ea6a457c468ed38b222a2c504a674905b5fcb7e (607504 slots) - 375 ETH
+	b56e8f043e529bca0344a96cbec8b00bc85c7ca6 (135250 slots) - 250 ETH
+
+
+Contract with highest nonce at block 848081:
+
+	e35e196a53cabeb4eb4cdd66467427a798d8c24f (4823) - 750 ETH
+	3673cb526c8505002e7ba558140b0c4d60009ac9 (2907) - 500 ETH
+	66314103c204504486b6ce587109853f4e99e29b (385) - 250 ETH
+
+
+Manually issued rewards for all-around good behavior:
+
+PhiStr90 - 3500 ETH
+Samuel Lavery - 1750 ETH
+Dino Mark - 1250 ETH
+Kobi Gurk - 500 ETH
+
+A file containing the amount of ETH to be received by each miner can be found here: http://vitalik.ca/files/olympic_miners.txt. To claim these rewards, follow the same process as for top miner/sender rewards described above.
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

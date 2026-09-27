@@ -1,0 +1,220 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security Advisory [Insecurely configured geth can make funds remotely accessible] | Ethereum Foundation Blog
+
+
+EF Blog
+
+Search
+
+
+
+
+
+
+
+Skip to contentCategories
+
+R&D
+
+
+ Research & Development
+
+Events
+
+
+ Events
+
+Org
+
+
+ Organizational
+
+ESP
+
+
+ Ecosystem Support Program
+
+ETH.org
+
+
+ Ethereum.org
+
+Sec
+
+
+ Security
+
+NxBn
+
+
+ Next Billion
+
+Protocol
+
+
+ Protocol Announcements
+
+
+
+
+
+Languages
+
+Search
+
+
+Security Advisory [Insecurely configured geth can make funds remotely accessible]
+Posted by Jutta Steiner on August 29, 2015
+Security
+
+
+
+
+Insecurely configured Ethereum clients with no firewall and unlocked accounts can lead to funds being accessed remotely by attackers. 
+
+Affected configurations: Issue reported for Geth, though all implementations incl. C++ and Python can in principle display this behavior if used insecurely; only for nodes which leave the JSON-RPC port open to an attacker (this precludes most nodes on internal networks behind NAT), bind the interface to a public IP, and simultaneously leave accounts unlocked at startup.
+
+Likelihood: Low
+
+Severity: High
+
+Impact: Loss of funds related to wallets imported or generated in clients 
+
+Details:
+
+It’s come to our attention that some individuals have been bypassing the built-in security that has been placed on the JSON-RPC interface. The RPC interface allows you to send transactions from any account which has been unlocked prior to sending a transaction and will stay unlocked for the entirety of the the session. 
+
+By default, RPC is disabled, and by enabling it it is only accessible from the same host on which your Ethereum client is running. By opening the RPC to be accessed by anyone on the internet and not including a firewall rules, you open up your wallet to theft by anybody who knows your address in combination with your IP.
+
+ 
+
+Effects on expected chain reorganisation depth: none
+
+Remedial action taken by Ethereum: eth RC1 will be fully secure by requiring explicit user-authorisation for any potentially remote transaction. Later versions of Geth may support this functionality.
+
+Proposed temporary workaround: Only run the default settings for each client and when you do make changes understand how these changes impact your security.
+
+ 
+
+NOTE: This is not a bug, but a misuse of JSON-RPC.
+
+ 
+
+ADVISORY: Never enable JSON-RPC interface on an internet-accessible machine without a firewall policy in place to block the JSON-RPC port (default: 8545).
+
+ 
+
+eth: Use RC1 or later.
+
+ 
+
+geth: Use the safe defaults, and know security implications of the options.
+
+--rpcaddr  "127.0.0.1". This is the default value to only allow connections originating on the local computer; remote RPC connections are disabled
+
+--unlock. This parameter is used to unlock accounts at startup to aid in automation. By default, all accounts are locked
+
+
+Previous post
+Next post
+
+
+
+
+Subscribe to Protocol Announcements
+Sign up to receive email notifications for protocol-related announcements, such as network upgrades, FAQs or security issues. You can opt-out of these at any time.
+
+
+Sign up
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+	Ethereum Foundation
+•
+	Ethereum.org
+•
+	ESP
+•
+	Bug Bounty Program
+•
+	Do-not-Track
+•
+	Archive
+
+
+Categories
+
+	Research & Development
+•
+	Events
+•
+	Organizational
+•
+	Ecosystem Support Program
+•
+	Ethereum.org
+•
+	Security
+•
+	Next Billion
+•
+	Protocol Announcements
+
+
+
+
+
+
+

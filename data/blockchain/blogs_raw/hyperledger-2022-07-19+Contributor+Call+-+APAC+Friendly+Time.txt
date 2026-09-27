@@ -1,0 +1,978 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-07-19 Contributor Call - APAC Friendly Time - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+	Agendas
+
+
+
+
+	2019 Agendas
+
+
+
+
+
+	2020 Agendas
+
+
+
+
+
+	2021 Agendas
+
+
+
+
+
+	2022 Agendas
+
+
+
+
+	2022-01-04 Besu Contributor Call
+
+
+
+
+
+	2022-01-11 Besu Contributor Call - Off-Cycle
+
+
+
+
+
+	2022-01-20 Besu Contributor Call
+
+
+
+
+
+	2022-01-31 Besu Contributor Call
+
+
+
+
+
+	2022-02-15 Contributor Call
+
+
+
+
+
+	2022-03-01 Contributor Call
+
+
+
+
+
+	2022-03-15 Contributor Call
+
+
+
+
+
+	2022-03-29 Contributor Call
+
+
+
+
+
+	2022-04-12 Contributor Call
+
+
+
+
+
+	2022-04-26 Contributor Call
+
+
+
+
+
+	2022-05-10 Contributor Call
+
+
+
+
+
+	2022-06-07 Contributor Call
+
+
+
+
+
+	2022-05-24 Contributor Call
+
+
+
+
+
+	2022-06-21 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-07-05 Contributor Call
+
+
+
+
+
+	2022-07-19 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-08-02 Contributor Call
+
+
+
+
+
+	2022-08-16 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-08-30 Contributor Call
+
+
+
+
+
+	2022-09-13 Contributor Call - APAC
+
+
+
+
+
+	2022-09-27 Contributor Call
+
+
+
+
+
+	2022-10-11 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-10-25 Contributor Call
+
+
+
+
+
+	2022-11-08 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-11-22 Contributor Call
+
+
+
+
+
+	2022-12-06 Contributor Call - APAC Friendly Time
+
+
+
+
+
+	2022-12-20 Contributor Call
+
+
+
+
+
+
+
+	2023 Agendas
+
+
+
+
+
+	2024 Agendas
+
+
+
+
+
+	2025 Agendas
+
+
+
+
+
+
+
+	Notes
+
+
+
+
+
+	Suspend APAC Contributor Call
+
+
+
+
+
+
+
+	Design Documents
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+2022-07-19 Contributor Call - APAC Friendly Time
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+2022-07-19 Contributor Call - APAC Friendly Time
+
+	Helen George (Deactivated)
+
+
+
+	Ry Jones
+
+
+
+	Sally MacFarlane
+
+
+
+	Jason Frame
+
+
+
+
+
+Owned by Helen George (Deactivated)
+
+
+Last updated: Jul 20, 2022 by Ry Jones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(Meeting Link:Â â�¨https://zoom.us/j/91405289771?pwd=QzA3a0ozTjVSZ0hsYzgwTm9lVDRPQT09)
+APAC Friendly TimeÂ (https://www.timeanddate.com/worldclock/converter.html?iso=20220621T010000&p1=224&p2=179&p3=1440&p4=195&p5=47)
+	6 pm Monday Los Angeles
+	9 pm Monday New York
+	1 amÂ  Tuesday UTC
+	3 am Tuesday Paris/Berlin
+	11 am Tuesday Brisbane
+
+Agenda
+	Â Housekeeping	Antitrust notice -Â https://www.linuxfoundation.org/antitrust-policy/
+	This meeting is being recorded
+	Please Mute unless speaking
+	If you have a question use the raise hand feature
+
+
+	General Announcements	/Add item/Â 
+
+
+	Roadmap Review -Â Besu Roadmap 
+	Release updates	22.7.0-RC1 done
+	22.7.0-RC2 20 July - Danno
+
+
+	Work Updates	Peering improvements - ongoing. Some current hypotheses being investigated:	Changing the way we detect and eliminate duplicate connectionsÂ https://github.com/hyperledger/besu/pull/4001
+	Changing the default max message sizeÂ https://github.com/hyperledger/besu/pull/4120
+	Checking if a peer is disconnected by the time we add themÂ https://github.com/hyperledger/besu/pull/4100
+
+
+	Adding discv5 support - starting investigation this week	https://github.com/hyperledger/besu/issues/4087
+	there is a spec
+	discv5.1
+	using the consensys/discovery library which would be v5.1 and which is used already by TekuÂ https://github.com/ConsenSys/discovery/pull/72
+
+
+	Eth_call performance improvements - starting investigation next week	https://github.com/hyperledger/besu/issues/3926
+
+
+	GraphQL spec updates - Danno - some EIPs that would be good to add - PR up for reviewÂ https://github.com/hyperledger/besu/pull/4112	more changes after this to add some quality of life improvements
+
+
+
+
+	Other Business
+	Add GitPOAP badge to README (added by Daniel): PR #4107
+Notes by Daniel: I will not be on the call, but maybe a decision could be made if this PR should be merged or not. I don't have a strong opinion either way.Â 	no objections
+	add to besu-docs and besu-native also?
+	will it encourage contributions?
+	encouraging contributions to docs specifically would be useful - and is one of the hardest things to get ppl to contribute to
+
+
+
+
+	Metrics Review -Â Linux Foundation Project Besu Insights 
+	Open Forum	/Add item/Â 
+
+
+	Future Topics	/Add item/Â 
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+        
+            
+            
+            
+                                                    
+        
+
+                
+
+
+
+
+
+
+    
+
+
+	Â 	
+            File
+        	
+            Modified
+        
+	
+                     
+
+                                        
+
+                        
+                                                Labels
+
+                        
+
+	
+		
+    
+    	
+            No labels
+        
+
+
+    
+
+
+
+
+                                                     
+
+                        
+                                                    
+                                                                        Preview
+                                
+                                                                                                                                                                                                                            
+                                    View
+                                                            
+
+                                            
+
+
+                	
+                    
+                        
+
+    
+
+
+File                                                    
+                                GMT20220719-010420_Recording.transcript.vtt
+                            
+                        
+                                                                        
+                                            
+
+                	
+                                        Jul 20, 2022
+                    by
+                                        Ry Jones
+                            
+	
+                     
+
+                                        
+
+                        
+                                                Labels
+
+                        
+
+	
+		
+    
+    	
+            No labels
+        
+
+
+    
+
+
+
+
+                                                     
+
+                        
+                                                    
+                                                                        Preview
+                                
+                                                                                                                                                                                                                            
+                                    View
+                                                            
+
+                                            
+
+
+                	
+                    
+                        
+
+    
+
+
+Text File                                                    
+                                GMT20220719-010420_Recording.txt
+                            
+                        
+                                                                        
+                                            
+
+                	
+                                        Jul 20, 2022
+                    by
+                                        Ry Jones
+                            
+
+
+
+
+    
+
+    
+            
+
+
+    
+                    Download All
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 42, "requestCorrelationId": "3e79b411ab3640ffaaebbcd4ffbbdda7"}

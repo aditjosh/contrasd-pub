@@ -1,0 +1,112 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Announcing Hyperledger Besu 20.10.0 – Hyperledger Foundation
+
+
+    
+      
+        
+        
+          Blog | LF Decentralized Trust
+         
+      
+  
+      
+        
+          Announcing Hyperledger Besu 20.10.0 – Hyperledger Foundation
+
+        
+
+        
+           Written by Jessica Rampen | Nov 4, 2020 12:02:36 PM 
+        
+
+        
+          This release includes new versioning and mainnet-focused advancements
+
+
+The Hyperledger Besu team is excited to announce today’s Hyperledger Besu 20.10.0 release. 
+
+You might have noticed that the versioning for this quarterly release is a little different than prior Hyperledger Besu releases. The Hyperledger Besu community recently decided to switch its versioning to calendar versioning, known as CalVer. Instead of the historic semantic versioning used by Besu and other Hyperledger projects, the Besu team decided to use CalVer moving forward. In all future releases, you will notice the project versions will start with the year and month (YY.M) of the last major release candidate, followed by a patch number for incremental releases, which results in a YY.M.patch, or 20.10.0 for this release. The Besu team believes this will better track the project’s changes and it follows many other successful open source projects that use Calver, including Splunk and Ubuntu.
+
+Check out the old vs. new versioning in the table below.
+
+
+	Project	Release	Old Release Versioning	New Calver Release Versioning
+	Hyperledger Besu 	Hyperledger Besu Q4 Release Candidate 1	1.6.0-RC1	20.10.0-RC1
+	Hyperledger Besu 	Hyperledger Besu Q4 Release Candidate 2	1.6.0-RC2	20.10.0-RC2
+	Hyperledger Besu 	Hyperledger Besu Q4 2020 Quarterly Release	1.6.0	20.10.0
+	Hyperledger Besu 	Hyperledger Besu subsequent bi-weekly release 	1.6.1	20.10.1
+
+
+
+
+Now to share what is included in the latest release. The Besu community is excited about the continued advancements of the Hyperledger Besu project featured in this release. 
+
+A few highlights for this release include:
+
+	Flexible Privacy Group Performance tests
+	Mainnet Support Work, including preparing for the Berlin Network Upgrade and EIP-1559 support
+
+
+Flexible Privacy Group Performance Tests
+
+The ‘add and remove members for privacy groups’ feature was released earlier this year as an early access feature. With privacy groups in Hyperledger Besu, you can add and remove members from a privacy group, creating an improved user experience for private transactions. Privacy groups are built using a private transaction manager, called Orion, to help send private transactions in a permissioned network.
+
+In the 20.10.0 version, privacy groups have been further improved to ensure robust performance. The team performed various tests to ensure the flexible privacy group feature is not a performance bottleneck. 
+
+Flexible privacy groups are now supported when using multi-tenancy. In addition, the team created more library examples and documentation of use cases. 
+
+Mainnet Support Work
+
+Since Hyperledger Besu runs on the public Ethereum mainnet, the Besu community also sought to improve its public chain settings. As a reminder, Hyperledger Besu is the only Hyperledger project that runs on a public chain and in permissioned network settings. This optionality makes it unique and a popular project for trying out both public chain or permissioned network options for a use case.
+
+Berlin Network Upgrade
+
+In this release, the community prioritized work ensuring Hyperledger Besu is ready for the next Ethereum hard fork, Berlin, scheduled to happen in the next few months. You can learn more about Ethereum’s hard forks here. For the Berlin hard fork, the Besu and Ethereum communities are broadly focused on implementing EIPs, or Ethereum Improvement Proposals, that will help with the UX of the Ethereum 2.0 deposit contract, add new functionality to the EVM and change gas costs to reflect their execution time more accurately. 
+
+EIP-1559
+
+In addition to its work on the Berlin network upgrade, the Besu team has also been leading efforts to implement EIP-1559. EIP-1559 is a highly anticipated upgrade to Ethereum’s transaction fee market. This EIP’s goal is to make the Ethereum fee market more efficient. You can read more about the current status of EIP-1559 here in a post written by Tim Beiko, one of our Besu team members.
+
+What’s Next?
+
+The Hyperledger Besu community remains committed to improving its project and making it fit for production blockchain use cases. Watch for new features addressing node hibernation and Bonsai Tries database improvements in our next quarterly release.
+
+Get Involved
+
+Download the latest version of Hyperledger Besu here.
+
+Interested in learning more or curious on how to get started with Hyperledger Besu? Check out the Besu docs, view the tutorials, visit the wiki, or take a look at some open issues in GitHub. 
+
+Stay tuned to hear more about our work in Ethereum and Hyperledger and about how Hyperledger Besu is continuing to lead the enterprise blockchain space.
+
+ 
+        
+
+        
+          View full post
+        
+
+      
+
+    
+
+    
+    
+    
+    
+  

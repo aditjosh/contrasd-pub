@@ -1,0 +1,719 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu as a Modular Client for the Merge (OLD) - Besu - LF Decentralized Trust
+
+
+    
+        
+            
+                
+                                
+
+        
+
+
+        
+            
+
+            
+
+
+
+
+
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+
+
+
+
+
+
+
+
+LF Decentralized Trust
+
+LF Decentralized Trust
+
+Spaces
+
+Apps
+Templates
+
+Create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+
+
+
+	All content
+
+
+
+Shortcuts
+
+
+
+	Meetings
+
+Meetings
+
+
+Â This trigger is hidden
+
+	How-to articles
+
+How-to articles
+
+
+Â This trigger is hidden
+
+
+
+
+
+
+Content
+
+
+
+
+
+
+
+Results will update as you type.
+
+	Code of Conduct
+
+
+
+
+
+	Contributing
+
+
+
+
+
+	Developing and Conventions
+
+
+
+
+
+	Documentation
+
+
+
+
+
+	Community
+
+
+
+
+
+	Governance
+
+
+
+
+
+	Programs & Grants
+
+
+
+
+
+	Meetings
+
+
+
+
+
+	Design Documents
+
+
+
+
+	Ethereum Classic Support
+
+
+
+
+
+	Feature Proposal Template
+
+
+
+
+
+	Feature Flags
+
+
+
+
+
+	RPC Endpoint Service
+
+
+
+
+
+	Switchable Consensus Parameters
+
+
+
+
+
+	Bonsai Tries Design Overview
+
+
+
+
+
+	Refactor EVM into a stand alone library
+
+
+
+
+
+	SECP256R1 Support
+
+
+
+
+
+	DRAFT - Pico CLI Plugin Integration
+
+
+
+
+
+	Besu 2022 Vision
+
+
+
+
+
+	Modular Besu
+
+
+
+
+	Besu as a Modular Client for the Merge (OLD)
+
+
+
+
+
+	DRAFT - Besu Software Component Map
+
+
+
+
+
+	Modular Consensus
+
+
+
+
+
+	Modularity Implementation Approach
+
+
+
+
+
+
+
+	CI/CD Migration
+
+
+
+
+
+	Change to Besu Defaults - Q1 2024
+
+
+
+
+
+	CI/CD Tooling and Process
+
+
+
+
+
+	Bonsai archive feature
+
+
+
+
+
+
+
+	Security
+
+
+
+
+
+	Audits
+
+
+
+
+
+	Start Here
+
+
+
+
+
+	Performance & Stability
+
+
+
+
+
+	How-to articles
+
+
+
+
+
+	Incident Reports
+
+
+
+
+
+	Besu Roadmap & Planning
+
+
+
+
+
+	How to Contribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Youâ€˜re viewing this with anonymous access, so some content might be blocked.
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+Besu
+
+/
+Besu as a Modular Client for the Merge (OLD)
+
+
+
+
+
+
+
+
+
+
+
+
+More actions
+
+
+
+
+
+
+
+Besu as a Modular Client for the Merge (OLD)
+
+	Matt Nelson (Deactivated)
+
+
+
+	Justin Florentine
+
+
+
+
+
+Owned by Matt Nelson (Deactivated)
+
+
+Last updated: Feb 14, 2023 by Justin Florentine
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+Considerations for this work:Â 
+The merge is â€˜differentâ€™.Â  The switch from proof-of-work to proof-of-stake changes the behavior of the client significantly.Â  There are additional endpoints served from a new `engine` network service which will be differently secured than existing json-rpc or web sockets services.Â  Knowing when to make the switch from one to the other also does not follow the â€˜hard forkâ€™ strategy from previous ethereum upgrades.Â  Also, presumably only ethereum mainnet (and its test nets) would ever make this transition.
+Other layer1 evm chains are unlikely to need an execution engine client.Â  However, layer2â€™s might.Â  This thread from protolambda highlights the potential for an execution engine to be leveraged in rollups.Â  Having a clean execution engine module would likely be useful and less cluttered than trying to adapt besu to an L2 use case.Â Â 
+Lastly, we are working on incorporating MEV strategies into besu.Â  MEV so far seems to be only a consideration for ethereum mainnet and the notion of splitting the block producer role into two roles blockBuilder/blockProposer likely would not make sense outside of the context of ethereum mainnet and MEV auctions.Â Â 
+Considerations common to both approaches
+	Pros
+
+	The effort to modularize is underway already for the evm
+	This dovetails nicely with the need to have pluggable MEV strategiesÂ 
+
+	Risks
+
+	Finding the right â€˜bounded contextâ€™ for libraries is non-trivial
+	The effort of refactoring Besu into modules becomes critical-path for having a besu-based execution client
+	Changes the value proposition of the project - no longer is besu â€œan ethereum mainnet ready clientâ€�.Â  This is going to be the case post-merge anyway, but it is worth pro-actively redefining the message.
+	Adds devops considerations for publishing modulesÂ 
+
+	Mitigation
+
+	We can initially rely on the existing submodules for library bounds
+	We can continue to pursue a branch based approach for an execution client in parallel until we have clarity and modularizationÂ 
+
+Approach #1 â€œHyperledger/Besu as Debianâ€�
+	Split up the current monolithic besu artifact into a group of reusable libraries which are published individually
+	Rather than a monolithic artifact generate distribution-specific artifacts within the project.Â  An example of a distribution artifact might be â€œethereum execution engineâ€�, â€œETC mainnet ready clientâ€�, â€œOptimistic Besuâ€�, etc.Â Â 
+	External projects that wish to leverage besu artifacts and/or build a 3rd party Besu distribution are able to leverage the published besu artifacts
+
+
+
+This would keep hyperledger/besu as a central project that natively supports a variety of use-cases via use-specific distribution artifacts.Â  This would be different from the current only in that there would not be a single monolithic binary.
+	Pros
+
+	Teku can directly integrate/implement besu for its default execution engine
+	Enables different â€œdistributionsâ€� of Besu, with artifacts custom tailored for individual chains, rollups, and/or applications
+
+	Risks
+
+	Might present some political challenges, we would have to solicit buy-in from Hyperledger TSC and contributors for example
+	Would have to do distribution-specific acceptance tests for each artifact.Â  This would require additional devops and CI plumbing
+
+	Timeline
+
+	? (incremental approach)
+
+Approach #2 â€œAn Execution Engine Shell Projectâ€�
+Create a new project for the execution engine, leveraging the hyperledger/besu modules.Â  Rewrite, override or extend the portions of besu necessary to deliver a lean execution client without introducing any of the ethereum PoS merge code into besu.Â  This would be a step in the direction of treating hyperledger/besu as more of a general purpose reference implementation of its libraries, rather than an â€œethereum mainnet ready clientâ€�.
+	Pros	Less need to coordinate with other concerns: enterprise, other public mainnets
+	Submodules and functionality that is unrelated to ethereum mainnet are just unimported
+	Onboarding of new PE may be faster - no need to understand the whole codebase, just the specific rules of the execution client.
+
+	Lower cyclomatic complexity would inevitably lead to better performance
+
+	A standalone execution engine could be leveraged in rollup implementations
+
+
+
+	Greater simplicity
+	Performance
+	Integration to new services
+
+	Cons
+
+	Inevitable drift from re-implemented portions of besu, causing duplication of work for bugfixes and shared features
+	Likely no resources or support from besu-contributors and/or hyperledger org
+	Work on the execution engine would be split across multiple repositories Hyperledger/Besu and Consensys/besu-engine (for example)
+
+
+
+	Timeline
+
+	6-9 months; relies on the modularization of besu to begin in earnestÂ 
+
+
+
+Technical proposal
+https://lf-hyperledger.atlassian.net/wiki/display/BESU/Design+Documents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, multiple selections available,
+
+
+
+
+
+Related content
+More info
+
+Collapse
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+Besu Plug-ins: Fork-free Client Modifications to Extend Besu Use Cases
+
+Community Events
+
+
+
+More like this
+
+
+
+
+
+
+Modular Besu
+Modular Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Besu
+Besu
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+BESU
+BESU
+
+Learning Materials Development Working Group
+
+
+
+More like this
+
+
+
+
+
+
+Besu 2022 Vision
+Besu 2022 Vision
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+Modular Consensus
+Modular Consensus
+
+Besu
+
+
+
+More like this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+    {"serverDuration": 10, "requestCorrelationId": "beccfae032784066b6e7b7d27927c378"}

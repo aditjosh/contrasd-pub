@@ -1,0 +1,181 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Merkle multi proofs for computationally constrained environments - Data Structure - Ethereum Research
+
+
+    
+    
+  
+    Ethereum Research
+  
+
+
+    
+        
+    
+      Merkle multi proofs for computationally constrained environments
+    
+
+
+      
+          
+            
+              
+              
+                Data Structure
+              
+            
+            
+
+
+
+      
+
+        
+
+            
+
+            
+              
+                seunlanlege
+                
+              
+
+              
+
+
+                
+
+
+              
+                  
+                    January 12, 2023,  1:58pm
+                  
+                  
+
+1
+              
+            
+            
+              In this research article, I present a highly efficient algorithm for verifying merkle multi proofs in computationally constrained environments.
+
+
+  
+      
+
+      research.polytope.technology
+  
+
+  
+    
+
+
+Merkle multi proofs
+
+
+  Merkle multi proofs enable more efficient merkle proofs by re-using the intermediate nodes shared by the proof leaves during the recalculation of the root hash of the tree.
+
+
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+
+
+            
+
+
+            
+              
+2 Likes
+            
+
+            
+                
+	
+        
+          Home 
+        
+      
+	
+        
+          Categories 
+        
+      
+	
+        
+          FAQ/Guidelines 
+        
+      
+	
+          
+            Terms of Service 
+          
+        
+	
+          
+            Privacy Policy 
+          
+        
+
+
+  
+  Powered by Discourse, best viewed with JavaScript enabled
+
+
+
+    
+    
+  

@@ -1,0 +1,316 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EIP-7569: Hardfork Meta - Dencun
+
+
+  Ethereum Improvement Proposals
+        
+        
+          
+            
+              
+            
+          
+        
+
+        AllCoreNetworkingInterfaceERCMetaInformational
+
+      
+
+
+
+      
+        
+  
+    
+
+  
+    
+    
+    
+      ⚠️ Review
+    
+    
+    
+      Meta
+    
+  
+  
+    
+      EIP-7569: Hardfork Meta - Dencun
+    
+    
+      
+        
+      
+    
+    
+      
+        
+      
+    
+  
+
+  EIPs included in the Deneb/Cancun Ethereum network upgrade.
+
+  	Authors	Tim Beiko (@timbeiko)
+	Created	2023-12-01
+	Requires	
+
+  EIP-1153, 
+
+  EIP-4788, 
+
+  EIP-4844, 
+
+  EIP-5656, 
+
+  EIP-6780, 
+
+  EIP-7044, 
+
+  EIP-7045, 
+
+  EIP-7514, 
+
+  EIP-7516
+
+
+
+
+  
+
+
+  
+    
+      
+      
+        This EIP is in the process of being peer-reviewed. If you are interested in this EIP, please participate using this discussion link.
+      
+
+    
+
+  
+
+  
+    Table of Contents
+
+    	Abstract
+	Specification
+    	Included EIPs
+	Full Specifications
+	Activation
+
+
+  
+	Rationale
+	Security Considerations
+	Copyright
+
+
+
+  
+
+
+  
+      
+      
+         Abstract
+      
+      
+    
+
+
+This Meta EIP lists the EIPs included in the Dencun network upgrade across both Ethereum’s execution and consensus layers.
+
+  
+    
+      
+      
+         Specification
+      
+      
+    
+
+  
+    
+      
+      
+         Included EIPs
+      
+      
+    
+
+
+	EIP-1153: Transient storage opcodes
+	EIP-4788: Beacon block root in the EVM
+	EIP-4844: Shard Blob Transactions
+	EIP-5656: MCOPY - Memory copying instruction
+	EIP-6780: SELFDESTRUCT only in same transaction
+	EIP-7044: Perpetually Valid Signed Voluntary Exits
+	EIP-7045: Increase Max Attestation Inclusion Slot
+	EIP-7514: Add Max Epoch Churn Limit
+	EIP-7516: BLOBBASEFEE opcode
+
+
+  
+    
+      
+      
+         Full Specifications
+      
+      
+    
+
+  
+    
+      
+      
+         Consensus Layer
+      
+      
+    
+
+
+EIPs 4788, 4844, 7044, 7045 and 7514 require changes to Ethereum’s consensus layer. These are specified in the deneb folder of the ethereum/consensus-specs repository.
+
+  
+    
+      
+      
+         Execution Layer
+      
+      
+    
+
+
+EIPs 1153, 4788, 4844, 5656, 6780 and 7526 require changes to Ethereum’s execution layer. The EIPs fully specify the changes.
+
+  
+    
+      
+      
+         Activation
+      
+      
+    
+
+
+	Network Name	Activation Epoch	Activation Timestamp
+	Goerli	231680	1705473120
+	Sepolia	132608	1706655072
+	Holešky	29696	1707305664
+	Mainnet	 	 
+
+
+
+Note: rows in the table above will be filled as activation times are decided by client teams.
+
+  
+    
+      
+      
+         Rationale
+      
+      
+    
+
+
+This Meta EIP provides a global view of all changes included in the Dencun network upgrade, as well as links to full specification.
+
+  
+    
+      
+      
+         Security Considerations
+      
+      
+    
+
+
+None.
+
+  
+    
+      
+      
+         Copyright
+      
+      
+    
+
+
+Copyright and related rights waived via CC0.
+
+
+  Citation
+
+  Please cite this document as:
+
+  
+  Tim Beiko (@timbeiko), "EIP-7569: Hardfork Meta - Dencun [DRAFT]," Ethereum Improvement Proposals, no. 7569, December 2023. [Online serial]. Available: https://eips.ethereum.org/EIPS/eip-7569.
+
+
+
+
+
+
+      
+    
+  
+
+  
+
+    Ethereum Improvement Proposals
+
+
+    
+      
+        	Ethereum Improvement Proposals
+
+
+      
+
+
+      	 ethereum/EIPs
+
+
+
+
+
+      
+        Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+
+      
+
+    
+
+
+  
+
+
+

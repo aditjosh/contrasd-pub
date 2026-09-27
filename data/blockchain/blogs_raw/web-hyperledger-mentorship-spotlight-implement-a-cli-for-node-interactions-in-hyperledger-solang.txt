@@ -1,0 +1,875 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hyperledger Mentorship Spotlight: Implement a CLI for node interactions in Hyperledger Solang
+
+
+        
+        
+            
+                
+
+                
+                    
+
+
+  
+    
+    
+        
+            
+                
+                    2025 Update: Off to a Fast Start! Read on →
+
+                
+
+                
+                    
+                    
+                        
+                        
+                        
+                    
+                    
+                        Search
+
+                        
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+
+                        
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+    
+    
+        
+            
+                
+                    
+                        
+                    
+                
+
+                
+                    
+                          
+                    
+
+                    
+                        
+                            
+                            
+                            
+                                Join
+                             
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    About
+                                
+
+                                
+                                    
+ 	About 
+	Explore membership
+	Members
+	Technical Advisory Council
+	Governing Board
+	Speakers Bureau
+	Staff
+	FAQ
+	Store
+	Contact us 
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Technologies
+                                
+
+                                
+                                    
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+	All projects
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Deploy
+                                
+
+                                
+                                    
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Participate
+                                
+
+                                
+                                    
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Resources
+                                
+
+                                
+                                    
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    Learn
+                                
+
+                                
+                                    
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                        
+                        
+                            
+                            
+                                
+                                    
+                                    
+                                    News
+                                
+
+                                
+                                    
+ 	Blog
+	Announcements
+	Newsletters
+
+
+
+ 
+                                
+
+                            
+
+                            
+                            
+                                
+                                    
+                                    
+                                    Events
+                                
+
+                                
+                                    
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+ 
+                                
+
+                            
+
+                             
+                        
+
+                         
+                    
+
+                
+
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                        
+                                        
+                                            Join
+                                         
+                                    
+
+                                
+
+                                
+                                    Follow Us
+
+                                    
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                        
+                                            
+                                            
+                                            
+                                                
+                                            
+                                         
+                                    
+
+                                
+
+                            
+
+                            
+                                
+
+                            
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+                
+            
+
+            
+            
+                
+
+    
+        
+            
+                
+                    
+                        
+                            Mentorship Program
+                            |
+                        
+                            Hyperledger Solang
+                            
+                        
+                    
+
+                
+                Hyperledger Mentorship Spotlight: Implement a CLI for node interactions in Hyperledger Solang
+ 
+                
+                    Tarek Elsayed
+                    |
+                    
+                        Nov 28, 2023
+                    
+                
+
+            
+
+            
+                
+            
+
+            
+                What I worked on:
+
+Project name: Implement a CLI for node interactions in Hyperledger Solang 
+
+
+Hyperledger Solang stands as a Rust-based Solidity compiler utilizing LLVM as its backend. Presently, it targets smart contract runtimes in Polkadot and Solana. The goal of this mentorship was to implement a CLI for Solang that can be used for node interactions. This includes uploading contracts on-chain as well as submitting transactions to contracts.
+
+Journey to Mentorship
+
+I've always been interested in open-source contributions. When I found out about the Hyperledger Mentorship program, it was right before the application deadline, leaving me little time for thorough preparation. However, the project's description perfectly resonated with my existing skills. As I was learning Rust and working on a Rust-based CLI tool, this chance seemed perfect for me to learn more about blockchain in a hands-on way. I was later invited to an interview by my mentor, Cyrill Leutwiler. I made it clear that I was still in the learning phase for blockchain, and my mentor was completely supportive of my learning journey.
+
+Project Details
+
+We divided the project into two main parts:
+
+	Polkadot Node Interactions: This involved refactoring the extrinsic submission from “cargo-contract” into a separate crate and using this new crate in Solang CLI to enable user interactions with contracts on Polkadot.
+	Solana Node Interaction: This included exploring how to use Rust code to submit transactions to Solana and establishing a user-friendly API for CLI integration. 
+
+
+This roadmap was our initial plan, agreed upon with my mentor. It seemed like a clear and achievable task within the mentorship timeframe.
+
+Challenges
+
+About halfway through the mentorship, I encountered dependency issues between contract-extrinsics and Hyperledger Solang. This crate had a dependency on wasm-opt, which caused namespace conflicts when used alongside llvm-sys. Resolving this issue required opening an issue on wasm-opt, waiting for it to be merged and published, and updating contract-extrinsics. I learned that the process of resolving dependency issues could take a considerable amount of time.
+
+For the second half of the mentorship, I shifted my focus to the Solana part. I began by implementing a command to deploy smart contracts, but I faced challenges due to the lack of a clear Rust API in the Solana crates. I had to navigate through the Solana code base to understand their deployment process. Again, I encountered complicated dependency issues between Solang and Solana crates. 
+
+Concurrently, I started working on submitting custom transactions to Solana, trying to call specific functions on deployed Solana contracts. However, the API for submitting transactions and encoding data wasn't straightforward. A big shout-out to the other Solang maintainers, Sean Young and Lucas Steuernagel, for helping me out a lot. Their support was really important, helping me deal with problems and move the project forward.
+
+In October, a decision was made to move the code to a separate repository dedicated to the CLI tool. This move was a relief given the persistent dependency issues. However, more challenges arose as there were dependency conflicts between Solana and Polkadot crates, preventing their coexistence in a single Rust project. After gaining experience in dealing with these issues throughout the mentorship, I eventually found a way to patch Solana crates in the project's workspace.
+
+Achievements & Learnings:
+
+Finally, I wrapped up writing code for the new repository, Hyperledger Solang Aqd (عَقد - translating to "contract" in Arabic). Hyperledger Solang Aqd is designed with a modular approach, using different crates for specific tasks. The core crate, aqd-core, forms the basis of the CLI tool, while aqd-polkadot and aqd-solana manage smart contract interactions for Polkadot and Solana. Additionally, aqd-utils handles utility functions and common code. This modular structure makes the tool easy to maintain and flexible, allowing users to include specific features as needed.
+
+Even with the challenges, it was a huge learning experience:
+
+	I dug deep into Rust, learning more about design patterns and how dependencies work.
+	I actively participated in complex open-source Rust projects and engaged with the community.
+	I recognized the significance of structuring code into modular crates.
+
+
+During this journey, I gained useful insights. Following Semantic Versioning is essential for compatibility. Also, I learned the importance of carefully pinning dependencies, doing so only when absolutely necessary and with a well-thought-out reason. In summary, I learned that working on big open-source projects is about more than just writing code. 
+
+What I gained from working with my mentor:
+
+A big thanks to my mentor for his ongoing guidance in our weekly meetings. These meetings were vital for discussing progress, setting goals, and resolving coding issues. My mentor's encouragement to engage in the open-source community has been valuable. It helped me explore diverse projects, contributing code to some, and enhancing my problem-solving skills and collaborative mindset.
+
+What comes next:
+
+There's more to come in my Hyperledger Solang journey. The supportive community and the learning prospects are pushing me to further engage in the Solang environment.
+
+            
+
+            
+                
+                    
+                
+
+                
+                    
+                        
+                            View previous blog post
+                        
+                    
+                
+                
+                    
+                        Back to all blog posts
+                    
+                
+                
+                    
+                        
+                            View next blog post
+                        
+                    
+                
+            
+
+        
+
+    
+
+
+
+            
+
+            
+                
+
+	
+		
+			
+				
+					
+						
+							
+								
+The latest community news in your inbox
+
+Select the checkboxes below for the monthly decentralized digest and dev/weekly newsletters
+
+							
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+	
+		
+			
+				
+					
+						
+							
+								
+								
+								
+								
+							
+						
+
+					
+					About LF Decentralized Trust
+
+					The Linux Foundation's flagship organization for the development and deployment of decentralized systems and technologies.
+
+
+					
+ 	About
+	Members
+	TAC
+	Governing board
+	Speakers bureau
+	Staff
+	FAQ
+	Contact us
+
+
+
+
+
+					
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+						 
+					
+
+				
+
+			
+
+			
+				
+					
+						
+							
+								
+								Technologies
+								
+ 	Ledger technologies
+	Interoperability
+	Integration & implementation
+	Decentralized identity
+	Cryptographic tools & protocols
+	Project matrix
+	Labs
+
+
+
+
+
+							
+
+						
+							
+								
+								Participate
+								
+ 	Why get involved?
+	How to contribute
+	Contribute to code
+	Host your project with us
+	Regional chapters
+	Special interest groups
+	Job board
+
+
+
+
+
+							
+
+						
+							
+								
+								Deploy
+								
+ 	Certified service providers
+	Vendor directory
+	Training partners
+
+
+
+
+
+							
+
+						
+							
+								
+								Resources
+								
+ 	Linux Foundation ID 
+	Logos & guidelines
+	Trademarks & guidelines
+	Charter 
+	Code of conduct
+	Github repos
+	Discord
+	Wiki
+	Mailing lists
+	Report a security bug
+
+
+
+
+
+							
+
+						
+							
+								
+								Learn
+								
+ 	Case studies
+	Training & certifications
+	Use case tracker
+	Member webinars 
+	Insights
+
+
+
+
+
+							
+
+						
+							
+								
+								Events
+								
+ 	Events
+	Meetups
+	Meeting calendar
+
+
+
+
+
+							
+
+						
+							
+								
+								News
+								
+ 	Blog
+	Announcements
+	Newsletters
+	Meeting Calendar
+
+
+
+
+
+							
+
+						
+					
+
+					
+						
+Copyright © 2025 The Linux Foundation®. All rights reserved. LF Decentralized Trust is a trademark of The Linux Foundation. For a list of LF Decentralized Trust's trademarks, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
+
+
+					
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+            
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+ 
+    
