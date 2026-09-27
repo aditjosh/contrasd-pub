@@ -1,21 +1,40 @@
-# Contrastive SenseDiscriminator (ContraSD) 
+# Contrastive Sense Discriminator (ContraSD) 
 
 ## Overview
 
-This is the central repository for material related to the ContraSD project. The project aims to leverage a conformal calibration methodology for assigning pseudo-labels to sentences from unseen text.
+Word sense ambiguity presents a major challenge when classifying antonyms or opposing meanings. This project leverages contextual signals to map learned senses onto binary class sets (associating each with one, both, or neither class). The size of the resulting output set directly quantifies the underlying degree of sense ambiguity. The algorithm hereby described is called ContraSD. The project aims to leverage a conformal calibration methodology for assigning pseudo-labels to sentences from unseen blockchain-related articles.
 
 ## Pipeline
 ![ContraSD Pipeline for Pseudo-Labeling](img/ps_pipeline.png)
 
-## Library Dependencies
-To run the Notebook scripts for analysis, the scripts to build the Docker containers with library requirements can be found under the [containers subdirectory](containers/).
+## Repository Map
 
-The library dependencies are listed in the file containers/requirements.txt. 
 ```
-pip install -r containers/requirements.txt
+/
+├── containers/                 # Scripts to setup a local environment using Docker for running the code.
+│   ├── .env
+│   ├── *.yml                   # Container configurations
+│   ├── jupyter.dockerfile      # Jupyter container
+│   └── requirements.txt        # Library dependencies
+├── data/                       # Shared project data
+├── src/                        # Contains source code for defining, and training the models.
+│   ├── experiments             # Helper classes for experimental evaluation
+│   ├── model                   # Model and dataset class definitions
+│   └── util                    # Utility classes
+├── contrasd_train.ipynb        # ContraSD algorithm and training
+├── evaluations.ipynb           # Code to perform experimental evaluations
+└── README.md                   # This file
 ```
 
 ## Usage
+### Code
+Refer to the Jupyter notebook script ```contrasd_train.ipynb``` for training the model. The notebook can be run within Docker containers built using the scripts and library requirements provided in the [containers subdirectory](containers/).
+
+### Python libraries
+To run the code in a standalone Python workspace, install the library dependencies mentioned in the file containers/requirements.txt. 
+```
+pip install -r containers/requirements.txt
+```
 
 ### Data
 Processed data are under the [data subdirectory](data/). As generating embeddings using the pre-trained models can be time consuming, we provide PARQUET formatted files with embeddings created using SBERT (sentence-transformers/all-MiniLM-L6-v2) and Qwen3 (Qwen/Qwen3-8B) models from HuggingFace. These embeddings can be loaded in Milvus database to run the project scripts.
@@ -34,22 +53,7 @@ Methods for training the model are provided in a [training script](src/model/tra
 ### Evaluation
 To evaluate the trained model with synthetic data and ETHICS dataset, follow the [evaluation](src/evaluations.ipynb) notebook. Pre-trained model embeddings are required for evaluating with ETHICS dataset.
 
-## Repository Map
+### Citation
+Add when available.
 
-```
-/
-├── containers/                 # Scripts to setup a local environment using Docker for running the code.
-│   ├── .env
-│   ├── *.yml                   # Container configurations
-│   ├── jupyter.dockerfile      # Jupyter container
-│   └── requirements.txt        # Library dependencies
-├── data/                       # Shared project data
-├── src/                        # Contains source code for defining, and training the models.
-│   ├── experiments             # Helper classes for experimental evaluation
-│   ├── model                   # Model and dataset class definitions
-│   └── util                    # Utility classes
-├── senses_autoencoder.ipynb    # ContraSD algorithm and training
-├── evaluations.ipynb           # Code to perform experimental evaluations
-└── README.md                   # This file
-```
 
